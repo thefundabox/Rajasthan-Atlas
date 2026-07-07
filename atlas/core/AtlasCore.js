@@ -89,10 +89,14 @@ class AtlasCoreClass {
 
       this._registerBuiltInModes();
 
-      // Load & register every layer declared in the manifest.
-      for (const layerCfg of this.manifest.layers) {
-        await this.registerLayer(layerCfg);
-      }
+      // Load & register every layer declared in the manifest — in PARALLEL.
+      // Registration order does not matter: LayerManager, DataManager and
+      // Renderer all index by layer id (order-agnostic Maps), z-index comes
+      // from the manifest, and no code path assumes a specific arrival order.
+      // Parallel boot cuts first-paint time from N × RTT to ~1 × RTT.
+      await Promise.all(
+        this.manifest.layers.map(layerCfg => this.registerLayer(layerCfg))
+      );
 
       this.ui.attachTo(root);
       // Search UI has its own class because it's a header widget, not chrome
