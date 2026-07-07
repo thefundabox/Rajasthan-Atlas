@@ -201,6 +201,48 @@
 .layers-popover .lp-panel::-webkit-scrollbar-thumb { background: var(--ink-4); border-radius: 4px; }
 .layers-popover .lp-panel::-webkit-scrollbar-track { background: transparent; }
 .layers-popover.open .lp-panel { display: block; }
+
+/* -- Layers-popover: two-tab layout --------------------------------- */
+.layers-popover .lp-tabs {
+  display: flex;
+  gap: 0;
+  margin: calc(var(--sp-4) * -1) calc(var(--sp-4) * -1) var(--sp-3);
+  border-bottom: 1px solid var(--hair);
+  padding: 0;
+  background: var(--card-quiet);
+  border-radius: var(--rad-md) var(--rad-md) 0 0;
+  overflow: hidden;
+}
+.layers-popover .lp-tab {
+  flex: 1;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: var(--t-small);
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+  transition: color var(--motion-fast), border-color var(--motion-fast), background var(--motion-fast);
+}
+.layers-popover .lp-tab:hover { color: var(--ink); background: var(--card); }
+.layers-popover .lp-tab.active {
+  color: var(--ink);
+  border-bottom-color: var(--sel);
+  background: var(--card);
+  font-weight: 500;
+}
+.layers-popover .lp-tab-panel { display: none; }
+.layers-popover .lp-tab-panel.active { display: block; }
+.layers-popover .lp-hint {
+  margin: 0 0 var(--sp-3);
+  font-size: var(--t-meta);
+  color: var(--ink-3);
+  font-style: italic;
+  line-height: 1.4;
+}
+
 .layers-popover h4 {
   font-family: var(--serif);
   font-weight: 500;

@@ -149,8 +149,26 @@ export class UIManager {
     }, ['☰  Layers']);
     const panel  = el('div', { class: 'lp-panel' });
 
-    // Modes section
-    panel.append(el('h4', {}, ['View mode']));
+    // ── Tab bar ─────────────────────────────────────────────────────
+    const tabs = el('div', { class: 'lp-tabs', role: 'tablist' });
+    const presetsTab = el('button', {
+      class: 'lp-tab active', role: 'tab', 'data-tab': 'presets',
+      onclick: () => this._switchTab('presets'),
+    }, ['Presets']);
+    const layersTab = el('button', {
+      class: 'lp-tab', role: 'tab', 'data-tab': 'layers',
+      onclick: () => this._switchTab('layers'),
+    }, ['Layers']);
+    tabs.append(presetsTab, layersTab);
+    panel.append(tabs);
+
+    // ── Tab panel: Presets ──────────────────────────────────────────
+    const presetsPanel = el('div', {
+      class: 'lp-tab-panel active', 'data-panel': 'presets', role: 'tabpanel',
+    });
+    presetsPanel.append(el('p', { class: 'lp-hint' }, [
+      'Click a preset to focus the map on a theme.',
+    ]));
     const modes = el('div', { class: 'lp-modes' });
     for (const m of [
       { id: 'base',     label: 'Base',      key: '1' },
@@ -166,11 +184,19 @@ export class UIManager {
       }, [m.label]);
       modes.append(b);
     }
-    panel.append(modes);
+    presetsPanel.append(modes);
+    panel.append(presetsPanel);
 
-    // Per-category layer list (populated after layers register)
+    // ── Tab panel: Layers ───────────────────────────────────────────
+    const layersPanel = el('div', {
+      class: 'lp-tab-panel', 'data-panel': 'layers', role: 'tabpanel',
+    });
+    layersPanel.append(el('p', { class: 'lp-hint' }, [
+      'Tick a dataset to show or hide it on the map.',
+    ]));
     this._els.layerList = el('div');
-    panel.append(this._els.layerList);
+    layersPanel.append(this._els.layerList);
+    panel.append(layersPanel);
     this._renderLayerList();
 
     wrap.append(toggle);
@@ -232,6 +258,17 @@ export class UIManager {
     if (!wrap) return;
     wrap.querySelectorAll('button[data-mode]').forEach(b => {
       b.classList.toggle('active', b.dataset.mode === mode);
+    });
+  }
+
+  _switchTab(name) {
+    const wrap = this._els.layersPopover;
+    if (!wrap) return;
+    wrap.querySelectorAll('.lp-tab').forEach(b => {
+      b.classList.toggle('active', b.dataset.tab === name);
+    });
+    wrap.querySelectorAll('.lp-tab-panel').forEach(p => {
+      p.classList.toggle('active', p.dataset.panel === name);
     });
   }
 
