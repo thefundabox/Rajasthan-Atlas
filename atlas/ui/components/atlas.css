@@ -243,6 +243,48 @@
   line-height: 1.4;
 }
 
+/* -- Layers-popover: curated sectioned Presets grid ------------------- */
+.layers-popover .lp-preset-section {
+  margin-bottom: 14px;
+}
+.layers-popover .lp-preset-section:last-of-type { margin-bottom: 4px; }
+.layers-popover .lp-preset-heading {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 10px 0 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--hair);
+}
+.layers-popover .lp-preset-icon {
+  font-size: 14px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.layers-popover .lp-preset-title {
+  font-family: var(--serif);
+  font-size: var(--t-caps);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 500;
+}
+.layers-popover .lp-preset-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 6px;
+}
+.layers-popover .lp-preset-grid .lp-mode {
+  margin: 0;
+  padding: 6px 8px;
+  font-size: 11.5px;
+}
+
+/* -- Layers-popover: legacy hidden mode container --------------------- */
+.layers-popover .lp-legacy-modes {
+  display: none !important;
+}
+
 /* ============================================================================
  * Legend panel — floating map-corner key for the currently-active view mode.
  * ==========================================================================*/

@@ -163,28 +163,122 @@ export class UIManager {
     panel.append(tabs);
 
     // ── Tab panel: Presets ──────────────────────────────────────────
+    // Curated, sectioned + iconed list. Each section header names a theme;
+    // each button is one meaningful view. Redundant / no-data modes are
+    // omitted deliberately.
     const presetsPanel = el('div', {
       class: 'lp-tab-panel active', 'data-panel': 'presets', role: 'tabpanel',
     });
     presetsPanel.append(el('p', { class: 'lp-hint' }, [
       'Click a preset to focus the map on a theme.',
     ]));
-    const modes = el('div', { class: 'lp-modes' });
-    for (const m of [
-      { id: 'base',     label: 'Base',      key: '1' },
-      { id: 'division', label: 'Divisions', key: '2' },
-      { id: 'new',      label: 'New (2023)',key: '3' },
-      { id: 'env',      label: 'Environment', key: '4' },
-      { id: 'reader',   label: 'Reader',    key: 'R' },
-    ]) {
-      const b = el('button', {
-        class: 'lp-mode', 'data-mode': m.id,
-        title: `${m.label} (${m.key})`,
-        onclick: () => { this.atlas.layers.setMode(m.id); this._syncModeButtons(); },
-      }, [m.label]);
-      modes.append(b);
+
+    const CURATED_PRESETS = [
+      { icon: '🗺', title: 'Base map', items: [
+        { id: 'base',     label: 'Base',                 key: '1' },
+        { id: 'division', label: 'Divisions',            key: '2' },
+        { id: 'new',      label: 'New Districts (2023)', key: '3' },
+      ]},
+      { icon: '🏔', title: 'Physical', items: [
+        { id: 'physical',     label: 'Physiographic Regions' },
+        { id: 'drainage',     label: 'Drainage Basins' },
+      ]},
+      { icon: '🌿', title: 'Environment', items: [
+        { id: 'env',          label: 'Protected Areas', key: '4' },
+      ]},
+      { icon: '☀️', title: 'Climate', items: [
+        { id: 'rainfall',     label: 'Rainfall' },
+        { id: 'temperature',  label: 'Temperature' },
+        { id: 'climate',      label: 'Climate Regions' },
+        { id: 'agro-zones',   label: 'Agro-Climatic Zones' },
+      ]},
+      { icon: '🌾', title: 'Soils & Vegetation', items: [
+        { id: 'soils',           label: 'Soil Types' },
+        { id: 'vegetation',      label: 'Natural Vegetation' },
+        { id: 'desertification', label: 'Desertification' },
+        { id: 'drought',         label: 'Drought Vulnerability' },
+      ]},
+      { icon: '🌱', title: 'Agriculture', items: [
+        { id: 'crops',        label: 'Major Crops' },
+        { id: 'agriculture',  label: 'Agro-Economic Zones' },
+        { id: 'cropping-seasons', label: 'Cropping Seasons' },
+      ]},
+      { icon: '💧', title: 'Water', items: [
+        { id: 'irrigation',  label: 'Irrigation Sources' },
+        { id: 'canals',      label: 'Canals & Command Areas' },
+        { id: 'dams',        label: 'Dams' },
+        { id: 'groundwater', label: 'Groundwater Status' },
+      ]},
+      { icon: '⛏', title: 'Geology & Minerals', items: [
+        { id: 'provinces',       label: 'Geological Provinces' },
+        { id: 'rocks',           label: 'Rock Types' },
+        { id: 'minerals',        label: 'Mineral Belts' },
+        { id: 'building-stones', label: 'Building Stones' },
+        { id: 'mining',          label: 'Mining Clusters' },
+        { id: 'petroleum',       label: 'Petroleum & Gas' },
+      ]},
+      { icon: '🏭', title: 'Industry', items: [
+        { id: 'industry',          label: 'All Industry' },
+        { id: 'industrial-regions',label: 'Industrial Regions' },
+        { id: 'industrial-clusters',label:'Sectoral Clusters' },
+        { id: 'sez',               label: 'SEZs' },
+        { id: 'handicrafts',       label: 'Handicrafts (GI)' },
+      ]},
+      { icon: '⚡', title: 'Energy', items: [
+        { id: 'energy',        label: 'Energy Mix' },
+        { id: 'renewables',    label: 'Renewables' },
+        { id: 'power-plants',  label: 'Power Plants' },
+        { id: 'solar',         label: 'Solar Parks' },
+        { id: 'wind',          label: 'Wind Farms' },
+        { id: 'transmission',  label: 'Transmission' },
+      ]},
+      { icon: '👥', title: 'Demographics', items: [
+        { id: 'population-density', label: 'Population Density' },
+        { id: 'literacy',           label: 'Literacy' },
+        { id: 'sex-ratio',          label: 'Sex Ratio' },
+        { id: 'urbanisation',       label: 'Urbanisation' },
+        { id: 'st-sc',              label: 'ST / SC %' },
+      ]},
+      { icon: '🏛', title: 'Administrative & Cultural', items: [
+        { id: 'divisions',          label: 'Revenue Divisions' },
+        { id: 'scheduled-areas',    label: 'Scheduled Areas (TSP)' },
+        { id: 'regions',            label: 'Cultural Regions' },
+        { id: 'border-districts',   label: 'Border Districts' },
+      ]},
+      { icon: '🏙', title: 'Urban', items: [
+        { id: 'urban',                label: 'Major Urban Centres' },
+        { id: 'municipal-corporations', label: 'Municipal Corps' },
+        { id: 'smart-cities',         label: 'Smart Cities' },
+        { id: 'population-corridors', label: 'Population Corridors' },
+      ]},
+    ];
+
+    for (const section of CURATED_PRESETS) {
+      const secWrap = el('div', { class: 'lp-preset-section' });
+      const h = el('div', { class: 'lp-preset-heading' });
+      h.append(el('span', { class: 'lp-preset-icon' }, [section.icon]));
+      h.append(el('span', { class: 'lp-preset-title' }, [section.title]));
+      secWrap.append(h);
+      const grid = el('div', { class: 'lp-preset-grid' });
+      for (const m of section.items) {
+        const b = el('button', {
+          class: 'lp-mode', 'data-mode': m.id,
+          title: m.key ? `${m.label} (${m.key})` : m.label,
+          onclick: () => { this.atlas.layers.setMode(m.id); this._syncModeButtons(); },
+        }, [m.label]);
+        grid.append(b);
+      }
+      secWrap.append(grid);
+      presetsPanel.append(secWrap);
     }
-    presetsPanel.append(modes);
+
+    // Legacy hidden container so plug-ins that still call
+    // `document.querySelector('.lp-modes').append(...)` don't throw.
+    // Anything appended here is not rendered — the curated grid above is the
+    // real preset list.
+    const legacyModes = el('div', { class: 'lp-modes lp-legacy-modes' });
+    presetsPanel.append(legacyModes);
+
     panel.append(presetsPanel);
 
     // ── Tab panel: Layers ───────────────────────────────────────────
