@@ -53,7 +53,7 @@
       "category": "physical",
       "data": "atlas/data/physiography.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 5,
       "featureType": "physiographic_region"
     },
@@ -64,7 +64,7 @@
       "category": "physical",
       "data": "atlas/data/drainage-basins.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 8,
       "featureType": "drainage_basin"
     },
@@ -130,7 +130,7 @@
       "category": "environment",
       "data": "atlas/data/national-parks.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 40,
       "featureType": "national_park"
     },
@@ -141,7 +141,7 @@
       "category": "environment",
       "data": "atlas/data/tiger-reserves.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 45,
       "featureType": "tiger_reserve"
     },
@@ -152,7 +152,7 @@
       "category": "environment",
       "data": "atlas/data/wildlife-sanctuaries.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 30,
       "featureType": "wildlife_sanctuary"
     },
@@ -163,7 +163,7 @@
       "category": "environment",
       "data": "atlas/data/ramsar-sites.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 50,
       "featureType": "ramsar_site"
     },
@@ -174,7 +174,7 @@
       "category": "environment",
       "data": "atlas/data/wetlands.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 35,
       "featureType": "wetland"
     },
@@ -185,7 +185,7 @@
       "category": "environment",
       "data": "atlas/data/biosphere-reserves.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 55,
       "featureType": "biosphere_reserve",
       "note": "Empty by design \u2014 Rajasthan has no MoEFCC-notified Biosphere Reserve."
@@ -197,7 +197,7 @@
       "category": "climate",
       "data": "atlas/data/rainfall.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 2,
       "featureType": "rainfall_zone"
     },
@@ -208,7 +208,7 @@
       "category": "climate",
       "data": "atlas/data/temperature.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 2,
       "featureType": "temperature_zone"
     },
@@ -219,7 +219,7 @@
       "category": "climate",
       "data": "atlas/data/climate-regions.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 2,
       "featureType": "climate_region"
     },
@@ -230,7 +230,7 @@
       "category": "climate",
       "data": "atlas/data/agro-climatic-zones.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 2,
       "featureType": "agro_climatic_zone"
     },
@@ -241,7 +241,7 @@
       "category": "climate",
       "data": "atlas/data/soil-types.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 3,
       "featureType": "soil_type"
     },
@@ -252,7 +252,7 @@
       "category": "climate",
       "data": "atlas/data/vegetation.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 3,
       "featureType": "vegetation_type"
     },
@@ -263,7 +263,7 @@
       "category": "climate",
       "data": "atlas/data/desertification.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 3,
       "featureType": "desertification_zone"
     },
@@ -274,7 +274,7 @@
       "category": "climate",
       "data": "atlas/data/drought-vulnerability.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 3,
       "featureType": "drought_zone"
     },
@@ -285,7 +285,7 @@
       "category": "agriculture",
       "data": "atlas/data/major-crops.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 4,
       "featureType": "crop"
     },
@@ -296,7 +296,7 @@
       "category": "agriculture",
       "data": "atlas/data/cropping-seasons.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 4,
       "featureType": "cropping_season"
     },
@@ -307,7 +307,7 @@
       "category": "agriculture",
       "data": "atlas/data/agro-economic-zones.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 4,
       "featureType": "agro_economic_zone"
     },
@@ -318,7 +318,7 @@
       "category": "water",
       "data": "atlas/data/irrigation-sources.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 6,
       "featureType": "irrigation_source"
     },
@@ -329,7 +329,7 @@
       "category": "water",
       "data": "atlas/data/major-canals.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 18,
       "featureType": "canal"
     },
@@ -340,7 +340,7 @@
       "category": "water",
       "data": "atlas/data/dams.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 58,
       "featureType": "dam"
     },
@@ -351,7 +351,7 @@
       "category": "water",
       "data": "atlas/data/groundwater.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 5,
       "featureType": "groundwater_zone"
     },
@@ -362,7 +362,7 @@
       "category": "water",
       "data": "atlas/data/command-areas.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 6,
       "featureType": "command_area"
     },
@@ -373,7 +373,7 @@
       "category": "geology",
       "data": "atlas/data/geological-provinces.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 2,
       "featureType": "geological_province"
     },
@@ -384,7 +384,7 @@
       "category": "geology",
       "data": "atlas/data/rock-types.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 3,
       "featureType": "rock_type"
     },
@@ -395,7 +395,7 @@
       "category": "mining",
       "data": "atlas/data/mineral-belts.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 7,
       "featureType": "mineral_belt"
     },
@@ -406,7 +406,7 @@
       "category": "mining",
       "data": "atlas/data/building-stones.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 4,
       "featureType": "building_stone"
     },
@@ -417,7 +417,7 @@
       "category": "mining",
       "data": "atlas/data/mining-clusters.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 8,
       "featureType": "mining_cluster"
     },
@@ -428,7 +428,7 @@
       "category": "mining",
       "data": "atlas/data/major-mines.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 62,
       "featureType": "mine"
     },
@@ -439,7 +439,7 @@
       "category": "geology",
       "data": "atlas/data/petroleum-gas.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 9,
       "featureType": "oil_basin"
     },
@@ -450,7 +450,7 @@
       "category": "industry",
       "data": "atlas/data/industrial-regions.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 6,
       "featureType": "industrial_region"
     },
@@ -461,7 +461,7 @@
       "category": "industry",
       "data": "atlas/data/industrial-clusters.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 7,
       "featureType": "industrial_cluster"
     },
@@ -472,7 +472,7 @@
       "category": "industry",
       "data": "atlas/data/industrial-areas.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 64,
       "featureType": "industrial_area"
     },
@@ -483,7 +483,7 @@
       "category": "industry",
       "data": "atlas/data/major-industries.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 66,
       "featureType": "major_industry"
     },
@@ -494,7 +494,7 @@
       "category": "industry",
       "data": "atlas/data/special-economic-zones.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 65,
       "featureType": "special_economic_zone"
     },
@@ -505,7 +505,7 @@
       "category": "industry",
       "data": "atlas/data/handicraft-clusters.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 63,
       "featureType": "handicraft_cluster"
     },
@@ -516,7 +516,7 @@
       "category": "energy",
       "data": "atlas/data/energy-mix.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 6,
       "featureType": "energy_mix_zone"
     },
@@ -527,7 +527,7 @@
       "category": "energy",
       "data": "atlas/data/renewable-zones.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 5,
       "featureType": "renewable_zone"
     },
@@ -538,7 +538,7 @@
       "category": "energy",
       "data": "atlas/data/transmission-corridors.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 7,
       "featureType": "transmission_corridor"
     },
@@ -549,7 +549,7 @@
       "category": "energy",
       "data": "atlas/data/power-plants.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 68,
       "featureType": "power_plant"
     },
@@ -560,7 +560,7 @@
       "category": "energy",
       "data": "atlas/data/solar-parks.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 67,
       "featureType": "solar_park"
     },
@@ -571,7 +571,7 @@
       "category": "energy",
       "data": "atlas/data/wind-farms.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 67,
       "featureType": "wind_farm"
     },
@@ -582,7 +582,7 @@
       "category": "demographic",
       "data": "atlas/data/population-density.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 2,
       "featureType": "population_density_class"
     },
@@ -593,7 +593,7 @@
       "category": "demographic",
       "data": "atlas/data/population-growth.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 2,
       "featureType": "population_growth_class"
     },
@@ -604,7 +604,7 @@
       "category": "demographic",
       "data": "atlas/data/literacy.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 2,
       "featureType": "literacy_class"
     },
@@ -615,7 +615,7 @@
       "category": "demographic",
       "data": "atlas/data/sex-ratio.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 2,
       "featureType": "sex_ratio_class"
     },
@@ -626,7 +626,7 @@
       "category": "demographic",
       "data": "atlas/data/urbanisation.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 2,
       "featureType": "urbanisation_class"
     },
@@ -637,7 +637,7 @@
       "category": "demographic",
       "data": "atlas/data/scheduled-tribes.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 2,
       "featureType": "st_class"
     },
@@ -648,7 +648,7 @@
       "category": "demographic",
       "data": "atlas/data/scheduled-castes.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 2,
       "featureType": "sc_class"
     },
@@ -659,7 +659,7 @@
       "category": "administrative",
       "data": "atlas/data/scheduled-areas.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 4,
       "featureType": "scheduled_area"
     },
@@ -670,7 +670,7 @@
       "category": "administrative",
       "data": "atlas/data/administrative-divisions.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 3,
       "featureType": "administrative_division"
     },
@@ -681,7 +681,7 @@
       "category": "human",
       "data": "atlas/data/regional-zones.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 3,
       "featureType": "regional_cultural_zone"
     },
@@ -692,7 +692,7 @@
       "category": "human",
       "data": "atlas/data/border-districts.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 4,
       "featureType": "border_district_zone"
     },
@@ -703,7 +703,7 @@
       "category": "urban",
       "data": "atlas/data/municipal-corporations.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 70,
       "featureType": "municipal_corporation"
     },
@@ -714,7 +714,7 @@
       "category": "urban",
       "data": "atlas/data/smart-cities.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 71,
       "featureType": "smart_city"
     },
@@ -725,7 +725,7 @@
       "category": "urban",
       "data": "atlas/data/urban-centres.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 72,
       "featureType": "urban_centre"
     },
@@ -736,7 +736,7 @@
       "category": "human",
       "data": "atlas/data/population-corridors.geojson",
       "searchable": true,
-      "visible": true,
+      "visible": false,
       "zIndex": 5,
       "featureType": "population_corridor"
     }

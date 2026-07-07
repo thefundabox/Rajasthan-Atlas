@@ -14,9 +14,20 @@
 import { Atlas } from '../core/AtlasCore.js';
 import { el }    from '../core/util/dom.js';
 
-// Map of mode-id → the layer(s) that should appear in the legend when
-// that mode is active.  A mode may drive multiple layers.
-const LEGEND_FOR_MODE = {
+// Map of mode-id → the layer(s) driven by that mode.
+// LegendPanel uses this to (a) auto-enable those layers when the mode is set
+// (and disable everything else that isn't a base layer), and (b) build the
+// legend key of colour swatches for the currently-painted layers.
+const MODE_TO_LAYERS = {
+  // Built-in
+  env:                  ['national-parks','tiger-reserves','wildlife-sanctuaries','ramsar-sites','wetlands','biosphere-reserves'],
+
+  // Physical
+  physical:             ['physiography','drainage-basins'],
+  hydrology:            [],
+  relief:               [],
+  physiography:         ['physiography'],
+
   // Climate · Soils · Vegetation
   soils:                ['soil-types'],
   desertification:      ['desertification'],
@@ -30,29 +41,37 @@ const LEGEND_FOR_MODE = {
   // Agriculture · Water
   crops:                ['major-crops'],
   'cropping-seasons':   ['cropping-seasons'],
-  agriculture:          ['agro-economic-zones', 'major-crops'],
-  irrigation:           ['irrigation-sources'],
+  agriculture:          ['agro-economic-zones','major-crops'],
+  irrigation:           ['irrigation-sources','major-canals'],
+  canals:               ['major-canals','command-areas'],
+  water:                ['irrigation-sources','major-canals','dams','command-areas'],
+  dams:                 ['dams'],
   groundwater:          ['groundwater'],
-  water:                ['irrigation-sources'],
 
   // Geology · Minerals · Mining
   geology:              ['geological-provinces'],
   provinces:            ['geological-provinces'],
   rocks:                ['rock-types'],
-  minerals:             ['mineral-belts'],
+  minerals:             ['mineral-belts','major-mines'],
   'mineral-belts':      ['mineral-belts'],
   'building-stones':    ['building-stones'],
-  mining:               ['mining-clusters'],
+  mining:               ['mining-clusters','major-mines'],
   petroleum:            ['petroleum-gas'],
 
   // Industry
-  industry:             ['industrial-regions', 'industrial-clusters'],
+  industry:             ['industrial-regions','industrial-clusters','industrial-areas','major-industries','special-economic-zones','handicraft-clusters'],
+  'industrial-areas':   ['industrial-areas','major-industries'],
+  sez:                  ['special-economic-zones'],
+  handicrafts:          ['handicraft-clusters'],
 
   // Energy
-  energy:               ['energy-mix', 'renewable-zones'],
+  energy:               ['energy-mix','renewable-zones','transmission-corridors','power-plants','solar-parks','wind-farms'],
   'energy-mix':         ['energy-mix'],
-  renewables:           ['renewable-zones'],
+  renewables:           ['renewable-zones','solar-parks','wind-farms'],
   transmission:         ['transmission-corridors'],
+  'power-plants':       ['power-plants'],
+  solar:                ['solar-parks'],
+  wind:                 ['wind-farms'],
 
   // Human Geography · Demographics
   demographics:         ['population-density'],
@@ -60,12 +79,23 @@ const LEGEND_FOR_MODE = {
   literacy:             ['literacy'],
   urbanisation:         ['urbanisation'],
   'sex-ratio':          ['sex-ratio'],
-  'st-sc':              ['scheduled-tribes'],
+  'st-sc':              ['scheduled-tribes','scheduled-castes'],
   regions:              ['regional-zones'],
-  'border-districts':   ['border-districts'],
-  'population-corridors': ['population-corridors'],
+  administrative:       ['administrative-divisions','scheduled-areas'],
+  divisions:            ['administrative-divisions'],
   'scheduled-areas':    ['scheduled-areas'],
+  'border-districts':   ['border-districts'],
+  urban:                ['urban-centres','municipal-corporations','smart-cities'],
+  'municipal-corporations': ['municipal-corporations'],
+  'smart-cities':       ['smart-cities'],
+  'urban-centres':      ['urban-centres'],
+  'population-corridors':['population-corridors'],
 };
+
+// Layers that are always on regardless of mode — the base map.
+const ALWAYS_VISIBLE = new Set(['districts','rivers','lakes','aravalli','peaks','thar']);
+// Kept for back-compat with the old name used elsewhere in this file.
+const LEGEND_FOR_MODE = MODE_TO_LAYERS;
 
 let panel = null;
 
@@ -87,10 +117,28 @@ Atlas.bus.on('atlas:ready', () => {
   panel = { wrap, body };
 
   const update = () => refresh();
-  Atlas.bus.on('layer:mode',       update);
+  Atlas.bus.on('layer:mode',       () => { applyModeVisibility(); update(); });
   Atlas.bus.on('layer:visibility', update);
   update();
 });
+
+/**
+ * Enforce single-preset visibility on mode change.
+ * Layers in ALWAYS_VISIBLE are untouched. Every other layer is turned OFF
+ * unless it's in the current mode's target list — then it's turned ON.
+ * This is why picking Presets → Soils cleanly shows only the soil layer,
+ * and picking Presets → Base shows only the geographic base.
+ */
+function applyModeVisibility() {
+  const mode = Atlas.layers.currentMode?.();
+  const targets = new Set(MODE_TO_LAYERS[mode] || []);
+  for (const cfg of Atlas.layers.list()) {
+    if (ALWAYS_VISIBLE.has(cfg.id)) continue;
+    const want = targets.has(cfg.id);
+    if (!!cfg.visible === want) continue;
+    Atlas.layers.setVisible?.(cfg.id, want);
+  }
+}
 
 function refresh() {
   if (!panel) return;
