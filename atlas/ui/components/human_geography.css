@@ -1,0 +1,359 @@
+/* ============================================================================
+ * Human Geography · Administrative · Demographics — muted thematic palette.
+ * Kept transparent enough to preserve the physical base map underneath.
+ * ==========================================================================*/
+
+:root {
+  /* Demographic choropleth families (per-metric quintile ramps) */
+  --demo-very-low:  #f4ecd8;
+  --demo-low:       #d8c896;
+  --demo-medium:    #b39a5c;
+  --demo-high:      #7a5a2e;
+  --demo-very-high: #4a3018;
+
+  --lit-very-low:   #f2d5c3;
+  --lit-low:        #dfa87c;
+  --lit-medium:     #b78252;
+  --lit-high:       #7c5432;
+  --lit-very-high:  #4a3018;
+
+  --sr-very-low:    #a04030;
+  --sr-low:         #cb7a55;
+  --sr-medium:      #d9b978;
+  --sr-high:        #7a8f6a;
+  --sr-very-high:   #486b4a;
+
+  --urb-very-low:   #eee4c6;
+  --urb-low:        #cbb47a;
+  --urb-medium:     #a48a4e;
+  --urb-high:       #825e2c;
+  --urb-very-high:  #4a2f14;
+
+  --st-very-low:    #f4ecd8;
+  --st-low:         #d5c9a5;
+  --st-medium:      #b0a074;
+  --st-high:        #7c6a3c;
+  --st-very-high:   #3f5a34;
+
+  --sc-very-low:    #f4ecd8;
+  --sc-low:         #d5b787;
+  --sc-medium:      #b48959;
+  --sc-high:        #855e33;
+  --sc-very-high:   #4a2f14;
+
+  --grw-very-low:   #d5e1cf;
+  --grw-low:        #b0c9a4;
+  --grw-medium:     #dfc888;
+  --grw-high:       #cc9856;
+  --grw-very-high:  #a0552d;
+
+  /* Administrative overlays */
+  --division-ink:   #4a3a24;
+  --division-fill:  rgba(255,255,255,0.05);
+  --scheduled-area: #7a4a9c;
+
+  /* Regional cultural zones — earthy differentiated palette */
+  --region-marwar:      #b48959;
+  --region-mewar:       #7c5c9a;
+  --region-hadoti:      #a7863c;
+  --region-shekhawati:  #d09660;
+  --region-dhundhar:    #c8608a;
+  --region-vagad:       #4a7a4a;
+  --region-matsya:      #8a6ba0;
+  --region-godwar:      #6b8a7a;
+  --region-mewat:       #7a9a7a;
+
+  /* Border districts — hazard-yellow international, cool-grey interstate */
+  --border-international: #b47a2a;
+  --border-interstate:    #6a748a;
+
+  /* Urban markers */
+  --mc-fill:            #4a2f14;
+  --mc-stroke:          #ffffff;
+  --sc-city-fill:       #2e6a8f;
+  --sc-city-stroke:     #ffffff;
+  --uc-fill:            #b47a2a;
+  --uc-stroke:          #ffffff;
+
+  /* Population corridors */
+  --pc-fill:            #a05528;
+  --pc-stroke:          #a05528;
+
+  --human-ink:          #4a3018;
+}
+.theme-dark {
+  --demo-very-low:  #4a4028;
+  --demo-low:       #5a4a2c;
+  --demo-medium:    #756230;
+  --demo-high:      #8a6a3a;
+  --demo-very-high: #a68152;
+
+  --lit-very-low:   #4a3020;
+  --lit-low:        #6a4a2e;
+  --lit-medium:     #856232;
+  --lit-high:       #a68152;
+  --lit-very-high:  #c69a68;
+
+  --sr-very-low:    #7a3a24;
+  --sr-low:         #8a5a34;
+  --sr-medium:      #7c6838;
+  --sr-high:        #4a5c3a;
+  --sr-very-high:   #38583a;
+
+  --urb-very-low:   #4a4028;
+  --urb-low:        #5a4a2c;
+  --urb-medium:     #6b552c;
+  --urb-high:       #8a6a3a;
+  --urb-very-high:  #a68152;
+
+  --st-very-low:    #4a4028;
+  --st-low:         #5a5030;
+  --st-medium:      #6b5f34;
+  --st-high:        #55643a;
+  --st-very-high:   #3b5836;
+
+  --sc-very-low:    #4a4028;
+  --sc-low:         #5a4830;
+  --sc-medium:      #7a5c34;
+  --sc-high:        #8a6a3a;
+  --sc-very-high:   #a68152;
+
+  --grw-very-low:   #38443a;
+  --grw-low:        #4a5b48;
+  --grw-medium:     #6a582c;
+  --grw-high:       #7c5a2a;
+  --grw-very-high:  #855628;
+
+  --division-ink:   #d4bd8b;
+  --scheduled-area: #a68eb8;
+
+  --region-marwar:      #7a5a3a;
+  --region-mewar:       #4e3a68;
+  --region-hadoti:      #6a5628;
+  --region-shekhawati:  #8a6238;
+  --region-dhundhar:    #7a3f5a;
+  --region-vagad:       #34523a;
+  --region-matsya:      #563e6a;
+  --region-godwar:      #4a5a4e;
+  --region-mewat:       #4e6a4e;
+
+  --border-international:#d4a86a;
+  --border-interstate:  #99a2b4;
+
+  --mc-fill:            #d4a86a;  --mc-stroke:      #17191d;
+  --sc-city-fill:       #7ab2d0;  --sc-city-stroke: #17191d;
+  --uc-fill:            #e5c58a;  --uc-stroke:      #17191d;
+
+  --pc-fill:            #d48447;  --pc-stroke:      #d48447;
+  --human-ink:          #e5c58a;
+}
+
+/* -- Demographic choropleths ------------------------------------------- */
+.a-map .layer-population-density path.feature,
+.a-map .layer-population-growth  path.feature,
+.a-map .layer-literacy           path.feature,
+.a-map .layer-sex-ratio          path.feature,
+.a-map .layer-urbanisation       path.feature,
+.a-map .layer-scheduled-tribes   path.feature,
+.a-map .layer-scheduled-castes   path.feature { fill: none; stroke: none; fill-opacity: 0; }
+
+/* Population density */
+.a-map svg.mode-demographics       .layer-population-density path.feature,
+.a-map svg.mode-population-density .layer-population-density path.feature {
+  fill-opacity: 0.6; stroke: rgba(0,0,0,0.12); stroke-width: 0.3;
+}
+.a-map .layer-population-density path[id$="very-low"]  { fill: var(--demo-very-low); }
+.a-map .layer-population-density path[id$="-low"]      { fill: var(--demo-low); }
+.a-map .layer-population-density path[id$="medium"]    { fill: var(--demo-medium); }
+.a-map .layer-population-density path[id$="-high"]     { fill: var(--demo-high); }
+.a-map .layer-population-density path[id$="very-high"] { fill: var(--demo-very-high); }
+
+/* Population growth */
+.a-map svg.mode-demographics .layer-population-growth path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.12); stroke-width: 0.3; }
+.a-map .layer-population-growth path[id$="-low"]       { fill: var(--grw-very-low); }
+.a-map .layer-population-growth path[id$="moderate"]   { fill: var(--grw-low); }
+.a-map .layer-population-growth path[id$="average"]    { fill: var(--grw-medium); }
+.a-map .layer-population-growth path[id$="-high"]      { fill: var(--grw-high); }
+.a-map .layer-population-growth path[id$="very-high"]  { fill: var(--grw-very-high); }
+
+/* Literacy */
+.a-map svg.mode-demographics .layer-literacy path.feature,
+.a-map svg.mode-literacy     .layer-literacy path.feature { fill-opacity: 0.6; stroke: rgba(0,0,0,0.12); stroke-width: 0.3; }
+.a-map .layer-literacy path[id$="very-low"]  { fill: var(--lit-very-low); }
+.a-map .layer-literacy path[id$="-low"]      { fill: var(--lit-low); }
+.a-map .layer-literacy path[id$="medium"]    { fill: var(--lit-medium); }
+.a-map .layer-literacy path[id$="-high"]     { fill: var(--lit-high); }
+.a-map .layer-literacy path[id$="very-high"] { fill: var(--lit-very-high); }
+
+/* Sex ratio */
+.a-map svg.mode-demographics .layer-sex-ratio path.feature,
+.a-map svg.mode-sex-ratio    .layer-sex-ratio path.feature { fill-opacity: 0.6; stroke: rgba(0,0,0,0.12); stroke-width: 0.3; }
+.a-map .layer-sex-ratio path[id$="very-low"]  { fill: var(--sr-very-low); }
+.a-map .layer-sex-ratio path[id$="-low"]      { fill: var(--sr-low); }
+.a-map .layer-sex-ratio path[id$="medium"]    { fill: var(--sr-medium); }
+.a-map .layer-sex-ratio path[id$="-high"]     { fill: var(--sr-high); }
+.a-map .layer-sex-ratio path[id$="very-high"] { fill: var(--sr-very-high); }
+
+/* Urbanisation */
+.a-map svg.mode-demographics  .layer-urbanisation path.feature,
+.a-map svg.mode-urbanisation  .layer-urbanisation path.feature { fill-opacity: 0.6; stroke: rgba(0,0,0,0.12); stroke-width: 0.3; }
+.a-map .layer-urbanisation path[id$="very-low"]  { fill: var(--urb-very-low); }
+.a-map .layer-urbanisation path[id$="-low"]      { fill: var(--urb-low); }
+.a-map .layer-urbanisation path[id$="medium"]    { fill: var(--urb-medium); }
+.a-map .layer-urbanisation path[id$="-high"]     { fill: var(--urb-high); }
+.a-map .layer-urbanisation path[id$="very-high"] { fill: var(--urb-very-high); }
+
+/* Scheduled Tribes */
+.a-map svg.mode-demographics    .layer-scheduled-tribes path.feature,
+.a-map svg.mode-st-sc           .layer-scheduled-tribes path.feature { fill-opacity: 0.6; stroke: rgba(0,0,0,0.12); stroke-width: 0.3; }
+.a-map .layer-scheduled-tribes path[id$="very-low"]  { fill: var(--st-very-low); }
+.a-map .layer-scheduled-tribes path[id$="-low"]      { fill: var(--st-low); }
+.a-map .layer-scheduled-tribes path[id$="medium"]    { fill: var(--st-medium); }
+.a-map .layer-scheduled-tribes path[id$="-high"]     { fill: var(--st-high); }
+.a-map .layer-scheduled-tribes path[id$="very-high"] { fill: var(--st-very-high); }
+
+/* Scheduled Castes */
+.a-map svg.mode-demographics .layer-scheduled-castes path.feature,
+.a-map svg.mode-st-sc        .layer-scheduled-castes path.feature { fill-opacity: 0.6; stroke: rgba(0,0,0,0.12); stroke-width: 0.3; }
+.a-map .layer-scheduled-castes path[id$="very-low"]  { fill: var(--sc-very-low); }
+.a-map .layer-scheduled-castes path[id$="-low"]      { fill: var(--sc-low); }
+.a-map .layer-scheduled-castes path[id$="medium"]    { fill: var(--sc-medium); }
+.a-map .layer-scheduled-castes path[id$="-high"]     { fill: var(--sc-high); }
+.a-map .layer-scheduled-castes path[id$="very-high"] { fill: var(--sc-very-high); }
+
+/* -- Administrative overlays ---------------------------------------- */
+.a-map .layer-administrative-divisions path.feature { fill: none; stroke: none; }
+.a-map svg.mode-administrative .layer-administrative-divisions path.feature,
+.a-map svg.mode-divisions      .layer-administrative-divisions path.feature {
+  fill: rgba(0,0,0,0); stroke: var(--division-ink); stroke-width: 1.4;
+  stroke-dasharray: 4 3; fill-opacity: 0;
+}
+
+.a-map .layer-scheduled-areas path.feature { fill: var(--scheduled-area); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-administrative   .layer-scheduled-areas path.feature,
+.a-map svg.mode-scheduled-areas  .layer-scheduled-areas path.feature { fill-opacity: 0.35; stroke: rgba(0,0,0,0.2); stroke-width: 0.4; }
+
+/* -- Regional cultural zones ---------------------------------------- */
+.a-map .layer-regional-zones path.feature { fill: var(--region-marwar); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-regions .layer-regional-zones path.feature {
+  fill-opacity: 0.42; stroke: rgba(0,0,0,0.15); stroke-width: 0.5;
+}
+.a-map .layer-regional-zones path[id$="marwar"]     { fill: var(--region-marwar); }
+.a-map .layer-regional-zones path[id$="mewar"]      { fill: var(--region-mewar); }
+.a-map .layer-regional-zones path[id$="hadoti"]     { fill: var(--region-hadoti); }
+.a-map .layer-regional-zones path[id$="shekhawati"] { fill: var(--region-shekhawati); }
+.a-map .layer-regional-zones path[id$="dhundhar"]   { fill: var(--region-dhundhar); }
+.a-map .layer-regional-zones path[id$="vagad"]      { fill: var(--region-vagad); }
+.a-map .layer-regional-zones path[id$="matsya"]     { fill: var(--region-matsya); }
+.a-map .layer-regional-zones path[id$="godwar"]     { fill: var(--region-godwar); }
+.a-map .layer-regional-zones path[id$="mewat"]      { fill: var(--region-mewat); }
+
+/* -- Border districts ------------------------------------------------ */
+.a-map .layer-border-districts path.feature { fill: var(--border-interstate); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-border-districts .layer-border-districts path.feature { fill-opacity: 0.28; stroke: var(--border-interstate); stroke-width: 0.5; stroke-dasharray: 3 2; }
+.a-map .layer-border-districts path[id$="international-pakistan"] { fill: var(--border-international); stroke: var(--border-international); }
+
+/* -- Population corridors ------------------------------------------ */
+.a-map .layer-population-corridors path.feature { fill: var(--pc-fill); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-population-corridors .layer-population-corridors path.feature { fill-opacity: 0.32; stroke: var(--pc-stroke); stroke-width: 1.2; stroke-dasharray: 5 3; }
+
+/* -- Municipal corp / smart city / urban centre points ------------- */
+.a-map .layer-municipal-corporations path.feature { fill: var(--mc-fill); stroke: var(--mc-stroke); stroke-width: 1.3; }
+.a-map svg.mode-urban .layer-municipal-corporations path.feature,
+.a-map svg.mode-municipal-corporations .layer-municipal-corporations path.feature { stroke-width: 2; }
+
+.a-map .layer-smart-cities path.feature { fill: var(--sc-city-fill); stroke: var(--sc-city-stroke); stroke-width: 1.6; }
+.a-map svg.mode-urban        .layer-smart-cities path.feature,
+.a-map svg.mode-smart-cities .layer-smart-cities path.feature { stroke-width: 2.4; }
+
+.a-map .layer-urban-centres path.feature { fill: var(--uc-fill); stroke: var(--uc-stroke); stroke-width: 1.5; }
+.a-map svg.mode-urban         .layer-urban-centres path.feature,
+.a-map svg.mode-urban-centres .layer-urban-centres path.feature { stroke-width: 2.2; }
+
+/* -- Modes dim districts + terrain --------------------------------- */
+.a-map svg.mode-demographics       .layer-districts path.feature,
+.a-map svg.mode-population-density .layer-districts path.feature,
+.a-map svg.mode-literacy           .layer-districts path.feature,
+.a-map svg.mode-sex-ratio          .layer-districts path.feature,
+.a-map svg.mode-urbanisation       .layer-districts path.feature,
+.a-map svg.mode-st-sc              .layer-districts path.feature,
+.a-map svg.mode-administrative     .layer-districts path.feature,
+.a-map svg.mode-divisions          .layer-districts path.feature,
+.a-map svg.mode-scheduled-areas    .layer-districts path.feature,
+.a-map svg.mode-regions            .layer-districts path.feature,
+.a-map svg.mode-border-districts   .layer-districts path.feature,
+.a-map svg.mode-population-corridors .layer-districts path.feature,
+.a-map svg.mode-urban              .layer-districts path.feature { opacity: 0.15; }
+
+.a-map svg.mode-demographics       #atlas-terrain,
+.a-map svg.mode-population-density #atlas-terrain,
+.a-map svg.mode-literacy           #atlas-terrain,
+.a-map svg.mode-sex-ratio          #atlas-terrain,
+.a-map svg.mode-urbanisation       #atlas-terrain,
+.a-map svg.mode-st-sc              #atlas-terrain,
+.a-map svg.mode-administrative     #atlas-terrain,
+.a-map svg.mode-divisions          #atlas-terrain,
+.a-map svg.mode-scheduled-areas    #atlas-terrain,
+.a-map svg.mode-regions            #atlas-terrain,
+.a-map svg.mode-border-districts   #atlas-terrain,
+.a-map svg.mode-population-corridors #atlas-terrain,
+.a-map svg.mode-urban              #atlas-terrain { opacity: 0.32; }
+
+/* -- Labels --------------------------------------------------------- */
+.a-map #atlas-labels .lbl-demographic {
+  fill: var(--human-ink); font-family: var(--sans); font-size: 8.5px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+}
+.a-map #atlas-labels .lbl-division {
+  fill: var(--division-ink); font-family: var(--serif); font-size: 9.5px;
+  letter-spacing: 0.18em; font-weight: 500; text-transform: uppercase; font-style: italic;
+}
+.theme-dark .a-map #atlas-labels .lbl-division { fill: var(--division-ink); }
+.a-map #atlas-labels .lbl-scheduled-area {
+  fill: var(--scheduled-area); font-family: var(--sans); font-size: 9px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+}
+.a-map #atlas-labels .lbl-cultural-region {
+  fill: var(--human-ink); font-family: var(--serif); font-size: 10.5px;
+  letter-spacing: 0.22em; font-weight: 500; text-transform: uppercase;
+}
+.a-map #atlas-labels .lbl-border {
+  fill: var(--border-international); font-family: var(--sans); font-size: 8.5px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+}
+.a-map #atlas-labels .lbl-population-corridor {
+  fill: var(--pc-fill); font-family: var(--sans); font-size: 8.5px;
+  letter-spacing: 0.16em; text-transform: uppercase;
+}
+.a-map #atlas-labels .lbl-municipal-corp {
+  fill: var(--mc-fill); font-family: var(--serif); font-size: 8px;
+  font-weight: 500;
+}
+.theme-dark .a-map #atlas-labels .lbl-municipal-corp { fill: var(--mc-fill); }
+.a-map #atlas-labels .lbl-smart-city {
+  fill: var(--sc-city-fill); font-family: var(--sans); font-size: 9px;
+  letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500;
+}
+.theme-dark .a-map #atlas-labels .lbl-smart-city { fill: var(--sc-city-fill); }
+.a-map #atlas-labels .lbl-urban-centre {
+  fill: var(--uc-fill); font-family: var(--serif); font-size: 9.5px;
+  font-weight: 500;
+}
+.theme-dark .a-map #atlas-labels .lbl-urban-centre { fill: var(--uc-fill); }
+
+/* -- Chip colours for related-features + concept chains ------------ */
+.chain-step.chip-administrative-divisions,  .ed-related-chip.chip-administrative-divisions  { background: var(--division-ink); color: white; }
+.chain-step.chip-scheduled-areas,           .ed-related-chip.chip-scheduled-areas           { background: var(--scheduled-area); color: white; }
+.chain-step.chip-regional-zones,            .ed-related-chip.chip-regional-zones            { background: var(--region-marwar); color: white; }
+.chain-step.chip-border-districts,          .ed-related-chip.chip-border-districts          { background: var(--border-international); color: white; }
+.chain-step.chip-population-corridors,      .ed-related-chip.chip-population-corridors      { background: var(--pc-fill); color: white; }
+.chain-step.chip-municipal-corporations,    .ed-related-chip.chip-municipal-corporations    { background: var(--mc-fill); color: white; }
+.chain-step.chip-smart-cities,              .ed-related-chip.chip-smart-cities              { background: var(--sc-city-fill); color: white; }
+.chain-step.chip-urban-centres,             .ed-related-chip.chip-urban-centres             { background: var(--uc-fill); color: #201f1c; }
+.chain-step.chip-population-density,        .ed-related-chip.chip-population-density        { background: var(--demo-high); color: white; }
+.chain-step.chip-literacy,                  .ed-related-chip.chip-literacy                  { background: var(--lit-high); color: white; }
+.chain-step.chip-urbanisation,              .ed-related-chip.chip-urbanisation              { background: var(--urb-high); color: white; }
+.chain-step.chip-sex-ratio,                 .ed-related-chip.chip-sex-ratio                 { background: var(--sr-high); color: white; }
+.chain-step.chip-scheduled-tribes,          .ed-related-chip.chip-scheduled-tribes          { background: var(--st-high); color: white; }
+.chain-step.chip-scheduled-castes,          .ed-related-chip.chip-scheduled-castes          { background: var(--sc-high); color: white; }
+.chain-step.chip-population-growth,         .ed-related-chip.chip-population-growth         { background: var(--grw-high); color: white; }

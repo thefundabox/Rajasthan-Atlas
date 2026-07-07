@@ -1,0 +1,184 @@
+/* ============================================================================
+ * Geology · Minerals · Mining — muted earth palette + textured mineral belts.
+ * ==========================================================================*/
+
+:root {
+  /* Geological provinces — deep-time earth colours */
+  --geo-archaean:   #9c7d5f;
+  --geo-aravalli:   #bfa176;
+  --geo-delhi:      #a68a5c;
+  --geo-malani:     #b56a4a;
+  --geo-marwar:     #d9c393;
+  --geo-vindhyan:   #cba569;
+  --geo-deccan:     #4a4633;
+  --geo-quaternary: #e6d7b0;
+
+  --rock-igneous:      #8f5636;
+  --rock-metamorphic:  #6b8a6b;
+  --rock-sedimentary:  #ceb680;
+  --rock-alluvial:     #cbb98f;
+  --rock-aeolian:      #f0dcae;
+
+  /* Mineral belts — distinct outlines over rock colours */
+  --belt-leadzinc:     #5e3e78;
+  --belt-copper:       #a55a24;
+  --belt-marble:       #cccccc;
+  --belt-granite:      #9c5e40;
+  --belt-limestone:    #b0a06e;
+  --belt-gypsum:       #d4d1b6;
+  --belt-lignite:      #4a3a24;
+  --belt-phosphate:    #8a6f42;
+  --belt-wollastonite: #b8a480;
+  --belt-sandstone:    #b46a34;
+
+  /* Mines and building stones */
+  --mine-fill:        #2b2016;
+  --mine-stroke:      #ffffff;
+  --stone-fill:       #a58860;
+
+  /* Petroleum + gas */
+  --oil-brown:        #3e2917;
+  --gas-blue-grey:    #5b7180;
+
+  /* Mining cluster overlay */
+  --cluster-outline:  #8a5a34;
+}
+.theme-dark {
+  --geo-archaean: #382c1e;
+  --geo-aravalli: #4a3d24;
+  --geo-delhi:    #443628;
+  --geo-malani:   #4a2e1e;
+  --geo-marwar:   #4a4028;
+  --geo-vindhyan: #4a3d24;
+  --geo-deccan:   #232014;
+  --geo-quaternary:#4a4028;
+  --rock-igneous: #452a1a;
+  --rock-metamorphic:#2a3a2b;
+  --rock-sedimentary:#4a4028;
+  --rock-alluvial:#4a4028;
+  --rock-aeolian: #55452a;
+  --mine-fill:    #f5e2b5; --mine-stroke:      #17191d;
+  --oil-brown:    #7a4a24;
+  --gas-blue-grey:#7a8f9d;
+}
+
+/* -- Geological provinces --------------------------------------------- */
+.a-map .layer-geological-provinces path.feature { fill: var(--geo-aravalli); stroke:none; fill-opacity:0; }
+.a-map svg.mode-geology   .layer-geological-provinces path.feature,
+.a-map svg.mode-provinces .layer-geological-provinces path.feature { fill-opacity:0.6; stroke:rgba(0,0,0,0.15); stroke-width:0.4; }
+.a-map .layer-geological-provinces path[id$="archaean-bhilwara"]  { fill: var(--geo-archaean); }
+.a-map .layer-geological-provinces path[id$="aravalli-sg"]        { fill: var(--geo-aravalli); }
+.a-map .layer-geological-provinces path[id$="delhi-sg"]           { fill: var(--geo-delhi); }
+.a-map .layer-geological-provinces path[id$="malani-igneous"]     { fill: var(--geo-malani); }
+.a-map .layer-geological-provinces path[id$="marwar-sg"]          { fill: var(--geo-marwar); }
+.a-map .layer-geological-provinces path[id$="vindhyan-basin"]     { fill: var(--geo-vindhyan); }
+.a-map .layer-geological-provinces path[id$="deccan-edge"]        { fill: var(--geo-deccan); }
+.a-map .layer-geological-provinces path[id$="quaternary-desert"]  { fill: var(--geo-quaternary); }
+
+/* -- Rock types ------------------------------------------------------- */
+.a-map .layer-rock-types path.feature { fill: var(--rock-sedimentary); stroke:none; fill-opacity:0; }
+.a-map svg.mode-rocks .layer-rock-types path.feature { fill-opacity:0.55; stroke:rgba(0,0,0,0.15); stroke-width:0.4; }
+.a-map .layer-rock-types path[id$="igneous"]     { fill: var(--rock-igneous); }
+.a-map .layer-rock-types path[id$="metamorphic"] { fill: var(--rock-metamorphic); }
+.a-map .layer-rock-types path[id$="sedimentary"] { fill: var(--rock-sedimentary); }
+.a-map .layer-rock-types path[id$="alluvial"]    { fill: var(--rock-alluvial); }
+.a-map .layer-rock-types path[id$="aeolian"]     { fill: var(--rock-aeolian); }
+
+/* -- Mineral belts — outlines dominate ------------------------------ */
+.a-map .layer-mineral-belts path.feature { fill:none; stroke:none; }
+.a-map svg.mode-minerals      .layer-mineral-belts path.feature,
+.a-map svg.mode-mineral-belts .layer-mineral-belts path.feature { fill-opacity:0.35; stroke-width:1.2; stroke-dasharray:0; }
+.a-map .layer-mineral-belts path[id$="lead-zinc"]    { fill: var(--belt-leadzinc);     stroke: var(--belt-leadzinc); }
+.a-map .layer-mineral-belts path[id$="copper"]       { fill: var(--belt-copper);       stroke: var(--belt-copper); }
+.a-map .layer-mineral-belts path[id$="marble"]       { fill: var(--belt-marble);       stroke: #6a6a6a; }
+.a-map .layer-mineral-belts path[id$="granite"]      { fill: var(--belt-granite);      stroke: var(--belt-granite); }
+.a-map .layer-mineral-belts path[id$="limestone"]    { fill: var(--belt-limestone);    stroke: var(--belt-limestone); }
+.a-map .layer-mineral-belts path[id$="gypsum"]       { fill: var(--belt-gypsum);       stroke: #6a6a6a; }
+.a-map .layer-mineral-belts path[id$="lignite"]      { fill: var(--belt-lignite);      stroke: var(--belt-lignite); }
+.a-map .layer-mineral-belts path[id$="phosphate"]    { fill: var(--belt-phosphate);    stroke: var(--belt-phosphate); }
+.a-map .layer-mineral-belts path[id$="wollastonite"] { fill: var(--belt-wollastonite); stroke: var(--belt-wollastonite); }
+.a-map .layer-mineral-belts path[id$="sandstone"]    { fill: var(--belt-sandstone);    stroke: var(--belt-sandstone); }
+
+/* -- Building stones ------------------------------------------------ */
+.a-map .layer-building-stones path.feature { fill: var(--stone-fill); stroke:none; fill-opacity:0; }
+.a-map svg.mode-building-stones .layer-building-stones path.feature { fill-opacity:0.55; stroke:rgba(0,0,0,0.15); stroke-width:0.4; }
+
+/* -- Mining clusters ------------------------------------------------ */
+.a-map .layer-mining-clusters path.feature { fill:none; stroke:none; }
+.a-map svg.mode-mining .layer-mining-clusters path.feature { fill:none; stroke: var(--cluster-outline); stroke-width:1.5; stroke-dasharray:4 3; fill-opacity:0; }
+
+/* -- Major mines — dark diamond points ------------------------------ */
+.a-map .layer-major-mines path.feature {
+  fill: var(--mine-fill);
+  stroke: var(--mine-stroke);
+  stroke-width: 1.6;
+}
+.a-map svg.mode-mining .layer-major-mines path.feature { stroke-width: 2.4; }
+
+/* -- Petroleum + gas ------------------------------------------------- */
+.a-map .layer-petroleum-gas path.feature[id$="barmer-basin"] { fill: var(--oil-brown); stroke: var(--oil-brown); fill-opacity:0.35; stroke-width:1.2; stroke-dasharray:4 2; }
+.a-map .layer-petroleum-gas path[id$="mangala-field"],
+.a-map .layer-petroleum-gas path[id$="bhagyam-aishwariya"] { fill: var(--oil-brown); stroke: white; stroke-width: 1.4; }
+.a-map .layer-petroleum-gas path[id$="raageshwari-gas"],
+.a-map .layer-petroleum-gas path[id$="jaisalmer-gas"]     { fill: var(--gas-blue-grey); stroke: white; stroke-width: 1.4; }
+.a-map svg.mode-petroleum .layer-petroleum-gas path.feature { stroke-width:2; }
+
+/* -- Thematic modes recede other content ---------------------------- */
+.a-map svg.mode-geology .layer-districts path.feature,
+.a-map svg.mode-provinces .layer-districts path.feature,
+.a-map svg.mode-rocks .layer-districts path.feature,
+.a-map svg.mode-minerals .layer-districts path.feature,
+.a-map svg.mode-mineral-belts .layer-districts path.feature,
+.a-map svg.mode-building-stones .layer-districts path.feature,
+.a-map svg.mode-mining .layer-districts path.feature,
+.a-map svg.mode-petroleum .layer-districts path.feature { opacity: 0.15; }
+
+.a-map svg.mode-geology #atlas-terrain,
+.a-map svg.mode-provinces #atlas-terrain,
+.a-map svg.mode-rocks #atlas-terrain,
+.a-map svg.mode-minerals #atlas-terrain,
+.a-map svg.mode-mineral-belts #atlas-terrain,
+.a-map svg.mode-building-stones #atlas-terrain,
+.a-map svg.mode-mining #atlas-terrain,
+.a-map svg.mode-petroleum #atlas-terrain { opacity: 0.32; }
+
+/* -- Labels --------------------------------------------------------- */
+.a-map #atlas-labels .lbl-province {
+  fill: var(--ink-2); font-family: var(--serif); font-size:9.5px;
+  letter-spacing:0.18em; font-weight:500; text-transform:uppercase;
+}
+.a-map #atlas-labels .lbl-rock {
+  fill: var(--ink-3); font-family: var(--serif); font-size:8.5px;
+  letter-spacing:0.1em; text-transform:uppercase;
+}
+.a-map #atlas-labels .lbl-mineral {
+  fill: var(--belt-leadzinc); font-family: var(--sans); font-size:9px;
+  letter-spacing:0.14em; text-transform:uppercase; font-weight:500;
+}
+.a-map #atlas-labels .lbl-stone {
+  fill: var(--stone-fill); font-family: var(--serif); font-size:9px;
+  font-style:italic;
+}
+.a-map #atlas-labels .lbl-mine {
+  fill: var(--mine-fill); font-family: var(--serif); font-size:8.5px;
+  font-weight:500;
+}
+.theme-dark .a-map #atlas-labels .lbl-mine { fill: #f0e0b7; }
+.a-map #atlas-labels .lbl-cluster {
+  fill: var(--cluster-outline); font-family: var(--serif); font-size:9px;
+  letter-spacing:0.08em; font-style:italic;
+}
+.a-map #atlas-labels .lbl-petroleum {
+  fill: var(--oil-brown); font-family: var(--serif); font-size:9px;
+  font-weight:500; letter-spacing:0.04em;
+}
+.theme-dark .a-map #atlas-labels .lbl-petroleum { fill: #d4a86a; }
+
+/* -- Chain-step + related-features chips --------------------------- */
+.chain-step.chip-geological-provinces, .ed-related-chip.chip-geological-provinces { background: var(--geo-aravalli); color: #201f1c; }
+.chain-step.chip-rock-types,       .ed-related-chip.chip-rock-types       { background: var(--rock-sedimentary); color: #201f1c; }
+.chain-step.chip-mineral-belts,    .ed-related-chip.chip-mineral-belts    { background: var(--belt-leadzinc); color: white; }
+.chain-step.chip-major-mines,      .ed-related-chip.chip-major-mines      { background: var(--mine-fill); color: white; }
+.chain-step.chip-building-stones,  .ed-related-chip.chip-building-stones  { background: var(--stone-fill); color: #201f1c; }
+.chain-step.chip-mining-clusters,  .ed-related-chip.chip-mining-clusters  { background: var(--cluster-outline); color: white; }
+.chain-step.chip-petroleum-gas,    .ed-related-chip.chip-petroleum-gas    { background: var(--oil-brown); color: white; }

@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AtlasFeature",
+  "description": "Unified feature shape used by every layer in the atlas. Layers may add extra keys to `properties` but the required core keys below MUST be present.",
+  "type": "object",
+  "required": ["type", "id", "properties", "geometry"],
+  "properties": {
+    "type":     { "const": "Feature" },
+    "id":       { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "geometry": {
+      "type": "object",
+      "required": ["type", "coordinates"],
+      "properties": {
+        "type": { "enum": ["Point","LineString","Polygon","MultiPoint","MultiLineString","MultiPolygon"] },
+        "coordinates": {}
+      }
+    },
+    "properties": {
+      "type": "object",
+      "required": ["name","type","category","state","source","lastUpdated"],
+      "properties": {
+        "name":         { "type": "string", "minLength": 1 },
+        "type":         { "type": "string", "description": "Atlas feature-type e.g. 'district','park','river'. Distinct from GeoJSON top-level type." },
+        "category":     { "type": "string", "description": "Broad grouping e.g. 'administrative','environment','physical'." },
+        "district":     { "type": ["string","null"] },
+        "division":     { "type": ["string","null"] },
+        "state":        { "type": "string" },
+        "area":         { "type": ["number","null"], "minimum": 0 },
+        "established":  { "type": ["string","null"], "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$" },
+        "source":       { "type": "string" },
+        "lastUpdated":  { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "notes":        {
+          "type": "object",
+          "description": "Neutral educational metadata: facts, learning aids, atlas significance, and comparisons commonly confused with this feature.",
+          "properties": {
+            "facts":         { "type": "array", "items": { "type": "string" }, "description": "Key factual notes about the feature." },
+            "mnemonic":      { "type": "string", "description": "A learning aid (mnemonic or pattern) that helps recall this feature." },
+            "significance":  { "type": "string", "description": "Atlas significance level: very-high, high, medium, low." },
+            "confusedWith":  { "type": "array", "items": { "type": "string" }, "description": "Features commonly confused with this one." }
+          }
+        },
+        "ecology":      {
+          "type": "object",
+          "properties": {
+            "flora":     { "type": "array", "items": { "type": "string" } },
+            "fauna":     { "type": "array", "items": { "type": "string" } },
+            "ecosystem": { "type": "string" }
+          }
+        },
+        "governance":   {
+          "type": "object",
+          "properties": {
+            "authority": { "type": "string" },
+            "status":    { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

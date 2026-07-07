@@ -1,0 +1,283 @@
+/* ============================================================================
+ * Map — cartographic styles. Muted fills, expressive strokes.
+ * ==========================================================================*/
+
+.a-map svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  background: var(--map-bg);
+}
+.a-map svg.dragging { cursor: grabbing; }
+
+/* Generic feature paint. Layer-specific paints override below. */
+.a-map path.feature {
+  fill: var(--paper-warm);
+  stroke: var(--stroke-district);
+  stroke-width: 0.5;
+  stroke-linejoin: round;
+  transition: fill var(--motion-fast) var(--ease),
+              stroke-width var(--motion-fast) var(--ease),
+              opacity var(--motion-fast) var(--ease);
+  cursor: pointer;
+  vector-effect: non-scaling-stroke;
+}
+.a-map path.feature.hovered {
+  fill: var(--sel-bg);
+  stroke: var(--sel);
+  stroke-width: 1.2;
+}
+.a-map path.feature.selected {
+  fill: var(--sel-bg) !important;
+  stroke: var(--sel);
+  stroke-width: 1.6;
+}
+
+/* -- Districts as the atlas base ---------------------------------------- */
+.a-map .layer-districts path.feature {
+  fill: var(--paper-warm);
+  stroke: var(--stroke-district);
+  stroke-width: 0.45;
+}
+
+/* Choropleth by division. */
+.a-map svg.mode-division .layer-districts path[data-division="Ajmer"]     { fill: var(--div-Ajmer);     fill-opacity: 0.85; }
+.a-map svg.mode-division .layer-districts path[data-division="Bharatpur"] { fill: var(--div-Bharatpur); fill-opacity: 0.85; }
+.a-map svg.mode-division .layer-districts path[data-division="Bikaner"]   { fill: var(--div-Bikaner);   fill-opacity: 0.85; }
+.a-map svg.mode-division .layer-districts path[data-division="Jaipur"]    { fill: var(--div-Jaipur);    fill-opacity: 0.85; }
+.a-map svg.mode-division .layer-districts path[data-division="Jodhpur"]   { fill: var(--div-Jodhpur);   fill-opacity: 0.85; }
+.a-map svg.mode-division .layer-districts path[data-division="Kota"]      { fill: var(--div-Kota);      fill-opacity: 0.85; }
+.a-map svg.mode-division .layer-districts path[data-division="Udaipur"]   { fill: var(--div-Udaipur);   fill-opacity: 0.85; }
+
+/* Highlight retained new districts. */
+.a-map svg.mode-new .layer-districts path[data-new="true"] {
+  fill: var(--sym-tr-soft); stroke: var(--sym-tr); stroke-width: 1.1;
+}
+.a-map svg.mode-new .layer-districts path[data-new="false"] { opacity: 0.35; }
+
+/* When environment / reader mode is active, districts recede. */
+.a-map svg.mode-env    .layer-districts path.feature { opacity: 0.42; }
+.a-map svg.mode-reader .layer-districts path.feature { opacity: 0.28; }
+
+/* -- Overlays: north arrow, scale bar, zoom pill, locator inset -------- */
+.a-map .overlay {
+  position: absolute;
+  pointer-events: none;
+  color: var(--ink-2);
+  font-family: var(--serif);
+  z-index: 4;
+}
+
+.a-map .overlay.north {
+  top: var(--sp-4); right: var(--sp-4);
+  width: 44px; height: 44px;
+  color: var(--ink-2);
+}
+.a-map .overlay.north svg { width: 100%; height: 100%; }
+
+.a-map .overlay.scale {
+  left: 50%; transform: translateX(-50%); bottom: var(--sp-4);
+  font-family: var(--sans);
+  font-size: var(--t-meta);
+  color: var(--ink-2);
+  text-align: center;
+  padding: 3px 10px 5px;
+  background: color-mix(in srgb, var(--card) 80%, transparent);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-sm);
+}
+.a-map .overlay.scale .bar {
+  height: 3px; background: var(--ink-2);
+  border: 1px solid var(--ink-2);
+  margin: 2px auto 0;
+}
+
+.a-map .overlay.zoom {
+  right: var(--sp-4); bottom: var(--sp-4);
+  font-family: var(--mono);
+  font-size: var(--t-meta);
+  background: color-mix(in srgb, var(--card) 80%, transparent);
+  backdrop-filter: blur(4px);
+  padding: 3px 10px;
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-pill);
+  color: var(--ink-3);
+}
+
+/* Locator inset — bottom-left mini-map with India + Rajasthan + viewport box */
+.a-map .overlay.locator {
+  left: var(--sp-4); bottom: var(--sp-4);
+  width: 140px; height: 140px;
+  background: color-mix(in srgb, var(--card) 80%, transparent);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-sm);
+  padding: 6px;
+  pointer-events: none;
+  overflow: hidden;
+}
+.a-map .overlay.locator svg { width: 100%; height: 100%; }
+.a-map .overlay.locator .lbl {
+  position: absolute; left: 8px; top: 4px;
+  font-family: var(--serif);
+  font-size: 9px;
+  letter-spacing: var(--small-caps-letter-spacing);
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.a-map .overlay.locator .india { fill: var(--paper-warm); stroke: var(--rule); stroke-width: 0.6; }
+.a-map .overlay.locator .rajasthan { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 0.8; }
+.a-map .overlay.locator .viewport { fill: none; stroke: var(--sel); stroke-width: 1.2; }
+
+/* -- Floating map controls (top-right column) --------------------------- */
+.a-map .map-controls {
+  position: absolute;
+  top: calc(var(--sp-4) + 52px);
+  right: var(--sp-4);
+  display: flex; flex-direction: column;
+  gap: 4px;
+  z-index: 5;
+}
+.a-map .map-controls .mc {
+  width: 34px; height: 34px;
+  background: var(--card);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-sm);
+  cursor: pointer;
+  color: var(--ink-2);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif);
+  font-size: 16px;
+  transition: background var(--motion-fast), border-color var(--motion-fast), color var(--motion-fast);
+  box-shadow: var(--shadow-card);
+}
+.a-map .map-controls .mc:hover { background: var(--card-quiet); border-color: var(--rule); color: var(--ink); }
+.a-map .map-controls .mc:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.a-map .map-controls .mc.active { background: var(--sel-bg); border-color: var(--sel); color: var(--ink); }
+.a-map .map-controls .divider { height: 8px; }
+
+/* -- Layers popover ---------------------------------------------------- */
+.layers-popover {
+  position: absolute;
+  top: var(--sp-4); left: var(--sp-4);
+  z-index: 6;
+}
+.layers-popover .lp-toggle {
+  background: var(--card);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-sm);
+  padding: 8px 12px;
+  cursor: pointer;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--t-small);
+  display: flex; gap: 6px; align-items: center;
+  box-shadow: var(--shadow-card);
+  transition: background var(--motion-fast);
+}
+.layers-popover .lp-toggle:hover { background: var(--card-quiet); }
+.layers-popover .lp-toggle:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.layers-popover .lp-panel {
+  position: absolute; top: calc(100% + 6px); left: 0;
+  min-width: 280px;
+  background: var(--card);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-md);
+  box-shadow: var(--shadow-float);
+  padding: var(--sp-4);
+  display: none;
+}
+.layers-popover.open .lp-panel { display: block; }
+.layers-popover h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: var(--t-caps);
+  letter-spacing: var(--small-caps-letter-spacing);
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: var(--sp-3) 0 var(--sp-2);
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--hair);
+}
+.layers-popover h4:first-child { margin-top: 0; }
+.layers-popover .lp-row {
+  display: flex; align-items: center; gap: var(--sp-2);
+  padding: 4px 0;
+  font-size: var(--t-small);
+  color: var(--ink-2);
+  cursor: pointer;
+}
+.layers-popover .lp-row:hover { color: var(--ink); }
+.layers-popover .lp-row input[type="checkbox"] {
+  margin: 0; accent-color: var(--accent);
+}
+.layers-popover .lp-row .sw {
+  width: 14px; height: 14px; border-radius: 3px;
+  border: 1px solid; margin-left: auto; flex-shrink: 0;
+}
+.layers-popover .lp-modes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 4px;
+}
+.layers-popover .lp-modes button {
+  appearance: none;
+  padding: 6px 8px;
+  border: 1px solid var(--hair);
+  background: var(--card);
+  color: var(--ink-2);
+  font-family: var(--sans);
+  font-size: var(--t-small);
+  border-radius: var(--rad-sm);
+  cursor: pointer;
+  transition: background var(--motion-fast);
+}
+.layers-popover .lp-modes button:hover { background: var(--card-quiet); }
+.layers-popover .lp-modes button.active { background: var(--sel-bg); border-color: var(--sel); color: var(--ink); }
+
+/* -- Tooltip ----------------------------------------------------------- */
+.tooltip {
+  position: fixed;
+  pointer-events: none;
+  z-index: 100;
+  background: var(--card);
+  color: var(--ink);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-sm);
+  box-shadow: var(--shadow-tip);
+  padding: 8px 10px;
+  font-family: var(--sans);
+  font-size: var(--t-small);
+  max-width: 260px;
+  opacity: 0;
+  transform: translate(-50%, calc(-100% - 12px));
+  transition: opacity var(--motion-fast) var(--ease);
+}
+.tooltip.on { opacity: 1; }
+.tooltip .tt-name {
+  font-family: var(--serif);
+  font-size: var(--t-body);
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+.tooltip .tt-meta {
+  color: var(--ink-3);
+  font-size: var(--t-meta);
+  letter-spacing: 0.03em;
+}
+.tooltip .tt-tag {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 1px 6px;
+  border-radius: var(--rad-pill);
+  background: var(--sym-tr-soft);
+  color: var(--sym-tr);
+  font-size: 9.5px;
+  letter-spacing: var(--small-caps-letter-spacing);
+  text-transform: uppercase;
+}

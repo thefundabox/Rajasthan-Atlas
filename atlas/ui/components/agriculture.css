@@ -1,0 +1,218 @@
+/* ============================================================================
+ * Agriculture · Irrigation · Water Resources — palette + mode + label styles.
+ * ==========================================================================*/
+
+:root {
+  /* Crop family — earthy greens / golds */
+  --crop-cereal:      #cebc63;
+  --crop-oilseed:     #d4a844;
+  --crop-pulse:       #a7c363;
+  --crop-cash:        #9d8244;
+  --crop-fibre:       #d6c7a3;
+  --crop-fodder:      #c1cf99;
+  --crop-horticul:    #a56e37;
+
+  --season-kharif:    #7ba05b;
+  --season-rabi:      #cf9d5e;
+  --season-zaid:      #d4b26a;
+
+  --agroecon-1:       #a58f4a;
+  --agroecon-2:       #b8a35d;
+  --agroecon-3:       #9ca470;
+  --agroecon-4:       #7b9b8a;
+
+  /* Irrigation sources */
+  --irr-canal:        #3d7db2;
+  --irr-tubewell:     #6ba5c9;
+  --irr-well:         #9ac4d6;
+  --irr-tank:         #71b5b0;
+  --irr-lift:         #4b8fa5;
+  --irr-rainfed:      #c8bc86;
+
+  /* Canals (real geometry) */
+  --canal-stroke:     #2c5da8;
+
+  /* Dams */
+  --dam-fill:         #1e3d68;
+  --dam-stroke:       #ffffff;
+
+  /* Groundwater — warning gradient */
+  --gw-over:          #8f2c1a;
+  --gw-critical:      #c46b1a;
+  --gw-semi:          #d5b34a;
+  --gw-safe:          #6d9a63;
+
+  /* Command areas — muted blue-green shades */
+  --cmd-ignp:         #b5c7d1;
+  --cmd-gang:         #a4b9c6;
+  --cmd-chambal:      #b8c8b8;
+  --cmd-mahi:         #a2b8a8;
+  --cmd-bisalpur:     #c0c5b4;
+}
+.theme-dark {
+  --crop-cereal:      #7a6d38;
+  --crop-oilseed:     #7a5f28;
+  --crop-pulse:       #4f6a28;
+  --crop-cash:        #614e28;
+  --crop-fibre:       #4b442e;
+  --crop-horticul:    #62381e;
+  --season-kharif:    #445c33;
+  --season-rabi:      #7a5b37;
+  --season-zaid:      #7d6741;
+  --agroecon-1:       #605233; --agroecon-2:       #6d5e37;
+  --agroecon-3:       #55603f; --agroecon-4:       #446256;
+  --irr-canal:        #7ba4d8; --irr-tubewell:     #5f8ba9;
+  --irr-well:         #4e7387; --irr-tank:         #3d6c68;
+  --irr-lift:         #38617b; --irr-rainfed:      #74653a;
+  --canal-stroke:     #a4c5ec;
+  --dam-fill:         #f5e2b5; --dam-stroke:       #17191d;
+  --gw-over:          #8f2c1a; --gw-critical:      #825628;
+  --gw-semi:          #766438; --gw-safe:          #445c33;
+  --cmd-ignp:         #38414a; --cmd-gang:         #36404a;
+  --cmd-chambal:      #3d4a3a; --cmd-mahi:         #35443b;
+  --cmd-bisalpur:     #3f4437;
+}
+
+/* -- Major crops --------------------------------------------------------- */
+.a-map .layer-major-crops path.feature { fill: var(--crop-cereal); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-crops       .layer-major-crops path.feature,
+.a-map svg.mode-agriculture .layer-major-crops path.feature { fill-opacity: 0.5; stroke: rgba(0,0,0,0.15); stroke-width: 0.35; }
+.a-map .layer-major-crops path[id$="wheat"]        { fill: var(--crop-cereal); }
+.a-map .layer-major-crops path[id$="mustard"]      { fill: var(--crop-oilseed); }
+.a-map .layer-major-crops path[id$="bajra"]        { fill: var(--crop-fibre); }
+.a-map .layer-major-crops path[id$="maize"]        { fill: var(--crop-fodder); }
+.a-map .layer-major-crops path[id$="gram"]         { fill: var(--crop-pulse); }
+.a-map .layer-major-crops path[id$="soybean"]      { fill: var(--crop-pulse); }
+.a-map .layer-major-crops path[id$="cotton"]       { fill: var(--crop-fibre); }
+.a-map .layer-major-crops path[id$="groundnut"]    { fill: var(--crop-oilseed); }
+.a-map .layer-major-crops path[id$="barley"]       { fill: var(--crop-cereal); }
+.a-map .layer-major-crops path[id$="pulses"]       { fill: var(--crop-pulse); }
+.a-map .layer-major-crops path[id$="oilseeds-misc"]{ fill: var(--crop-oilseed); }
+.a-map .layer-major-crops path[id$="horticulture"] { fill: var(--crop-horticul); }
+
+/* -- Cropping seasons --------------------------------------------------- */
+.a-map .layer-cropping-seasons path.feature { stroke: none; fill-opacity: 0; }
+.a-map svg.mode-cropping-seasons .layer-cropping-seasons path.feature { fill-opacity: 0.4; }
+.a-map .layer-cropping-seasons path[id$="kharif"] { fill: var(--season-kharif); }
+.a-map .layer-cropping-seasons path[id$="rabi"]   { fill: var(--season-rabi); }
+.a-map .layer-cropping-seasons path[id$="zaid"]   { fill: var(--season-zaid); }
+
+/* -- Agro-economic zones ------------------------------------------------ */
+.a-map .layer-agro-economic-zones path.feature { fill: var(--agroecon-3); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-agriculture .layer-agro-economic-zones path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-agro-economic-zones path[id*="north-canal"]     { fill: var(--irr-canal); fill-opacity: 0.4; }
+.a-map .layer-agro-economic-zones path[id*="arid-livestock"]  { fill: var(--agroecon-1); }
+.a-map .layer-agro-economic-zones path[id*="shekhawati"]      { fill: var(--agroecon-2); }
+.a-map .layer-agro-economic-zones path[id*="eastern-plain"]   { fill: var(--agroecon-3); }
+.a-map .layer-agro-economic-zones path[id*="central-mixed"]   { fill: var(--agroecon-4); }
+.a-map .layer-agro-economic-zones path[id*="southern-tribal"] { fill: var(--season-kharif); }
+.a-map .layer-agro-economic-zones path[id*="hadoti"]          { fill: var(--crop-pulse); }
+
+/* -- Irrigation sources ------------------------------------------------- */
+.a-map .layer-irrigation-sources path.feature { fill: var(--irr-canal); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-irrigation .layer-irrigation-sources path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-irrigation-sources path[id$="canals"]     { fill: var(--irr-canal); }
+.a-map .layer-irrigation-sources path[id$="tubewells"]  { fill: var(--irr-tubewell); }
+.a-map .layer-irrigation-sources path[id$="wells"]      { fill: var(--irr-well); }
+.a-map .layer-irrigation-sources path[id$="tanks"]      { fill: var(--irr-tank); }
+.a-map .layer-irrigation-sources path[id$="lift"]       { fill: var(--irr-lift); }
+.a-map .layer-irrigation-sources path[id$="rainfed"]    { fill: var(--irr-rainfed); }
+
+/* -- Command areas ------------------------------------------------------ */
+.a-map .layer-command-areas path.feature { stroke: none; fill-opacity: 0; }
+.a-map svg.mode-canals .layer-command-areas path.feature,
+.a-map svg.mode-irrigation .layer-command-areas path.feature { fill-opacity: 0.35; stroke: var(--irr-canal); stroke-width: 0.5; stroke-dasharray: 3 2; }
+.a-map .layer-command-areas path[id*="ignp"]     { fill: var(--cmd-ignp); }
+.a-map .layer-command-areas path[id*="gang"]     { fill: var(--cmd-gang); }
+.a-map .layer-command-areas path[id*="chambal"]  { fill: var(--cmd-chambal); }
+.a-map .layer-command-areas path[id*="mahi"]     { fill: var(--cmd-mahi); }
+.a-map .layer-command-areas path[id*="bisalpur"] { fill: var(--cmd-bisalpur); }
+
+/* -- Major canals — real polyline ---------------------------------------- */
+.a-map .layer-major-canals path.feature {
+  fill: none;
+  stroke: var(--canal-stroke);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.a-map svg.mode-canals .layer-major-canals path.feature,
+.a-map svg.mode-water .layer-major-canals path.feature,
+.a-map svg.mode-agriculture .layer-major-canals path.feature { stroke-width: 2.4; }
+
+/* -- Dams --------------------------------------------------------------- */
+.a-map .layer-dams path.feature {
+  fill: var(--dam-fill);
+  stroke: var(--dam-stroke);
+  stroke-width: 1.8;
+}
+.a-map svg.mode-water .layer-dams path.feature,
+.a-map svg.mode-dams .layer-dams path.feature { stroke-width: 2.5; }
+
+/* -- Groundwater — warning gradient ------------------------------------- */
+.a-map .layer-groundwater path.feature { fill: var(--gw-safe); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-groundwater .layer-groundwater path.feature,
+.a-map svg.mode-water .layer-groundwater path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.35; }
+.a-map .layer-groundwater path[id*="over-exploited"] { fill: var(--gw-over); }
+.a-map .layer-groundwater path[id$="gw-critical"]    { fill: var(--gw-critical); }
+.a-map .layer-groundwater path[id*="semi-critical"]  { fill: var(--gw-semi); }
+.a-map .layer-groundwater path[id$="gw-safe"]        { fill: var(--gw-safe); }
+
+/* -- Dim districts + PAs in thematic modes ------------------------------ */
+.a-map svg.mode-agriculture .layer-districts path.feature,
+.a-map svg.mode-crops .layer-districts path.feature,
+.a-map svg.mode-cropping-seasons .layer-districts path.feature,
+.a-map svg.mode-irrigation .layer-districts path.feature,
+.a-map svg.mode-canals .layer-districts path.feature,
+.a-map svg.mode-water .layer-districts path.feature,
+.a-map svg.mode-dams .layer-districts path.feature,
+.a-map svg.mode-groundwater .layer-districts path.feature { opacity: 0.15; }
+
+.a-map svg.mode-agriculture #atlas-terrain,
+.a-map svg.mode-crops #atlas-terrain,
+.a-map svg.mode-cropping-seasons #atlas-terrain,
+.a-map svg.mode-irrigation #atlas-terrain,
+.a-map svg.mode-canals #atlas-terrain,
+.a-map svg.mode-water #atlas-terrain,
+.a-map svg.mode-dams #atlas-terrain,
+.a-map svg.mode-groundwater #atlas-terrain { opacity: 0.35; }
+
+/* -- Labels ------------------------------------------------------------- */
+.a-map #atlas-labels .lbl-crop {
+  fill: var(--ink-2); font-family: var(--serif); font-size: 9.5px;
+  letter-spacing: 0.06em; font-weight: 500;
+}
+.a-map #atlas-labels .lbl-agroecon {
+  fill: var(--ink-3); font-family: var(--serif); font-size: 9.5px;
+  letter-spacing: 0.08em; font-style: italic;
+}
+.a-map #atlas-labels .lbl-irrigation {
+  fill: var(--irr-canal); font-family: var(--sans); font-size: 9px;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.a-map #atlas-labels .lbl-canal {
+  fill: var(--canal-stroke); font-family: var(--serif); font-size: 9.5px;
+  font-style: italic; font-weight: 500;
+}
+.a-map #atlas-labels .lbl-command {
+  fill: var(--ink-3); font-family: var(--serif); font-size: 9px;
+  letter-spacing: 0.12em; text-transform: uppercase; font-style: italic;
+}
+.a-map #atlas-labels .lbl-dam {
+  fill: var(--dam-fill); font-family: var(--serif); font-size: 8.5px;
+  font-weight: 500;
+}
+.theme-dark .a-map #atlas-labels .lbl-dam { fill: #f0e0b7; }
+.a-map #atlas-labels .lbl-gw {
+  fill: var(--gw-over); font-family: var(--sans); font-size: 9px;
+  letter-spacing: 0.06em;
+}
+
+/* -- Chip colours for related-features + concept chains ------------------ */
+.chain-step.chip-major-crops,       .ed-related-chip.chip-major-crops       { background: var(--crop-cereal); color: #201f1c; }
+.chain-step.chip-agro-economic-zones,.ed-related-chip.chip-agro-economic-zones { background: var(--agroecon-3); color: #201f1c; }
+.chain-step.chip-irrigation-sources,.ed-related-chip.chip-irrigation-sources { background: var(--irr-canal); color: white; }
+.chain-step.chip-command-areas,     .ed-related-chip.chip-command-areas     { background: var(--cmd-chambal); color: #201f1c; }
+.chain-step.chip-major-canals,      .ed-related-chip.chip-major-canals      { background: var(--canal-stroke); color: white; }
+.chain-step.chip-dams,              .ed-related-chip.chip-dams              { background: var(--dam-fill); color: white; }
+.chain-step.chip-groundwater,       .ed-related-chip.chip-groundwater       { background: var(--gw-critical); color: white; }

@@ -1,0 +1,236 @@
+/* ============================================================================
+ * Revision system — dashboard, concept chains, compare panel, quick-revision.
+ * ==========================================================================*/
+
+/* -- Revision overlay ----------------------------------------------------- */
+.revision-overlay {
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--paper) 95%, transparent);
+  backdrop-filter: blur(4px);
+  overflow-y: auto;
+  padding: var(--sp-6) var(--sp-8);
+  z-index: 20;
+  transform: translateY(100%);
+  transition: transform var(--motion-base) var(--ease);
+  pointer-events: none;
+}
+.revision-overlay.open { transform: translateY(0); pointer-events: auto; }
+.revision-overlay > .close-btn {
+  position: absolute; top: var(--sp-3); right: var(--sp-4);
+  background: none; border: 0; cursor: pointer;
+  color: var(--ink-3); font-size: 22px; padding: 6px 10px;
+  border-radius: var(--rad-sm);
+}
+.revision-overlay > .close-btn:hover { background: var(--card-quiet); color: var(--ink); }
+.revision-overlay h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: var(--t-hero);
+  color: var(--ink);
+  margin: 0 0 var(--sp-2);
+}
+.revision-overlay .stats-lede {
+  color: var(--ink-3);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: var(--t-lede);
+  margin-bottom: var(--sp-6);
+  max-width: 720px;
+}
+
+/* -- Revision cards ------------------------------------------------------- */
+.revision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--sp-3);
+}
+.revision-card {
+  background: var(--card);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-md);
+  padding: var(--sp-4);
+  cursor: pointer;
+  transition: border-color var(--motion-fast), box-shadow var(--motion-fast), transform var(--motion-fast);
+  outline: none;
+}
+.revision-card:hover, .revision-card:focus-visible {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-1px);
+}
+.revision-card .lbl {
+  color: var(--ink-3);
+  font-family: var(--sans);
+  font-size: var(--t-caps);
+  letter-spacing: var(--small-caps-letter-spacing);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.revision-card .big {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 4px;
+}
+.revision-card .sub {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: var(--t-small);
+  margin-bottom: 6px;
+}
+.revision-card .foot {
+  color: var(--ink-3);
+  font-family: var(--sans);
+  font-size: var(--t-meta);
+  border-top: 1px solid var(--hair);
+  padding-top: 6px;
+  margin-top: 6px;
+}
+
+/* -- Concept chains ------------------------------------------------------- */
+.concept-chains { display: flex; flex-direction: column; gap: var(--sp-4); }
+.chain-card {
+  background: var(--card-quiet);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-md);
+  padding: var(--sp-4);
+}
+.chain-card .chain-title {
+  font-family: var(--serif);
+  font-size: var(--t-title);
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 4px;
+}
+.chain-card .chain-story {
+  color: var(--ink-3);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: var(--t-body);
+  margin: 0 0 var(--sp-3);
+}
+.chain-steps {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+}
+.chain-step {
+  appearance: none;
+  border: 1px solid var(--hair);
+  background: var(--card);
+  padding: 6px 12px;
+  border-radius: var(--rad-pill);
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: var(--t-small);
+  color: var(--ink);
+  transition: border-color var(--motion-fast), background var(--motion-fast);
+}
+.chain-step:hover { border-color: var(--accent); background: var(--sel-bg); }
+.chain-arrow {
+  color: var(--ink-4);
+  font-family: var(--serif);
+  font-size: 16px;
+  padding: 0 2px;
+}
+
+/* Category tints on chain steps + related chips */
+.chain-step.chip-climate-regions, .ed-related-chip.chip-climate-regions { background: var(--clim-cr-semi-arid); }
+.chain-step.chip-rainfall,         .ed-related-chip.chip-rainfall        { background: var(--clim-r4); color: white; }
+.chain-step.chip-soil-types,       .ed-related-chip.chip-soil-types      { background: var(--soil-red); color: white; }
+.chain-step.chip-vegetation,       .ed-related-chip.chip-vegetation      { background: var(--veg-deciduous); color: white; }
+.chain-step.chip-tiger-reserves,   .ed-related-chip.chip-tiger-reserves  { background: var(--sym-tr); color: white; }
+.chain-step.chip-national-parks,   .ed-related-chip.chip-national-parks  { background: var(--sym-np); color: white; }
+.chain-step.chip-ramsar-sites,     .ed-related-chip.chip-ramsar-sites    { background: var(--sym-ramsar); color: white; }
+.chain-step.chip-wildlife-sanctuaries,.ed-related-chip.chip-wildlife-sanctuaries { background: var(--sym-wls); color: white; }
+
+/* -- Compare panel -------------------------------------------------------- */
+.compare-panel {
+  position: absolute;
+  left: 20px; right: 20px; bottom: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--card);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-md);
+  box-shadow: var(--shadow-float);
+  padding: var(--sp-4);
+  transform: translateY(calc(100% + 40px));
+  transition: transform var(--motion-base) var(--ease);
+  z-index: 15;
+}
+.compare-panel.open { transform: translateY(0); }
+.compare-close {
+  position: absolute; top: 6px; right: 8px;
+  background: none; border: 0; color: var(--ink-3);
+  font-size: 20px; cursor: pointer; line-height: 1; padding: 4px 8px;
+  border-radius: var(--rad-sm);
+}
+.compare-close:hover { background: var(--card-quiet); color: var(--ink); }
+.compare-panel h3 {
+  font-family: var(--serif); font-weight: 500; font-size: var(--t-title);
+  color: var(--ink); margin: 0 0 4px;
+}
+.compare-hint {
+  color: var(--ink-3); font-family: var(--serif); font-style: italic;
+  font-size: var(--t-small); margin: 0 0 var(--sp-3);
+}
+.compare-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-3);
+  margin-bottom: var(--sp-3);
+}
+.compare-slot {
+  background: var(--card-quiet);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-md);
+  padding: var(--sp-3);
+  min-height: 100px;
+}
+.compare-slot.filled { border-color: var(--accent); }
+.compare-slot-lbl {
+  font-family: var(--sans); font-size: var(--t-caps); color: var(--ink-3);
+  letter-spacing: var(--small-caps-letter-spacing); text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.compare-slot-empty {
+  color: var(--ink-4); font-family: var(--serif); font-style: italic;
+  font-size: var(--t-small);
+}
+.compare-name { font-family: var(--serif); font-size: 18px; color: var(--ink); margin-bottom: 2px; }
+.compare-kind {
+  color: var(--ink-3); font-family: var(--sans); font-size: var(--t-meta);
+  letter-spacing: 0.02em; text-transform: uppercase; margin-bottom: 8px;
+}
+.compare-dl {
+  display: grid; grid-template-columns: 90px 1fr; gap: 4px 10px; margin: 0;
+  font-size: var(--t-small);
+}
+.compare-dl dt { color: var(--ink-3); }
+.compare-dl dd { color: var(--ink); margin: 0; }
+
+.compare-diff {
+  border-top: 1px solid var(--hair); padding-top: var(--sp-3);
+}
+.compare-diff h4 {
+  font-family: var(--serif); font-size: var(--t-body); color: var(--ink);
+  margin: 0 0 6px;
+}
+.compare-diff ul { padding-left: 18px; margin: 0; color: var(--ink-2); font-size: var(--t-small); }
+.compare-diff li { margin-bottom: 3px; }
+
+/* -- Quick revision mode — hide heavy fills, dim districts ---------------- */
+.a-map svg.mode-quick-revision .layer-districts path.feature { opacity: 0.15; }
+.a-map svg.mode-quick-revision #atlas-terrain { opacity: 0.25; }
+.a-map svg.mode-quick-revision .layer-rainfall path.feature,
+.a-map svg.mode-quick-revision .layer-soil-types path.feature,
+.a-map svg.mode-quick-revision .layer-vegetation path.feature,
+.a-map svg.mode-quick-revision .layer-temperature path.feature,
+.a-map svg.mode-quick-revision .layer-agro-climatic-zones path.feature,
+.a-map svg.mode-quick-revision .layer-desertification path.feature,
+.a-map svg.mode-quick-revision .layer-drought-vulnerability path.feature { fill-opacity: 0.25; }
+.a-map svg.mode-quick-revision .layer-national-parks path.feature,
+.a-map svg.mode-quick-revision .layer-tiger-reserves path.feature { opacity: 1; stroke-width: 1.5; }
+
+@media print {
+  .revision-overlay, .compare-panel { display: none !important; }
+}

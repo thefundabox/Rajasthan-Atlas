@@ -1,0 +1,79 @@
+/* ============================================================================
+ * Print — a single A4/letter page with a clean map, legend, and attribution.
+ * All non-map chrome hides. Ink-safe colours; heavier strokes.
+ * ==========================================================================*/
+
+@media print {
+  @page { size: A4 landscape; margin: 12mm; }
+
+  html, body {
+    background: white; color: black;
+    overflow: visible; height: auto;
+  }
+  body { display: block; }
+
+  /* Hide interactive chrome. */
+  .a-toolbar, .a-left, .a-right,
+  .layers-popover, .map-controls,
+  .stats-overlay, .tooltip { display: none !important; }
+
+  /* Header becomes a print title band. */
+  .a-header {
+    display: flex; align-items: baseline; gap: 20px;
+    padding: 0 0 8pt;
+    border-bottom: 0.5pt solid black;
+    background: white; box-shadow: none;
+  }
+  .a-header h1 { font-family: var(--serif); font-size: 20pt; font-weight: 500; color: black; }
+  .a-header .subtitle { color: #333; font-size: 8pt; letter-spacing: var(--small-caps-letter-spacing); text-transform: uppercase; }
+  .a-header .h-nav { display: none; }
+
+  /* Map fills the page. */
+  .a-map {
+    position: relative;
+    height: calc(100vh - 60mm);
+    min-height: 130mm;
+    background: white;
+    break-inside: avoid;
+  }
+  .a-map svg { background: white; }
+
+  /* Print-safe overlays. */
+  .a-map .overlay.zoom { display: none; }
+  .a-map .overlay.locator { background: white; border-color: black; }
+  .a-map .overlay.scale   { background: white; border-color: black; color: black; }
+  .a-map .overlay.scale .bar { background: black; border-color: black; }
+  .a-map .overlay.north   { color: black; }
+
+  /* Districts + env layers: increase stroke weight for ink. */
+  .a-map path.feature { stroke-width: 0.6pt; }
+  .a-map .layer-national-parks       path.feature { fill: #d8e6d9; stroke: #204028; stroke-width: 0.8pt; }
+  .a-map .layer-tiger-reserves       path.feature { fill: none;    stroke: #8a3a12; stroke-width: 1.0pt; }
+  .a-map .layer-wildlife-sanctuaries path.feature { fill: #e0eede; stroke: #4a6d3d; stroke-width: 0.6pt; fill-opacity: 0.6; }
+  .a-map .layer-ramsar-sites         path.feature { fill: #d4dff2; stroke: #1c3d75; stroke-width: 0.9pt; }
+  .a-map .layer-wetlands             path.feature { fill: #d0e5e9; stroke: #1f6672; stroke-width: 0.7pt; }
+  .a-map .layer-districts            path.feature { fill: #fbfaf5; stroke: #444; stroke-width: 0.4pt; }
+
+  /* Labels — restrained ink; forced to render at print-friendly sizes. */
+  .a-map #atlas-labels text {
+    stroke: white; stroke-width: 1.5pt;
+    fill: #222;
+  }
+  .a-map #atlas-labels .lbl-district { fill: #555; font-size: 5.5pt; }
+  .a-map #atlas-labels .lbl-np       { fill: #204028; font-size: 6.5pt; }
+  .a-map #atlas-labels .lbl-tr       { fill: #8a3a12; font-size: 6pt; font-style: italic; }
+  .a-map #atlas-labels .lbl-wls      { fill: #4a6d3d; font-size: 5.5pt; }
+  .a-map #atlas-labels .lbl-ramsar   { fill: #1c3d75; font-size: 6pt; font-style: italic; }
+  .a-map #atlas-labels .lbl-wetland  { fill: #1f6672; font-size: 5.5pt; font-style: italic; }
+
+  /* Status → footer strip. */
+  .a-status {
+    background: white; color: #333;
+    border-top: 0.5pt solid black;
+    padding: 4pt 0;
+    font-family: var(--sans);
+    font-size: 7.5pt;
+    letter-spacing: 0.01em;
+  }
+  .a-status .spacer { flex: 1; }
+}

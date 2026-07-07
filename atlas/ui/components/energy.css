@@ -1,0 +1,187 @@
+/* ============================================================================
+ * Energy · Power Generation · Renewables · Grid — sun/wind/current palette.
+ * Solar in warm ochres, wind in cool teals, nuclear/thermal in slate,
+ * hydel in deep blue, transmission in electric orange.
+ * ==========================================================================*/
+
+:root {
+  /* Energy-mix zones */
+  --em-solar-west:      #d69a4a;
+  --em-hadoti:          #6a5c47;
+  --em-wind-hybrid:     #5e8a80;
+  --em-gas-north:       #a58e6a;
+  --em-hydel-south:     #4a6c8a;
+
+  /* Renewable zones */
+  --rez-solar-a:        #e0a453;
+  --rez-wind:           #6b9a94;
+  --rez-hybrid:         #a08260;
+
+  /* Transmission corridors */
+  --tc-gec:             #c46f2c;
+  --tc-hvdc:            #a05528;
+
+  /* Power plants — by fuel */
+  --pp-nuclear:         #7c4a1c;
+  --pp-coal:            #2a2a30;
+  --pp-lignite:         #4a3628;
+  --pp-gas:             #5a6a72;
+  --pp-hydel:           #1e3d68;
+
+  /* Solar / wind markers */
+  --sp-fill:            #d69a4a;
+  --sp-stroke:          #4a3018;
+
+  --wf-fill:            #4a8a86;
+  --wf-stroke:          #ffffff;
+
+  --energy-ink:         #8a4c1c;
+}
+.theme-dark {
+  --em-solar-west:      #6a4a24;
+  --em-hadoti:          #46402d;
+  --em-wind-hybrid:     #385046;
+  --em-gas-north:       #524634;
+  --em-hydel-south:     #2b3f52;
+
+  --rez-solar-a:        #7a5a2e;
+  --rez-wind:           #3d5e5a;
+  --rez-hybrid:         #5a4634;
+
+  --tc-gec:             #d48447;
+  --tc-hvdc:            #b16a34;
+
+  --pp-nuclear:         #d48447;
+  --pp-coal:            #e5e2d8;
+  --pp-lignite:         #b39274;
+  --pp-gas:             #a6bac4;
+  --pp-hydel:           #f5e2b5;
+
+  --sp-fill:            #e6b56a;  --sp-stroke: #17191d;
+  --wf-fill:            #8fc8c1;  --wf-stroke: #17191d;
+
+  --energy-ink:         #e6a672;
+}
+
+/* -- Energy-mix zones ---------------------------------------------- */
+.a-map .layer-energy-mix path.feature { fill: var(--em-solar-west); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-energy     .layer-energy-mix path.feature,
+.a-map svg.mode-energy-mix .layer-energy-mix path.feature {
+  fill-opacity: 0.45; stroke: rgba(0,0,0,0.15); stroke-width: 0.4;
+}
+.a-map .layer-energy-mix path[id$="em-solar-west"]              { fill: var(--em-solar-west); }
+.a-map .layer-energy-mix path[id$="em-nuclear-thermal-hadoti"]  { fill: var(--em-hadoti); }
+.a-map .layer-energy-mix path[id$="em-wind-hybrid"]             { fill: var(--em-wind-hybrid); }
+.a-map .layer-energy-mix path[id$="em-gas-mixed-north"]         { fill: var(--em-gas-north); }
+.a-map .layer-energy-mix path[id$="em-hydel-dam-south"]         { fill: var(--em-hydel-south); }
+
+/* -- Renewable zones ---------------------------------------------- */
+.a-map .layer-renewable-zones path.feature { fill: var(--rez-solar-a); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-renewables    .layer-renewable-zones path.feature,
+.a-map svg.mode-energy        .layer-renewable-zones path.feature {
+  fill-opacity: 0.35; stroke: rgba(0,0,0,0.15); stroke-width: 0.4;
+}
+.a-map .layer-renewable-zones path[id$="rez-solar-a"]    { fill: var(--rez-solar-a); }
+.a-map .layer-renewable-zones path[id$="rez-wind-belt"]  { fill: var(--rez-wind); }
+.a-map .layer-renewable-zones path[id$="rez-hybrid"]     { fill: var(--rez-hybrid); }
+
+/* -- Transmission corridors --------------------------------------- */
+.a-map .layer-transmission-corridors path.feature { fill: var(--tc-gec); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-transmission .layer-transmission-corridors path.feature,
+.a-map svg.mode-energy       .layer-transmission-corridors path.feature {
+  fill-opacity: 0.28; stroke: var(--tc-gec); stroke-width: 0.9; stroke-dasharray: 6 3;
+}
+.a-map .layer-transmission-corridors path[id$="tc-green-energy-corridor"] { fill: var(--tc-gec);  stroke: var(--tc-gec); }
+.a-map .layer-transmission-corridors path[id$="tc-hvdc-bhadla-north"]     { fill: var(--tc-hvdc); stroke: var(--tc-hvdc); }
+
+/* -- Power plants (diamond markers, colour by fuel) --------------- */
+.a-map .layer-power-plants path.feature {
+  fill: var(--pp-coal);
+  stroke: white;
+  stroke-width: 1.6;
+}
+.a-map svg.mode-energy       .layer-power-plants path.feature,
+.a-map svg.mode-power-plants .layer-power-plants path.feature { stroke-width: 2.4; }
+.a-map .layer-power-plants path[id$="raps-rawatbhata"]       { fill: var(--pp-nuclear); }
+.a-map .layer-power-plants path[id$="rana-pratap-sagar-hep"] { fill: var(--pp-hydel); }
+.a-map .layer-power-plants path[id$="jawahar-sagar-hep"]     { fill: var(--pp-hydel); }
+.a-map .layer-power-plants path[id$="mahi-bajaj-sagar-hep"]  { fill: var(--pp-hydel); }
+.a-map .layer-power-plants path[id$="ramgarh-gas-tps"]       { fill: var(--pp-gas); }
+.a-map .layer-power-plants path[id$="anta-gas-ntpc"]         { fill: var(--pp-gas); }
+.a-map .layer-power-plants path[id$="dholpur-ccgt"]          { fill: var(--pp-gas); }
+.a-map .layer-power-plants path[id$="barmer-lignite-tps"]    { fill: var(--pp-lignite); }
+.a-map .layer-power-plants path[id$="giral-lignite-tps"]     { fill: var(--pp-lignite); }
+
+/* -- Solar parks (warm circular markers) ------------------------- */
+.a-map .layer-solar-parks path.feature {
+  fill: var(--sp-fill);
+  stroke: var(--sp-stroke);
+  stroke-width: 1.4;
+}
+.a-map svg.mode-energy     .layer-solar-parks path.feature,
+.a-map svg.mode-solar      .layer-solar-parks path.feature,
+.a-map svg.mode-renewables .layer-solar-parks path.feature { stroke-width: 2.2; }
+
+/* -- Wind farms (teal markers) ----------------------------------- */
+.a-map .layer-wind-farms path.feature {
+  fill: var(--wf-fill);
+  stroke: var(--wf-stroke);
+  stroke-width: 1.5;
+}
+.a-map svg.mode-energy     .layer-wind-farms path.feature,
+.a-map svg.mode-wind       .layer-wind-farms path.feature,
+.a-map svg.mode-renewables .layer-wind-farms path.feature { stroke-width: 2.2; }
+
+/* -- Energy modes recede background ------------------------------- */
+.a-map svg.mode-energy              .layer-districts path.feature,
+.a-map svg.mode-energy-mix          .layer-districts path.feature,
+.a-map svg.mode-renewables          .layer-districts path.feature,
+.a-map svg.mode-transmission        .layer-districts path.feature,
+.a-map svg.mode-power-plants        .layer-districts path.feature,
+.a-map svg.mode-solar               .layer-districts path.feature,
+.a-map svg.mode-wind                .layer-districts path.feature { opacity: 0.15; }
+
+.a-map svg.mode-energy              #atlas-terrain,
+.a-map svg.mode-energy-mix          #atlas-terrain,
+.a-map svg.mode-renewables          #atlas-terrain,
+.a-map svg.mode-transmission        #atlas-terrain,
+.a-map svg.mode-power-plants        #atlas-terrain,
+.a-map svg.mode-solar               #atlas-terrain,
+.a-map svg.mode-wind                #atlas-terrain { opacity: 0.32; }
+
+/* -- Labels ------------------------------------------------------- */
+.a-map #atlas-labels .lbl-energy-mix {
+  fill: var(--energy-ink); font-family: var(--serif); font-size: 9.5px;
+  letter-spacing: 0.16em; font-weight: 500; text-transform: uppercase;
+}
+.a-map #atlas-labels .lbl-renewable {
+  fill: var(--rez-solar-a); font-family: var(--sans); font-size: 9px;
+  letter-spacing: 0.14em; font-weight: 500; text-transform: uppercase;
+}
+.a-map #atlas-labels .lbl-transmission {
+  fill: var(--tc-gec); font-family: var(--sans); font-size: 8.5px;
+  letter-spacing: 0.18em; text-transform: uppercase;
+}
+.a-map #atlas-labels .lbl-power-plant {
+  fill: var(--pp-coal); font-family: var(--serif); font-size: 8.5px;
+  font-weight: 500;
+}
+.theme-dark .a-map #atlas-labels .lbl-power-plant { fill: #e5e2d8; }
+.a-map #atlas-labels .lbl-solar-park {
+  fill: var(--sp-stroke); font-family: var(--serif); font-size: 8.5px;
+  font-style: italic; font-weight: 500;
+}
+.theme-dark .a-map #atlas-labels .lbl-solar-park { fill: #e6b56a; }
+.a-map #atlas-labels .lbl-wind-farm {
+  fill: var(--wf-fill); font-family: var(--serif); font-size: 8.5px;
+  font-style: italic;
+}
+.theme-dark .a-map #atlas-labels .lbl-wind-farm { fill: #8fc8c1; }
+
+/* -- Chip colours for related-features + concept chains ---------- */
+.chain-step.chip-energy-mix,             .ed-related-chip.chip-energy-mix             { background: var(--em-solar-west); color: white; }
+.chain-step.chip-renewable-zones,        .ed-related-chip.chip-renewable-zones        { background: var(--rez-solar-a); color: white; }
+.chain-step.chip-transmission-corridors, .ed-related-chip.chip-transmission-corridors { background: var(--tc-gec); color: white; }
+.chain-step.chip-power-plants,           .ed-related-chip.chip-power-plants           { background: var(--pp-coal); color: white; }
+.chain-step.chip-solar-parks,            .ed-related-chip.chip-solar-parks            { background: var(--sp-fill); color: #201f1c; }
+.chain-step.chip-wind-farms,             .ed-related-chip.chip-wind-farms             { background: var(--wf-fill); color: white; }

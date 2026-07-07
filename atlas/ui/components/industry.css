@@ -1,0 +1,183 @@
+/* ============================================================================
+ * Industry · SEZs · Handicrafts — factory-and-workshop palette.
+ * Muted industrial tones (rust, steel, kraft) plus warm handicraft ochres.
+ * ==========================================================================*/
+
+:root {
+  /* Industrial regions — DMIC + traditional belts */
+  --ir-dmic:            #7a6d38;
+  --ir-ajmer-kish:      #a58f4a;
+  --ir-jodhpur-pali:    #b76a4a;
+  --ir-kota-bundi:      #8a6f42;
+  --ir-udaipur-rajs:    #966a44;
+
+  /* Industrial sectoral clusters */
+  --ic-cement:          #b0a06e;
+  --ic-textile:         #7a6d38;
+  --ic-marble-stone:    #cccccc;
+  --ic-chemical:        #4a5f68;
+  --ic-auto:            #5c6a75;
+  --ic-ceramics:        #b8a480;
+  --ic-salt-wool:       #d4d1b6;
+  --ic-handicraft:      #a56e37;
+
+  /* Industrial area point marker (RIICO estate) */
+  --ia-fill:            #2c353d;
+  --ia-stroke:          #ffffff;
+
+  /* Major-industry flagship-unit marker */
+  --mi-fill:            #5b1f0d;
+  --mi-stroke:          #ffffff;
+
+  /* SEZ marker */
+  --sez-fill:           #38416a;
+  --sez-stroke:         #ffffff;
+
+  /* Handicraft-cluster marker */
+  --hc-fill:            #8a4a24;
+  --hc-stroke:          #ffffff;
+
+  /* Industry mode label ink */
+  --industry-ink:       #6a2f14;
+}
+.theme-dark {
+  --ir-dmic:            #5a4e28;
+  --ir-ajmer-kish:      #605233;
+  --ir-jodhpur-pali:    #703e28;
+  --ir-kota-bundi:      #614e28;
+  --ir-udaipur-rajs:    #6a4c34;
+
+  --ic-cement:          #766438;
+  --ic-textile:         #5a4e28;
+  --ic-marble-stone:    #4a4a4a;
+  --ic-chemical:        #38424a;
+  --ic-auto:            #3a444d;
+  --ic-ceramics:        #6a5a3a;
+  --ic-salt-wool:       #4a4838;
+  --ic-handicraft:      #62381e;
+
+  --ia-fill:            #e5c58a;  --ia-stroke:  #17191d;
+  --mi-fill:            #f5b490;  --mi-stroke:  #17191d;
+  --sez-fill:           #8fa0d4;  --sez-stroke: #17191d;
+  --hc-fill:            #e6a672;  --hc-stroke:  #17191d;
+
+  --industry-ink:       #f5b490;
+}
+
+/* -- Industrial regions ---------------------------------------------- */
+.a-map .layer-industrial-regions path.feature { fill: var(--ir-dmic); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-industry           .layer-industrial-regions path.feature,
+.a-map svg.mode-industrial-regions .layer-industrial-regions path.feature {
+  fill-opacity: 0.4; stroke: rgba(0,0,0,0.18); stroke-width: 0.5; stroke-dasharray: 4 2;
+}
+.a-map .layer-industrial-regions path[id$="ir-dmic-kbn"]         { fill: var(--ir-dmic); }
+.a-map .layer-industrial-regions path[id$="ir-ajmer-kishangarh"] { fill: var(--ir-ajmer-kish); }
+.a-map .layer-industrial-regions path[id$="ir-jodhpur-pali"]     { fill: var(--ir-jodhpur-pali); }
+.a-map .layer-industrial-regions path[id$="ir-kota-bundi"]       { fill: var(--ir-kota-bundi); }
+.a-map .layer-industrial-regions path[id$="ir-udaipur-rajsamand"]{ fill: var(--ir-udaipur-rajs); }
+
+/* -- Industrial sectoral clusters ----------------------------------- */
+.a-map .layer-industrial-clusters path.feature { fill: var(--ic-textile); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-industry            .layer-industrial-clusters path.feature,
+.a-map svg.mode-industrial-clusters .layer-industrial-clusters path.feature {
+  fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4;
+}
+.a-map .layer-industrial-clusters path[id$="ic-cement"]           { fill: var(--ic-cement); }
+.a-map .layer-industrial-clusters path[id$="ic-textile"]          { fill: var(--ic-textile); }
+.a-map .layer-industrial-clusters path[id$="ic-marble-stone"]     { fill: var(--ic-marble-stone); stroke: #6a6a6a; }
+.a-map .layer-industrial-clusters path[id$="ic-chemical-refinery"]{ fill: var(--ic-chemical); }
+.a-map .layer-industrial-clusters path[id$="ic-auto-engineering"] { fill: var(--ic-auto); }
+.a-map .layer-industrial-clusters path[id$="ic-ceramics-glass"]   { fill: var(--ic-ceramics); }
+.a-map .layer-industrial-clusters path[id$="ic-salt-wool"]        { fill: var(--ic-salt-wool); stroke: #6a6a6a; }
+.a-map .layer-industrial-clusters path[id$="ic-handicraft"]       { fill: var(--ic-handicraft); }
+
+/* -- RIICO industrial-area markers (squares) ------------------------ */
+.a-map .layer-industrial-areas path.feature {
+  fill: var(--ia-fill);
+  stroke: var(--ia-stroke);
+  stroke-width: 1.4;
+}
+.a-map svg.mode-industry         .layer-industrial-areas path.feature,
+.a-map svg.mode-industrial-areas .layer-industrial-areas path.feature { stroke-width: 2.2; }
+
+/* -- Major-industry flagship points (larger diamond) --------------- */
+.a-map .layer-major-industries path.feature {
+  fill: var(--mi-fill);
+  stroke: var(--mi-stroke);
+  stroke-width: 1.6;
+}
+.a-map svg.mode-industry .layer-major-industries path.feature,
+.a-map svg.mode-major-industries .layer-major-industries path.feature { stroke-width: 2.4; }
+
+/* -- SEZ markers ---------------------------------------------------- */
+.a-map .layer-special-economic-zones path.feature {
+  fill: var(--sez-fill);
+  stroke: var(--sez-stroke);
+  stroke-width: 1.6;
+}
+.a-map svg.mode-industry .layer-special-economic-zones path.feature,
+.a-map svg.mode-sez      .layer-special-economic-zones path.feature { stroke-width: 2.4; }
+
+/* -- Handicraft-cluster markers ------------------------------------ */
+.a-map .layer-handicraft-clusters path.feature {
+  fill: var(--hc-fill);
+  stroke: var(--hc-stroke);
+  stroke-width: 1.5;
+}
+.a-map svg.mode-industry     .layer-handicraft-clusters path.feature,
+.a-map svg.mode-handicrafts  .layer-handicraft-clusters path.feature { stroke-width: 2.2; }
+
+/* -- Industry modes recede background ------------------------------- */
+.a-map svg.mode-industry            .layer-districts path.feature,
+.a-map svg.mode-industrial-regions  .layer-districts path.feature,
+.a-map svg.mode-industrial-clusters .layer-districts path.feature,
+.a-map svg.mode-industrial-areas    .layer-districts path.feature,
+.a-map svg.mode-major-industries    .layer-districts path.feature,
+.a-map svg.mode-sez                 .layer-districts path.feature,
+.a-map svg.mode-handicrafts         .layer-districts path.feature { opacity: 0.15; }
+
+.a-map svg.mode-industry            #atlas-terrain,
+.a-map svg.mode-industrial-regions  #atlas-terrain,
+.a-map svg.mode-industrial-clusters #atlas-terrain,
+.a-map svg.mode-industrial-areas    #atlas-terrain,
+.a-map svg.mode-major-industries    #atlas-terrain,
+.a-map svg.mode-sez                 #atlas-terrain,
+.a-map svg.mode-handicrafts         #atlas-terrain { opacity: 0.32; }
+
+/* -- Labels --------------------------------------------------------- */
+.a-map #atlas-labels .lbl-industrial-region {
+  fill: var(--industry-ink); font-family: var(--serif); font-size: 9.5px;
+  letter-spacing: 0.16em; font-weight: 500; text-transform: uppercase;
+}
+.a-map #atlas-labels .lbl-industrial-cluster {
+  fill: var(--ink-3); font-family: var(--serif); font-size: 9px;
+  letter-spacing: 0.06em; font-style: italic;
+}
+.a-map #atlas-labels .lbl-industrial-area {
+  fill: var(--ia-fill); font-family: var(--sans); font-size: 8.5px;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.theme-dark .a-map #atlas-labels .lbl-industrial-area { fill: #e5c58a; }
+.a-map #atlas-labels .lbl-major-industry {
+  fill: var(--mi-fill); font-family: var(--serif); font-size: 8.5px;
+  font-weight: 500;
+}
+.theme-dark .a-map #atlas-labels .lbl-major-industry { fill: #f5b490; }
+.a-map #atlas-labels .lbl-sez {
+  fill: var(--sez-fill); font-family: var(--sans); font-size: 8.5px;
+  letter-spacing: 0.14em; font-weight: 500; text-transform: uppercase;
+}
+.theme-dark .a-map #atlas-labels .lbl-sez { fill: #8fa0d4; }
+.a-map #atlas-labels .lbl-handicraft {
+  fill: var(--hc-fill); font-family: var(--serif); font-size: 8.5px;
+  font-style: italic;
+}
+.theme-dark .a-map #atlas-labels .lbl-handicraft { fill: #e6a672; }
+
+/* -- Chip colours for related-features + concept chains ------------- */
+.chain-step.chip-industrial-regions,      .ed-related-chip.chip-industrial-regions      { background: var(--ir-dmic); color: white; }
+.chain-step.chip-industrial-clusters,     .ed-related-chip.chip-industrial-clusters     { background: var(--ic-textile); color: white; }
+.chain-step.chip-industrial-areas,        .ed-related-chip.chip-industrial-areas        { background: var(--ia-fill); color: white; }
+.chain-step.chip-major-industries,        .ed-related-chip.chip-major-industries        { background: var(--mi-fill); color: white; }
+.chain-step.chip-special-economic-zones,  .ed-related-chip.chip-special-economic-zones  { background: var(--sez-fill); color: white; }
+.chain-step.chip-handicraft-clusters,     .ed-related-chip.chip-handicraft-clusters     { background: var(--hc-fill); color: white; }

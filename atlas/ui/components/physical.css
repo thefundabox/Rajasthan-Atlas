@@ -1,0 +1,265 @@
+/* ============================================================================
+ * Physical geography — the atlas's landscape base layer.
+ * Muted, subdued palette; the physical map should read as a paper ground
+ * beneath the thematic layers, not as a colour dashboard.
+ * ==========================================================================*/
+
+/* -- Terrain raster — the very bottom of the stack ----------------------- */
+.a-map #atlas-terrain image {
+  pointer-events: none;
+  opacity: 0.86;
+  mix-blend-mode: multiply;   /* multiply onto the paper background */
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Hide terrain in pure administrative modes so districts read cleanly. */
+.a-map svg.mode-base     #atlas-terrain { display: none; }
+.a-map svg.mode-division #atlas-terrain { display: none; }
+.a-map svg.mode-new      #atlas-terrain { display: none; }
+
+/* In terrain mode, promote the relief and dim the thematic layers heavily. */
+.a-map svg.mode-terrain #atlas-terrain             { opacity: 1; }
+.a-map svg.mode-terrain .layer-districts path.feature       { opacity: 0.18; }
+.a-map svg.mode-terrain .layer-physiography path.feature    { opacity: 0.25; }
+.a-map svg.mode-terrain .layer-national-parks path.feature,
+.a-map svg.mode-terrain .layer-tiger-reserves path.feature,
+.a-map svg.mode-terrain .layer-wildlife-sanctuaries path.feature { opacity: 0.35; }
+
+/* In dark theme, blend differently so the terrain is legible on a dark canvas. */
+.theme-dark .a-map #atlas-terrain image {
+  mix-blend-mode: screen;
+  opacity: 0.35;
+}
+
+:root {
+  --phys-region-1:        #efe6cf;   /* Thar desert region — warm sand */
+  --phys-region-1-stroke: #a5895d;
+  --phys-region-2:        #dfe0c8;   /* Aravalli hill region — pale olive */
+  --phys-region-2-stroke: #7c8a5a;
+  --phys-region-3:        #e5e6ce;   /* Eastern plains — soft green */
+  --phys-region-3-stroke: #8a9558;
+  --phys-region-4:        #e2d7bd;   /* Southeastern plateau — buff */
+  --phys-region-4-stroke: #967a4e;
+  --phys-region-5:        #d9e0c2;   /* Southern Aravalli / Mahi — moss */
+  --phys-region-5-stroke: #6d8a5b;
+
+  --phys-basin-fill:      transparent;
+  --phys-basin-stroke:    #7c7048;
+
+  --phys-water:           #d6e5ed;
+  --phys-water-stroke:    #2c5da8;
+  --phys-river-stroke:    #3a6fb0;
+  --phys-desert-fill:     #f0e2ba;
+  --phys-desert-stroke:   #b8925c;
+  --phys-desert-hatch:    rgba(184, 146, 92, 0.25);
+  --phys-aravalli-stroke: #6b5735;
+  --phys-peak-fill:       #4b3b21;
+  --phys-peak-stroke:     #ffffff;
+}
+.theme-dark {
+  --phys-region-1:        #2d271a;
+  --phys-region-1-stroke: #7a6740;
+  --phys-region-2:        #23291e;
+  --phys-region-2-stroke: #5c6f43;
+  --phys-region-3:        #232a1c;
+  --phys-region-3-stroke: #647045;
+  --phys-region-4:        #2b2419;
+  --phys-region-4-stroke: #7d6844;
+  --phys-region-5:        #232b1e;
+  --phys-region-5-stroke: #526f42;
+  --phys-basin-stroke:    #635944;
+  --phys-water:           #253038;
+  --phys-water-stroke:    #7ba4d8;
+  --phys-river-stroke:    #7ba4d8;
+  --phys-desert-fill:     #3a2f18;
+  --phys-desert-stroke:   #9a7c47;
+  --phys-aravalli-stroke: #ac9865;
+  --phys-peak-fill:       #f5e2b5;
+  --phys-peak-stroke:     #17191d;
+}
+
+/* -- Physiographic regions ------------------------------------------------- */
+.a-map .layer-physiography path.feature {
+  fill: var(--phys-region-3);
+  stroke: var(--phys-region-3-stroke);
+  stroke-width: 0.55;
+  fill-opacity: 0.55;
+}
+.a-map .layer-physiography path[id$="thar-desert-region"]          { fill: var(--phys-region-1); stroke: var(--phys-region-1-stroke); }
+.a-map .layer-physiography path[id$="aravalli-hills-region"]       { fill: var(--phys-region-2); stroke: var(--phys-region-2-stroke); }
+.a-map .layer-physiography path[id$="eastern-plains-region"]       { fill: var(--phys-region-3); stroke: var(--phys-region-3-stroke); }
+.a-map .layer-physiography path[id$="southeastern-plateau-region"] { fill: var(--phys-region-4); stroke: var(--phys-region-4-stroke); }
+.a-map .layer-physiography path[id$="southern-hills-region"]       { fill: var(--phys-region-5); stroke: var(--phys-region-5-stroke); }
+
+/* -- Drainage basins — outlined only ------------------------------------- */
+.a-map .layer-drainage-basins path.feature {
+  fill: none;
+  stroke: var(--phys-basin-stroke);
+  stroke-width: 0.5;
+  stroke-dasharray: 3 2;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+.a-map svg.mode-physiography .layer-drainage-basins path.feature,
+.a-map svg.mode-hydrology    .layer-drainage-basins path.feature { opacity: 0.7; }
+
+/* -- Thar Desert ---------------------------------------------------------- */
+.a-map .layer-thar path.feature {
+  fill: var(--phys-desert-fill);
+  stroke: var(--phys-desert-stroke);
+  stroke-width: 0.6;
+  fill-opacity: 0.55;
+}
+
+/* -- Aravalli main axis --------------------------------------------------- */
+.a-map .layer-aravalli path.feature {
+  fill: none;
+  stroke: var(--phys-aravalli-stroke);
+  stroke-width: 1.4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 6 3 1 3;
+}
+
+/* -- Rivers — variable stroke width per river order (visual hierarchy) ---- */
+.a-map .layer-rivers path.feature {
+  fill: none;
+  stroke: var(--phys-river-stroke);
+  stroke-width: 0.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  opacity: 0.9;
+}
+/* Major trunk rivers — thickest */
+.a-map .layer-rivers path[id$="chambal-river"]   { stroke-width: 1.5; }
+.a-map .layer-rivers path[id$="mahi-river"]      { stroke-width: 1.3; }
+.a-map .layer-rivers path[id$="luni-river"]      { stroke-width: 1.3; }
+.a-map .layer-rivers path[id$="banas-river"]     { stroke-width: 1.3; }
+.a-map .layer-rivers path[id$="sabarmati-river"] { stroke-width: 1.1; }
+.a-map .layer-rivers path[id$="banganga-river"]  { stroke-width: 1.0; }
+.a-map .layer-rivers path[id$="ghaggar-river"]   { stroke-width: 1.0; }
+.a-map .layer-rivers path[id$="parbati-river"]   { stroke-width: 1.0; }
+.a-map .layer-rivers path[id$="kalisindh-river"] { stroke-width: 1.0; }
+/* Medium tributaries */
+.a-map .layer-rivers path[id$="berach-river"]    { stroke-width: 0.8; }
+.a-map .layer-rivers path[id$="kothari-river"]   { stroke-width: 0.7; }
+.a-map .layer-rivers path[id$="bandi-river"]     { stroke-width: 0.7; }
+.a-map .layer-rivers path[id$="jawai-river"]     { stroke-width: 0.7; }
+.a-map .layer-rivers path[id$="sukri-river"]     { stroke-width: 0.7; }
+.a-map .layer-rivers path[id$="west-banas-river"]{ stroke-width: 0.8; }
+.a-map .layer-rivers path[id$="parvan-river"]    { stroke-width: 0.8; }
+.a-map .layer-rivers path[id$="som-river"]       { stroke-width: 0.7; }
+.a-map .layer-rivers path[id$="jakham-river"]    { stroke-width: 0.6; }
+.a-map .layer-rivers path[id$="anas-river"]      { stroke-width: 0.7; }
+/* Minor rivers keep the 0.5 default. */
+.a-map .layer-rivers path.feature.selected { stroke-width: 2.0; opacity: 1; }
+.a-map .layer-rivers path.feature.hovered  { stroke-width: 1.3; opacity: 1; }
+
+/* -- Lakes — atlas-grade shoreline with subtle drop-shadow ---------------- */
+.a-map .layer-lakes path.feature {
+  fill: var(--phys-water);
+  stroke: var(--phys-water-stroke);
+  stroke-width: 0.9;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0.5px 1.2px rgba(28,27,24,0.18));
+}
+.theme-dark .a-map .layer-lakes path.feature {
+  filter: drop-shadow(0 0.5px 1.4px rgba(0,0,0,0.6));
+}
+.a-map .layer-lakes path.feature.selected {
+  stroke-width: 1.6;
+}
+
+/* -- Peaks ---------------------------------------------------------------- */
+.a-map .layer-peaks path.feature[d^="M"] {
+  fill: var(--phys-peak-fill);
+  stroke: var(--phys-peak-stroke);
+  stroke-width: 1.6;
+}
+
+/* -- Mode-based emphasis -------------------------------------------------- */
+
+/* Physical umbrella: keep everything visible, dim districts and PAs. */
+.a-map svg.mode-physical .layer-districts path.feature { opacity: 0.35; }
+.a-map svg.mode-physical .layer-national-parks path.feature,
+.a-map svg.mode-physical .layer-tiger-reserves path.feature,
+.a-map svg.mode-physical .layer-wildlife-sanctuaries path.feature { opacity: 0.55; }
+
+/* Hydrology mode — emphasise rivers and lakes; recede physical regions. */
+.a-map svg.mode-hydrology .layer-districts path.feature       { opacity: 0.28; }
+.a-map svg.mode-hydrology .layer-physiography path.feature    { opacity: 0.4; }
+.a-map svg.mode-hydrology .layer-rivers path.feature          { stroke-width: 1.0; }
+.a-map svg.mode-hydrology .layer-lakes path.feature           { stroke-width: 1.1; }
+
+/* Relief mode — emphasise Aravalli, Thar, peaks. */
+.a-map svg.mode-relief .layer-districts path.feature          { opacity: 0.28; }
+.a-map svg.mode-relief .layer-physiography path.feature       { opacity: 0.35; }
+.a-map svg.mode-relief .layer-drainage-basins path.feature    { opacity: 0; }
+.a-map svg.mode-relief .layer-aravalli path.feature           { stroke-width: 2.0; }
+.a-map svg.mode-relief .layer-thar path.feature               { fill-opacity: 0.75; }
+
+/* Physiography mode — emphasise the regions themselves. */
+.a-map svg.mode-physiography .layer-districts path.feature    { opacity: 0.22; }
+.a-map svg.mode-physiography .layer-physiography path.feature { fill-opacity: 0.75; stroke-width: 0.9; }
+
+/* -- Labels — new physical-geography label classes ------------------------ */
+
+.a-map #atlas-labels .lbl-river {
+  fill: var(--phys-river-stroke);
+  font-family: var(--serif);
+  font-size: 8.5px;
+  font-style: italic;
+  font-weight: 500;
+}
+.a-map #atlas-labels .lbl-lake {
+  fill: var(--phys-river-stroke);
+  font-family: var(--serif);
+  font-size: 8px;
+  font-style: italic;
+}
+.a-map #atlas-labels .lbl-peak {
+  fill: var(--phys-peak-fill);
+  font-family: var(--serif);
+  font-size: 8.5px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.a-map #atlas-labels .lbl-peak-quiet {
+  fill: var(--ink-3);
+  font-family: var(--sans);
+  font-size: 7px;
+}
+.a-map #atlas-labels .lbl-aravalli {
+  fill: var(--phys-aravalli-stroke);
+  font-family: var(--serif);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.a-map #atlas-labels .lbl-desert {
+  fill: var(--phys-desert-stroke);
+  font-family: var(--serif);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+.a-map #atlas-labels .lbl-region {
+  fill: var(--ink-3);
+  font-family: var(--serif);
+  font-size: 9.5px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+.a-map #atlas-labels .lbl-basin {
+  fill: var(--phys-basin-stroke);
+  font-family: var(--serif);
+  font-size: 8.5px;
+  font-style: italic;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}

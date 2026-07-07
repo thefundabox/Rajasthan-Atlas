@@ -1,0 +1,43 @@
+/* ============================================================================
+ * Environment & Protected Areas — refined symbology.
+ * Muted paper-tinted fills; expressive strokes carry identity.
+ * UNESCO features get a subtle gold halo; point-only features get a dashed ring.
+ * ==========================================================================*/
+
+.a-map .layer-national-parks       path.feature { fill: var(--sym-np-soft);       stroke: var(--sym-np);       stroke-width: 0.9;  fill-opacity: 0.9; }
+.a-map .layer-tiger-reserves       path.feature { fill: var(--sym-tr-soft);       stroke: var(--sym-tr);       stroke-width: 1.0;  fill-opacity: 0.55; stroke-dasharray: 0; }
+.a-map .layer-wildlife-sanctuaries path.feature { fill: var(--sym-wls-soft);      stroke: var(--sym-wls);      stroke-width: 0.6;  fill-opacity: 0.55; }
+.a-map .layer-ramsar-sites         path.feature { fill: var(--sym-ramsar-soft);   stroke: var(--sym-ramsar);   stroke-width: 1.1;  fill-opacity: 0.85; }
+.a-map .layer-wetlands             path.feature { fill: var(--sym-wetland-soft);  stroke: var(--sym-wetland);  stroke-width: 0.8;  fill-opacity: 0.7; }
+.a-map .layer-biosphere-reserves   path.feature { fill: var(--sym-biosphere-soft);stroke: var(--sym-biosphere);stroke-width: 0.9; }
+
+/* Point-only features (Sariska NP, Sitamata WLS, Khichan, Menar, Dholpur–Karauli TR).
+   Renderer emits them as small filled circles via a d="Ma…" path. We enlarge
+   the point marker via non-scaling-stroke and give it a dashed outer ring so
+   its epistemic status (boundary not published) is legible at a glance. */
+.a-map .layer-national-parks       path.feature[d^="M"][d*="a2.5"] { fill: white; stroke-width: 2.4; }
+.a-map .layer-tiger-reserves       path.feature[d^="M"][d*="a2.5"] { fill: white; stroke-width: 2.4; }
+.a-map .layer-wildlife-sanctuaries path.feature[d^="M"][d*="a2.5"] { fill: white; stroke-width: 2.4; }
+.a-map .layer-ramsar-sites         path.feature[d^="M"][d*="a2.5"] { fill: white; stroke-width: 2.4; }
+.a-map .layer-wetlands             path.feature[d^="M"][d*="a2.5"] { fill: white; stroke-width: 2.4; }
+
+/* UNESCO WHS gold halo (currently only Keoladeo Ghana). Set as data-attribute
+   in the renderer via the layer's style function; for now, target by feature id. */
+.a-map path.feature[id$="keoladeo-np"],
+.a-map path.feature[id$="keoladeo-ramsar"] {
+  filter: drop-shadow(0 0 3px var(--gold));
+}
+
+/* Env highlight mode: dim districts, keep env layers vivid. */
+.a-map svg.mode-env #atlas-layers path.feature { stroke-width: 1.3; }
+.a-map svg.mode-env .layer-districts path.feature { stroke-width: 0.4; }
+
+/* Reader mode inherits env mode's dim on districts (defined in atlas.css). */
+
+/* -- Legend swatches per env category (used inside the layers popover) - */
+.legend-list .sw-national-parks       { background: var(--sym-np-soft);       border-color: var(--sym-np); }
+.legend-list .sw-tiger-reserves       { background: var(--sym-tr-soft);       border-color: var(--sym-tr); }
+.legend-list .sw-wildlife-sanctuaries { background: var(--sym-wls-soft);      border-color: var(--sym-wls); }
+.legend-list .sw-ramsar-sites         { background: var(--sym-ramsar-soft);   border-color: var(--sym-ramsar); }
+.legend-list .sw-wetlands             { background: var(--sym-wetland-soft);  border-color: var(--sym-wetland); }
+.legend-list .sw-biosphere-reserves   { background: var(--sym-biosphere-soft);border-color: var(--sym-biosphere); }

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rajasthan Atlas</title>
+  <meta name="description" content="An interactive digital atlas of Rajasthan — 41 districts, protected areas, biosphere, and environment layers." />
+
+  <link rel="stylesheet" href="atlas/ui/styles/theme.css" />
+  <link rel="stylesheet" href="atlas/ui/styles/layout.css" />
+  <link rel="stylesheet" href="atlas/ui/styles/print.css" />
+  <link rel="stylesheet" href="atlas/ui/components/atlas.css" />
+  <link rel="stylesheet" href="atlas/ui/components/components.css" />
+  <link rel="stylesheet" href="atlas/ui/components/labels.css" />
+  <link rel="stylesheet" href="atlas/ui/components/environment.css" />
+  <link rel="stylesheet" href="atlas/ui/components/physical.css" />
+  <link rel="stylesheet" href="atlas/ui/components/climate.css" />
+  <link rel="stylesheet" href="atlas/ui/components/agriculture.css" />
+  <link rel="stylesheet" href="atlas/ui/components/geology.css" />
+  <link rel="stylesheet" href="atlas/ui/components/industry.css" />
+  <link rel="stylesheet" href="atlas/ui/components/energy.css" />
+  <link rel="stylesheet" href="atlas/ui/components/human_geography.css" />
+  <link rel="stylesheet" href="atlas/ui/components/revision.css" />
+  <link rel="stylesheet" href="atlas/ui/components/editorial.css" />
+</head>
+<body>
+
+  <header class="a-header">
+    <div>
+      <h1>Rajasthan Atlas</h1>
+      <div class="subtitle">An interactive digital atlas · 41 Districts · 7 Divisions</div>
+    </div>
+    <div class="search-wrap">
+      <div class="search">
+        <span class="icon">⌕</span>
+        <input type="search" placeholder="Search (press / to focus)…" spellcheck="false" autocomplete="off" aria-label="Search the atlas" />
+        <button class="clear" aria-label="Clear search">×</button>
+        <div class="search-results" role="listbox"></div>
+      </div>
+    </div>
+    <!-- .h-nav populated by UIManager -->
+  </header>
+
+  <main class="a-map" aria-label="Map of Rajasthan"></main>
+
+  <aside class="a-right" aria-label="Selection details">
+    <div class="detail-slot"></div>
+  </aside>
+
+  <footer class="a-status" aria-live="polite">
+    <div class="s-item"><span class="s-label">Loading…</span></div>
+  </footer>
+
+  <script type="module">
+    import { Atlas } from './atlas/core/AtlasCore.js';
+    import './atlas/layers/TerrainLayer.js';
+    import './atlas/layers/EnvironmentLayer.js';
+    import './atlas/layers/HydrologyLayer.js';
+    import './atlas/layers/ReliefLayer.js';
+    import './atlas/layers/PhysiographyLayer.js';
+    import './atlas/layers/LocatorInset.js';
+    import './atlas/layers/ClimateLayer.js';
+    import './atlas/layers/SoilLayer.js';
+    import './atlas/layers/VegetationLayer.js';
+    import './atlas/layers/AgricultureLayer.js';
+    import './atlas/layers/IrrigationLayer.js';
+    import './atlas/layers/WaterResourcesLayer.js';
+    import './atlas/layers/GeologyLayer.js';
+    import './atlas/layers/MineralsLayer.js';
+    import './atlas/layers/MiningLayer.js';
+    import './atlas/layers/IndustryLayer.js';
+    import './atlas/layers/IndustrialSitesLayer.js';
+    import './atlas/layers/HandicraftsLayer.js';
+    import './atlas/layers/EnergyLayer.js';
+    import './atlas/layers/PowerPlantsLayer.js';
+    import './atlas/layers/PopulationLayer.js';
+    import './atlas/layers/AdministrativeLayer.js';
+    import './atlas/layers/HumanGeographyLayer.js';
+    import './atlas/layers/RevisionDashboard.js';
+    import './atlas/layers/CompareMode.js';
+    Atlas.boot(document.body);
+  </script>
+</body>
+</html>

@@ -1,0 +1,5560 @@
+{
+  "version": "1.0",
+  "generated": "2026-07-06",
+  "notes": "Declarative typed relations. Every entry links a source feature id to related-feature ids across layers.",
+  "edges": [
+    {
+      "source": "climate-regions-arid",
+      "related": [
+        {
+          "target": "thar-main",
+          "type": "defines"
+        },
+        {
+          "target": "rainfall-lt-200",
+          "type": "colocated"
+        },
+        {
+          "target": "rainfall-200-300",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-desert",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-thorn-forest",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-grassland",
+          "type": "colocated"
+        },
+        {
+          "target": "desert-np",
+          "type": "signature"
+        },
+        {
+          "target": "drainage-basins-luni",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-ghaggar",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "climate-regions-semi-arid",
+      "related": [
+        {
+          "target": "rainfall-300-500",
+          "type": "colocated"
+        },
+        {
+          "target": "rainfall-500-700",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-red-loamy",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-dry-deciduous",
+          "type": "colocated"
+        },
+        {
+          "target": "aravalli-main-axis",
+          "type": "defines"
+        },
+        {
+          "target": "ranthambore-tr",
+          "type": "signature"
+        },
+        {
+          "target": "sariska-tr",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "climate-regions-sub-humid",
+      "related": [
+        {
+          "target": "rainfall-500-700",
+          "type": "colocated"
+        },
+        {
+          "target": "rainfall-700-1000",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-black",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-dry-deciduous",
+          "type": "colocated"
+        },
+        {
+          "target": "mukundra-hills-tr",
+          "type": "signature"
+        },
+        {
+          "target": "drainage-basins-chambal",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "climate-regions-humid-pocket",
+      "related": [
+        {
+          "target": "rainfall-gt-1000",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-dry-mixed",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-mahi",
+          "type": "colocated"
+        },
+        {
+          "target": "mahi-river",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "vegetation-thorn-forest",
+      "related": [
+        {
+          "target": "desert-np",
+          "type": "signature"
+        },
+        {
+          "target": "thar-main",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-desert",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "vegetation-dry-deciduous",
+      "related": [
+        {
+          "target": "ranthambore-np",
+          "type": "signature"
+        },
+        {
+          "target": "ranthambore-tr",
+          "type": "signature"
+        },
+        {
+          "target": "sariska-np",
+          "type": "signature"
+        },
+        {
+          "target": "sariska-tr",
+          "type": "signature"
+        },
+        {
+          "target": "mukundra-hills-np",
+          "type": "signature"
+        },
+        {
+          "target": "aravalli-main-axis",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-red-loamy",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "vegetation-wetland",
+      "related": [
+        {
+          "target": "keoladeo-np",
+          "type": "signature"
+        },
+        {
+          "target": "keoladeo-ramsar",
+          "type": "signature"
+        },
+        {
+          "target": "sambhar-ramsar",
+          "type": "signature"
+        },
+        {
+          "target": "menar-ramsar",
+          "type": "signature"
+        },
+        {
+          "target": "khichan-ramsar",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "vegetation-riparian",
+      "related": [
+        {
+          "target": "chambal-river",
+          "type": "colocated"
+        },
+        {
+          "target": "banas-river",
+          "type": "colocated"
+        },
+        {
+          "target": "national-chambal-wls",
+          "type": "signature"
+        },
+        {
+          "target": "chambal-river",
+          "type": "defines"
+        },
+        {
+          "target": "physiography-southeastern-plateau-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "vegetation-montane",
+      "related": [
+        {
+          "target": "mount-abu-wls",
+          "type": "signature"
+        },
+        {
+          "target": "peak-guru-shikhar",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "soil-types-desert",
+      "related": [
+        {
+          "target": "thar-main",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-thorn-forest",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-1a",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "soil-types-black",
+      "related": [
+        {
+          "target": "physiography-southeastern-plateau-region",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-5",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-chambal",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "soil-types-alluvial",
+      "related": [
+        {
+          "target": "physiography-eastern-plains-region",
+          "type": "colocated"
+        },
+        {
+          "target": "chambal-river",
+          "type": "proximity"
+        },
+        {
+          "target": "banas-river",
+          "type": "proximity"
+        },
+        {
+          "target": "agro-climatic-zones-3b",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "rainfall-gt-1000",
+      "related": [
+        {
+          "target": "mahi-river",
+          "type": "signature"
+        },
+        {
+          "target": "drainage-basins-mahi",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-humid-pocket",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "rainfall-lt-200",
+      "related": [
+        {
+          "target": "thar-main",
+          "type": "colocated"
+        },
+        {
+          "target": "desert-np",
+          "type": "signature"
+        },
+        {
+          "target": "drought-vulnerability-very-high",
+          "type": "colocated"
+        },
+        {
+          "target": "desertification-severe",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "drought-vulnerability-very-high",
+      "related": [
+        {
+          "target": "thar-main",
+          "type": "colocated"
+        },
+        {
+          "target": "desertification-severe",
+          "type": "colocated"
+        },
+        {
+          "target": "rainfall-lt-200",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-1a",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "desertification-severe",
+      "related": [
+        {
+          "target": "thar-main",
+          "type": "colocated"
+        },
+        {
+          "target": "drought-vulnerability-very-high",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-desert",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-thorn-forest",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "physiography-thar-desert-region",
+      "related": [
+        {
+          "target": "climate-regions-arid",
+          "type": "defines",
+          "explanation": "The Thar physiographic region hosts India's hot-desert BWh climate."
+        },
+        {
+          "target": "soil-types-desert",
+          "type": "colocated",
+          "explanation": "Sandy Aridisols are the parent material across the Thar."
+        },
+        {
+          "target": "vegetation-thorn-forest",
+          "type": "colocated",
+          "explanation": "Prosopis-Ziziphus-Capparis thorn scrub dominates the region."
+        },
+        {
+          "target": "vegetation-grassland",
+          "type": "colocated",
+          "explanation": "Sewan grass patches persist between dunes."
+        },
+        {
+          "target": "drought-vulnerability-very-high",
+          "type": "colocated"
+        },
+        {
+          "target": "desertification-severe",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-1a",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-luni",
+          "type": "colocated"
+        },
+        {
+          "target": "desert-np",
+          "type": "signature"
+        },
+        {
+          "target": "tal-chhapper-wls",
+          "type": "signature",
+          "explanation": "The Tal Chhapar grasslands are the Thar's classic protected grassland."
+        }
+      ]
+    },
+    {
+      "source": "physiography-aravalli-hills-region",
+      "related": [
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "defines"
+        },
+        {
+          "target": "soil-types-red-loamy",
+          "type": "colocated",
+          "explanation": "Alfisols weather from the Aravalli's crystalline base."
+        },
+        {
+          "target": "soil-types-skeletal",
+          "type": "colocated",
+          "explanation": "Shallow rocky Entisols cap the ridges themselves."
+        },
+        {
+          "target": "vegetation-dry-deciduous",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-montane",
+          "type": "signature",
+          "explanation": "Mount Abu's semi-evergreen pocket is the range's montane exemplar."
+        },
+        {
+          "target": "aravalli-main-axis",
+          "type": "signature"
+        },
+        {
+          "target": "peak-guru-shikhar",
+          "type": "signature"
+        },
+        {
+          "target": "peak-kumbhalgarh-fort",
+          "type": "signature"
+        },
+        {
+          "target": "mount-abu-wls",
+          "type": "signature"
+        },
+        {
+          "target": "kumbhalgarh-wls",
+          "type": "signature"
+        },
+        {
+          "target": "sariska-tr",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "physiography-eastern-plains-region",
+      "related": [
+        {
+          "target": "climate-regions-sub-humid",
+          "type": "defines"
+        },
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated",
+          "explanation": "Inceptisols and Entisols line the Banas\u2013Chambal valleys."
+        },
+        {
+          "target": "vegetation-dry-deciduous",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-3a",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-3b",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-chambal",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-banganga",
+          "type": "colocated"
+        },
+        {
+          "target": "banas-river",
+          "type": "signature"
+        },
+        {
+          "target": "chambal-river",
+          "type": "proximity"
+        },
+        {
+          "target": "keoladeo-np",
+          "type": "signature"
+        },
+        {
+          "target": "ranthambore-np",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "physiography-southeastern-plateau-region",
+      "related": [
+        {
+          "target": "climate-regions-sub-humid",
+          "type": "defines"
+        },
+        {
+          "target": "soil-types-black",
+          "type": "colocated",
+          "explanation": "Vertisols (medium-black cotton soils) blanket the Hadoti plateau."
+        },
+        {
+          "target": "vegetation-dry-deciduous",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-riparian",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-5",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-chambal",
+          "type": "colocated"
+        },
+        {
+          "target": "chambal-river",
+          "type": "signature"
+        },
+        {
+          "target": "kalisindh-river",
+          "type": "colocated"
+        },
+        {
+          "target": "mukundra-hills-np",
+          "type": "signature"
+        },
+        {
+          "target": "mukundra-hills-tr",
+          "type": "signature"
+        },
+        {
+          "target": "national-chambal-wls",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "physiography-southern-hills-region",
+      "related": [
+        {
+          "target": "climate-regions-humid-pocket",
+          "type": "defines"
+        },
+        {
+          "target": "soil-types-mixed-red-black",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-dry-mixed",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-4b",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-mahi",
+          "type": "colocated"
+        },
+        {
+          "target": "mahi-river",
+          "type": "signature"
+        },
+        {
+          "target": "som-river",
+          "type": "colocated"
+        },
+        {
+          "target": "jakham-river",
+          "type": "colocated"
+        },
+        {
+          "target": "sitamata-wls",
+          "type": "signature"
+        },
+        {
+          "target": "phulwari-ki-nal-wls",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "drainage-basins-chambal",
+      "related": [
+        {
+          "target": "chambal-river",
+          "type": "defines",
+          "explanation": "The basin's trunk river."
+        },
+        {
+          "target": "banas-river",
+          "type": "colocated"
+        },
+        {
+          "target": "berach-river",
+          "type": "colocated"
+        },
+        {
+          "target": "kalisindh-river",
+          "type": "colocated"
+        },
+        {
+          "target": "parbati-river",
+          "type": "colocated"
+        },
+        {
+          "target": "parvan-river",
+          "type": "colocated"
+        },
+        {
+          "target": "ranthambore-tr",
+          "type": "signature"
+        },
+        {
+          "target": "mukundra-hills-tr",
+          "type": "signature"
+        },
+        {
+          "target": "national-chambal-wls",
+          "type": "signature"
+        },
+        {
+          "target": "dholpur-karauli-tr",
+          "type": "signature"
+        },
+        {
+          "target": "agro-climatic-zones-5",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "drainage-basins-luni",
+      "related": [
+        {
+          "target": "luni-river",
+          "type": "defines"
+        },
+        {
+          "target": "jawai-river",
+          "type": "colocated"
+        },
+        {
+          "target": "sukri-river",
+          "type": "colocated"
+        },
+        {
+          "target": "physiography-thar-desert-region",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "drought-vulnerability-very-high",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-2a",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-2b",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "drainage-basins-mahi",
+      "related": [
+        {
+          "target": "mahi-river",
+          "type": "defines"
+        },
+        {
+          "target": "anas-river",
+          "type": "colocated"
+        },
+        {
+          "target": "som-river",
+          "type": "colocated"
+        },
+        {
+          "target": "jakham-river",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-humid-pocket",
+          "type": "colocated"
+        },
+        {
+          "target": "rainfall-gt-1000",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-dry-mixed",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-4b",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "drainage-basins-banganga",
+      "related": [
+        {
+          "target": "banganga-river",
+          "type": "defines"
+        },
+        {
+          "target": "sabi-river",
+          "type": "colocated"
+        },
+        {
+          "target": "keoladeo-np",
+          "type": "signature",
+          "explanation": "The park sits at the Banganga\u2013Gambhir confluence."
+        },
+        {
+          "target": "sariska-tr",
+          "type": "colocated",
+          "explanation": "The basin's headwaters rise in the Sariska hills."
+        },
+        {
+          "target": "physiography-eastern-plains-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "drainage-basins-sabarmati",
+      "related": [
+        {
+          "target": "sabarmati-river",
+          "type": "defines"
+        },
+        {
+          "target": "west-banas-river",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "drainage-basins-ghaggar",
+      "related": [
+        {
+          "target": "ghaggar-river",
+          "type": "defines"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-1b",
+          "type": "colocated"
+        },
+        {
+          "target": "desertification-moderate",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "drainage-basins-interior-drainage",
+      "related": [
+        {
+          "target": "sambhar-ramsar",
+          "type": "signature"
+        },
+        {
+          "target": "sambhar-wetland",
+          "type": "signature"
+        },
+        {
+          "target": "soil-types-saline",
+          "type": "colocated",
+          "explanation": "Endorheic drainage concentrates salts in the Sambhar basin."
+        },
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "desert-np",
+      "related": [
+        {
+          "target": "climate-regions-arid",
+          "type": "defines"
+        },
+        {
+          "target": "rainfall-lt-200",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-desert",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-thorn-forest",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-grassland",
+          "type": "signature",
+          "explanation": "DNP's sewan grasslands are the Great Indian Bustard's last stronghold."
+        },
+        {
+          "target": "thar-main",
+          "type": "colocated"
+        },
+        {
+          "target": "physiography-thar-desert-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "ranthambore-tr",
+      "related": [
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "defines"
+        },
+        {
+          "target": "vegetation-dry-deciduous",
+          "type": "defines"
+        },
+        {
+          "target": "soil-types-red-loamy",
+          "type": "colocated"
+        },
+        {
+          "target": "chambal-river",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-chambal",
+          "type": "colocated"
+        },
+        {
+          "target": "aravalli-main-axis",
+          "type": "proximity"
+        },
+        {
+          "target": "physiography-eastern-plains-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "sariska-tr",
+      "related": [
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "defines"
+        },
+        {
+          "target": "vegetation-dry-deciduous",
+          "type": "defines"
+        },
+        {
+          "target": "soil-types-red-loamy",
+          "type": "colocated"
+        },
+        {
+          "target": "aravalli-main-axis",
+          "type": "colocated"
+        },
+        {
+          "target": "physiography-aravalli-hills-region",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-banganga",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mukundra-hills-tr",
+      "related": [
+        {
+          "target": "climate-regions-sub-humid",
+          "type": "defines"
+        },
+        {
+          "target": "soil-types-black",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-dry-mixed",
+          "type": "defines"
+        },
+        {
+          "target": "vegetation-riparian",
+          "type": "colocated"
+        },
+        {
+          "target": "chambal-river",
+          "type": "colocated"
+        },
+        {
+          "target": "physiography-southeastern-plateau-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "keoladeo-np",
+      "related": [
+        {
+          "target": "vegetation-wetland",
+          "type": "defines"
+        },
+        {
+          "target": "climate-regions-sub-humid",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-banganga",
+          "type": "colocated"
+        },
+        {
+          "target": "rainfall-500-700",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-3b",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "ramgarh-vishdhari-tr",
+      "related": [
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "defines"
+        },
+        {
+          "target": "vegetation-dry-deciduous",
+          "type": "defines"
+        },
+        {
+          "target": "soil-types-red-loamy",
+          "type": "colocated"
+        },
+        {
+          "target": "banas-river",
+          "type": "proximity"
+        },
+        {
+          "target": "drainage-basins-chambal",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mount-abu-wls",
+      "related": [
+        {
+          "target": "vegetation-montane",
+          "type": "signature"
+        },
+        {
+          "target": "peak-guru-shikhar",
+          "type": "signature"
+        },
+        {
+          "target": "peak-achalgarh-fort",
+          "type": "signature"
+        },
+        {
+          "target": "physiography-aravalli-hills-region",
+          "type": "colocated"
+        },
+        {
+          "target": "rainfall-gt-1000",
+          "type": "colocated",
+          "explanation": "Mount Abu is the wettest pocket of Rajasthan."
+        }
+      ]
+    },
+    {
+      "source": "sitamata-wls",
+      "related": [
+        {
+          "target": "vegetation-dry-mixed",
+          "type": "defines"
+        },
+        {
+          "target": "climate-regions-humid-pocket",
+          "type": "colocated"
+        },
+        {
+          "target": "physiography-southern-hills-region",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-4b",
+          "type": "colocated"
+        },
+        {
+          "target": "rainfall-700-1000",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "phulwari-ki-nal-wls",
+      "related": [
+        {
+          "target": "vegetation-dry-mixed",
+          "type": "defines"
+        },
+        {
+          "target": "physiography-southern-hills-region",
+          "type": "colocated"
+        },
+        {
+          "target": "som-river",
+          "type": "proximity"
+        }
+      ]
+    },
+    {
+      "source": "agro-climatic-zones-1a",
+      "related": [
+        {
+          "target": "rainfall-lt-200",
+          "type": "colocated"
+        },
+        {
+          "target": "rainfall-200-300",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-desert",
+          "type": "colocated"
+        },
+        {
+          "target": "drought-vulnerability-very-high",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "agro-climatic-zones-1b",
+      "related": [
+        {
+          "target": "rainfall-200-300",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated",
+          "explanation": "Canal-command alluvial soils created by IGNP delivery."
+        },
+        {
+          "target": "drainage-basins-ghaggar",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "agro-climatic-zones-2a",
+      "related": [
+        {
+          "target": "rainfall-300-500",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-saline",
+          "type": "colocated",
+          "explanation": "Sub-soil salinity is chronic across the internal-drainage zone."
+        },
+        {
+          "target": "drainage-basins-interior-drainage",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "agro-climatic-zones-3b",
+      "related": [
+        {
+          "target": "rainfall-500-700",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-banganga",
+          "type": "colocated"
+        },
+        {
+          "target": "physiography-eastern-plains-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "agro-climatic-zones-4b",
+      "related": [
+        {
+          "target": "rainfall-700-1000",
+          "type": "colocated"
+        },
+        {
+          "target": "rainfall-gt-1000",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-mixed-red-black",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-mahi",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "agro-climatic-zones-5",
+      "related": [
+        {
+          "target": "rainfall-700-1000",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-black",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-chambal",
+          "type": "colocated"
+        },
+        {
+          "target": "physiography-southeastern-plateau-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "chambal-river",
+      "related": [
+        {
+          "target": "vegetation-riparian",
+          "type": "signature"
+        },
+        {
+          "target": "national-chambal-wls",
+          "type": "signature"
+        },
+        {
+          "target": "ranthambore-tr",
+          "type": "colocated"
+        },
+        {
+          "target": "mukundra-hills-tr",
+          "type": "colocated"
+        },
+        {
+          "target": "dholpur-karauli-tr",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-chambal",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "mahi-river",
+      "related": [
+        {
+          "target": "drainage-basins-mahi",
+          "type": "defines"
+        },
+        {
+          "target": "climate-regions-humid-pocket",
+          "type": "colocated"
+        },
+        {
+          "target": "physiography-southern-hills-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "luni-river",
+      "related": [
+        {
+          "target": "drainage-basins-luni",
+          "type": "defines"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-climatic-zones-2b",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "banas-river",
+      "related": [
+        {
+          "target": "drainage-basins-chambal",
+          "type": "colocated"
+        },
+        {
+          "target": "physiography-eastern-plains-region",
+          "type": "defines"
+        },
+        {
+          "target": "vegetation-dry-deciduous",
+          "type": "colocated"
+        },
+        {
+          "target": "ranthambore-tr",
+          "type": "colocated"
+        },
+        {
+          "target": "ramgarh-vishdhari-tr",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "peak-guru-shikhar",
+      "related": [
+        {
+          "target": "mount-abu-wls",
+          "type": "colocated"
+        },
+        {
+          "target": "aravalli-main-axis",
+          "type": "defines"
+        },
+        {
+          "target": "physiography-aravalli-hills-region",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-montane",
+          "type": "colocated"
+        },
+        {
+          "target": "rainfall-gt-1000",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "peak-kumbhalgarh-fort",
+      "related": [
+        {
+          "target": "kumbhalgarh-wls",
+          "type": "colocated"
+        },
+        {
+          "target": "aravalli-main-axis",
+          "type": "colocated"
+        },
+        {
+          "target": "physiography-aravalli-hills-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "peak-achalgarh-fort",
+      "related": [
+        {
+          "target": "mount-abu-wls",
+          "type": "colocated"
+        },
+        {
+          "target": "peak-guru-shikhar",
+          "type": "proximity"
+        },
+        {
+          "target": "aravalli-main-axis",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "sambhar-ramsar",
+      "related": [
+        {
+          "target": "soil-types-saline",
+          "type": "defines",
+          "explanation": "India's largest inland salt lake \u2014 the source of the saline soil type here."
+        },
+        {
+          "target": "vegetation-wetland",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-interior-drainage",
+          "type": "defines"
+        },
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "khichan-ramsar",
+      "related": [
+        {
+          "target": "physiography-thar-desert-region",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "vegetation-wetland",
+          "type": "colocated"
+        },
+        {
+          "target": "rainfall-200-300",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "vegetation-grassland",
+      "related": [
+        {
+          "target": "tal-chhapper-wls",
+          "type": "signature"
+        },
+        {
+          "target": "desert-np",
+          "type": "signature"
+        },
+        {
+          "target": "physiography-thar-desert-region",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-desert",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "major-crops-wheat",
+      "related": [
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated",
+          "explanation": "Preferred soil for Wheat."
+        },
+        {
+          "target": "soil-types-black",
+          "type": "colocated",
+          "explanation": "Preferred soil for Wheat."
+        },
+        {
+          "target": "climate-regions-sub-humid",
+          "type": "colocated",
+          "explanation": "Signature climate for Wheat."
+        },
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Wheat."
+        },
+        {
+          "target": "irrigation-sources-canals",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Wheat."
+        },
+        {
+          "target": "irrigation-sources-tubewells",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Wheat."
+        }
+      ]
+    },
+    {
+      "source": "major-crops-mustard",
+      "related": [
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated",
+          "explanation": "Preferred soil for Mustard."
+        },
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Mustard."
+        },
+        {
+          "target": "irrigation-sources-tubewells",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Mustard."
+        },
+        {
+          "target": "irrigation-sources-canals",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Mustard."
+        }
+      ]
+    },
+    {
+      "source": "major-crops-bajra",
+      "related": [
+        {
+          "target": "soil-types-desert",
+          "type": "colocated",
+          "explanation": "Preferred soil for Pearl millet (Bajra)."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Pearl millet (Bajra)."
+        },
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Pearl millet (Bajra)."
+        },
+        {
+          "target": "irrigation-sources-rainfed",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Pearl millet (Bajra)."
+        }
+      ]
+    },
+    {
+      "source": "major-crops-maize",
+      "related": [
+        {
+          "target": "soil-types-red-loamy",
+          "type": "colocated",
+          "explanation": "Preferred soil for Maize."
+        },
+        {
+          "target": "soil-types-mixed-red-black",
+          "type": "colocated",
+          "explanation": "Preferred soil for Maize."
+        },
+        {
+          "target": "climate-regions-sub-humid",
+          "type": "colocated",
+          "explanation": "Signature climate for Maize."
+        },
+        {
+          "target": "climate-regions-humid-pocket",
+          "type": "colocated",
+          "explanation": "Signature climate for Maize."
+        },
+        {
+          "target": "irrigation-sources-rainfed",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Maize."
+        },
+        {
+          "target": "irrigation-sources-wells",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Maize."
+        }
+      ]
+    },
+    {
+      "source": "major-crops-gram",
+      "related": [
+        {
+          "target": "soil-types-black",
+          "type": "colocated",
+          "explanation": "Preferred soil for Gram (Chickpea)."
+        },
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated",
+          "explanation": "Preferred soil for Gram (Chickpea)."
+        },
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Gram (Chickpea)."
+        },
+        {
+          "target": "climate-regions-sub-humid",
+          "type": "colocated",
+          "explanation": "Signature climate for Gram (Chickpea)."
+        },
+        {
+          "target": "irrigation-sources-rainfed",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Gram (Chickpea)."
+        },
+        {
+          "target": "irrigation-sources-tubewells",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Gram (Chickpea)."
+        }
+      ]
+    },
+    {
+      "source": "major-crops-soybean",
+      "related": [
+        {
+          "target": "soil-types-black",
+          "type": "colocated",
+          "explanation": "Preferred soil for Soybean."
+        },
+        {
+          "target": "climate-regions-sub-humid",
+          "type": "colocated",
+          "explanation": "Signature climate for Soybean."
+        },
+        {
+          "target": "climate-regions-humid-pocket",
+          "type": "colocated",
+          "explanation": "Signature climate for Soybean."
+        },
+        {
+          "target": "irrigation-sources-rainfed",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Soybean."
+        }
+      ]
+    },
+    {
+      "source": "major-crops-cotton",
+      "related": [
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated",
+          "explanation": "Preferred soil for Cotton."
+        },
+        {
+          "target": "soil-types-black",
+          "type": "colocated",
+          "explanation": "Preferred soil for Cotton."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Cotton."
+        },
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Cotton."
+        },
+        {
+          "target": "irrigation-sources-canals",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Cotton."
+        }
+      ]
+    },
+    {
+      "source": "major-crops-groundnut",
+      "related": [
+        {
+          "target": "soil-types-desert",
+          "type": "colocated",
+          "explanation": "Preferred soil for Groundnut."
+        },
+        {
+          "target": "soil-types-red-loamy",
+          "type": "colocated",
+          "explanation": "Preferred soil for Groundnut."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Groundnut."
+        },
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Groundnut."
+        },
+        {
+          "target": "irrigation-sources-tubewells",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Groundnut."
+        },
+        {
+          "target": "irrigation-sources-wells",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Groundnut."
+        }
+      ]
+    },
+    {
+      "source": "major-crops-barley",
+      "related": [
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated",
+          "explanation": "Preferred soil for Barley."
+        },
+        {
+          "target": "soil-types-saline",
+          "type": "colocated",
+          "explanation": "Preferred soil for Barley."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Barley."
+        },
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Barley."
+        },
+        {
+          "target": "irrigation-sources-canals",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Barley."
+        },
+        {
+          "target": "irrigation-sources-wells",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Barley."
+        }
+      ]
+    },
+    {
+      "source": "major-crops-pulses",
+      "related": [
+        {
+          "target": "soil-types-desert",
+          "type": "colocated",
+          "explanation": "Preferred soil for Pulses (moong \u00b7 moth \u00b7 urad)."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Pulses (moong \u00b7 moth \u00b7 urad)."
+        },
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Pulses (moong \u00b7 moth \u00b7 urad)."
+        },
+        {
+          "target": "irrigation-sources-rainfed",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Pulses (moong \u00b7 moth \u00b7 urad)."
+        }
+      ]
+    },
+    {
+      "source": "major-crops-oilseeds-misc",
+      "related": [
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated",
+          "explanation": "Preferred soil for Other oilseeds (sesame \u00b7 taramira \u00b7 linseed)."
+        },
+        {
+          "target": "soil-types-desert",
+          "type": "colocated",
+          "explanation": "Preferred soil for Other oilseeds (sesame \u00b7 taramira \u00b7 linseed)."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Other oilseeds (sesame \u00b7 taramira \u00b7 linseed)."
+        },
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Other oilseeds (sesame \u00b7 taramira \u00b7 linseed)."
+        },
+        {
+          "target": "irrigation-sources-rainfed",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Other oilseeds (sesame \u00b7 taramira \u00b7 linseed)."
+        }
+      ]
+    },
+    {
+      "source": "major-crops-horticulture",
+      "related": [
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated",
+          "explanation": "Preferred soil for Horticulture (kinnow \u00b7 orange \u00b7 guar \u00b7 isabgol \u00b7 seed spices)."
+        },
+        {
+          "target": "soil-types-black",
+          "type": "colocated",
+          "explanation": "Preferred soil for Horticulture (kinnow \u00b7 orange \u00b7 guar \u00b7 isabgol \u00b7 seed spices)."
+        },
+        {
+          "target": "soil-types-desert",
+          "type": "colocated",
+          "explanation": "Preferred soil for Horticulture (kinnow \u00b7 orange \u00b7 guar \u00b7 isabgol \u00b7 seed spices)."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Horticulture (kinnow \u00b7 orange \u00b7 guar \u00b7 isabgol \u00b7 seed spices)."
+        },
+        {
+          "target": "climate-regions-semi-arid",
+          "type": "colocated",
+          "explanation": "Signature climate for Horticulture (kinnow \u00b7 orange \u00b7 guar \u00b7 isabgol \u00b7 seed spices)."
+        },
+        {
+          "target": "climate-regions-sub-humid",
+          "type": "colocated",
+          "explanation": "Signature climate for Horticulture (kinnow \u00b7 orange \u00b7 guar \u00b7 isabgol \u00b7 seed spices)."
+        },
+        {
+          "target": "irrigation-sources-tubewells",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Horticulture (kinnow \u00b7 orange \u00b7 guar \u00b7 isabgol \u00b7 seed spices)."
+        },
+        {
+          "target": "irrigation-sources-canals",
+          "type": "colocated",
+          "explanation": "Dominant irrigation for Horticulture (kinnow \u00b7 orange \u00b7 guar \u00b7 isabgol \u00b7 seed spices)."
+        }
+      ]
+    },
+    {
+      "source": "dam-bisalpur",
+      "related": [
+        {
+          "target": "banas-river",
+          "type": "defines",
+          "explanation": "Bisalpur Dam impounds this river."
+        },
+        {
+          "target": "command-areas-cmd-bisalpur",
+          "type": "defines",
+          "explanation": "Bisalpur Dam is the primary reservoir feeding this command area."
+        }
+      ]
+    },
+    {
+      "source": "dam-rana-pratap-sagar",
+      "related": [
+        {
+          "target": "chambal-river",
+          "type": "defines",
+          "explanation": "Rana Pratap Sagar Dam impounds this river."
+        },
+        {
+          "target": "command-areas-cmd-chambal",
+          "type": "defines",
+          "explanation": "Rana Pratap Sagar Dam is the primary reservoir feeding this command area."
+        }
+      ]
+    },
+    {
+      "source": "dam-jawahar-sagar",
+      "related": [
+        {
+          "target": "chambal-river",
+          "type": "defines",
+          "explanation": "Jawahar Sagar Dam impounds this river."
+        },
+        {
+          "target": "command-areas-cmd-chambal",
+          "type": "defines",
+          "explanation": "Jawahar Sagar Dam is the primary reservoir feeding this command area."
+        }
+      ]
+    },
+    {
+      "source": "dam-kota-barrage",
+      "related": [
+        {
+          "target": "chambal-river",
+          "type": "defines",
+          "explanation": "Kota Barrage impounds this river."
+        },
+        {
+          "target": "command-areas-cmd-chambal",
+          "type": "defines",
+          "explanation": "Kota Barrage is the primary reservoir feeding this command area."
+        }
+      ]
+    },
+    {
+      "source": "dam-gandhi-sagar-influence",
+      "related": [
+        {
+          "target": "chambal-river",
+          "type": "defines",
+          "explanation": "Gandhi Sagar Dam (Madhya Pradesh \u2014 upstream influence) impounds this river."
+        },
+        {
+          "target": "command-areas-cmd-chambal",
+          "type": "defines",
+          "explanation": "Gandhi Sagar Dam (Madhya Pradesh \u2014 upstream influence) is the primary reservoir feeding this command area."
+        }
+      ]
+    },
+    {
+      "source": "dam-mahi-bajaj-sagar",
+      "related": [
+        {
+          "target": "mahi-river",
+          "type": "defines",
+          "explanation": "Mahi Bajaj Sagar Dam impounds this river."
+        },
+        {
+          "target": "command-areas-cmd-mahi",
+          "type": "defines",
+          "explanation": "Mahi Bajaj Sagar Dam is the primary reservoir feeding this command area."
+        }
+      ]
+    },
+    {
+      "source": "dam-jakham",
+      "related": [
+        {
+          "target": "jakham-river",
+          "type": "defines",
+          "explanation": "Jakham Dam impounds this river."
+        }
+      ]
+    },
+    {
+      "source": "dam-jawai",
+      "related": [
+        {
+          "target": "jawai-river",
+          "type": "defines",
+          "explanation": "Jawai Bandh impounds this river."
+        }
+      ]
+    },
+    {
+      "source": "dam-som-kamla-amba",
+      "related": [
+        {
+          "target": "som-river",
+          "type": "defines",
+          "explanation": "Som Kamla Amba Dam impounds this river."
+        }
+      ]
+    },
+    {
+      "source": "canal-ignp",
+      "related": [
+        {
+          "target": "command-areas-cmd-ignp",
+          "type": "defines",
+          "explanation": "The IGNP is the sole source for its command area."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Runs the length of arid western Rajasthan."
+        },
+        {
+          "target": "major-crops-cotton",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-wheat",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-mustard",
+          "type": "signature"
+        },
+        {
+          "target": "agro-economic-zones-ae-north-canal",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "canal-gang-canal",
+      "related": [
+        {
+          "target": "command-areas-cmd-gang",
+          "type": "defines"
+        },
+        {
+          "target": "major-crops-wheat",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-cotton",
+          "type": "signature"
+        },
+        {
+          "target": "agro-economic-zones-ae-north-canal",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "command-areas-cmd-ignp",
+      "related": [
+        {
+          "target": "major-crops-wheat",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-cotton",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-mustard",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-horticulture",
+          "type": "colocated",
+          "explanation": "Kinnow orchards use IGNP water."
+        },
+        {
+          "target": "irrigation-sources-irr-canals",
+          "type": "defines"
+        },
+        {
+          "target": "agro-economic-zones-ae-north-canal",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "command-areas-cmd-chambal",
+      "related": [
+        {
+          "target": "major-crops-wheat",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-soybean",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-gram",
+          "type": "signature"
+        },
+        {
+          "target": "irrigation-sources-irr-canals",
+          "type": "defines"
+        },
+        {
+          "target": "agro-economic-zones-ae-hadoti",
+          "type": "defines"
+        },
+        {
+          "target": "physiography-southeastern-plateau-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "command-areas-cmd-mahi",
+      "related": [
+        {
+          "target": "major-crops-maize",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-wheat",
+          "type": "colocated"
+        },
+        {
+          "target": "drainage-basins-mahi",
+          "type": "defines"
+        },
+        {
+          "target": "agro-economic-zones-ae-southern-tribal",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "command-areas-cmd-bisalpur",
+      "related": [
+        {
+          "target": "major-crops-mustard",
+          "type": "signature"
+        },
+        {
+          "target": "banas-river",
+          "type": "defines"
+        },
+        {
+          "target": "agro-economic-zones-ae-central-mixed",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "agro-economic-zones-ae-north-canal",
+      "related": [
+        {
+          "target": "major-crops-wheat",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-cotton",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-mustard",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-horticulture",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated"
+        },
+        {
+          "target": "irrigation-sources-irr-canals",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "agro-economic-zones-ae-arid-livestock",
+      "related": [
+        {
+          "target": "major-crops-bajra",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-pulses",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-horticulture",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-desert",
+          "type": "colocated"
+        },
+        {
+          "target": "irrigation-sources-irr-rainfed",
+          "type": "defines"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "agro-economic-zones-ae-shekhawati",
+      "related": [
+        {
+          "target": "major-crops-groundnut",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-bajra",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-mustard",
+          "type": "colocated"
+        },
+        {
+          "target": "major-crops-barley",
+          "type": "colocated"
+        },
+        {
+          "target": "irrigation-sources-irr-tubewells",
+          "type": "defines"
+        },
+        {
+          "target": "gw-over-exploited",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "agro-economic-zones-ae-eastern-plain",
+      "related": [
+        {
+          "target": "major-crops-mustard",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-wheat",
+          "type": "signature"
+        },
+        {
+          "target": "irrigation-sources-irr-tubewells",
+          "type": "defines"
+        },
+        {
+          "target": "soil-types-alluvial",
+          "type": "colocated"
+        },
+        {
+          "target": "physiography-eastern-plains-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "agro-economic-zones-ae-central-mixed",
+      "related": [
+        {
+          "target": "major-crops-bajra",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-mustard",
+          "type": "colocated"
+        },
+        {
+          "target": "major-crops-gram",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-red-loamy",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "agro-economic-zones-ae-southern-tribal",
+      "related": [
+        {
+          "target": "major-crops-maize",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-soybean",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-pulses",
+          "type": "colocated"
+        },
+        {
+          "target": "irrigation-sources-irr-wells",
+          "type": "defines"
+        },
+        {
+          "target": "irrigation-sources-irr-tanks",
+          "type": "colocated"
+        },
+        {
+          "target": "physiography-southern-hills-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "agro-economic-zones-ae-hadoti",
+      "related": [
+        {
+          "target": "major-crops-soybean",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-wheat",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-gram",
+          "type": "colocated"
+        },
+        {
+          "target": "major-crops-mustard",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-black",
+          "type": "defines"
+        },
+        {
+          "target": "irrigation-sources-irr-canals",
+          "type": "colocated"
+        },
+        {
+          "target": "physiography-southeastern-plateau-region",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "irrigation-sources-irr-canals",
+      "related": [
+        {
+          "target": "major-crops-wheat",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-cotton",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-mustard",
+          "type": "signature"
+        },
+        {
+          "target": "command-areas-cmd-ignp",
+          "type": "defines"
+        },
+        {
+          "target": "command-areas-cmd-chambal",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "irrigation-sources-irr-tubewells",
+      "related": [
+        {
+          "target": "major-crops-mustard",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-wheat",
+          "type": "colocated"
+        },
+        {
+          "target": "major-crops-groundnut",
+          "type": "colocated"
+        },
+        {
+          "target": "gw-over-exploited",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "irrigation-sources-irr-rainfed",
+      "related": [
+        {
+          "target": "major-crops-bajra",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-pulses",
+          "type": "signature"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "cropping-seasons-kharif",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "irrigation-sources-irr-lift",
+      "related": [
+        {
+          "target": "major-crops-soybean",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-wheat",
+          "type": "signature"
+        },
+        {
+          "target": "chambal-river",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "irrigation-sources-irr-tanks",
+      "related": [
+        {
+          "target": "major-crops-maize",
+          "type": "signature"
+        },
+        {
+          "target": "physiography-southern-hills-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "irrigation-sources-irr-wells",
+      "related": [
+        {
+          "target": "major-crops-maize",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-groundnut",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "groundwater-gw-over-exploited",
+      "related": [
+        {
+          "target": "major-crops-wheat",
+          "type": "colocated",
+          "explanation": "Wheat's canal-alternative in eastern Rajasthan is tube-well pumping."
+        },
+        {
+          "target": "major-crops-mustard",
+          "type": "colocated"
+        },
+        {
+          "target": "irrigation-sources-irr-tubewells",
+          "type": "defines"
+        },
+        {
+          "target": "agro-economic-zones-ae-shekhawati",
+          "type": "colocated"
+        },
+        {
+          "target": "agro-economic-zones-ae-eastern-plain",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "groundwater-gw-safe",
+      "related": [
+        {
+          "target": "irrigation-sources-irr-canals",
+          "type": "colocated",
+          "explanation": "Canal-command districts rely less on groundwater."
+        },
+        {
+          "target": "agro-economic-zones-ae-north-canal",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "cropping-seasons-kharif",
+      "related": [
+        {
+          "target": "major-crops-bajra",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-maize",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-soybean",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-cotton",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-groundnut",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-pulses",
+          "type": "signature"
+        },
+        {
+          "target": "irrigation-sources-irr-rainfed",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "cropping-seasons-rabi",
+      "related": [
+        {
+          "target": "major-crops-wheat",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-mustard",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-gram",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-barley",
+          "type": "signature"
+        },
+        {
+          "target": "irrigation-sources-irr-canals",
+          "type": "colocated"
+        },
+        {
+          "target": "irrigation-sources-irr-tubewells",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-aravalli-sg",
+      "related": [
+        {
+          "target": "mineral-belts-lead-zinc",
+          "type": "defines",
+          "explanation": "SEDEX Zn-Pb hosted in Aravalli SG carbonates."
+        },
+        {
+          "target": "mineral-belts-phosphate",
+          "type": "defines",
+          "explanation": "Stromatolitic phosphorite in Aravalli SG at Jhamarkotra."
+        },
+        {
+          "target": "mineral-belts-marble",
+          "type": "colocated",
+          "explanation": "Aravalli carbonates metamorphose to marble."
+        },
+        {
+          "target": "rock-types-metamorphic",
+          "type": "defines"
+        },
+        {
+          "target": "mine-zawar",
+          "type": "signature"
+        },
+        {
+          "target": "mine-rajpura-dariba",
+          "type": "signature"
+        },
+        {
+          "target": "mine-jhamarkotra",
+          "type": "signature"
+        },
+        {
+          "target": "physiography-aravalli-hills-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-delhi-sg",
+      "related": [
+        {
+          "target": "mineral-belts-copper",
+          "type": "defines"
+        },
+        {
+          "target": "mine-rampura-agucha",
+          "type": "signature"
+        },
+        {
+          "target": "mine-khetri",
+          "type": "signature"
+        },
+        {
+          "target": "rock-types-metamorphic",
+          "type": "defines"
+        },
+        {
+          "target": "aravalli-main-axis",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-malani-igneous",
+      "related": [
+        {
+          "target": "mineral-belts-granite",
+          "type": "defines"
+        },
+        {
+          "target": "rock-types-igneous",
+          "type": "defines"
+        },
+        {
+          "target": "mine-jalore-granite",
+          "type": "signature"
+        },
+        {
+          "target": "building-stones-granite",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-marwar-sg",
+      "related": [
+        {
+          "target": "mineral-belts-gypsum",
+          "type": "defines"
+        },
+        {
+          "target": "rock-types-sedimentary",
+          "type": "defines"
+        },
+        {
+          "target": "mine-nagaur-gypsum",
+          "type": "signature"
+        },
+        {
+          "target": "building-stones-sandstone",
+          "type": "colocated",
+          "explanation": "Jodhpur red sandstone is the Marwar SG dimension stone."
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-vindhyan-basin",
+      "related": [
+        {
+          "target": "mineral-belts-limestone",
+          "type": "defines"
+        },
+        {
+          "target": "mineral-belts-sandstone",
+          "type": "defines"
+        },
+        {
+          "target": "rock-types-sedimentary",
+          "type": "defines"
+        },
+        {
+          "target": "mine-kota-stone",
+          "type": "signature"
+        },
+        {
+          "target": "building-stones-limestone-stone",
+          "type": "signature"
+        },
+        {
+          "target": "building-stones-sandstone",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-quaternary-desert",
+      "related": [
+        {
+          "target": "rock-types-alluvial",
+          "type": "defines"
+        },
+        {
+          "target": "rock-types-aeolian",
+          "type": "defines"
+        },
+        {
+          "target": "thar-main",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-desert",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-deccan-edge",
+      "related": [
+        {
+          "target": "rock-types-igneous",
+          "type": "defines"
+        },
+        {
+          "target": "soil-types-black",
+          "type": "defines",
+          "explanation": "Basalt weathering produces the Hadoti Vertisols."
+        },
+        {
+          "target": "physiography-southeastern-plateau-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-archaean-bhilwara",
+      "related": [
+        {
+          "target": "rock-types-metamorphic",
+          "type": "defines"
+        },
+        {
+          "target": "geological-provinces-aravalli-sg",
+          "type": "proximity"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-lead-zinc",
+      "related": [
+        {
+          "target": "mine-rampura-agucha",
+          "type": "signature"
+        },
+        {
+          "target": "mine-zawar",
+          "type": "signature"
+        },
+        {
+          "target": "mine-rajpura-dariba",
+          "type": "signature"
+        },
+        {
+          "target": "mine-sindesar-khurd",
+          "type": "signature"
+        },
+        {
+          "target": "mine-kayad",
+          "type": "signature"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-aravalli-sg",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-copper",
+      "related": [
+        {
+          "target": "mine-khetri",
+          "type": "signature"
+        },
+        {
+          "target": "mining-clusters-khetri-copper",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-delhi-sg",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-marble",
+      "related": [
+        {
+          "target": "mine-makrana",
+          "type": "signature"
+        },
+        {
+          "target": "mine-kishangarh-marble",
+          "type": "signature"
+        },
+        {
+          "target": "mining-clusters-nagaur-marble",
+          "type": "signature"
+        },
+        {
+          "target": "rock-types-metamorphic",
+          "type": "defines"
+        },
+        {
+          "target": "building-stones-marble",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-granite",
+      "related": [
+        {
+          "target": "mine-jalore-granite",
+          "type": "signature"
+        },
+        {
+          "target": "building-stones-granite",
+          "type": "defines"
+        },
+        {
+          "target": "geological-provinces-malani-igneous",
+          "type": "defines"
+        },
+        {
+          "target": "rock-types-igneous",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-limestone",
+      "related": [
+        {
+          "target": "mine-kota-stone",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-kota-limestone",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-vindhyan-basin",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-gypsum",
+      "related": [
+        {
+          "target": "mine-nagaur-gypsum",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-marwar-sg",
+          "type": "defines"
+        },
+        {
+          "target": "mining-clusters-nagaur-marble",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-lignite",
+      "related": [
+        {
+          "target": "mine-kapurdi-jalipa",
+          "type": "signature"
+        },
+        {
+          "target": "mine-palana-gurha",
+          "type": "signature"
+        },
+        {
+          "target": "mining-clusters-barmer-oil-lignite",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-phosphate",
+      "related": [
+        {
+          "target": "mine-jhamarkotra",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-aravalli-sg",
+          "type": "defines"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-wollastonite",
+      "related": [
+        {
+          "target": "geological-provinces-delhi-sg",
+          "type": "defines"
+        },
+        {
+          "target": "geological-provinces-malani-igneous",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-sandstone",
+      "related": [
+        {
+          "target": "mine-kota-stone",
+          "type": "signature"
+        },
+        {
+          "target": "building-stones-sandstone",
+          "type": "defines"
+        },
+        {
+          "target": "mining-clusters-jodhpur-sandstone",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-vindhyan-basin",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "mine-rampura-agucha",
+      "related": [
+        {
+          "target": "mineral-belts-lead-zinc",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-zawar",
+      "related": [
+        {
+          "target": "mineral-belts-lead-zinc",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-rajpura-dariba",
+      "related": [
+        {
+          "target": "mineral-belts-lead-zinc",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-sindesar-khurd",
+      "related": [
+        {
+          "target": "mineral-belts-lead-zinc",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-kayad",
+      "related": [
+        {
+          "target": "mineral-belts-lead-zinc",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-nagaur-marble",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-khetri",
+      "related": [
+        {
+          "target": "mineral-belts-copper",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-khetri-copper",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-makrana",
+      "related": [
+        {
+          "target": "mineral-belts-marble",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-nagaur-marble",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-kishangarh-marble",
+      "related": [
+        {
+          "target": "mineral-belts-marble",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-nagaur-marble",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-jhamarkotra",
+      "related": [
+        {
+          "target": "mineral-belts-phosphate",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-kapurdi-jalipa",
+      "related": [
+        {
+          "target": "mineral-belts-lignite",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-barmer-oil-lignite",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-palana-gurha",
+      "related": [
+        {
+          "target": "mineral-belts-lignite",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-barmer-oil-lignite",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-nagaur-gypsum",
+      "related": [
+        {
+          "target": "mineral-belts-gypsum",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-nagaur-marble",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-jalore-granite",
+      "related": [
+        {
+          "target": "mineral-belts-granite",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-barmer-oil-lignite",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-kota-stone",
+      "related": [
+        {
+          "target": "mineral-belts-sandstone",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-kota-limestone",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "petroleum-gas-barmer-basin",
+      "related": [
+        {
+          "target": "petroleum-gas-mangala-field",
+          "type": "signature"
+        },
+        {
+          "target": "petroleum-gas-bhagyam-aishwariya",
+          "type": "signature"
+        },
+        {
+          "target": "petroleum-gas-raageshwari-gas",
+          "type": "signature"
+        },
+        {
+          "target": "mining-clusters-barmer-oil-lignite",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-marwar-sg",
+          "type": "proximity"
+        },
+        {
+          "target": "rock-types-sedimentary",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "building-stones-marble",
+      "related": [
+        {
+          "target": "mineral-belts-marble",
+          "type": "defines"
+        },
+        {
+          "target": "mine-makrana",
+          "type": "signature"
+        },
+        {
+          "target": "rock-types-metamorphic",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "building-stones-granite",
+      "related": [
+        {
+          "target": "mineral-belts-granite",
+          "type": "defines"
+        },
+        {
+          "target": "geological-provinces-malani-igneous",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "building-stones-sandstone",
+      "related": [
+        {
+          "target": "mineral-belts-sandstone",
+          "type": "defines"
+        },
+        {
+          "target": "geological-provinces-vindhyan-basin",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "building-stones-limestone-stone",
+      "related": [
+        {
+          "target": "mine-kota-stone",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-vindhyan-basin",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "industrial-clusters-ic-cement",
+      "related": [
+        {
+          "target": "mineral-belts-limestone",
+          "type": "colocated",
+          "explanation": "Cement Manufacturing Cluster draws its raw material from this mineral belt."
+        },
+        {
+          "target": "mineral-belts-gypsum",
+          "type": "colocated",
+          "explanation": "Cement Manufacturing Cluster draws its raw material from this mineral belt."
+        },
+        {
+          "target": "rock-types-sedimentary",
+          "type": "colocated",
+          "explanation": "Cement Manufacturing Cluster is anchored on this rock type."
+        }
+      ]
+    },
+    {
+      "source": "industrial-clusters-ic-textile",
+      "related": [
+        {
+          "target": "major-crops-cotton",
+          "type": "colocated",
+          "explanation": "Textile & Apparel Cluster is the downstream processor of this crop."
+        }
+      ]
+    },
+    {
+      "source": "industrial-clusters-ic-marble-stone",
+      "related": [
+        {
+          "target": "mineral-belts-marble",
+          "type": "colocated",
+          "explanation": "Marble & Dimension-Stone Cluster draws its raw material from this mineral belt."
+        },
+        {
+          "target": "mineral-belts-granite",
+          "type": "colocated",
+          "explanation": "Marble & Dimension-Stone Cluster draws its raw material from this mineral belt."
+        },
+        {
+          "target": "mineral-belts-sandstone",
+          "type": "colocated",
+          "explanation": "Marble & Dimension-Stone Cluster draws its raw material from this mineral belt."
+        },
+        {
+          "target": "building-stones-marble",
+          "type": "colocated",
+          "explanation": "Marble & Dimension-Stone Cluster processes this building stone."
+        },
+        {
+          "target": "building-stones-sandstone",
+          "type": "colocated",
+          "explanation": "Marble & Dimension-Stone Cluster processes this building stone."
+        },
+        {
+          "target": "building-stones-limestone-stone",
+          "type": "colocated",
+          "explanation": "Marble & Dimension-Stone Cluster processes this building stone."
+        },
+        {
+          "target": "building-stones-granite",
+          "type": "colocated",
+          "explanation": "Marble & Dimension-Stone Cluster processes this building stone."
+        }
+      ]
+    },
+    {
+      "source": "industrial-clusters-ic-ceramics-glass",
+      "related": [
+        {
+          "target": "mineral-belts-wollastonite",
+          "type": "colocated",
+          "explanation": "Ceramics, Glass & Refractory Cluster draws its raw material from this mineral belt."
+        }
+      ]
+    },
+    {
+      "source": "industrial-clusters-ic-salt-wool",
+      "related": [
+        {
+          "target": "major-crops-horticulture",
+          "type": "colocated",
+          "explanation": "Salt, Wool & Agri-Processing Cluster is the downstream processor of this crop."
+        },
+        {
+          "target": "major-crops-pulses",
+          "type": "colocated",
+          "explanation": "Salt, Wool & Agri-Processing Cluster is the downstream processor of this crop."
+        }
+      ]
+    },
+    {
+      "source": "industrial-regions-ir-dmic-kbn",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-auto-engineering",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-dmic-kbn region."
+        },
+        {
+          "target": "industrial-clusters-ic-textile",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-dmic-kbn region."
+        }
+      ]
+    },
+    {
+      "source": "industrial-regions-ir-ajmer-kishangarh",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-marble-stone",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-ajmer-kishangarh region."
+        },
+        {
+          "target": "industrial-clusters-ic-cement",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-ajmer-kishangarh region."
+        },
+        {
+          "target": "industrial-clusters-ic-ceramics-glass",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-ajmer-kishangarh region."
+        }
+      ]
+    },
+    {
+      "source": "industrial-regions-ir-jodhpur-pali",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-textile",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-jodhpur-pali region."
+        },
+        {
+          "target": "industrial-clusters-ic-marble-stone",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-jodhpur-pali region."
+        },
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-jodhpur-pali region."
+        },
+        {
+          "target": "industrial-clusters-ic-salt-wool",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-jodhpur-pali region."
+        },
+        {
+          "target": "industrial-clusters-ic-chemical-refinery",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-jodhpur-pali region."
+        }
+      ]
+    },
+    {
+      "source": "industrial-regions-ir-kota-bundi",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-cement",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-kota-bundi region."
+        },
+        {
+          "target": "industrial-clusters-ic-chemical-refinery",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-kota-bundi region."
+        }
+      ]
+    },
+    {
+      "source": "industrial-regions-ir-udaipur-rajsamand",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-marble-stone",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-udaipur-rajsamand region."
+        },
+        {
+          "target": "industrial-clusters-ic-cement",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-udaipur-rajsamand region."
+        },
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "colocated",
+          "explanation": "This cluster sits within the ir-udaipur-rajsamand region."
+        }
+      ]
+    },
+    {
+      "source": "major-industries-nissan-neemrana",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-auto-engineering",
+          "type": "signature",
+          "explanation": "Flagship unit of this cluster."
+        },
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated",
+          "explanation": "Located inside this industrial region."
+        }
+      ]
+    },
+    {
+      "source": "major-industries-honda-tapukara",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-auto-engineering",
+          "type": "signature",
+          "explanation": "Flagship unit of this cluster."
+        },
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated",
+          "explanation": "Located inside this industrial region."
+        }
+      ]
+    },
+    {
+      "source": "major-industries-hero-neemrana",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-auto-engineering",
+          "type": "signature",
+          "explanation": "Flagship unit of this cluster."
+        },
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated",
+          "explanation": "Located inside this industrial region."
+        }
+      ]
+    },
+    {
+      "source": "major-industries-shree-beawar",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-cement",
+          "type": "signature",
+          "explanation": "Flagship unit of this cluster."
+        },
+        {
+          "target": "industrial-regions-ir-ajmer-kishangarh",
+          "type": "colocated",
+          "explanation": "Located inside this industrial region."
+        },
+        {
+          "target": "mineral-belts-limestone",
+          "type": "defines",
+          "explanation": "Draws its limestone from the Rajasthan limestone belt."
+        },
+        {
+          "target": "rock-types-sedimentary",
+          "type": "colocated",
+          "explanation": "Sedimentary parent rock of the limestone feedstock."
+        }
+      ]
+    },
+    {
+      "source": "major-industries-jk-nimbahera",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-cement",
+          "type": "signature",
+          "explanation": "Flagship unit of this cluster."
+        },
+        {
+          "target": "industrial-regions-ir-udaipur-rajsamand",
+          "type": "colocated",
+          "explanation": "Located inside this industrial region."
+        },
+        {
+          "target": "mineral-belts-limestone",
+          "type": "defines",
+          "explanation": "Draws its limestone from the Rajasthan limestone belt."
+        },
+        {
+          "target": "rock-types-sedimentary",
+          "type": "colocated",
+          "explanation": "Sedimentary parent rock of the limestone feedstock."
+        }
+      ]
+    },
+    {
+      "source": "major-industries-wonder-nimbahera",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-cement",
+          "type": "signature",
+          "explanation": "Flagship unit of this cluster."
+        },
+        {
+          "target": "industrial-regions-ir-udaipur-rajsamand",
+          "type": "colocated",
+          "explanation": "Located inside this industrial region."
+        },
+        {
+          "target": "mineral-belts-limestone",
+          "type": "defines",
+          "explanation": "Draws its limestone from the Rajasthan limestone belt."
+        },
+        {
+          "target": "rock-types-sedimentary",
+          "type": "colocated",
+          "explanation": "Sedimentary parent rock of the limestone feedstock."
+        }
+      ]
+    },
+    {
+      "source": "major-industries-ambuja-rabriyawas",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-cement",
+          "type": "signature",
+          "explanation": "Flagship unit of this cluster."
+        },
+        {
+          "target": "industrial-regions-ir-jodhpur-pali",
+          "type": "colocated",
+          "explanation": "Located inside this industrial region."
+        },
+        {
+          "target": "mineral-belts-limestone",
+          "type": "defines",
+          "explanation": "Draws its limestone from the Rajasthan limestone belt."
+        },
+        {
+          "target": "rock-types-sedimentary",
+          "type": "colocated",
+          "explanation": "Sedimentary parent rock of the limestone feedstock."
+        }
+      ]
+    },
+    {
+      "source": "major-industries-birla-chanderia",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-cement",
+          "type": "signature",
+          "explanation": "Flagship unit of this cluster."
+        },
+        {
+          "target": "industrial-regions-ir-udaipur-rajsamand",
+          "type": "colocated",
+          "explanation": "Located inside this industrial region."
+        },
+        {
+          "target": "mineral-belts-limestone",
+          "type": "defines",
+          "explanation": "Draws its limestone from the Rajasthan limestone belt."
+        },
+        {
+          "target": "rock-types-sedimentary",
+          "type": "colocated",
+          "explanation": "Sedimentary parent rock of the limestone feedstock."
+        }
+      ]
+    },
+    {
+      "source": "major-industries-ultratech-adityapuram",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-cement",
+          "type": "signature",
+          "explanation": "Flagship unit of this cluster."
+        },
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated",
+          "explanation": "Located inside this industrial region."
+        },
+        {
+          "target": "mineral-belts-limestone",
+          "type": "defines",
+          "explanation": "Draws its limestone from the Rajasthan limestone belt."
+        },
+        {
+          "target": "rock-types-sedimentary",
+          "type": "colocated",
+          "explanation": "Sedimentary parent rock of the limestone feedstock."
+        }
+      ]
+    },
+    {
+      "source": "major-industries-chambal-gadepan",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-chemical-refinery",
+          "type": "signature",
+          "explanation": "Flagship unit of this cluster."
+        },
+        {
+          "target": "industrial-regions-ir-kota-bundi",
+          "type": "colocated",
+          "explanation": "Located inside this industrial region."
+        },
+        {
+          "target": "chambal-river",
+          "type": "defines",
+          "explanation": "Uses Chambal river water for cooling and process."
+        },
+        {
+          "target": "dam-kota-barrage",
+          "type": "colocated",
+          "explanation": "Fed by regulated flow from the Kota Barrage."
+        }
+      ]
+    },
+    {
+      "source": "major-industries-hrrl-pachpadra",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-chemical-refinery",
+          "type": "signature",
+          "explanation": "Flagship unit of this cluster."
+        },
+        {
+          "target": "industrial-regions-ir-jodhpur-pali",
+          "type": "colocated",
+          "explanation": "Located inside this industrial region."
+        },
+        {
+          "target": "petroleum-gas-barmer-basin",
+          "type": "defines",
+          "explanation": "Refines the crude from the Barmer sedimentary basin."
+        },
+        {
+          "target": "petroleum-gas-mangala-field",
+          "type": "signature",
+          "explanation": "Mangala is the principal crude source for HRRL."
+        }
+      ]
+    },
+    {
+      "source": "major-industries-sambhar-salt",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-salt-wool",
+          "type": "signature",
+          "explanation": "Flagship unit of this cluster."
+        },
+        {
+          "target": "industrial-regions-ir-ajmer-kishangarh",
+          "type": "colocated",
+          "explanation": "Located inside this industrial region."
+        }
+      ]
+    },
+    {
+      "source": "special-economic-zones-mwc-jaipur",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "signature",
+          "explanation": "Dedicated export enclave for this cluster."
+        }
+      ]
+    },
+    {
+      "source": "special-economic-zones-sez-sitapura",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "signature",
+          "explanation": "Dedicated export enclave for this cluster."
+        }
+      ]
+    },
+    {
+      "source": "special-economic-zones-sez-boranada",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "signature",
+          "explanation": "Dedicated export enclave for this cluster."
+        },
+        {
+          "target": "industrial-clusters-ic-textile",
+          "type": "signature",
+          "explanation": "Dedicated export enclave for this cluster."
+        }
+      ]
+    },
+    {
+      "source": "special-economic-zones-sez-somany",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-ceramics-glass",
+          "type": "signature",
+          "explanation": "Dedicated export enclave for this cluster."
+        },
+        {
+          "target": "industrial-clusters-ic-marble-stone",
+          "type": "signature",
+          "explanation": "Dedicated export enclave for this cluster."
+        }
+      ]
+    },
+    {
+      "source": "handicraft-clusters-blue-pottery",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "colocated",
+          "explanation": "Part of Rajasthan's handicraft cluster."
+        }
+      ]
+    },
+    {
+      "source": "handicraft-clusters-sanganeri-printing",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "colocated",
+          "explanation": "Part of Rajasthan's handicraft cluster."
+        },
+        {
+          "target": "major-crops-cotton",
+          "type": "colocated",
+          "explanation": "Prints on cotton fabric."
+        }
+      ]
+    },
+    {
+      "source": "handicraft-clusters-bagru-printing",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "colocated",
+          "explanation": "Part of Rajasthan's handicraft cluster."
+        },
+        {
+          "target": "major-crops-cotton",
+          "type": "colocated",
+          "explanation": "Prints on cotton fabric."
+        }
+      ]
+    },
+    {
+      "source": "handicraft-clusters-kota-doria",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "colocated",
+          "explanation": "Part of Rajasthan's handicraft cluster."
+        }
+      ]
+    },
+    {
+      "source": "handicraft-clusters-molela-terracotta",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "colocated",
+          "explanation": "Part of Rajasthan's handicraft cluster."
+        }
+      ]
+    },
+    {
+      "source": "handicraft-clusters-nathdwara-pichwai",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "colocated",
+          "explanation": "Part of Rajasthan's handicraft cluster."
+        }
+      ]
+    },
+    {
+      "source": "handicraft-clusters-jodhpur-furniture",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "colocated",
+          "explanation": "Part of Rajasthan's handicraft cluster."
+        },
+        {
+          "target": "building-stones-sandstone",
+          "type": "colocated",
+          "explanation": "Alongside sandstone, Jodhpur is a wood-crafts hub."
+        }
+      ]
+    },
+    {
+      "source": "handicraft-clusters-bikaner-usta",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "colocated",
+          "explanation": "Part of Rajasthan's handicraft cluster."
+        }
+      ]
+    },
+    {
+      "source": "handicraft-clusters-bikaneri-bhujia",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "colocated",
+          "explanation": "Part of Rajasthan's handicraft cluster."
+        }
+      ]
+    },
+    {
+      "source": "handicraft-clusters-makrana-marble-craft",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "colocated",
+          "explanation": "Part of Rajasthan's handicraft cluster."
+        },
+        {
+          "target": "mineral-belts-marble",
+          "type": "defines",
+          "explanation": "Carves the marble mined at Makrana."
+        },
+        {
+          "target": "building-stones-marble",
+          "type": "defines",
+          "explanation": "Craft based on Makrana white marble."
+        }
+      ]
+    },
+    {
+      "source": "industrial-areas-bhiwadi",
+      "related": [
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated",
+          "explanation": "Sits within this industrial region."
+        }
+      ]
+    },
+    {
+      "source": "industrial-areas-neemrana",
+      "related": [
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated",
+          "explanation": "Sits within this industrial region."
+        }
+      ]
+    },
+    {
+      "source": "industrial-areas-tapukara",
+      "related": [
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated",
+          "explanation": "Sits within this industrial region."
+        }
+      ]
+    },
+    {
+      "source": "industrial-areas-chopanki",
+      "related": [
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated",
+          "explanation": "Sits within this industrial region."
+        }
+      ]
+    },
+    {
+      "source": "industrial-areas-sitapura-jaipur",
+      "related": [
+        {
+          "target": "industrial-regions-ir-ajmer-kishangarh",
+          "type": "colocated",
+          "explanation": "Sits within this industrial region."
+        },
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "signature"
+        },
+        {
+          "target": "special-economic-zones-sez-sitapura",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "industrial-areas-sanganer-jaipur",
+      "related": [
+        {
+          "target": "industrial-regions-ir-ajmer-kishangarh",
+          "type": "colocated",
+          "explanation": "Sits within this industrial region."
+        }
+      ]
+    },
+    {
+      "source": "industrial-areas-boranada-jodhpur",
+      "related": [
+        {
+          "target": "industrial-regions-ir-jodhpur-pali",
+          "type": "colocated",
+          "explanation": "Sits within this industrial region."
+        },
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "signature"
+        },
+        {
+          "target": "building-stones-sandstone",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "industrial-areas-bhilwara-ia",
+      "related": [
+        {
+          "target": "industrial-regions-ir-udaipur-rajsamand",
+          "type": "colocated",
+          "explanation": "Sits within this industrial region."
+        },
+        {
+          "target": "industrial-clusters-ic-textile",
+          "type": "signature"
+        },
+        {
+          "target": "major-crops-cotton",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "industrial-areas-pali-ia",
+      "related": [
+        {
+          "target": "industrial-regions-ir-jodhpur-pali",
+          "type": "colocated",
+          "explanation": "Sits within this industrial region."
+        },
+        {
+          "target": "industrial-clusters-ic-textile",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "industrial-areas-kishangarh-ia",
+      "related": [
+        {
+          "target": "industrial-regions-ir-ajmer-kishangarh",
+          "type": "colocated",
+          "explanation": "Sits within this industrial region."
+        },
+        {
+          "target": "industrial-clusters-ic-marble-stone",
+          "type": "signature"
+        },
+        {
+          "target": "mineral-belts-marble",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "industrial-areas-kotputli-ia",
+      "related": [
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated",
+          "explanation": "Sits within this industrial region."
+        },
+        {
+          "target": "industrial-clusters-ic-cement",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "industrial-areas-beawar-ia",
+      "related": [
+        {
+          "target": "industrial-regions-ir-ajmer-kishangarh",
+          "type": "colocated",
+          "explanation": "Sits within this industrial region."
+        },
+        {
+          "target": "industrial-clusters-ic-cement",
+          "type": "signature"
+        },
+        {
+          "target": "mineral-belts-limestone",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "energy-mix-em-solar-west",
+      "related": [
+        {
+          "target": "solar-parks-bhadla-solar-park",
+          "type": "signature"
+        },
+        {
+          "target": "solar-parks-fatehgarh-solar-park",
+          "type": "signature"
+        },
+        {
+          "target": "solar-parks-nokh-solar-park",
+          "type": "signature"
+        },
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "energy-mix-em-nuclear-thermal-hadoti",
+      "related": [
+        {
+          "target": "power-plants-raps-rawatbhata",
+          "type": "signature"
+        },
+        {
+          "target": "power-plants-kota-super-tps",
+          "type": "signature"
+        },
+        {
+          "target": "power-plants-chhabra-tps",
+          "type": "signature"
+        },
+        {
+          "target": "power-plants-kalisindh-tps",
+          "type": "signature"
+        },
+        {
+          "target": "chambal-river",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "energy-mix-em-wind-hybrid",
+      "related": [
+        {
+          "target": "wind-farms-jaisalmer-wind-belt",
+          "type": "signature"
+        },
+        {
+          "target": "wind-farms-barmer-wind-zone",
+          "type": "signature"
+        },
+        {
+          "target": "renewable-zones-rez-wind-belt",
+          "type": "defines"
+        },
+        {
+          "target": "renewable-zones-rez-hybrid",
+          "type": "defines"
+        },
+        {
+          "target": "thar",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "energy-mix-em-gas-mixed-north",
+      "related": [
+        {
+          "target": "power-plants-ramgarh-gas-tps",
+          "type": "signature"
+        },
+        {
+          "target": "petroleum-gas-raageshwari-gas",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "energy-mix-em-hydel-dam-south",
+      "related": [
+        {
+          "target": "power-plants-rana-pratap-sagar-hep",
+          "type": "signature"
+        },
+        {
+          "target": "power-plants-jawahar-sagar-hep",
+          "type": "signature"
+        },
+        {
+          "target": "power-plants-mahi-bajaj-sagar-hep",
+          "type": "signature"
+        },
+        {
+          "target": "chambal-river",
+          "type": "defines"
+        },
+        {
+          "target": "mahi-river",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "power-plants-rana-pratap-sagar-hep",
+      "related": [
+        {
+          "target": "dam-rana-pratap-sagar",
+          "type": "defines",
+          "explanation": "Hydel station co-located with this dam."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-jawahar-sagar-hep",
+      "related": [
+        {
+          "target": "dam-jawahar-sagar",
+          "type": "defines",
+          "explanation": "Hydel station co-located with this dam."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-mahi-bajaj-sagar-hep",
+      "related": [
+        {
+          "target": "dam-mahi-bajaj-sagar",
+          "type": "defines",
+          "explanation": "Hydel station co-located with this dam."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-raps-rawatbhata",
+      "related": [
+        {
+          "target": "chambal-river",
+          "type": "defines",
+          "explanation": "Cooling water drawn from the Chambal via Rana Pratap Sagar."
+        },
+        {
+          "target": "dam-rana-pratap-sagar",
+          "type": "colocated",
+          "explanation": "Rawatbhata is built adjacent to the Rana Pratap Sagar reservoir."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-barmer-lignite-tps",
+      "related": [
+        {
+          "target": "mineral-belts-lignite",
+          "type": "defines",
+          "explanation": "Mine-mouth station burning this belt's lignite."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-giral-lignite-tps",
+      "related": [
+        {
+          "target": "mineral-belts-lignite",
+          "type": "defines",
+          "explanation": "Mine-mouth station burning this belt's lignite."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-kota-super-tps",
+      "related": [
+        {
+          "target": "chambal-river",
+          "type": "defines",
+          "explanation": "Cooling water from the Chambal."
+        },
+        {
+          "target": "dam-kota-barrage",
+          "type": "colocated",
+          "explanation": "Kota Super Thermal draws from the barrage pool."
+        },
+        {
+          "target": "major-industries-chambal-gadepan",
+          "type": "colocated",
+          "explanation": "Powers the Chambal chemical hub."
+        },
+        {
+          "target": "industrial-clusters-ic-chemical-refinery",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "power-plants-kalisindh-tps",
+      "related": [
+        {
+          "target": "kalisindh-river",
+          "type": "defines",
+          "explanation": "Cooling water from the Kalisindh river."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-ramgarh-gas-tps",
+      "related": [
+        {
+          "target": "petroleum-gas-raageshwari-gas",
+          "type": "defines",
+          "explanation": "Fed by Cairn's Raageshwari gas field."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-anta-gas-ntpc",
+      "related": [
+        {
+          "target": "petroleum-gas-barmer-basin",
+          "type": "colocated",
+          "explanation": "Partly fed by Barmer-basin gas via the HBJ trunk pipeline."
+        }
+      ]
+    },
+    {
+      "source": "solar-parks-bhadla-solar-park",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines",
+          "explanation": "Located within MNRE Solar Radiation Zone A."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Sits in the arid climatic region."
+        },
+        {
+          "target": "thar",
+          "type": "colocated",
+          "explanation": "Physically inside the Thar Desert."
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "signature",
+          "explanation": "Flagship park of the Western Solar Dominance Zone."
+        }
+      ]
+    },
+    {
+      "source": "solar-parks-fatehgarh-solar-park",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines",
+          "explanation": "Located within MNRE Solar Radiation Zone A."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Sits in the arid climatic region."
+        },
+        {
+          "target": "thar",
+          "type": "colocated",
+          "explanation": "Physically inside the Thar Desert."
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "signature",
+          "explanation": "Flagship park of the Western Solar Dominance Zone."
+        }
+      ]
+    },
+    {
+      "source": "solar-parks-nokh-solar-park",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines",
+          "explanation": "Located within MNRE Solar Radiation Zone A."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Sits in the arid climatic region."
+        },
+        {
+          "target": "thar",
+          "type": "colocated",
+          "explanation": "Physically inside the Thar Desert."
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "signature",
+          "explanation": "Flagship park of the Western Solar Dominance Zone."
+        }
+      ]
+    },
+    {
+      "source": "solar-parks-pokhran-solar-park",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines",
+          "explanation": "Located within MNRE Solar Radiation Zone A."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Sits in the arid climatic region."
+        },
+        {
+          "target": "thar",
+          "type": "colocated",
+          "explanation": "Physically inside the Thar Desert."
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "signature",
+          "explanation": "Flagship park of the Western Solar Dominance Zone."
+        }
+      ]
+    },
+    {
+      "source": "solar-parks-bikaner-solar-park",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines",
+          "explanation": "Located within MNRE Solar Radiation Zone A."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Sits in the arid climatic region."
+        },
+        {
+          "target": "thar",
+          "type": "colocated",
+          "explanation": "Physically inside the Thar Desert."
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "signature",
+          "explanation": "Flagship park of the Western Solar Dominance Zone."
+        }
+      ]
+    },
+    {
+      "source": "solar-parks-phalodi-solar-cluster",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines",
+          "explanation": "Located within MNRE Solar Radiation Zone A."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Sits in the arid climatic region."
+        },
+        {
+          "target": "thar",
+          "type": "colocated",
+          "explanation": "Physically inside the Thar Desert."
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "signature",
+          "explanation": "Flagship park of the Western Solar Dominance Zone."
+        }
+      ]
+    },
+    {
+      "source": "wind-farms-jaisalmer-wind-belt",
+      "related": [
+        {
+          "target": "renewable-zones-rez-wind-belt",
+          "type": "defines"
+        },
+        {
+          "target": "renewable-zones-rez-hybrid",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "thar",
+          "type": "colocated"
+        },
+        {
+          "target": "energy-mix-em-wind-hybrid",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "wind-farms-barmer-wind-zone",
+      "related": [
+        {
+          "target": "renewable-zones-rez-wind-belt",
+          "type": "defines"
+        },
+        {
+          "target": "renewable-zones-rez-hybrid",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "thar",
+          "type": "colocated"
+        },
+        {
+          "target": "energy-mix-em-wind-hybrid",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "wind-farms-jodhpur-wind-cluster",
+      "related": [
+        {
+          "target": "renewable-zones-rez-wind-belt",
+          "type": "defines"
+        },
+        {
+          "target": "renewable-zones-rez-hybrid",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "thar",
+          "type": "colocated"
+        },
+        {
+          "target": "energy-mix-em-wind-hybrid",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "wind-farms-phalodi-wind-cluster",
+      "related": [
+        {
+          "target": "renewable-zones-rez-wind-belt",
+          "type": "defines"
+        },
+        {
+          "target": "renewable-zones-rez-hybrid",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "thar",
+          "type": "colocated"
+        },
+        {
+          "target": "energy-mix-em-wind-hybrid",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "transmission-corridors-tc-green-energy-corridor",
+      "related": [
+        {
+          "target": "solar-parks-bhadla-solar-park",
+          "type": "defines"
+        },
+        {
+          "target": "solar-parks-fatehgarh-solar-park",
+          "type": "defines"
+        },
+        {
+          "target": "wind-farms-jaisalmer-wind-belt",
+          "type": "defines"
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "colocated"
+        },
+        {
+          "target": "energy-mix-em-wind-hybrid",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "transmission-corridors-tc-hvdc-bhadla-north",
+      "related": [
+        {
+          "target": "solar-parks-bhadla-solar-park",
+          "type": "defines"
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "renewable-zones-rez-solar-a",
+      "related": [
+        {
+          "target": "climate-regions-arid",
+          "type": "defines"
+        },
+        {
+          "target": "thar",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "renewable-zones-rez-wind-belt",
+      "related": [
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "thar",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "renewable-zones-rez-hybrid",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "colocated"
+        },
+        {
+          "target": "renewable-zones-rez-wind-belt",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "administrative-divisions-jaipur",
+      "related": [
+        {
+          "target": "districts-jaipur",
+          "type": "colocated",
+          "explanation": "Part of Jaipur Division."
+        },
+        {
+          "target": "districts-alwar",
+          "type": "colocated",
+          "explanation": "Part of Jaipur Division."
+        },
+        {
+          "target": "districts-khairthal-tijara",
+          "type": "colocated",
+          "explanation": "Part of Jaipur Division."
+        },
+        {
+          "target": "districts-sikar",
+          "type": "colocated",
+          "explanation": "Part of Jaipur Division."
+        },
+        {
+          "target": "districts-jhunjhunu",
+          "type": "colocated",
+          "explanation": "Part of Jaipur Division."
+        },
+        {
+          "target": "districts-dausa",
+          "type": "colocated",
+          "explanation": "Part of Jaipur Division."
+        },
+        {
+          "target": "districts-kotputli-behror",
+          "type": "colocated",
+          "explanation": "Part of Jaipur Division."
+        },
+        {
+          "target": "districts-didwana-kuchaman",
+          "type": "colocated",
+          "explanation": "Part of Jaipur Division."
+        }
+      ]
+    },
+    {
+      "source": "administrative-divisions-jodhpur",
+      "related": [
+        {
+          "target": "districts-jodhpur",
+          "type": "colocated",
+          "explanation": "Part of Jodhpur Division."
+        },
+        {
+          "target": "districts-jaisalmer",
+          "type": "colocated",
+          "explanation": "Part of Jodhpur Division."
+        },
+        {
+          "target": "districts-barmer",
+          "type": "colocated",
+          "explanation": "Part of Jodhpur Division."
+        },
+        {
+          "target": "districts-balotra",
+          "type": "colocated",
+          "explanation": "Part of Jodhpur Division."
+        },
+        {
+          "target": "districts-pali",
+          "type": "colocated",
+          "explanation": "Part of Jodhpur Division."
+        },
+        {
+          "target": "districts-sirohi",
+          "type": "colocated",
+          "explanation": "Part of Jodhpur Division."
+        },
+        {
+          "target": "districts-jalore",
+          "type": "colocated",
+          "explanation": "Part of Jodhpur Division."
+        },
+        {
+          "target": "districts-phalodi",
+          "type": "colocated",
+          "explanation": "Part of Jodhpur Division."
+        }
+      ]
+    },
+    {
+      "source": "administrative-divisions-ajmer",
+      "related": [
+        {
+          "target": "districts-ajmer",
+          "type": "colocated",
+          "explanation": "Part of Ajmer Division."
+        },
+        {
+          "target": "districts-beawar",
+          "type": "colocated",
+          "explanation": "Part of Ajmer Division."
+        },
+        {
+          "target": "districts-nagaur",
+          "type": "colocated",
+          "explanation": "Part of Ajmer Division."
+        },
+        {
+          "target": "districts-tonk",
+          "type": "colocated",
+          "explanation": "Part of Ajmer Division."
+        },
+        {
+          "target": "districts-bhilwara",
+          "type": "colocated",
+          "explanation": "Part of Ajmer Division."
+        }
+      ]
+    },
+    {
+      "source": "administrative-divisions-bikaner",
+      "related": [
+        {
+          "target": "districts-bikaner",
+          "type": "colocated",
+          "explanation": "Part of Bikaner Division."
+        },
+        {
+          "target": "districts-sri-ganganagar",
+          "type": "colocated",
+          "explanation": "Part of Bikaner Division."
+        },
+        {
+          "target": "districts-hanumangarh",
+          "type": "colocated",
+          "explanation": "Part of Bikaner Division."
+        },
+        {
+          "target": "districts-churu",
+          "type": "colocated",
+          "explanation": "Part of Bikaner Division."
+        }
+      ]
+    },
+    {
+      "source": "administrative-divisions-bharatpur",
+      "related": [
+        {
+          "target": "districts-bharatpur",
+          "type": "colocated",
+          "explanation": "Part of Bharatpur Division."
+        },
+        {
+          "target": "districts-deeg",
+          "type": "colocated",
+          "explanation": "Part of Bharatpur Division."
+        },
+        {
+          "target": "districts-dholpur",
+          "type": "colocated",
+          "explanation": "Part of Bharatpur Division."
+        },
+        {
+          "target": "districts-karauli",
+          "type": "colocated",
+          "explanation": "Part of Bharatpur Division."
+        },
+        {
+          "target": "districts-sawai-madhopur",
+          "type": "colocated",
+          "explanation": "Part of Bharatpur Division."
+        }
+      ]
+    },
+    {
+      "source": "administrative-divisions-kota",
+      "related": [
+        {
+          "target": "districts-kota",
+          "type": "colocated",
+          "explanation": "Part of Kota Division."
+        },
+        {
+          "target": "districts-bundi",
+          "type": "colocated",
+          "explanation": "Part of Kota Division."
+        },
+        {
+          "target": "districts-baran",
+          "type": "colocated",
+          "explanation": "Part of Kota Division."
+        },
+        {
+          "target": "districts-jhalawar",
+          "type": "colocated",
+          "explanation": "Part of Kota Division."
+        }
+      ]
+    },
+    {
+      "source": "administrative-divisions-udaipur",
+      "related": [
+        {
+          "target": "districts-udaipur",
+          "type": "colocated",
+          "explanation": "Part of Udaipur Division."
+        },
+        {
+          "target": "districts-salumbar",
+          "type": "colocated",
+          "explanation": "Part of Udaipur Division."
+        },
+        {
+          "target": "districts-rajsamand",
+          "type": "colocated",
+          "explanation": "Part of Udaipur Division."
+        },
+        {
+          "target": "districts-chittorgarh",
+          "type": "colocated",
+          "explanation": "Part of Udaipur Division."
+        },
+        {
+          "target": "districts-banswara",
+          "type": "colocated",
+          "explanation": "Part of Udaipur Division."
+        },
+        {
+          "target": "districts-dungarpur",
+          "type": "colocated",
+          "explanation": "Part of Udaipur Division."
+        },
+        {
+          "target": "districts-pratapgarh",
+          "type": "colocated",
+          "explanation": "Part of Udaipur Division."
+        }
+      ]
+    },
+    {
+      "source": "regional-zones-marwar",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-textile",
+          "type": "signature",
+          "explanation": "Anchored on this feature within marwar."
+        },
+        {
+          "target": "industrial-clusters-ic-marble-stone",
+          "type": "colocated",
+          "explanation": "Anchored on this feature within marwar."
+        },
+        {
+          "target": "industrial-clusters-ic-salt-wool",
+          "type": "signature",
+          "explanation": "Anchored on this feature within marwar."
+        },
+        {
+          "target": "thar",
+          "type": "defines",
+          "explanation": "Anchored on this feature within marwar."
+        },
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "colocated",
+          "explanation": "Anchored on this feature within marwar."
+        },
+        {
+          "target": "major-crops-bajra",
+          "type": "signature",
+          "explanation": "Anchored on this feature within marwar."
+        },
+        {
+          "target": "major-crops-pulses",
+          "type": "signature",
+          "explanation": "Anchored on this feature within marwar."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "defines",
+          "explanation": "Anchored on this feature within marwar."
+        }
+      ]
+    },
+    {
+      "source": "regional-zones-mewar",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-marble-stone",
+          "type": "signature",
+          "explanation": "Anchored on this feature within mewar."
+        },
+        {
+          "target": "mineral-belts-lead-zinc",
+          "type": "signature",
+          "explanation": "Anchored on this feature within mewar."
+        },
+        {
+          "target": "lakes-pichola-lake",
+          "type": "signature",
+          "explanation": "Anchored on this feature within mewar."
+        },
+        {
+          "target": "lakes-fateh-sagar-lake",
+          "type": "signature",
+          "explanation": "Anchored on this feature within mewar."
+        },
+        {
+          "target": "geological-provinces-aravalli-sg",
+          "type": "colocated",
+          "explanation": "Anchored on this feature within mewar."
+        },
+        {
+          "target": "national-parks-1",
+          "type": "colocated",
+          "explanation": "Anchored on this feature within mewar."
+        },
+        {
+          "target": "major-crops-maize",
+          "type": "signature",
+          "explanation": "Anchored on this feature within mewar."
+        },
+        {
+          "target": "chambal-river",
+          "type": "colocated",
+          "explanation": "Anchored on this feature within mewar."
+        }
+      ]
+    },
+    {
+      "source": "regional-zones-hadoti",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-cement",
+          "type": "signature",
+          "explanation": "Anchored on this feature within hadoti."
+        },
+        {
+          "target": "major-crops-soybean",
+          "type": "signature",
+          "explanation": "Anchored on this feature within hadoti."
+        },
+        {
+          "target": "major-crops-wheat",
+          "type": "signature",
+          "explanation": "Anchored on this feature within hadoti."
+        },
+        {
+          "target": "chambal-river",
+          "type": "defines",
+          "explanation": "Anchored on this feature within hadoti."
+        },
+        {
+          "target": "command-areas-cmd-chambal",
+          "type": "defines",
+          "explanation": "Anchored on this feature within hadoti."
+        },
+        {
+          "target": "major-industries-chambal-gadepan",
+          "type": "signature",
+          "explanation": "Anchored on this feature within hadoti."
+        },
+        {
+          "target": "agro-economic-zones-ae-hadoti",
+          "type": "defines",
+          "explanation": "Anchored on this feature within hadoti."
+        }
+      ]
+    },
+    {
+      "source": "regional-zones-shekhawati",
+      "related": [
+        {
+          "target": "major-crops-groundnut",
+          "type": "signature",
+          "explanation": "Anchored on this feature within shekhawati."
+        },
+        {
+          "target": "major-crops-mustard",
+          "type": "colocated",
+          "explanation": "Anchored on this feature within shekhawati."
+        },
+        {
+          "target": "agro-economic-zones-ae-shekhawati",
+          "type": "defines",
+          "explanation": "Anchored on this feature within shekhawati."
+        },
+        {
+          "target": "mineral-belts-copper",
+          "type": "signature",
+          "explanation": "Anchored on this feature within shekhawati."
+        },
+        {
+          "target": "groundwater-gw-over-exploited",
+          "type": "colocated",
+          "explanation": "Anchored on this feature within shekhawati."
+        }
+      ]
+    },
+    {
+      "source": "regional-zones-dhundhar",
+      "related": [
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated",
+          "explanation": "Anchored on this feature within dhundhar."
+        },
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "signature",
+          "explanation": "Anchored on this feature within dhundhar."
+        },
+        {
+          "target": "special-economic-zones-sez-sitapura",
+          "type": "colocated",
+          "explanation": "Anchored on this feature within dhundhar."
+        },
+        {
+          "target": "handicraft-clusters-blue-pottery",
+          "type": "signature",
+          "explanation": "Anchored on this feature within dhundhar."
+        },
+        {
+          "target": "handicraft-clusters-sanganeri-printing",
+          "type": "signature",
+          "explanation": "Anchored on this feature within dhundhar."
+        }
+      ]
+    },
+    {
+      "source": "regional-zones-vagad",
+      "related": [
+        {
+          "target": "scheduled-areas-tsp-vagad",
+          "type": "defines",
+          "explanation": "Anchored on this feature within vagad."
+        },
+        {
+          "target": "major-crops-maize",
+          "type": "signature",
+          "explanation": "Anchored on this feature within vagad."
+        },
+        {
+          "target": "power-plants-mahi-bajaj-sagar-hep",
+          "type": "signature",
+          "explanation": "Anchored on this feature within vagad."
+        },
+        {
+          "target": "dam-mahi-bajaj-sagar",
+          "type": "signature",
+          "explanation": "Anchored on this feature within vagad."
+        },
+        {
+          "target": "mahi-river",
+          "type": "defines",
+          "explanation": "Anchored on this feature within vagad."
+        },
+        {
+          "target": "handicraft-clusters-molela-terracotta",
+          "type": "signature",
+          "explanation": "Anchored on this feature within vagad."
+        }
+      ]
+    },
+    {
+      "source": "regional-zones-matsya",
+      "related": [
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "defines",
+          "explanation": "Anchored on this feature within matsya."
+        },
+        {
+          "target": "industrial-clusters-ic-auto-engineering",
+          "type": "signature",
+          "explanation": "Anchored on this feature within matsya."
+        },
+        {
+          "target": "major-industries-nissan-neemrana",
+          "type": "signature",
+          "explanation": "Anchored on this feature within matsya."
+        },
+        {
+          "target": "major-industries-honda-tapukara",
+          "type": "signature",
+          "explanation": "Anchored on this feature within matsya."
+        },
+        {
+          "target": "tiger-reserves-2",
+          "type": "colocated",
+          "explanation": "Anchored on this feature within matsya."
+        },
+        {
+          "target": "ramsar-sites-1",
+          "type": "colocated",
+          "explanation": "Anchored on this feature within matsya."
+        }
+      ]
+    },
+    {
+      "source": "regional-zones-godwar",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-textile",
+          "type": "signature",
+          "explanation": "Anchored on this feature within godwar."
+        },
+        {
+          "target": "industrial-areas-pali-ia",
+          "type": "signature",
+          "explanation": "Anchored on this feature within godwar."
+        },
+        {
+          "target": "dam-jawai",
+          "type": "signature",
+          "explanation": "Anchored on this feature within godwar."
+        }
+      ]
+    },
+    {
+      "source": "regional-zones-mewat",
+      "related": [
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated",
+          "explanation": "Anchored on this feature within mewat."
+        }
+      ]
+    },
+    {
+      "source": "smart-cities-sc-jaipur",
+      "related": [
+        {
+          "target": "urban-centres-uc-jaipur",
+          "type": "defines"
+        },
+        {
+          "target": "municipal-corporations-mc-jaipur-greater",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "smart-cities-sc-udaipur",
+      "related": [
+        {
+          "target": "urban-centres-uc-udaipur",
+          "type": "defines"
+        },
+        {
+          "target": "municipal-corporations-mc-udaipur",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "smart-cities-sc-kota",
+      "related": [
+        {
+          "target": "urban-centres-uc-kota",
+          "type": "defines"
+        },
+        {
+          "target": "municipal-corporations-mc-kota-north",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "smart-cities-sc-ajmer",
+      "related": [
+        {
+          "target": "urban-centres-uc-ajmer",
+          "type": "defines"
+        },
+        {
+          "target": "municipal-corporations-mc-ajmer",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-jaipur",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "signature",
+          "explanation": "Signature relation for uc-jaipur."
+        },
+        {
+          "target": "regional-zones-dhundhar",
+          "type": "defines",
+          "explanation": "Signature relation for uc-jaipur."
+        },
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated",
+          "explanation": "Signature relation for uc-jaipur."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-jodhpur",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "signature",
+          "explanation": "Signature relation for uc-jodhpur."
+        },
+        {
+          "target": "regional-zones-marwar",
+          "type": "defines",
+          "explanation": "Signature relation for uc-jodhpur."
+        },
+        {
+          "target": "industrial-regions-ir-jodhpur-pali",
+          "type": "colocated",
+          "explanation": "Signature relation for uc-jodhpur."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-kota",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-chemical-refinery",
+          "type": "signature",
+          "explanation": "Signature relation for uc-kota."
+        },
+        {
+          "target": "regional-zones-hadoti",
+          "type": "defines",
+          "explanation": "Signature relation for uc-kota."
+        },
+        {
+          "target": "major-industries-chambal-gadepan",
+          "type": "colocated",
+          "explanation": "Signature relation for uc-kota."
+        },
+        {
+          "target": "power-plants-kota-super-tps",
+          "type": "colocated",
+          "explanation": "Signature relation for uc-kota."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-udaipur",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-marble-stone",
+          "type": "signature",
+          "explanation": "Signature relation for uc-udaipur."
+        },
+        {
+          "target": "regional-zones-mewar",
+          "type": "defines",
+          "explanation": "Signature relation for uc-udaipur."
+        },
+        {
+          "target": "lakes-pichola-lake",
+          "type": "signature",
+          "explanation": "Signature relation for uc-udaipur."
+        },
+        {
+          "target": "lakes-fateh-sagar-lake",
+          "type": "signature",
+          "explanation": "Signature relation for uc-udaipur."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-bikaner",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-salt-wool",
+          "type": "signature",
+          "explanation": "Signature relation for uc-bikaner."
+        },
+        {
+          "target": "industrial-clusters-ic-ceramics-glass",
+          "type": "signature",
+          "explanation": "Signature relation for uc-bikaner."
+        },
+        {
+          "target": "regional-zones-marwar",
+          "type": "colocated",
+          "explanation": "Signature relation for uc-bikaner."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-ajmer",
+      "related": [
+        {
+          "target": "regional-zones-marwar",
+          "type": "colocated",
+          "explanation": "Signature relation for uc-ajmer."
+        },
+        {
+          "target": "industrial-regions-ir-ajmer-kishangarh",
+          "type": "colocated",
+          "explanation": "Signature relation for uc-ajmer."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-bhilwara",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-textile",
+          "type": "signature",
+          "explanation": "Signature relation for uc-bhilwara."
+        },
+        {
+          "target": "regional-zones-mewar",
+          "type": "colocated",
+          "explanation": "Signature relation for uc-bhilwara."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-alwar",
+      "related": [
+        {
+          "target": "regional-zones-matsya",
+          "type": "defines",
+          "explanation": "Signature relation for uc-alwar."
+        },
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated",
+          "explanation": "Signature relation for uc-alwar."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-sri-ganganagar",
+      "related": [
+        {
+          "target": "agro-economic-zones-ae-north-canal",
+          "type": "signature",
+          "explanation": "Signature relation for uc-sri-ganganagar."
+        },
+        {
+          "target": "command-areas-cmd-gang",
+          "type": "signature",
+          "explanation": "Signature relation for uc-sri-ganganagar."
+        },
+        {
+          "target": "major-crops-cotton",
+          "type": "signature",
+          "explanation": "Signature relation for uc-sri-ganganagar."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-sikar",
+      "related": [
+        {
+          "target": "regional-zones-shekhawati",
+          "type": "defines",
+          "explanation": "Signature relation for uc-sikar."
+        },
+        {
+          "target": "agro-economic-zones-ae-shekhawati",
+          "type": "colocated",
+          "explanation": "Signature relation for uc-sikar."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-pali",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-textile",
+          "type": "signature",
+          "explanation": "Signature relation for uc-pali."
+        },
+        {
+          "target": "regional-zones-godwar",
+          "type": "defines",
+          "explanation": "Signature relation for uc-pali."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-bharatpur",
+      "related": [
+        {
+          "target": "regional-zones-matsya",
+          "type": "colocated",
+          "explanation": "Signature relation for uc-bharatpur."
+        },
+        {
+          "target": "national-parks-1",
+          "type": "colocated",
+          "explanation": "Signature relation for uc-bharatpur."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-beawar",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-cement",
+          "type": "signature",
+          "explanation": "Signature relation for uc-beawar."
+        },
+        {
+          "target": "major-industries-shree-beawar",
+          "type": "signature",
+          "explanation": "Signature relation for uc-beawar."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-kishangarh",
+      "related": [
+        {
+          "target": "industrial-clusters-ic-marble-stone",
+          "type": "signature",
+          "explanation": "Signature relation for uc-kishangarh."
+        },
+        {
+          "target": "industrial-areas-kishangarh-ia",
+          "type": "signature",
+          "explanation": "Signature relation for uc-kishangarh."
+        }
+      ]
+    },
+    {
+      "source": "urban-centres-uc-hanumangarh",
+      "related": [
+        {
+          "target": "agro-economic-zones-ae-north-canal",
+          "type": "signature",
+          "explanation": "Signature relation for uc-hanumangarh."
+        },
+        {
+          "target": "command-areas-cmd-gang",
+          "type": "signature",
+          "explanation": "Signature relation for uc-hanumangarh."
+        }
+      ]
+    },
+    {
+      "source": "population-corridors-pc-jaipur-ajmer",
+      "related": [
+        {
+          "target": "urban-centres-uc-jaipur",
+          "type": "defines"
+        },
+        {
+          "target": "urban-centres-uc-ajmer",
+          "type": "defines"
+        },
+        {
+          "target": "urban-centres-uc-kishangarh",
+          "type": "defines"
+        },
+        {
+          "target": "urban-centres-uc-beawar",
+          "type": "signature"
+        },
+        {
+          "target": "industrial-regions-ir-ajmer-kishangarh",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "population-corridors-pc-jaipur-alwar-delhi",
+      "related": [
+        {
+          "target": "urban-centres-uc-jaipur",
+          "type": "defines"
+        },
+        {
+          "target": "urban-centres-uc-alwar",
+          "type": "defines"
+        },
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "population-corridors-pc-jodhpur-ahmedabad",
+      "related": [
+        {
+          "target": "urban-centres-uc-jodhpur",
+          "type": "defines"
+        },
+        {
+          "target": "urban-centres-uc-pali",
+          "type": "signature"
+        },
+        {
+          "target": "industrial-regions-ir-jodhpur-pali",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "population-corridors-pc-kota-udaipur",
+      "related": [
+        {
+          "target": "urban-centres-uc-kota",
+          "type": "defines"
+        },
+        {
+          "target": "urban-centres-uc-udaipur",
+          "type": "defines"
+        },
+        {
+          "target": "industrial-regions-ir-udaipur-rajsamand",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "population-corridors-pc-bikaner-jaisalmer",
+      "related": [
+        {
+          "target": "urban-centres-uc-bikaner",
+          "type": "defines"
+        },
+        {
+          "target": "solar-parks-bhadla-solar-park",
+          "type": "signature"
+        },
+        {
+          "target": "solar-parks-fatehgarh-solar-park",
+          "type": "signature"
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "jaipur",
+      "related": [
+        {
+          "target": "urban-centres-uc-jaipur",
+          "type": "signature"
+        },
+        {
+          "target": "smart-cities-sc-jaipur",
+          "type": "defines"
+        },
+        {
+          "target": "regional-zones-dhundhar",
+          "type": "defines"
+        },
+        {
+          "target": "population-corridors-pc-jaipur-alwar-delhi",
+          "type": "defines"
+        },
+        {
+          "target": "population-corridors-pc-jaipur-ajmer",
+          "type": "defines"
+        },
+        {
+          "target": "industrial-regions-ir-dmic-kbn",
+          "type": "colocated"
+        },
+        {
+          "target": "industrial-clusters-ic-handicraft",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "udaipur",
+      "related": [
+        {
+          "target": "urban-centres-uc-udaipur",
+          "type": "signature"
+        },
+        {
+          "target": "smart-cities-sc-udaipur",
+          "type": "defines"
+        },
+        {
+          "target": "regional-zones-mewar",
+          "type": "defines"
+        },
+        {
+          "target": "geological-provinces-aravalli-sg",
+          "type": "colocated"
+        },
+        {
+          "target": "lakes-pichola-lake",
+          "type": "signature"
+        },
+        {
+          "target": "lakes-fateh-sagar-lake",
+          "type": "signature"
+        },
+        {
+          "target": "industrial-clusters-ic-marble-stone",
+          "type": "signature"
+        },
+        {
+          "target": "scheduled-areas-tsp-vagad",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "barmer",
+      "related": [
+        {
+          "target": "border-districts-international-pakistan",
+          "type": "defines",
+          "explanation": "Barmer is one of four districts on India's international border with Pakistan."
+        },
+        {
+          "target": "petroleum-gas-barmer-basin",
+          "type": "signature",
+          "explanation": "Home to Rajasthan's only crude-oil producing basin."
+        },
+        {
+          "target": "petroleum-gas-mangala-field",
+          "type": "signature"
+        },
+        {
+          "target": "major-industries-hrrl-pachpadra",
+          "type": "colocated",
+          "explanation": "Under-construction HPCL refinery in Balotra (carved from Barmer)."
+        },
+        {
+          "target": "power-plants-barmer-lignite-tps",
+          "type": "signature"
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "colocated"
+        },
+        {
+          "target": "energy-mix-em-wind-hybrid",
+          "type": "colocated"
+        },
+        {
+          "target": "wind-farms-barmer-wind-zone",
+          "type": "signature"
+        },
+        {
+          "target": "thar",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "regional-zones-marwar",
+          "type": "colocated"
+        }
+      ]
+    }
+  ]
+}

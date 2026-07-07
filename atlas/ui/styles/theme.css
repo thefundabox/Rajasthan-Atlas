@@ -1,0 +1,206 @@
+/* ============================================================================
+ * Design tokens — the single source of truth for colour, typography, spacing.
+ * NatGeo-inspired warm-neutral base; muted spot colours for cartographic
+ * identity; expressive strokes over saturated fills.
+ * ==========================================================================*/
+
+:root {
+  /* -- Paper and ink --------------------------------------------------- */
+  --paper:            #f4ecd8;   /* main paper substrate — warm cream */
+  --paper-warm:       #ede2c4;   /* deeper paper — used behind cards */
+  --paper-tinted:     #faf3e0;   /* faint tint for panels */
+  --card:             #ffffff;
+  --card-quiet:       #fbf6e9;   /* subtle card background */
+  --map-bg:           #f7efdb;   /* the map's canvas */
+  --water:            #d6e5ed;   /* pale water shade */
+
+  --ink:              #201f1c;
+  --ink-2:            #4a463e;   /* body secondary */
+  --ink-3:            #7a7263;   /* meta */
+  --ink-4:            #a89f8b;   /* faint */
+  --ink-inv:          #ffffff;
+
+  --hair:             #d9cfb5;   /* hairline dividers */
+  --rule:             #b5a685;   /* stronger rule */
+  --stroke-district:  #7a6c4f;
+
+  /* -- Accent / cartographic identity --------------------------------- */
+  --accent:           #a04d1e;   /* burnt sienna — attention accent */
+  --accent-soft:      #e8c7a0;
+  --gold:             #b8892c;   /* UNESCO halo */
+  --gold-soft:        #e9d69f;
+
+  --sel:              #a04d1e;
+  --sel-bg:           #f0d9bd;
+
+  /* -- Cartographic symbology (aligned with atlas.css) ---------------- */
+  --sym-np:           #2f5f3d;   /* National Park — dark forest green */
+  --sym-np-soft:      #cfe1d3;
+  --sym-tr:           #b95119;   /* Tiger Reserve — atlas orange */
+  --sym-tr-soft:      #f4c9a4;
+  --sym-wls:          #6e9860;   /* Wildlife Sanctuary — sage green */
+  --sym-wls-soft:     #d4e5c9;
+  --sym-ramsar:       #2c5da8;   /* Ramsar — atlas blue */
+  --sym-ramsar-soft:  #c5d7ef;
+  --sym-wetland:      #2e8a9c;   /* Wetland — teal */
+  --sym-wetland-soft: #c1e0e5;
+  --sym-biosphere:    #7a4a9c;
+  --sym-biosphere-soft:#dccbe6;
+
+  /* -- Division palette (subdued for choropleth) ---------------------- */
+  --div-Ajmer:        #c4885a;
+  --div-Bharatpur:    #9ab778;
+  --div-Bikaner:      #d1b76a;
+  --div-Jaipur:       #8ea1c1;
+  --div-Jodhpur:      #c99a68;
+  --div-Kota:         #a684b0;
+  --div-Udaipur:      #7ba9a0;
+
+  /* -- Typography ----------------------------------------------------- */
+  --serif:            "Iowan Old Style","Palatino Linotype","Palatino","Book Antiqua",Georgia,"Times New Roman",serif;
+  --sans:             -apple-system,BlinkMacSystemFont,"Segoe UI","SF Pro Text","Helvetica Neue","Inter",Arial,sans-serif;
+  --mono:             ui-monospace,"SF Mono","Menlo","Consolas",monospace;
+  --small-caps-letter-spacing: 0.09em;
+
+  /* Type scale (based on 14px root). Named so intent is legible. */
+  --t-hero:           28px;
+  --t-title:          22px;
+  --t-lede:           17px;
+  --t-body:           14px;
+  --t-small:          12.5px;
+  --t-meta:           11px;
+  --t-caps:           10.5px;
+
+  /* -- Layout ---------------------------------------------------------- */
+  --sp-1: 4px;   --sp-2: 8px;   --sp-3: 12px;  --sp-4: 16px;
+  --sp-5: 20px;  --sp-6: 28px;  --sp-8: 40px;  --sp-10: 56px;
+
+  --rad-sm: 3px;
+  --rad-md: 5px;
+  --rad-lg: 10px;
+  --rad-pill: 999px;
+
+  --shadow-card:      0 1px 2px rgba(32,31,28,0.05), 0 6px 18px rgba(32,31,28,0.08);
+  --shadow-float:     0 2px 4px rgba(32,31,28,0.06), 0 10px 30px rgba(32,31,28,0.10);
+  --shadow-tip:       0 3px 10px rgba(32,31,28,0.14);
+
+  --focus-ring:       0 0 0 2px var(--card), 0 0 0 4px var(--accent);
+
+  --motion-fast:      120ms;
+  --motion-base:      180ms;
+  --motion-slow:      260ms;
+  --ease:             cubic-bezier(0.4, 0.0, 0.2, 1);
+
+  /* Layer style hooks (used by generic Renderer). */
+  --layer-districts-fill:   var(--paper-warm);
+  --layer-districts-stroke: var(--stroke-district);
+}
+
+/* ---- Dark theme (evening reading) ---------------------------------- */
+.theme-dark {
+  --paper:            #17191d;
+  --paper-warm:       #1c1f24;
+  --paper-tinted:     #202329;
+  --card:             #22262c;
+  --card-quiet:       #1c1f24;
+  --map-bg:           #191b1f;
+  --water:            #253038;
+
+  --ink:              #eee1c8;
+  --ink-2:            #c4b89e;
+  --ink-3:            #8b8371;
+  --ink-4:            #63604e;
+
+  --hair:             #33363d;
+  --rule:             #4d4a3e;
+  --stroke-district:  #8a7d5c;
+
+  --accent:           #e6a25c;
+  --accent-soft:      #4d3620;
+  --gold:             #e5c67a;
+  --gold-soft:        #4a3d1e;
+
+  --sel:              #e6a25c;
+  --sel-bg:           #4a3620;
+
+  --sym-np-soft:      #26362a;
+  --sym-tr-soft:      #46281a;
+  --sym-wls-soft:     #2b3627;
+  --sym-ramsar-soft:  #1e2c46;
+  --sym-wetland-soft: #1c353b;
+  --sym-biosphere-soft:#332644;
+
+  --div-Ajmer:        #a06d46;
+  --div-Bharatpur:    #6c8556;
+  --div-Bikaner:      #98814b;
+  --div-Jaipur:       #5a728e;
+  --div-Jodhpur:      #a17148;
+  --div-Kota:         #7d5f8a;
+  --div-Udaipur:      #567a74;
+
+  --shadow-card:      0 1px 3px rgba(0,0,0,0.5), 0 6px 20px rgba(0,0,0,0.5);
+  --shadow-float:     0 2px 6px rgba(0,0,0,0.5), 0 12px 32px rgba(0,0,0,0.6);
+  --shadow-tip:       0 3px 12px rgba(0,0,0,0.6);
+}
+
+/* ---- Print theme (paper mode) --------------------------------------- */
+.theme-print {
+  --paper:            #ffffff;
+  --paper-warm:       #f7f7f2;
+  --paper-tinted:     #ffffff;
+  --card:             #ffffff;
+  --card-quiet:       #f5f5f0;
+  --map-bg:           #ffffff;
+  --water:            #eaf0f3;
+
+  --ink:              #111111;
+  --ink-2:            #333333;
+  --ink-3:            #666666;
+  --ink-4:            #999999;
+
+  --hair:             #cccccc;
+  --rule:             #666666;
+  --stroke-district:  #333333;
+
+  --accent:           #333333;
+  --accent-soft:      #eeeeee;
+  --gold:             #877432;
+  --gold-soft:        #eee5c9;
+
+  --shadow-card:      none;
+  --shadow-float:     none;
+  --shadow-tip:       none;
+}
+
+/* ---- High-contrast (WCAG AAA) --------------------------------------- */
+.theme-hc {
+  --paper:            #000000;
+  --paper-warm:       #0a0a0a;
+  --paper-tinted:     #111111;
+  --card:             #000000;
+  --card-quiet:       #0f0f0f;
+  --map-bg:           #000000;
+  --water:            #002244;
+
+  --ink:              #ffffff;
+  --ink-2:            #ffff00;
+  --ink-3:            #d9d9d9;
+  --ink-4:            #999999;
+
+  --hair:             #ffffff;
+  --rule:             #ffffff;
+  --stroke-district:  #ffffff;
+
+  --accent:           #ffff00;
+  --accent-soft:      #333300;
+  --sel:              #ffff00;
+  --sel-bg:           #666600;
+
+  --sym-np:           #00ff66;
+  --sym-tr:           #ff8800;
+  --sym-wls:          #66ff33;
+  --sym-ramsar:       #33ccff;
+  --sym-wetland:      #00ffcc;
+  --sym-biosphere:    #cc66ff;
+  --gold:             #ffff00;
+}

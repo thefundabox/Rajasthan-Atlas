@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# Scratchpad / temp
+scratchpad/
+tmp/
+*.tmp
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Node (in case anything is ever added)
+node_modules/
+package-lock.json
+
+# Claude Code local
+.claude/

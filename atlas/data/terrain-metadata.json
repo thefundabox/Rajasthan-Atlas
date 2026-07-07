@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lastUpdated": "2026-07-06",
+  "bounds": {
+    "minLon": 68.79639,
+    "maxLon": 78.9917,
+    "minLat": 22.20696,
+    "maxLat": 30.90629
+  },
+  "image": "atlas/data/terrain-hillshade.png",
+  "width": 928,
+  "height": 890,
+  "elevationRange": [
+    -630,
+    6407
+  ],
+  "source": "Mapzen \"terrarium\" DEM tiles from the AWS elevation-tiles-prod bucket (SRTMGL1 / SRTMGL3 fused). ODbL 1.0.",
+  "hillshade": {
+    "azimuth": 315.0,
+    "altitude": 45.0,
+    "zFactor": 1.5
+  }
+}

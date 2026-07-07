@@ -1,0 +1,128 @@
+/* ============================================================================
+ * Components — buttons, search, small controls. Editorial restraint.
+ * ==========================================================================*/
+
+/* -- Search input in the header --------------------------------------- */
+.search { position: relative; }
+.search input {
+  width: 100%;
+  padding: 8px 32px 8px 32px;
+  font: inherit;
+  font-family: var(--sans);
+  font-size: var(--t-body);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-md);
+  background: var(--card-quiet);
+  color: var(--ink);
+  outline: none;
+  transition: border-color var(--motion-fast), background var(--motion-fast), box-shadow var(--motion-fast);
+}
+.search input::placeholder { color: var(--ink-4); font-style: italic; }
+.search input:hover  { background: var(--card); border-color: var(--rule); }
+.search input:focus  { background: var(--card); border-color: var(--accent);
+                       box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 15%, transparent); }
+
+.search .icon {
+  position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+  color: var(--ink-3); pointer-events: none; font-size: 14px;
+}
+.search .clear {
+  position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+  background: none; border: 0; color: var(--ink-3); cursor: pointer;
+  padding: 4px 8px; border-radius: var(--rad-sm);
+  visibility: hidden;
+  font-size: 16px;
+}
+.search.has-value .clear { visibility: visible; }
+.search .clear:hover { background: var(--card-quiet); color: var(--ink); }
+.search .clear:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+/* -- Search results dropdown ------------------------------------------- */
+.search-results {
+  position: absolute; top: 100%; left: 0; right: 0;
+  margin-top: 4px;
+  max-height: 360px;
+  overflow-y: auto;
+  background: var(--card);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-md);
+  box-shadow: var(--shadow-float);
+  z-index: 50;
+  display: none;
+}
+.search-results.on { display: block; }
+.search-results .row {
+  padding: 10px 14px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--hair);
+  display: flex; justify-content: space-between; align-items: baseline; gap: 8px;
+}
+.search-results .row:last-child { border-bottom: 0; }
+.search-results .row:hover, .search-results .row.focus { background: var(--card-quiet); }
+.search-results .row .name {
+  font-family: var(--serif);
+  font-size: var(--t-body);
+  color: var(--ink);
+}
+.search-results .row .meta {
+  color: var(--ink-3);
+  font-size: var(--t-meta);
+  letter-spacing: 0.02em;
+  text-align: right;
+  flex-shrink: 0;
+}
+.search-results .empty {
+  padding: 16px;
+  color: var(--ink-3);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: var(--t-small);
+  text-align: center;
+}
+
+/* -- Header nav buttons ----------------------------------------------- */
+.h-btn {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink-2);
+  font-family: var(--sans);
+  font-size: var(--t-small);
+  padding: 6px 10px;
+  border-radius: var(--rad-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background var(--motion-fast), color var(--motion-fast);
+}
+.h-btn:hover { background: var(--card-quiet); color: var(--ink); }
+.h-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.h-btn.active { background: var(--sel-bg); color: var(--ink); }
+
+/* -- Kbd chip ---------------------------------------------------------- */
+.kbd {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-3);
+  border: 1px solid var(--hair);
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  padding: 1px 5px;
+  margin-left: 6px;
+  background: var(--card);
+}
+
+/* -- Legend list (used in layers popover) ----------------------------- */
+.legend-list { list-style: none; padding: 0; margin: 0; }
+.legend-list li {
+  display: flex; align-items: center; gap: 8px;
+  padding: 5px 0;
+  font-size: var(--t-small);
+  color: var(--ink-2);
+}
+.legend-list .sw {
+  width: 12px; height: 12px; border-radius: 2px;
+  border: 1px solid var(--rule);
+  flex-shrink: 0;
+}

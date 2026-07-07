@@ -1,0 +1,563 @@
+{
+  "edges": [
+    {
+      "source": "energy-mix-em-solar-west",
+      "related": [
+        {
+          "target": "solar-parks-bhadla-solar-park",
+          "type": "signature"
+        },
+        {
+          "target": "solar-parks-fatehgarh-solar-park",
+          "type": "signature"
+        },
+        {
+          "target": "solar-parks-nokh-solar-park",
+          "type": "signature"
+        },
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "energy-mix-em-nuclear-thermal-hadoti",
+      "related": [
+        {
+          "target": "power-plants-raps-rawatbhata",
+          "type": "signature"
+        },
+        {
+          "target": "power-plants-kota-super-tps",
+          "type": "signature"
+        },
+        {
+          "target": "power-plants-chhabra-tps",
+          "type": "signature"
+        },
+        {
+          "target": "power-plants-kalisindh-tps",
+          "type": "signature"
+        },
+        {
+          "target": "chambal-river",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "energy-mix-em-wind-hybrid",
+      "related": [
+        {
+          "target": "wind-farms-jaisalmer-wind-belt",
+          "type": "signature"
+        },
+        {
+          "target": "wind-farms-barmer-wind-zone",
+          "type": "signature"
+        },
+        {
+          "target": "renewable-zones-rez-wind-belt",
+          "type": "defines"
+        },
+        {
+          "target": "renewable-zones-rez-hybrid",
+          "type": "defines"
+        },
+        {
+          "target": "thar",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "energy-mix-em-gas-mixed-north",
+      "related": [
+        {
+          "target": "power-plants-ramgarh-gas-tps",
+          "type": "signature"
+        },
+        {
+          "target": "petroleum-gas-raageshwari-gas",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "energy-mix-em-hydel-dam-south",
+      "related": [
+        {
+          "target": "power-plants-rana-pratap-sagar-hep",
+          "type": "signature"
+        },
+        {
+          "target": "power-plants-jawahar-sagar-hep",
+          "type": "signature"
+        },
+        {
+          "target": "power-plants-mahi-bajaj-sagar-hep",
+          "type": "signature"
+        },
+        {
+          "target": "chambal-river",
+          "type": "defines"
+        },
+        {
+          "target": "mahi-river",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "power-plants-rana-pratap-sagar-hep",
+      "related": [
+        {
+          "target": "dam-rana-pratap-sagar",
+          "type": "defines",
+          "explanation": "Hydel station co-located with this dam."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-jawahar-sagar-hep",
+      "related": [
+        {
+          "target": "dam-jawahar-sagar",
+          "type": "defines",
+          "explanation": "Hydel station co-located with this dam."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-mahi-bajaj-sagar-hep",
+      "related": [
+        {
+          "target": "dam-mahi-bajaj-sagar",
+          "type": "defines",
+          "explanation": "Hydel station co-located with this dam."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-raps-rawatbhata",
+      "related": [
+        {
+          "target": "chambal-river",
+          "type": "defines",
+          "explanation": "Cooling water drawn from the Chambal via Rana Pratap Sagar."
+        },
+        {
+          "target": "dam-rana-pratap-sagar",
+          "type": "colocated",
+          "explanation": "Rawatbhata is built adjacent to the Rana Pratap Sagar reservoir."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-barmer-lignite-tps",
+      "related": [
+        {
+          "target": "mineral-belts-lignite",
+          "type": "defines",
+          "explanation": "Mine-mouth station burning this belt's lignite."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-giral-lignite-tps",
+      "related": [
+        {
+          "target": "mineral-belts-lignite",
+          "type": "defines",
+          "explanation": "Mine-mouth station burning this belt's lignite."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-kalisindh-tps",
+      "related": [
+        {
+          "target": "kalisindh-river",
+          "type": "defines",
+          "explanation": "Cooling water from the Kalisindh river."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-ramgarh-gas-tps",
+      "related": [
+        {
+          "target": "petroleum-gas-raageshwari-gas",
+          "type": "defines",
+          "explanation": "Fed by Cairn's Raageshwari gas field."
+        }
+      ]
+    },
+    {
+      "source": "power-plants-anta-gas-ntpc",
+      "related": [
+        {
+          "target": "petroleum-gas-barmer-basin",
+          "type": "colocated",
+          "explanation": "Partly fed by Barmer-basin gas via the HBJ trunk pipeline."
+        }
+      ]
+    },
+    {
+      "source": "solar-parks-bhadla-solar-park",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines",
+          "explanation": "Located within MNRE Solar Radiation Zone A."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Sits in the arid climatic region."
+        },
+        {
+          "target": "thar",
+          "type": "colocated",
+          "explanation": "Physically inside the Thar Desert."
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "signature",
+          "explanation": "Flagship park of the Western Solar Dominance Zone."
+        }
+      ]
+    },
+    {
+      "source": "solar-parks-fatehgarh-solar-park",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines",
+          "explanation": "Located within MNRE Solar Radiation Zone A."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Sits in the arid climatic region."
+        },
+        {
+          "target": "thar",
+          "type": "colocated",
+          "explanation": "Physically inside the Thar Desert."
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "signature",
+          "explanation": "Flagship park of the Western Solar Dominance Zone."
+        }
+      ]
+    },
+    {
+      "source": "solar-parks-nokh-solar-park",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines",
+          "explanation": "Located within MNRE Solar Radiation Zone A."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Sits in the arid climatic region."
+        },
+        {
+          "target": "thar",
+          "type": "colocated",
+          "explanation": "Physically inside the Thar Desert."
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "signature",
+          "explanation": "Flagship park of the Western Solar Dominance Zone."
+        }
+      ]
+    },
+    {
+      "source": "solar-parks-pokhran-solar-park",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines",
+          "explanation": "Located within MNRE Solar Radiation Zone A."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Sits in the arid climatic region."
+        },
+        {
+          "target": "thar",
+          "type": "colocated",
+          "explanation": "Physically inside the Thar Desert."
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "signature",
+          "explanation": "Flagship park of the Western Solar Dominance Zone."
+        }
+      ]
+    },
+    {
+      "source": "solar-parks-bikaner-solar-park",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines",
+          "explanation": "Located within MNRE Solar Radiation Zone A."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Sits in the arid climatic region."
+        },
+        {
+          "target": "thar",
+          "type": "colocated",
+          "explanation": "Physically inside the Thar Desert."
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "signature",
+          "explanation": "Flagship park of the Western Solar Dominance Zone."
+        }
+      ]
+    },
+    {
+      "source": "solar-parks-phalodi-solar-cluster",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "defines",
+          "explanation": "Located within MNRE Solar Radiation Zone A."
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated",
+          "explanation": "Sits in the arid climatic region."
+        },
+        {
+          "target": "thar",
+          "type": "colocated",
+          "explanation": "Physically inside the Thar Desert."
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "signature",
+          "explanation": "Flagship park of the Western Solar Dominance Zone."
+        }
+      ]
+    },
+    {
+      "source": "wind-farms-jaisalmer-wind-belt",
+      "related": [
+        {
+          "target": "renewable-zones-rez-wind-belt",
+          "type": "defines"
+        },
+        {
+          "target": "renewable-zones-rez-hybrid",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "thar",
+          "type": "colocated"
+        },
+        {
+          "target": "energy-mix-em-wind-hybrid",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "wind-farms-barmer-wind-zone",
+      "related": [
+        {
+          "target": "renewable-zones-rez-wind-belt",
+          "type": "defines"
+        },
+        {
+          "target": "renewable-zones-rez-hybrid",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "thar",
+          "type": "colocated"
+        },
+        {
+          "target": "energy-mix-em-wind-hybrid",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "wind-farms-jodhpur-wind-cluster",
+      "related": [
+        {
+          "target": "renewable-zones-rez-wind-belt",
+          "type": "defines"
+        },
+        {
+          "target": "renewable-zones-rez-hybrid",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "thar",
+          "type": "colocated"
+        },
+        {
+          "target": "energy-mix-em-wind-hybrid",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "wind-farms-phalodi-wind-cluster",
+      "related": [
+        {
+          "target": "renewable-zones-rez-wind-belt",
+          "type": "defines"
+        },
+        {
+          "target": "renewable-zones-rez-hybrid",
+          "type": "colocated"
+        },
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "thar",
+          "type": "colocated"
+        },
+        {
+          "target": "energy-mix-em-wind-hybrid",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "transmission-corridors-tc-green-energy-corridor",
+      "related": [
+        {
+          "target": "solar-parks-bhadla-solar-park",
+          "type": "defines"
+        },
+        {
+          "target": "solar-parks-fatehgarh-solar-park",
+          "type": "defines"
+        },
+        {
+          "target": "wind-farms-jaisalmer-wind-belt",
+          "type": "defines"
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "colocated"
+        },
+        {
+          "target": "energy-mix-em-wind-hybrid",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "transmission-corridors-tc-hvdc-bhadla-north",
+      "related": [
+        {
+          "target": "solar-parks-bhadla-solar-park",
+          "type": "defines"
+        },
+        {
+          "target": "energy-mix-em-solar-west",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "power-plants-kota-super-tps",
+      "related": [
+        {
+          "target": "chambal-river",
+          "type": "defines",
+          "explanation": "Cooling water from the Chambal."
+        },
+        {
+          "target": "dam-kota-barrage",
+          "type": "colocated",
+          "explanation": "Kota Super Thermal draws from the barrage pool."
+        },
+        {
+          "target": "major-industries-chambal-gadepan",
+          "type": "colocated",
+          "explanation": "Powers the Chambal chemical hub."
+        },
+        {
+          "target": "industrial-clusters-ic-chemical-refinery",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "renewable-zones-rez-solar-a",
+      "related": [
+        {
+          "target": "climate-regions-arid",
+          "type": "defines"
+        },
+        {
+          "target": "thar",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "renewable-zones-rez-wind-belt",
+      "related": [
+        {
+          "target": "climate-regions-arid",
+          "type": "colocated"
+        },
+        {
+          "target": "thar",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "renewable-zones-rez-hybrid",
+      "related": [
+        {
+          "target": "renewable-zones-rez-solar-a",
+          "type": "colocated"
+        },
+        {
+          "target": "renewable-zones-rez-wind-belt",
+          "type": "colocated"
+        }
+      ]
+    }
+  ]
+}

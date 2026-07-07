@@ -1,0 +1,137 @@
+/* ============================================================================
+ * Layout — the map is the whole page. Chrome floats over it or reveals on demand.
+ * ==========================================================================*/
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--t-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Grid: header on top, map fills the rest. Right rail is a slide-in overlay,
+   not a permanent column. Legacy .a-left / .a-toolbar remain in the DOM but
+   are hidden — their content is delivered via floating overlays. */
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "map"
+    "status";
+}
+
+.a-header { grid-area: header; }
+.a-map    { grid-area: map; overflow: hidden; position: relative; background: var(--map-bg); }
+.a-status { grid-area: status; }
+
+/* Non-essential chrome grid areas — hidden by default, resurfaced as popovers. */
+.a-toolbar, .a-left { display: none; }
+
+/* -- Header ------------------------------------------------------------ */
+.a-header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-6);
+  padding: var(--sp-3) var(--sp-6);
+  background: var(--paper);
+  border-bottom: 1px solid var(--hair);
+  position: relative; z-index: 20;
+}
+.a-header h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.005em;
+  color: var(--ink);
+}
+.a-header .subtitle {
+  color: var(--ink-3);
+  font-size: var(--t-caps);
+  letter-spacing: var(--small-caps-letter-spacing);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+.a-header .h-nav {
+  margin-left: auto;
+  display: flex;
+  gap: var(--sp-2);
+  align-items: center;
+}
+.a-header .search-wrap { flex: 0 0 300px; }
+
+/* -- Right rail — slide-in feature panel ------------------------------- */
+.a-right {
+  position: fixed;
+  top: 0; right: 0; bottom: 0;
+  width: min(440px, 90vw);
+  background: var(--card);
+  border-left: 1px solid var(--hair);
+  box-shadow: var(--shadow-float);
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: translateX(100%);
+  transition: transform var(--motion-base) var(--ease);
+  z-index: 30;
+}
+.a-right.open { transform: translateX(0); }
+.a-right .close-btn {
+  position: sticky; top: 0;
+  background: linear-gradient(to bottom, var(--card) 60%, transparent 100%);
+  display: flex; justify-content: flex-end;
+  padding: var(--sp-3) var(--sp-4) 0;
+  z-index: 5;
+}
+.a-right .close-btn button {
+  background: none; border: 0; cursor: pointer;
+  color: var(--ink-3); font-size: 20px; line-height: 1;
+  padding: 4px 8px; border-radius: var(--rad-sm);
+  transition: background var(--motion-fast);
+}
+.a-right .close-btn button:hover { background: var(--card-quiet); color: var(--ink); }
+
+.a-right .detail-slot { padding: 0 var(--sp-5) var(--sp-6); }
+
+/* -- Status bar -------------------------------------------------------- */
+.a-status {
+  background: var(--paper);
+  border-top: 1px solid var(--hair);
+  padding: 6px var(--sp-4);
+  font-family: var(--mono);
+  font-size: var(--t-meta);
+  color: var(--ink-3);
+  display: flex;
+  gap: var(--sp-5);
+  align-items: center;
+  height: 30px;
+}
+.a-status .s-item { display: flex; gap: 4px; align-items: center; }
+.a-status .s-label { color: var(--ink-4); }
+.a-status .s-value { color: var(--ink-2); }
+.a-status .spacer  { flex: 1; }
+
+/* -- Print ------------------------------------------------------------- */
+@media print {
+  body { grid-template-rows: auto 1fr auto; overflow: visible; height: auto; }
+  .a-map { min-height: 80vh; break-inside: avoid; }
+  .a-right { display: none !important; }
+  .a-status { border-top: 1px solid #000; color: #000; }
+}
+
+/* -- Mobile ------------------------------------------------------------ */
+@media (max-width: 700px) {
+  .a-header { padding: var(--sp-2) var(--sp-3); flex-wrap: wrap; }
+  .a-header .search-wrap { flex: 1 1 100%; margin-top: var(--sp-2); }
+  .a-right { width: 100vw; }
+}

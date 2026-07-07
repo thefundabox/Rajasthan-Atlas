@@ -1,0 +1,207 @@
+/* ============================================================================
+ * Climate · Soils · Vegetation — thematic overlay palette.
+ * Transparent enough that terrain, PAs, rivers, and districts remain readable.
+ * ==========================================================================*/
+
+:root {
+  /* Rainfall — cool blues, low → high */
+  --clim-r1: #f4dbba;
+  --clim-r2: #ecc98a;
+  --clim-r3: #c8d8bd;
+  --clim-r4: #9ac4d6;
+  --clim-r5: #6ba5c9;
+  --clim-r6: #3d7db2;
+
+  /* Temperature — cool → hot */
+  --clim-t1: #b6d3e0;
+  --clim-t2: #eac9a6;
+  --clim-t3: #dc8f66;
+  --clim-t4: #b25428;
+
+  /* Climate regions — muted overlays */
+  --clim-cr-arid:        #efe1c3;
+  --clim-cr-semi-arid:   #ddcfa5;
+  --clim-cr-sub-humid:   #b8c7a0;
+  --clim-cr-humid:       #7fa590;
+
+  /* Agro-climatic — palette avoids clashing with rainfall */
+  --clim-agro-1: #d8bc93;   /* arid west */
+  --clim-agro-2: #b7b485;
+  --clim-agro-3: #8faf9f;
+  --clim-agro-4: #7a9db2;
+  --clim-agro-5: #628ea8;
+
+  /* Soils — earth tones */
+  --soil-desert:   #eed4a0;
+  --soil-red:      #c48159;
+  --soil-alluvial: #d3c992;
+  --soil-black:    #4c443a;
+  --soil-mix:      #a08561;
+  --soil-saline:   #e6d5b8;
+  --soil-skeletal: #8a7a5c;
+
+  /* Vegetation — natural greens */
+  --veg-thorn:      #cbc186;
+  --veg-deciduous:  #93a769;
+  --veg-mixed:      #6f8a58;
+  --veg-grassland:  #d1c98f;
+  --veg-riparian:   #5f9c8a;
+  --veg-wetland:    #4d8a9d;
+  --veg-montane:    #5c7d5a;
+
+  /* Desertification — warning gradient */
+  --desert-severe:   #b25428;
+  --desert-moderate: #d68d59;
+  --desert-mild:     #dcc99b;
+  --desert-stable:   #b0c3a3;
+
+  /* Drought — same warning family */
+  --drought-vhigh:    #a5451b;
+  --drought-high:     #cc7a3d;
+  --drought-moderate: #d8b876;
+  --drought-low:      #a3b98a;
+
+  /* Cross-highlight pulse */
+  --pulse-color: var(--accent);
+}
+.theme-dark {
+  --clim-r1: #4a3b1f; --clim-r2: #55442a; --clim-r3: #40532d; --clim-r4: #2f4a5e;
+  --clim-r5: #3a5f7a; --clim-r6: #40709b;
+  --clim-t1: #29434e; --clim-t2: #5a4530; --clim-t3: #6f4128; --clim-t4: #7a3720;
+  --clim-cr-arid: #40331f; --clim-cr-semi-arid: #4a4023; --clim-cr-sub-humid: #364028;
+  --clim-cr-humid: #263429;
+  --soil-desert: #48381f; --soil-red: #6f4630; --soil-alluvial: #4a4028;
+  --soil-black: #1a1712; --soil-mix: #4a3a24; --soil-saline: #4a3d24; --soil-skeletal: #3b3220;
+  --veg-thorn: #4a4324; --veg-deciduous: #384c28; --veg-mixed: #2b3921; --veg-grassland: #4a4324;
+  --veg-riparian: #23413b; --veg-wetland: #1e3947; --veg-montane: #24362a;
+  --desert-severe: #a5451b; --desert-moderate: #825638; --desert-mild: #4a4028; --desert-stable: #384129;
+  --drought-vhigh: #7a3720; --drought-high: #85562d; --drought-moderate: #4d422a; --drought-low: #384129;
+}
+
+/* -- Rainfall gradient ----------------------------------------------------- */
+.a-map .layer-rainfall path.feature { fill: var(--clim-r3); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-rainfall .layer-rainfall path.feature,
+.a-map svg.mode-climate  .layer-rainfall path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.3; }
+
+.a-map .layer-rainfall path[id$="lt-200"]    { fill: var(--clim-r1); }
+.a-map .layer-rainfall path[id$="200-300"]  { fill: var(--clim-r2); }
+.a-map .layer-rainfall path[id$="300-500"]  { fill: var(--clim-r3); }
+.a-map .layer-rainfall path[id$="500-700"]  { fill: var(--clim-r4); }
+.a-map .layer-rainfall path[id$="700-1000"] { fill: var(--clim-r5); }
+.a-map .layer-rainfall path[id$="gt-1000"]  { fill: var(--clim-r6); }
+
+/* -- Temperature ---------------------------------------------------------- */
+.a-map .layer-temperature path.feature { fill: var(--clim-t2); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-climate .layer-temperature path.feature { fill-opacity: 0.45; }
+.a-map .layer-temperature path[id$="hot-arid"]      { fill: var(--clim-t4); }
+.a-map .layer-temperature path[id$="hot-semi-arid"] { fill: var(--clim-t3); }
+.a-map .layer-temperature path[id$="warm-sub-humid"]{ fill: var(--clim-t2); }
+.a-map .layer-temperature path[id$="warm-humid"]    { fill: var(--clim-t1); }
+
+/* -- Climate regions ------------------------------------------------------ */
+.a-map .layer-climate-regions path.feature { fill: var(--clim-cr-semi-arid); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-climate .layer-climate-regions path.feature { fill-opacity: 0.6; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-climate-regions path[id$="arid"]         { fill: var(--clim-cr-arid); }
+.a-map .layer-climate-regions path[id$="semi-arid"]    { fill: var(--clim-cr-semi-arid); }
+.a-map .layer-climate-regions path[id$="sub-humid"]    { fill: var(--clim-cr-sub-humid); }
+.a-map .layer-climate-regions path[id$="humid-pocket"] { fill: var(--clim-cr-humid); }
+
+/* -- Agro-climatic zones -------------------------------------------------- */
+.a-map .layer-agro-climatic-zones path.feature { fill: var(--clim-agro-3); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-agro .layer-agro-climatic-zones path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-agro-climatic-zones path[id*="1a"], .a-map .layer-agro-climatic-zones path[id*="1b"], .a-map .layer-agro-climatic-zones path[id*="1c"] { fill: var(--clim-agro-1); }
+.a-map .layer-agro-climatic-zones path[id*="2a"], .a-map .layer-agro-climatic-zones path[id*="2b"] { fill: var(--clim-agro-2); }
+.a-map .layer-agro-climatic-zones path[id*="3a"], .a-map .layer-agro-climatic-zones path[id*="3b"] { fill: var(--clim-agro-3); }
+.a-map .layer-agro-climatic-zones path[id*="4a"], .a-map .layer-agro-climatic-zones path[id*="4b"] { fill: var(--clim-agro-4); }
+.a-map .layer-agro-climatic-zones path[id*="-5"]  { fill: var(--clim-agro-5); }
+
+/* -- Soils ---------------------------------------------------------------- */
+.a-map .layer-soil-types path.feature { fill: var(--soil-alluvial); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-soils .layer-soil-types path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-soil-types path[id$="desert"]         { fill: var(--soil-desert); }
+.a-map .layer-soil-types path[id$="red-loamy"]      { fill: var(--soil-red); }
+.a-map .layer-soil-types path[id$="alluvial"]       { fill: var(--soil-alluvial); }
+.a-map .layer-soil-types path[id$="black"]          { fill: var(--soil-black); }
+.a-map .layer-soil-types path[id$="mixed-red-black"]{ fill: var(--soil-mix); }
+.a-map .layer-soil-types path[id$="saline"]         { fill: var(--soil-saline); }
+.a-map .layer-soil-types path[id$="skeletal"]       { fill: var(--soil-skeletal); }
+
+/* -- Vegetation ----------------------------------------------------------- */
+.a-map .layer-vegetation path.feature { fill: var(--veg-deciduous); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-vegetation .layer-vegetation path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-vegetation path[id$="thorn-forest"]  { fill: var(--veg-thorn); }
+.a-map .layer-vegetation path[id$="dry-deciduous"] { fill: var(--veg-deciduous); }
+.a-map .layer-vegetation path[id$="dry-mixed"]     { fill: var(--veg-mixed); }
+.a-map .layer-vegetation path[id$="grassland"]     { fill: var(--veg-grassland); }
+.a-map .layer-vegetation path[id$="riparian"]      { fill: var(--veg-riparian); }
+.a-map .layer-vegetation path[id$="wetland"]       { fill: var(--veg-wetland); }
+.a-map .layer-vegetation path[id$="montane"]       { fill: var(--veg-montane); }
+
+/* -- Desertification ------------------------------------------------------ */
+.a-map .layer-desertification path.feature { fill: var(--desert-mild); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-desertification .layer-desertification path.feature { fill-opacity: 0.55; }
+.a-map .layer-desertification path[id$="severe"]  { fill: var(--desert-severe); }
+.a-map .layer-desertification path[id$="moderate"]{ fill: var(--desert-moderate); }
+.a-map .layer-desertification path[id$="mild"]    { fill: var(--desert-mild); }
+.a-map .layer-desertification path[id$="stable"]  { fill: var(--desert-stable); }
+
+/* -- Drought -------------------------------------------------------------- */
+.a-map .layer-drought-vulnerability path.feature { fill: var(--drought-moderate); stroke: none; fill-opacity: 0; }
+.a-map svg.mode-drought .layer-drought-vulnerability path.feature { fill-opacity: 0.55; }
+.a-map .layer-drought-vulnerability path[id$="very-high"]{ fill: var(--drought-vhigh); }
+.a-map .layer-drought-vulnerability path[id$="-high"]    { fill: var(--drought-high); }
+.a-map .layer-drought-vulnerability path[id$="moderate"] { fill: var(--drought-moderate); }
+.a-map .layer-drought-vulnerability path[id$="-low"]     { fill: var(--drought-low); }
+
+/* -- Cross-highlight pulse ------------------------------------------------ */
+.a-map path.related-highlight {
+  animation: pulse 1200ms ease-in-out 0s 3;
+  stroke: var(--pulse-color) !important;
+  stroke-width: 2 !important;
+}
+@keyframes pulse {
+  0%   { stroke-opacity: 0.4; }
+  50%  { stroke-opacity: 1; stroke-width: 2.5; }
+  100% { stroke-opacity: 0.4; }
+}
+
+/* -- Labels for climate/soil/vegetation ---------------------------------- */
+.a-map #atlas-labels .lbl-climate {
+  fill: var(--ink-2); font-family: var(--serif); font-size: 9.5px;
+  letter-spacing: 0.15em; text-transform: uppercase; font-weight: 500;
+}
+.a-map #atlas-labels .lbl-agro {
+  fill: var(--ink-3); font-family: var(--mono); font-size: 9px;
+}
+.a-map #atlas-labels .lbl-soil {
+  fill: var(--ink-2); font-family: var(--serif); font-size: 9px; font-style: italic;
+}
+.a-map #atlas-labels .lbl-veg {
+  fill: var(--veg-mixed); font-family: var(--serif); font-size: 9.5px; font-weight: 500;
+}
+.theme-dark .a-map #atlas-labels .lbl-veg { fill: #b8cea2; }
+.a-map #atlas-labels .lbl-desertification {
+  fill: var(--desert-severe); font-family: var(--sans); font-size: 9px;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.a-map #atlas-labels .lbl-drought {
+  fill: var(--drought-vhigh); font-family: var(--sans); font-size: 9px;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+
+/* -- Thematic modes dim other layers so the theme reads ------------------ */
+.a-map svg.mode-climate .layer-districts path.feature,
+.a-map svg.mode-rainfall .layer-districts path.feature,
+.a-map svg.mode-agro .layer-districts path.feature,
+.a-map svg.mode-soils .layer-districts path.feature,
+.a-map svg.mode-vegetation .layer-districts path.feature,
+.a-map svg.mode-desertification .layer-districts path.feature,
+.a-map svg.mode-drought .layer-districts path.feature { opacity: 0.15; }
+
+.a-map svg.mode-climate #atlas-terrain,
+.a-map svg.mode-rainfall #atlas-terrain,
+.a-map svg.mode-agro #atlas-terrain,
+.a-map svg.mode-soils #atlas-terrain,
+.a-map svg.mode-vegetation #atlas-terrain,
+.a-map svg.mode-desertification #atlas-terrain,
+.a-map svg.mode-drought #atlas-terrain { opacity: 0.35; }

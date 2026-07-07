@@ -1,0 +1,658 @@
+{
+  "edges": [
+    {
+      "source": "geological-provinces-aravalli-sg",
+      "related": [
+        {
+          "target": "mineral-belts-lead-zinc",
+          "type": "defines",
+          "explanation": "SEDEX Zn-Pb hosted in Aravalli SG carbonates."
+        },
+        {
+          "target": "mineral-belts-phosphate",
+          "type": "defines",
+          "explanation": "Stromatolitic phosphorite in Aravalli SG at Jhamarkotra."
+        },
+        {
+          "target": "mineral-belts-marble",
+          "type": "colocated",
+          "explanation": "Aravalli carbonates metamorphose to marble."
+        },
+        {
+          "target": "rock-types-metamorphic",
+          "type": "defines"
+        },
+        {
+          "target": "mine-zawar",
+          "type": "signature"
+        },
+        {
+          "target": "mine-rajpura-dariba",
+          "type": "signature"
+        },
+        {
+          "target": "mine-jhamarkotra",
+          "type": "signature"
+        },
+        {
+          "target": "physiography-aravalli-hills-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-delhi-sg",
+      "related": [
+        {
+          "target": "mineral-belts-copper",
+          "type": "defines"
+        },
+        {
+          "target": "mine-rampura-agucha",
+          "type": "signature"
+        },
+        {
+          "target": "mine-khetri",
+          "type": "signature"
+        },
+        {
+          "target": "rock-types-metamorphic",
+          "type": "defines"
+        },
+        {
+          "target": "aravalli-main-axis",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-malani-igneous",
+      "related": [
+        {
+          "target": "mineral-belts-granite",
+          "type": "defines"
+        },
+        {
+          "target": "rock-types-igneous",
+          "type": "defines"
+        },
+        {
+          "target": "mine-jalore-granite",
+          "type": "signature"
+        },
+        {
+          "target": "building-stones-granite",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-marwar-sg",
+      "related": [
+        {
+          "target": "mineral-belts-gypsum",
+          "type": "defines"
+        },
+        {
+          "target": "rock-types-sedimentary",
+          "type": "defines"
+        },
+        {
+          "target": "mine-nagaur-gypsum",
+          "type": "signature"
+        },
+        {
+          "target": "building-stones-sandstone",
+          "type": "colocated",
+          "explanation": "Jodhpur red sandstone is the Marwar SG dimension stone."
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-vindhyan-basin",
+      "related": [
+        {
+          "target": "mineral-belts-limestone",
+          "type": "defines"
+        },
+        {
+          "target": "mineral-belts-sandstone",
+          "type": "defines"
+        },
+        {
+          "target": "rock-types-sedimentary",
+          "type": "defines"
+        },
+        {
+          "target": "mine-kota-stone",
+          "type": "signature"
+        },
+        {
+          "target": "building-stones-limestone-stone",
+          "type": "signature"
+        },
+        {
+          "target": "building-stones-sandstone",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-quaternary-desert",
+      "related": [
+        {
+          "target": "rock-types-alluvial",
+          "type": "defines"
+        },
+        {
+          "target": "rock-types-aeolian",
+          "type": "defines"
+        },
+        {
+          "target": "thar-main",
+          "type": "colocated"
+        },
+        {
+          "target": "soil-types-desert",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-deccan-edge",
+      "related": [
+        {
+          "target": "rock-types-igneous",
+          "type": "defines"
+        },
+        {
+          "target": "soil-types-black",
+          "type": "defines",
+          "explanation": "Basalt weathering produces the Hadoti Vertisols."
+        },
+        {
+          "target": "physiography-southeastern-plateau-region",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "geological-provinces-archaean-bhilwara",
+      "related": [
+        {
+          "target": "rock-types-metamorphic",
+          "type": "defines"
+        },
+        {
+          "target": "geological-provinces-aravalli-sg",
+          "type": "proximity"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-lead-zinc",
+      "related": [
+        {
+          "target": "mine-rampura-agucha",
+          "type": "signature"
+        },
+        {
+          "target": "mine-zawar",
+          "type": "signature"
+        },
+        {
+          "target": "mine-rajpura-dariba",
+          "type": "signature"
+        },
+        {
+          "target": "mine-sindesar-khurd",
+          "type": "signature"
+        },
+        {
+          "target": "mine-kayad",
+          "type": "signature"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-aravalli-sg",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-copper",
+      "related": [
+        {
+          "target": "mine-khetri",
+          "type": "signature"
+        },
+        {
+          "target": "mining-clusters-khetri-copper",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-delhi-sg",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-marble",
+      "related": [
+        {
+          "target": "mine-makrana",
+          "type": "signature"
+        },
+        {
+          "target": "mine-kishangarh-marble",
+          "type": "signature"
+        },
+        {
+          "target": "mining-clusters-nagaur-marble",
+          "type": "signature"
+        },
+        {
+          "target": "rock-types-metamorphic",
+          "type": "defines"
+        },
+        {
+          "target": "building-stones-marble",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-granite",
+      "related": [
+        {
+          "target": "mine-jalore-granite",
+          "type": "signature"
+        },
+        {
+          "target": "building-stones-granite",
+          "type": "defines"
+        },
+        {
+          "target": "geological-provinces-malani-igneous",
+          "type": "defines"
+        },
+        {
+          "target": "rock-types-igneous",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-limestone",
+      "related": [
+        {
+          "target": "mine-kota-stone",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-kota-limestone",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-vindhyan-basin",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-gypsum",
+      "related": [
+        {
+          "target": "mine-nagaur-gypsum",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-marwar-sg",
+          "type": "defines"
+        },
+        {
+          "target": "mining-clusters-nagaur-marble",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-lignite",
+      "related": [
+        {
+          "target": "mine-kapurdi-jalipa",
+          "type": "signature"
+        },
+        {
+          "target": "mine-palana-gurha",
+          "type": "signature"
+        },
+        {
+          "target": "mining-clusters-barmer-oil-lignite",
+          "type": "signature"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-phosphate",
+      "related": [
+        {
+          "target": "mine-jhamarkotra",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-aravalli-sg",
+          "type": "defines"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-wollastonite",
+      "related": [
+        {
+          "target": "geological-provinces-delhi-sg",
+          "type": "defines"
+        },
+        {
+          "target": "geological-provinces-malani-igneous",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mineral-belts-sandstone",
+      "related": [
+        {
+          "target": "mine-kota-stone",
+          "type": "signature"
+        },
+        {
+          "target": "building-stones-sandstone",
+          "type": "defines"
+        },
+        {
+          "target": "mining-clusters-jodhpur-sandstone",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-vindhyan-basin",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "mine-rampura-agucha",
+      "related": [
+        {
+          "target": "mineral-belts-lead-zinc",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-zawar",
+      "related": [
+        {
+          "target": "mineral-belts-lead-zinc",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-rajpura-dariba",
+      "related": [
+        {
+          "target": "mineral-belts-lead-zinc",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-sindesar-khurd",
+      "related": [
+        {
+          "target": "mineral-belts-lead-zinc",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-kayad",
+      "related": [
+        {
+          "target": "mineral-belts-lead-zinc",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-nagaur-marble",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-khetri",
+      "related": [
+        {
+          "target": "mineral-belts-copper",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-khetri-copper",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-makrana",
+      "related": [
+        {
+          "target": "mineral-belts-marble",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-nagaur-marble",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-kishangarh-marble",
+      "related": [
+        {
+          "target": "mineral-belts-marble",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-nagaur-marble",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-jhamarkotra",
+      "related": [
+        {
+          "target": "mineral-belts-phosphate",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-udaipur-zinc",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-kapurdi-jalipa",
+      "related": [
+        {
+          "target": "mineral-belts-lignite",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-barmer-oil-lignite",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-palana-gurha",
+      "related": [
+        {
+          "target": "mineral-belts-lignite",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-barmer-oil-lignite",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-nagaur-gypsum",
+      "related": [
+        {
+          "target": "mineral-belts-gypsum",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-nagaur-marble",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-jalore-granite",
+      "related": [
+        {
+          "target": "mineral-belts-granite",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-barmer-oil-lignite",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "mine-kota-stone",
+      "related": [
+        {
+          "target": "mineral-belts-sandstone",
+          "type": "colocated"
+        },
+        {
+          "target": "mining-clusters-kota-limestone",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "petroleum-gas-barmer-basin",
+      "related": [
+        {
+          "target": "petroleum-gas-mangala-field",
+          "type": "signature"
+        },
+        {
+          "target": "petroleum-gas-bhagyam-aishwariya",
+          "type": "signature"
+        },
+        {
+          "target": "petroleum-gas-raageshwari-gas",
+          "type": "signature"
+        },
+        {
+          "target": "mining-clusters-barmer-oil-lignite",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-marwar-sg",
+          "type": "proximity"
+        },
+        {
+          "target": "rock-types-sedimentary",
+          "type": "colocated"
+        }
+      ]
+    },
+    {
+      "source": "building-stones-marble",
+      "related": [
+        {
+          "target": "mineral-belts-marble",
+          "type": "defines"
+        },
+        {
+          "target": "mine-makrana",
+          "type": "signature"
+        },
+        {
+          "target": "rock-types-metamorphic",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "building-stones-granite",
+      "related": [
+        {
+          "target": "mineral-belts-granite",
+          "type": "defines"
+        },
+        {
+          "target": "geological-provinces-malani-igneous",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "building-stones-sandstone",
+      "related": [
+        {
+          "target": "mineral-belts-sandstone",
+          "type": "defines"
+        },
+        {
+          "target": "geological-provinces-vindhyan-basin",
+          "type": "defines"
+        }
+      ]
+    },
+    {
+      "source": "building-stones-limestone-stone",
+      "related": [
+        {
+          "target": "mine-kota-stone",
+          "type": "signature"
+        },
+        {
+          "target": "geological-provinces-vindhyan-basin",
+          "type": "defines"
+        }
+      ]
+    }
+  ]
+}

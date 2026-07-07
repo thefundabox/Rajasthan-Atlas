@@ -1,0 +1,995 @@
+{
+  "name": "Rajasthan Digital Atlas",
+  "version": "1.0",
+  "dataVersion": "1.0.0",
+  "lastUpdated": "2026-07-06",
+  "projection": {
+    "crs": "EPSG:4326",
+    "display": {
+      "type": "equirectangular-corrected",
+      "note": "Equirectangular corrected by cos(midlatitude) so shapes look right at Rajasthan mid-latitudes without a full LCC."
+    },
+    "bounds": {
+      "minLon": 69.48444,
+      "maxLon": 78.27201,
+      "minLat": 23.05866,
+      "maxLat": 30.19825
+    }
+  },
+  "stats": {
+    "districts": 41,
+    "divisions": 7,
+    "newDistricts": 8
+  },
+  "divisions": [
+    "Ajmer",
+    "Bharatpur",
+    "Bikaner",
+    "Jaipur",
+    "Jodhpur",
+    "Kota",
+    "Udaipur"
+  ],
+  "layers": [
+    {
+      "id": "districts",
+      "name": "Districts",
+      "type": "polygon",
+      "category": "administrative",
+      "data": "atlas/data/districts.geojson",
+      "searchable": true,
+      "visible": true,
+      "featureType": "district",
+      "zIndex": 25,
+      "style": {
+        "fill": "var(--layer-districts-fill)",
+        "stroke": "var(--layer-districts-stroke)"
+      }
+    },
+    {
+      "id": "physiography",
+      "name": "Physiographic Regions",
+      "type": "polygon",
+      "category": "physical",
+      "data": "atlas/data/physiography.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 5,
+      "featureType": "physiographic_region"
+    },
+    {
+      "id": "drainage-basins",
+      "name": "Drainage Basins",
+      "type": "polygon",
+      "category": "physical",
+      "data": "atlas/data/drainage-basins.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 8,
+      "featureType": "drainage_basin"
+    },
+    {
+      "id": "thar",
+      "name": "Thar Desert",
+      "type": "polygon",
+      "category": "physical",
+      "data": "atlas/data/thar.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 10,
+      "featureType": "desert"
+    },
+    {
+      "id": "rivers",
+      "name": "Rivers",
+      "type": "line",
+      "category": "physical",
+      "data": "atlas/data/rivers.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 15,
+      "featureType": "river"
+    },
+    {
+      "id": "lakes",
+      "name": "Lakes",
+      "type": "polygon",
+      "category": "physical",
+      "data": "atlas/data/lakes.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 20,
+      "featureType": "lake"
+    },
+    {
+      "id": "aravalli",
+      "name": "Aravalli Range",
+      "type": "line",
+      "category": "physical",
+      "data": "atlas/data/aravalli.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 22,
+      "featureType": "mountain_range"
+    },
+    {
+      "id": "peaks",
+      "name": "Peaks",
+      "type": "point",
+      "category": "physical",
+      "data": "atlas/data/peaks.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 60,
+      "featureType": "peak"
+    },
+    {
+      "id": "national-parks",
+      "name": "National Parks",
+      "type": "polygon",
+      "category": "environment",
+      "data": "atlas/data/national-parks.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 40,
+      "featureType": "national_park"
+    },
+    {
+      "id": "tiger-reserves",
+      "name": "Tiger Reserves",
+      "type": "polygon",
+      "category": "environment",
+      "data": "atlas/data/tiger-reserves.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 45,
+      "featureType": "tiger_reserve"
+    },
+    {
+      "id": "wildlife-sanctuaries",
+      "name": "Wildlife Sanctuaries",
+      "type": "polygon",
+      "category": "environment",
+      "data": "atlas/data/wildlife-sanctuaries.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 30,
+      "featureType": "wildlife_sanctuary"
+    },
+    {
+      "id": "ramsar-sites",
+      "name": "Ramsar Sites",
+      "type": "polygon",
+      "category": "environment",
+      "data": "atlas/data/ramsar-sites.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 50,
+      "featureType": "ramsar_site"
+    },
+    {
+      "id": "wetlands",
+      "name": "Wetlands (non-Ramsar)",
+      "type": "polygon",
+      "category": "environment",
+      "data": "atlas/data/wetlands.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 35,
+      "featureType": "wetland"
+    },
+    {
+      "id": "biosphere-reserves",
+      "name": "Biosphere Reserves",
+      "type": "polygon",
+      "category": "environment",
+      "data": "atlas/data/biosphere-reserves.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 55,
+      "featureType": "biosphere_reserve",
+      "note": "Empty by design \u2014 Rajasthan has no MoEFCC-notified Biosphere Reserve."
+    },
+    {
+      "id": "rainfall",
+      "name": "Rainfall Zones",
+      "type": "polygon",
+      "category": "climate",
+      "data": "atlas/data/rainfall.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 2,
+      "featureType": "rainfall_zone"
+    },
+    {
+      "id": "temperature",
+      "name": "Temperature Zones",
+      "type": "polygon",
+      "category": "climate",
+      "data": "atlas/data/temperature.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 2,
+      "featureType": "temperature_zone"
+    },
+    {
+      "id": "climate-regions",
+      "name": "Climate Regions",
+      "type": "polygon",
+      "category": "climate",
+      "data": "atlas/data/climate-regions.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 2,
+      "featureType": "climate_region"
+    },
+    {
+      "id": "agro-climatic-zones",
+      "name": "Agro-Climatic Zones",
+      "type": "polygon",
+      "category": "climate",
+      "data": "atlas/data/agro-climatic-zones.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 2,
+      "featureType": "agro_climatic_zone"
+    },
+    {
+      "id": "soil-types",
+      "name": "Soil Types",
+      "type": "polygon",
+      "category": "climate",
+      "data": "atlas/data/soil-types.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 3,
+      "featureType": "soil_type"
+    },
+    {
+      "id": "vegetation",
+      "name": "Natural Vegetation",
+      "type": "polygon",
+      "category": "climate",
+      "data": "atlas/data/vegetation.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 3,
+      "featureType": "vegetation_type"
+    },
+    {
+      "id": "desertification",
+      "name": "Desertification",
+      "type": "polygon",
+      "category": "climate",
+      "data": "atlas/data/desertification.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 3,
+      "featureType": "desertification_zone"
+    },
+    {
+      "id": "drought-vulnerability",
+      "name": "Drought Vulnerability",
+      "type": "polygon",
+      "category": "climate",
+      "data": "atlas/data/drought-vulnerability.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 3,
+      "featureType": "drought_zone"
+    },
+    {
+      "id": "major-crops",
+      "name": "Major Crops",
+      "type": "polygon",
+      "category": "agriculture",
+      "data": "atlas/data/major-crops.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 4,
+      "featureType": "crop"
+    },
+    {
+      "id": "cropping-seasons",
+      "name": "Cropping Seasons",
+      "type": "polygon",
+      "category": "agriculture",
+      "data": "atlas/data/cropping-seasons.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 4,
+      "featureType": "cropping_season"
+    },
+    {
+      "id": "agro-economic-zones",
+      "name": "Agro-Economic Zones",
+      "type": "polygon",
+      "category": "agriculture",
+      "data": "atlas/data/agro-economic-zones.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 4,
+      "featureType": "agro_economic_zone"
+    },
+    {
+      "id": "irrigation-sources",
+      "name": "Irrigation Sources",
+      "type": "polygon",
+      "category": "water",
+      "data": "atlas/data/irrigation-sources.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 6,
+      "featureType": "irrigation_source"
+    },
+    {
+      "id": "major-canals",
+      "name": "Major Canals",
+      "type": "line",
+      "category": "water",
+      "data": "atlas/data/major-canals.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 18,
+      "featureType": "canal"
+    },
+    {
+      "id": "dams",
+      "name": "Major Dams",
+      "type": "point",
+      "category": "water",
+      "data": "atlas/data/dams.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 58,
+      "featureType": "dam"
+    },
+    {
+      "id": "groundwater",
+      "name": "Groundwater Status",
+      "type": "polygon",
+      "category": "water",
+      "data": "atlas/data/groundwater.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 5,
+      "featureType": "groundwater_zone"
+    },
+    {
+      "id": "command-areas",
+      "name": "Command Areas",
+      "type": "polygon",
+      "category": "water",
+      "data": "atlas/data/command-areas.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 6,
+      "featureType": "command_area"
+    },
+    {
+      "id": "geological-provinces",
+      "name": "Geological Provinces",
+      "type": "polygon",
+      "category": "geology",
+      "data": "atlas/data/geological-provinces.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 2,
+      "featureType": "geological_province"
+    },
+    {
+      "id": "rock-types",
+      "name": "Rock Types",
+      "type": "polygon",
+      "category": "geology",
+      "data": "atlas/data/rock-types.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 3,
+      "featureType": "rock_type"
+    },
+    {
+      "id": "mineral-belts",
+      "name": "Mineral Belts",
+      "type": "polygon",
+      "category": "mining",
+      "data": "atlas/data/mineral-belts.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 7,
+      "featureType": "mineral_belt"
+    },
+    {
+      "id": "building-stones",
+      "name": "Building Stones",
+      "type": "polygon",
+      "category": "mining",
+      "data": "atlas/data/building-stones.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 4,
+      "featureType": "building_stone"
+    },
+    {
+      "id": "mining-clusters",
+      "name": "Mining Clusters",
+      "type": "polygon",
+      "category": "mining",
+      "data": "atlas/data/mining-clusters.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 8,
+      "featureType": "mining_cluster"
+    },
+    {
+      "id": "major-mines",
+      "name": "Major Mines",
+      "type": "point",
+      "category": "mining",
+      "data": "atlas/data/major-mines.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 62,
+      "featureType": "mine"
+    },
+    {
+      "id": "petroleum-gas",
+      "name": "Petroleum & Gas",
+      "type": "polygon",
+      "category": "geology",
+      "data": "atlas/data/petroleum-gas.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 9,
+      "featureType": "oil_basin"
+    },
+    {
+      "id": "industrial-regions",
+      "name": "Industrial Regions",
+      "type": "polygon",
+      "category": "industry",
+      "data": "atlas/data/industrial-regions.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 6,
+      "featureType": "industrial_region"
+    },
+    {
+      "id": "industrial-clusters",
+      "name": "Industrial Clusters",
+      "type": "polygon",
+      "category": "industry",
+      "data": "atlas/data/industrial-clusters.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 7,
+      "featureType": "industrial_cluster"
+    },
+    {
+      "id": "industrial-areas",
+      "name": "RIICO Industrial Areas",
+      "type": "point",
+      "category": "industry",
+      "data": "atlas/data/industrial-areas.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 64,
+      "featureType": "industrial_area"
+    },
+    {
+      "id": "major-industries",
+      "name": "Major Industries",
+      "type": "point",
+      "category": "industry",
+      "data": "atlas/data/major-industries.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 66,
+      "featureType": "major_industry"
+    },
+    {
+      "id": "special-economic-zones",
+      "name": "Special Economic Zones",
+      "type": "point",
+      "category": "industry",
+      "data": "atlas/data/special-economic-zones.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 65,
+      "featureType": "special_economic_zone"
+    },
+    {
+      "id": "handicraft-clusters",
+      "name": "Handicraft Clusters",
+      "type": "point",
+      "category": "industry",
+      "data": "atlas/data/handicraft-clusters.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 63,
+      "featureType": "handicraft_cluster"
+    },
+    {
+      "id": "energy-mix",
+      "name": "Energy Mix Zones",
+      "type": "polygon",
+      "category": "energy",
+      "data": "atlas/data/energy-mix.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 6,
+      "featureType": "energy_mix_zone"
+    },
+    {
+      "id": "renewable-zones",
+      "name": "Renewable-Energy Zones",
+      "type": "polygon",
+      "category": "energy",
+      "data": "atlas/data/renewable-zones.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 5,
+      "featureType": "renewable_zone"
+    },
+    {
+      "id": "transmission-corridors",
+      "name": "Transmission Corridors",
+      "type": "polygon",
+      "category": "energy",
+      "data": "atlas/data/transmission-corridors.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 7,
+      "featureType": "transmission_corridor"
+    },
+    {
+      "id": "power-plants",
+      "name": "Power Plants",
+      "type": "point",
+      "category": "energy",
+      "data": "atlas/data/power-plants.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 68,
+      "featureType": "power_plant"
+    },
+    {
+      "id": "solar-parks",
+      "name": "Solar Parks",
+      "type": "point",
+      "category": "energy",
+      "data": "atlas/data/solar-parks.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 67,
+      "featureType": "solar_park"
+    },
+    {
+      "id": "wind-farms",
+      "name": "Wind Farms",
+      "type": "point",
+      "category": "energy",
+      "data": "atlas/data/wind-farms.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 67,
+      "featureType": "wind_farm"
+    },
+    {
+      "id": "population-density",
+      "name": "Population Density",
+      "type": "polygon",
+      "category": "demographic",
+      "data": "atlas/data/population-density.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 2,
+      "featureType": "population_density_class"
+    },
+    {
+      "id": "population-growth",
+      "name": "Population Growth",
+      "type": "polygon",
+      "category": "demographic",
+      "data": "atlas/data/population-growth.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 2,
+      "featureType": "population_growth_class"
+    },
+    {
+      "id": "literacy",
+      "name": "Literacy",
+      "type": "polygon",
+      "category": "demographic",
+      "data": "atlas/data/literacy.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 2,
+      "featureType": "literacy_class"
+    },
+    {
+      "id": "sex-ratio",
+      "name": "Sex Ratio",
+      "type": "polygon",
+      "category": "demographic",
+      "data": "atlas/data/sex-ratio.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 2,
+      "featureType": "sex_ratio_class"
+    },
+    {
+      "id": "urbanisation",
+      "name": "Urbanisation",
+      "type": "polygon",
+      "category": "demographic",
+      "data": "atlas/data/urbanisation.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 2,
+      "featureType": "urbanisation_class"
+    },
+    {
+      "id": "scheduled-tribes",
+      "name": "Scheduled Tribes",
+      "type": "polygon",
+      "category": "demographic",
+      "data": "atlas/data/scheduled-tribes.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 2,
+      "featureType": "st_class"
+    },
+    {
+      "id": "scheduled-castes",
+      "name": "Scheduled Castes",
+      "type": "polygon",
+      "category": "demographic",
+      "data": "atlas/data/scheduled-castes.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 2,
+      "featureType": "sc_class"
+    },
+    {
+      "id": "scheduled-areas",
+      "name": "Scheduled Areas (TSP)",
+      "type": "polygon",
+      "category": "administrative",
+      "data": "atlas/data/scheduled-areas.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 4,
+      "featureType": "scheduled_area"
+    },
+    {
+      "id": "administrative-divisions",
+      "name": "Revenue Divisions",
+      "type": "polygon",
+      "category": "administrative",
+      "data": "atlas/data/administrative-divisions.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 3,
+      "featureType": "administrative_division"
+    },
+    {
+      "id": "regional-zones",
+      "name": "Cultural Regions",
+      "type": "polygon",
+      "category": "human",
+      "data": "atlas/data/regional-zones.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 3,
+      "featureType": "regional_cultural_zone"
+    },
+    {
+      "id": "border-districts",
+      "name": "Border Districts",
+      "type": "polygon",
+      "category": "human",
+      "data": "atlas/data/border-districts.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 4,
+      "featureType": "border_district_zone"
+    },
+    {
+      "id": "municipal-corporations",
+      "name": "Municipal Corporations",
+      "type": "point",
+      "category": "urban",
+      "data": "atlas/data/municipal-corporations.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 70,
+      "featureType": "municipal_corporation"
+    },
+    {
+      "id": "smart-cities",
+      "name": "Smart Cities",
+      "type": "point",
+      "category": "urban",
+      "data": "atlas/data/smart-cities.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 71,
+      "featureType": "smart_city"
+    },
+    {
+      "id": "urban-centres",
+      "name": "Major Urban Centres",
+      "type": "point",
+      "category": "urban",
+      "data": "atlas/data/urban-centres.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 72,
+      "featureType": "urban_centre"
+    },
+    {
+      "id": "population-corridors",
+      "name": "Population Corridors",
+      "type": "polygon",
+      "category": "human",
+      "data": "atlas/data/population-corridors.geojson",
+      "searchable": true,
+      "visible": true,
+      "zIndex": 5,
+      "featureType": "population_corridor"
+    }
+  ],
+  "sources": [
+    {
+      "name": "OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/",
+      "license": "ODbL 1.0",
+      "used": "admin_level=5 relations + protected_area/national_park/nature_reserve relations",
+      "retrieved": "2026-07-06"
+    },
+    {
+      "name": "Rajasthan gazette notifications",
+      "used": "District\u2192division and district\u2192HQ mapping"
+    },
+    {
+      "name": "Rajasthan Forest Department",
+      "url": "https://forest.rajasthan.gov.in/",
+      "used": "Protected Area Network Rajasthan Oct 2023 map; areas, districts, notification years"
+    },
+    {
+      "name": "National Tiger Conservation Authority (NTCA)",
+      "url": "https://ntca.gov.in/",
+      "used": "Tiger Reserve names, sequence numbers, notification years"
+    },
+    {
+      "name": "Ramsar Convention Secretariat (RSIS)",
+      "url": "https://www.ramsar.org/",
+      "used": "Ramsar site numbers, designation dates, area figures"
+    },
+    {
+      "name": "Press Information Bureau (PIB), Government of India",
+      "url": "https://www.pib.gov.in/",
+      "used": "Khichan and Menar designation announcement (PRID 2133992)"
+    },
+    {
+      "name": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/",
+      "used": "Keoladeo Ghana WHS status"
+    },
+    {
+      "name": "Wildlife Institute of India (WII)",
+      "url": "https://wii.gov.in/",
+      "used": "Cross-reference for protected area attributes"
+    },
+    {
+      "name": "India Meteorological Department",
+      "url": "https://mausam.imd.gov.in/",
+      "used": "District-level annual rainfall averages; monthly temperature means"
+    },
+    {
+      "name": "Rajasthan Agricultural University (Bikaner/Udaipur)",
+      "used": "Officially-notified 10-zone agro-climatic classification"
+    },
+    {
+      "name": "ICAR NARP zone report",
+      "used": "Agro-climatic zone crop and constraint listings"
+    },
+    {
+      "name": "NBSS&LUP Rajasthan Bulletin",
+      "url": "https://nbsslup.icar.gov.in/",
+      "used": "Soil type classification and district assignments"
+    },
+    {
+      "name": "Champion & Seth (1968)",
+      "used": "Forest-type classification for the Vegetation layer"
+    },
+    {
+      "name": "ISRO Space Applications Centre \u2014 Desertification Atlas of India",
+      "used": "District-level desertification severity"
+    },
+    {
+      "name": "Rajasthan State Disaster Management Authority",
+      "used": "Drought vulnerability district classification"
+    },
+    {
+      "name": "Rajasthan State Action Plan on Climate Change (RSAPCC 2010)",
+      "used": "Rainfall/temperature/climate-region references"
+    },
+    {
+      "name": "Rajasthan Agriculture Department (Directorate of Agriculture)",
+      "used": "District-level dominant-crop assignments and cropping seasons"
+    },
+    {
+      "name": "Directorate of Economics & Statistics, Government of Rajasthan",
+      "url": "https://statistics.rajasthan.gov.in/",
+      "used": "Rajasthan Agricultural Statistics 2023 gazette"
+    },
+    {
+      "name": "Rajasthan Water Resources Department",
+      "url": "https://water.rajasthan.gov.in/",
+      "used": "Canals, dams, reservoirs \u2014 coordinates and capacities"
+    },
+    {
+      "name": "Command Area Development Department, GoR",
+      "used": "Command-area boundaries and district-service mapping"
+    },
+    {
+      "name": "Central Ground Water Board \u2014 Dynamic Groundwater Resources",
+      "url": "https://cgwb.gov.in/",
+      "used": "Groundwater status classification (2023 assessment)"
+    },
+    {
+      "name": "Central Water Commission \u2014 Dam Register",
+      "url": "https://cwc.gov.in/",
+      "used": "Dam capacities, heights, commissioning dates"
+    },
+    {
+      "name": "Geological Survey of India (GSI)",
+      "url": "https://www.gsi.gov.in/",
+      "used": "Stratigraphy, geological province boundaries, mineral genesis"
+    },
+    {
+      "name": "Directorate of Mines & Geology, Rajasthan",
+      "url": "https://dmg.rajasthan.gov.in/",
+      "used": "District-level mineral belts, dimension-stone register, mining cluster classifications"
+    },
+    {
+      "name": "Indian Bureau of Mines (IBM)",
+      "url": "https://ibm.gov.in/",
+      "used": "Indian Mineral Yearbook \u2014 production statistics and mineral status"
+    },
+    {
+      "name": "Ministry of Mines, Government of India",
+      "url": "https://mines.gov.in/",
+      "used": "National mineral policy and legal status of mines"
+    },
+    {
+      "name": "Hindustan Zinc Ltd. (public disclosures)",
+      "url": "https://www.hzlindia.com/",
+      "used": "Rampura Agucha, Zawar, Rajpura Dariba, Sindesar Khurd, Kayad \u2014 operational data"
+    },
+    {
+      "name": "Hindustan Copper Ltd. (public disclosures)",
+      "url": "https://hindustancopper.com/",
+      "used": "Khetri copper complex data"
+    },
+    {
+      "name": "Rajasthan State Mineral Development Corporation (RSMDC)",
+      "used": "Jhamarkotra, Kapurdi-Jalipa, Palana-Gurha operational data"
+    },
+    {
+      "name": "Cairn Oil & Gas (Vedanta) \u2014 public disclosures",
+      "used": "Barmer Basin oil and gas fields data"
+    },
+    {
+      "name": "Rajasthan State Industrial Development & Investment Corporation (RIICO)",
+      "url": "https://industries.rajasthan.gov.in/riico/",
+      "used": "Industrial-area listings, plot allotments, industrial estate coordinates"
+    },
+    {
+      "name": "Delhi-Mumbai Industrial Corridor Development Corporation (DMICDC)",
+      "url": "https://www.dmicdc.com/",
+      "used": "DMIC investment-region nodes (KBN, Ajmer-Kishangarh)"
+    },
+    {
+      "name": "Department of Industries & Commerce, Government of Rajasthan (DoIC)",
+      "url": "https://industries.rajasthan.gov.in/",
+      "used": "Sectoral cluster classifications, MSME cluster mapping"
+    },
+    {
+      "name": "Ministry of Commerce & Industry \u2014 SEZ notifications",
+      "url": "https://sezindia.gov.in/",
+      "used": "Notified SEZ locations, sector types and gazette references"
+    },
+    {
+      "name": "Geographical Indications Registry (Chennai)",
+      "url": "https://ipindia.gov.in/",
+      "used": "GI-tag numbers for Rajasthan\u2019s handicraft clusters"
+    },
+    {
+      "name": "Rajasthan Handicraft Development Corporation (RUDA)",
+      "used": "Traditional-craft cluster locations and cooperative rosters"
+    },
+    {
+      "name": "Company disclosures \u2014 Nissan / Honda / Hero / Shree / JK / Ambuja / UltraTech / Wonder / Birla Corp / Chambal Fertilisers / HPCL-Rajasthan Refinery",
+      "used": "Flagship-industry plant coordinates, commissioning dates and outputs"
+    },
+    {
+      "name": "Central Electricity Authority (CEA)",
+      "url": "https://cea.nic.in/",
+      "used": "Power-plant register, monthly generation reports, plant capacities"
+    },
+    {
+      "name": "Ministry of New & Renewable Energy (MNRE)",
+      "url": "https://mnre.gov.in/",
+      "used": "Solar-radiation zone classification, wind atlas, ultra-mega solar-park notifications"
+    },
+    {
+      "name": "Nuclear Power Corporation of India Ltd. (NPCIL)",
+      "url": "https://npcil.nic.in/",
+      "used": "Rawatbhata (RAPS 1-6, RAPS 7-8 under construction) \u2014 reactor sizes, commissioning dates"
+    },
+    {
+      "name": "Solar Energy Corporation of India (SECI)",
+      "url": "https://www.seci.co.in/",
+      "used": "Solar-park allocations, tariff records, developer roster for Bhadla and Fatehgarh"
+    },
+    {
+      "name": "Rajasthan Rajya Vidyut Utpadan Nigam Ltd. (RVUNL)",
+      "url": "https://energy.rajasthan.gov.in/rvunl/",
+      "used": "State-owned generating station data (Suratgarh, Chhabra, Kalisindh, Kota, Ramgarh, hydel)"
+    },
+    {
+      "name": "Rajasthan Vidyut Prasaran Nigam Ltd. (RVPNL) + PGCIL",
+      "url": "https://energy.rajasthan.gov.in/rvpnl/",
+      "used": "Green Energy Corridor and 765 kV / HVDC transmission alignment"
+    },
+    {
+      "name": "Rajasthan Renewable Energy Corporation (RREC)",
+      "url": "https://energy.rajasthan.gov.in/rrec/",
+      "used": "Solar-park roster + state renewable-energy policy"
+    },
+    {
+      "name": "Operator disclosures \u2014 NTPC / Adani Green / ReNew Power / Suzlon / JSW-Raj West / Vedanta Cairn",
+      "used": "Plant / park capacity + commissioning dates + fuel source"
+    },
+    {
+      "name": "Census of India 2011 \u00b7 Registrar General of India",
+      "url": "https://censusindia.gov.in/",
+      "used": "District Census Handbook \u2014 per-district population, density, literacy, sex ratio, ST %, SC %, urbanisation, 2001\u20132011 decadal growth"
+    },
+    {
+      "name": "Directorate of Economics & Statistics, Government of Rajasthan",
+      "url": "https://statistics.rajasthan.gov.in/",
+      "used": "State demographic profile updates + Rajasthan Statistical Abstract"
+    },
+    {
+      "name": "NITI Aayog \u2014 Aspirational Districts + Smart Cities Mission",
+      "url": "https://niti.gov.in/",
+      "used": "Smart-city roster + development-index cross-reference"
+    },
+    {
+      "name": "Tribal Area Development Department (TAD), Government of Rajasthan",
+      "used": "Scheduled Areas (Fifth Schedule TSP block) \u2014 district roster + PESA applicability"
+    },
+    {
+      "name": "Ministry of Housing & Urban Affairs (MoHUA) \u2014 Smart Cities Mission",
+      "url": "https://smartcities.gov.in/",
+      "used": "Smart-city selection rounds and anchor projects"
+    },
+    {
+      "name": "Government of Rajasthan \u00b7 Municipal Act notifications",
+      "used": "Municipal Corporation splits (Jaipur / Jodhpur / Kota 2019)"
+    },
+    {
+      "name": "Rajasthan historical gazetteer + cultural anthropology sources",
+      "used": "Nine regional cultural zones (Marwar / Mewar / Hadoti / Shekhawati / Dhundhar / Vagad / Matsya / Godwar / Mewat) \u2014 historical seats, dialects and signature identity"
+    },
+    {
+      "name": "Border Security Force (BSF) + Survey of India",
+      "used": "International border length + interstate borders"
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+/* ============================================================================
+ * Editorial — the right-rail feature panel styled like a magazine spread.
+ * Hero > tags > overview > key figures > ecology > notes > references.
+ * ==========================================================================*/
+
+.detail-slot { color: var(--ink); }
+
+.ed { padding: var(--sp-2) 0 var(--sp-6); }
+
+/* Hero. */
+.ed-hero { padding: var(--sp-3) 0 var(--sp-4); border-bottom: 1px solid var(--hair); margin-bottom: var(--sp-5); }
+.ed-kicker {
+  font-family: var(--sans);
+  font-size: var(--t-caps);
+  color: var(--ink-3);
+  letter-spacing: var(--small-caps-letter-spacing);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.ed-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: var(--t-hero);
+  line-height: 1.15;
+  color: var(--ink);
+  margin: 0 0 6px;
+  letter-spacing: -0.005em;
+}
+.ed-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: var(--t-lede);
+  color: var(--ink-3);
+  margin: 0;
+}
+
+/* Tags row. */
+.ed-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: var(--sp-3); }
+.ed-tag {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 2px 10px;
+  border-radius: var(--rad-pill);
+  font-family: var(--sans);
+  font-size: var(--t-meta);
+  letter-spacing: 0.03em;
+  border: 1px solid var(--hair);
+  background: var(--card-quiet);
+  color: var(--ink-2);
+}
+.ed-tag.tag-new     { border-color: var(--sym-tr);      color: var(--sym-tr);     background: var(--sym-tr-soft); }
+.ed-tag.tag-ramsar  { border-color: var(--sym-ramsar);  color: var(--sym-ramsar); background: var(--sym-ramsar-soft); }
+.ed-tag.tag-unesco  { border-color: var(--gold);        color: var(--gold);       background: var(--gold-soft); }
+.ed-tag.tag-tr      { border-color: var(--sym-tr);      color: var(--sym-tr);     background: var(--sym-tr-soft); }
+.ed-tag.tag-np      { border-color: var(--sym-np);      color: var(--sym-np);     background: var(--sym-np-soft); }
+.ed-tag.tag-wls     { border-color: var(--sym-wls);     color: var(--sym-wls);    background: var(--sym-wls-soft); }
+.ed-tag.tag-point   { border-color: var(--ink-3);       color: var(--ink-3);      background: var(--card-quiet); border-style: dashed; }
+
+/* Geometry-quality badge — 5-star scale, coloured by tier. */
+.ed-quality {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 2px 10px;
+  border-radius: var(--rad-pill);
+  border: 1px solid var(--hair);
+  background: var(--card-quiet);
+  color: var(--ink-3);
+  font-family: var(--sans);
+  font-size: var(--t-meta);
+  letter-spacing: 0.03em;
+}
+.ed-quality .stars { letter-spacing: 1px; font-size: 11px; line-height: 1; }
+.ed-quality .lbl   { color: var(--ink-2); }
+.ed-quality.q5 .stars { color: #4a7c3e; }   /* Surveyed */
+.ed-quality.q4 .stars { color: #6b8a58; }   /* OSM       */
+.ed-quality.q3 .stars { color: #a5895d; }   /* Generalised */
+.ed-quality.q2 .stars { color: var(--sym-tr); }  /* Point-only */
+.ed-quality.q1 .stars { color: var(--ink-4); }
+
+/* -- Timeline: vertical rule with year markers ------------------------ */
+.ed-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 20px;
+  position: relative;
+  border-left: 2px solid var(--hair);
+}
+.ed-tl-item {
+  position: relative;
+  padding: 4px 0 var(--sp-3);
+  font-family: var(--serif);
+  font-size: var(--t-small);
+  color: var(--ink);
+}
+.ed-tl-item::before {
+  content: '';
+  position: absolute;
+  left: -26px; top: 8px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--card);
+  border: 2px solid var(--rule);
+}
+.ed-tl-item.tl-royal::before      { border-color: var(--gold); }
+.ed-tl-item.tl-sanctuary::before  { border-color: var(--sym-wls); }
+.ed-tl-item.tl-np::before         { border-color: var(--sym-np); background: var(--sym-np-soft); }
+.ed-tl-item.tl-tr::before         { border-color: var(--sym-tr); background: var(--sym-tr-soft); }
+.ed-tl-item.tl-ramsar::before     { border-color: var(--sym-ramsar); background: var(--sym-ramsar-soft); }
+.ed-tl-item.tl-unesco::before     { border-color: var(--gold); background: var(--gold-soft); }
+.ed-tl-item.tl-crisis::before     { border-color: var(--sym-tr); background: var(--card); }
+.ed-tl-item.tl-milestone::before  { border-color: var(--accent); background: var(--accent-soft); }
+
+.ed-tl-year {
+  display: block;
+  font-family: var(--sans);
+  font-size: var(--t-meta);
+  color: var(--ink-3);
+  letter-spacing: var(--small-caps-letter-spacing);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.ed-tl-event {
+  display: block;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+/* -- Related features chip grid ------------------------------------- */
+.ed-related {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin-top: var(--sp-2);
+}
+.ed-related-chip {
+  appearance: none;
+  border: 1px solid var(--hair);
+  background: var(--card-quiet);
+  color: var(--ink);
+  padding: 4px 8px 4px 6px;
+  border-radius: var(--rad-pill);
+  font-family: var(--sans);
+  font-size: var(--t-meta);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  transition: background var(--motion-fast), border-color var(--motion-fast);
+}
+.ed-related-chip:hover { background: var(--card); border-color: var(--rule); }
+.ed-related-chip:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.ed-related-kind {
+  font-family: var(--sans);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-inverse);
+  background: var(--ink-3);
+  padding: 1px 5px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.ed-related-name {
+  font-family: var(--serif);
+  font-size: var(--t-small);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Per-layer colouring for the small kind badge. */
+.ed-related-chip.chip-rivers                 .ed-related-kind { background: var(--phys-river-stroke); }
+.ed-related-chip.chip-lakes                  .ed-related-kind { background: var(--phys-water-stroke); }
+.ed-related-chip.chip-aravalli               .ed-related-kind { background: var(--phys-aravalli-stroke); }
+.ed-related-chip.chip-peaks                  .ed-related-kind { background: var(--phys-peak-fill); }
+.ed-related-chip.chip-thar                   .ed-related-kind { background: var(--phys-desert-stroke); }
+.ed-related-chip.chip-physiography           .ed-related-kind { background: var(--phys-region-2-stroke); }
+.ed-related-chip.chip-drainage-basins        .ed-related-kind { background: var(--phys-basin-stroke); }
+.ed-related-chip.chip-national-parks         .ed-related-kind { background: var(--sym-np); }
+.ed-related-chip.chip-tiger-reserves         .ed-related-kind { background: var(--sym-tr); }
+.ed-related-chip.chip-wildlife-sanctuaries   .ed-related-kind { background: var(--sym-wls); }
+.ed-related-chip.chip-ramsar-sites           .ed-related-kind { background: var(--sym-ramsar); }
+.ed-related-chip.chip-wetlands               .ed-related-kind { background: var(--sym-wetland); }
+.ed-related-chip.chip-districts              .ed-related-kind { background: var(--stroke-district); }
+
+/* Section header. */
+.ed-section { margin: var(--sp-6) 0 0; }
+.ed-h {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: var(--t-caps);
+  letter-spacing: var(--small-caps-letter-spacing);
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: 0 0 var(--sp-3);
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--hair);
+}
+
+/* Overview — an editorial paragraph. */
+.ed-overview {
+  font-family: var(--serif);
+  font-size: var(--t-body);
+  line-height: 1.6;
+  color: var(--ink);
+}
+.ed-overview em { color: var(--ink-2); }
+
+/* Key-figure cards. */
+.ed-figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-top: var(--sp-3); }
+.ed-fig {
+  padding: 12px;
+  background: var(--card-quiet);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-md);
+}
+.ed-fig .n {
+  font-family: var(--serif);
+  font-size: 24px;
+  line-height: 1;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.ed-fig .n .unit {
+  font-size: 11px;
+  color: var(--ink-3);
+  letter-spacing: var(--small-caps-letter-spacing);
+  text-transform: uppercase;
+  font-family: var(--sans);
+  margin-left: 3px;
+}
+.ed-fig .k {
+  font-family: var(--sans);
+  font-size: var(--t-meta);
+  color: var(--ink-3);
+  letter-spacing: var(--small-caps-letter-spacing);
+  text-transform: uppercase;
+}
+
+/* Chip lists for ecology. */
+.ed-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: var(--sp-2); }
+.ed-chip {
+  padding: 3px 10px;
+  border-radius: var(--rad-pill);
+  background: var(--card-quiet);
+  color: var(--ink-2);
+  font-family: var(--sans);
+  font-size: var(--t-meta);
+  border: 1px solid var(--hair);
+}
+.ed-chip.chip-fauna  { background: var(--sym-np-soft); color: var(--sym-np); border-color: var(--sym-np); border-color: color-mix(in srgb, var(--sym-np) 40%, transparent); }
+.ed-chip.chip-flora  { background: var(--sym-wls-soft); color: var(--sym-wls); border-color: color-mix(in srgb, var(--sym-wls) 40%, transparent); }
+
+/* Ecology / governance / references grouped rows. */
+.ed-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 6px 14px;
+  margin: 0 0 var(--sp-3);
+  font-size: var(--t-small);
+}
+.ed-row dt { color: var(--ink-3); font-family: var(--sans); font-size: var(--t-meta); letter-spacing: var(--small-caps-letter-spacing); text-transform: uppercase; padding-top: 2px; }
+.ed-row dd { margin: 0; color: var(--ink); font-family: var(--serif); font-size: var(--t-small); line-height: 1.5; }
+.ed-row dd.mono { font-family: var(--mono); font-size: 11px; word-break: break-all; color: var(--ink-2); }
+
+/* Ecosystem lede. */
+.ed-ecosystem {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: var(--t-body);
+  color: var(--ink-2);
+  padding: 10px 12px;
+  background: var(--card-quiet);
+  border-left: 3px solid var(--sym-wls);
+  border-radius: var(--rad-sm);
+  margin: 0 0 var(--sp-3);
+}
+
+/* Atlas notes block — key facts + learning aid + comparisons. */
+.ed-facts { margin: 0 0 var(--sp-3); padding-left: var(--sp-4); font-family: var(--serif); font-size: var(--t-small); line-height: 1.55; color: var(--ink); }
+.ed-facts li { margin-bottom: 6px; }
+.ed-mnemonic {
+  padding: 10px 12px;
+  background: var(--card-quiet);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--rad-sm);
+  font-family: var(--serif);
+  font-size: var(--t-small);
+  color: var(--ink);
+  margin: 0 0 var(--sp-3);
+}
+.ed-mnemonic .tag {
+  display: block;
+  font-family: var(--sans);
+  font-size: 9.5px;
+  letter-spacing: var(--small-caps-letter-spacing);
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+.ed-note {
+  font-family: var(--sans);
+  font-size: var(--t-meta);
+  color: var(--ink-3);
+  font-style: italic;
+  padding: 6px 10px;
+  border-left: 2px solid var(--hair);
+  margin: var(--sp-3) 0;
+}
+
+/* Sources chip list. */
+.ed-sources { display: flex; flex-wrap: wrap; gap: 4px; }
+.ed-source {
+  padding: 2px 8px;
+  border-radius: var(--rad-sm);
+  background: var(--card-quiet);
+  color: var(--ink-3);
+  font-family: var(--mono);
+  font-size: 10px;
+  border: 1px solid var(--hair);
+}
+
+/* Small locator map inside the panel. */
+.ed-locator { margin: var(--sp-3) 0; }
+.ed-locator svg {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-sm);
+  background: var(--card-quiet);
+}
+.ed-locator .state { fill: var(--paper-warm); stroke: var(--stroke-district); stroke-width: 0.4; }
+.ed-locator .feat  { fill: var(--sel-bg); stroke: var(--sel); stroke-width: 1.2; }
+.ed-locator .feat.point { fill: var(--sel); }
+.ed-locator .caption { font-family: var(--sans); font-size: var(--t-meta); color: var(--ink-3); text-align: center; margin-top: 4px; }
+
+/* Empty state (no selection) — muted invitation. */
+.ed-empty {
+  padding: var(--sp-10) var(--sp-4);
+  text-align: center;
+  color: var(--ink-3);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: var(--t-lede);
+}
+
+/* -- Statistics dashboard overlay ------------------------------------- */
+.stats-overlay {
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--paper) 85%, transparent);
+  backdrop-filter: blur(4px);
+  z-index: 40;
+  padding: var(--sp-6);
+  overflow-y: auto;
+  display: none;
+}
+.stats-overlay.open { display: block; }
+.stats-overlay .close-btn {
+  position: absolute; top: var(--sp-4); right: var(--sp-4);
+  background: var(--card); border: 1px solid var(--hair);
+  border-radius: var(--rad-sm);
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.stats-overlay h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: var(--t-hero);
+  color: var(--ink);
+  margin: 0 0 var(--sp-2);
+  max-width: 1000px;
+}
+.stats-overlay .stats-lede {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: var(--t-lede);
+  color: var(--ink-3);
+  margin-bottom: var(--sp-6);
+  max-width: 720px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--sp-3);
+  max-width: 1000px;
+}
+.stats-grid .card {
+  padding: var(--sp-4);
+  background: var(--card);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-md);
+}
+.stats-grid .card .big {
+  font-family: var(--serif);
+  font-size: 34px;
+  line-height: 1;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.stats-grid .card .big .unit {
+  font-family: var(--sans); font-size: var(--t-meta);
+  color: var(--ink-3); text-transform: uppercase; letter-spacing: var(--small-caps-letter-spacing);
+  margin-left: 4px;
+}
+.stats-grid .card .lbl {
+  font-family: var(--sans);
+  font-size: var(--t-meta);
+  color: var(--ink-3);
+  letter-spacing: var(--small-caps-letter-spacing);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.stats-grid .card .foot {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: var(--t-meta);
+  color: var(--ink-3);
+  margin-top: 8px;
+}
