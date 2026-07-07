@@ -417,3 +417,125 @@
   color: var(--ink-3);
   margin-top: 8px;
 }
+
+/* ============================================================================
+ * DistrictProfile — synthesised per-district card
+ * ==========================================================================*/
+.ed.dp .dp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.ed.dp .dp-grid .ed-fig {
+  padding: 8px 10px;
+  background: var(--card-quiet);
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-sm);
+}
+.ed.dp .dp-grid .ed-fig .n {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.15;
+}
+.ed.dp .dp-grid .ed-fig .k {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-top: 2px;
+}
+
+.ed.dp .dp-records {
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+.ed.dp .dp-record-pill {
+  padding: 5px 10px;
+  background: var(--sel-bg, #f3ead0);
+  border: 1px solid var(--sel, #b58a45);
+  color: var(--ink);
+  border-radius: 16px;
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.ed.dp .dp-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+.ed.dp .dp-chip-row:last-child { margin-bottom: 0; }
+.ed.dp .dp-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: var(--card-quiet);
+  border: 1px solid var(--hair);
+  border-radius: 12px;
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background var(--motion-fast, .12s), border-color var(--motion-fast, .12s);
+}
+.ed.dp .dp-chip:hover {
+  background: var(--sel-bg, #f3ead0);
+  border-color: var(--sel, #b58a45);
+}
+.ed.dp .dp-chip-layer {
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  border-right: 1px solid var(--hair);
+  padding-right: 5px;
+}
+.ed.dp .dp-chip-name {
+  font-size: 11px;
+  color: var(--ink);
+}
+
+@media (max-width: 480px) {
+  .ed.dp .dp-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* CustomContent — Photos + Your Notes -------------------------------------- */
+.ed .ed-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 8px;
+}
+.ed .ed-photo {
+  margin: 0;
+  border: 1px solid var(--hair);
+  border-radius: var(--rad-sm);
+  overflow: hidden;
+  background: var(--card-quiet);
+}
+.ed .ed-photo a { display: block; line-height: 0; }
+.ed .ed-photo img { width: 100%; height: auto; display: block; }
+.ed .ed-photo figcaption {
+  padding: 6px 8px;
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--ink-3);
+  font-style: italic;
+  line-height: 1.35;
+}
+.ed .ed-your-notes {
+  padding: 10px 12px;
+  background: var(--sel-bg, #f3ead0);
+  border-left: 3px solid var(--sel, #b58a45);
+  border-radius: 0 var(--rad-sm) var(--rad-sm) 0;
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--ink);
+  white-space: pre-wrap;
+  line-height: 1.55;
+}

@@ -1,0 +1,4 @@
+{
+  "_readme": "Register your own layers here. Each entry loads a GeoJSON file and shows up in the atlas Layers tab under the CUSTOM category. Fields: id (unique), name, type (point|polygon|line), data (path), category (default: custom), icon (emoji, optional), color (CSS, optional), featureType (default: custom_point).",
+  "layers": []
+}

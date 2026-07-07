@@ -1,0 +1,218 @@
+{
+  "_readme": "Author-editable enrichment file. See docs/AUTHORING.md. Each key under 'features' is a feature id (visible in the atlas — enable ?ids=1 to see live). Fields: extraFacts[] appended to notes.facts; images[{url,caption,credit}]; yourNotes (string).",
+
+  "features": {
+
+    "chambal-river": {
+      "extraFacts": [
+        "Longest river of Rajasthan (~1024 km within the state).",
+        "One of the cleanest large rivers in India — habitat for the endangered gharial and the Ganges river dolphin.",
+        "The National Chambal Sanctuary (across Rajasthan, MP, UP) protects it as a Ramsar-eligible riverine ecosystem."
+      ]
+    },
+    "banas-river": {
+      "extraFacts": [
+        "Largest tributary of the Chambal and the longest river entirely within Rajasthan.",
+        "Sources in the Khamnor hills (Rajsamand) and joins the Chambal downstream of Sawai Madhopur.",
+        "Bisalpur Dam on the Banas is the primary drinking-water source for Jaipur, Ajmer and Tonk."
+      ]
+    },
+    "luni-river": {
+      "extraFacts": [
+        "Only major river of the Marwar desert region — 'salt-river' after its brackish downstream reach.",
+        "Rises in the Pushkar range (Ajmer), disappears into the Rann of Kutch — never reaches the sea.",
+        "Called Sagarmati in its upper reach; becomes 'Luni' (Sanskrit lavana = salt) below Balotra."
+      ]
+    },
+    "mahi-river": {
+      "extraFacts": [
+        "One of only two Indian rivers that cross the Tropic of Cancer twice (the other is Mahanadi).",
+        "Anchors the Vagad tribal belt — Mahi Bajaj Sagar is Rajasthan's largest hydel outside the Chambal cascade.",
+        "Flows through the Beneshwar confluence (Mahi-Som-Jakham) — Rajasthan's biggest tribal fair."
+      ]
+    },
+
+    "pichola-lake": {
+      "extraFacts": [
+        "Artificial freshwater lake commissioned by a Banjara chief in 1362, expanded under Maharana Udai Singh in 1560.",
+        "Houses Jag Mandir and Jag Niwas (now Taj Lake Palace) on its islands.",
+        "Basin: Berach → Chambal. Fed by the Sisarma river and monsoon runoff from surrounding hills."
+      ]
+    },
+    "fateh-sagar-lake": {
+      "extraFacts": [
+        "Built 1687, rebuilt by Maharana Fateh Singh 1889 after a great flood.",
+        "Nehru Garden island houses a solar observatory.",
+        "Overflow spills over three concrete gates when Udaipur receives good monsoon — a city celebration."
+      ]
+    },
+
+    "soil-types-desert": {
+      "extraFacts": [
+        "Aridisols — sandy loam with low organic matter (<0.5%), high pH (8-9).",
+        "Suited to drought-hardy crops: bajra, moth, guar. Needs sub-surface irrigation for wheat / cotton.",
+        "Erosion hazard: severe wind erosion; dunes stabilised by khejri (Prosopis cineraria) shelterbelts."
+      ]
+    },
+    "soil-types-black": {
+      "extraFacts": [
+        "Vertisols — self-mulching clay derived from Deccan-trap basalt weathering.",
+        "Highly retentive of moisture — supports rain-fed soybean and gram in the Hadoti plateau.",
+        "Cracks deeply in summer; wheat, cotton and soybean rotate here without irrigation."
+      ]
+    },
+    "soil-types-alluvial": {
+      "extraFacts": [
+        "Entisols/Inceptisols — river-borne sediments of the Banas, Chambal and Yamuna sub-basins.",
+        "Highly fertile; supports the wheat-mustard rotation of the eastern plains + Bharatpur-Alwar belt.",
+        "Requires organic manure to sustain productivity under intensive cropping."
+      ]
+    },
+
+    "climate-regions-arid": {
+      "extraFacts": [
+        "BWh in the Köppen scheme — precipitation <300 mm, evaporation >1500 mm.",
+        "Covers ~60% of Rajasthan's land area, the largest arid region in India.",
+        "Diurnal temperature range often exceeds 20°C — hot summer days, cold winter nights."
+      ]
+    },
+    "climate-regions-semi-arid": {
+      "extraFacts": [
+        "BSh in the Köppen scheme — rainfall 300-700 mm; monsoon-dependent.",
+        "Transition zone between the Thar (west) and sub-humid Aravalli (south-east).",
+        "Supports bajra, gram, mustard and pulses; the state's largest rain-fed cropping belt."
+      ]
+    },
+
+    "rainfall-<-200-mm": {
+      "extraFacts": [
+        "Rainfall so low that the Thar functions as India's only 'true' desert (Köppen BWh)."
+      ]
+    },
+
+    "geological-provinces-aravalli-sg": {
+      "extraFacts": [
+        "Aravalli Supergroup — 2.5-1.8 billion years old, one of the world's oldest fold-mountain systems.",
+        "Hosts India's largest zinc-lead reserves (Rampura Agucha, Zawar) and marble belt.",
+        "Includes granites and phyllites; the range peaks at Guru Shikhar (1722 m)."
+      ]
+    },
+    "geological-provinces-vindhyan-basin": {
+      "extraFacts": [
+        "Meso- to Neo-proterozoic sedimentary basin (~1600-600 Ma).",
+        "Rajasthan portion hosts Kota Stone (limestone), sandstone (Dholpur), and building stones.",
+        "The Vindhyan sandstones are the source of the pink stones used in Fatehpur Sikri and Delhi's Red Fort."
+      ]
+    },
+    "geological-provinces-marwar-sg": {
+      "extraFacts": [
+        "Ediacaran-Cambrian (~630-542 Ma) sedimentary sequence covering western Rajasthan.",
+        "Bilara Group hosts Rajasthan's cement-grade limestone (Jodhpur, Nagaur).",
+        "Jodhpur Group is the source of red sandstone used in Umaid Bhawan Palace and Mehrangarh."
+      ]
+    },
+
+    "mineral-belts-lead-zinc": {
+      "extraFacts": [
+        "Rajasthan holds 100% of India's zinc-lead reserves — Aravalli SG hosts the Rampura Agucha and Zawar deposits.",
+        "Hindustan Zinc Ltd (Vedanta) mines all the state's zinc — India's only zinc producer.",
+        "Rampura Agucha alone accounts for ~40% of India's zinc-lead production."
+      ]
+    },
+    "mineral-belts-marble": {
+      "extraFacts": [
+        "Rajasthan supplies ~90% of India's marble; Makrana marble is the world-benchmark white variety.",
+        "Ambaji-Kumbalgarh belt has been quarried since antiquity — the Taj Mahal used Makrana.",
+        "Rajsamand-Nathdwara area produces green marble; Kishangarh area produces beige."
+      ]
+    },
+
+    "regional-zones-marwar": {
+      "extraFacts": [
+        "Largest cultural region of Rajasthan — anchored on Jodhpur, the former Rathore capital.",
+        "Marwari dialect and cuisine (dal-baati-churma) are the region's cultural markers.",
+        "Godwar is a distinct sub-region at the Aravalli piedmont — Ranakpur temple + Jawai reservoir."
+      ]
+    },
+    "regional-zones-shekhawati": {
+      "extraFacts": [
+        "Home to the world's largest open-air fresco gallery — painted havelis of Nawalgarh, Mandawa, Fatehpur.",
+        "Historic birthplace of the Marwari trading diaspora — Birla, Bajaj, Poddar, Goenka, Jhunjhunwala.",
+        "Distinctive dialect (Shekhawati) — a variant of Marwari with Braj influence."
+      ]
+    },
+
+    "solar-parks-bhadla-solar-park": {
+      "extraFacts": [
+        "Broke the ₹3/kWh solar tariff barrier in the 2017 auction, hitting ₹2.44/kWh.",
+        "Ownership shared across ~10 solar power developers (SBG Cleantech, Acme, ReNew, Adani, Azure, Hero Future Energies)."
+      ]
+    },
+
+    "power-plants-raps-rawatbhata": {
+      "extraFacts": [
+        "RAPS-1 was India's second nuclear reactor (after Tarapur), with design help from Canada (BARC/AECL).",
+        "Uses Rana Pratap Sagar reservoir water for cooling — hence the site name Rawatbhata.",
+        "RAPS 7-8 (700 MW × 2 indigenous PHWRs) under construction — will take Rawatbhata past 2.5 GW."
+      ]
+    },
+
+    "barmer": {
+      "extraFacts": [
+        "One of India's four Pakistan-border districts (~228 km border segment).",
+        "Highest 2001-2011 population growth in Rajasthan (32.5%) — driven by oil-and-gas exploration.",
+        "Home to India's largest lignite-fired power station (Bhadresh, 1080 MW) and the country's first refinery with captive Rajasthan crude (HRRL Pachpadra, under construction)."
+      ]
+    },
+    "jaipur": {
+      "extraFacts": [
+        "India's first planned pre-modern city — founded 1727 by Sawai Jai Singh II following Vastu principles.",
+        "Only Rajasthan district with >50% urbanisation (52.4% — Census 2011).",
+        "UNESCO World Heritage listed walled city (2019). Two Municipal Corporations after the 2019 split (Greater + Heritage)."
+      ]
+    },
+    "jaisalmer": {
+      "extraFacts": [
+        "Lowest population density in Rajasthan (17/km²) — among the lowest in India.",
+        "Largest district by area (38,401 km²).",
+        "Home to Rajasthan's only 'living fort' — thousands of residents still live inside Jaisalmer Fort walls."
+      ]
+    },
+    "kota": {
+      "extraFacts": [
+        "Highest literacy in Rajasthan (76.56%) — the coaching-education economy is a major driver.",
+        "Only non-Jaipur district with >60% urbanisation.",
+        "Anchors India's fertiliser + chemical industry via Chambal Fertilisers (Gadepan) and DCM Shriram."
+      ]
+    },
+    "banswara": {
+      "extraFacts": [
+        "Highest ST share in Rajasthan (76.4%) — the Bhil tribe dominates the district demography.",
+        "Anchors the Vagad Fifth-Schedule Scheduled Area under the Constitution.",
+        "Mahi Bajaj Sagar Dam provides both hydel power (140 MW) and irrigation for the tribal belt."
+      ]
+    },
+    "sri-ganganagar": {
+      "extraFacts": [
+        "Highest SC share in Rajasthan (36.6%) — canal-command labour communities.",
+        "'Grain bowl' of Rajasthan — wheat, mustard, kinnow, cotton driven by the IGNP + Gang Canal.",
+        "Bounded by Punjab (north) and Pakistan (west) — Rajasthan's northernmost district."
+      ]
+    },
+    "dholpur": {
+      "extraFacts": [
+        "Lowest sex ratio in Rajasthan (846 F/1000M) — chronic skew in the Chambal Ravines belt.",
+        "Chambal Ravines / Beehad — India's most extensive badlands, once a dacoit stronghold.",
+        "Source of the red sandstone used in Agra Fort and the Red Fort of Delhi."
+      ]
+    },
+    "dungarpur": {
+      "extraFacts": [
+        "Highest sex ratio in Rajasthan (994 F/1000M) — tribal belt female-labour participation.",
+        "Second-highest ST share (70.8%) after Banswara.",
+        "Least urbanised district (6.1%) — subsistence agriculture in southern Aravalli valleys."
+      ]
+    }
+
+  }
+}
