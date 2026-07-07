@@ -3,83 +3,66 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rajasthan Atlas</title>
-  <meta name="description" content="An interactive digital atlas of Rajasthan — 41 districts, protected areas, biosphere, and environment layers." />
+  <title>Rajasthan Atlas — Study Companion</title>
+  <meta name="description" content="A study companion for Rajasthan geography, economy and people — 64 layers, 473 features, 975 cross-links." />
 
   <link rel="stylesheet" href="atlas/ui/styles/theme.css" />
-  <link rel="stylesheet" href="atlas/ui/styles/layout.css" />
-  <link rel="stylesheet" href="atlas/ui/styles/print.css" />
-  <link rel="stylesheet" href="atlas/ui/components/atlas.css" />
-  <link rel="stylesheet" href="atlas/ui/components/components.css" />
-  <link rel="stylesheet" href="atlas/ui/components/labels.css" />
-  <link rel="stylesheet" href="atlas/ui/components/environment.css" />
-  <link rel="stylesheet" href="atlas/ui/components/physical.css" />
-  <link rel="stylesheet" href="atlas/ui/components/climate.css" />
-  <link rel="stylesheet" href="atlas/ui/components/agriculture.css" />
-  <link rel="stylesheet" href="atlas/ui/components/geology.css" />
-  <link rel="stylesheet" href="atlas/ui/components/industry.css" />
-  <link rel="stylesheet" href="atlas/ui/components/energy.css" />
-  <link rel="stylesheet" href="atlas/ui/components/human_geography.css" />
-  <link rel="stylesheet" href="atlas/ui/components/revision.css" />
-  <link rel="stylesheet" href="atlas/ui/components/editorial.css" />
+  <link rel="stylesheet" href="atlas/ui/components/study.css" />
 </head>
-<body>
+<body class="study-body">
 
-  <header class="a-header">
-    <div>
+  <header class="study-header">
+    <div class="study-brand">
       <h1>Rajasthan Atlas</h1>
-      <div class="subtitle">An interactive digital atlas · 41 Districts · 7 Divisions</div>
+      <div class="study-subtitle">A study companion for Rajasthan geography, economy and people</div>
     </div>
-    <div class="search-wrap">
-      <div class="search">
-        <span class="icon">⌕</span>
-        <input type="search" placeholder="Search (press / to focus)…" spellcheck="false" autocomplete="off" aria-label="Search the atlas" />
-        <button class="clear" aria-label="Clear search">×</button>
-        <div class="search-results" role="listbox"></div>
-      </div>
-    </div>
-    <!-- .h-nav populated by UIManager -->
+    <nav class="study-nav">
+      <a href="./" class="active">Study</a>
+      <a href="./map.html">Map</a>
+      <a href="./map.html?revise=1">Revise</a>
+    </nav>
   </header>
 
-  <main class="a-map" aria-label="Map of Rajasthan"></main>
+  <main class="study-main">
 
-  <aside class="a-right" aria-label="Selection details">
-    <div class="detail-slot"></div>
-  </aside>
+    <section class="study-hero">
+      <h2 class="study-hero-title">Learn Rajasthan by topic, records, and connections.</h2>
+      <p class="study-hero-sub"><strong>64 layers</strong> · <strong>473 features</strong> · <strong>975 typed relationships</strong> across geography, economy, culture and people.</p>
+    </section>
 
-  <footer class="a-status" aria-live="polite">
-    <div class="s-item"><span class="s-label">Loading…</span></div>
+    <section class="study-section" id="topics-section">
+      <div class="study-section-head">
+        <h2>Study by topic</h2>
+        <p class="study-section-hint">Pick a theme — opens the map with just that layer's colours plus a legend.</p>
+      </div>
+      <div class="topic-grid" id="topic-grid"></div>
+    </section>
+
+    <section class="study-section" id="records-section">
+      <div class="study-section-head">
+        <h2>Records &amp; extremes</h2>
+        <p class="study-section-hint">Auto-computed from Census 2011 and operator disclosures. Click a card to jump to the map.</p>
+      </div>
+      <div class="record-grid" id="record-grid"></div>
+    </section>
+
+    <section class="study-section" id="chains-section">
+      <div class="study-section-head">
+        <h2>Concept chains</h2>
+        <p class="study-section-hint">Follow a chain from cause to effect. Each stop is a feature on the map.</p>
+      </div>
+      <div class="chain-list" id="chain-list"></div>
+    </section>
+
+  </main>
+
+  <footer class="study-footer">
+    <div class="study-footer-inner">
+      <p>Compiled from Census 2011 / RGI, IMD, ICAR, NBSS&amp;LUP, GSI, DMG, CGWB, RWRD, CEA, MNRE, NPCIL, SECI, RFD, RIICO, DMICDC, and other public sources.</p>
+      <p><a href="./map.html">Open the atlas</a> · <a href="https://github.com/thefundabox/Rajasthan-Atlas">Source on GitHub</a></p>
+    </div>
   </footer>
 
-  <script type="module">
-    import { Atlas } from './atlas/core/AtlasCore.js';
-    import './atlas/layers/TerrainLayer.js';
-    import './atlas/layers/EnvironmentLayer.js';
-    import './atlas/layers/HydrologyLayer.js';
-    import './atlas/layers/ReliefLayer.js';
-    import './atlas/layers/PhysiographyLayer.js';
-    import './atlas/layers/LocatorInset.js';
-    import './atlas/layers/ClimateLayer.js';
-    import './atlas/layers/SoilLayer.js';
-    import './atlas/layers/VegetationLayer.js';
-    import './atlas/layers/AgricultureLayer.js';
-    import './atlas/layers/IrrigationLayer.js';
-    import './atlas/layers/WaterResourcesLayer.js';
-    import './atlas/layers/GeologyLayer.js';
-    import './atlas/layers/MineralsLayer.js';
-    import './atlas/layers/MiningLayer.js';
-    import './atlas/layers/IndustryLayer.js';
-    import './atlas/layers/IndustrialSitesLayer.js';
-    import './atlas/layers/HandicraftsLayer.js';
-    import './atlas/layers/EnergyLayer.js';
-    import './atlas/layers/PowerPlantsLayer.js';
-    import './atlas/layers/PopulationLayer.js';
-    import './atlas/layers/AdministrativeLayer.js';
-    import './atlas/layers/HumanGeographyLayer.js';
-    import './atlas/layers/LegendPanel.js';
-    import './atlas/layers/RevisionDashboard.js';
-    import './atlas/layers/CompareMode.js';
-    Atlas.boot(document.body);
-  </script>
+  <script type="module" src="atlas/study/StudyHome.js"></script>
 </body>
 </html>

@@ -121,7 +121,8 @@ ENERGY_MIX_ZONES = {
         'installed':  '~6.5 GW aggregate',
         'facts':      ['Anchored on Chambal river water and the Chhabra-Kalisindh coal cluster.',
                        'RAPS 1-6 (Rajasthan Atomic Power Station) at 1180 MW is one of India\'s '
-                       'oldest and largest nuclear complexes.',
+                       'oldest nuclear complexes, and its largest PHWR '
+                       '(pressurised heavy water reactor) site by unit count.',
                        'RAPS 7-8 (700 MW × 2 PHWRs) are under construction, taking Rawatbhata '
                        'past 2.5 GW nuclear capacity.'],
         'districts':  ['Chittorgarh','Kota','Baran','Bundi','Jhalawar'],

@@ -209,8 +209,10 @@ INDUSTRIAL_CLUSTERS = {
                           'Synthetic filament yarn'],
         'related_crops':  ['major-crops-cotton'],
         'related_minerals': [],
-        'facts':      ['Bhilwara is the largest producer of blended suiting fabric '
-                       'in India, and second only to Surat by textile turnover.',
+        'facts':      ['Bhilwara is India\'s largest producer of blended suiting '
+                       'fabric — second only to Surat within the man-made '
+                       'suiting segment (Coimbatore / Ludhiana / Ahmedabad '
+                       'lead in other textile categories).',
                        'Pali\'s dyeing units — >800 in number — draw from Bhilwara '
                        'weaving mills and export finished cloth nationally.',
                        'Bikaner is India\'s largest raw-wool trading centre.'],
@@ -303,16 +305,18 @@ INDUSTRIAL_CLUSTERS = {
     'ic-salt-wool': {
         'label':      'Salt, Wool & Agri-Processing Cluster',
         'sector':     'Traditional resource-based industries',
-        'ranking':    'Rajasthan is India\'s second-largest inland-salt producer and '
-                      'the country\'s largest raw-wool market.',
+        'ranking':    'Rajasthan is India\'s largest inland-salt producer '
+                      '(contributing ~10 % of national salt output) and the '
+                      'country\'s largest raw-wool market.',
         'anchors':    ['Sambhar Salt Ltd. (Sambhar Lake)','Bikaner wool mandi',
                        'Kinnow processing (Sri Ganganagar)','Isabgol processing (Nagaur)',
                        'Guar-gum plants (Jodhpur–Jalore belt)'],
         'raw_materials': ['Salt (Sambhar brine)','Raw wool','Kinnow','Guar','Isabgol'],
         'related_lakes':  [],  # wired via KG separately to sambhar-lake
         'related_crops':  ['major-crops-horticulture','major-crops-pulses'],
-        'facts':      ['Sambhar Lake supplies ~9 % of India\'s salt — the largest '
-                       'inland salt lake in the country.',
+        'facts':      ['Sambhar Lake is India\'s largest inland salt lake — Rajasthan '
+                       'contributes ~10 % of India\'s salt output, most of it from '
+                       'Sambhar plus satellite lakes at Nawa, Kuchaman and Pachpadra.',
                        'Bikaner\'s wool mandi handles most of India\'s raw-wool trade.',
                        'Nagaur produces almost all of India\'s isabgol (Plantago ovata).',
                        'The Jodhpur–Jalore belt hosts India\'s largest guar-gum industry, '
