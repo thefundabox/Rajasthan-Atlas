@@ -25,3 +25,10 @@ package-lock.json
 
 # Claude Code local
 .claude/
+
+# Intermediate KG-expansion payloads (per-module) — merged into
+# knowledge-graph.json by each BUILD_*.py; never fetched at runtime.
+atlas/data/knowledge-graph-*.json
+atlas/data/elevation.json
+atlas/data/protected-area-metadata.json
+atlas/data/rajasthan-districts-full.geojson
