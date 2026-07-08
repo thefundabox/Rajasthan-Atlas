@@ -134,16 +134,79 @@ const CHAINS = [
 // ── Boot ──────────────────────────────────────────────────────────
 (async function boot() {
   try {
-    const [demo] = await Promise.all([
+    const [demo, districts] = await Promise.all([
       fetch('atlas/data/district-demographics.json').then(r => r.json()),
+      fetch('atlas/data/districts.geojson').then(r => r.json()),
     ]);
     renderTopics();
+    renderDistricts(districts, demo);
     renderRecords(demo);
     renderChains();
   } catch (err) {
     console.error('[StudyHome] boot failed:', err);
   }
 })();
+
+// ── Districts directory (grouped by division) ────────────────────
+const DIVISIONS = ['Jaipur','Jodhpur','Ajmer','Bikaner','Bharatpur','Kota','Udaipur'];
+
+function renderDistricts(districtsGeoJson, demoPayload) {
+  const container = document.getElementById('district-directory');
+  if (!container) return;
+  const demo = demoPayload?.districts ?? {};
+
+  // Group districts by division from the GeoJSON properties.
+  const byDivision = {};
+  for (const f of districtsGeoJson.features) {
+    const p = f.properties || {};
+    const div = p.division || 'Other';
+    if (!byDivision[div]) byDivision[div] = [];
+    byDivision[div].push({
+      id: f.id,
+      name: p.name,
+      hq: p.headquarters,
+      isNew: !!p.newDistrict,
+      metric: demo[p.name] || null,
+    });
+  }
+
+  // Render each division as a titled cluster of chips.
+  for (const div of DIVISIONS) {
+    const rows = byDivision[div];
+    if (!rows?.length) continue;
+    rows.sort((a, b) => a.name.localeCompare(b.name));
+
+    const group = document.createElement('div');
+    group.className = 'division-group';
+
+    const head = document.createElement('div');
+    head.className = 'division-head';
+    head.innerHTML = `<span class="division-name">${div} Division</span> <span class="division-count">${rows.length} districts</span>`;
+    group.append(head);
+
+    const grid = document.createElement('div');
+    grid.className = 'district-grid';
+    for (const d of rows) {
+      const chip = document.createElement('a');
+      chip.className = 'district-chip' + (d.isNew ? ' district-new' : '');
+      chip.href = `map.html?feature=${encodeURIComponent(d.id)}`;
+      chip.innerHTML = `
+        <span class="district-name">${d.name}${d.isNew ? ' <span class="district-new-tag">2023</span>' : ''}</span>
+        ${d.metric ? `<span class="district-meta">${humanNum(d.metric.population)} · ${d.metric.density}/km² · ${d.metric.literacy_pct}% lit.</span>` : ''}
+      `;
+      grid.append(chip);
+    }
+    group.append(grid);
+    container.append(group);
+  }
+}
+
+function humanNum(n) {
+  if (n == null) return '—';
+  if (n >= 1e7) return (n / 1e7).toFixed(2) + ' Cr';
+  if (n >= 1e5) return (n / 1e5).toFixed(2) + ' L';
+  return n.toLocaleString();
+}
 
 // ── Topics ────────────────────────────────────────────────────────
 function renderTopics() {
