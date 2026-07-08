@@ -18,18 +18,26 @@ import { el, esc } from '../core/util/dom.js';
 
 let demographicsPayload = null;
 
-Atlas.bus.on('atlas:ready', async () => {
-  try {
-    demographicsPayload = await fetch('atlas/data/district-demographics.json')
-      .then(r => r.json());
-  } catch { /* graceful — profile still renders without demographics */ }
-
-  Atlas.bus.on('selection:changed', ({ layerId, featureId, feature }) => {
+Atlas.bus.on('atlas:ready', () => {
+  // Register the click subscriber SYNCHRONOUSLY at atlas:ready — before any
+  // async work — so the FIRST click a user makes is always caught. If the
+  // demographics fetch hasn't resolved yet, renderDistrictProfile falls
+  // back to showing everything except the Demographics card; once
+  // demographics land it will populate on the next click.
+  Atlas.bus.on('selection:changed', ({ layerId, feature }) => {
     if (layerId !== 'districts' || !feature) return;
-    // Delay slightly so the default editorial renderer (if any) runs first,
-    // then we overwrite the detail slot with our synthesised profile.
+    // Delay slightly so UIManager's default renderer runs first, then we
+    // overwrite the detail slot with our synthesised profile.
     setTimeout(() => renderDistrictProfile(feature), 30);
   });
+
+  // Kick off the fetch in parallel — non-blocking.
+  fetch('atlas/data/district-demographics.json')
+    .then(r => r.json())
+    .then(payload => { demographicsPayload = payload; })
+    .catch(err => console.warn('[DistrictProfile] demographics fetch failed', err));
+
+  console.info('[DistrictProfile] ready — click any district for a full profile');
 });
 
 /* ── Membership walker ─────────────────────────────────────────── */
