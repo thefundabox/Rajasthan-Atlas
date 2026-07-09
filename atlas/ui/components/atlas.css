@@ -62,6 +62,15 @@
 .a-map svg.mode-env    .layer-districts path.feature { opacity: 0.42; }
 .a-map svg.mode-reader .layer-districts path.feature { opacity: 0.28; }
 
+/* Districts must always be clickable regardless of mode.
+ * SVG's default `pointer-events: visiblePainted` requires a *painted*
+ * fill; when opacity is faded to 0.15-0.42 in thematic modes, some
+ * browsers stop registering hits inside the polygons and clicks pass
+ * through to the <svg> root. `pointer-events: all` forces districts
+ * to receive events regardless of paint visibility — essential for the
+ * DistrictProfile click pipeline to work in every mode. */
+.a-map .layer-districts path.feature { pointer-events: all; }
+
 /* -- Overlays: north arrow, scale bar, zoom pill, locator inset -------- */
 .a-map .overlay {
   position: absolute;
