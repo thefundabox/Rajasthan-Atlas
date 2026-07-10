@@ -143,25 +143,41 @@ export class InteractionManager {
   /* ------------------------------------------------------------------ */
 
   _bindPointer() {
-    let dragging = false, start = null;
+    // Threshold-gated pointer capture. Capturing on pointerdown retargets the
+    // subsequent `click` event to the SVG root regardless of pixel, so feature
+    // clicks (districts, points) never reach InteractionManager's delegated
+    // click handler. Instead we track pointerdown coords, and only start a
+    // drag + capture the pointer once movement exceeds DRAG_THRESHOLD_PX. A
+    // still click never captures, so the click reaches the underlying path.
+    const DRAG_THRESHOLD_PX = 4;
+    let start = null, dragging = false, captured = false;
     this._svg.addEventListener('pointerdown', (ev) => {
       if (ev.button !== 0) return;
-      dragging = true;
-      this._svg.setPointerCapture(ev.pointerId);
-      this._svg.classList.add('dragging');
-      start = { cx: ev.clientX, cy: ev.clientY, vx: this._view.x, vy: this._view.y };
+      start = { cx: ev.clientX, cy: ev.clientY, vx: this._view.x, vy: this._view.y, id: ev.pointerId };
+      dragging = false;
+      captured = false;
     });
     this._svg.addEventListener('pointermove', (ev) => {
-      if (!dragging) return;
+      if (!start) return;
+      if (!dragging) {
+        const dx = ev.clientX - start.cx, dy = ev.clientY - start.cy;
+        if (dx * dx + dy * dy < DRAG_THRESHOLD_PX * DRAG_THRESHOLD_PX) return;
+        dragging = true;
+        try { this._svg.setPointerCapture(start.id); captured = true; } catch (_) {}
+        this._svg.classList.add('dragging');
+      }
       const r = this._svg.getBoundingClientRect();
       this._view.x = start.vx - (ev.clientX - start.cx) / r.width  * this._view.w;
       this._view.y = start.vy - (ev.clientY - start.cy) / r.height * this._view.h;
       this._clamp(); this._commit();
     });
     const stop = (ev) => {
-      if (!dragging) return; dragging = false;
-      this._svg.classList.remove('dragging');
-      try { this._svg.releasePointerCapture(ev.pointerId); } catch (_) {}
+      if (!start) return;
+      if (dragging) {
+        this._svg.classList.remove('dragging');
+        if (captured) { try { this._svg.releasePointerCapture(ev.pointerId); } catch (_) {} }
+      }
+      start = null; dragging = false; captured = false;
     };
     this._svg.addEventListener('pointerup',     stop);
     this._svg.addEventListener('pointercancel', stop);
