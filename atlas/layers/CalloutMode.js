@@ -48,6 +48,18 @@ const sikhwalMode = new URLSearchParams(location.search).get('callouts') === 'si
 Atlas.bus.on('atlas:ready', () => {
   injectStyles();
   buildOverlays();
+  // In Sikhwal preview mode, force the SVG root to carry a class we can
+  // target with a stronger district stroke, so the base map remains
+  // visible against the page cream background even when the current
+  // theme's district fills are close to the page colour. Also apply
+  // 'division' mode so districts get their coloured fills.
+  if (sikhwalMode) {
+    const svg = document.getElementById('atlas-map');
+    if (svg) svg.classList.add('sikhwal-active');
+    setTimeout(() => {
+      try { Atlas.layers.setMode('division'); } catch (_) {}
+    }, 200);
+  }
   refreshEverything();
 
   Atlas.bus.on('layer:visibility', () => refreshEverything());
@@ -545,6 +557,23 @@ function injectStyles() {
       z-index: 6;
     }
     .sikhwal-root.hidden { display: none; }
+
+    /* Strengthen district strokes + fills whenever Sikhwal mode is active,
+     * so the base map stays visible against the cream background.
+     */
+    .a-map svg.sikhwal-active .layer-districts path.feature {
+      stroke: #7a5a2a;
+      stroke-width: 0.9;
+      fill-opacity: 0.9;
+    }
+    .a-map svg.sikhwal-active .layer-rivers path.feature {
+      stroke: #3e6d92;
+      stroke-width: 1.1;
+    }
+    .a-map svg.sikhwal-active .layer-aravalli path.feature,
+    .a-map svg.sikhwal-active .layer-thar path.feature {
+      fill-opacity: 0.75;
+    }
     .sikhwal-title {
       display: flex;
       align-items: center;
