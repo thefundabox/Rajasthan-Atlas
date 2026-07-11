@@ -4,7 +4,13 @@
     {
       "type": "Feature",
       "id": "cazri-jodhpur",
-      "geometry": { "type": "Point", "coordinates": [72.988, 26.286] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.988,
+          26.286
+        ]
+      },
       "properties": {
         "name": "CAZRI — Central Arid Zone Research Institute",
         "type": "research_center",
@@ -21,13 +27,20 @@
             "Regional stations at Bikaner, Pali, Kukma (Kutch) and Leh — spans the entire Thar-Ladakh arid belt.",
             "Developed Rajasthan's foundation seed programme for bajra, guar, moth and cluster-bean."
           ]
-        }
+        },
+        "icon": "🔬"
       }
     },
     {
       "type": "Feature",
       "id": "afri-jodhpur",
-      "geometry": { "type": "Point", "coordinates": [73.001, 26.256] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.001,
+          26.256
+        ]
+      },
       "properties": {
         "name": "AFRI — Arid Forest Research Institute",
         "type": "research_center",
@@ -44,13 +57,20 @@
             "Runs the National Herbal Garden and the arid-zone tissue-culture bank.",
             "AFRI's shelterbelt models informed India's Green India Mission dryland strategy."
           ]
-        }
+        },
+        "icon": "🔬"
       }
     },
     {
       "type": "Feature",
       "id": "cswri-avikanagar",
-      "geometry": { "type": "Point", "coordinates": [75.359, 26.309] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.359,
+          26.309
+        ]
+      },
       "properties": {
         "name": "CSWRI — Central Sheep & Wool Research Institute",
         "type": "research_center",
@@ -67,13 +87,20 @@
             "Runs the National Wool Research and Training Institute for the northern-region wool cluster.",
             "Rajasthan produces 30% of India's wool — CSWRI's breeding programme underpins that share."
           ]
-        }
+        },
+        "icon": "🔬"
       }
     },
     {
       "type": "Feature",
       "id": "camel-research-bikaner",
-      "geometry": { "type": "Point", "coordinates": [73.318, 27.994] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.318,
+          27.994
+        ]
+      },
       "properties": {
         "name": "NRC on Camel (Jhorbir)",
         "type": "research_center",
@@ -90,13 +117,20 @@
             "Maintains the germplasm of India's four camel breeds: Bikaneri, Jaisalmeri, Kachhi, Mewari.",
             "Rajasthan holds ~41% of India's camel population; NRC-Camel underpins the Rebari pastoralist economy."
           ]
-        }
+        },
+        "icon": "🔬"
       }
     },
     {
       "type": "Feature",
       "id": "aiims-jodhpur",
-      "geometry": { "type": "Point", "coordinates": [72.987, 26.253] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.987,
+          26.253
+        ]
+      },
       "properties": {
         "name": "AIIMS Jodhpur",
         "type": "research_center",
@@ -113,13 +147,20 @@
             "Anchors Rajasthan's western-tertiary healthcare — covers Barmer, Jaisalmer, Bikaner catchment.",
             "Runs India's first Fibrodysplasia Ossificans Progressiva (FOP) research programme."
           ]
-        }
+        },
+        "icon": "🏥"
       }
     },
     {
       "type": "Feature",
       "id": "iit-jodhpur",
-      "geometry": { "type": "Point", "coordinates": [72.985, 26.470] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.985,
+          26.47
+        ]
+      },
       "properties": {
         "name": "IIT Jodhpur",
         "type": "research_center",
@@ -136,13 +177,20 @@
             "Anchors the Jodhpur AI and IoT cluster; hosts India's first drone-technology research lab (2021).",
             "The IIT campus is one of India's most sustainable — 100% solar-powered daytime operations."
           ]
-        }
+        },
+        "icon": "🎓"
       }
     },
     {
       "type": "Feature",
       "id": "iim-udaipur",
-      "geometry": { "type": "Point", "coordinates": [73.686, 24.550] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.686,
+          24.55
+        ]
+      },
       "properties": {
         "name": "IIM Udaipur",
         "type": "research_center",
@@ -159,13 +207,20 @@
             "The Balicha campus is India's second-largest IIM campus by area (300+ acres).",
             "Home to India's only IIM PhD programme with a formal Digital Enterprise Management stream."
           ]
-        }
+        },
+        "icon": "🎓"
       }
     },
     {
       "type": "Feature",
       "id": "nlu-jodhpur",
-      "geometry": { "type": "Point", "coordinates": [72.999, 26.334] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.999,
+          26.334
+        ]
+      },
       "properties": {
         "name": "National Law University Jodhpur",
         "type": "research_center",
@@ -182,13 +237,20 @@
             "Located at Mandore (Jodhpur) — the ancient Marwar capital.",
             "Consistently ranks in India's top-5 law schools."
           ]
-        }
+        },
+        "icon": "🎓"
       }
     },
     {
       "type": "Feature",
       "id": "bits-pilani",
-      "geometry": { "type": "Point", "coordinates": [75.594, 28.365] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.594,
+          28.365
+        ]
+      },
       "properties": {
         "name": "BITS Pilani",
         "type": "research_center",
@@ -205,13 +267,20 @@
             "Runs India's largest industry-linked engineering internship programme (BITS Practice School).",
             "Anchors the Shekhawati engineering-talent belt; alumni founded Cognizant, Tata Consultancy, Flipkart."
           ]
-        }
+        },
+        "icon": "🎓"
       }
     },
     {
       "type": "Feature",
       "id": "kvk-fatehpur-shekhawati",
-      "geometry": { "type": "Point", "coordinates": [74.947, 27.999] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.947,
+          27.999
+        ]
+      },
       "properties": {
         "name": "KVK Fatehpur Shekhawati",
         "type": "research_center",
@@ -227,13 +296,20 @@
             "Pioneered India's district-level KVK extension model, later scaled to 700+ KVKs across the country.",
             "Anchor of the Shekhawati groundnut and bajra research cluster."
           ]
-        }
+        },
+        "icon": "🔬"
       }
     },
     {
       "type": "Feature",
       "id": "sever-bharatpur",
-      "geometry": { "type": "Point", "coordinates": [77.462, 27.201] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.462,
+          27.201
+        ]
+      },
       "properties": {
         "name": "SEVAR — Mustard Research (Bharatpur)",
         "type": "research_center",
@@ -250,13 +326,20 @@
             "Developed the RH-30, RH-819, Vardaan and Bio-902 varieties that anchor Rajasthan's rabi mustard belt.",
             "Rajasthan produces 45% of India's mustard — SEVAR underpins that share."
           ]
-        }
+        },
+        "icon": "🔬"
       }
     },
     {
       "type": "Feature",
       "id": "ber-khajur-bikaner",
-      "geometry": { "type": "Point", "coordinates": [73.315, 27.978] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.315,
+          27.978
+        ]
+      },
       "properties": {
         "name": "Ber & Khajur Research Centres, Bikaner",
         "type": "research_center",
@@ -272,13 +355,20 @@
             "Developed arid-zone commercial cultivars: Gola, Mundia, Kaithli (ber); Barhee, Halawy, Khadrawy (date).",
             "Rajasthan produces India's largest ber crop; date palm cultivation has expanded 4x since 2000 thanks to KVK extension."
           ]
-        }
+        },
+        "icon": "🔬"
       }
     },
     {
       "type": "Feature",
       "id": "nkru-pathmeda",
-      "geometry": { "type": "Point", "coordinates": [71.884, 24.708] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.884,
+          24.708
+        ]
+      },
       "properties": {
         "name": "National Kamdhenu University, Pathmeda",
         "type": "research_center",
@@ -294,13 +384,20 @@
             "Pathmeda (Sanchore, Jalore) is home to India's largest gaushala — over 200,000 cattle sheltered.",
             "Sanchore also hosts India's first Gau-Mutra Bank."
           ]
-        }
+        },
+        "icon": "🎓"
       }
     },
     {
       "type": "Feature",
       "id": "manikya-lal-verma-adivasi",
-      "geometry": { "type": "Point", "coordinates": [73.712, 24.579] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.712,
+          24.579
+        ]
+      },
       "properties": {
         "name": "Manikya Lal Verma Adivasi Research & Training Institute",
         "type": "research_center",
@@ -317,13 +414,20 @@
             "Publishes the Adivasi Sansar journal and runs the state's tribal-language documentation programme.",
             "Named after Rajasthan's tribal-rights pioneer Manikya Lal Verma (1897-1969)."
           ]
-        }
+        },
+        "icon": "🔬"
       }
     },
     {
       "type": "Feature",
       "id": "rajasthan-archives-bikaner",
-      "geometry": { "type": "Point", "coordinates": [73.317, 28.024] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.317,
+          28.024
+        ]
+      },
       "properties": {
         "name": "Rajasthan State Archives, Bikaner",
         "type": "research_center",
@@ -340,13 +444,20 @@
             "Houses Mughal farmans, princely-state records, and hand-painted Rajput miniatures.",
             "One of India's largest state-level archival collections — over 8 lakh documents."
           ]
-        }
+        },
+        "icon": "📚"
       }
     },
     {
       "type": "Feature",
       "id": "rupayan-borunda",
-      "geometry": { "type": "Point", "coordinates": [73.363, 26.516] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.363,
+          26.516
+        ]
+      },
       "properties": {
         "name": "Rupayan Sansthan (National Kala Mandal), Borunda",
         "type": "research_center",
@@ -363,13 +474,20 @@
             "Its work led to UNESCO recognition of Rajasthan's oral folk traditions.",
             "Continues to run Rajasthan's largest folk-art field research programme."
           ]
-        }
+        },
+        "icon": "📚"
       }
     },
     {
       "type": "Feature",
       "id": "bharatiya-lok-kala-mandal-udaipur",
-      "geometry": { "type": "Point", "coordinates": [73.680, 24.585] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.68,
+          24.585
+        ]
+      },
       "properties": {
         "name": "Bharatiya Lok Kala Mandal, Udaipur",
         "type": "research_center",
@@ -386,13 +504,20 @@
             "Runs Rajasthan's only professional puppetry academy; the 'Puppet Museum' is a UNESCO study centre.",
             "Anchors Udaipur's cultural-heritage tourism circuit."
           ]
-        }
+        },
+        "icon": "📚"
       }
     },
     {
       "type": "Feature",
       "id": "vidya-bhawan-udaipur",
-      "geometry": { "type": "Point", "coordinates": [73.688, 24.588] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.688,
+          24.588
+        ]
+      },
       "properties": {
         "name": "Vidya Bhawan Sansthan, Udaipur",
         "type": "research_center",
@@ -408,7 +533,8 @@
             "Runs the state's oldest teacher-training institute (VBTC) and India's largest rural-college network under a single society.",
             "Anchors the Aravalli-region rural education movement; pioneered vocational Krishak Vidyapeeth model in the 1950s."
           ]
-        }
+        },
+        "icon": "🔬"
       }
     }
   ]

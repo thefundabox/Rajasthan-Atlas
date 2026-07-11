@@ -4,7 +4,13 @@
     {
       "type": "Feature",
       "id": "matsya-union-alwar",
-      "geometry": { "type": "Point", "coordinates": [76.605, 27.553] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.605,
+          27.553
+        ]
+      },
       "properties": {
         "name": "Alwar (Matsya Union — Phase 1)",
         "type": "integration_stage",
@@ -23,13 +29,20 @@
             "First territorial integration step towards modern Rajasthan.",
             "Matsya Union lasted just over a year before merging into Greater Rajasthan on 15 May 1949."
           ]
-        }
+        },
+        "icon": "①"
       }
     },
     {
       "type": "Feature",
       "id": "matsya-union-bharatpur",
-      "geometry": { "type": "Point", "coordinates": [77.494, 27.217] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.494,
+          27.217
+        ]
+      },
       "properties": {
         "name": "Bharatpur (Matsya Union — Phase 1)",
         "type": "integration_stage",
@@ -47,13 +60,20 @@
             "Home to the world-famous Keoladeo Ghana bird sanctuary (then a princely duck-shoot).",
             "Lohagarh Fort at Bharatpur town — the only Rajput-era fort never captured by the British."
           ]
-        }
+        },
+        "icon": "①"
       }
     },
     {
       "type": "Feature",
       "id": "matsya-union-dholpur",
-      "geometry": { "type": "Point", "coordinates": [77.898, 26.702] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.898,
+          26.702
+        ]
+      },
       "properties": {
         "name": "Dholpur (Matsya Union — Phase 1)",
         "type": "integration_stage",
@@ -70,13 +90,20 @@
             "Source of the Dholpur red sandstone — quarried for Red Fort, Rashtrapati Bhavan, Agra Fort.",
             "Chambal Ravines badlands (Beehad) — India's most extensive gully erosion belt."
           ]
-        }
+        },
+        "icon": "①"
       }
     },
     {
       "type": "Feature",
       "id": "matsya-union-karauli",
-      "geometry": { "type": "Point", "coordinates": [77.024, 26.499] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.024,
+          26.499
+        ]
+      },
       "properties": {
         "name": "Karauli (Matsya Union — Phase 1)",
         "type": "integration_stage",
@@ -93,13 +120,20 @@
             "Merged into Matsya Union in Phase 1 under Maharaja Ganesh Pal Deo.",
             "Kaila Devi is the kul devi (tutelary goddess) of the Karauli Yadav rulers."
           ]
-        }
+        },
+        "icon": "①"
       }
     },
     {
       "type": "Feature",
       "id": "usr-kota",
-      "geometry": { "type": "Point", "coordinates": [75.827, 25.181] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.827,
+          25.181
+        ]
+      },
       "properties": {
         "name": "Kota (United State of Rajasthan — Phase 2)",
         "type": "integration_stage",
@@ -117,13 +151,20 @@
             "Maharao Bhim Singh II of Kota was the Rajpramukh; capital was Kota then briefly Udaipur.",
             "Rajasthan's first stage where states voluntarily formed a mini-federation before joining the Indian Union in full."
           ]
-        }
+        },
+        "icon": "②"
       }
     },
     {
       "type": "Feature",
       "id": "usr-bundi",
-      "geometry": { "type": "Point", "coordinates": [75.636, 25.443] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.636,
+          25.443
+        ]
+      },
       "properties": {
         "name": "Bundi (USR — Phase 2)",
         "type": "integration_stage",
@@ -140,13 +181,20 @@
             "Bundi and Kota were split from a single Hada Chauhan kingdom in 1631.",
             "Bundi school of miniature painting — one of India's most distinctive Rajput painting traditions."
           ]
-        }
+        },
+        "icon": "②"
       }
     },
     {
       "type": "Feature",
       "id": "usr-banswara",
-      "geometry": { "type": "Point", "coordinates": [74.443, 23.548] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.443,
+          23.548
+        ]
+      },
       "properties": {
         "name": "Banswara (USR — Phase 2)",
         "type": "integration_stage",
@@ -163,13 +211,20 @@
             "Merged into USR on 25 March 1948 under Maharaval Chandravir Singh.",
             "Later became the anchor district of the TSP (Tribal Sub-Plan) area under the Fifth Schedule."
           ]
-        }
+        },
+        "icon": "②"
       }
     },
     {
       "type": "Feature",
       "id": "usr-dungarpur",
-      "geometry": { "type": "Point", "coordinates": [73.714, 23.844] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.714,
+          23.844
+        ]
+      },
       "properties": {
         "name": "Dungarpur (USR — Phase 2)",
         "type": "integration_stage",
@@ -186,13 +241,20 @@
             "Merged into USR on 25 March 1948 under Maharaval Lakshman Singh.",
             "Home to the Beneshwar tribal fair — Rajasthan's biggest Bhil pilgrimage."
           ]
-        }
+        },
+        "icon": "②"
       }
     },
     {
       "type": "Feature",
       "id": "usr-jhalawar",
-      "geometry": { "type": "Point", "coordinates": [76.156, 24.598] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.156,
+          24.598
+        ]
+      },
       "properties": {
         "name": "Jhalawar (USR — Phase 2)",
         "type": "integration_stage",
@@ -209,13 +271,20 @@
             "Home to Gagron Fort (UNESCO Hill Fort) — Rajasthan's only jal-durg (water fortress).",
             "Merged into USR on 25 March 1948 under Maharajrana Rajendra Singh."
           ]
-        }
+        },
+        "icon": "②"
       }
     },
     {
       "type": "Feature",
       "id": "usr-pratapgarh",
-      "geometry": { "type": "Point", "coordinates": [74.783, 24.031] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.783,
+          24.031
+        ]
+      },
       "properties": {
         "name": "Pratapgarh (USR — Phase 2)",
         "type": "integration_stage",
@@ -231,13 +300,20 @@
             "Small tribal-belt state — birthplace of the GI-tagged Thewa gold-on-glass jewellery.",
             "Merged into USR on 25 March 1948 under Maharawat Ambika Pratap Singh."
           ]
-        }
+        },
+        "icon": "②"
       }
     },
     {
       "type": "Feature",
       "id": "usr-tonk",
-      "geometry": { "type": "Point", "coordinates": [75.788, 26.166] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.788,
+          26.166
+        ]
+      },
       "properties": {
         "name": "Tonk (USR — Phase 2)",
         "type": "integration_stage",
@@ -254,13 +330,20 @@
             "Merged into USR on 25 March 1948 under Nawab Muhammad Faruq Ali Khan.",
             "Home to the Maulana Abul Kalam Azad Arabic-Persian Research Institute — India's premier Persian manuscript collection."
           ]
-        }
+        },
+        "icon": "②"
       }
     },
     {
       "type": "Feature",
       "id": "usr-kishangarh",
-      "geometry": { "type": "Point", "coordinates": [74.867, 26.583] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.867,
+          26.583
+        ]
+      },
       "properties": {
         "name": "Kishangarh (USR — Phase 2)",
         "type": "integration_stage",
@@ -277,13 +360,20 @@
             "Merged into USR on 25 March 1948 under Maharaja Sumer Singh.",
             "Later became India's largest marble mandi and processing cluster."
           ]
-        }
+        },
+        "icon": "②"
       }
     },
     {
       "type": "Feature",
       "id": "usr-shahpura",
-      "geometry": { "type": "Point", "coordinates": [74.951, 25.622] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.951,
+          25.622
+        ]
+      },
       "properties": {
         "name": "Shahpura (USR — Phase 2)",
         "type": "integration_stage",
@@ -300,13 +390,20 @@
             "Merged into USR on 11 April 1948 under Sujan Singh, though formally listed in Phase 2.",
             "Home to the Ram Snehi sampraday — an important 18th-c. bhakti reform tradition."
           ]
-        }
+        },
+        "icon": "②"
       }
     },
     {
       "type": "Feature",
       "id": "mewar-udaipur-phase3",
-      "geometry": { "type": "Point", "coordinates": [73.712, 24.585] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.712,
+          24.585
+        ]
+      },
       "properties": {
         "name": "Udaipur / Mewar (Phase 3 — merger with USR)",
         "type": "integration_stage",
@@ -324,13 +421,20 @@
             "Mewar was India's oldest surviving royal house — the Sisodia lineage traced 1400 years of continuous rule.",
             "Capital shifted to Udaipur after Mewar's merger."
           ]
-        }
+        },
+        "icon": "③"
       }
     },
     {
       "type": "Feature",
       "id": "greater-rajasthan-jaipur",
-      "geometry": { "type": "Point", "coordinates": [75.789, 26.925] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.789,
+          26.925
+        ]
+      },
       "properties": {
         "name": "Jaipur (Greater Rajasthan — Phase 4)",
         "type": "integration_stage",
@@ -349,13 +453,20 @@
             "Maharana Bhupal Singh of Udaipur was designated Maharaj-Pramukh (senior Rajpramukh).",
             "This is celebrated annually as 'Rajasthan Diwas' on 30 March."
           ]
-        }
+        },
+        "icon": "④"
       }
     },
     {
       "type": "Feature",
       "id": "greater-rajasthan-jodhpur",
-      "geometry": { "type": "Point", "coordinates": [73.020, 26.264] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.02,
+          26.264
+        ]
+      },
       "properties": {
         "name": "Jodhpur (Greater Rajasthan — Phase 4)",
         "type": "integration_stage",
@@ -372,13 +483,20 @@
             "Maharaja Hanwant Singh initially resisted; his death in a plane crash (Jan 1952) removed the last opposition.",
             "Merged into Greater Rajasthan on 30 March 1949."
           ]
-        }
+        },
+        "icon": "④"
       }
     },
     {
       "type": "Feature",
       "id": "greater-rajasthan-bikaner",
-      "geometry": { "type": "Point", "coordinates": [73.318, 28.023] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.318,
+          28.023
+        ]
+      },
       "properties": {
         "name": "Bikaner (Greater Rajasthan — Phase 4)",
         "type": "integration_stage",
@@ -395,13 +513,20 @@
             "Home to Gang Canal (1927) — Rajasthan's oldest large irrigation canal.",
             "Bikaner's Camel Corps (Ganga Risala) was one of India's most celebrated princely military units."
           ]
-        }
+        },
+        "icon": "④"
       }
     },
     {
       "type": "Feature",
       "id": "greater-rajasthan-jaisalmer",
-      "geometry": { "type": "Point", "coordinates": [70.913, 26.912] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.913,
+          26.912
+        ]
+      },
       "properties": {
         "name": "Jaisalmer (Greater Rajasthan — Phase 4)",
         "type": "integration_stage",
@@ -418,13 +543,20 @@
             "Bhati Rajput dynasty founded Jaisalmer in 1156.",
             "The world's only 'living fort' (UNESCO 2013) — 3000+ residents still live inside the walls."
           ]
-        }
+        },
+        "icon": "④"
       }
     },
     {
       "type": "Feature",
       "id": "matsya-merger-phase5",
-      "geometry": { "type": "Point", "coordinates": [77.494, 27.217] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.494,
+          27.217
+        ]
+      },
       "properties": {
         "name": "Matsya Union merger (Phase 5)",
         "type": "integration_stage",
@@ -440,13 +572,20 @@
             "This created 'United Greater Rajasthan' (Sanyukta Vishal Rajasthan).",
             "The Shankarrao Dev Committee's recommendation drove this merger despite local Matsya identity movements."
           ]
-        }
+        },
+        "icon": "⑤"
       }
     },
     {
       "type": "Feature",
       "id": "united-rajasthan-phase6",
-      "geometry": { "type": "Point", "coordinates": [75.789, 26.925] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.789,
+          26.925
+        ]
+      },
       "properties": {
         "name": "United Rajasthan (Phase 6)",
         "type": "integration_stage",
@@ -462,13 +601,20 @@
             "Sirohi State was partially merged — Mount Abu and Delwara taluks were transferred to Bombay State pending final decision.",
             "Heera Lal Shastri became Rajasthan's first Chief Minister; Man Singh II remained Rajpramukh."
           ]
-        }
+        },
+        "icon": "⑥"
       }
     },
     {
       "type": "Feature",
       "id": "modern-rajasthan-phase7",
-      "geometry": { "type": "Point", "coordinates": [74.638, 26.449] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.638,
+          26.449
+        ]
+      },
       "properties": {
         "name": "Modern Rajasthan (Phase 7 — States Reorganisation)",
         "type": "integration_stage",
@@ -486,13 +632,20 @@
             "Rajpramukh position was abolished; Sardar Gurmukh Nihal Singh became Rajasthan's first Governor.",
             "The current geographic and administrative boundary of Rajasthan was fixed on this date."
           ]
-        }
+        },
+        "icon": "⑦"
       }
     },
     {
       "type": "Feature",
       "id": "sirohi-abu-delwara",
-      "geometry": { "type": "Point", "coordinates": [72.717, 24.593] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.717,
+          24.593
+        ]
+      },
       "properties": {
         "name": "Mount Abu / Delwara (Phase 7 addition)",
         "type": "integration_stage",
@@ -509,7 +662,8 @@
             "Guru Shikhar (1722 m) — Rajasthan's highest point — came with this transfer.",
             "The Dilwara Jain temples (11-13th c.) are the transfer's most celebrated cultural asset."
           ]
-        }
+        },
+        "icon": "⑦"
       }
     }
   ]

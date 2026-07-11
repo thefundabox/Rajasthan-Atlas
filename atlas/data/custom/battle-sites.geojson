@@ -4,7 +4,13 @@
     {
       "type": "Feature",
       "id": "haldighati",
-      "geometry": { "type": "Point", "coordinates": [73.633, 24.939] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.633,
+          24.939
+        ]
+      },
       "properties": {
         "name": "Haldighati (Battle of Haldighati, 1576)",
         "type": "battle_site",
@@ -22,13 +28,20 @@
             "Neither side won decisively; the battle became a symbol of Rajput resistance to Mughal rule.",
             "Located in the Aravalli pass between Kumbhalgarh and Gogunda."
           ]
-        }
+        },
+        "icon": "⚔"
       }
     },
     {
       "type": "Feature",
       "id": "khanwa",
-      "geometry": { "type": "Point", "coordinates": [77.396, 27.098] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.396,
+          27.098
+        ]
+      },
       "properties": {
         "name": "Khanwa (Battle of Khanwa, 1527)",
         "type": "battle_site",
@@ -45,13 +58,20 @@
             "The first major Indian battle where artillery decided the outcome.",
             "Rana Sanga was wounded and died in 1528; Mewar's Rajput confederation collapsed as a result."
           ]
-        }
+        },
+        "icon": "⚔"
       }
     },
     {
       "type": "Feature",
       "id": "sarangpur",
-      "geometry": { "type": "Point", "coordinates": [76.404, 23.567] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.404,
+          23.567
+        ]
+      },
       "properties": {
         "name": "Sarangpur (Battle of Sarangpur, 1437)",
         "type": "battle_site",
@@ -68,13 +88,20 @@
             "One of the earliest Rajput victories over the Sultanate of Malwa; established Mewar's power over the Chambal frontier.",
             "The battle is chronicled in the Kumbhalgarh Prashasti (1460 CE)."
           ]
-        }
+        },
+        "icon": "🗡"
       }
     },
     {
       "type": "Feature",
       "id": "chittor-siege-1303",
-      "geometry": { "type": "Point", "coordinates": [74.646, 24.887] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.646,
+          24.887
+        ]
+      },
       "properties": {
         "name": "Siege of Chittor (1303, Rani Padmini's Jauhar)",
         "type": "battle_site",
@@ -92,13 +119,20 @@
             "The 14th-c. Padmavat epic by Malik Muhammad Jayasi (1540) shaped the popular memory of this siege.",
             "The Padmini Palace within Chittorgarh Fort is the reputed site of the jauhar."
           ]
-        }
+        },
+        "icon": "⚔"
       }
     },
     {
       "type": "Feature",
       "id": "merta-battle-1562",
-      "geometry": { "type": "Point", "coordinates": [74.036, 26.653] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.036,
+          26.653
+        ]
+      },
       "properties": {
         "name": "Merta (Battle of Merta, 1562)",
         "type": "battle_site",
@@ -115,13 +149,20 @@
             "Jaymal later led Chittor's defence in 1568 — where he was killed by Akbar personally with a matchlock.",
             "Merta was the birthplace of Mirabai (1498), the Krishna-bhakti poet-saint."
           ]
-        }
+        },
+        "icon": "⚔"
       }
     },
     {
       "type": "Feature",
       "id": "bhatner-siege-1398",
-      "geometry": { "type": "Point", "coordinates": [74.324, 29.582] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.324,
+          29.582
+        ]
+      },
       "properties": {
         "name": "Bhatner (Siege by Timur, 1398)",
         "type": "battle_site",
@@ -138,13 +179,20 @@
             "The Bhatner Fort was rebuilt over the medieval ruins; renamed Hanumangarh in 1805 by Bhupendra Singh of Bikaner.",
             "One of the few documented battles in Rajasthan chronicled by both Persian and Sanskrit sources — Timur's Tuzk-i-Timuri and the Bhati chronicles."
           ]
-        }
+        },
+        "icon": "🗡"
       }
     },
     {
       "type": "Feature",
       "id": "gagron-siege-1444",
-      "geometry": { "type": "Point", "coordinates": [76.163, 24.628] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.163,
+          24.628
+        ]
+      },
       "properties": {
         "name": "Gagron Fort (Sieges of 1444 & 1524)",
         "type": "battle_site",
@@ -161,7 +209,8 @@
             "1524: Fort fell to Ibrahim Lodi's forces; Rani Prakashkumari led the second jauhar.",
             "Both jauhar sites are marked within the fort, which is now a UNESCO Hill Fort of Rajasthan."
           ]
-        }
+        },
+        "icon": "🗡"
       }
     }
   ]
