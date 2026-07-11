@@ -226,6 +226,15 @@ function select(phaseN) {
     'States: ' + phase.states.join(' · '),
   ]));
   card.append(el('div', { class: 'itl-card-blurb' }, [phase.blurb]));
+  // Legend — only show swatches for the colours actually in play this phase.
+  const legend = el('div', { class: 'itl-legend' });
+  const hasNew      = (NEW_AT_PHASE[phaseN]      || []).length > 0;
+  const hasExisting = ((MAIN_BODY_PHASES[phaseN] || []).filter(p => !(NEW_AT_PHASE[phaseN] || []).includes(p))).length > 0;
+  const hasSeparate = (SEPARATE_AT_PHASE[phaseN] || []).length > 0;
+  if (hasNew)      legend.append(el('span', {}, [el('span', { class: 'itl-swatch itl-sw-new' }),      'newly added this phase']));
+  if (hasExisting) legend.append(el('span', {}, [el('span', { class: 'itl-swatch itl-sw-existing' }), 'already in the union']));
+  if (hasSeparate) legend.append(el('span', {}, [el('span', { class: 'itl-swatch itl-sw-separate' }), 'formed but separate (Matsya)']));
+  card.append(legend);
   card.append(el('div', { class: 'itl-card-note' }, [
     'Modern-district boundaries approximate the pre-1956 princely-state extents.',
   ]));
@@ -253,23 +262,66 @@ function clearHighlight() {
   clearDistrictHighlight();
 }
 
-/* Highlight modern districts whose territory belonged to the selected
- * phase's princely-state ancestors. Phase 5 (Matsya merger into Greater
- * Rajasthan) uses Phase 1's district set since it re-adds those states. */
+/* Cumulative-view highlight.
+ * Each phase paints TWO things:
+ *   • existing (amber)    — districts already part of the main
+ *                            integrated body before this phase.
+ *   • new-this-phase (bright orange) — districts joining IN this phase.
+ *
+ * The Matsya Union is treated as a SEPARATE confederation during
+ * Phases 2-4 (they had already formed at Phase 1 but had not yet joined
+ * the main body). When shown during those phases the Matsya districts
+ * get a third "separate" tint. From Phase 5 onwards they are part of
+ * the main body.
+ */
+const MAIN_BODY_PHASES = {
+  1: [],                       // Matsya Union forms; main body still to come
+  2: [2],                      // USR alone
+  3: [2, 3],                   // USR + Mewar
+  4: [2, 3, 4],                // Greater Rajasthan (Matsya still separate)
+  5: [2, 3, 4, 1],             // United Greater Rajasthan (Matsya merged in)
+  6: [2, 3, 4, 1, 6],          // United Rajasthan (+ Sirohi)
+  7: [2, 3, 4, 1, 6, 7],       // Modern Rajasthan (+ Ajmer-Merwara)
+};
+const NEW_AT_PHASE = {
+  1: [1],                      // Matsya Union formed
+  2: [2],                      // USR formed
+  3: [3],                      // Mewar joined USR
+  4: [4],                      // Big four joined Greater Rajasthan
+  5: [1],                      // Matsya merged into Greater Rajasthan
+  6: [6],                      // Sirohi partial merger
+  7: [7],                      // Ajmer-Merwara + Abu-Delwara
+};
+const SEPARATE_AT_PHASE = {
+  1: [],
+  2: [1], 3: [1], 4: [1],      // Matsya exists but separate from main body
+  5: [], 6: [], 7: [],
+};
+
 function applyDistrictHighlight(phaseN) {
   clearDistrictHighlight();
   if (!phaseN) return;
-  const targetPhase = phaseN === 5 ? 1 : phaseN;
+  const newSet       = new Set(NEW_AT_PHASE[phaseN]      || []);
+  const separateSet  = new Set(SEPARATE_AT_PHASE[phaseN] || []);
+  // "existing" is main-body-at-this-phase minus what's new this phase.
+  const existingSet  = new Set((MAIN_BODY_PHASES[phaseN] || [])
+    .filter(p => !newSet.has(p)));
   document.querySelectorAll('.layer-districts path.feature').forEach(p => {
-    if (DISTRICT_TO_PHASE[p.dataset.feature] === targetPhase) {
-      p.classList.add('itl-district-hi');
-    }
+    const belongsTo = DISTRICT_TO_PHASE[p.dataset.feature];
+    if (belongsTo == null) return;
+    if (newSet.has(belongsTo))      p.classList.add('itl-district-new');
+    else if (existingSet.has(belongsTo)) p.classList.add('itl-district-existing');
+    else if (separateSet.has(belongsTo)) p.classList.add('itl-district-separate');
   });
 }
 
 function clearDistrictHighlight() {
-  document.querySelectorAll('.layer-districts path.itl-district-hi').forEach(p => {
-    p.classList.remove('itl-district-hi');
+  document.querySelectorAll(
+    '.layer-districts path.itl-district-new, ' +
+    '.layer-districts path.itl-district-existing, ' +
+    '.layer-districts path.itl-district-separate'
+  ).forEach(p => {
+    p.classList.remove('itl-district-new', 'itl-district-existing', 'itl-district-separate');
   });
 }
 
@@ -379,17 +431,53 @@ function injectStyles() {
       filter: drop-shadow(0 0 6px var(--sym-tr, #7a5a2a));
       z-index: 5;
     }
-    /* Highlight modern-district polygons that map back to the selected
-     * phase's princely-state ancestors. Warm tint + heavier stroke keeps
-     * the map still legible; !important overrides the theme's per-mode
-     * fill rules (base/division/env/reader). */
-    .a-map svg .layer-districts path.itl-district-hi {
-      fill: color-mix(in srgb, #c48a3a 55%, transparent) !important;
+    /* Cumulative-view district colours.
+     * NEW (this phase) — bright warm orange, thick stroke.
+     * EXISTING (already merged in earlier phases) — muted amber.
+     * SEPARATE (formed but not yet part of the main body — Matsya
+     *   Union during Phases 2-4) — cool blue-grey.
+     */
+    .a-map svg .layer-districts path.itl-district-new {
+      fill: color-mix(in srgb, #d97a2a 60%, transparent) !important;
       fill-opacity: 1 !important;
       stroke: #7a3a1a !important;
       stroke-width: 1.4 !important;
       opacity: 1 !important;
     }
+    .a-map svg .layer-districts path.itl-district-existing {
+      fill: color-mix(in srgb, #c9a05a 50%, transparent) !important;
+      fill-opacity: 1 !important;
+      stroke: #8a6c3a !important;
+      stroke-width: 1 !important;
+      opacity: 1 !important;
+    }
+    .a-map svg .layer-districts path.itl-district-separate {
+      fill: color-mix(in srgb, #6b7a90 30%, transparent) !important;
+      fill-opacity: 1 !important;
+      stroke: #4a5a70 !important;
+      stroke-width: 1 !important;
+      stroke-dasharray: 3 2;
+      opacity: 1 !important;
+    }
+    /* Legend swatches inside the phase info card. */
+    .itl-swatch {
+      display: inline-block;
+      width: 12px; height: 10px;
+      margin-right: 4px;
+      vertical-align: middle;
+      border-radius: 2px;
+      border: 1px solid rgba(0,0,0,0.15);
+    }
+    .itl-sw-new       { background: color-mix(in srgb, #d97a2a 70%, transparent); }
+    .itl-sw-existing  { background: color-mix(in srgb, #c9a05a 60%, transparent); }
+    .itl-sw-separate  { background: color-mix(in srgb, #6b7a90 40%, transparent); }
+    .itl-legend {
+      margin-top: 6px;
+      font-size: 10.5px;
+      color: var(--ink-2, #6b5030);
+      display: flex; flex-wrap: wrap; gap: 10px;
+    }
+    .itl-legend span { display: inline-flex; align-items: center; }
     .itl-card-note {
       margin-top: 6px;
       font-size: 10px;
