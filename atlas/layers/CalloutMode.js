@@ -52,17 +52,9 @@ Atlas.bus.on('atlas:ready', () => {
   // LegendPanel's mode-visibility rule would then turn off whatever
   // point layer the user just enabled (the mode-list has no entry for
   // 'division', so it treats the target set as empty).
-  if (sikhwalMode) {
-    const svg = document.getElementById('atlas-map');
-    if (svg) {
-      svg.classList.add('sikhwal-active');
-      // Apply division-mode fills WITHOUT going through LayerManager.setMode,
-      // which would fire layer:mode → LegendPanel.applyModeVisibility →
-      // turn off the point layer the user just enabled. We only want the
-      // CSS effect (coloured district fills), not the visibility side-effect.
-      svg.classList.add('mode-division');
-    }
-  }
+  // No CSS class on the SVG, no forced mode. The base map renders
+  // exactly as it would without sikhwal — the callout boxes and thin
+  // leader lines live entirely outside .a-map so nothing overlays it.
   refreshEverything();
 
   Atlas.bus.on('layer:visibility', () => refreshEverything());
@@ -90,13 +82,15 @@ function buildOverlays() {
   iconOverlay = el('div', { class: 'point-icon-overlay' });
   mapEl.append(iconOverlay);
   if (sikhwalMode) {
-    // Sikhwal preview: only a container for boxes. Leader lines live
-    // inside a per-box mini-SVG (created in renderSikhwal) so there is
-    // never a full-viewport overlay that could visually shadow the base
-    // map SVG — earlier design used a single big SVG which caused the
-    // map to blank out in Safari as soon as the callouts rendered.
+    // Sikhwal preview: sikhwal-root is a zero-size, pointer-events:none
+    // container appended to <body>, NOT to .a-map. It holds absolutely
+    // positioned callout boxes and per-box mini SVGs whose visual
+    // position is computed against the map's screen rect on each
+    // reposition. Nothing sits above the map SVG — the map renders
+    // exactly as it would without sikhwal; the boxes flank it and only
+    // thin leader lines cross into the map area.
     sikhwalRoot = el('div', { class: 'sikhwal-root' });
-    mapEl.append(sikhwalRoot);
+    document.body.append(sikhwalRoot);
   } else {
     panel = el('aside', { class: 'layer-callout-panel', role: 'complementary' });
     mapEl.append(panel);
@@ -252,19 +246,21 @@ function repositionSikhwal() {
   const svg   = document.getElementById('atlas-map');
   const mapEl = document.querySelector('.a-map');
   if (!svg || !mapEl) return;
+  // sikhwal-root is in <body> now, so all positions are in VIEWPORT
+  // (page) coordinates, not .a-map-local coordinates.
   const rect = mapEl.getBoundingClientRect();
   const proj = Atlas.projection;
   const ctm  = svg.getScreenCTM();
   if (!ctm) return;
 
   const svgRect = svg.getBoundingClientRect();
-  // Map centre in .a-map-local coords (used as the axis-split threshold).
-  const cx = svgRect.left + svgRect.width / 2 - rect.left;
+  // Map centre in viewport coords (used as the axis-split threshold).
+  const cx = svgRect.left + svgRect.width / 2;
 
   // Clear any old per-box leader SVGs — boxes stay, only lines redrawn.
   sikhwalRoot.querySelectorAll('.sikhwal-line').forEach(n => n.remove());
 
-  /* Compute each slot's on-screen anchor point. */
+  /* Compute each slot's on-screen anchor point in viewport coords. */
   const slots = sikhwalSlots.map(slot => {
     const [xs, ys] = proj.forward([slot.lon, slot.lat]);
     const pt = svg.createSVGPoint();
@@ -272,8 +268,8 @@ function repositionSikhwal() {
     const scr = pt.matrixTransform(ctm);
     return {
       ...slot,
-      ax: scr.x - rect.left,
-      ay: scr.y - rect.top,
+      ax: scr.x,
+      ay: scr.y,
     };
   });
 
@@ -303,8 +299,9 @@ function repositionSikhwal() {
     // Centre the column vertically inside usable band when it doesn't
     // fill the whole height — pins nicely to the Rajasthan silhouette.
     const totalHeight = (col.length - 1) * stride + H;
-    const startY = TOP_MARGIN + Math.max(0, (usable - totalHeight) / 2);
-    const x = rightSide ? (rect.width - W - EDGE_MARGIN) : EDGE_MARGIN;
+    const startY = rect.top + TOP_MARGIN + Math.max(0, (usable - totalHeight) / 2);
+    // Viewport-absolute X: hug the map area's outer edge, not the page.
+    const x = rightSide ? (rect.right - W - EDGE_MARGIN) : (rect.left + EDGE_MARGIN);
     col.forEach((slot, idx) => {
       const y = startY + idx * stride;
       slot.div.style.left = `${x}px`;
@@ -342,7 +339,7 @@ function repositionSikhwal() {
     s.setAttribute('width',  w);
     s.setAttribute('height', h);
     s.setAttribute('viewBox', `0 0 ${w} ${h}`);
-    s.style.position = 'absolute';
+    s.style.position = 'fixed';
     s.style.left = `${minX}px`;
     s.style.top  = `${minY}px`;
     s.style.pointerEvents = 'none';
@@ -548,25 +545,26 @@ function injectStyles() {
       .layer-callout-panel { display: none; }
     }
 
-    /* Sikhwal radial preview: sikhwal-root is a transparent child of
-     * .a-map that only carries the callout boxes and per-box mini-SVGs.
-     * pointer-events none on the root keeps pans and clicks flowing to
-     * the map SVG behind; isolation isolate prevents Safari from
-     * failing to composite the SVG underneath the overlay, which was
-     * the visual cause of "map disappears when callouts appear".
+    /* Sikhwal preview root: a ZERO-SIZE container appended to <body>.
+     * Overflow: visible so children (boxes + mini-SVGs) can render
+     * outside its bounds. Because the root has 0x0 size and is not a
+     * child of .a-map, nothing at all covers the map SVG — the map
+     * paints normally, and only thin leader lines from the mini-SVGs
+     * intrude into the map area.
      */
     .sikhwal-root {
-      position: absolute; inset: 0;
+      position: fixed;
+      top: 0; left: 0;
+      width: 0; height: 0;
+      overflow: visible;
       pointer-events: none;
-      background: transparent;
-      isolation: isolate;
-      z-index: 4;
+      z-index: 10;
       color: var(--ink-2, #6b5030);
     }
     /* Per-box mini SVGs — sized to just the leader-line bounding box. */
     .sikhwal-line { pointer-events: none; }
     .sikhwal-box {
-      position: absolute;
+      position: fixed;
       width: 190px;
       max-height: 96px;
       overflow: hidden;
@@ -592,14 +590,8 @@ function injectStyles() {
     }
     .sikhwal-root.hidden { display: none; }
 
-    /* Emphasise district strokes so the base map reads clearly in
-     * Sikhwal mode. Just stroke — no fill override — so we don't
-     * fight with theme fills or the paint pipeline.
-     */
-    .a-map svg.sikhwal-active .layer-districts path.feature {
-      stroke: #7a5a2a;
-      stroke-width: 0.8;
-    }
+    /* No CSS overrides on district paths — the base map renders exactly
+     * as it would without Sikhwal mode. */
     .sikhwal-title {
       display: flex;
       align-items: center;
