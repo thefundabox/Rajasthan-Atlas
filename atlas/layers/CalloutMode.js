@@ -54,7 +54,14 @@ Atlas.bus.on('atlas:ready', () => {
   // 'division', so it treats the target set as empty).
   if (sikhwalMode) {
     const svg = document.getElementById('atlas-map');
-    if (svg) svg.classList.add('sikhwal-active');
+    if (svg) {
+      svg.classList.add('sikhwal-active');
+      // Apply division-mode fills WITHOUT going through LayerManager.setMode,
+      // which would fire layer:mode → LegendPanel.applyModeVisibility →
+      // turn off the point layer the user just enabled. We only want the
+      // CSS effect (coloured district fills), not the visibility side-effect.
+      svg.classList.add('mode-division');
+    }
   }
   refreshEverything();
 
@@ -585,27 +592,13 @@ function injectStyles() {
     }
     .sikhwal-root.hidden { display: none; }
 
-    /* Force base map to stay visible in Sikhwal mode — regardless of
-     * whichever preset (base/env/reader/…) is active. Uses explicit
-     * fill + stroke rather than fill-opacity so the district fills
-     * never inherit near-page-background cream.
+    /* Emphasise district strokes so the base map reads clearly in
+     * Sikhwal mode. Just stroke — no fill override — so we don't
+     * fight with theme fills or the paint pipeline.
      */
     .a-map svg.sikhwal-active .layer-districts path.feature {
-      fill: #e5d0a6 !important;
-      fill-opacity: 1 !important;
-      stroke: #7a5a2a !important;
-      stroke-width: 1 !important;
-      opacity: 1 !important;
-    }
-    .a-map svg.sikhwal-active .layer-rivers path.feature {
-      stroke: #3e6d92 !important;
-      stroke-width: 1.2 !important;
-      opacity: 1 !important;
-    }
-    .a-map svg.sikhwal-active .layer-aravalli path.feature,
-    .a-map svg.sikhwal-active .layer-thar path.feature {
-      fill-opacity: 0.55 !important;
-      opacity: 1 !important;
+      stroke: #7a5a2a;
+      stroke-width: 0.8;
     }
     .sikhwal-title {
       display: flex;
