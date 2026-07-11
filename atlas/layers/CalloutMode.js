@@ -41,24 +41,20 @@ let panelHidden = false;  // true while a feature is selected
 // Sikhwal-style radial callouts around the map perimeter (preview mode).
 // Enabled via ?callouts=sikhwal — otherwise the compact right-side panel
 // (mode above) stays default.
-let sikhwalRoot   = null;  // <div> container for radial boxes + leader-line SVG
-let sikhwalSVG    = null;  // SVG overlay for leader lines
+let sikhwalRoot   = null;  // <div> container for boxes + per-box leader-line SVGs
 const sikhwalMode = new URLSearchParams(location.search).get('callouts') === 'sikhwal';
 
 Atlas.bus.on('atlas:ready', () => {
   injectStyles();
   buildOverlays();
-  // In Sikhwal preview mode, force the SVG root to carry a class we can
-  // target with a stronger district stroke, so the base map remains
-  // visible against the page cream background even when the current
-  // theme's district fills are close to the page colour. Also apply
-  // 'division' mode so districts get their coloured fills.
+  // In Sikhwal preview mode, mark the SVG root so we can strengthen
+  // district fill / stroke in CSS. Do NOT force setMode('division') —
+  // LegendPanel's mode-visibility rule would then turn off whatever
+  // point layer the user just enabled (the mode-list has no entry for
+  // 'division', so it treats the target set as empty).
   if (sikhwalMode) {
     const svg = document.getElementById('atlas-map');
     if (svg) svg.classList.add('sikhwal-active');
-    setTimeout(() => {
-      try { Atlas.layers.setMode('division'); } catch (_) {}
-    }, 200);
   }
   refreshEverything();
 
@@ -87,12 +83,12 @@ function buildOverlays() {
   iconOverlay = el('div', { class: 'point-icon-overlay' });
   mapEl.append(iconOverlay);
   if (sikhwalMode) {
-    // Radial preview: a container that holds the callout boxes and an
-    // SVG layer for the leader lines behind them.
+    // Sikhwal preview: only a container for boxes. Leader lines live
+    // inside a per-box mini-SVG (created in renderSikhwal) so there is
+    // never a full-viewport overlay that could visually shadow the base
+    // map SVG — earlier design used a single big SVG which caused the
+    // map to blank out in Safari as soon as the callouts rendered.
     sikhwalRoot = el('div', { class: 'sikhwal-root' });
-    sikhwalSVG = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    sikhwalSVG.setAttribute('class', 'sikhwal-svg');
-    sikhwalRoot.append(sikhwalSVG);
     mapEl.append(sikhwalRoot);
   } else {
     panel = el('aside', { class: 'layer-callout-panel', role: 'complementary' });
@@ -202,10 +198,9 @@ const sikhwalSlots = [];
 
 function renderSikhwal(activeLayers) {
   if (!sikhwalRoot) return;
-  // Clear previous callouts.
-  sikhwalRoot.querySelectorAll('.sikhwal-box').forEach(n => n.remove());
+  // Clear previous callouts (boxes + any per-box leader-line SVGs).
+  sikhwalRoot.innerHTML = '';
   sikhwalSlots.length = 0;
-  if (sikhwalSVG) sikhwalSVG.innerHTML = '';
   if (!activeLayers.length) return;
 
   // Cap per-layer callouts so the perimeter doesn't drown in text.
@@ -246,7 +241,7 @@ function renderSikhwal(activeLayers) {
 }
 
 function repositionSikhwal() {
-  if (!sikhwalRoot || !sikhwalSVG) return;
+  if (!sikhwalRoot) return;
   const svg   = document.getElementById('atlas-map');
   const mapEl = document.querySelector('.a-map');
   if (!svg || !mapEl) return;
@@ -259,10 +254,8 @@ function repositionSikhwal() {
   // Map centre in .a-map-local coords (used as the axis-split threshold).
   const cx = svgRect.left + svgRect.width / 2 - rect.left;
 
-  sikhwalSVG.setAttribute('viewBox', `0 0 ${rect.width} ${rect.height}`);
-  sikhwalSVG.setAttribute('width',   rect.width);
-  sikhwalSVG.setAttribute('height',  rect.height);
-  sikhwalSVG.innerHTML = '';
+  // Clear any old per-box leader SVGs — boxes stay, only lines redrawn.
+  sikhwalRoot.querySelectorAll('.sikhwal-line').forEach(n => n.remove());
 
   /* Compute each slot's on-screen anchor point. */
   const slots = sikhwalSlots.map(slot => {
@@ -315,30 +308,55 @@ function repositionSikhwal() {
   packColumn(leftCol,  false);
   packColumn(rightCol, true);
 
-  /* Draw leader line from each box's inner edge to the feature anchor. */
+  /* Draw one small SVG per box, sized to just the leader-line bounding
+   * box + anchor dot. This keeps every SVG tiny and never spans the
+   * whole map — so nothing shadows the base map SVG behind. */
   for (const slot of [...leftCol, ...rightCol]) {
-    const bcx = slot.boxX + W / 2;
-    const bcy = slot.boxY + H / 2;
-    // Line starts at the inner edge of the box (side facing map centre).
     const rightSide = slot.boxX + W / 2 > cx;
-    const ex = rightSide ? slot.boxX : slot.boxX + W;
-    const ey = bcy;
-    // Slight elbow: horizontal segment, then diagonal to the feature.
-    const elbowX = ex + (rightSide ? -20 : 20);
-    const elbowY = ey;
+    const bcy = slot.boxY + H / 2;
+    // Line origin: inner edge of the box, halfway down.
+    const ox = rightSide ? slot.boxX : slot.boxX + W;
+    const oy = bcy;
+    // Elbow: short horizontal, then diagonal.
+    const elbowX = ox + (rightSide ? -22 : 22);
+    const elbowY = oy;
+    const tx = slot.ax;
+    const ty = slot.ay;
+    // Compute bounding box for the mini-SVG.
+    const pad = 8;
+    const minX = Math.min(ox, elbowX, tx) - pad;
+    const minY = Math.min(oy, elbowY, ty) - pad;
+    const maxX = Math.max(ox, elbowX, tx) + pad;
+    const maxY = Math.max(oy, elbowY, ty) + pad;
+    const w = maxX - minX;
+    const h = maxY - minY;
+    const s = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    s.setAttribute('class', 'sikhwal-line');
+    s.setAttribute('width',  w);
+    s.setAttribute('height', h);
+    s.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    s.style.position = 'absolute';
+    s.style.left = `${minX}px`;
+    s.style.top  = `${minY}px`;
+    s.style.pointerEvents = 'none';
+    // Local coordinates inside the mini-SVG.
+    const lox = ox - minX,      loy = oy - minY;
+    const lex = elbowX - minX,  ley = elbowY - minY;
+    const ltx = tx - minX,      lty = ty - minY;
     const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    path.setAttribute('d', `M${ex},${ey} L${elbowX},${elbowY} L${slot.ax},${slot.ay}`);
+    path.setAttribute('d', `M${lox},${loy} L${lex},${ley} L${ltx},${lty}`);
     path.setAttribute('fill', 'none');
-    path.setAttribute('stroke', 'currentColor');
-    path.setAttribute('stroke-width', '0.8');
+    path.setAttribute('stroke', '#7a5a2a');
+    path.setAttribute('stroke-width', '0.9');
     path.setAttribute('stroke-dasharray', '4 3');
-    path.setAttribute('opacity', '0.55');
-    sikhwalSVG.append(path);
+    path.setAttribute('opacity', '0.65');
+    s.append(path);
     const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-    dot.setAttribute('cx', slot.ax); dot.setAttribute('cy', slot.ay);
-    dot.setAttribute('r', 2.4);
-    dot.setAttribute('fill', 'currentColor'); dot.setAttribute('opacity', '0.75');
-    sikhwalSVG.append(dot);
+    dot.setAttribute('cx', ltx); dot.setAttribute('cy', lty);
+    dot.setAttribute('r', 2.6);
+    dot.setAttribute('fill', '#7a5a2a'); dot.setAttribute('opacity', '0.85');
+    s.append(dot);
+    sikhwalRoot.append(s);
   }
 }
 
@@ -523,14 +541,23 @@ function injectStyles() {
       .layer-callout-panel { display: none; }
     }
 
-    /* ── Sikhwal radial preview ─────────────────────────────── */
+    /* Sikhwal radial preview: sikhwal-root is a transparent child of
+     * .a-map that only carries the callout boxes and per-box mini-SVGs.
+     * pointer-events none on the root keeps pans and clicks flowing to
+     * the map SVG behind; isolation isolate prevents Safari from
+     * failing to composite the SVG underneath the overlay, which was
+     * the visual cause of "map disappears when callouts appear".
+     */
     .sikhwal-root {
       position: absolute; inset: 0;
       pointer-events: none;
+      background: transparent;
+      isolation: isolate;
       z-index: 4;
       color: var(--ink-2, #6b5030);
     }
-    .sikhwal-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+    /* Per-box mini SVGs — sized to just the leader-line bounding box. */
+    .sikhwal-line { pointer-events: none; }
     .sikhwal-box {
       position: absolute;
       width: 190px;
@@ -558,21 +585,27 @@ function injectStyles() {
     }
     .sikhwal-root.hidden { display: none; }
 
-    /* Strengthen district strokes + fills whenever Sikhwal mode is active,
-     * so the base map stays visible against the cream background.
+    /* Force base map to stay visible in Sikhwal mode — regardless of
+     * whichever preset (base/env/reader/…) is active. Uses explicit
+     * fill + stroke rather than fill-opacity so the district fills
+     * never inherit near-page-background cream.
      */
     .a-map svg.sikhwal-active .layer-districts path.feature {
-      stroke: #7a5a2a;
-      stroke-width: 0.9;
-      fill-opacity: 0.9;
+      fill: #e5d0a6 !important;
+      fill-opacity: 1 !important;
+      stroke: #7a5a2a !important;
+      stroke-width: 1 !important;
+      opacity: 1 !important;
     }
     .a-map svg.sikhwal-active .layer-rivers path.feature {
-      stroke: #3e6d92;
-      stroke-width: 1.1;
+      stroke: #3e6d92 !important;
+      stroke-width: 1.2 !important;
+      opacity: 1 !important;
     }
     .a-map svg.sikhwal-active .layer-aravalli path.feature,
     .a-map svg.sikhwal-active .layer-thar path.feature {
-      fill-opacity: 0.75;
+      fill-opacity: 0.55 !important;
+      opacity: 1 !important;
     }
     .sikhwal-title {
       display: flex;
