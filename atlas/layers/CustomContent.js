@@ -90,6 +90,11 @@ function renderCustomCard(feature) {
     wrap.append(s);
   }
   detail.append(wrap);
+  // Ensure the detail sidebar is opened. UIManager only opens it for
+  // districts (calling this._openDetail internally); for custom-layer
+  // features we have to nudge the container ourselves.
+  const rightPanel = document.querySelector('.a-right');
+  if (rightPanel) rightPanel.classList.add('open');
 }
 
 function prettyKicker(p) {

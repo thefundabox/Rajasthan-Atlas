@@ -57,6 +57,10 @@ Atlas.bus.on('atlas:ready', () => {
   });
   Atlas.bus.on('selection:changed', ({ feature }) => {
     setPanelHidden(!!feature);
+    // In Sikhwal mode, hide the whole callout root while a feature is
+    // selected so it doesn't overlap the detail card slide-in. Returns
+    // when the selection is cleared.
+    if (sikhwalRoot) sikhwalRoot.classList.toggle('hidden', !!feature);
   });
   window.addEventListener('resize', () => {
     if (sikhwalMode) repositionSikhwal();
@@ -268,10 +272,10 @@ function repositionSikhwal() {
    * fixed vertical stride. This guarantees no vertical overlap, and
    * leader lines run monotonically inward.
    */
-  const W = 180, H = 62;            // Box dimensions (actual rendered height ≈ 60px with title + 2-line teaser).
-  const STRIDE_Y = H + 10;          // Vertical spacing — guarantees a visible gap between stacked boxes.
-  const EDGE_MARGIN = 10;           // Distance from viewport edge to box outer edge.
-  const TOP_MARGIN  = 70;           // Reserve top area for zoom controls, search, etc.
+  const W = 190, H = 96;            // Box dimensions — matches .sikhwal-box CSS.
+  const STRIDE_Y = H + 12;          // Vertical spacing — guarantees a visible gap between stacked boxes.
+  const EDGE_MARGIN = 12;           // Distance from viewport edge to box outer edge.
+  const TOP_MARGIN  = 76;           // Reserve top area for zoom controls, search, etc.
 
   const leftCol  = slots.filter(s => s.ax <  cx).sort((a, b) => a.ay - b.ay);
   const rightCol = slots.filter(s => s.ax >= cx).sort((a, b) => a.ay - b.ay);
@@ -517,27 +521,30 @@ function injectStyles() {
     .sikhwal-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
     .sikhwal-box {
       position: absolute;
-      width: 180px;
-      max-height: 62px;
+      width: 190px;
+      max-height: 96px;
       overflow: hidden;
       pointer-events: auto;
-      padding: 5px 8px;
+      padding: 6px 9px;
       background: color-mix(in srgb, var(--bg-1, #f5efe0) 97%, transparent);
       border: 1px solid var(--ink-3, #ba9863);
       border-radius: 4px;
       box-shadow: 0 1.5px 4px rgba(0,0,0,0.14);
       font-family: var(--sans);
-      font-size: 10.5px;
-      line-height: 1.35;
+      font-size: 11px;
+      line-height: 1.38;
       color: var(--ink-1, #3d2f10);
       cursor: pointer;
-      transition: max-height 0.15s ease, transform 0.1s, box-shadow 0.1s;
+      transition: max-height 0.18s ease, box-shadow 0.15s ease;
       box-sizing: border-box;
     }
     .sikhwal-box:hover {
       /* Expand on hover so the full teaser is readable without click */
-      max-height: 200px;
+      max-height: 260px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.22);
+      z-index: 6;
     }
+    .sikhwal-root.hidden { display: none; }
     .sikhwal-title {
       display: flex;
       align-items: center;
