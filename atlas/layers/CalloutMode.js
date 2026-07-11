@@ -203,8 +203,11 @@ function renderSikhwal(activeLayers) {
       if (!c) continue;
       const facts = Array.isArray(feat.properties?.notes?.facts)
         ? feat.properties.notes.facts : [];
+      // Tight teaser — keeps every box to 2-3 lines so the edge columns
+      // pack predictably. Long facts get truncated with an ellipsis; the
+      // full fact reads in the detail card on click.
       const teaser = facts[0]
-        ? (facts[0].length > 105 ? facts[0].slice(0, 103).trimEnd() + '…' : facts[0])
+        ? (facts[0].length > 90 ? facts[0].slice(0, 88).trimEnd() + '…' : facts[0])
         : '';
       const box = el('div', {
         class: `sikhwal-box`,
@@ -236,85 +239,89 @@ function repositionSikhwal() {
   const ctm  = svg.getScreenCTM();
   if (!ctm) return;
 
-  // Map centre in .a-map local coords.
   const svgRect = svg.getBoundingClientRect();
+  // Map centre in .a-map-local coords (used as the axis-split threshold).
   const cx = svgRect.left + svgRect.width / 2 - rect.left;
-  const cy = svgRect.top  + svgRect.height / 2 - rect.top;
-  // Bring boxes to just outside the state outline. Rajasthan roughly
-  // fills the vertical extent; push to ~48% width and ~48% height.
-  const rx = svgRect.width  * 0.48;
-  const ry = svgRect.height * 0.48;
 
   sikhwalSVG.setAttribute('viewBox', `0 0 ${rect.width} ${rect.height}`);
   sikhwalSVG.setAttribute('width',   rect.width);
   sikhwalSVG.setAttribute('height',  rect.height);
   sikhwalSVG.innerHTML = '';
 
-  // Sort by angle so nearby-angle boxes get resolved deterministically.
-  const slotsWithAngle = sikhwalSlots.map(slot => {
+  /* Compute each slot's on-screen anchor point. */
+  const slots = sikhwalSlots.map(slot => {
     const [xs, ys] = proj.forward([slot.lon, slot.lat]);
     const pt = svg.createSVGPoint();
     pt.x = xs; pt.y = ys;
     const scr = pt.matrixTransform(ctm);
-    const ax = scr.x - rect.left;
-    const ay = scr.y - rect.top;
-    const dx = ax - cx, dy = ay - cy;
-    const angle = Math.atan2(dy, dx);       // 0 = east, +y = down
-    return { ...slot, ax, ay, angle };
+    return {
+      ...slot,
+      ax: scr.x - rect.left,
+      ay: scr.y - rect.top,
+    };
   });
-  slotsWithAngle.sort((a, b) => a.angle - b.angle);
 
-  // Nudge boxes so they don't overlap tangentially. Track occupied
-  // (angle, band) pairs; if a slot would collide, offset radially
-  // outward into a second band.
-  const angleStep = (Math.PI * 2) / Math.max(slotsWithAngle.length, 16);
-  const used = new Map(); // "band|slot" -> true
-  for (const slot of slotsWithAngle) {
-    let band = 0;
-    let key;
-    // Snap to the nearest angular slot within its band, spilling to
-    // outer bands if the slot is already taken.
-    while (true) {
-      const snapIdx = Math.round(slot.angle / angleStep);
-      key = `${band}|${snapIdx}`;
-      if (!used.has(key)) break;
-      band++;
-      if (band > 3) break;    // give up after 4 bands (safety valve)
-    }
-    used.set(key, true);
-    // Convert back to screen position.
-    const r = 1 + band * 0.08;
-    const bx = cx + Math.cos(slot.angle) * rx * r;
-    const by = cy + Math.sin(slot.angle) * ry * r;
-    // Box is ~180x40; centre it, but clamp to viewport with 6 px margin.
-    const w = 180, h = 44;
-    let x = bx - w / 2;
-    let y = by - h / 2;
-    x = Math.max(6, Math.min(rect.width  - w - 6, x));
-    y = Math.max(6, Math.min(rect.height - h - 6, y));
-    slot.div.style.left = `${x}px`;
-    slot.div.style.top  = `${y}px`;
+  /* Edge-column layout — no more angular collisions.
+   * Assign each feature to the LEFT column (feature west of map centre)
+   * or the RIGHT column (east of map centre). Within each column, sort
+   * by the feature's Y coordinate and distribute along the edge with a
+   * fixed vertical stride. This guarantees no vertical overlap, and
+   * leader lines run monotonically inward.
+   */
+  const W = 180, H = 62;            // Box dimensions (actual rendered height ≈ 60px with title + 2-line teaser).
+  const STRIDE_Y = H + 10;          // Vertical spacing — guarantees a visible gap between stacked boxes.
+  const EDGE_MARGIN = 10;           // Distance from viewport edge to box outer edge.
+  const TOP_MARGIN  = 70;           // Reserve top area for zoom controls, search, etc.
 
-    // Anchor point where the leader line meets the box (nearest edge).
-    const bcx = x + w / 2, bcy = y + h / 2;
-    const dxA = slot.ax - bcx, dyA = slot.ay - bcy;
-    const inv = Math.max(Math.abs(dxA) / (w / 2), Math.abs(dyA) / (h / 2)) || 1;
-    const ex = bcx + dxA / inv;
-    const ey = bcy + dyA / inv;
+  const leftCol  = slots.filter(s => s.ax <  cx).sort((a, b) => a.ay - b.ay);
+  const rightCol = slots.filter(s => s.ax >= cx).sort((a, b) => a.ay - b.ay);
 
-    // Leader line + anchor dot.
-    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-    line.setAttribute('x1', ex); line.setAttribute('y1', ey);
-    line.setAttribute('x2', slot.ax); line.setAttribute('y2', slot.ay);
-    line.setAttribute('stroke', 'currentColor');
-    line.setAttribute('stroke-width', '0.7');
-    line.setAttribute('stroke-dasharray', '4 3');
-    line.setAttribute('opacity', '0.6');
-    sikhwalSVG.append(line);
+  const usable = rect.height - TOP_MARGIN - EDGE_MARGIN;
+  const packColumn = (col, rightSide) => {
+    if (!col.length) return;
+    // Distribute evenly across usable height so columns of ≤6 look
+    // balanced and columns of many use the minimum stride.
+    const stride = col.length > 1
+      ? Math.max(STRIDE_Y, (usable - H) / (col.length - 1))
+      : 0;
+    // Centre the column vertically inside usable band when it doesn't
+    // fill the whole height — pins nicely to the Rajasthan silhouette.
+    const totalHeight = (col.length - 1) * stride + H;
+    const startY = TOP_MARGIN + Math.max(0, (usable - totalHeight) / 2);
+    const x = rightSide ? (rect.width - W - EDGE_MARGIN) : EDGE_MARGIN;
+    col.forEach((slot, idx) => {
+      const y = startY + idx * stride;
+      slot.div.style.left = `${x}px`;
+      slot.div.style.top  = `${y}px`;
+      slot.boxX = x; slot.boxY = y;
+    });
+  };
+  packColumn(leftCol,  false);
+  packColumn(rightCol, true);
+
+  /* Draw leader line from each box's inner edge to the feature anchor. */
+  for (const slot of [...leftCol, ...rightCol]) {
+    const bcx = slot.boxX + W / 2;
+    const bcy = slot.boxY + H / 2;
+    // Line starts at the inner edge of the box (side facing map centre).
+    const rightSide = slot.boxX + W / 2 > cx;
+    const ex = rightSide ? slot.boxX : slot.boxX + W;
+    const ey = bcy;
+    // Slight elbow: horizontal segment, then diagonal to the feature.
+    const elbowX = ex + (rightSide ? -20 : 20);
+    const elbowY = ey;
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', `M${ex},${ey} L${elbowX},${elbowY} L${slot.ax},${slot.ay}`);
+    path.setAttribute('fill', 'none');
+    path.setAttribute('stroke', 'currentColor');
+    path.setAttribute('stroke-width', '0.8');
+    path.setAttribute('stroke-dasharray', '4 3');
+    path.setAttribute('opacity', '0.55');
+    sikhwalSVG.append(path);
     const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
     dot.setAttribute('cx', slot.ax); dot.setAttribute('cy', slot.ay);
     dot.setAttribute('r', 2.4);
-    dot.setAttribute('fill', 'currentColor'); dot.setAttribute('opacity', '0.8');
+    dot.setAttribute('fill', 'currentColor'); dot.setAttribute('opacity', '0.75');
     sikhwalSVG.append(dot);
   }
 }
@@ -511,23 +518,25 @@ function injectStyles() {
     .sikhwal-box {
       position: absolute;
       width: 180px;
+      max-height: 62px;
+      overflow: hidden;
       pointer-events: auto;
       padding: 5px 8px;
-      background: color-mix(in srgb, var(--bg-1, #f5efe0) 96%, transparent);
+      background: color-mix(in srgb, var(--bg-1, #f5efe0) 97%, transparent);
       border: 1px solid var(--ink-3, #ba9863);
       border-radius: 4px;
-      box-shadow: 0 1.5px 4px rgba(0,0,0,0.12);
+      box-shadow: 0 1.5px 4px rgba(0,0,0,0.14);
       font-family: var(--sans);
       font-size: 10.5px;
       line-height: 1.35;
       color: var(--ink-1, #3d2f10);
       cursor: pointer;
-      transition: transform 0.1s, box-shadow 0.1s;
+      transition: max-height 0.15s ease, transform 0.1s, box-shadow 0.1s;
+      box-sizing: border-box;
     }
     .sikhwal-box:hover {
-      transform: scale(1.05);
-      box-shadow: 0 3px 8px rgba(0,0,0,0.18);
-      z-index: 5;
+      /* Expand on hover so the full teaser is readable without click */
+      max-height: 200px;
     }
     .sikhwal-title {
       display: flex;
