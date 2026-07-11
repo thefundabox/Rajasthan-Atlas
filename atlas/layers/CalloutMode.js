@@ -55,6 +55,22 @@ Atlas.bus.on('atlas:ready', () => {
   // No CSS class on the SVG, no forced mode. The base map renders
   // exactly as it would without sikhwal — the callout boxes and thin
   // leader lines live entirely outside .a-map so nothing overlays it.
+  if (sikhwalMode) {
+    // Hide the small India locator inset — the sikhwal view is the
+    // whole story; the mini-map only competes for attention.
+    const locator = document.querySelector('.overlay.locator');
+    if (locator) locator.style.display = 'none';
+    // The × close button on the detail sidebar only removes the
+    // "open" class — it does NOT clear the selection, so our
+    // selection:changed listener never fires and the callouts stay
+    // hidden. Delegate a click listener that also clears selection.
+    document.addEventListener('click', (ev) => {
+      const btn = ev.target?.closest?.('.close-btn button');
+      if (btn) {
+        try { Atlas.interaction.select(null, null); } catch (_) {}
+      }
+    });
+  }
   refreshEverything();
 
   Atlas.bus.on('layer:visibility', () => refreshEverything());
