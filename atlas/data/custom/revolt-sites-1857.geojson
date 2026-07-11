@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "nasirabad-1857",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.731,
+          26.302
+        ]
+      },
+      "properties": {
+        "name": "Nasirabad Cantonment",
+        "type": "revolt_site_1857",
+        "category": "custom",
+        "district": "Ajmer",
+        "date": "28 May 1857",
+        "notes": {
+          "facts": [
+            "Origin of the 1857 revolt in Rajasthan — the 15th Bengal Native Infantry mutinied here on 28 May 1857.",
+            "Sepoys marched from Nasirabad towards Delhi to join Bahadur Shah Zafar; the British scrambled to raise Punjab-Marwar loyalist forces.",
+            "The cantonment's church, hospital and residency were burned — some ruins survive at the Nasirabad old cantonment site.",
+            "Sowars of the 30th Bombay Native Infantry joined the mutiny 15 days later, on 12 June 1857.",
+            "Rajasthan's first heritage marker of the 1857 revolt was installed at Nasirabad in 2007 (150th anniversary)."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "neemuch-1857",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.86,
+          24.457
+        ]
+      },
+      "properties": {
+        "name": "Neemuch Cantonment",
+        "type": "revolt_site_1857",
+        "category": "custom",
+        "district": "Chittorgarh (border with MP)",
+        "date": "3 June 1857",
+        "notes": {
+          "facts": [
+            "Second Rajasthan cantonment to mutiny after Nasirabad — the 1st Bengal Cavalry rose on 3 June 1857.",
+            "Sepoys marched to Delhi via Chittorgarh; the Rani of Neemuch's hospitality helped shelter the Rajputana Field Force.",
+            "The revolt spread via Neemuch to the Mewar princely states — Salumbar and Bhinder saw parallel unrest.",
+            "The Neemuch cantonment today straddles the Rajasthan–MP border; ruins of the barracks remain.",
+            "The Neemuch memorial ('Sepoy Mutiny Column') was raised in 1858."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "auwa-1857",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.521,
+          25.631
+        ]
+      },
+      "properties": {
+        "name": "Auwa (Kushal Singh's rebellion)",
+        "type": "revolt_site_1857",
+        "category": "custom",
+        "district": "Pali",
+        "date": "September 1857",
+        "notes": {
+          "facts": [
+            "Thakur Kushal Singh of Auwa led the Marwar 1857 rebellion — Rajasthan's only princely-state-scale uprising.",
+            "Kushal Singh defeated Jodhpur's Political Agent A. G. G. Mark Mason at Bithora on 8 September 1857.",
+            "British forces under Colonel George Lawrence retook Auwa on 24 January 1858 — the fort was demolished as reprisal.",
+            "Kushal Singh escaped to Salumbar and continued rebellion until his exile; celebrated as Rajasthan's principal 1857 hero.",
+            "The Auwa fort ruins and Kushal Singh's samadhi are pilgrimage sites for Marwar-nationalist historiography."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kotah-1857",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.827,
+          25.181
+        ]
+      },
+      "properties": {
+        "name": "Kotah (Political Agent's Assassination)",
+        "type": "revolt_site_1857",
+        "category": "custom",
+        "district": "Kota",
+        "date": "15 October 1857",
+        "notes": {
+          "facts": [
+            "Kota Political Agent Major Charles Burton and his two sons were assassinated in Kota on 15 October 1857.",
+            "The Kota Palace guards led by Jai Dyal and Mehrab Khan attacked the residency at Kotah.",
+            "British reprisal was harsh — General Roberts recaptured Kota in March 1858; the Kota army was disbanded.",
+            "Kota was thereafter placed under an English Political Agent rather than a Resident — reducing its princely status.",
+            "The Burton Residency was rebuilt and used as the Rajputana Agency HQ until 1947."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "erinpura-1857",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.98,
+          25.02
+        ]
+      },
+      "properties": {
+        "name": "Erinpura Cantonment",
+        "type": "revolt_site_1857",
+        "category": "custom",
+        "district": "Sirohi",
+        "date": "21 August 1857",
+        "notes": {
+          "facts": [
+            "The Jodhpur Legion — a company of 300 sepoys stationed at Erinpura — mutinied on 21 August 1857.",
+            "The Legion marched to join Kushal Singh at Auwa (Pali), forming the core of the Marwar rebellion.",
+            "British forces retook Erinpura in October 1857; the Jodhpur Legion was disbanded.",
+            "The site is remembered for the shared Rajput-Muslim character of the mutiny — Awadhi Muslim sepoys and Marwar Rajputs fighting together.",
+            "The cantonment ruins and the memorial obelisk survive on the Erinpura–Bali road."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "delhi-anrap-1857",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.827,
+          25.181
+        ]
+      },
+      "properties": {
+        "name": "Kotah-ki-Rai (King-of-Kota fort assault)",
+        "type": "revolt_site_1857",
+        "category": "custom",
+        "district": "Kota",
+        "date": "March 1858",
+        "notes": {
+          "facts": [
+            "The 1858 British siege of Kota Fort was Rajasthan's biggest 1857-era military engagement.",
+            "General Roberts commanded 3000+ British-Indian troops in a 10-day artillery bombardment.",
+            "Rebels held the fort under Jai Dyal and Mehrab Khan; the fort was breached on 30 March 1858.",
+            "Kota Maharao Ram Singh II was reduced to nominal rule; British Political Agent Sir Robert Bourke replaced the Resident.",
+            "Marks the effective end of the 1857 revolt in Rajasthan."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    }
+  ]
+}

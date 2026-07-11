@@ -1,0 +1,242 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "kalibangan",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.13,
+          29.475
+        ]
+      },
+      "properties": {
+        "name": "Kalibangan",
+        "type": "ancient_civilization",
+        "category": "custom",
+        "district": "Hanumangarh",
+        "period": "Pre-Harappan (~3500 BCE) + Mature Harappan (~2500 BCE)",
+        "notes": {
+          "facts": [
+            "Only Indus Valley Civilization site in Rajasthan; excavated by A. Ghosh (1953) and B. B. Lal + B. K. Thapar (1961-69).",
+            "World's earliest evidence of ploughed farm fields (Pre-Harappan level) — diagonal furrow pattern preserved.",
+            "World's earliest evidence of an earthquake (~2600 BCE) — stratified fault visible in the sections.",
+            "'Kali-bangan' = 'black bangles' — thousands of terracotta bangle fragments named the site.",
+            "Sits on the palaeo-channel of the Ghaggar (Vedic Saraswati candidate) — the river dried up around 1800 BCE, forcing site abandonment."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ahar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.72,
+          24.601
+        ]
+      },
+      "properties": {
+        "name": "Ahar (Aghata)",
+        "type": "ancient_civilization",
+        "category": "custom",
+        "district": "Udaipur",
+        "period": "Chalcolithic (~3000-1500 BCE)",
+        "notes": {
+          "facts": [
+            "Type-site of the Ahar culture — one of India's earliest copper-using Chalcolithic cultures.",
+            "First excavated by R. C. Agrawala (1954) and H. D. Sankalia (1961-62).",
+            "Ancient name 'Aghata' — a Suryavanshi Kshatriya settlement in Puranic tradition, later called Ahar.",
+            "The Ahar culture spread to Balathal, Gilund, Ojiyana — a distinctive south-Rajasthan Chalcolithic province.",
+            "Located just east of modern Udaipur city on the Ayad (Ahar) river."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "balathal",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.07,
+          24.72
+        ]
+      },
+      "properties": {
+        "name": "Balathal",
+        "type": "ancient_civilization",
+        "category": "custom",
+        "district": "Udaipur (Vallabhnagar)",
+        "period": "Chalcolithic (~3000-1500 BCE) + Early Historic (600 BCE-200 CE)",
+        "notes": {
+          "facts": [
+            "Excavated by V. N. Misra (1994-2000) — a fortified Ahar-Chalcolithic settlement with mud-brick ramparts.",
+            "Yielded India's oldest evidence of leprosy — a 4000-year-old male skeleton, confirmed 2009.",
+            "The mud-brick perimeter wall is one of India's earliest fortifications.",
+            "Continuously occupied ~2200 years — one of Rajasthan's longest-lived Chalcolithic-to-Early Historic sites.",
+            "Located ~40 km east of Udaipur near Vallabhnagar."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ganeshwar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.91,
+          27.66
+        ]
+      },
+      "properties": {
+        "name": "Ganeshwar",
+        "type": "ancient_civilization",
+        "category": "custom",
+        "district": "Neem-Ka-Thana",
+        "period": "Chalcolithic (~3800-2800 BCE)",
+        "notes": {
+          "facts": [
+            "Type-site of the Ganeshwar-Jodhpura culture — supplied copper to the Harappan cities.",
+            "Excavated by R. C. Agrawala (1977-78) — yielded over 5000 copper artefacts (arrowheads, spearheads, fish-hooks).",
+            "Sits on the Sikar–Neem Ka Thana copper belt of the Khetri Copper Line.",
+            "Contemporary with Pre-Harappan Kalibangan; may be the source-area for the copper of the Harappan civilization.",
+            "Ceramic tradition: 'reserved slip ware' — a Rajasthan-Chalcolithic hallmark."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bagor",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.29,
+          25.35
+        ]
+      },
+      "properties": {
+        "name": "Bagor",
+        "type": "ancient_civilization",
+        "category": "custom",
+        "district": "Bhilwara",
+        "period": "Mesolithic-Chalcolithic (~5000-1500 BCE)",
+        "notes": {
+          "facts": [
+            "Excavated by V. N. Misra (1968-70) — India's largest known Mesolithic site.",
+            "Yielded over 15,000 microlithic tools; earliest evidence of domestication of cattle, sheep, goat in Rajasthan.",
+            "One of only two Mesolithic sites in India with continuous stratigraphy into the Chalcolithic.",
+            "Located on the Kothari river ~25 km east of Bhilwara town — 'Vagor' (Bagor) sabhyata in Hindi sources."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bairath",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.18,
+          27.44
+        ]
+      },
+      "properties": {
+        "name": "Bairath (Viratnagar)",
+        "type": "ancient_civilization",
+        "category": "custom",
+        "district": "Kotputli-Behror",
+        "period": "Mahabharata Age → Mauryan (~3rd c. BCE-3rd c. CE)",
+        "notes": {
+          "facts": [
+            "Traditional Viratnagar of the Mahabharata — where the Pandavas spent their 13th year of exile at King Virata's court.",
+            "Yielded one of only two Ashokan Bhabru edicts (Ashoka's personal declaration of Buddhism); discovered 1837 by Captain Burt, now in the Asiatic Society Kolkata.",
+            "Excavated by D. R. Sahni (1935-36) — India's oldest known Buddhist chaitya-griha (circular hypaethral shrine).",
+            "The Mauryan-era Nissindh cave and Bijak-ki-Pahari monastery add layered evidence of Ashokan Buddhism in Rajasthan.",
+            "Located on the Alwar-Jaipur road in the northern Aravalli tail."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ojiyana",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.15,
+          25.64
+        ]
+      },
+      "properties": {
+        "name": "Ojiyana",
+        "type": "ancient_civilization",
+        "category": "custom",
+        "district": "Bhilwara",
+        "period": "Ahar-Chalcolithic (~2500-1500 BCE)",
+        "notes": {
+          "facts": [
+            "Recently-excavated Ahar-culture settlement (2000-2001, ASI Jaipur Circle).",
+            "Yielded India's earliest painted human figurines — 'Ahar Ma' terracottas with distinctive brown-slip painting.",
+            "One of the westernmost known Ahar-culture sites — extends the Chalcolithic province towards Ajmer.",
+            "Located ~30 km northwest of Bhilwara town on the Banas tributary system."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rangmahal",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.61,
+          29.44
+        ]
+      },
+      "properties": {
+        "name": "Rangmahal",
+        "type": "ancient_civilization",
+        "category": "custom",
+        "district": "Hanumangarh",
+        "period": "Kushan-Gupta (~1st-4th c. CE)",
+        "notes": {
+          "facts": [
+            "Type-site of the Rang Mahal culture — Kushan-Gupta period painted pottery tradition of the Ghaggar palaeo-channel.",
+            "Excavated by Swedish archaeologist Hanna Rydh (1952-54) — first female-led major excavation in Rajasthan.",
+            "Located on the same Ghaggar palaeo-channel as Kalibangan, ~30 km east.",
+            "Iron artefacts, terracotta plaques, painted pottery — the site anchored the reconstruction of northern Rajasthan's early historic period."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    }
+  ]
+}

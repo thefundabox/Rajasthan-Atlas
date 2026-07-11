@@ -1,0 +1,357 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "chittorgarh-fort",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.646,
+          24.887
+        ]
+      },
+      "properties": {
+        "name": "Chittorgarh Fort",
+        "type": "heritage_fort",
+        "category": "custom",
+        "district": "Chittorgarh",
+        "unescoStatus": "Hill Forts of Rajasthan (2013)",
+        "notes": {
+          "facts": [
+            "India's largest fort by area (280 hectares) — a UNESCO Hill Fort of Rajasthan (2013).",
+            "Historic seat of the Sisodia Mewar dynasty; site of three great jauhars — 1303 (Rani Padmini), 1535 (Rani Karnavati), 1568 (Sakka).",
+            "Vijay Stambha (Victory Tower, 1440) commemorates Rana Kumbha's defeat of Mahmud Khilji of Malwa.",
+            "Kirti Stambha (Fame Tower, 12th c.) is the Jain counterpart — dedicated to the first Tirthankara Adinatha.",
+            "The fort's Meera Bai Temple recalls the poet-saint who lived here as a Sisodia princess."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kumbhalgarh-fort",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.582,
+          25.148
+        ]
+      },
+      "properties": {
+        "name": "Kumbhalgarh Fort",
+        "type": "heritage_fort",
+        "category": "custom",
+        "district": "Rajsamand",
+        "unescoStatus": "Hill Forts of Rajasthan (2013)",
+        "notes": {
+          "facts": [
+            "Its 36-km outer perimeter wall is the world's second-longest continuous fortification after the Great Wall of China.",
+            "Encloses 13 mountain-tops and 700+ shrines; UNESCO Hill Fort of Rajasthan (2013).",
+            "Built by Rana Kumbha (r. 1433-1468) — Mewar's most prolific fort-builder; birthplace of Maharana Pratap in 1540.",
+            "Never breached in war; only fell once (1578) after joint Mughal-Rajput siege used arsenic to poison the fort's water supply."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gagron-fort",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.163,
+          24.628
+        ]
+      },
+      "properties": {
+        "name": "Gagron Fort",
+        "type": "heritage_fort",
+        "category": "custom",
+        "district": "Jhalawar",
+        "unescoStatus": "Hill Forts of Rajasthan (2013)",
+        "notes": {
+          "facts": [
+            "Rajasthan's only 'jal-durg' (water fortress) — enclosed on three sides by the confluence of the Ahu and Kalisindh rivers.",
+            "UNESCO Hill Fort of Rajasthan (2013); built by the Khichi Chauhans in the 12th c.",
+            "Site of two great jauhars (1444 and 1524) — the second by Rani Prakashkumari when the fort fell to Alauddin Khilji's descendants.",
+            "The nearby dargah of Sufi Mitteshah is a shared Hindu-Muslim pilgrimage centre."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ranthambhore-fort",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.457,
+          26.017
+        ]
+      },
+      "properties": {
+        "name": "Ranthambhore Fort",
+        "type": "heritage_fort",
+        "category": "custom",
+        "district": "Sawai Madhopur",
+        "unescoStatus": "Hill Forts of Rajasthan (2013)",
+        "notes": {
+          "facts": [
+            "One of the six UNESCO Hill Forts of Rajasthan (2013) — built ~10th c. by Chauhan Yadava rulers.",
+            "Sits inside Rajasthan's first National Park (1980) and India's first Tiger Reserve (1973).",
+            "Withstood Alauddin Khilji's siege for over a year (1301) before falling — remembered for Rani Rangdevi's jauhar.",
+            "Trinetra Ganesh Temple within the fort is India's oldest and largest three-eyed Ganesh shrine.",
+            "'Ran-thambhore' = 'fortress-standing-in-the-battlefield' — its defensive design inspired the name."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "amber-fort",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.851,
+          26.986
+        ]
+      },
+      "properties": {
+        "name": "Amber Fort (Amer)",
+        "type": "heritage_fort",
+        "category": "custom",
+        "district": "Jaipur",
+        "unescoStatus": "Hill Forts of Rajasthan (2013)",
+        "notes": {
+          "facts": [
+            "UNESCO Hill Fort of Rajasthan (2013); built by Raja Man Singh I (1592) and extended by Raja Jai Singh II.",
+            "Sheesh Mahal (Mirror Palace) — mosaic of thousands of tiny mirrors that reflect a single candle as a starry sky.",
+            "Historic seat of the Kachhawaha Rajputs before Jaipur city was founded (1727); connected by a walled tunnel to Jaigarh above.",
+            "Ganesh Pol (elephant gateway) — one of India's most photographed painted gateways.",
+            "Below the fort, Maota Lake mirrors the Amber palace complex — one of Rajasthan's iconic view-sheds."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jaisalmer-fort",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.913,
+          26.912
+        ]
+      },
+      "properties": {
+        "name": "Jaisalmer Fort (Sonar Qila)",
+        "type": "heritage_fort",
+        "category": "custom",
+        "district": "Jaisalmer",
+        "unescoStatus": "Hill Forts of Rajasthan (2013)",
+        "notes": {
+          "facts": [
+            "Rajasthan's only 'living fort' — 3000+ residents still live within its walls today.",
+            "UNESCO Hill Fort of Rajasthan (2013); built 1156 by Rawal Jaisal Bhati of the Bhati Rajputs.",
+            "Nicknamed 'Sonar Qila' (Golden Fort) — yellow sandstone glows amber at sunset.",
+            "The interior has three Jain temples (12-15th c.) with 6600+ intricately-carved Tirthankara figures.",
+            "Rajasthan's second-oldest surviving fort after Chittorgarh; its haveli belt (Patwon-ki-Haveli) is India's finest merchant-architecture cluster."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mehrangarh-fort",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.019,
+          26.298
+        ]
+      },
+      "properties": {
+        "name": "Mehrangarh Fort, Jodhpur",
+        "type": "heritage_fort",
+        "category": "custom",
+        "district": "Jodhpur",
+        "notes": {
+          "facts": [
+            "Built 1459 by Rao Jodha — the Rathore capital and one of India's largest still-inhabited forts.",
+            "Rises 122 m above Jodhpur city on the Bhaurcheeria (Mountain of Birds).",
+            "Chittar Mahal / Umaid Bhawan Palace (1943) below is the world's largest privately-inhabited residential palace.",
+            "The Chamunda Mata temple within the fort is Rajasthan's most-photographed skyline landmark.",
+            "The fort's museum — often ranked among Asia's best — houses palanquins, howdahs and Rajasthani miniatures."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "junagarh-fort",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.318,
+          28.02
+        ]
+      },
+      "properties": {
+        "name": "Junagarh Fort, Bikaner",
+        "type": "heritage_fort",
+        "category": "custom",
+        "district": "Bikaner",
+        "notes": {
+          "facts": [
+            "Built 1594 by Raja Rai Singh of Bikaner — one of only two Rajput forts on a plain (with Nagaur Fort).",
+            "Its walls have never been breached in war — resisted every siege including the 1733 Aurangzeb-era assault.",
+            "Bikaneri red sandstone — an ochre-red Marwar SG stone — gives the fort its distinctive colour.",
+            "Anup Mahal Palace within the fort holds an ornate gold-leaf audience hall.",
+            "The Ganga Mahal Museum inside houses Rajasthan's second-largest collection of period arms and armour after Mehrangarh."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nahargarh-fort",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.816,
+          26.937
+        ]
+      },
+      "properties": {
+        "name": "Nahargarh Fort, Jaipur",
+        "type": "heritage_fort",
+        "category": "custom",
+        "district": "Jaipur",
+        "notes": {
+          "facts": [
+            "Built 1734 by Sawai Jai Singh II as one of the three defensive forts (with Amber and Jaigarh) that ring Jaipur.",
+            "Madhavendra Bhawan within has 12 identical suites — designed for Jai Singh's twelve queens.",
+            "Named for Nahar Singh Bhomia, whose ghost was said to hinder construction; a shrine to Nahar was built to appease him.",
+            "Adjoins the Nahargarh Biological Park — Rajasthan's flagship ex-situ wildlife conservation centre.",
+            "Its ridge-top position gives the best panoramic view of Jaipur's Pink City."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jaigarh-fort",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.847,
+          26.986
+        ]
+      },
+      "properties": {
+        "name": "Jaigarh Fort, Jaipur",
+        "type": "heritage_fort",
+        "category": "custom",
+        "district": "Jaipur",
+        "notes": {
+          "facts": [
+            "Built 1726 by Sawai Jai Singh II — sits directly above Amber Fort, connected by a walled tunnel.",
+            "Houses 'Jaivan' — the world's largest wheeled cannon by weight (~50 tonnes), cast at the fort's own foundry in 1720.",
+            "Only medieval fort in India with an in-house cannon foundry — Rajasthan's premier armament complex.",
+            "The Diya Burj tower gives 360° views of the Aravalli tail into Jaipur city.",
+            "Legend: Jai Singh II's treasure was hidden within the fort's water tanks — searched by Indira Gandhi's government during the 1976 Emergency."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "taragarh-fort-bundi",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.636,
+          25.443
+        ]
+      },
+      "properties": {
+        "name": "Taragarh Fort, Bundi",
+        "type": "heritage_fort",
+        "category": "custom",
+        "district": "Bundi",
+        "notes": {
+          "facts": [
+            "Built 1354 by Rao Bar Singh — 'Taragarh' means 'star fort' after its many-pointed bastion plan.",
+            "Bhim Burj, its largest tower, holds 'Garbh Ganjan' — one of Rajasthan's largest surviving cannons.",
+            "Chitrashala within the fort hosts the Bundi school of miniature painting — a distinctive branch of Rajput art.",
+            "Below the fort, the Raniji-ki-Baori stepwell (46 m deep, 1699) is among Rajasthan's most ornate.",
+            "Rudyard Kipling wrote descriptions of Rajasthan after staying at the Sukh Mahal (1887) below the fort."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nagaur-fort",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.735,
+          27.199
+        ]
+      },
+      "properties": {
+        "name": "Ahhichatragarh Fort, Nagaur",
+        "type": "heritage_fort",
+        "category": "custom",
+        "district": "Nagaur",
+        "notes": {
+          "facts": [
+            "One of only two Rajput forts built on a plain (with Junagarh Bikaner) — 12th c. Naga Rajput fort extended by Rao Amar Singh Rathore.",
+            "'Ahhichatragarh' = 'fortress of the hooded cobra' — named for the Naga-Rajput lineage.",
+            "Won a UNESCO Asia-Pacific Heritage Award (2002) for the restoration of its Persian-inspired water pavilions.",
+            "Sufi Hameeduddin Nagauri's dargah lies below the fort — a Chishti pilgrimage site.",
+            "Amar Singh Rathore, Rao of Nagaur (1613-1644), is the subject of Rajasthan's most-loved folk-ballad — celebrating his 1644 Agra Fort escape."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    }
+  ]
+}

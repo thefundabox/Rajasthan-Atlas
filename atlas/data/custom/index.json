@@ -1,4 +1,70 @@
 {
   "_readme": "Register your own layers here. Each entry loads a GeoJSON file and shows up in the atlas Layers tab under the CUSTOM category. Fields: id (unique), name, type (point|polygon|line), data (path), category (default: custom), icon (emoji, optional), color (CSS, optional), featureType (default: custom_point).",
-  "layers": []
+  "layers": [
+    {
+      "id":       "ancient-civilizations",
+      "name":     "Ancient Civilizations",
+      "type":     "point",
+      "data":     "atlas/data/custom/ancient-civilizations.geojson",
+      "category": "human",
+      "icon":     "🏺",
+      "color":    "#a5732a",
+      "zIndex":   32,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "ancient_civilization"
+    },
+    {
+      "id":       "major-fairs",
+      "name":     "Major Fairs & Melas",
+      "type":     "point",
+      "data":     "atlas/data/custom/major-fairs.geojson",
+      "category": "human",
+      "icon":     "🎡",
+      "color":    "#c14545",
+      "zIndex":   33,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "major_fair"
+    },
+    {
+      "id":       "heritage-forts",
+      "name":     "Heritage Forts",
+      "type":     "point",
+      "data":     "atlas/data/custom/heritage-forts.geojson",
+      "category": "human",
+      "icon":     "🏰",
+      "color":    "#8b6c2a",
+      "zIndex":   34,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "heritage_fort"
+    },
+    {
+      "id":       "folk-deity-shrines",
+      "name":     "Folk Deity Shrines",
+      "type":     "point",
+      "data":     "atlas/data/custom/folk-deity-shrines.geojson",
+      "category": "human",
+      "icon":     "🛕",
+      "color":    "#b06b34",
+      "zIndex":   35,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "folk_deity_shrine"
+    },
+    {
+      "id":       "revolt-sites-1857",
+      "name":     "1857 Revolt Sites",
+      "type":     "point",
+      "data":     "atlas/data/custom/revolt-sites-1857.geojson",
+      "category": "human",
+      "icon":     "⚔️",
+      "color":    "#7a3a3a",
+      "zIndex":   36,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "revolt_site_1857"
+    }
+  ]
 }

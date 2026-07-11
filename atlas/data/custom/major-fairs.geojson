@@ -1,0 +1,353 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "pushkar-fair",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5511,
+          26.4899
+        ]
+      },
+      "properties": {
+        "name": "Pushkar Camel Fair",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Ajmer",
+        "month": "Kartik (Oct-Nov)",
+        "notes": {
+          "facts": [
+            "World's largest camel fair — 25,000+ camels traded annually across a 12-day mela ending on Kartik Purnima.",
+            "Held on the banks of Pushkar Lake — India's only continuously-worshipped Brahma-associated freshwater tirth.",
+            "The lake is fringed by 52 ghats and 500+ temples — Rajasthan's densest sacred architecture.",
+            "Kartik Purnima ritual bath on the lake is believed to grant moksha equal to yagnas conducted over centuries."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "beneshwar-fair",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.145,
+          23.663
+        ]
+      },
+      "properties": {
+        "name": "Beneshwar Fair",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Dungarpur",
+        "month": "Magh (Jan-Feb)",
+        "notes": {
+          "facts": [
+            "Rajasthan's biggest tribal fair — often called the 'Kumbh of the Bhils' — held at the Mahi-Som-Jakham triveni sangam.",
+            "The Beneshwar Mahadev shrine here is the only Shiva temple in India where a naturally-broken (khandit) shivling is worshipped.",
+            "Draws over 200,000 tribal pilgrims from Rajasthan, Gujarat and Madhya Pradesh over the 5-day Magh Purnima mela.",
+            "Rituals combine Bhil animist tradition, Vaishnavite Nishkalank Sant Mavji reformism, and Shaivite Beneshwar worship."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kolayat-fair",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.943,
+          27.833
+        ]
+      },
+      "properties": {
+        "name": "Kapil Muni Fair, Kolayat",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Bikaner",
+        "month": "Kartik (Oct-Nov)",
+        "notes": {
+          "facts": [
+            "Held at Kolayat Lake — the traditional site where Sage Kapila (Kapil Muni) meditated and founded the Sankhya school of Indian philosophy.",
+            "Kartik Purnima ritual bath and lamp-floating on the sacred lake — one of Rajasthan's oldest continuously-held fairs.",
+            "The Kolayat Ashram houses over 40 shrines and dharamshalas around the lake perimeter.",
+            "Draws pilgrims from the Rajasthan-Sindh-Punjab-Haryana Yogi and Nath traditions."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "karni-mata-mela",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.34,
+          27.792
+        ]
+      },
+      "properties": {
+        "name": "Karni Mata Fair, Deshnok",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Bikaner",
+        "month": "Chaitra (Mar-Apr) + Ashwin (Sep-Oct)",
+        "notes": {
+          "facts": [
+            "Twin fairs held at the Karni Mata Temple, Deshnok — the tutelary Kul Devi (family goddess) of the Bikaner Rathores.",
+            "The temple houses ~25,000 protected black rats ('kabas'); spotting the rare white rat is considered auspicious.",
+            "Karni Mata is worshipped as an incarnation of Durga; the deity is credited with foretelling the Bikaner kingdom's rise.",
+            "Rao Bika founded Bikaner in 1488 after receiving Karni Mata's blessing at this site."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ramdevra-fair",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.9,
+          26.925
+        ]
+      },
+      "properties": {
+        "name": "Baba Ramdev Fair, Ramdevra",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Jaisalmer (Pokhran)",
+        "month": "Bhadrapada (Aug-Sep)",
+        "notes": {
+          "facts": [
+            "Rajasthan's biggest folk-deity pilgrimage — draws over 10 million pilgrims each Bhadrapada.",
+            "Ramdev Pir (1352-1385) was a Tomar Rajput saint worshipped by all castes and both Hindus and Muslims (as 'Ramshah Pir').",
+            "The Ramdevra samadhi is believed to grant relief from paralysis and skin ailments; pilgrims walk barefoot from all directions.",
+            "Ramdev's five 'panch pir' companions — including the Meghwal Dalit saint Harji Bhati — are worshipped alongside him."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kaila-devi-fair",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.994,
+          26.164
+        ]
+      },
+      "properties": {
+        "name": "Kaila Devi Fair",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Karauli",
+        "month": "Chaitra (Mar-Apr)",
+        "notes": {
+          "facts": [
+            "Rajasthan's fourth-biggest fair — draws over 4 million pilgrims each Chaitra Navratri.",
+            "Kaila Devi is the tutelary goddess of the Karauli Yadav ruling clan (traced descent from Krishna).",
+            "The fair spans 15 days; the temple sits at the base of the Trikoot hill, on the Kalisil river.",
+            "Lakhs of devotees perform the 3-km barefoot 'lakh danva' (100,000 steps) around the temple perimeter."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mallinath-fair-tilwara",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.943,
+          25.833
+        ]
+      },
+      "properties": {
+        "name": "Mallinath Cattle Fair, Tilwara",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Balotra",
+        "month": "Chaitra (Mar-Apr)",
+        "notes": {
+          "facts": [
+            "Rajasthan's oldest continuous livestock fair — held annually on the banks of the Luni at Tilwara.",
+            "Commemorates Rawal Mallinath (14th c.), a Rathore prince-saint of Marwar and the founder-saint of the Malani region.",
+            "Nagauri, Tharparkar, Kankrej and Rathi cattle — Rajasthan's traditional draught breeds — traded here.",
+            "The 15-day mela hosts folk performances (langa-manganiar), camel races and folk-cricket alongside cattle trade."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nagaur-cattle-fair",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.735,
+          27.199
+        ]
+      },
+      "properties": {
+        "name": "Nagaur Cattle Fair",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Nagaur",
+        "month": "Magh (Jan-Feb)",
+        "notes": {
+          "facts": [
+            "Asia's second-largest livestock fair after Pushkar — 70,000+ cattle, camels and horses traded across 8 days.",
+            "Anchored on the Nagauri breed of bullock — Rajasthan's premier draught cattle, prized for pulling power.",
+            "Held on the Bhilwara-Nagaur road at Ramdev Pashu Mela grounds; state government stalls promote AI insemination.",
+            "Sub-fairs: Mirchi Bazaar (chilli mandi) and Wooden-Article Bazaar are among Asia's largest."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "chaksu-shitala-mata-fair",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.945,
+          26.598
+        ]
+      },
+      "properties": {
+        "name": "Shitala Mata Fair, Chaksu",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Jaipur",
+        "month": "Chaitra (Mar-Apr)",
+        "notes": {
+          "facts": [
+            "Held at Shitala Mata temple, Chaksu (35 km south of Jaipur) — Rajasthan's biggest fair for the smallpox-goddess.",
+            "The fair is a week-long women's ritual event — bassi-bhojan (cold food offerings) mark the goddess's cooling nature.",
+            "Shitala Ashtami (7 days after Holi) is the traditional starting day.",
+            "Historic: the temple predates Jaipur city (1727) by centuries; Chaksu was a Kachhawaha stronghold before Amber."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jambeshwar-fair-mukam",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.1,
+          27.9
+        ]
+      },
+      "properties": {
+        "name": "Guru Jambeshwar Fair, Mukam",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Bikaner",
+        "month": "Falgun (Feb-Mar) + Ashwin (Sep-Oct)",
+        "notes": {
+          "facts": [
+            "Twin fairs at Mukam (Bikaner) — the samadhi shrine of Guru Jambheshwar (1451-1536), founder of the Bishnoi community.",
+            "Jambhoji laid down 29 (Bish-noi) principles of environmental ethics — the world's earliest documented conservation ethic.",
+            "Mukam draws all Bishnoi lineages from Rajasthan, Punjab, Haryana, MP and Delhi.",
+            "The Khejarli martyrs (1730 khejri-tree massacre) are commemorated alongside Jambhoji at Mukam."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "shri-mahaviji-fair",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.995,
+          26.727
+        ]
+      },
+      "properties": {
+        "name": "Shri Mahavir Ji Fair",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Karauli (Hindaun)",
+        "month": "Chaitra (Mar-Apr)",
+        "notes": {
+          "facts": [
+            "Rajasthan's biggest Jain fair — draws over 500,000 Jain pilgrims each Chaitra Purnima.",
+            "The Shri Mahavirji temple houses an idol of the 24th Tirthankara believed to have been miraculously discovered at this spot.",
+            "The 8-day mela combines Digambara Jain rituals with tribal Meena participation — a rare Jain-tribal syncretic event.",
+            "The 'ratha yatra' (chariot procession) on the Gambhiri river is the mela's climax."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "chandrabhaga-fair-jhalarapatan",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.155,
+          24.549
+        ]
+      },
+      "properties": {
+        "name": "Chandrabhaga Fair, Jhalarapatan",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Jhalawar",
+        "month": "Kartik (Oct-Nov)",
+        "notes": {
+          "facts": [
+            "Rajasthan's biggest cattle-and-buffalo fair after Nagaur — held on the Chandrabhaga river at Jhalarapatan.",
+            "Kartik Purnima ritual bath in the Chandrabhaga is the mela's opening ceremony.",
+            "The 10th-c. Padmanabh Sun Temple and Shitleshwar Mahadev Temple frame the fair grounds.",
+            "Malwa-plateau cattle breeds (Malvi, Nimadi) dominate the trade — Rajasthan's largest fair-market for these varieties."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ramdev-baba-ramdevra",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.9,
+          26.925
+        ]
+      },
+      "properties": {
+        "name": "Baba Ramdev Samadhi, Ramdevra",
+        "type": "folk_deity_shrine",
+        "category": "custom",
+        "district": "Jaisalmer (Pokhran)",
+        "deity": "Ramdev Pir (Baba Ramdev)",
+        "notes": {
+          "facts": [
+            "Samadhi of Ramdev Pir (1352-1385) — a Tomar Rajput saint venerated by Hindus (as Ramdevji) and Muslims (as Ramshah Pir).",
+            "Ramdev's 'panch-pir' companions — including Meghwal Dalit saint Harji Bhati — mark this as one of India's earliest anti-caste bhakti movements.",
+            "Ramdevra draws 10+ million pilgrims each Bhadrapada — Rajasthan's largest folk-deity fair.",
+            "The shrine complex contains Ramdev's meditation cave, the samadhi and the annexed Harji Bhati samadhi.",
+            "Pilgrims walk barefoot from all parts of Rajasthan, Gujarat and MP — a route marked by 'Ramdev jhandas' (flags)."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "karni-mata-deshnok",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.34,
+          27.792
+        ]
+      },
+      "properties": {
+        "name": "Karni Mata Temple, Deshnok",
+        "type": "folk_deity_shrine",
+        "category": "custom",
+        "district": "Bikaner",
+        "deity": "Karni Mata (Kul Devi of Bikaner Rathores)",
+        "notes": {
+          "facts": [
+            "Kul Devi (tutelary family goddess) of the Bikaner Rathore rulers — Rao Bika founded Bikaner in 1488 after her blessing.",
+            "Houses ~25,000 protected black rats ('kabas'); spotting the rare white rat is considered auspicious.",
+            "The main shrine's silver door and marble facade were sponsored by Maharaja Ganga Singh (r. 1888-1943).",
+            "Karni Mata is worshipped as an incarnation of Durga; devotees leave milk offerings that the rats freely share.",
+            "Twin fairs (Chaitra + Ashwin) draw pilgrims from the Marwari trading diaspora worldwide."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tejaji-kharnal",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.767,
+          27.348
+        ]
+      },
+      "properties": {
+        "name": "Tejaji Temple, Kharnal",
+        "type": "folk_deity_shrine",
+        "category": "custom",
+        "district": "Nagaur",
+        "deity": "Veer Tejaji",
+        "notes": {
+          "facts": [
+            "Tejaji (1074-1103) — a Jat folk-hero worshipped as a deity across Rajasthan, Haryana and MP.",
+            "The Kharnal temple marks his birthplace; his legend recounts his sacrifice defending Balinda's cattle from Meena raiders.",
+            "Tejaji is invoked as a protector against snake bites — 'Teja-tanti' amulets are worn in the Marwar belt.",
+            "The Bhadrapada mela at Kharnal draws Jat and Meena communities across state boundaries.",
+            "Sursura (Ajmer) is his martyrdom site; a companion pilgrimage centre."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gogaji-gogamedi",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.725,
+          29.283
+        ]
+      },
+      "properties": {
+        "name": "Gogaji Shrine, Gogamedi",
+        "type": "folk_deity_shrine",
+        "category": "custom",
+        "district": "Hanumangarh",
+        "deity": "Gogaji Chauhan",
+        "notes": {
+          "facts": [
+            "Gogaji Chauhan (r. 11th c.) — 'Snake King' of Rajasthan; the shrine is India's biggest snake-god pilgrimage.",
+            "Gogaji is worshipped by both Hindus (as Gogaji Maharaj) and Muslims (as Jahar Pir) — a Chishti-Nath syncretic tradition.",
+            "The Gogamedi mela (Bhadrapada) draws 100,000+ pilgrims from Rajasthan, Punjab, Haryana and Sindh.",
+            "Devotees seek Gogaji's blessing against snake bites; snake-bite amulets ('Goga chhadi') are worn across the Marwar belt.",
+            "The samadhi complex includes Gogaji's Ratti Ghori (horse-shrine) — a rare equine folk-worship in India."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pabuji-kolu",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.117,
+          26.933
+        ]
+      },
+      "properties": {
+        "name": "Pabuji Shrine, Kolumand",
+        "type": "folk_deity_shrine",
+        "category": "custom",
+        "district": "Phalodi",
+        "deity": "Pabuji Rathore",
+        "notes": {
+          "facts": [
+            "Pabuji (1239-1276) — a Rathore Rajput hero-saint venerated as the folk-deity of camel-herders.",
+            "The Pabuji-ki-phad — a 12-panel scroll painting narrating his life — is one of Rajasthan's premier folk-narrative arts.",
+            "Pabuji died protecting the sacred cow herd of Deval Charani from cattle raiders — the archetype of the Rathore martyr-saint.",
+            "His shrine at Kolumand (in Phalodi) draws camel-breeders from Marwar; the samadhi is a small Chhatri.",
+            "The Pabuji tradition is performed by Bhopa-Bhopi (male-female bard couples) — Rajasthan's UNESCO-inscribed intangible heritage."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "beneshwar-mahadev",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.145,
+          23.663
+        ]
+      },
+      "properties": {
+        "name": "Beneshwar Mahadev",
+        "type": "folk_deity_shrine",
+        "category": "custom",
+        "district": "Dungarpur",
+        "deity": "Beneshwar Mahadev + Nishkalank Sant Mavji",
+        "notes": {
+          "facts": [
+            "The only Shiva temple in India where a naturally-broken (khandit) shivling is worshipped — the folk cosmology holds that its cracks were divinely made.",
+            "Sits at the Mahi-Som-Jakham triveni sangam — Rajasthan's biggest tribal pilgrimage.",
+            "The Nishkalank temple annex commemorates Sant Mavji, a 17th-c. Vaishnavite reformer who preached to the Bhil community.",
+            "The Beneshwar fair (Magh Purnima) draws 200,000+ tribal pilgrims from Rajasthan, Gujarat and MP — often called the 'Kumbh of Bhils'.",
+            "The Nishkalank tradition combines Bhil animism with Vaishnavite devotion — a rare tribal-mainstream synthesis."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-11"
+      }
+    }
+  ]
+}

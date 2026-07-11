@@ -29,6 +29,8 @@ import { el, esc } from '../core/util/dom.js';
 
 let enrichment = null;
 
+const customLayerIds = new Set();
+
 Atlas.bus.on('atlas:ready', async () => {
   await Promise.all([
     loadEnrichment(),
@@ -36,15 +38,64 @@ Atlas.bus.on('atlas:ready', async () => {
   ]);
 
   // Post-render hook to inject images / notes sections.
-  Atlas.bus.on('selection:changed', ({ feature }) => {
-    if (!feature || !enrichment) return;
-    setTimeout(() => decorate(feature), 40);
+  Atlas.bus.on('selection:changed', ({ layerId, feature }) => {
+    if (!feature) return;
+    setTimeout(() => {
+      // If this is one of our custom layers, the default editorial renderer
+      // has no template and left an "ed-empty" placeholder. Replace it with
+      // a name + district + facts card so users see the content.
+      if (customLayerIds.has(layerId)) renderCustomCard(feature);
+      // Then, if enrichment has photos/notes for the feature, decorate.
+      if (enrichment) decorate(feature);
+    }, 40);
   });
 
   if (new URLSearchParams(location.search).get('ids') === '1') {
     installIdOverlay();
   }
 });
+
+/* ── Custom-layer card renderer ───────────────────────────────────
+ * Renders name, district / period tag, and a bulleted facts list for
+ * any point feature loaded from atlas/data/custom/*.geojson. The default
+ * UIManager renderer only knows about districts, so without this the
+ * detail slot would show "Select a district or protected area..."
+ * for every custom-layer selection.
+ */
+function renderCustomCard(feature) {
+  const detail = document.querySelector('.detail-slot');
+  if (!detail) return;
+  const p = feature.properties || {};
+  detail.innerHTML = '';
+  const wrap = el('div', { class: 'ed' });
+  const hero = el('div', { class: 'ed-hero' });
+  hero.append(el('div', { class: 'ed-kicker' }, [prettyKicker(p)]));
+  hero.append(el('h2', { class: 'ed-title' }, [p.name || feature.id]));
+  const tags = el('div', { class: 'ed-tags' });
+  if (p.district) tags.append(el('span', { class: 'ed-tag tag-point' }, [p.district]));
+  if (p.period)   tags.append(el('span', { class: 'ed-tag tag-wls' }, [p.period]));
+  if (p.month)    tags.append(el('span', { class: 'ed-tag tag-ramsar' }, [p.month]));
+  if (p.date)     tags.append(el('span', { class: 'ed-tag tag-np' }, [p.date]));
+  if (p.deity)    tags.append(el('span', { class: 'ed-tag tag-np' }, [p.deity]));
+  if (p.unescoStatus) tags.append(el('span', { class: 'ed-tag tag-ramsar' }, [p.unescoStatus]));
+  if (tags.children.length) hero.append(tags);
+  wrap.append(hero);
+  const facts = Array.isArray(p.notes?.facts) ? p.notes.facts : [];
+  if (facts.length) {
+    const ul = el('ul', { class: 'dp-facts' });
+    for (const f of facts) ul.append(el('li', {}, [f]));
+    const s = el('div', { class: 'ed-section' });
+    s.append(el('h3', { class: 'ed-h' }, ['Did you know']));
+    s.append(ul);
+    wrap.append(s);
+  }
+  detail.append(wrap);
+}
+
+function prettyKicker(p) {
+  const t = p.type || '';
+  return t.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) || 'Custom feature';
+}
 
 /* ── 1. Enrichment ─────────────────────────────────────────────── */
 async function loadEnrichment() {
@@ -141,6 +192,7 @@ async function loadCustomLayers() {
       };
       try {
         await Atlas.registerLayer(layerCfg);
+        customLayerIds.add(cfg.id);
         console.info(`[CustomContent] registered custom layer "${cfg.id}"`);
       } catch (err) {
         console.warn(`[CustomContent] failed to register "${cfg.id}":`, err);

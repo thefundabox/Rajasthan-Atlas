@@ -152,6 +152,14 @@ function renderDistrictProfile(district) {
     wrap.append(section('Records this district holds', box));
   }
 
+  /* Did you know — enrichment facts merged from atlas/data/enrichment.json */
+  const facts = Array.isArray(p.notes?.facts) ? p.notes.facts : [];
+  if (facts.length) {
+    const list = el('ul', { class: 'dp-facts' });
+    for (const f of facts) list.append(el('li', {}, [f]));
+    wrap.append(section('Did you know', list));
+  }
+
   /* Physical & climate */
   wrap.append(gatherSection('Physical & climate', memberships, [
     'physiography', 'drainage-basins', 'thar',
