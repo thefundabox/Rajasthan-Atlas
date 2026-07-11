@@ -38,15 +38,28 @@ let iconOverlay = null;   // <div> HTML overlay holding per-point icons
 let panel       = null;   // <aside> panel holding layer callout sections
 let panelHidden = false;  // true while a feature is selected
 
+// Sikhwal-style radial callouts around the map perimeter (preview mode).
+// Enabled via ?callouts=sikhwal — otherwise the compact right-side panel
+// (mode above) stays default.
+let sikhwalRoot   = null;  // <div> container for radial boxes + leader-line SVG
+let sikhwalSVG    = null;  // SVG overlay for leader lines
+const sikhwalMode = new URLSearchParams(location.search).get('callouts') === 'sikhwal';
+
 Atlas.bus.on('atlas:ready', () => {
   injectStyles();
   buildOverlays();
   refreshEverything();
 
   Atlas.bus.on('layer:visibility', () => refreshEverything());
-  Atlas.bus.on('view:changed',    () => positionIcons());
+  Atlas.bus.on('view:changed',    () => {
+    positionIcons();
+    if (sikhwalMode) repositionSikhwal();
+  });
   Atlas.bus.on('selection:changed', ({ feature }) => {
     setPanelHidden(!!feature);
+  });
+  window.addEventListener('resize', () => {
+    if (sikhwalMode) repositionSikhwal();
   });
 });
 
@@ -57,8 +70,18 @@ function buildOverlays() {
   if (!mapEl) return;
   iconOverlay = el('div', { class: 'point-icon-overlay' });
   mapEl.append(iconOverlay);
-  panel = el('aside', { class: 'layer-callout-panel', role: 'complementary' });
-  mapEl.append(panel);
+  if (sikhwalMode) {
+    // Radial preview: a container that holds the callout boxes and an
+    // SVG layer for the leader lines behind them.
+    sikhwalRoot = el('div', { class: 'sikhwal-root' });
+    sikhwalSVG = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    sikhwalSVG.setAttribute('class', 'sikhwal-svg');
+    sikhwalRoot.append(sikhwalSVG);
+    mapEl.append(sikhwalRoot);
+  } else {
+    panel = el('aside', { class: 'layer-callout-panel', role: 'complementary' });
+    mapEl.append(panel);
+  }
 }
 
 function setPanelHidden(hidden) {
@@ -71,7 +94,8 @@ function setPanelHidden(hidden) {
 function refreshEverything() {
   const activeLayers = eligibleLayers().filter(l => Atlas.layers.list().find(x => x.id === l.id));
   renderIcons(activeLayers);
-  renderPanel(activeLayers);
+  if (sikhwalMode) renderSikhwal(activeLayers);
+  else renderPanel(activeLayers);
 }
 
 function eligibleLayers() {
@@ -140,6 +164,158 @@ function positionIcons() {
     const scr = pt.matrixTransform(ctm);
     dot.style.left = `${scr.x - mapRect.left}px`;
     dot.style.top  = `${scr.y - mapRect.top}px`;
+  }
+}
+
+/* ── 2b. Sikhwal-style radial callouts (preview) ─────────────────
+ * Scatter small fact-boxes around the map perimeter, outside the
+ * Rajasthan state outline, with dashed leader lines pointing to
+ * each feature's centroid — like a printed atlas page. Angular
+ * placement based on feature position relative to the map centre;
+ * radial offset pushes each box out to the map's edge margin.
+ *
+ * Rendering:
+ *   sikhwalRoot > sikhwal-svg (leader lines)
+ *              > .sikhwal-box × N (fact boxes)
+ * Positions are recomputed on view:changed and window resize.
+ */
+
+// Radial slots collected during renderSikhwal so repositionSikhwal
+// can re-run without reparsing feature data. Each slot: { div, lon, lat }.
+const sikhwalSlots = [];
+
+function renderSikhwal(activeLayers) {
+  if (!sikhwalRoot) return;
+  // Clear previous callouts.
+  sikhwalRoot.querySelectorAll('.sikhwal-box').forEach(n => n.remove());
+  sikhwalSlots.length = 0;
+  if (sikhwalSVG) sikhwalSVG.innerHTML = '';
+  if (!activeLayers.length) return;
+
+  // Cap per-layer callouts so the perimeter doesn't drown in text.
+  const MAX_PER_LAYER = 12;
+
+  for (const layer of activeLayers) {
+    const feats = [...layer.features].slice(0, MAX_PER_LAYER);
+    for (const feat of feats) {
+      const c = feat.properties?.centroid
+        || (feat.geometry?.type === 'Point' ? feat.geometry.coordinates : null);
+      if (!c) continue;
+      const facts = Array.isArray(feat.properties?.notes?.facts)
+        ? feat.properties.notes.facts : [];
+      const teaser = facts[0]
+        ? (facts[0].length > 105 ? facts[0].slice(0, 103).trimEnd() + '…' : facts[0])
+        : '';
+      const box = el('div', {
+        class: `sikhwal-box`,
+        'data-layer': layer.id,
+        'data-feature': feat.id,
+        onclick: () => Atlas.interaction.select(layer.id, feat.id, { zoom: true }),
+      });
+      const icon = feat.properties?.icon || layer.icon;
+      const header = el('div', { class: 'sikhwal-title' }, [
+        el('span', { class: 'sikhwal-icon' }, [icon]),
+        el('span', { class: 'sikhwal-name' }, [feat.properties?.name || feat.id]),
+      ]);
+      box.append(header);
+      if (teaser) box.append(el('div', { class: 'sikhwal-body' }, [teaser]));
+      sikhwalRoot.append(box);
+      sikhwalSlots.push({ div: box, lon: c[0], lat: c[1] });
+    }
+  }
+  repositionSikhwal();
+}
+
+function repositionSikhwal() {
+  if (!sikhwalRoot || !sikhwalSVG) return;
+  const svg   = document.getElementById('atlas-map');
+  const mapEl = document.querySelector('.a-map');
+  if (!svg || !mapEl) return;
+  const rect = mapEl.getBoundingClientRect();
+  const proj = Atlas.projection;
+  const ctm  = svg.getScreenCTM();
+  if (!ctm) return;
+
+  // Map centre in .a-map local coords.
+  const svgRect = svg.getBoundingClientRect();
+  const cx = svgRect.left + svgRect.width / 2 - rect.left;
+  const cy = svgRect.top  + svgRect.height / 2 - rect.top;
+  // Bring boxes to just outside the state outline. Rajasthan roughly
+  // fills the vertical extent; push to ~48% width and ~48% height.
+  const rx = svgRect.width  * 0.48;
+  const ry = svgRect.height * 0.48;
+
+  sikhwalSVG.setAttribute('viewBox', `0 0 ${rect.width} ${rect.height}`);
+  sikhwalSVG.setAttribute('width',   rect.width);
+  sikhwalSVG.setAttribute('height',  rect.height);
+  sikhwalSVG.innerHTML = '';
+
+  // Sort by angle so nearby-angle boxes get resolved deterministically.
+  const slotsWithAngle = sikhwalSlots.map(slot => {
+    const [xs, ys] = proj.forward([slot.lon, slot.lat]);
+    const pt = svg.createSVGPoint();
+    pt.x = xs; pt.y = ys;
+    const scr = pt.matrixTransform(ctm);
+    const ax = scr.x - rect.left;
+    const ay = scr.y - rect.top;
+    const dx = ax - cx, dy = ay - cy;
+    const angle = Math.atan2(dy, dx);       // 0 = east, +y = down
+    return { ...slot, ax, ay, angle };
+  });
+  slotsWithAngle.sort((a, b) => a.angle - b.angle);
+
+  // Nudge boxes so they don't overlap tangentially. Track occupied
+  // (angle, band) pairs; if a slot would collide, offset radially
+  // outward into a second band.
+  const angleStep = (Math.PI * 2) / Math.max(slotsWithAngle.length, 16);
+  const used = new Map(); // "band|slot" -> true
+  for (const slot of slotsWithAngle) {
+    let band = 0;
+    let key;
+    // Snap to the nearest angular slot within its band, spilling to
+    // outer bands if the slot is already taken.
+    while (true) {
+      const snapIdx = Math.round(slot.angle / angleStep);
+      key = `${band}|${snapIdx}`;
+      if (!used.has(key)) break;
+      band++;
+      if (band > 3) break;    // give up after 4 bands (safety valve)
+    }
+    used.set(key, true);
+    // Convert back to screen position.
+    const r = 1 + band * 0.08;
+    const bx = cx + Math.cos(slot.angle) * rx * r;
+    const by = cy + Math.sin(slot.angle) * ry * r;
+    // Box is ~180x40; centre it, but clamp to viewport with 6 px margin.
+    const w = 180, h = 44;
+    let x = bx - w / 2;
+    let y = by - h / 2;
+    x = Math.max(6, Math.min(rect.width  - w - 6, x));
+    y = Math.max(6, Math.min(rect.height - h - 6, y));
+    slot.div.style.left = `${x}px`;
+    slot.div.style.top  = `${y}px`;
+
+    // Anchor point where the leader line meets the box (nearest edge).
+    const bcx = x + w / 2, bcy = y + h / 2;
+    const dxA = slot.ax - bcx, dyA = slot.ay - bcy;
+    const inv = Math.max(Math.abs(dxA) / (w / 2), Math.abs(dyA) / (h / 2)) || 1;
+    const ex = bcx + dxA / inv;
+    const ey = bcy + dyA / inv;
+
+    // Leader line + anchor dot.
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', ex); line.setAttribute('y1', ey);
+    line.setAttribute('x2', slot.ax); line.setAttribute('y2', slot.ay);
+    line.setAttribute('stroke', 'currentColor');
+    line.setAttribute('stroke-width', '0.7');
+    line.setAttribute('stroke-dasharray', '4 3');
+    line.setAttribute('opacity', '0.6');
+    sikhwalSVG.append(line);
+    const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    dot.setAttribute('cx', slot.ax); dot.setAttribute('cy', slot.ay);
+    dot.setAttribute('r', 2.4);
+    dot.setAttribute('fill', 'currentColor'); dot.setAttribute('opacity', '0.8');
+    sikhwalSVG.append(dot);
   }
 }
 
@@ -322,6 +498,51 @@ function injectStyles() {
     }
     @media (max-width: 900px) {
       .layer-callout-panel { display: none; }
+    }
+
+    /* ── Sikhwal radial preview ─────────────────────────────── */
+    .sikhwal-root {
+      position: absolute; inset: 0;
+      pointer-events: none;
+      z-index: 4;
+      color: var(--ink-2, #6b5030);
+    }
+    .sikhwal-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+    .sikhwal-box {
+      position: absolute;
+      width: 180px;
+      pointer-events: auto;
+      padding: 5px 8px;
+      background: color-mix(in srgb, var(--bg-1, #f5efe0) 96%, transparent);
+      border: 1px solid var(--ink-3, #ba9863);
+      border-radius: 4px;
+      box-shadow: 0 1.5px 4px rgba(0,0,0,0.12);
+      font-family: var(--sans);
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: var(--ink-1, #3d2f10);
+      cursor: pointer;
+      transition: transform 0.1s, box-shadow 0.1s;
+    }
+    .sikhwal-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+      z-index: 5;
+    }
+    .sikhwal-title {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 600;
+      font-size: 11px;
+      color: var(--sym-tr, #7a5a2a);
+      margin-bottom: 1px;
+    }
+    .sikhwal-icon { font-size: 12px; }
+    .sikhwal-name { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sikhwal-body { color: var(--ink-1, #3d2f10); }
+    @media (max-width: 900px) {
+      .sikhwal-root { display: none; }
     }
   `;
   document.head.append(s);
