@@ -35,59 +35,38 @@ import { el } from '../core/util/dom.js';
  */
 
 let iconOverlay = null;   // <div> HTML overlay holding per-point icons
-let panel       = null;   // <aside> panel holding layer callout sections
-let panelHidden = false;  // true while a feature is selected
-
-// Sikhwal-style radial callouts around the map perimeter (preview mode).
-// Enabled via ?callouts=sikhwal — otherwise the compact right-side panel
-// (mode above) stays default.
-let sikhwalRoot   = null;  // <div> container for boxes + per-box leader-line SVGs
-const sikhwalMode = new URLSearchParams(location.search).get('callouts') === 'sikhwal';
+let sikhwalRoot = null;   // <div> container for boxes + per-box leader-line SVGs
 
 Atlas.bus.on('atlas:ready', () => {
   injectStyles();
   buildOverlays();
-  // In Sikhwal preview mode, mark the SVG root so we can strengthen
-  // district fill / stroke in CSS. Do NOT force setMode('division') —
-  // LegendPanel's mode-visibility rule would then turn off whatever
-  // point layer the user just enabled (the mode-list has no entry for
-  // 'division', so it treats the target set as empty).
-  // No CSS class on the SVG, no forced mode. The base map renders
-  // exactly as it would without sikhwal — the callout boxes and thin
-  // leader lines live entirely outside .a-map so nothing overlays it.
-  if (sikhwalMode) {
-    // Hide the small India locator inset — the sikhwal view is the
-    // whole story; the mini-map only competes for attention.
-    const locator = document.querySelector('.overlay.locator');
-    if (locator) locator.style.display = 'none';
-    // The × close button on the detail sidebar only removes the
-    // "open" class — it does NOT clear the selection, so our
-    // selection:changed listener never fires and the callouts stay
-    // hidden. Delegate a click listener that also clears selection.
-    document.addEventListener('click', (ev) => {
-      const btn = ev.target?.closest?.('.close-btn button');
-      if (btn) {
-        try { Atlas.interaction.select(null, null); } catch (_) {}
-      }
-    });
-  }
+  // Hide the small India locator inset — the sikhwal edge-column
+  // callout view is the whole story; the mini-map only competes for
+  // attention on the same map area.
+  const locator = document.querySelector('.overlay.locator');
+  if (locator) locator.style.display = 'none';
+  // The × close button on the detail sidebar only removes the "open"
+  // class — it does NOT clear the selection, so our selection:changed
+  // listener never fires and the callouts stay hidden. Delegate a click
+  // listener that also clears selection.
+  document.addEventListener('click', (ev) => {
+    const btn = ev.target?.closest?.('.close-btn button');
+    if (btn) {
+      try { Atlas.interaction.select(null, null); } catch (_) {}
+    }
+  });
   refreshEverything();
 
   Atlas.bus.on('layer:visibility', () => refreshEverything());
-  Atlas.bus.on('view:changed',    () => {
-    positionIcons();
-    if (sikhwalMode) repositionSikhwal();
-  });
+  Atlas.bus.on('view:changed',     () => { positionIcons(); repositionSikhwal(); });
   Atlas.bus.on('selection:changed', ({ feature }) => {
-    setPanelHidden(!!feature);
-    // In Sikhwal mode, hide the whole callout root while a feature is
-    // selected so it doesn't overlap the detail card slide-in. Returns
-    // when the selection is cleared.
+    // Hide the whole callout root while a feature is selected so it
+    // doesn't compete with the detail card slide-in. Returns when the
+    // selection is cleared (either by clicking the map background or
+    // by the delegated × handler above).
     if (sikhwalRoot) sikhwalRoot.classList.toggle('hidden', !!feature);
   });
-  window.addEventListener('resize', () => {
-    if (sikhwalMode) repositionSikhwal();
-  });
+  window.addEventListener('resize', () => repositionSikhwal());
 });
 
 /* ── Overlay & panel scaffolding ─────────────────────────────────── */
@@ -97,25 +76,15 @@ function buildOverlays() {
   if (!mapEl) return;
   iconOverlay = el('div', { class: 'point-icon-overlay' });
   mapEl.append(iconOverlay);
-  if (sikhwalMode) {
-    // Sikhwal preview: sikhwal-root is a zero-size, pointer-events:none
-    // container appended to <body>, NOT to .a-map. It holds absolutely
-    // positioned callout boxes and per-box mini SVGs whose visual
-    // position is computed against the map's screen rect on each
-    // reposition. Nothing sits above the map SVG — the map renders
-    // exactly as it would without sikhwal; the boxes flank it and only
-    // thin leader lines cross into the map area.
-    sikhwalRoot = el('div', { class: 'sikhwal-root' });
-    document.body.append(sikhwalRoot);
-  } else {
-    panel = el('aside', { class: 'layer-callout-panel', role: 'complementary' });
-    mapEl.append(panel);
-  }
-}
-
-function setPanelHidden(hidden) {
-  panelHidden = hidden;
-  if (panel) panel.classList.toggle('hidden', hidden);
+  // sikhwal-root is a zero-size, pointer-events:none container
+  // appended to <body>, NOT to .a-map. It holds absolutely positioned
+  // callout boxes and per-box mini SVGs whose visual position is
+  // computed against the map's screen rect on each reposition. Nothing
+  // sits above the map SVG — the map renders exactly as it would
+  // without callouts; the boxes flank it and only thin leader lines
+  // cross into the map area.
+  sikhwalRoot = el('div', { class: 'sikhwal-root' });
+  document.body.append(sikhwalRoot);
 }
 
 /* ── Refresh — called when layer visibility changes ──────────────── */
@@ -123,8 +92,7 @@ function setPanelHidden(hidden) {
 function refreshEverything() {
   const activeLayers = eligibleLayers().filter(l => Atlas.layers.list().find(x => x.id === l.id));
   renderIcons(activeLayers);
-  if (sikhwalMode) renderSikhwal(activeLayers);
-  else renderPanel(activeLayers);
+  renderSikhwal(activeLayers);
 }
 
 function eligibleLayers() {
@@ -380,60 +348,6 @@ function repositionSikhwal() {
   }
 }
 
-/* ── 2. Layer callout panel (right whitespace) ───────────────────── */
-
-function renderPanel(activeLayers) {
-  if (!panel) return;
-  panel.innerHTML = '';
-  if (!activeLayers.length) {
-    panel.classList.add('hidden');
-    return;
-  }
-  if (!panelHidden) panel.classList.remove('hidden');
-
-  const header = el('div', { class: 'lcp-header' }, [
-    el('div', { class: 'lcp-title' }, [`Callouts · ${activeLayers.length} layer${activeLayers.length > 1 ? 's' : ''}`]),
-    el('div', { class: 'lcp-sub' },   ['Tap a name to open its full profile.']),
-  ]);
-  panel.append(header);
-
-  for (const layer of activeLayers) {
-    const section = el('section', { class: 'lcp-section' });
-    section.append(el('h3', { class: 'lcp-h' }, [
-      el('span', { class: 'lcp-h-icon' }, [layer.icon]),
-      el('span', { class: 'lcp-h-name' }, [layer.name]),
-      el('span', { class: 'lcp-h-count' }, [`${layer.features.length}`]),
-    ]));
-    const list = el('ul', { class: 'lcp-list' });
-    for (const feat of layer.features) {
-      list.append(makeCalloutRow(layer, feat));
-    }
-    section.append(list);
-    panel.append(section);
-  }
-}
-
-function makeCalloutRow(layer, feat) {
-  const p = feat.properties || {};
-  const facts = Array.isArray(p.notes?.facts) ? p.notes.facts : [];
-  const teaser = facts[0]
-    ? (facts[0].length > 140 ? facts[0].slice(0, 138).trimEnd() + '…' : facts[0])
-    : '';
-  const row = el('li', {
-    class: 'lcp-row',
-    onclick: () => {
-      Atlas.interaction.select(layer.id, feat.id, { zoom: true });
-    },
-  });
-  const line1 = el('div', { class: 'lcp-name' }, [p.name || feat.id]);
-  if (p.district) {
-    line1.append(el('span', { class: 'lcp-district' }, [` · ${p.district}`]));
-  }
-  row.append(line1);
-  if (teaser) row.append(el('div', { class: 'lcp-teaser' }, [teaser]));
-  return row;
-}
-
 /* ── Styles ─────────────────────────────────────────────────────── */
 
 function injectStyles() {
@@ -463,105 +377,7 @@ function injectStyles() {
       z-index: 4;
     }
 
-    /* ── Layer callout panel ───────────────────────────── */
-    .layer-callout-panel {
-      position: absolute;
-      top: 60px;
-      right: 12px;
-      width: 280px;
-      max-height: calc(100% - 100px);
-      overflow-y: auto;
-      z-index: 5;
-      padding: 10px 12px;
-      background: color-mix(in srgb, var(--bg-1, #f5efe0) 96%, transparent);
-      border: 1px solid var(--ink-3, #ba9863);
-      border-radius: 8px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.14);
-      font-family: var(--sans);
-      color: var(--ink-1, #3d2f10);
-      pointer-events: auto;
-    }
-    .layer-callout-panel.hidden { display: none; }
-    .layer-callout-panel::-webkit-scrollbar { width: 6px; }
-    .layer-callout-panel::-webkit-scrollbar-thumb {
-      background: color-mix(in srgb, var(--ink-3, #ba9863) 60%, transparent);
-      border-radius: 3px;
-    }
-
-    .lcp-header {
-      padding-bottom: 8px;
-      border-bottom: 1px solid color-mix(in srgb, var(--ink-3, #ba9863) 40%, transparent);
-      margin-bottom: 8px;
-    }
-    .lcp-title {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--ink-2, #6b5030);
-      font-weight: 600;
-    }
-    .lcp-sub {
-      font-size: 10.5px;
-      color: var(--ink-2, #6b5030);
-      opacity: 0.75;
-      margin-top: 2px;
-    }
-
-    .lcp-section { margin-bottom: 12px; }
-    .lcp-section:last-child { margin-bottom: 4px; }
-    .lcp-h {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12.5px;
-      font-weight: 600;
-      color: var(--ink-1, #3d2f10);
-      margin: 0 0 6px 0;
-      padding-bottom: 4px;
-      border-bottom: 1px dotted color-mix(in srgb, var(--ink-3, #ba9863) 55%, transparent);
-    }
-    .lcp-h-icon { font-size: 15px; }
-    .lcp-h-name { flex: 1; }
-    .lcp-h-count {
-      font-size: 10.5px;
-      background: color-mix(in srgb, var(--sym-tr, #7a5a2a) 15%, transparent);
-      padding: 1px 6px;
-      border-radius: 10px;
-      color: var(--sym-tr, #7a5a2a);
-    }
-
-    .lcp-list {
-      list-style: none;
-      margin: 0; padding: 0;
-    }
-    .lcp-row {
-      padding: 6px 4px;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background 0.1s;
-    }
-    .lcp-row:hover { background: color-mix(in srgb, var(--sym-tr, #7a5a2a) 8%, transparent); }
-    .lcp-name {
-      font-size: 12px;
-      font-weight: 500;
-      color: var(--ink-1, #3d2f10);
-    }
-    .lcp-district {
-      font-weight: 400;
-      color: var(--ink-2, #6b5030);
-      font-size: 11px;
-    }
-    .lcp-teaser {
-      font-size: 10.5px;
-      color: var(--ink-2, #6b5030);
-      line-height: 1.4;
-      margin-top: 2px;
-    }
-    @media (max-width: 900px) {
-      .layer-callout-panel { display: none; }
-    }
-
-    /* Sikhwal preview root: a ZERO-SIZE container appended to <body>.
+    /* Callout root: a ZERO-SIZE container appended to <body>.
      * Overflow: visible so children (boxes + mini-SVGs) can render
      * outside its bounds. Because the root has 0x0 size and is not a
      * child of .a-map, nothing at all covers the map SVG — the map
