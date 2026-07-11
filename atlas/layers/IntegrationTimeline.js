@@ -27,6 +27,74 @@
 import { el } from '../core/util/dom.js';
 
 const LAYER_ID = 'rajasthan-integration';
+
+/* At the time of integration (1948-56) Rajasthan's units were PRINCELY
+ * STATES, not districts. The modern 41-district map was formed much
+ * later (Jaipur split in 1949, several new districts in 1982-2013, and
+ * eight more created in 2023). This table maps each modern district to
+ * the pre-1956 princely-state whose territory dominated it — used to
+ * approximate the historical demarcation when a phase is selected.
+ *
+ * Phase 5 is the Matsya-Union merger into Greater Rajasthan and does
+ * not add territory; it highlights the same districts as Phase 1.
+ */
+const DISTRICT_TO_PHASE = {
+  // Phase 1 — Matsya Union (18 Mar 1948): Alwar + Bharatpur + Dholpur + Karauli
+  'alwar':               1,
+  'khairthal-tijara':    1,   // carved from Alwar 2023
+  'bharatpur':           1,
+  'deeg':                1,   // carved from Bharatpur 2023
+  'dholpur':             1,
+  'karauli':             1,
+
+  // Phase 2 — USR (25 Mar 1948): Kota, Bundi, Banswara, Dungarpur,
+  //                              Jhalawar, Pratapgarh, Tonk (+ Kishangarh, Shahpura)
+  'kota':                2,
+  'baran':               2,   // was part of Kota state
+  'bundi':               2,
+  'banswara':            2,
+  'dungarpur':           2,
+  'jhalawar':            2,
+  'pratapgarh':          2,
+  'tonk':                2,
+
+  // Phase 3 — Mewar merger (18 Apr 1948): Udaipur State
+  'udaipur':             3,
+  'chittorgarh':         3,
+  'rajsamand':           3,
+  'salumbar':            3,   // carved from Udaipur 2023
+  'bhilwara':            3,   // majority-Mewar; Shahpura was a small sub-thikana
+
+  // Phase 4 — Greater Rajasthan (30 Mar 1949): Jaipur + Marwar + Bikaner + Jaisalmer
+  'jaipur':              4,
+  'dausa':               4,   // was part of Jaipur State
+  'sikar':               4,   // Shekhawati under Jaipur
+  'jhunjhunu':           4,   // Shekhawati under Jaipur
+  'kotputli-behror':     4,   // carved from Jaipur 2023
+  'sawai-madhopur':      4,   // was part of Jaipur State
+
+  'jodhpur':             4,   // Marwar
+  'pali':                4,   // Marwar
+  'nagaur':              4,   // Marwar
+  'barmer':              4,   // Marwar
+  'jalore':              4,   // Marwar
+  'balotra':             4,   // carved from Barmer 2023
+  'phalodi':             4,   // carved from Jodhpur 2023
+  'didwana-kuchaman':    4,   // carved from Nagaur 2023
+
+  'bikaner':             4,   // Bikaner State
+  'churu':               4,   // Bikaner State
+  'hanumangarh':         4,   // Bikaner State
+  'sri-ganganagar':      4,   // Bikaner State
+  'jaisalmer':           4,   // Jaisalmer State
+
+  // Phase 6 — United Rajasthan (26 Jan 1950): Sirohi partial merger
+  'sirohi':              6,
+
+  // Phase 7 — SRA (1 Nov 1956): Ajmer-Merwara Province added
+  'ajmer':               7,
+  'beawar':              7,   // carved from Ajmer 2023; historically Ajmer-Merwara
+};
 const PHASES = [
   {
     n: 1, roman: '①', date: '18 Mar 1948', shortDate: '18 Mar', shortYear: '1948',
@@ -158,8 +226,12 @@ function select(phaseN) {
     'States: ' + phase.states.join(' · '),
   ]));
   card.append(el('div', { class: 'itl-card-blurb' }, [phase.blurb]));
+  card.append(el('div', { class: 'itl-card-note' }, [
+    'Modern-district boundaries approximate the pre-1956 princely-state extents.',
+  ]));
   card.classList.remove('hidden');
   applyHighlight(phaseN);
+  applyDistrictHighlight(phaseN);
 }
 
 /* Highlight this phase's point features on the map. Adds a data-phase-hi
@@ -178,6 +250,27 @@ function applyHighlight(phaseN) {
 
 function clearHighlight() {
   document.querySelectorAll('.point-icon.itl-hi').forEach(dot => dot.classList.remove('itl-hi'));
+  clearDistrictHighlight();
+}
+
+/* Highlight modern districts whose territory belonged to the selected
+ * phase's princely-state ancestors. Phase 5 (Matsya merger into Greater
+ * Rajasthan) uses Phase 1's district set since it re-adds those states. */
+function applyDistrictHighlight(phaseN) {
+  clearDistrictHighlight();
+  if (!phaseN) return;
+  const targetPhase = phaseN === 5 ? 1 : phaseN;
+  document.querySelectorAll('.layer-districts path.feature').forEach(p => {
+    if (DISTRICT_TO_PHASE[p.dataset.feature] === targetPhase) {
+      p.classList.add('itl-district-hi');
+    }
+  });
+}
+
+function clearDistrictHighlight() {
+  document.querySelectorAll('.layer-districts path.itl-district-hi').forEach(p => {
+    p.classList.remove('itl-district-hi');
+  });
 }
 
 /* ── Styles ─────────────────────────────────────────────────────── */
@@ -285,6 +378,24 @@ function injectStyles() {
       transform: translate(-50%, -50%) scale(1.6);
       filter: drop-shadow(0 0 6px var(--sym-tr, #7a5a2a));
       z-index: 5;
+    }
+    /* Highlight modern-district polygons that map back to the selected
+     * phase's princely-state ancestors. Warm tint + heavier stroke keeps
+     * the map still legible; !important overrides the theme's per-mode
+     * fill rules (base/division/env/reader). */
+    .a-map svg .layer-districts path.itl-district-hi {
+      fill: color-mix(in srgb, #c48a3a 55%, transparent) !important;
+      fill-opacity: 1 !important;
+      stroke: #7a3a1a !important;
+      stroke-width: 1.4 !important;
+      opacity: 1 !important;
+    }
+    .itl-card-note {
+      margin-top: 6px;
+      font-size: 10px;
+      color: var(--ink-2, #6b5030);
+      opacity: 0.72;
+      font-style: italic;
     }
     @media (max-width: 780px) {
       .itl-strip { display: none; }
