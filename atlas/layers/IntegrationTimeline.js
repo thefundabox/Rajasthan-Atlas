@@ -292,10 +292,11 @@ const NEW_AT_PHASE = {
   6: [6],                      // Sirohi partial merger
   7: [7],                      // Ajmer-Merwara + Abu-Delwara
 };
+// Nothing is shown as "separate" — each phase focuses on its own event.
+// Matsya Union appears as "newly added" at Phase 1 (formation) and again
+// at Phase 5 (merger into Greater Rajasthan); in between it is off-map.
 const SEPARATE_AT_PHASE = {
-  1: [],
-  2: [1], 3: [1], 4: [1],      // Matsya exists but separate from main body
-  5: [], 6: [], 7: [],
+  1: [], 2: [], 3: [], 4: [], 5: [], 6: [], 7: [],
 };
 
 function applyDistrictHighlight(phaseN) {
