@@ -1,0 +1,516 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "matsya-union-alwar",
+      "geometry": { "type": "Point", "coordinates": [76.605, 27.553] },
+      "properties": {
+        "name": "Alwar (Matsya Union — Phase 1)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "1",
+        "date": "18 March 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Alwar Princely State",
+        "notes": {
+          "facts": [
+            "Phase 1 — Matsya Union, formed 18 March 1948 with capital at Alwar.",
+            "Merged four princely states: Alwar, Bharatpur, Dholpur, Karauli.",
+            "Named after the ancient Matsya Janapada; Udai Bhan Singh of Dholpur was the first Rajpramukh.",
+            "First territorial integration step towards modern Rajasthan.",
+            "Matsya Union lasted just over a year before merging into Greater Rajasthan on 15 May 1949."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "matsya-union-bharatpur",
+      "geometry": { "type": "Point", "coordinates": [77.494, 27.217] },
+      "properties": {
+        "name": "Bharatpur (Matsya Union — Phase 1)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "1",
+        "date": "18 March 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Bharatpur Princely State",
+        "notes": {
+          "facts": [
+            "Bharatpur — Rajasthan's only Jat princely state — joined Matsya Union in Phase 1.",
+            "Maharaja Brijendra Singh signed the instrument of accession.",
+            "Home to the world-famous Keoladeo Ghana bird sanctuary (then a princely duck-shoot).",
+            "Lohagarh Fort at Bharatpur town — the only Rajput-era fort never captured by the British."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "matsya-union-dholpur",
+      "geometry": { "type": "Point", "coordinates": [77.898, 26.702] },
+      "properties": {
+        "name": "Dholpur (Matsya Union — Phase 1)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "1",
+        "date": "18 March 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Dholpur Princely State",
+        "notes": {
+          "facts": [
+            "Dholpur's Maharaja Udai Bhan Singh became the first Rajpramukh of Matsya Union.",
+            "Source of the Dholpur red sandstone — quarried for Red Fort, Rashtrapati Bhavan, Agra Fort.",
+            "Chambal Ravines badlands (Beehad) — India's most extensive gully erosion belt."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "matsya-union-karauli",
+      "geometry": { "type": "Point", "coordinates": [77.024, 26.499] },
+      "properties": {
+        "name": "Karauli (Matsya Union — Phase 1)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "1",
+        "date": "18 March 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Karauli Princely State",
+        "notes": {
+          "facts": [
+            "The only Yadav (Krishna-descent) princely state in Rajasthan, founded 1348.",
+            "Merged into Matsya Union in Phase 1 under Maharaja Ganesh Pal Deo.",
+            "Kaila Devi is the kul devi (tutelary goddess) of the Karauli Yadav rulers."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "usr-kota",
+      "geometry": { "type": "Point", "coordinates": [75.827, 25.181] },
+      "properties": {
+        "name": "Kota (United State of Rajasthan — Phase 2)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "2",
+        "date": "25 March 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Kota Princely State",
+        "notes": {
+          "facts": [
+            "Phase 2 — United State of Rajasthan (Rajasthan Union), formed 25 March 1948.",
+            "Merged nine states: Banswara, Bundi, Dungarpur, Jhalawar, Kishangarh, Kota, Pratapgarh, Shahpura, Tonk.",
+            "Maharao Bhim Singh II of Kota was the Rajpramukh; capital was Kota then briefly Udaipur.",
+            "Rajasthan's first stage where states voluntarily formed a mini-federation before joining the Indian Union in full."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "usr-bundi",
+      "geometry": { "type": "Point", "coordinates": [75.636, 25.443] },
+      "properties": {
+        "name": "Bundi (USR — Phase 2)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "2",
+        "date": "25 March 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Bundi Princely State",
+        "notes": {
+          "facts": [
+            "Bundi's Maharao Bahadur Singh signed the instrument of accession on 25 March 1948.",
+            "Bundi and Kota were split from a single Hada Chauhan kingdom in 1631.",
+            "Bundi school of miniature painting — one of India's most distinctive Rajput painting traditions."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "usr-banswara",
+      "geometry": { "type": "Point", "coordinates": [74.443, 23.548] },
+      "properties": {
+        "name": "Banswara (USR — Phase 2)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "2",
+        "date": "25 March 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Banswara Princely State",
+        "notes": {
+          "facts": [
+            "Vagad tribal-belt state — the smallest Sisodia-derived kingdom.",
+            "Merged into USR on 25 March 1948 under Maharaval Chandravir Singh.",
+            "Later became the anchor district of the TSP (Tribal Sub-Plan) area under the Fifth Schedule."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "usr-dungarpur",
+      "geometry": { "type": "Point", "coordinates": [73.714, 23.844] },
+      "properties": {
+        "name": "Dungarpur (USR — Phase 2)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "2",
+        "date": "25 March 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Dungarpur Princely State",
+        "notes": {
+          "facts": [
+            "Older sibling Sisodia branch that split from Mewar in 1197 CE.",
+            "Merged into USR on 25 March 1948 under Maharaval Lakshman Singh.",
+            "Home to the Beneshwar tribal fair — Rajasthan's biggest Bhil pilgrimage."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "usr-jhalawar",
+      "geometry": { "type": "Point", "coordinates": [76.156, 24.598] },
+      "properties": {
+        "name": "Jhalawar (USR — Phase 2)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "2",
+        "date": "25 March 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Jhalawar Princely State",
+        "notes": {
+          "facts": [
+            "Youngest Rajput state in Rajasthan — separated from Kota in 1838 by the British.",
+            "Home to Gagron Fort (UNESCO Hill Fort) — Rajasthan's only jal-durg (water fortress).",
+            "Merged into USR on 25 March 1948 under Maharajrana Rajendra Singh."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "usr-pratapgarh",
+      "geometry": { "type": "Point", "coordinates": [74.783, 24.031] },
+      "properties": {
+        "name": "Pratapgarh (USR — Phase 2)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "2",
+        "date": "25 March 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Pratapgarh Princely State",
+        "notes": {
+          "facts": [
+            "Small tribal-belt state — birthplace of the GI-tagged Thewa gold-on-glass jewellery.",
+            "Merged into USR on 25 March 1948 under Maharawat Ambika Pratap Singh."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "usr-tonk",
+      "geometry": { "type": "Point", "coordinates": [75.788, 26.166] },
+      "properties": {
+        "name": "Tonk (USR — Phase 2)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "2",
+        "date": "25 March 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Tonk Princely State",
+        "notes": {
+          "facts": [
+            "The only Muslim princely state in Rajasthan — founded 1817 by Amir Khan Pindari.",
+            "Merged into USR on 25 March 1948 under Nawab Muhammad Faruq Ali Khan.",
+            "Home to the Maulana Abul Kalam Azad Arabic-Persian Research Institute — India's premier Persian manuscript collection."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "usr-kishangarh",
+      "geometry": { "type": "Point", "coordinates": [74.867, 26.583] },
+      "properties": {
+        "name": "Kishangarh (USR — Phase 2)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "2",
+        "date": "25 March 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Kishangarh Princely State",
+        "notes": {
+          "facts": [
+            "Kishangarh school of miniature painting — famous for the 'Bani Thani' portrait (India's Mona Lisa).",
+            "Merged into USR on 25 March 1948 under Maharaja Sumer Singh.",
+            "Later became India's largest marble mandi and processing cluster."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "usr-shahpura",
+      "geometry": { "type": "Point", "coordinates": [74.951, 25.622] },
+      "properties": {
+        "name": "Shahpura (USR — Phase 2)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "2",
+        "date": "11 April 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Shahpura Princely State",
+        "notes": {
+          "facts": [
+            "Small Bhilwara-region thikana raised to princely status in 1949.",
+            "Merged into USR on 11 April 1948 under Sujan Singh, though formally listed in Phase 2.",
+            "Home to the Ram Snehi sampraday — an important 18th-c. bhakti reform tradition."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mewar-udaipur-phase3",
+      "geometry": { "type": "Point", "coordinates": [73.712, 24.585] },
+      "properties": {
+        "name": "Udaipur / Mewar (Phase 3 — merger with USR)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "3",
+        "date": "18 April 1948",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Mewar Princely State (Udaipur)",
+        "notes": {
+          "facts": [
+            "Phase 3 — Mewar State (capital Udaipur) merged with USR on 18 April 1948.",
+            "Maharana Bhupal Singh signed the instrument of accession, then became the Rajpramukh of the enlarged USR.",
+            "Mewar was India's oldest surviving royal house — the Sisodia lineage traced 1400 years of continuous rule.",
+            "Capital shifted to Udaipur after Mewar's merger."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "greater-rajasthan-jaipur",
+      "geometry": { "type": "Point", "coordinates": [75.789, 26.925] },
+      "properties": {
+        "name": "Jaipur (Greater Rajasthan — Phase 4)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "4",
+        "date": "30 March 1949",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Jaipur Princely State",
+        "notes": {
+          "facts": [
+            "Phase 4 — Greater Rajasthan (Vishal Rajasthan) formed 30 March 1949; inaugurated by Sardar Patel.",
+            "The four big Rajput states — Jaipur, Jodhpur, Bikaner, Jaisalmer — joined USR to form Greater Rajasthan.",
+            "Jaipur became the new capital of Greater Rajasthan; Maharaja Sawai Man Singh II became Rajpramukh.",
+            "Maharana Bhupal Singh of Udaipur was designated Maharaj-Pramukh (senior Rajpramukh).",
+            "This is celebrated annually as 'Rajasthan Diwas' on 30 March."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "greater-rajasthan-jodhpur",
+      "geometry": { "type": "Point", "coordinates": [73.020, 26.264] },
+      "properties": {
+        "name": "Jodhpur (Greater Rajasthan — Phase 4)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "4",
+        "date": "30 March 1949",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Jodhpur (Marwar) Princely State",
+        "notes": {
+          "facts": [
+            "Jodhpur (Marwar) — Rajasthan's largest princely state by area.",
+            "Maharaja Hanwant Singh initially resisted; his death in a plane crash (Jan 1952) removed the last opposition.",
+            "Merged into Greater Rajasthan on 30 March 1949."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "greater-rajasthan-bikaner",
+      "geometry": { "type": "Point", "coordinates": [73.318, 28.023] },
+      "properties": {
+        "name": "Bikaner (Greater Rajasthan — Phase 4)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "4",
+        "date": "30 March 1949",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Bikaner Princely State",
+        "notes": {
+          "facts": [
+            "Merged into Greater Rajasthan on 30 March 1949 under Maharaja Sadul Singh.",
+            "Home to Gang Canal (1927) — Rajasthan's oldest large irrigation canal.",
+            "Bikaner's Camel Corps (Ganga Risala) was one of India's most celebrated princely military units."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "greater-rajasthan-jaisalmer",
+      "geometry": { "type": "Point", "coordinates": [70.913, 26.912] },
+      "properties": {
+        "name": "Jaisalmer (Greater Rajasthan — Phase 4)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "4",
+        "date": "30 March 1949",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "capitalOf": "Jaisalmer Princely State",
+        "notes": {
+          "facts": [
+            "The last major Rajput state to join Greater Rajasthan — Maharaja Jawahar Singh acceded 30 March 1949.",
+            "Bhati Rajput dynasty founded Jaisalmer in 1156.",
+            "The world's only 'living fort' (UNESCO 2013) — 3000+ residents still live inside the walls."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "matsya-merger-phase5",
+      "geometry": { "type": "Point", "coordinates": [77.494, 27.217] },
+      "properties": {
+        "name": "Matsya Union merger (Phase 5)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "5",
+        "date": "15 May 1949",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Phase 5 — Matsya Union (Alwar, Bharatpur, Dholpur, Karauli) merged into Greater Rajasthan on 15 May 1949.",
+            "This created 'United Greater Rajasthan' (Sanyukta Vishal Rajasthan).",
+            "The Shankarrao Dev Committee's recommendation drove this merger despite local Matsya identity movements."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "united-rajasthan-phase6",
+      "geometry": { "type": "Point", "coordinates": [75.789, 26.925] },
+      "properties": {
+        "name": "United Rajasthan (Phase 6)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "6",
+        "date": "26 January 1950",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Phase 6 — 'United Rajasthan' formally recognised on Republic Day, 26 January 1950.",
+            "Sirohi State was partially merged — Mount Abu and Delwara taluks were transferred to Bombay State pending final decision.",
+            "Heera Lal Shastri became Rajasthan's first Chief Minister; Man Singh II remained Rajpramukh."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "modern-rajasthan-phase7",
+      "geometry": { "type": "Point", "coordinates": [74.638, 26.449] },
+      "properties": {
+        "name": "Modern Rajasthan (Phase 7 — States Reorganisation)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "7",
+        "date": "1 November 1956",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Phase 7 — the final integration on 1 November 1956 under the States Reorganisation Act.",
+            "Ajmer-Merwara Province, Abu-Delwara taluks (from Bombay) and Sunel Tappa (from MP) were added to Rajasthan.",
+            "Sironj tehsil was transferred to Madhya Pradesh in exchange.",
+            "Rajpramukh position was abolished; Sardar Gurmukh Nihal Singh became Rajasthan's first Governor.",
+            "The current geographic and administrative boundary of Rajasthan was fixed on this date."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sirohi-abu-delwara",
+      "geometry": { "type": "Point", "coordinates": [72.717, 24.593] },
+      "properties": {
+        "name": "Mount Abu / Delwara (Phase 7 addition)",
+        "type": "integration_stage",
+        "category": "custom",
+        "phase": "7",
+        "date": "1 November 1956",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + States Reorganisation records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Mount Abu and Delwara taluks were held by Bombay State from 1950 to 1956.",
+            "Transferred to Rajasthan on 1 November 1956 under the States Reorganisation Act.",
+            "Guru Shikhar (1722 m) — Rajasthan's highest point — came with this transfer.",
+            "The Dilwara Jain temples (11-13th c.) are the transfer's most celebrated cultural asset."
+          ]
+        }
+      }
+    }
+  ]
+}

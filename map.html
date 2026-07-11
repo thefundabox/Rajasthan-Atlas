@@ -81,6 +81,7 @@
     import './atlas/layers/CustomContent.js';
     import './atlas/layers/RevisionDashboard.js';
     import './atlas/layers/CompareMode.js';
+    import './atlas/layers/CalloutMode.js';
     Atlas.boot(document.body);
 
     // Deep-link support for Study Home → Atlas navigation.
@@ -91,6 +92,17 @@
       const params = new URLSearchParams(location.search);
       const preset = params.get('preset');
       if (preset) setTimeout(() => Atlas.layers.setMode(preset), 80);
+      // ?layers=layer-id-1,layer-id-2 — turn on specific layers (Study Home tiles
+      // for content that doesn't have a corresponding preset mode).
+      const layersParam = params.get('layers');
+      if (layersParam) {
+        setTimeout(() => {
+          const ids = layersParam.split(',').map(s => s.trim()).filter(Boolean);
+          for (const id of ids) {
+            try { Atlas.layers.setVisible?.(id, true); } catch (_) {}
+          }
+        }, 120);
+      }
       const feature = params.get('feature');
       if (feature) {
         setTimeout(() => {

@@ -65,6 +65,97 @@
       "visible":  false,
       "searchable": true,
       "featureType": "revolt_site_1857"
+    },
+    {
+      "id":       "rajasthan-integration",
+      "name":     "Integration of Rajasthan",
+      "type":     "point",
+      "data":     "atlas/data/custom/rajasthan-integration.geojson",
+      "category": "human",
+      "icon":     "🇮🇳",
+      "color":    "#4a6b8a",
+      "zIndex":   37,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "integration_stage"
+    },
+    {
+      "id":       "research-centers",
+      "name":     "Research & Higher Institutions",
+      "type":     "point",
+      "data":     "atlas/data/custom/research-centers.geojson",
+      "category": "human",
+      "icon":     "🔬",
+      "color":    "#3a6b5a",
+      "zIndex":   38,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "research_center"
+    },
+    {
+      "id":       "major-prashastis",
+      "name":     "Prashastis & Inscriptions",
+      "type":     "point",
+      "data":     "atlas/data/custom/major-prashastis.geojson",
+      "category": "human",
+      "icon":     "📜",
+      "color":    "#8a5a3a",
+      "zIndex":   39,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "prashasti"
+    },
+    {
+      "id":       "palaces",
+      "name":     "Historic Palaces",
+      "type":     "point",
+      "data":     "atlas/data/custom/palaces.geojson",
+      "category": "human",
+      "icon":     "🏯",
+      "color":    "#a06a2a",
+      "zIndex":   40,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "palace"
+    },
+    {
+      "id":       "havelis",
+      "name":     "Historic Havelis",
+      "type":     "point",
+      "data":     "atlas/data/custom/havelis.geojson",
+      "category": "human",
+      "icon":     "🏘",
+      "color":    "#c68d3f",
+      "zIndex":   41,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "haveli"
+    },
+    {
+      "id":       "battle-sites",
+      "name":     "Historic Battle Sites",
+      "type":     "point",
+      "data":     "atlas/data/custom/battle-sites.geojson",
+      "category": "human",
+      "icon":     "⚔",
+      "color":    "#7a4545",
+      "zIndex":   42,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "battle_site"
+    },
+    {
+      "id":       "folk-goddesses",
+      "name":     "Folk Goddesses",
+      "type":     "point",
+      "data":     "atlas/data/custom/folk-goddesses.geojson",
+      "category": "human",
+      "icon":     "🌺",
+      "color":    "#a24a70",
+      "zIndex":   43,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "folk_goddess"
     }
   ]
 }

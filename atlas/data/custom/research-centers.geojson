@@ -1,0 +1,415 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "cazri-jodhpur",
+      "geometry": { "type": "Point", "coordinates": [72.988, 26.286] },
+      "properties": {
+        "name": "CAZRI — Central Arid Zone Research Institute",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Jodhpur",
+        "founded": "1959",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ICAR",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "India's premier arid-zone agricultural research institute (ICAR) — founded 1959 at Jodhpur.",
+            "Pioneered India's dune-stabilisation science, drip irrigation for arid crops, and khejri (Prosopis cineraria) shelterbelt system.",
+            "Regional stations at Bikaner, Pali, Kukma (Kutch) and Leh — spans the entire Thar-Ladakh arid belt.",
+            "Developed Rajasthan's foundation seed programme for bajra, guar, moth and cluster-bean."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "afri-jodhpur",
+      "geometry": { "type": "Point", "coordinates": [73.001, 26.256] },
+      "properties": {
+        "name": "AFRI — Arid Forest Research Institute",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Jodhpur",
+        "founded": "1985",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ICFRE",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "India's only forestry research institute for the arid zone (ICFRE) — founded 1985.",
+            "Develops silvicultural systems for khejri, rohira, kair, ker and neem in <500 mm rainfall.",
+            "Runs the National Herbal Garden and the arid-zone tissue-culture bank.",
+            "AFRI's shelterbelt models informed India's Green India Mission dryland strategy."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cswri-avikanagar",
+      "geometry": { "type": "Point", "coordinates": [75.359, 26.309] },
+      "properties": {
+        "name": "CSWRI — Central Sheep & Wool Research Institute",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Tonk (Malpura)",
+        "founded": "1962",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ICAR",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "India's flagship sheep-and-wool research institute at Avikanagar (Malpura, Tonk) — founded 1962.",
+            "Developed the Avikalin, Bharat Merino and Malpura Cross breeds — India's leading fine-wool synthetics.",
+            "Runs the National Wool Research and Training Institute for the northern-region wool cluster.",
+            "Rajasthan produces 30% of India's wool — CSWRI's breeding programme underpins that share."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camel-research-bikaner",
+      "geometry": { "type": "Point", "coordinates": [73.318, 27.994] },
+      "properties": {
+        "name": "NRC on Camel (Jhorbir)",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Bikaner",
+        "founded": "1984",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ICAR",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "India's National Research Centre on Camel — Bikaner (Jhorbir), founded 1984 as a project directorate, upgraded to NRC in 1995.",
+            "Home to Asia's first camel-milk dairy — commercialising camel milk since 2015.",
+            "Maintains the germplasm of India's four camel breeds: Bikaneri, Jaisalmeri, Kachhi, Mewari.",
+            "Rajasthan holds ~41% of India's camel population; NRC-Camel underpins the Rebari pastoralist economy."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aiims-jodhpur",
+      "geometry": { "type": "Point", "coordinates": [72.987, 26.253] },
+      "properties": {
+        "name": "AIIMS Jodhpur",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Jodhpur",
+        "founded": "2012",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + AIIMS records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Rajasthan's only AIIMS — one of six second-generation AIIMS opened 2012 under PMSSY.",
+            "Announced 2004 by Vajpayee, operationalised 2012 with 960-bed hospital.",
+            "Anchors Rajasthan's western-tertiary healthcare — covers Barmer, Jaisalmer, Bikaner catchment.",
+            "Runs India's first Fibrodysplasia Ossificans Progressiva (FOP) research programme."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "iit-jodhpur",
+      "geometry": { "type": "Point", "coordinates": [72.985, 26.470] },
+      "properties": {
+        "name": "IIT Jodhpur",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Jodhpur",
+        "founded": "2008",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + IIT records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Rajasthan's only IIT — established 2008 at Karwar (Nagaur road, Jodhpur).",
+            "Distinctive academic programme: no rigid department boundaries; interdisciplinary M-schools model.",
+            "Anchors the Jodhpur AI and IoT cluster; hosts India's first drone-technology research lab (2021).",
+            "The IIT campus is one of India's most sustainable — 100% solar-powered daytime operations."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "iim-udaipur",
+      "geometry": { "type": "Point", "coordinates": [73.686, 24.550] },
+      "properties": {
+        "name": "IIM Udaipur",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Udaipur",
+        "founded": "2011",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + IIM records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Rajasthan's only IIM — established 2011 as one of six new-generation IIMs.",
+            "One of India's fastest-rising business schools; anchors the western-India MBA market.",
+            "The Balicha campus is India's second-largest IIM campus by area (300+ acres).",
+            "Home to India's only IIM PhD programme with a formal Digital Enterprise Management stream."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nlu-jodhpur",
+      "geometry": { "type": "Point", "coordinates": [72.999, 26.334] },
+      "properties": {
+        "name": "National Law University Jodhpur",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Jodhpur (Mandore)",
+        "founded": "1999",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + NLU records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "One of India's premier National Law Universities — established 1999 by the Rajasthan State Act.",
+            "First NLU in India to offer a two-year LLM programme (2006) and integrated BA-BSc-LLB (2004).",
+            "Located at Mandore (Jodhpur) — the ancient Marwar capital.",
+            "Consistently ranks in India's top-5 law schools."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bits-pilani",
+      "geometry": { "type": "Point", "coordinates": [75.594, 28.365] },
+      "properties": {
+        "name": "BITS Pilani",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Jhunjhunu (Pilani)",
+        "founded": "1929",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + BITS records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Founded 1929 by Ghanshyam Das Birla as Birla College — India's first industrialist-funded science institute.",
+            "Achieved deemed-university status in 1964 as Birla Institute of Technology and Science.",
+            "Runs India's largest industry-linked engineering internship programme (BITS Practice School).",
+            "Anchors the Shekhawati engineering-talent belt; alumni founded Cognizant, Tata Consultancy, Flipkart."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kvk-fatehpur-shekhawati",
+      "geometry": { "type": "Point", "coordinates": [74.947, 27.999] },
+      "properties": {
+        "name": "KVK Fatehpur Shekhawati",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Sikar",
+        "founded": "1976",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ICAR",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Rajasthan's first Krishi Vigyan Kendra (KVK) — established 1976 at Fatehpur Shekhawati.",
+            "Pioneered India's district-level KVK extension model, later scaled to 700+ KVKs across the country.",
+            "Anchor of the Shekhawati groundnut and bajra research cluster."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sever-bharatpur",
+      "geometry": { "type": "Point", "coordinates": [77.462, 27.201] },
+      "properties": {
+        "name": "SEVAR — Mustard Research (Bharatpur)",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Bharatpur",
+        "founded": "1993",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ICAR",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Directorate of Rapeseed-Mustard Research (SEVAR) at Sewar (Bharatpur), founded 1993.",
+            "India's premier mustard breeding institute; Bharatpur district is India's largest mustard producer.",
+            "Developed the RH-30, RH-819, Vardaan and Bio-902 varieties that anchor Rajasthan's rabi mustard belt.",
+            "Rajasthan produces 45% of India's mustard — SEVAR underpins that share."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ber-khajur-bikaner",
+      "geometry": { "type": "Point", "coordinates": [73.315, 27.978] },
+      "properties": {
+        "name": "Ber & Khajur Research Centres, Bikaner",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Bikaner",
+        "founded": "1978",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ICAR",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Twin arid-fruit research centres at Bikaner — Ber (Indian jujube) and Khajur (date palm), both founded 1978.",
+            "Developed arid-zone commercial cultivars: Gola, Mundia, Kaithli (ber); Barhee, Halawy, Khadrawy (date).",
+            "Rajasthan produces India's largest ber crop; date palm cultivation has expanded 4x since 2000 thanks to KVK extension."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nkru-pathmeda",
+      "geometry": { "type": "Point", "coordinates": [71.884, 24.708] },
+      "properties": {
+        "name": "National Kamdhenu University, Pathmeda",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Jalore (Sanchore)",
+        "founded": "2012",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.)",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "First institution to formally research indigenous Indian cattle breeds and Panchagavya products.",
+            "Pathmeda (Sanchore, Jalore) is home to India's largest gaushala — over 200,000 cattle sheltered.",
+            "Sanchore also hosts India's first Gau-Mutra Bank."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "manikya-lal-verma-adivasi",
+      "geometry": { "type": "Point", "coordinates": [73.712, 24.579] },
+      "properties": {
+        "name": "Manikya Lal Verma Adivasi Research & Training Institute",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Udaipur",
+        "founded": "1964",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.)",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Rajasthan's premier tribal research institute — established at Udaipur in 1964.",
+            "Anchors research on Bhil, Meena, Garasia, Damor, Sahariya and Kathodia tribes.",
+            "Publishes the Adivasi Sansar journal and runs the state's tribal-language documentation programme.",
+            "Named after Rajasthan's tribal-rights pioneer Manikya Lal Verma (1897-1969)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rajasthan-archives-bikaner",
+      "geometry": { "type": "Point", "coordinates": [73.317, 28.024] },
+      "properties": {
+        "name": "Rajasthan State Archives, Bikaner",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Bikaner",
+        "founded": "1955",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.)",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Rajasthan's state archives — established at Jaipur in 1955, shifted to Bikaner in 1966.",
+            "Holds Rajasthan's largest Persian, Urdu and Rajasthani manuscript collection.",
+            "Houses Mughal farmans, princely-state records, and hand-painted Rajput miniatures.",
+            "One of India's largest state-level archival collections — over 8 lakh documents."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rupayan-borunda",
+      "geometry": { "type": "Point", "coordinates": [73.363, 26.516] },
+      "properties": {
+        "name": "Rupayan Sansthan (National Kala Mandal), Borunda",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Jodhpur",
+        "founded": "1960",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.)",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Founded 1960 by Padma Shri Komal Kothari at Borunda (Bilada, Jodhpur).",
+            "India's premier ethnomusicology and folk-arts research centre — Rupayan documented 1000+ Langa-Manganiar songs.",
+            "Its work led to UNESCO recognition of Rajasthan's oral folk traditions.",
+            "Continues to run Rajasthan's largest folk-art field research programme."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bharatiya-lok-kala-mandal-udaipur",
+      "geometry": { "type": "Point", "coordinates": [73.680, 24.585] },
+      "properties": {
+        "name": "Bharatiya Lok Kala Mandal, Udaipur",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Udaipur",
+        "founded": "1952",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.)",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Rajasthan's oldest folk-arts research centre — founded 22 February 1952 by Padma Shri Devi Lal Samar.",
+            "Houses the world's largest collection of Rajasthani puppetry (Kathputli).",
+            "Runs Rajasthan's only professional puppetry academy; the 'Puppet Museum' is a UNESCO study centre.",
+            "Anchors Udaipur's cultural-heritage tourism circuit."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vidya-bhawan-udaipur",
+      "geometry": { "type": "Point", "coordinates": [73.688, 24.588] },
+      "properties": {
+        "name": "Vidya Bhawan Sansthan, Udaipur",
+        "type": "research_center",
+        "category": "custom",
+        "district": "Udaipur",
+        "founded": "1931",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.)",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Founded 1931 by Mohan Singh Mehta as Rajasthan's first modern educational society under Mewar princely rule.",
+            "Runs the state's oldest teacher-training institute (VBTC) and India's largest rural-college network under a single society.",
+            "Anchors the Aravalli-region rural education movement; pioneered vocational Krishak Vidyapeeth model in the 1950s."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "haldighati",
+      "geometry": { "type": "Point", "coordinates": [73.633, 24.939] },
+      "properties": {
+        "name": "Haldighati (Battle of Haldighati, 1576)",
+        "type": "battle_site",
+        "category": "custom",
+        "district": "Rajsamand",
+        "date": "18 June 1576",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan historical records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Rajasthan's most-remembered battle — Maharana Pratap of Mewar vs. Akbar's forces (led by Man Singh I of Amber) on 18 June 1576.",
+            "'Haldi-ghati' = 'turmeric pass' — named for the yellow tint of the Aravalli soil in this pass.",
+            "Maharana Pratap escaped after his horse Chetak died protecting him from a Mughal war-elephant — Chetak's samadhi is at Balichabhavan.",
+            "Neither side won decisively; the battle became a symbol of Rajput resistance to Mughal rule.",
+            "Located in the Aravalli pass between Kumbhalgarh and Gogunda."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "khanwa",
+      "geometry": { "type": "Point", "coordinates": [77.396, 27.098] },
+      "properties": {
+        "name": "Khanwa (Battle of Khanwa, 1527)",
+        "type": "battle_site",
+        "category": "custom",
+        "district": "Bharatpur",
+        "date": "16 March 1527",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan historical records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Babur's decisive victory over Rana Sanga of Mewar on 16 March 1527 — cemented Mughal power over north India.",
+            "Rana Sanga led a united Rajput-Afghan coalition of 100,000+ troops, defeated by Babur's ~15,000 with matchlock guns and cannon.",
+            "The first major Indian battle where artillery decided the outcome.",
+            "Rana Sanga was wounded and died in 1528; Mewar's Rajput confederation collapsed as a result."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sarangpur",
+      "geometry": { "type": "Point", "coordinates": [76.404, 23.567] },
+      "properties": {
+        "name": "Sarangpur (Battle of Sarangpur, 1437)",
+        "type": "battle_site",
+        "category": "custom",
+        "district": "Adjacent to Jhalawar (MP border)",
+        "date": "1437 CE",
+        "state": "Rajasthan / MP border",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan historical records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Rana Kumbha of Mewar defeated Mahmud Khilji of Malwa in 1437 CE.",
+            "The victory was commemorated with the Vijay Stambha (Tower of Victory) at Chittorgarh Fort in 1440.",
+            "One of the earliest Rajput victories over the Sultanate of Malwa; established Mewar's power over the Chambal frontier.",
+            "The battle is chronicled in the Kumbhalgarh Prashasti (1460 CE)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "chittor-siege-1303",
+      "geometry": { "type": "Point", "coordinates": [74.646, 24.887] },
+      "properties": {
+        "name": "Siege of Chittor (1303, Rani Padmini's Jauhar)",
+        "type": "battle_site",
+        "category": "custom",
+        "district": "Chittorgarh",
+        "date": "26 August 1303",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan historical records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Alauddin Khilji's siege of Chittor Fort (1303) — one of Rajasthan's three great jauhars.",
+            "Rana Ratan Singh defended; Rani Padmini led the mass self-immolation of Rajput women rather than surrender.",
+            "First jauhar of Chittorgarh; the two others followed in 1535 (against Bahadur Shah) and 1568 (against Akbar).",
+            "The 14th-c. Padmavat epic by Malik Muhammad Jayasi (1540) shaped the popular memory of this siege.",
+            "The Padmini Palace within Chittorgarh Fort is the reputed site of the jauhar."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "merta-battle-1562",
+      "geometry": { "type": "Point", "coordinates": [74.036, 26.653] },
+      "properties": {
+        "name": "Merta (Battle of Merta, 1562)",
+        "type": "battle_site",
+        "category": "custom",
+        "district": "Nagaur (Merta City)",
+        "date": "20 March 1562",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan historical records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Akbar's forces (under Sharfuddin Hussain Mirza) captured Merta Fort on 20 March 1562.",
+            "Rathore commander Jaymal Rathore surrendered on terms; his relatives Devidas and Rangraj Rathore were killed defending the fort.",
+            "Jaymal later led Chittor's defence in 1568 — where he was killed by Akbar personally with a matchlock.",
+            "Merta was the birthplace of Mirabai (1498), the Krishna-bhakti poet-saint."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bhatner-siege-1398",
+      "geometry": { "type": "Point", "coordinates": [74.324, 29.582] },
+      "properties": {
+        "name": "Bhatner (Siege by Timur, 1398)",
+        "type": "battle_site",
+        "category": "custom",
+        "district": "Hanumangarh",
+        "date": "November 1398",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan historical records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Timur (Tamerlane) besieged Bhatner (modern Hanumangarh) in November 1398 en route to sacking Delhi.",
+            "The Bhati Rajput chief Dul Chand surrendered after 3 days; Timur nevertheless massacred the town's population.",
+            "The Bhatner Fort was rebuilt over the medieval ruins; renamed Hanumangarh in 1805 by Bhupendra Singh of Bikaner.",
+            "One of the few documented battles in Rajasthan chronicled by both Persian and Sanskrit sources — Timur's Tuzk-i-Timuri and the Bhati chronicles."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gagron-siege-1444",
+      "geometry": { "type": "Point", "coordinates": [76.163, 24.628] },
+      "properties": {
+        "name": "Gagron Fort (Sieges of 1444 & 1524)",
+        "type": "battle_site",
+        "category": "custom",
+        "district": "Jhalawar",
+        "date": "1444 CE & 1524 CE",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan historical records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Twin sieges of Gagron Fort — Rajasthan's only jal-durg (water fortress).",
+            "1444: Hoshang Shah of Malwa captured the fort; the Khichi Chauhan defender Achaldas led the first jauhar.",
+            "1524: Fort fell to Ibrahim Lodi's forces; Rani Prakashkumari led the second jauhar.",
+            "Both jauhar sites are marked within the fort, which is now a UNESCO Hill Fort of Rajasthan."
+          ]
+        }
+      }
+    }
+  ]
+}

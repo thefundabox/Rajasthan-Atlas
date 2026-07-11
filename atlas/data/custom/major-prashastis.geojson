@@ -1,0 +1,198 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "raj-prashasti",
+      "geometry": { "type": "Point", "coordinates": [73.877, 25.070] },
+      "properties": {
+        "name": "Raj Prashasti (Rajsamand Lake)",
+        "type": "prashasti",
+        "category": "custom",
+        "district": "Rajsamand",
+        "author": "Ranchhod Bhatt Tailanga",
+        "date": "1676 CE",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Epigraphia Indica",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "The world's largest Sanskrit inscription — 24 stone slabs at the Nauchowki embankment of Rajsamand Lake.",
+            "1017 verses composed by court-poet Ranchhod Bhatt Tailanga during Maharana Raj Singh I's reign.",
+            "Chronicles Mewar's history from Bappa Rawal (8th c.) to Raj Singh I; a foundational source for Rajput historiography.",
+            "Inscribed 1676 CE on locally-quarried Rajsamand marble; carved in Devanagari script.",
+            "One of only two Sanskrit prashastis to have been used as source material by James Tod."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kirti-stambha-inscription",
+      "geometry": { "type": "Point", "coordinates": [74.641, 24.882] },
+      "properties": {
+        "name": "Kirti Stambha Inscription (Chittorgarh)",
+        "type": "prashasti",
+        "category": "custom",
+        "district": "Chittorgarh",
+        "author": "Digambara Jain community",
+        "date": "12th c. CE",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Epigraphia Indica",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "22 m Digambara Jain tower — a 12th-c. counterpart to the later Vijay Stambha at Chittorgarh Fort.",
+            "Dedicated to the first Tirthankara Adinatha; commissioned by Bagherwal merchant Jija.",
+            "The inscription on the tower is one of the earliest Jain patronage records in central Rajasthan.",
+            "Built entirely of sculpted stone; the seven-storey tower has 54 exterior stairs to the top."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kumbhalgarh-prashasti",
+      "geometry": { "type": "Point", "coordinates": [73.584, 25.152] },
+      "properties": {
+        "name": "Kumbhalgarh Prashasti",
+        "type": "prashasti",
+        "category": "custom",
+        "district": "Rajsamand",
+        "author": "Kavi Atri + Mahesh Bhatt",
+        "date": "1460 CE",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Epigraphia Indica",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Also known as the 'Kirti Stambha Prashasti' or Ekling Mahatmya inscription.",
+            "Composed 1460 CE at Kumbhalgarh fort under Rana Kumbha (1433-1468); five stone slabs, ~200 verses.",
+            "Records the early Mewar Guhila lineage and Rana Kumbha's military victories.",
+            "One of India's earliest inscriptions to name a female architect (Kumbha's queen Kirtila Sadhavi)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bijolia-inscription",
+      "geometry": { "type": "Point", "coordinates": [75.132, 25.185] },
+      "properties": {
+        "name": "Bijolia Inscription",
+        "type": "prashasti",
+        "category": "custom",
+        "district": "Bhilwara",
+        "author": "Gunabhadra Suri (Jain scholar)",
+        "date": "1170 CE",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Epigraphia Indica",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "One of Rajasthan's most important 12th-c. inscriptions — inscribed at Parshvanath Jain temple, Bijolia.",
+            "Composed by Jain scholar Gunabhadra Suri under Chauhan king Someshwar (1169-1177 CE).",
+            "Chronicles the Chauhan lineage from Vasudev of Sambhar to Someshwar — a foundational Chauhan source.",
+            "First to name Ajmer (Ajayameru) as founded by Ajayaraja II, ~1113 CE."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "achaleshwar-prashasti",
+      "geometry": { "type": "Point", "coordinates": [72.723, 24.629] },
+      "properties": {
+        "name": "Achaleshwar Prashasti (Mount Abu)",
+        "type": "prashasti",
+        "category": "custom",
+        "district": "Sirohi",
+        "author": "Mahesh Bhatt (court poet of Rana Kumbha)",
+        "date": "1285 CE / 1440 CE (multi-layer)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Epigraphia Indica",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Inscribed at Achaleshwar Mahadev temple, Achalgarh — Mount Abu (Sirohi).",
+            "A multi-layer prashasti — earliest layer c. 1285 CE (Paramara period), extended under Rana Kumbha (1440 CE).",
+            "Chronicles the Paramara Abu lineage and later Mewar-Sisodia patronage of the shrine.",
+            "One of only three Sanskrit inscriptions in Rajasthan to record continuous ~600-year royal patronage of a single temple."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "chirwa-inscription",
+      "geometry": { "type": "Point", "coordinates": [73.635, 24.789] },
+      "properties": {
+        "name": "Chirwa Inscription",
+        "type": "prashasti",
+        "category": "custom",
+        "district": "Udaipur",
+        "author": "Mewar court",
+        "date": "1273 CE (Vikram Samvat 1330)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Epigraphia Indica",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "13th-c. Guhila-lineage inscription at Chirwa (Udaipur) — the earliest genealogical prashasti of the Mewar dynasty.",
+            "Records Guhila kings from Bappa Rawal (734 CE) to Samarasingh (1273 CE).",
+            "Along with the Ekling and Achaleshwar prashastis, foundation stone of Guhila chronology.",
+            "Discovered by Ojha in 1911; now displayed at the Rajasthan State Museum, Udaipur."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ranakpur-inscription",
+      "geometry": { "type": "Point", "coordinates": [73.474, 25.116] },
+      "properties": {
+        "name": "Ranakpur Temple Inscription",
+        "type": "prashasti",
+        "category": "custom",
+        "district": "Pali",
+        "author": "Dharna Shah (Jain merchant patron) + court",
+        "date": "1439 CE",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Epigraphia Indica",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Inscribed at Ranakpur Jain temple complex, built 1439 CE under Rana Kumbha's authority.",
+            "Records the commissioning of the temple by merchant Dharna Shah and architect Depaka.",
+            "Names the 1444 marble pillars — each uniquely carved — as the temple's centerpiece.",
+            "One of Rajasthan's most-cited Jain patronage records; foundational to the Chaturmukha temple form."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aparajit-prashasti",
+      "geometry": { "type": "Point", "coordinates": [74.646, 24.887] },
+      "properties": {
+        "name": "Aparajit Prashasti (Chittorgarh)",
+        "type": "prashasti",
+        "category": "custom",
+        "district": "Chittorgarh",
+        "author": "Aparajit (Mewar prince, self-inscribed)",
+        "date": "661 CE (Vikram Samvat 718)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Epigraphia Indica",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "The earliest dated inscription of a Mewar Guhila king — inscribed 661 CE at Nagari (near Chittorgarh).",
+            "Records Aparajit, a Guhila predecessor of Bappa Rawal (734 CE).",
+            "Along with the Chirwa inscription, extends Mewar's historical timeline to the 7th c.",
+            "Discovered 1913 by G. H. Ojha at Nagari (ancient Madhyamika)."
+          ]
+        }
+      }
+    }
+  ]
+}

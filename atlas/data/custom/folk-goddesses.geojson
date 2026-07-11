@@ -1,0 +1,166 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "jeen-mata-rewasa",
+      "geometry": { "type": "Point", "coordinates": [75.343, 27.418] },
+      "properties": {
+        "name": "Jeen Mata Temple, Rewasa",
+        "type": "folk_goddess",
+        "category": "custom",
+        "district": "Sikar (Rewasa)",
+        "deity": "Jeen Mata (Chauhan tutelary goddess)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan folk records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Jeen Mata — daughter of Chauhan king Ghangh, worshipped as an incarnation of Durga.",
+            "The temple at Rewasa (Sikar) dates to the 8th c.; Aurangzeb reportedly halted his temple-destruction campaign after being visited in a dream by the goddess.",
+            "Twin fairs at Chaitra and Ashwin Navratri draw ~500,000 pilgrims each — Jeen Mata is the kul devi of the Chauhan clans.",
+            "The Sam Gau Mata Mandir at Rewasa is India's fourth Gau Mata Temple."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "shila-mata-amber",
+      "geometry": { "type": "Point", "coordinates": [75.852, 26.985] },
+      "properties": {
+        "name": "Shila Mata Temple, Amber Fort",
+        "type": "folk_goddess",
+        "category": "custom",
+        "district": "Jaipur (Amber)",
+        "deity": "Shila Mata (Kul Devi of Kachhawaha Rajputs)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan folk records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Shila Mata (also Shila Devi) — the tutelary Kul Devi of the Kachhawaha Jaipur royal house.",
+            "The idol was brought from Jessore (in modern-day Bangladesh) by Raja Man Singh I after his campaign in Bengal (1604).",
+            "Housed in the Ganesh Pol courtyard of Amber Fort; the shrine's animal sacrifice was banned in 1975.",
+            "One of the few Rajasthan temples where a non-Rajasthani stone idol (Bengali black basalt) is worshipped as a Kul Devi."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sacchiyay-mata-osian",
+      "geometry": { "type": "Point", "coordinates": [72.907, 26.717] },
+      "properties": {
+        "name": "Sacchiyay Mata Temple, Osian",
+        "type": "folk_goddess",
+        "category": "custom",
+        "district": "Jodhpur (Osian)",
+        "deity": "Sacchiyay Mata (Kul Devi of Oswal Jains)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan folk records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Sacchiyay Mata — the Kul Devi of the Oswal Jain merchant community (Rajasthan's largest Jain sub-caste).",
+            "Osian temple (built 8-9th c. under Pratiharas) is the pilgrimage centre — Rajasthan's oldest surviving Jain sanctuary.",
+            "The Osian Jain temple cluster (12+ temples) is India's most-complete surviving early-medieval Pratihara Jain-Hindu architecture.",
+            "The town of Osian is called 'Khajuraho of Rajasthan' for its concentration of 8-9th-c. sculpture."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rani-sati-jhunjhunu",
+      "geometry": { "type": "Point", "coordinates": [75.396, 28.135] },
+      "properties": {
+        "name": "Rani Sati Temple, Jhunjhunu",
+        "type": "folk_goddess",
+        "category": "custom",
+        "district": "Jhunjhunu",
+        "deity": "Rani Sati (Marwari community goddess)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan folk records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Rani Sati of Dadhich family — worshipped by the Marwari-Agrawal-Maheshwari trading communities.",
+            "The Jhunjhunu temple (rebuilt 1980s) is the world's largest Sati Mata temple.",
+            "Attracts 3+ million pilgrims annually from Marwari diaspora across India and abroad.",
+            "The Rani Sati fair (Bhadrapada Amavasya) is one of Rajasthan's largest merchant-community pilgrimages."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sundha-mata-jalore",
+      "geometry": { "type": "Point", "coordinates": [72.475, 24.986] },
+      "properties": {
+        "name": "Sundha Mata Temple, Jalore",
+        "type": "folk_goddess",
+        "category": "custom",
+        "district": "Jalore (Jaswantpura)",
+        "deity": "Sundha Mata (Chauhan-Devra family goddess)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan folk records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Sundha Mata — worshipped as an aspect of Chamunda; tutelary goddess of the Chauhan-Devra branch.",
+            "Temple sits at 1220 m on Sundha Hill, western Aravalli — Rajasthan's first commercial ropeway to a hill shrine (2006).",
+            "The Sundha Hill inscription (1262 CE) records the Chauhan-Devra pledge of protection for the shrine.",
+            "The Chandan Mata annexe holds one of Rajasthan's oldest surviving Chandan wood carvings."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "chamunda-mata-mehrangarh",
+      "geometry": { "type": "Point", "coordinates": [73.020, 26.298] },
+      "properties": {
+        "name": "Chamunda Mata Temple, Mehrangarh",
+        "type": "folk_goddess",
+        "category": "custom",
+        "district": "Jodhpur",
+        "deity": "Chamunda Mata (Rathore Kul Devi)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan folk records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Chamunda Mata — tutelary Kul Devi of the Jodhpur Rathore dynasty.",
+            "Idol was brought to Jodhpur by Rao Jodha from Mandore in 1459 when Mehrangarh was founded.",
+            "The 2008 stampede here — during Navratri — killed 249 devotees, one of India's worst temple stampedes.",
+            "The shrine sits at the highest point of Mehrangarh Fort; visible from all across Jodhpur city."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aadhar-devi-mount-abu",
+      "geometry": { "type": "Point", "coordinates": [72.716, 24.616] },
+      "properties": {
+        "name": "Aadhar Devi Temple, Mount Abu",
+        "type": "folk_goddess",
+        "category": "custom",
+        "district": "Sirohi (Mount Abu)",
+        "deity": "Aadhar Devi / Arbuda Devi",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan folk records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Aadhar Devi (Arbuda Devi) — the goddess of Mount Abu; her name gave the mountain its ancient title 'Arbuda-giri'.",
+            "The idol is enshrined in a natural cave — reached via 365 stone steps.",
+            "One of Rajasthan's earliest continuously-worshipped Shakti Peethas — mentioned in the Skanda Purana.",
+            "During Navratri, the shrine draws pilgrims from the Bhil, Garasia and Rabari communities of the Aravalli."
+          ]
+        }
+      }
+    }
+  ]
+}

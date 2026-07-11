@@ -547,10 +547,10 @@ export class UIManager {
     this.atlas.theme.cycle();
   }
   _themeButtonLabel() {
-    const ids = this.atlas.theme.list();
+    // Show the CURRENT theme so the button reads as a state indicator.
+    // Cycling is documented in the button's title tooltip.
     const active = this.atlas.theme.active();
-    const next = ids[(ids.indexOf(active) + 1) % ids.length];
-    return this.atlas.theme.meta(next)?.name ?? 'Theme';
+    return this.atlas.theme.meta(active)?.name ?? 'Theme';
   }
 
   /* ------------------------------------------------------------------ */

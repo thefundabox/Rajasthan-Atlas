@@ -1,0 +1,189 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "patwon-ki-haveli",
+      "geometry": { "type": "Point", "coordinates": [70.9163, 26.9147] },
+      "properties": {
+        "name": "Patwon ki Haveli, Jaisalmer",
+        "type": "haveli",
+        "category": "custom",
+        "district": "Jaisalmer",
+        "founded": "1805-1820 (Guman Chand Patwa)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "The largest haveli complex in Jaisalmer — five interlinked sandstone mansions built 1805-1820 by Guman Chand Patwa and his five sons.",
+            "Considered India's finest merchant-architecture: jharokhas, jalis and stone-frescoes carved from single yellow-sandstone blocks.",
+            "The Patwas were traders in brocade, opium and gold; owned 300+ business houses across Central Asia.",
+            "First haveli in Rajasthan to be scientifically restored (1976 onwards) by the Archaeological Survey of India."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nathmalji-ki-haveli",
+      "geometry": { "type": "Point", "coordinates": [70.9161, 26.9124] },
+      "properties": {
+        "name": "Nathmalji ki Haveli, Jaisalmer",
+        "type": "haveli",
+        "category": "custom",
+        "district": "Jaisalmer",
+        "founded": "1885 (Diwan Nathmal Bhatia)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Built 1885 by Diwan Nathmal Bhatia, prime minister of Jaisalmer, using two brothers who each carved one half — hence its asymmetrical facade.",
+            "The famed elephant-guarded entrance and jali-work are among Rajasthan's finest sandstone carvings.",
+            "The eastern and western facades differ in details (spot 'stone motorcycles' on one side, 'stone tractors' on the other).",
+            "Nathmal's family continues to reside in parts of the haveli."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "salim-singh-haveli",
+      "geometry": { "type": "Point", "coordinates": [70.9174, 26.9110] },
+      "properties": {
+        "name": "Salim Singh ki Haveli, Jaisalmer",
+        "type": "haveli",
+        "category": "custom",
+        "district": "Jaisalmer",
+        "founded": "1815 (Salim Singh Mohta)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Built 1815 by Salim Singh Mohta — the prime minister who ran Jaisalmer during the child ruler Mulraj II's minority.",
+            "Distinctive peacock-shaped roof and 38 balconies — its 'Jahaznuma' shape resembles a Rajputana ship.",
+            "The haveli's upper storeys were reportedly demolished on royal orders because they rose higher than the Jaisalmer Fort.",
+            "Salim Singh's tyranny inspired Rudyard Kipling's fictional Diwan character in 'The Palace of the Dead'."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bagore-ki-haveli",
+      "geometry": { "type": "Point", "coordinates": [73.6820, 24.5824] },
+      "properties": {
+        "name": "Bagore ki Haveli, Udaipur",
+        "type": "haveli",
+        "category": "custom",
+        "district": "Udaipur",
+        "founded": "1751 (Amar Chand Badwa)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Built 1751 on the Gangaur Ghat of Lake Pichola by Amar Chand Badwa, chief minister of Mewar.",
+            "Later home to the Mewar princely family's Bagore branch — hence the name.",
+            "Holds the world's largest turban ('pagdi') — 850 m long, in its museum's collection.",
+            "Hosts the daily 'Dharohar' folk dance show — Udaipur's flagship cultural evening for tourists."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mandawa-haveli-cluster",
+      "geometry": { "type": "Point", "coordinates": [75.153, 28.058] },
+      "properties": {
+        "name": "Mandawa Haveli Cluster (Shekhawati)",
+        "type": "haveli",
+        "category": "custom",
+        "district": "Jhunjhunu (Mandawa)",
+        "founded": "1830-1900 (Marwari merchant families)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Concentration of ~50 painted-fresco havelis — Mandawa is often called Shekhawati's 'open-air fresco gallery capital'.",
+            "The Chowkhani, Ladia, Goenka and Saraf havelis are the most-visited.",
+            "Frescoes cover secular themes: European steamships, moustachioed British officers, cars, Krishna leela — the 19th-c. Marwari worldview.",
+            "Mandawa Fort (now a heritage hotel) sits at the cluster's centre; 'the Mandawa look' inspired the movie 'PK' (2014)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nawalgarh-haveli-cluster",
+      "geometry": { "type": "Point", "coordinates": [75.271, 27.848] },
+      "properties": {
+        "name": "Nawalgarh Haveli Cluster (Shekhawati)",
+        "type": "haveli",
+        "category": "custom",
+        "district": "Jhunjhunu (Nawalgarh)",
+        "founded": "1840-1900 (Marwari merchant families)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Rajasthan's largest single Shekhawati haveli cluster — over 200 painted mansions in Nawalgarh town.",
+            "Anandilal Poddar Haveli (Anandilal Poddar Museum) is India's largest single haveli-museum.",
+            "The Aath Haveli complex — 'Eight Havelis' built by the Sanganeria and Poddar families — is a single-street ensemble.",
+            "Nawalgarh was founded 1737 by Thakur Nawal Singh; the town birthed the Poddar, Ruia, Bajaj and Piramal industrial dynasties."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fatehpur-haveli-cluster",
+      "geometry": { "type": "Point", "coordinates": [74.958, 27.996] },
+      "properties": {
+        "name": "Fatehpur Shekhawati Haveli Cluster",
+        "type": "haveli",
+        "category": "custom",
+        "district": "Sikar (Fatehpur)",
+        "founded": "1850-1920 (Marwari merchant families)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Fatehpur — founded 1451 by a Nawab of the Kayamkhani clan — became a major merchant town in the 19th c.",
+            "Nadine Le Prince Haveli (restored 1998-2001 by the French artist Nadine Le Prince) is the town's most-visited.",
+            "Fatehpur was Rajasthan's first Krishi Vigyan Kendra (1976).",
+            "The Devra Haveli holds Rajasthan's most-extensive Ramayana fresco cycle."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dundlod-haveli",
+      "geometry": { "type": "Point", "coordinates": [75.320, 27.958] },
+      "properties": {
+        "name": "Dundlod Fort-Haveli, Shekhawati",
+        "type": "haveli",
+        "category": "custom",
+        "district": "Jhunjhunu (Dundlod)",
+        "founded": "1750 (Kesari Singh Shekhawat)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Fort-haveli built 1750 by Kesari Singh Shekhawat — anchors the smallest of the four historic Shekhawati thikanas.",
+            "The Goenka double haveli and Satyanarayan Ki Chhatri are Dundlod's most-visited monuments.",
+            "Dundlod is home to India's only 'donkey sanctuary' — a rehabilitation centre in the fort grounds.",
+            "The fort's Diwan-e-Khas houses a rare surviving 18th-c. Louis XIV-style furniture collection."
+          ]
+        }
+      }
+    }
+  ]
+}

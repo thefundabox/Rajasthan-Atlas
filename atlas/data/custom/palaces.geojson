@@ -1,0 +1,282 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "city-palace-udaipur",
+      "geometry": { "type": "Point", "coordinates": [73.6836, 24.5764] },
+      "properties": {
+        "name": "City Palace, Udaipur",
+        "type": "palace",
+        "category": "custom",
+        "district": "Udaipur",
+        "founded": "1559 (Udai Singh II); expanded till 1930",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "The largest palace complex in Rajasthan and one of India's biggest — 400 years of continuous construction (1559-1930).",
+            "Built by 22 successive Maharanas of Mewar; blends Rajput, Mughal, Medieval, European and Chinese styles.",
+            "Overlooks Lake Pichola; the Manek Chowk main courtyard hosts Rajasthan's biggest Holi festival.",
+            "Now part-museum, part-residence of the erstwhile Mewar family; open sections attract 1.5+ million visitors annually."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "city-palace-jaipur",
+      "geometry": { "type": "Point", "coordinates": [75.8236, 26.9258] },
+      "properties": {
+        "name": "City Palace, Jaipur",
+        "type": "palace",
+        "category": "custom",
+        "district": "Jaipur",
+        "founded": "1729-1732 (Sawai Jai Singh II)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Centrepiece of Jaipur's UNESCO-listed walled city — planned 1729-1732 by Vidyadhar Bhattacharya for Sawai Jai Singh II.",
+            "Chandra Mahal — the seven-storey main palace — is still the private residence of the Jaipur royal family.",
+            "Houses two of the world's largest single-piece silver vessels ('Gangajali', 1902) — Guinness-record holders.",
+            "The Mubarak Mahal, Diwan-i-Aam, Diwan-i-Khas and Peacock Courtyard are open as museum galleries."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "umaid-bhawan",
+      "geometry": { "type": "Point", "coordinates": [73.0472, 26.2739] },
+      "properties": {
+        "name": "Umaid Bhawan Palace, Jodhpur",
+        "type": "palace",
+        "category": "custom",
+        "district": "Jodhpur",
+        "founded": "1929-1943 (Maharaja Umaid Singh)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "World's largest privately-inhabited residential palace by area (26 acres, 347 rooms).",
+            "Built 1929-1943 by Maharaja Umaid Singh as a famine-relief project during the 1920s drought.",
+            "Occupies 3 wings — royal residence, luxury heritage hotel (Taj), and museum.",
+            "Designed by H. V. Lanchester in the Indo-Deco style; used Chittar sandstone (hence its other name 'Chittar Mahal').",
+            "The Renaissance-inspired dome is 33 m tall — Rajasthan's tallest palace dome."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lake-palace-jag-niwas",
+      "geometry": { "type": "Point", "coordinates": [73.680, 24.575] },
+      "properties": {
+        "name": "Taj Lake Palace (Jag Niwas)",
+        "type": "palace",
+        "category": "custom",
+        "district": "Udaipur",
+        "founded": "1746 (Maharana Jagat Singh II)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Marble palace floating on the eastern island of Lake Pichola — built 1746 by Maharana Jagat Singh II.",
+            "Occupies the entire 4-acre island; converted to a heritage hotel by Bhagwat Singh (1963).",
+            "Featured in the James Bond film 'Octopussy' (1983) and countless heritage-tourism advertisements.",
+            "One of only two 'island palaces' in India (the other is Jag Mandir, also on Lake Pichola)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jag-mandir",
+      "geometry": { "type": "Point", "coordinates": [73.678, 24.568] },
+      "properties": {
+        "name": "Jag Mandir Palace",
+        "type": "palace",
+        "category": "custom",
+        "district": "Udaipur",
+        "founded": "1620 (Maharana Karan Singh II)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Older island palace on Lake Pichola — built 1620, expanded 1652 by Maharana Jagat Singh I.",
+            "Sheltered Prince Khurram (later Shah Jahan) during his 1623 rebellion against Jahangir — the Mewar-Mughal reconciliation gift.",
+            "Shah Jahan's memories of Jag Mandir are said to have inspired the Taj Mahal's marble architecture.",
+            "Now an events venue — hosts weddings, film shoots, and the Udaipur Music Festival."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rambagh-palace",
+      "geometry": { "type": "Point", "coordinates": [75.8104, 26.9005] },
+      "properties": {
+        "name": "Rambagh Palace, Jaipur",
+        "type": "palace",
+        "category": "custom",
+        "district": "Jaipur",
+        "founded": "1835 (Maharaja Ram Singh II)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Built 1835 as a garden house for Maharani Kesar Kunwarji Ba; expanded 1925 by Sawai Man Singh II.",
+            "Home of Maharaja Sawai Man Singh II and Maharani Gayatri Devi until 1957.",
+            "India's first palace-turned-hotel — leased to the Taj Group in 1972.",
+            "Set on 47 acres of Mughal-style gardens with peacocks; one of Asia's most decorated heritage hotels."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lallgarh-palace",
+      "geometry": { "type": "Point", "coordinates": [73.3319, 28.0224] },
+      "properties": {
+        "name": "Lallgarh Palace, Bikaner",
+        "type": "palace",
+        "category": "custom",
+        "district": "Bikaner",
+        "founded": "1902-1926 (Maharaja Ganga Singh)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Built 1902-1926 by Maharaja Ganga Singh in honour of his father Maharaja Lal Singh.",
+            "Designed by Sir Samuel Swinton Jacob in Indo-Saracenic style; used Bikaneri red sandstone.",
+            "Houses one of India's largest Sanskrit libraries — Sadul Museum with 21,000+ manuscripts.",
+            "Ganga Singh signed India's independence declaration on 15 August 1947 from this palace as its chairman of Rajputana."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sajjangarh-monsoon-palace",
+      "geometry": { "type": "Point", "coordinates": [73.6461, 24.6067] },
+      "properties": {
+        "name": "Sajjangarh (Monsoon Palace), Udaipur",
+        "type": "palace",
+        "category": "custom",
+        "district": "Udaipur",
+        "founded": "1884 (Maharana Sajjan Singh)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Perched atop the Bansdara hill (944 m) — designed to observe monsoon clouds forming over Udaipur.",
+            "Built 1884 by Maharana Sajjan Singh; intended as a nine-storey astronomy observatory but never completed.",
+            "The palace grounds are now the Sajjangarh Wildlife Sanctuary — Rajasthan's smallest at 5.19 sq km.",
+            "Featured in the James Bond film 'Octopussy' (1983) as Kamal Khan's palace."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "neemrana-fort-palace",
+      "geometry": { "type": "Point", "coordinates": [76.386, 27.973] },
+      "properties": {
+        "name": "Neemrana Fort-Palace",
+        "type": "palace",
+        "category": "custom",
+        "district": "Kotputli-Behror",
+        "founded": "1464 (Raja Rajdeo Singh Chauhan)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Built 1464 by Raja Rajdeo Singh Chauhan — one of Rajasthan's oldest continuously-inhabited palaces.",
+            "Sits on the Aravalli's north-eastern tail; commands the historic Delhi-Jaipur route.",
+            "Restored 1986-2000 by architects Aman Nath and Francis Wacziarg — origin of the 'Neemrana' hospitality chain (now 30+ heritage hotels).",
+            "One of Rajasthan's first heritage-hotel projects; the palace has 10 tier terraces built into the hillside."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "samode-palace",
+      "geometry": { "type": "Point", "coordinates": [75.638, 27.033] },
+      "properties": {
+        "name": "Samode Palace",
+        "type": "palace",
+        "category": "custom",
+        "district": "Jaipur",
+        "founded": "16th c. (extended 18th-19th c.)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "16th-c. Samode fort built by the Nathawat Rajputs; expanded in the 18th-19th c. into a palace.",
+            "Renowned Durbar Hall and Sheesh Mahal (mirror-work) rival Amber Fort's Jai Mandir.",
+            "One of the top heritage hotels in Rajasthan; featured in 'Far Pavilions' TV series (1984).",
+            "Now the private residence of the Samode branch of the Kachhawaha Rajputs."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "deeg-palace",
+      "geometry": { "type": "Point", "coordinates": [77.3282, 27.4700] },
+      "properties": {
+        "name": "Deeg Palace (Water Palace)",
+        "type": "palace",
+        "category": "custom",
+        "district": "Deeg",
+        "founded": "1730s (Maharaja Suraj Mal)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Rajasthan's finest garden-palace, built 1730s by Maharaja Suraj Mal of Bharatpur.",
+            "Char Bagh (Mughal quadripartite garden) design with 900+ fountains — activated once a year at the Jal Mahotsav.",
+            "Gopal Bhawan, the main palace, sits between two reservoirs — Gopal Sagar and Rup Sagar.",
+            "The palace's marble was looted from Agra by Jat forces after the 1761 Battle of Panipat."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bissau-palace",
+      "geometry": { "type": "Point", "coordinates": [75.699, 28.140] },
+      "properties": {
+        "name": "Khetri Palace",
+        "type": "palace",
+        "category": "custom",
+        "district": "Jhunjhunu (Khetri)",
+        "founded": "1770 (Raja Bhagat Singh)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + heritage records",
+        "lastUpdated": "2026-07-11",
+        "notes": {
+          "facts": [
+            "Built 1770 by Raja Bhagat Singh of Khetri (Jhunjhunu); anchor of the Khetri Copper belt.",
+            "Swami Vivekananda stayed here as a guest of Raja Ajit Singh in 1893 before his voyage to the Chicago World's Parliament of Religions.",
+            "The name 'Vivekananda' was suggested to the swami by Ajit Singh at this palace.",
+            "The Khetri Fort library above the palace holds one of India's oldest continuously-maintained horoscopes archive."
+          ]
+        }
+      }
+    }
+  ]
+}

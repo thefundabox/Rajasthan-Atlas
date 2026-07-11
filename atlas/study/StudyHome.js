@@ -55,6 +55,18 @@ const TOPICS = [
   { id: 'urban', icon: '🏙', name: 'Urban',
     blurb: 'Urban centres · Municipal corps · Smart Cities · Population corridors',
     preset: 'urban', layerCount: 4 },
+  { id: 'history-heritage', icon: '🏰', name: 'History & Heritage',
+    blurb: 'Forts · Ancient civilizations · Battle sites · Prashastis · Integration · 1857 revolt',
+    layers: 'heritage-forts,ancient-civilizations,battle-sites,major-prashastis,rajasthan-integration,revolt-sites-1857',
+    layerCount: 6 },
+  { id: 'culture-faith', icon: '🛕', name: 'Culture & Faith',
+    blurb: 'Palaces · Havelis · Major fairs · Folk deities · Folk goddesses',
+    layers: 'palaces,havelis,major-fairs,folk-deity-shrines,folk-goddesses',
+    layerCount: 5 },
+  { id: 'research-institutions', icon: '🔬', name: 'Research & Institutions',
+    blurb: 'CAZRI · AFRI · CSWRI · IIT · IIM · NLU · KVK · Camel research · SEVAR',
+    layers: 'research-centers',
+    layerCount: 1 },
 ];
 
 // ── Curated concept chains ────────────────────────────────────────
@@ -214,7 +226,11 @@ function renderTopics() {
   for (const t of TOPICS) {
     const card = document.createElement('a');
     card.className = 'topic-card';
-    card.href = `map.html?preset=${encodeURIComponent(t.preset)}`;
+    // Support both preset-mode tiles and layer-list tiles (the new
+    // history/culture/research topics don't map to a preset mode).
+    card.href = t.preset
+      ? `map.html?preset=${encodeURIComponent(t.preset)}`
+      : `map.html?layers=${encodeURIComponent(t.layers)}`;
     card.innerHTML = `
       <span class="topic-icon">${t.icon}</span>
       <div class="topic-body">
