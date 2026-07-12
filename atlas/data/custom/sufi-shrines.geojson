@@ -1,0 +1,150 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "sufi-ajmer-sharif",
+      "geometry": { "type": "Point", "coordinates": [74.6284, 26.4548] },
+      "properties": {
+        "name": "Ajmer Sharif — Moinuddin Chishti Dargah",
+        "type": "sufi_shrine",
+        "category": "custom",
+        "district": "Ajmer",
+        "sect": "Chishti",
+        "founded": "1236 (Khwaja Moinuddin Chishti's death)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Dargah Committee records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕌",
+        "notes": {
+          "facts": [
+            "India's most important Sufi shrine — resting place of Khwaja Moinuddin Chishti (1141-1236), founder of the Chishti order in South Asia.",
+            "The annual Urs (death anniversary) draws ~500,000 pilgrims across religions — Rajasthan's largest religious congregation after Pushkar.",
+            "Every Mughal emperor from Akbar to Aurangzeb paid respects here; Akbar walked barefoot from Agra multiple times.",
+            "The dargah's iconic marble dome was built by Humayun; the twin degs (giant cauldrons) cook the tabarruk (blessed food) served to pilgrims."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sufi-nagaur",
+      "geometry": { "type": "Point", "coordinates": [73.7400, 27.1980] },
+      "properties": {
+        "name": "Nagaur — Hameeduddin Chishti Dargah",
+        "type": "sufi_shrine",
+        "category": "custom",
+        "district": "Nagaur",
+        "sect": "Chishti",
+        "founded": "1274 (Khwaja Hameeduddin Chishti's death)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Nagaur Dargah records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕌",
+        "notes": {
+          "facts": [
+            "Dargah of Hameeduddin Chishti (a.k.a. Sultan-ut-Tarkeen) — the first Indian-born khalifa of Moinuddin Chishti, deputed to Nagaur.",
+            "One of the earliest Chishti shrines in India (13th c.); the annual Urs is the largest Sufi gathering in the Marwar belt.",
+            "Sits below the Ahhichatragarh (Nagaur Fort) — the dargah–fort complex is a UNESCO Asia-Pacific Heritage Award site."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sufi-galiakot",
+      "geometry": { "type": "Point", "coordinates": [74.0430, 23.5490] },
+      "properties": {
+        "name": "Galiakot — Fakhruddin Shaheed Dargah",
+        "type": "sufi_shrine",
+        "category": "custom",
+        "district": "Dungarpur",
+        "sect": "Dawoodi Bohra",
+        "founded": "12th c. (Syedi Fakhruddin's martyrdom)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Dawoodi Bohra records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕌",
+        "notes": {
+          "facts": [
+            "The most sacred pilgrimage site for the Dawoodi Bohra community outside Yemen — resting place of Syedi Fakhruddin Shaheed.",
+            "Bohras from across the world visit for the annual Urs; the dargah is maintained by the Dawoodi Bohra da'i-al-mutlaq.",
+            "One of only two significant Sufi shrines in the Vagad tribal belt — its patronage brought early Islamic architecture to Dungarpur."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sufi-narhar-sharif",
+      "geometry": { "type": "Point", "coordinates": [75.6150, 28.1110] },
+      "properties": {
+        "name": "Narhar Sharif — Haji Baba Sarkar Dargah",
+        "type": "sufi_shrine",
+        "category": "custom",
+        "district": "Jhunjhunu",
+        "sect": "Qadiri",
+        "founded": "14th c.",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + local records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕌",
+        "notes": {
+          "facts": [
+            "Dargah of Sheikh Hameeduddin Nagori (called 'Haji Baba Sarkar'); a major Qadiri Sufi centre of the Shekhawati belt.",
+            "The annual Urs draws Sikh and Hindu pilgrims as well as Muslims — a syncretic 'ganga-jamuni' tradition.",
+            "The distinctive white-and-green dargah complex was expanded by the Shekhawati Nawabs in the 18th c."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sufi-sarwad-sharif",
+      "geometry": { "type": "Point", "coordinates": [75.0170, 26.0700] },
+      "properties": {
+        "name": "Sarwad Sharif — Hameed Shah Chishti Dargah",
+        "type": "sufi_shrine",
+        "category": "custom",
+        "district": "Ajmer",
+        "sect": "Chishti",
+        "founded": "14th c.",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + local records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕌",
+        "notes": {
+          "facts": [
+            "Dargah of Hameed Shah Chishti — a khalifa in the Ajmer Sharif lineage; the second-most-visited Chishti shrine in the Ajmer belt.",
+            "Located ~80 km southeast of Ajmer; the annual Urs is timed to fall a week after Ajmer Sharif's Urs.",
+            "The distinctive octagonal dome is a classical example of 14th c. Rajputana-Islamic fusion architecture."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sufi-jhajhar-mama-bhanja",
+      "geometry": { "type": "Point", "coordinates": [76.6300, 27.5800] },
+      "properties": {
+        "name": "Alwar — Fateh Jung Gumbad + Sufi Complex",
+        "type": "sufi_shrine",
+        "category": "custom",
+        "district": "Alwar",
+        "sect": "Suhrawardi / Chishti",
+        "founded": "1647 (Fateh Jung's tomb)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ASI records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕌",
+        "notes": {
+          "facts": [
+            "Fateh Jung Gumbad — mausoleum of Fateh Jung, a minister in Shah Jahan's court; five-storey octagonal tomb with a Mughal-Rajput fusion.",
+            "The adjoining Sufi complex was a major Suhrawardi centre in the Matsya region during the 17-18th c.",
+            "Now part of Alwar's protected heritage precinct alongside the Bala Qila and Company Bagh."
+          ]
+        }
+      }
+    }
+  ]
+}

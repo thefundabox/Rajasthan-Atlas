@@ -1,0 +1,143 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "tribe-bhil",
+      "geometry": { "type": "Point", "coordinates": [74.20, 23.80] },
+      "properties": {
+        "name": "Bhil",
+        "type": "tribal_group",
+        "category": "custom",
+        "district": "Banswara, Dungarpur, Udaipur, Chittor, Pratapgarh",
+        "population": "~4.6 million (Rajasthan, 2011)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (Scheduled Tribes)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏹",
+        "notes": {
+          "facts": [
+            "Rajasthan's largest tribe — 39% of the state's ST population; heartland in the southern Aravalli-Vagad belt.",
+            "Bhils were pivotal in Maharana Pratap's Haldighati campaign — his ally Rana Punja of the Bhils commanded 5,000 archers.",
+            "Speaks Wagdi/Bhili; practises Ghoomar (adopted by Rajputs later), Gair dance, and the annual Baneshwar Fair on Shivaratri."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tribe-meena",
+      "geometry": { "type": "Point", "coordinates": [76.35, 26.02] },
+      "properties": {
+        "name": "Meena (Mina)",
+        "type": "tribal_group",
+        "category": "custom",
+        "district": "Sawai Madhopur, Karauli, Dausa, Jaipur, Alwar",
+        "population": "~4.4 million (Rajasthan, 2011)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (Scheduled Tribes)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏹",
+        "notes": {
+          "facts": [
+            "Rajasthan's second-largest tribe — heartland in the eastern belt (Dhundhar, Matsya) and the Amber pre-Kachhawaha era.",
+            "The original rulers of Amber (Amer) — displaced by the Kachhawaha Dulha Rai in the 11th c. after a marriage-alliance takeover.",
+            "The Panna Meena stepwell (below Amber Fort) commemorates their community; the Meenas were the potters of Amber city."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tribe-garasia",
+      "geometry": { "type": "Point", "coordinates": [72.85, 24.65] },
+      "properties": {
+        "name": "Garasia",
+        "type": "tribal_group",
+        "category": "custom",
+        "district": "Sirohi, Udaipur (Aravalli foothills)",
+        "population": "~110,000 (Rajasthan, 2011)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (Scheduled Tribes)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏹",
+        "notes": {
+          "facts": [
+            "Rajputana-origin tribe of the Sirohi-Aravalli hills — legend has them as Rajputs displaced from Mewar who took to the forests.",
+            "Distinctive matrilineal customs: 'Dapa' marriage where the groom pays bride-price to the bride's family.",
+            "Two sub-groups — 'Bhil-Garasia' (more Bhil-influenced) and 'Dungri-Garasia' (more Rajputana-influenced)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tribe-sahariya",
+      "geometry": { "type": "Point", "coordinates": [76.63, 24.90] },
+      "properties": {
+        "name": "Sahariya",
+        "type": "tribal_group",
+        "category": "custom",
+        "district": "Baran (Shahbad, Kishanganj blocks)",
+        "population": "~110,000 (Rajasthan, 2011)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (Scheduled Tribes)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏹",
+        "notes": {
+          "facts": [
+            "Rajasthan's only PVTG (Particularly Vulnerable Tribal Group) — concentrated in Baran district's Shahbad and Kishanganj blocks.",
+            "Traditionally forest-dwellers dependent on minor forest produce (Mahua, Chironji, Tendu); still Rajasthan's poorest tribe by literacy and income.",
+            "The Sahariya PVTG development plan is a flagship of Rajasthan's Tribal Sub-Plan; the Sahariya Mission was launched 2018."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tribe-damor",
+      "geometry": { "type": "Point", "coordinates": [73.72, 23.85] },
+      "properties": {
+        "name": "Damor",
+        "type": "tribal_group",
+        "category": "custom",
+        "district": "Dungarpur, Banswara",
+        "population": "~55,000 (Rajasthan, 2011)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (Scheduled Tribes)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏹",
+        "notes": {
+          "facts": [
+            "Smaller tribe of the Vagad region; closely related to Bhils but with a distinct clan structure.",
+            "Home tract in the Mahi-Bajaj-Sagar catchment; traditional occupation is settled maize cultivation on Vagad hill slopes.",
+            "Speaks Wagdi (a Bhili dialect); shares cultural festivals with the Bhils but retains distinct wedding customs."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tribe-kathodi",
+      "geometry": { "type": "Point", "coordinates": [72.72, 24.60] },
+      "properties": {
+        "name": "Kathodi (Kathkari)",
+        "type": "tribal_group",
+        "category": "custom",
+        "district": "Sirohi (Mount Abu tract)",
+        "population": "~6,000 (Rajasthan, 2011)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (Scheduled Tribes)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏹",
+        "notes": {
+          "facts": [
+            "Rajasthan's smallest tribe by population — a Maharashtra-origin group historically employed in extracting 'kaath' (catechu) from khair trees around Mount Abu.",
+            "Migrated to Sirohi's Aravalli from the Western Ghats during Maratha ascendancy in the 18th c.",
+            "Extraordinary marginalisation — 40%+ still practise itinerant forest labour; recognised on the PVTG watchlist."
+          ]
+        }
+      }
+    }
+  ]
+}

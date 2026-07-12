@@ -1,0 +1,149 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "airport-jaipur",
+      "geometry": { "type": "Point", "coordinates": [75.8121, 26.8242] },
+      "properties": {
+        "name": "Jaipur International Airport (Sanganer)",
+        "type": "airport",
+        "category": "custom",
+        "district": "Jaipur",
+        "iata": "JAI",
+        "class": "International",
+        "state": "Rajasthan",
+        "source": "AAI + DGCA public records",
+        "lastUpdated": "2026-07-12",
+        "icon": "✈",
+        "notes": {
+          "facts": [
+            "Rajasthan's busiest airport and only international gateway with year-round overseas flights (Dubai, Sharjah, Muscat, Bangkok, Singapore).",
+            "Located at Sanganer, 13 km south of Jaipur city; handles ~5 million passengers annually.",
+            "Terminal 2 (opened 2013) is Rajasthan's largest airport terminal."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "airport-jodhpur",
+      "geometry": { "type": "Point", "coordinates": [73.0489, 26.2513] },
+      "properties": {
+        "name": "Jodhpur Airport",
+        "type": "airport",
+        "category": "custom",
+        "district": "Jodhpur",
+        "iata": "JDH",
+        "class": "Domestic + Military",
+        "state": "Rajasthan",
+        "source": "AAI + DGCA public records",
+        "lastUpdated": "2026-07-12",
+        "icon": "✈",
+        "notes": {
+          "facts": [
+            "Civil enclave inside a major IAF base — the Air Force uses the same runway as Rajputana's second-busiest civil airport.",
+            "Direct flights to Delhi, Mumbai, Bangalore, Hyderabad; a critical Marwar gateway for the tourism circuit.",
+            "The IAF Jodhpur base is one of India's largest — home to the Rafale squadron since 2020."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "airport-udaipur",
+      "geometry": { "type": "Point", "coordinates": [73.8961, 24.6177] },
+      "properties": {
+        "name": "Maharana Pratap Airport, Udaipur (Dabok)",
+        "type": "airport",
+        "category": "custom",
+        "district": "Udaipur",
+        "iata": "UDR",
+        "class": "Domestic",
+        "state": "Rajasthan",
+        "source": "AAI + DGCA public records",
+        "lastUpdated": "2026-07-12",
+        "icon": "✈",
+        "notes": {
+          "facts": [
+            "Located at Dabok, 22 km east of Udaipur city; renamed 'Maharana Pratap Airport' in 2008.",
+            "Rajasthan's third-busiest airport; peak season (Oct-Mar) sees daily flights from all metros.",
+            "Serves the Mewar tourism circuit — Udaipur, Chittor, Kumbhalgarh, Ranakpur, Mount Abu."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "airport-jaisalmer",
+      "geometry": { "type": "Point", "coordinates": [70.8650, 26.8887] },
+      "properties": {
+        "name": "Jaisalmer Airport",
+        "type": "airport",
+        "category": "custom",
+        "district": "Jaisalmer",
+        "iata": "JSA",
+        "class": "Domestic + Military",
+        "state": "Rajasthan",
+        "source": "AAI + DGCA public records",
+        "lastUpdated": "2026-07-12",
+        "icon": "✈",
+        "notes": {
+          "facts": [
+            "Civil operations resumed in 2013 after decades as a military-only base; peak-season desert-circuit tourism gateway.",
+            "The IAF's Jaisalmer base (Air Force Station Jaisalmer) has been strategic since the 1971 war.",
+            "Domestic flights limited to winter tourist season (Oct-Mar); shut for civil traffic in summer."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "airport-kishangarh",
+      "geometry": { "type": "Point", "coordinates": [74.8148, 26.6001] },
+      "properties": {
+        "name": "Kishangarh Airport",
+        "type": "airport",
+        "category": "custom",
+        "district": "Ajmer",
+        "iata": "KQH",
+        "class": "Domestic",
+        "state": "Rajasthan",
+        "source": "AAI + DGCA public records",
+        "lastUpdated": "2026-07-12",
+        "icon": "✈",
+        "notes": {
+          "facts": [
+            "Opened 2017 — Rajasthan's newest greenfield airport; serves Ajmer, Kishangarh and Pushkar.",
+            "The 'Ajmer airport' by common usage — flights to Delhi, Ahmedabad, Hyderabad.",
+            "Runway extension complete in 2023 to handle A320 family aircraft."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "airport-bikaner",
+      "geometry": { "type": "Point", "coordinates": [73.2077, 28.0700] },
+      "properties": {
+        "name": "Bikaner Airport (Nal)",
+        "type": "airport",
+        "category": "custom",
+        "district": "Bikaner",
+        "iata": "BKB",
+        "class": "Domestic + Military",
+        "state": "Rajasthan",
+        "source": "AAI + DGCA public records",
+        "lastUpdated": "2026-07-12",
+        "icon": "✈",
+        "notes": {
+          "facts": [
+            "Civil enclave inside Air Force Station Nal — a forward strategic base ~15 km from the Pakistan border.",
+            "Civil terminal opened 2017; limited seasonal flights to Delhi.",
+            "The Nal IAF base is key to India's western air defence; the runway was recently extended to handle heavy transport."
+          ]
+        }
+      }
+    }
+  ]
+}

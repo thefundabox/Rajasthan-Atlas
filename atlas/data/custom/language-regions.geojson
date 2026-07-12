@@ -1,0 +1,189 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "lang-marwari",
+      "geometry": { "type": "Point", "coordinates": [73.02, 26.28] },
+      "properties": {
+        "name": "Marwari",
+        "type": "language_region",
+        "category": "custom",
+        "district": "Jodhpur, Pali, Nagaur, Barmer, Jalore",
+        "speakers": "~14 million (Rajasthan share)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (mother tongue)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🗣",
+        "notes": {
+          "facts": [
+            "Rajasthan's most-spoken dialect — Marwar region's language, closely related to Gujarati.",
+            "Rich literary tradition: 'Dhola-Maru', 'Padmavat' (Malik Muhammad Jayasi's Hindi is stylistically Marwari-influenced), 'Vachanika Rathore'.",
+            "Written in the Mahajani (Marwari merchant) script; modern usage has shifted to Devanagari."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lang-mewari",
+      "geometry": { "type": "Point", "coordinates": [73.68, 24.58] },
+      "properties": {
+        "name": "Mewari",
+        "type": "language_region",
+        "category": "custom",
+        "district": "Udaipur, Chittor, Rajsamand, Bhilwara, Pratapgarh",
+        "speakers": "~5 million",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (mother tongue)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🗣",
+        "notes": {
+          "facts": [
+            "Language of the Mewar region — softer, more Sanskritised than Marwari to the west.",
+            "Preserved in Sisodia court chronicles: 'Ekling Mahatmya', 'Vir Vinod', 'Amar Kavya Vamshavali'.",
+            "Meera Bai's bhajans are in a Braj-Mewari mixed dialect that shaped North Indian bhakti poetry."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lang-dhundhari",
+      "geometry": { "type": "Point", "coordinates": [75.79, 26.92] },
+      "properties": {
+        "name": "Dhundhari (Jaipuri)",
+        "type": "language_region",
+        "category": "custom",
+        "district": "Jaipur, Dausa, Sawai Madhopur, Tonk",
+        "speakers": "~9 million",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (mother tongue)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🗣",
+        "notes": {
+          "facts": [
+            "Language of the Dhundhar region (historic Kachhawaha territory around Jaipur); closer to Braj Bhasha and Khari Boli Hindi than western Rajasthani.",
+            "Sawai Jai Singh II patronised Dhundhari literature at the Jaipur court in the 18th c.",
+            "Also called Jaipuri; the vernacular of most day-to-day Jaipur commerce alongside Hindi."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lang-hadoti",
+      "geometry": { "type": "Point", "coordinates": [75.87, 25.21] },
+      "properties": {
+        "name": "Hadoti",
+        "type": "language_region",
+        "category": "custom",
+        "district": "Kota, Bundi, Baran, Jhalawar",
+        "speakers": "~4 million",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (mother tongue)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🗣",
+        "notes": {
+          "facts": [
+            "Language of the Hadoti region (Chauhan-Hada territory of Bundi-Kota); influenced by Malvi to the east and Dhundhari to the north.",
+            "Distinct vocabulary borrowed from Malwa plateau traditions and Bhil substrates.",
+            "The Bundi and Kota court histories, and Bhavani Singh's 'Hadoti Vachanika', are the school's landmark texts."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lang-wagdi",
+      "geometry": { "type": "Point", "coordinates": [74.44, 23.55] },
+      "properties": {
+        "name": "Wagdi (Vagadi / Bhili)",
+        "type": "language_region",
+        "category": "custom",
+        "district": "Banswara, Dungarpur, southern Pratapgarh",
+        "speakers": "~4 million",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (mother tongue)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🗣",
+        "notes": {
+          "facts": [
+            "Language of the Vagad tribal belt — a Bhili-Gujarati transitional dialect spoken by the Bhil, Damor and Meena communities.",
+            "Classified by linguists as a Bhil language rather than Rajasthani; contains many Austroasiatic substrate loanwords.",
+            "Ganeshi Lal Vyas (1912-1997) is Wagdi's most-celebrated modern folk-song composer."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lang-malvi",
+      "geometry": { "type": "Point", "coordinates": [76.16, 24.60] },
+      "properties": {
+        "name": "Malvi",
+        "type": "language_region",
+        "category": "custom",
+        "district": "Jhalawar, Baran (Rajasthan share)",
+        "speakers": "~1 million (Rajasthan share)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (mother tongue)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🗣",
+        "notes": {
+          "facts": [
+            "Language of the Malwa plateau — Rajasthan's share is limited to Jhalawar-Baran (former Kota state territory that lay on the Malwa plateau).",
+            "Bulk of Malvi speakers live in Madhya Pradesh; Rajasthan holds the northern fringe.",
+            "Distinct enough from Hadoti (its western neighbour) that most linguists treat it as a separate Central-Zone Hindi dialect, not Rajasthani."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lang-shekhawati",
+      "geometry": { "type": "Point", "coordinates": [75.14, 27.60] },
+      "properties": {
+        "name": "Shekhawati",
+        "type": "language_region",
+        "category": "custom",
+        "district": "Sikar, Jhunjhunu, Churu",
+        "speakers": "~3 million",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (mother tongue)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🗣",
+        "notes": {
+          "facts": [
+            "Language of the Shekhawati region (Sikar-Jhunjhunu-Churu) — a Marwari-Dhundhari transitional dialect.",
+            "The Marwari merchant diaspora (Birlas, Bajajs, Poddars, Goenkas) originated here — spread Shekhawati vocabulary into Kolkata and Bombay commerce.",
+            "Preserved through Shekhawati folk songs and the Kayasth poet Gopinath's 19th c. compositions."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lang-mewati",
+      "geometry": { "type": "Point", "coordinates": [76.62, 27.55] },
+      "properties": {
+        "name": "Mewati",
+        "type": "language_region",
+        "category": "custom",
+        "district": "Alwar, Bharatpur, Deeg",
+        "speakers": "~5 million (with Haryana share)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Census 2011 (mother tongue)",
+        "lastUpdated": "2026-07-12",
+        "icon": "🗣",
+        "notes": {
+          "facts": [
+            "Language of the Matsya (Mewat) region — Alwar-Bharatpur in Rajasthan plus Nuh (Mewat) in Haryana.",
+            "Spoken by the Meo community (Muslim Rajput converts); distinct Islamic-Hindu syncretic literary tradition.",
+            "The 12th c. 'Prithviraj Raso' contains passages in an early form of Mewati."
+          ]
+        }
+      }
+    }
+  ]
+}

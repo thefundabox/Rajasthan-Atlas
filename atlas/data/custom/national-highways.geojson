@@ -1,0 +1,209 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "nh-48",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [76.55, 27.83],
+          [75.79, 26.92],
+          [74.82, 26.60],
+          [74.64, 26.45],
+          [74.63, 25.35],
+          [74.63, 24.89],
+          [73.68, 24.58],
+          [73.55, 24.10]
+        ]
+      },
+      "properties": {
+        "name": "NH-48 (Delhi–Mumbai)",
+        "type": "national_highway",
+        "category": "custom",
+        "nhNumber": "NH-48",
+        "oldNumber": "NH-8",
+        "district": "Alwar → Udaipur",
+        "state": "Rajasthan",
+        "source": "NHAI + MoRTH gazette",
+        "lastUpdated": "2026-07-12",
+        "icon": "🛣",
+        "notes": {
+          "facts": [
+            "Rajasthan's busiest highway — the Golden Quadrilateral leg from Delhi to Mumbai via Jaipur, Ajmer, Bhilwara, Chittor, Udaipur.",
+            "Enters at Behror/Kotputli (Alwar-Jaipur border); exits south at Bhatuan (Udaipur-Gujarat border) — ~688 km through Rajasthan.",
+            "Being upgraded as the Delhi-Mumbai Expressway spine (opened Delhi-Sohna 2023, target completion 2025)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nh-62",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.87, 29.92],
+          [73.31, 28.02],
+          [73.02, 26.28],
+          [72.05, 25.75],
+          [71.42, 25.75],
+          [71.30, 24.68]
+        ]
+      },
+      "properties": {
+        "name": "NH-62 (Western Spine — Ganganagar–Kandla)",
+        "type": "national_highway",
+        "category": "custom",
+        "nhNumber": "NH-62",
+        "oldNumber": "NH-15",
+        "district": "Sri Ganganagar → Barmer",
+        "state": "Rajasthan",
+        "source": "NHAI + MoRTH gazette",
+        "lastUpdated": "2026-07-12",
+        "icon": "🛣",
+        "notes": {
+          "facts": [
+            "The western Thar spine — Ganganagar-Bikaner-Jodhpur-Barmer to Kandla port (Gujarat); ~880 km through Rajasthan.",
+            "Only all-weather artery serving the border districts along the Pakistan frontier.",
+            "Rajasthan's principal north-south alternative to NH-48; parallels the IGNP for much of its northern stretch."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nh-21",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.68, 27.15],
+          [76.99, 27.03],
+          [75.79, 26.92],
+          [75.14, 27.60],
+          [74.72, 27.71],
+          [73.31, 28.02]
+        ]
+      },
+      "properties": {
+        "name": "NH-21 (Agra–Bikaner via Jaipur)",
+        "type": "national_highway",
+        "category": "custom",
+        "nhNumber": "NH-21",
+        "oldNumber": "NH-11",
+        "district": "Bharatpur → Bikaner",
+        "state": "Rajasthan",
+        "source": "NHAI + MoRTH gazette",
+        "lastUpdated": "2026-07-12",
+        "icon": "🛣",
+        "notes": {
+          "facts": [
+            "Connects Agra with Bikaner via Bharatpur, Dausa, Jaipur, Sikar, Fatehpur.",
+            "Passes through the Shekhawati painted-haveli belt (Sikar, Jhunjhunu) — key tourism artery.",
+            "Was formerly NH-11 (Agra-Bikaner); renumbered NH-21 in the 2010 restructure."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nh-27",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [72.85, 24.68],
+          [73.20, 24.87],
+          [74.63, 24.89],
+          [75.87, 25.21],
+          [76.16, 24.60],
+          [76.63, 24.65]
+        ]
+      },
+      "properties": {
+        "name": "NH-27 (East–West Corridor)",
+        "type": "national_highway",
+        "category": "custom",
+        "nhNumber": "NH-27",
+        "oldNumber": "NH-76 / NH-79",
+        "district": "Sirohi → Baran",
+        "state": "Rajasthan",
+        "source": "NHAI + MoRTH gazette",
+        "lastUpdated": "2026-07-12",
+        "icon": "🛣",
+        "notes": {
+          "facts": [
+            "Rajasthan's segment of the pan-India East-West Corridor — Pindwara (Sirohi) to Kota-Baran and onward to MP.",
+            "Serves Chittor, Kota, Bundi, Baran — the entire Hadoti belt.",
+            "Handles heavy cement, stone and industrial freight from the Kota-Bundi mineral belt."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nh-58",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [74.64, 26.45],
+          [74.30, 25.90],
+          [74.63, 25.35],
+          [75.10, 24.63],
+          [75.50, 24.05]
+        ]
+      },
+      "properties": {
+        "name": "NH-58 (Ajmer–Ratlam)",
+        "type": "national_highway",
+        "category": "custom",
+        "nhNumber": "NH-58",
+        "oldNumber": "NH-79",
+        "district": "Ajmer → Pratapgarh",
+        "state": "Rajasthan",
+        "source": "NHAI + MoRTH gazette",
+        "lastUpdated": "2026-07-12",
+        "icon": "🛣",
+        "notes": {
+          "facts": [
+            "Southern radial from Ajmer through Bhilwara, Chittor, Nimbahera, Pratapgarh to Ratlam (MP).",
+            "Passes through the Bhilwara textile cluster and the Chittor-Nimbahera cement belt.",
+            "The Chittor bypass segment was among Rajasthan's first four-lane conversions (2011)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nh-52",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.29, 28.35],
+          [76.62, 27.55],
+          [76.35, 27.02],
+          [75.55, 26.82],
+          [75.14, 26.92]
+        ]
+      },
+      "properties": {
+        "name": "NH-52 (Sangrur–Ankola via Jaipur)",
+        "type": "national_highway",
+        "category": "custom",
+        "nhNumber": "NH-52",
+        "oldNumber": "NH-11A / NH-8",
+        "district": "Alwar → Jaipur",
+        "state": "Rajasthan",
+        "source": "NHAI + MoRTH gazette",
+        "lastUpdated": "2026-07-12",
+        "icon": "🛣",
+        "notes": {
+          "facts": [
+            "Long north-south spine connecting Punjab's Sangrur to Karnataka's Ankola — Rajasthan segment runs through Alwar, Dausa, Jaipur.",
+            "Serves the Delhi-Mumbai Industrial Corridor's Neemrana-Bhiwadi cluster.",
+            "Renumbered NH-52 in the 2010 restructure (parts were formerly NH-11A/NH-8)."
+          ]
+        }
+      }
+    }
+  ]
+}

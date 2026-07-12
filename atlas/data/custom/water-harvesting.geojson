@@ -1,0 +1,245 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "wh-chand-baori",
+      "geometry": { "type": "Point", "coordinates": [76.6067, 27.0074] },
+      "properties": {
+        "name": "Chand Baori, Abhaneri",
+        "type": "water_harvesting",
+        "category": "custom",
+        "district": "Dausa",
+        "structureType": "Baori (stepwell)",
+        "period": "8th–9th c. (Nikumbha Chauhan)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ASI records",
+        "lastUpdated": "2026-07-12",
+        "icon": "💧",
+        "notes": {
+          "facts": [
+            "India's deepest and largest stepwell — 13 storeys, ~3,500 symmetrical steps, 20 m deep.",
+            "Built by King Chanda of the Nikumbha Chauhan dynasty in the 8th-9th c. to harvest scarce rainfall in the dry Dausa plain.",
+            "The stepwell's geometric mathematical precision inspired the throne-room scene in 'The Dark Knight Rises' (2012)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wh-panna-meena-kund",
+      "geometry": { "type": "Point", "coordinates": [75.8497, 26.9835] },
+      "properties": {
+        "name": "Panna Meena ka Kund, Amber",
+        "type": "water_harvesting",
+        "category": "custom",
+        "district": "Jaipur",
+        "structureType": "Kund (stepwell)",
+        "period": "16th c.",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Jaipur Heritage inventory",
+        "lastUpdated": "2026-07-12",
+        "icon": "💧",
+        "notes": {
+          "facts": [
+            "Below Amber Fort — an 8-storey symmetrical stepwell with the distinctive Rajputana criss-cross step pattern.",
+            "Built as a community water source for Amber city and its potters (Meena community) before Jaipur's founding.",
+            "One of Rajasthan's most photographed stepwells; recently restored by the Jaipur Development Authority."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wh-toorji-jhalra",
+      "geometry": { "type": "Point", "coordinates": [73.0244, 26.2978] },
+      "properties": {
+        "name": "Toorji ka Jhalra, Jodhpur",
+        "type": "water_harvesting",
+        "category": "custom",
+        "district": "Jodhpur",
+        "structureType": "Jhalra (stepwell)",
+        "period": "1740 (Rani Tanwarji Ranghawat)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Mehrangarh Museum Trust",
+        "lastUpdated": "2026-07-12",
+        "icon": "💧",
+        "notes": {
+          "facts": [
+            "Built 1740 by Rani Tanwarji Ranghawat, queen of Maharaja Abhay Singh — a royal 'jhalra' for the queens' bathing rituals.",
+            "Rediscovered and restored 2010-2016 after being buried under silt and construction; now Jodhpur's Old City centrepiece.",
+            "Reveals the classical Marwari stepwell geometry: 250 ft deep, carved from a single Jodhpur red sandstone block."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wh-raniji-baori",
+      "geometry": { "type": "Point", "coordinates": [75.6395, 25.4351] },
+      "properties": {
+        "name": "Raniji ki Baori, Bundi",
+        "type": "water_harvesting",
+        "category": "custom",
+        "district": "Bundi",
+        "structureType": "Baori (stepwell)",
+        "period": "1699 (Rani Nathavati Ji)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ASI Rajasthan Circle",
+        "lastUpdated": "2026-07-12",
+        "icon": "💧",
+        "notes": {
+          "facts": [
+            "Rajasthan's most ornate stepwell — 46 m deep, built 1699 by Rani Nathavati Ji, junior queen of Rao Raja Anirudh Singh of Bundi.",
+            "The four ornamental gateways with elephant-carved brackets are unique among Indian stepwells.",
+            "Bundi has ~50 stepwells (the 'city of stepwells'); Raniji is the finest and most-photographed."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wh-neemrana-baori",
+      "geometry": { "type": "Point", "coordinates": [76.3839, 27.9832] },
+      "properties": {
+        "name": "Neemrana Baori",
+        "type": "water_harvesting",
+        "category": "custom",
+        "district": "Khairthal-Tijara",
+        "structureType": "Baori (stepwell)",
+        "period": "1750 (Thakur Todar Mal)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan Heritage inventory",
+        "lastUpdated": "2026-07-12",
+        "icon": "💧",
+        "notes": {
+          "facts": [
+            "9-storey stepwell built 1750 by Thakur Todar Mal, then jagirdar of Neemrana under the Chauhans.",
+            "Built as a caravanserai water source on the Delhi-Jaipur trade route.",
+            "Fell into disrepair in the 20th c.; now under restoration by the Neemrana Fort-Palace estate."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wh-khadin-jaisalmer",
+      "geometry": { "type": "Point", "coordinates": [70.7500, 26.5000] },
+      "properties": {
+        "name": "Khadin System, Jaisalmer",
+        "type": "water_harvesting",
+        "category": "custom",
+        "district": "Jaisalmer",
+        "structureType": "Khadin (earthen bund)",
+        "period": "15th c. (Paliwal Brahmins)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + CAZRI publications",
+        "lastUpdated": "2026-07-12",
+        "icon": "💧",
+        "notes": {
+          "facts": [
+            "Traditional Thar farming system — a rain-fed earthen embankment (bund) that traps monsoon runoff on gentle slopes to grow wheat and chickpea after the water percolates.",
+            "Invented by the Paliwal Brahmins in the 15th c.; the Kuldhara ruins near Jaisalmer still show intact khadin fields.",
+            "One of India's oldest recorded soil-and-moisture conservation practices; endorsed by CAZRI for revival across the Thar."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wh-tanka-bikaner",
+      "geometry": { "type": "Point", "coordinates": [73.3103, 28.0202] },
+      "properties": {
+        "name": "Tanka (Household Rainwater Cistern)",
+        "type": "water_harvesting",
+        "category": "custom",
+        "district": "Bikaner",
+        "structureType": "Tanka (underground cistern)",
+        "period": "Traditional (pre-modern)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + CAZRI publications",
+        "lastUpdated": "2026-07-12",
+        "icon": "💧",
+        "notes": {
+          "facts": [
+            "Traditional underground cistern (3-4.5 m deep, cylindrical) that harvests rooftop and courtyard runoff — every Thar haveli has one.",
+            "Bikaner's Junagarh Fort has 12 tankas that supplied the entire garrison during 6-month sieges.",
+            "The 2013 Jal Kranti scheme has revived tanka construction in ~150 Thar villages; average tanka holds 20,000 litres."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wh-johad-bhaonta",
+      "geometry": { "type": "Point", "coordinates": [76.6300, 27.5000] },
+      "properties": {
+        "name": "Bhaonta-Kolyala Johad Revival",
+        "type": "water_harvesting",
+        "category": "custom",
+        "district": "Alwar",
+        "structureType": "Johad (village pond)",
+        "period": "1985–present (Tarun Bharat Sangh)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Tarun Bharat Sangh archives",
+        "lastUpdated": "2026-07-12",
+        "icon": "💧",
+        "notes": {
+          "facts": [
+            "Rajendra Singh — the 'Waterman of India' — and Tarun Bharat Sangh revived 8,600+ johads (village earthen ponds) across Alwar from 1985.",
+            "The Bhaonta-Kolyala johads brought the dead Arvari river back to life in 1996 — an internationally cited case of decentralised water restoration.",
+            "Won Rajendra Singh the Stockholm Water Prize (2015); catalyst for India's national watershed programme."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wh-laporiya-chauka",
+      "geometry": { "type": "Point", "coordinates": [75.4000, 26.5000] },
+      "properties": {
+        "name": "Laporiya Chauka System",
+        "type": "water_harvesting",
+        "category": "custom",
+        "district": "Jaipur",
+        "structureType": "Chauka (rectangular pond system)",
+        "period": "1977–present (Laxman Singh)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Gram Vikas Navyuvak Mandal",
+        "lastUpdated": "2026-07-12",
+        "icon": "💧",
+        "notes": {
+          "facts": [
+            "'Chauka' system: a network of shallow rectangular ponds on grazing land that recharge groundwater while nourishing pasture.",
+            "Devised by Laxman Singh at Laporiya village (Dudu tehsil, Jaipur) from 1977; now covers ~400 hectares.",
+            "Raised the village water table by 4 m and turned dry pasture into productive grazing land — a textbook decentralised water case."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wh-piplantri-trees",
+      "geometry": { "type": "Point", "coordinates": [73.8617, 25.1450] },
+      "properties": {
+        "name": "Piplantri (111 Trees per Daughter)",
+        "type": "water_harvesting",
+        "category": "custom",
+        "district": "Rajsamand",
+        "structureType": "Community afforestation + kund revival",
+        "period": "2007–present",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Panchayat reports",
+        "lastUpdated": "2026-07-12",
+        "icon": "💧",
+        "notes": {
+          "facts": [
+            "Rajsamand village where the panchayat plants 111 trees for every girl born — 350,000+ trees since 2007.",
+            "The tree-planting is paired with kund (traditional pond) revival — village water table rose 12 m in a decade.",
+            "Now a model village for India's Beti Bachao and Jal Shakti Abhiyan programmes; visited by dozens of state delegations."
+          ]
+        }
+      }
+    }
+  ]
+}

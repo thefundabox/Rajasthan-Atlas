@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "pass-bar",
+      "geometry": { "type": "Point", "coordinates": [73.98, 25.35] },
+      "properties": {
+        "name": "Bar Pass",
+        "type": "aravalli_pass",
+        "category": "custom",
+        "district": "Rajsamand",
+        "elevation": "~900 m",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏔",
+        "notes": {
+          "facts": [
+            "Cuts through the central Aravalli between Ajmer and Udaipur — the historic north-south corridor of Mewar.",
+            "The Ajmer-Kishangarh-Udaipur highway (NH-8) still follows the pass's alignment.",
+            "Connects the Chappan tract of Mewar with the Godwar plain to the west."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pass-piplaj",
+      "geometry": { "type": "Point", "coordinates": [74.16, 26.05] },
+      "properties": {
+        "name": "Piplaj Pass",
+        "type": "aravalli_pass",
+        "category": "custom",
+        "district": "Ajmer",
+        "elevation": "~800 m",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏔",
+        "notes": {
+          "facts": [
+            "Historic Aravalli pass near Ajmer used by medieval caravans between Marwar and Malwa.",
+            "Guarded a key trade route to Delhi via Ajmer through the Merwara hills.",
+            "Prithviraj Chauhan's Ajmer forces controlled this pass in the 12th c."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pass-deshuri",
+      "geometry": { "type": "Point", "coordinates": [73.20, 25.30] },
+      "properties": {
+        "name": "Deshuri (Desuri) Pass",
+        "type": "aravalli_pass",
+        "category": "custom",
+        "district": "Pali",
+        "elevation": "~800 m",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏔",
+        "notes": {
+          "facts": [
+            "The main Marwar-Mewar Aravalli pass — connects Pali (Marwar) with Kumbhalgarh-Nathdwara (Mewar).",
+            "Historically the fallback escape route for Mewar rulers into Marwar during Mughal sieges.",
+            "Maharana Pratap used Deshuri to reach Chavand and Kumbhalgarh from Chittor."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pass-somesar",
+      "geometry": { "type": "Point", "coordinates": [72.85, 24.62] },
+      "properties": {
+        "name": "Somesar Pass",
+        "type": "aravalli_pass",
+        "category": "custom",
+        "district": "Sirohi",
+        "elevation": "~1100 m",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏔",
+        "notes": {
+          "facts": [
+            "Southernmost major Aravalli pass — links Sirohi with Mount Abu and Gujarat's Banaskantha.",
+            "The highest-elevation pass in Rajasthan's Aravalli chain.",
+            "Historically used by the Deora Chauhans of Sirohi to reach their Achalgarh fort above Mount Abu."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pass-jamdakol",
+      "geometry": { "type": "Point", "coordinates": [73.68, 24.60] },
+      "properties": {
+        "name": "Jamdakol (Jilwara) Pass",
+        "type": "aravalli_pass",
+        "category": "custom",
+        "district": "Udaipur",
+        "elevation": "~700 m",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏔",
+        "notes": {
+          "facts": [
+            "Connects the Udaipur basin with Rajsamand through the Girva hills.",
+            "The Sisodia armies used Jamdakol as a strategic defile against Mughal cavalry.",
+            "Now serves the Udaipur-Nathdwara highway alignment."
+          ]
+        }
+      }
+    }
+  ]
+}

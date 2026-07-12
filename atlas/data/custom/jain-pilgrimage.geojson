@@ -1,0 +1,150 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "jain-ranakpur",
+      "geometry": { "type": "Point", "coordinates": [73.4720, 25.1170] },
+      "properties": {
+        "name": "Ranakpur Chaumukha Temple",
+        "type": "jain_pilgrimage",
+        "category": "custom",
+        "district": "Pali",
+        "tirthankara": "Adinath (1st Tirthankar)",
+        "founded": "1439 (Dharna Shah / Rana Kumbha)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Jain Vishwa Bharati records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕉",
+        "notes": {
+          "facts": [
+            "One of India's five holiest Shvetambar Jain pilgrimages ('Pancha-Tirtha') — built 1439 under Mewar's Rana Kumbha, funded by the merchant Dharna Shah.",
+            "1,444 marble pillars — no two carved identically; the temple's four-faced (chaumukha) idol of Adinath faces all four cardinal directions.",
+            "Set in an Aravalli valley 96 km north of Udaipur; the surrounding forest is a protected wildlife sanctuary."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jain-dilwara",
+      "geometry": { "type": "Point", "coordinates": [72.7160, 24.6120] },
+      "properties": {
+        "name": "Dilwara Temples, Mount Abu",
+        "type": "jain_pilgrimage",
+        "category": "custom",
+        "district": "Sirohi",
+        "tirthankara": "Adinath, Neminath (five temples cluster)",
+        "founded": "11th–13th c. (Vimal Shah, Vastupala-Tejapala)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Jain Vishwa Bharati records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕉",
+        "notes": {
+          "facts": [
+            "The most exquisitely carved Jain temple complex in India — five white marble temples built 11th-13th c. on Mount Abu.",
+            "Vimal Vasahi (1031, dedicated to Adinath) and Luna Vasahi (1230, dedicated to Neminath) are the two masterpieces.",
+            "The carved marble ceilings are so thin they become translucent — an artistic feat impossible to replicate.",
+            "Non-Jain visitors are allowed but with strict dress and behaviour codes; photography banned inside."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jain-nakoda",
+      "geometry": { "type": "Point", "coordinates": [72.1000, 25.9100] },
+      "properties": {
+        "name": "Nakoda Parshvanath Tirtha",
+        "type": "jain_pilgrimage",
+        "category": "custom",
+        "district": "Barmer",
+        "tirthankara": "Parshvanath (23rd Tirthankar)",
+        "founded": "3rd c. BCE (legend); rebuilt 15th c.",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Nakoda Trust records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕉",
+        "notes": {
+          "facts": [
+            "Major Shvetambar pilgrimage centre for the Nakoda Bhairav — a fierce guardian deity attached to Parshvanath.",
+            "Located in a remote Barmer valley; the black-marble Bhairav idol is said to fulfil wishes when offered laddoos.",
+            "Nakoda's dharamshala complex accommodates 10,000+ pilgrims during peak festivals."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jain-rikhabdev",
+      "geometry": { "type": "Point", "coordinates": [73.8500, 24.2670] },
+      "properties": {
+        "name": "Rikhabdev (Kesariyaji)",
+        "type": "jain_pilgrimage",
+        "category": "custom",
+        "district": "Udaipur",
+        "tirthankara": "Rishabhanath (1st Tirthankar) — Kesariyaji form",
+        "founded": "8th c. (rebuilt 15th c.)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Jain Vishwa Bharati records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕉",
+        "notes": {
+          "facts": [
+            "Uniquely worshipped by BOTH Digambar and Shvetambar Jains as well as Bhil tribals (as their 'Kesariyaji Baba') — India's most cross-community Jain site.",
+            "The black-stone Rishabhanath idol is anointed daily with saffron paste ('kesar') — hence 'Kesariyaji'.",
+            "Located on the Udaipur-Ahmedabad highway; hosts Rajasthan's largest Digambar-Shvetambar unified congregation each year."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jain-osian",
+      "geometry": { "type": "Point", "coordinates": [72.9160, 26.7170] },
+      "properties": {
+        "name": "Osian Jain Temples",
+        "type": "jain_pilgrimage",
+        "category": "custom",
+        "district": "Jodhpur",
+        "tirthankara": "Mahavira (24th Tirthankar)",
+        "founded": "8th c. (Pratihara)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ASI Rajasthan Circle",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕉",
+        "notes": {
+          "facts": [
+            "Rajasthan's oldest surviving Jain temple — the Mahavira Temple at Osian, built 8th c. under the Pratihara emperor Vatsaraja.",
+            "Also home to the Sachiya Mata temple (Hindu goddess) — Osian is Rajasthan's earliest Hindu-Jain integrated temple complex.",
+            "The Oswal Jain merchant community traces its origin to Osian — legend has the Sachiya Mata converting them to Jainism."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jain-mahavirji",
+      "geometry": { "type": "Point", "coordinates": [76.8260, 26.4000] },
+      "properties": {
+        "name": "Shri Mahavirji",
+        "type": "jain_pilgrimage",
+        "category": "custom",
+        "district": "Karauli",
+        "tirthankara": "Mahavira (24th Tirthankar)",
+        "founded": "1509 (Kanmal Chand — idol discovery)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Digambar Jain Atishaya Kshetra records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕉",
+        "notes": {
+          "facts": [
+            "Major Digambar Jain 'Atishaya Kshetra' (miracle-site) — the Mahavira idol was reportedly discovered underground by a cowherd in 1509.",
+            "Rajasthan's largest Digambar Jain congregation site; the annual Mahaveerji Mela draws ~200,000 pilgrims in Chaitra (Mar-Apr).",
+            "The rath yatra (chariot procession) passes through the Gambhira river — a defining Jain-Karauli tradition."
+          ]
+        }
+      }
+    }
+  ]
+}
