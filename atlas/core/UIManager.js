@@ -318,11 +318,15 @@ export class UIManager {
       for (const c of items) {
         const row = el('label', { class: 'lp-row', title: 'Toggle visibility' });
         const chk = el('input', { type: 'checkbox', checked: c.visible });
-        chk.addEventListener('change', () => this.atlas.layers.setVisible(c.id, chk.checked));
+        const name = el('span', { class: 'lp-name' }, [c.name]);
+        const swch = el('span', { class: 'lp-switch' + (c.visible ? ' on' : ''), 'aria-hidden': 'true' });
+        chk.addEventListener('change', () => {
+          this.atlas.layers.setVisible(c.id, chk.checked);
+          swch.classList.toggle('on', chk.checked);
+        });
         row.append(chk);
-        row.append(el('span', {}, [c.name]));
-        const sw = el('span', { class: `sw sw-${c.id}` });
-        row.append(sw);
+        row.append(name);
+        row.append(swch);
         listEl.append(row);
       }
       box.append(listEl);
