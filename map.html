@@ -127,6 +127,19 @@
         };
         setTimeout(tryResolve, 200);
       }
+      // ?revise=1 — auto-open the Revision Dashboard overlay. The header
+      // button [data-action="revision"] is injected by RevisionDashboard.js
+      // during its own atlas:ready handler, so we retry a few times in
+      // case it hasn't landed yet.
+      if (params.get('revise')) {
+        let tries = 0;
+        const openRevise = () => {
+          const btn = document.querySelector('button[data-action="revision"]');
+          if (btn) { btn.click(); return; }
+          if (++tries < 12) setTimeout(openRevise, 200);
+        };
+        setTimeout(openRevise, 200);
+      }
     });
   </script>
 </body>
