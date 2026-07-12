@@ -166,31 +166,40 @@ if (typeof window !== 'undefined') {
 
 function mount() {
   if (mounted) return;
-  const mapEl = document.querySelector('.a-map');
-  if (!mapEl) return;
   strip = el('div', { class: 'itl-strip' });
-  // Title dropped — nodes carry enough context. Card compacts into a
-  // single tight paragraph. Every pixel saved keeps the strip out of
-  // Rajasthan's northern silhouette when the card expands.
-  const row = el('div', { class: 'itl-row' });
-  PHASES.forEach((p, idx) => {
-    const node = el('button', {
+  strip.append(el('div', { class: 'itl-title' }, [
+    'Integration of Rajasthan',
+    el('div', { class: 'itl-title-sub' }, ['1948 - 1956']),
+  ]));
+  // Vertical accordion — each phase is a row with roman + name + date.
+  // Clicking a row expands its info inline. Card no longer competes for
+  // real estate at the top of the map; the whole strip lives on the
+  // left side, comfortably outside Rajasthan's silhouette.
+  const list = el('div', { class: 'itl-list' });
+  PHASES.forEach(p => {
+    const row = el('div', { class: 'itl-row', 'data-phase': String(p.n) });
+    const btn = el('button', {
       class: 'itl-node',
       'data-phase': String(p.n),
-      onclick: () => select(p.n),
+      onclick: () => select(p.n === selectedPhase ? null : p.n),
     });
-    node.append(el('div', { class: 'itl-roman' }, [p.roman]));
-    // Single-line date + year keeps the strip compact so the expanded
-    // phase card doesn't spill over the Rajasthan silhouette.
-    node.append(el('div', { class: 'itl-date' }, [`${p.shortDate} ${p.shortYear.slice(2)}`]));
-    row.append(node);
-    if (idx < PHASES.length - 1) row.append(el('div', { class: 'itl-connector' }));
+    btn.append(el('span', { class: 'itl-roman' }, [p.roman]));
+    const label = el('span', { class: 'itl-label' });
+    label.append(el('span', { class: 'itl-name' }, [p.name]));
+    label.append(el('span', { class: 'itl-date' }, [`${p.shortDate} '${p.shortYear.slice(2)}`]));
+    btn.append(label);
+    row.append(btn);
+    const detail = el('div', { class: 'itl-detail hidden' });
+    row.append(detail);
+    list.append(row);
   });
-  strip.append(row);
-  card = el('div', { class: 'itl-card hidden' });
-  strip.append(card);
-  mapEl.append(strip);
+  strip.append(list);
+  // Body-level so it sits above the map SVG and Sikhwal callouts.
+  document.body.append(strip);
   mounted = true;
+  // Hide the left Sikhwal callout column while the timeline is active
+  // — the two would fight for the same left-side real estate.
+  document.body.classList.add('itl-active');
   // Refresh CalloutMode so it drops the integration layer from callouts.
   Atlas.bus.emit('layer:visibility', { id: LAYER_ID, visible: true, __rerender: true });
 }
@@ -202,35 +211,35 @@ function unmount() {
   card  = null;
   mounted = false;
   selectedPhase = null;
+  document.body.classList.remove('itl-active');
   clearHighlight();
 }
 
 function select(phaseN) {
   if (!strip) return;
   selectedPhase = phaseN;
-  strip.querySelectorAll('.itl-node').forEach(n => {
-    n.classList.toggle('active', Number(n.dataset.phase) === phaseN);
+  // Sync each row: mark the active node and expand its detail block.
+  strip.querySelectorAll('.itl-row').forEach(row => {
+    const n = Number(row.dataset.phase);
+    const isActive = n === phaseN;
+    row.querySelector('.itl-node').classList.toggle('active', isActive);
+    const detail = row.querySelector('.itl-detail');
+    detail.classList.toggle('hidden', !isActive);
+    if (isActive) {
+      const phase = PHASES.find(p => p.n === n);
+      detail.innerHTML = '';
+      detail.append(el('div', { class: 'itl-detail-date' }, [phase.date]));
+      detail.append(el('div', { class: 'itl-detail-states' }, [
+        el('span', { class: 'itl-detail-label' }, ['States: ']),
+        phase.states.join(' · '),
+      ]));
+      detail.append(el('div', { class: 'itl-detail-blurb' }, [phase.blurb]));
+    }
   });
-  const phase = PHASES.find(p => p.n === phaseN);
-  if (!phase) {
-    card?.classList.add('hidden');
+  if (!phaseN) {
     clearHighlight();
     return;
   }
-  card.innerHTML = '';
-  // Ultra-compact single-line head: "④ Greater Rajasthan · 30 Mar 1949"
-  card.append(el('div', { class: 'itl-card-head' }, [
-    el('span', { class: 'itl-card-roman' }, [phase.roman]),
-    el('span', { class: 'itl-card-name' },  [` ${phase.name}`]),
-    el('span', { class: 'itl-card-date' },  [` · ${phase.date}`]),
-  ]));
-  // Two-column mini layout — states on the left, blurb on the right —
-  // keeps the total card height under ~50px even for verbose phases.
-  const body = el('div', { class: 'itl-card-body' });
-  body.append(el('div', { class: 'itl-card-states' }, [phase.states.join(' · ')]));
-  body.append(el('div', { class: 'itl-card-blurb' }, [phase.blurb]));
-  card.append(body);
-  card.classList.remove('hidden');
   applyHighlight(phaseN);
   applyDistrictHighlight(phaseN);
 }
@@ -324,51 +333,65 @@ function injectStyles() {
   const s = document.createElement('style');
   s.id = 'integration-timeline-styles';
   s.textContent = `
+    /* Vertical timeline pinned to the LEFT side of the viewport,
+     * inside the map's cream margin. Sits below the Layers button,
+     * scrolls if content exceeds available height. Because it lives
+     * in the empty band west of Rajasthan's silhouette, it never
+     * overlaps the state. */
     .itl-strip {
-      position: absolute;
-      /* Pull the strip up close to the top so the expanded phase card
-       * still fits inside the map's northern whitespace without touching
-       * the Rajasthan silhouette. */
-      top: 2px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 6;
-      width: min(720px, calc(100% - 40px));
-      padding: 5px 12px 7px;
+      position: fixed;
+      top: 165px;
+      left: 12px;
+      bottom: 12px;
+      width: 220px;
+      z-index: 11;
+      padding: 10px 12px;
+      overflow-y: auto;
       background: color-mix(in srgb, var(--bg-1, #f5efe0) 96%, transparent);
       border: 1px solid var(--ink-3, #ba9863);
       border-radius: 8px;
       box-shadow: 0 3px 10px rgba(0,0,0,0.14);
       font-family: var(--sans);
       color: var(--ink-1, #3d2f10);
+      box-sizing: border-box;
+    }
+    .itl-strip::-webkit-scrollbar { width: 6px; }
+    .itl-strip::-webkit-scrollbar-thumb {
+      background: color-mix(in srgb, var(--ink-3, #ba9863) 55%, transparent);
+      border-radius: 3px;
     }
     .itl-title {
-      font-size: 10.5px;
+      font-size: 11px;
       text-transform: uppercase;
-      letter-spacing: 0.09em;
-      color: var(--ink-2, #6b5030);
+      letter-spacing: 0.08em;
+      color: var(--sym-tr, #7a5a2a);
       font-weight: 600;
-      text-align: center;
-      margin-bottom: 3px;
+      margin-bottom: 8px;
+      line-height: 1.25;
     }
-    .itl-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0;
+    .itl-title-sub {
+      font-size: 10px;
+      color: var(--ink-2, #6b5030);
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: none;
+      margin-top: 1px;
     }
+    .itl-list { display: flex; flex-direction: column; gap: 6px; }
+    .itl-row  { position: relative; }
     .itl-node {
-      flex: 0 0 auto;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      padding: 2px 5px;
+      gap: 8px;
+      width: 100%;
+      padding: 6px 8px;
       border: 1px solid transparent;
       background: transparent;
       border-radius: 5px;
       cursor: pointer;
       font-family: inherit;
       color: var(--ink-1, #3d2f10);
+      text-align: left;
       transition: background 0.15s, border-color 0.15s;
     }
     .itl-node:hover {
@@ -379,61 +402,40 @@ function injectStyles() {
       border-color: var(--sym-tr, #7a5a2a);
     }
     .itl-roman {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 1;
       color: var(--sym-tr, #7a5a2a);
+      flex: 0 0 auto;
+    }
+    .itl-label {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+    .itl-name {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--ink-1, #3d2f10);
+      line-height: 1.2;
     }
     .itl-date {
       font-size: 9.5px;
-      color: var(--ink-1, #3d2f10);
-      margin-top: 1px;
-      white-space: nowrap;
-    }
-    .itl-connector {
-      flex: 1 1 auto;
-      height: 1px;
-      margin: 0 3px 10px;
-      background: color-mix(in srgb, var(--ink-3, #ba9863) 55%, transparent);
-    }
-    .itl-card {
-      margin-top: 4px;
-      padding-top: 4px;
-      border-top: 1px dotted color-mix(in srgb, var(--ink-3, #ba9863) 45%, transparent);
-      font-size: 10.5px;
-      line-height: 1.3;
-      color: var(--ink-1, #3d2f10);
-    }
-    .itl-card.hidden { display: none; }
-    .itl-card-head {
-      font-weight: 600;
-      color: var(--sym-tr, #7a5a2a);
-      margin-bottom: 2px;
-      font-size: 11px;
-    }
-    .itl-card-name  { color: var(--ink-1, #3d2f10); font-weight: 600; }
-    .itl-card-date  { color: var(--ink-2, #6b5030); font-weight: 500; }
-    .itl-card-roman { font-size: 13px; }
-    .itl-card-body {
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-    }
-    .itl-card-states {
-      flex: 0 0 40%;
-      font-size: 10px;
       color: var(--ink-2, #6b5030);
-      border-right: 1px dotted color-mix(in srgb, var(--ink-3, #ba9863) 40%, transparent);
-      padding-right: 8px;
+      margin-top: 1px;
     }
-    .itl-card-blurb {
-      flex: 1 1 auto;
+    /* Expanded detail block, shown under the active row. */
+    .itl-detail {
+      padding: 6px 10px 8px 34px;
       font-size: 10.5px;
       color: var(--ink-1, #3d2f10);
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+      line-height: 1.35;
     }
+    .itl-detail.hidden { display: none; }
+    .itl-detail-date  { font-size: 10px; color: var(--sym-tr, #7a5a2a); font-weight: 600; }
+    .itl-detail-label { color: var(--ink-2, #6b5030); font-weight: 500; }
+    .itl-detail-states { font-size: 10px; color: var(--ink-2, #6b5030); margin-top: 2px; }
+    .itl-detail-blurb  { font-size: 10.5px; margin-top: 3px; }
     /* Highlighted point icons for the selected phase's features. */
     .point-icon.itl-hi {
       transform: translate(-50%, -50%) scale(1.6);

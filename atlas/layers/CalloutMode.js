@@ -282,8 +282,13 @@ function repositionSikhwal() {
    * rect (getBoundingClientRect) to the feature centroid, so lines
    * follow the column as the user scrolls it.
    */
-  const leftCol  = slots.filter(s => s.ax <  cx).sort((a, b) => a.ay - b.ay);
-  const rightCol = slots.filter(s => s.ax >= cx).sort((a, b) => a.ay - b.ay);
+  // When the Integration timeline occupies the left side, funnel every
+  // callout into the right column so nothing gets hidden.
+  const timelineActive = document.body.classList.contains('itl-active');
+  const leftCol  = timelineActive ? [] : slots.filter(s => s.ax <  cx).sort((a, b) => a.ay - b.ay);
+  const rightCol = timelineActive
+    ? [...slots].sort((a, b) => a.ay - b.ay)
+    : slots.filter(s => s.ax >= cx).sort((a, b) => a.ay - b.ay);
 
   // Attach boxes into their columns in order (only if not already there
   // — repositionSikhwal may be called on scroll, when the DOM is stable).
@@ -419,6 +424,10 @@ function injectStyles() {
     }
     .sikhwal-col-left  { left: 12px; }
     .sikhwal-col-right { right: 12px; }
+    /* When the Integration timeline is mounted on the left side, hide
+     * the left Sikhwal column to avoid overlap; other-layer callouts
+     * remain on the right column, which scrolls. */
+    body.itl-active .sikhwal-col-left { display: none; }
     .sikhwal-col::-webkit-scrollbar { width: 6px; }
     .sikhwal-col::-webkit-scrollbar-thumb {
       background: color-mix(in srgb, var(--ink-3, #ba9863) 55%, transparent);
