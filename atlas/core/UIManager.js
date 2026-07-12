@@ -149,29 +149,17 @@ export class UIManager {
     }, ['☰  Layers']);
     const panel  = el('div', { class: 'lp-panel' });
 
-    // ── Tab bar ─────────────────────────────────────────────────────
-    const tabs = el('div', { class: 'lp-tabs', role: 'tablist' });
-    const presetsTab = el('button', {
-      class: 'lp-tab active', role: 'tab', 'data-tab': 'presets',
-      onclick: () => this._switchTab('presets'),
-    }, ['Presets']);
-    const layersTab = el('button', {
-      class: 'lp-tab', role: 'tab', 'data-tab': 'layers',
-      onclick: () => this._switchTab('layers'),
-    }, ['Layers']);
-    tabs.append(presetsTab, layersTab);
-    panel.append(tabs);
-
-    // ── Tab panel: Presets ──────────────────────────────────────────
+    // ── Tab panel: Presets (retained as a hidden panel so setMode() +
+    //    ?preset= URL params still resolve; the UI tabs and preset grid
+    //    were removed so the map view shows only the raw Layers list —
+    //    one decision, not two.) ──────────────────────────────────────
     // Curated, sectioned + iconed list. Each section header names a theme;
     // each button is one meaningful view. Redundant / no-data modes are
     // omitted deliberately.
     const presetsPanel = el('div', {
-      class: 'lp-tab-panel active', 'data-panel': 'presets', role: 'tabpanel',
+      class: 'lp-tab-panel', 'data-panel': 'presets', role: 'tabpanel',
+      style: 'display:none',
     });
-    presetsPanel.append(el('p', { class: 'lp-hint' }, [
-      'Click a preset to focus the map on a theme.',
-    ]));
 
     const CURATED_PRESETS = [
       { icon: '🗺', title: 'Base map', items: [
@@ -253,23 +241,18 @@ export class UIManager {
       ]},
     ];
 
+    // Presets grid is not rendered — the Presets tab was removed from
+    // the map view. Buttons still exist in-memory via _syncModeButtons
+    // matching data-mode, but the visible UI is Layers-only.
     for (const section of CURATED_PRESETS) {
-      const secWrap = el('div', { class: 'lp-preset-section' });
-      const h = el('div', { class: 'lp-preset-heading' });
-      h.append(el('span', { class: 'lp-preset-icon' }, [section.icon]));
-      h.append(el('span', { class: 'lp-preset-title' }, [section.title]));
-      secWrap.append(h);
-      const grid = el('div', { class: 'lp-preset-grid' });
       for (const m of section.items) {
         const b = el('button', {
           class: 'lp-mode', 'data-mode': m.id,
-          title: m.key ? `${m.label} (${m.key})` : m.label,
+          style: 'display:none',
           onclick: () => { this.atlas.layers.setMode(m.id); this._syncModeButtons(); },
         }, [m.label]);
-        grid.append(b);
+        presetsPanel.append(b);
       }
-      secWrap.append(grid);
-      presetsPanel.append(secWrap);
     }
 
     // Legacy hidden container so plug-ins that still call
@@ -281,9 +264,9 @@ export class UIManager {
 
     panel.append(presetsPanel);
 
-    // ── Tab panel: Layers ───────────────────────────────────────────
+    // ── Panel: Layers (now the only visible panel) ──────────────────
     const layersPanel = el('div', {
-      class: 'lp-tab-panel', 'data-panel': 'layers', role: 'tabpanel',
+      class: 'lp-tab-panel active', 'data-panel': 'layers', role: 'tabpanel',
     });
     layersPanel.append(el('p', { class: 'lp-hint' }, [
       'Tick a dataset to show or hide it on the map.',
