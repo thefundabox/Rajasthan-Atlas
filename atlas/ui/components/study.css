@@ -486,6 +486,13 @@
   line-height: 1.5;
 }
 .study-footer p { margin: 4px 0; }
+.study-footer-copyright {
+  margin-top: 10px !important;
+  padding-top: 10px;
+  border-top: 1px solid var(--hair);
+  font-size: 11.5px;
+  color: var(--ink-4);
+}
 .study-footer a {
   color: var(--ink-2);
   text-decoration: underline;

@@ -1,24 +1,57 @@
-MIT License
+Rajasthan Atlas
+Copyright (c) 2025-2026 Aamir Parwez (thefundabox)
+https://github.com/thefundabox/Rajasthan-Atlas
 
-Copyright (c) 2026 Rajasthan Digital Atlas contributors
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+CREATIVE COMMONS ATTRIBUTION-NONCOMMERCIAL-SHAREALIKE 4.0 INTERNATIONAL
+LICENSE (CC BY-NC-SA 4.0)
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This work — including the codebase, the enriched dataset (all GeoJSON,
+JSON and enrichment records), and the assembled visualisations — is
+licensed under the Creative Commons Attribution-NonCommercial-ShareAlike
+4.0 International License.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+You are free to:
+
+  * Share    — copy and redistribute the material in any medium or format
+  * Adapt    — remix, transform, and build upon the material
+
+Under the following terms:
+
+  * Attribution   — You must give appropriate credit to Aamir Parwez /
+                    Rajasthan Atlas, provide a link to the license, and
+                    indicate if changes were made. You may do so in any
+                    reasonable manner, but not in any way that suggests
+                    the licensor endorses you or your use.
+
+  * NonCommercial — You may not use the material for commercial purposes.
+                    Selling access, ad-supported redistribution, or
+                    incorporating into paid coaching / commercial study
+                    products all require separate written permission.
+
+  * ShareAlike    — If you remix, transform, or build upon the material,
+                    you must distribute your contributions under the same
+                    license as the original.
+
+No additional restrictions — You may not apply legal terms or
+technological measures that legally restrict others from doing anything
+the license permits.
+
+
+Full legal code:
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+Human-readable summary:
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+
+LICENSE HISTORY
+
+This project was initially released under the MIT License. It was
+re-licensed under CC BY-NC-SA 4.0 effective 12 July 2026 to align with
+the project's non-commercial educational intent. Prior forks made
+before that date retain the terms under which they were obtained.
+
 
 --------------------------------------------------------------------------------
 
@@ -40,7 +73,16 @@ sources; please retain attribution when redistributing derivative works:
   * DMICDC, RIICO, DoIC, MoCI, GI Registry — industry, SEZs, handicraft clusters
   * CEA, MNRE, NPCIL, SECI, RVUNL, RVPNL, RREC — energy, generation, grid
   * NITI Aayog, MoHUA, TAD Rajasthan — administrative overlays, smart cities
+  * Sikhwal Manchitrawali (16th ed.) — enrichment facts across historical,
+    cultural, geographical and craft features
 
 Per-feature citation chains live in each feature's `properties.source` field.
 See docs/DATA_SOURCES.md for the complete source list and per-module reports
 in docs/MODULE*_REPORT.md for module-specific provenance.
+
+
+NOTICE
+
+For commercial licensing or any use that falls outside CC BY-NC-SA 4.0,
+please open an issue on the GitHub repository above or contact the
+copyright holder directly.
