@@ -1,0 +1,302 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "id": "fm-bijoliya-kisan-andolan",
+      "geometry": { "type": "Point", "coordinates": [75.2833, 25.1833] },
+      "properties": {
+        "name": "Bijoliya Kisan Andolan (1897–1941)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Bhilwara",
+        "movementType": "Peasant movement",
+        "leaders": "Sitaram Das, Vijay Singh Pathik, Manikya Lal Verma",
+        "period": "1897–1941",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard freedom-struggle historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "✊",
+        "notes": {
+          "facts": [
+            "India's longest-running organised peasant movement — 44 years against the 84-plus 'lag-bag' cesses levied by the Bijoliya thikana under Mewar.",
+            "Sadhu Sitaram Das started the agitation in 1897; Vijay Singh Pathik built it into an all-India cause after 1916, drawing Tilak's and Gandhi's endorsement.",
+            "The 1922 Bijoliya Settlement — the first peasant-victory settlement in princely India — reduced 84 taxes to 30 and became a template for later kisan movements.",
+            "The 1941 final resolution ended the last cesses and returned confiscated lands — one of pre-Independence India's few complete peasant victories."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-begun-kisan-andolan",
+      "geometry": { "type": "Point", "coordinates": [74.4000, 25.0000] },
+      "properties": {
+        "name": "Begun Kisan Andolan (1921–23)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Chittorgarh",
+        "movementType": "Peasant movement",
+        "leaders": "Ramnarayan Chaudhary, Vijay Singh Pathik",
+        "period": "1921–1923",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard freedom-struggle historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "✊",
+        "notes": {
+          "facts": [
+            "Sister peasant movement to Bijoliya — Begun thikana peasants demanded abolition of the same 'lag-bag' cesses.",
+            "Ramnarayan Chaudhary and Vijay Singh Pathik led the agitation; 1923 saw peasants shot at Govind Pura by state forces.",
+            "The 1923 Rajputana Political Officer's inquiry sided with the peasants; this became a rare instance of the British colonial government intervening against a princely jagirdar."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-ekki-bhil-tejawat",
+      "geometry": { "type": "Point", "coordinates": [73.5000, 24.1000] },
+      "properties": {
+        "name": "Ekki (Bhil) Movement (1921–22)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Udaipur / Sirohi / Dungarpur",
+        "movementType": "Tribal movement",
+        "leaders": "Motilal Tejawat",
+        "period": "1921–1922",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard freedom-struggle historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "✊",
+        "notes": {
+          "facts": [
+            "Motilal Tejawat's tribal-solidarity movement across Mewar-Vagad-Sirohi Bhils — 'ekki' = 'unity' — against forced labour and thikana cesses.",
+            "The 7 March 1922 Neemuchana-style massacre at Pal-Chitariya (Sirohi) — Mewar Bhil Corps killed ~1,200 Bhil protestors — is Rajasthan's Jallianwala Bagh.",
+            "Tejawat's khadi-clad tribal army carried tricolour flags 5 years before the AICC officially adopted it as a national symbol."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-neemuchana-massacre",
+      "geometry": { "type": "Point", "coordinates": [76.5000, 27.5000] },
+      "properties": {
+        "name": "Neemuchana Massacre (14 May 1925)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Alwar",
+        "movementType": "Peasant massacre",
+        "leaders": "Ram Karan Joshi, Neemuchana peasants",
+        "period": "1925",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard freedom-struggle historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "✊",
+        "notes": {
+          "facts": [
+            "Alwar state forces opened fire on a peasant assembly at Neemuchana on 14 May 1925 — killed ~200 peasants protesting land-revenue hikes.",
+            "Called 'Alwar's Jallianwala Bagh' — Mahatma Gandhi condemned the killings in Young India (June 1925) as a 'crime of tyranny'.",
+            "The massacre triggered the formation of the Alwar Rajya Praja Mandal (1938) and long-term pressure on Alwar Maharaja Jai Singh."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-sikar-kisan-andolan",
+      "geometry": { "type": "Point", "coordinates": [75.1414, 27.6094] },
+      "properties": {
+        "name": "Sikar Kisan Andolan / Shekhawati (1922–34)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Sikar",
+        "movementType": "Peasant movement",
+        "leaders": "Thakur Deshraj, Chaudhary Ghasiram Verma",
+        "period": "1922–1934",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard freedom-struggle historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "✊",
+        "notes": {
+          "facts": [
+            "Shekhawati's Jat peasant movement against Rajput jagirdars — one of pre-Independence India's largest caste-and-class agitations.",
+            "Chaudhary Ghasiram Verma organised the peasants; the 1934 Kumbharam Arya settlement won revenue reforms across the Shekhawati thikanas.",
+            "Formative movement — many Shekhawati political leaders (including future PM Chaudhary Charan Singh's mentor circle) trained in this agitation."
+          ]
+        }
+      }
+    },
+
+    {
+      "type": "Feature",
+      "id": "pm-mewar-praja-mandal",
+      "geometry": { "type": "Point", "coordinates": [73.6822, 24.5760] },
+      "properties": {
+        "name": "Mewar Praja Mandal (Udaipur, 24 April 1938)",
+        "type": "praja_mandal",
+        "category": "custom",
+        "district": "Udaipur",
+        "founded": "24 April 1938",
+        "leaders": "Manikya Lal Verma, Balwant Singh Mehta, Bhurelal Baya",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕊",
+        "notes": {
+          "facts": [
+            "Founded 24 April 1938 by Manikya Lal Verma at Udaipur — Mewar's principal Congress-aligned platform for civil-liberties and responsible-government demands.",
+            "Verma spent nearly a decade in Mewar prisons for organising it; his letters from jail became foundational anti-monarchic literature.",
+            "Merged into the Indian National Congress in 1948 when Mewar joined the United State of Rajasthan (Integration Phase 3)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pm-marwar-praja-mandal",
+      "geometry": { "type": "Point", "coordinates": [73.0243, 26.2389] },
+      "properties": {
+        "name": "Marwar Praja Mandal (Jodhpur, 16 May 1938)",
+        "type": "praja_mandal",
+        "category": "custom",
+        "district": "Jodhpur",
+        "founded": "16 May 1938",
+        "leaders": "Jai Narayan Vyas, Ranchhod Das Gattani, Bhanwar Lal Sarraf",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕊",
+        "notes": {
+          "facts": [
+            "Founded 16 May 1938 at Jodhpur by Jai Narayan Vyas — Marwar's biggest civil-disobedience platform against the Rathore autocracy.",
+            "Jai Narayan Vyas served two long jail terms; became Rajasthan's third Chief Minister (1951-52 and 1952-54).",
+            "The 1942 Marwar Lok Parishad session at Jodhpur — 30,000 attendees — was the largest political rally in a princely state during Quit India."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pm-jaipur-praja-mandal",
+      "geometry": { "type": "Point", "coordinates": [75.7873, 26.9124] },
+      "properties": {
+        "name": "Jaipur Rajya Praja Mandal (1936)",
+        "type": "praja_mandal",
+        "category": "custom",
+        "district": "Jaipur",
+        "founded": "1936",
+        "leaders": "Kapoor Chand Patni, Jamnalal Bajaj, Hiralal Shastri, Chiranji Lal Mishra",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕊",
+        "notes": {
+          "facts": [
+            "Founded 1936 by Kapoor Chand Patni and Jamnalal Bajaj — the earliest Praja Mandal in the big Rajputana states.",
+            "Hiralal Shastri became its most influential leader — he was Rajasthan's first Chief Minister (April-Dec 1949) after Integration.",
+            "Coordinated with Jaipur's textile-mill workers' union — one of few Praja Mandals with a strong industrial-worker base."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pm-bikaner-praja-mandal",
+      "geometry": { "type": "Point", "coordinates": [73.3119, 28.0229] },
+      "properties": {
+        "name": "Bikaner Rajya Praja Mandal (1936, Kolkata)",
+        "type": "praja_mandal",
+        "category": "custom",
+        "district": "Bikaner",
+        "founded": "22 July 1936 (founded in Kolkata due to ban in Bikaner)",
+        "leaders": "Magha Ram Vaidya, Lakshman Das Swami, Raghuvardayal Goyal",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕊",
+        "notes": {
+          "facts": [
+            "Unusually, founded outside its own state — 22 July 1936 in Kolkata, because Ganga Singh's Bikaner state had banned political organising.",
+            "Magha Ram Vaidya smuggled Praja Mandal literature into Bikaner via the Bikaner-Kolkata railway route.",
+            "Legalised inside Bikaner only in 1942 when Maharaja Sadul Singh relaxed the ban."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pm-alwar-praja-mandal",
+      "geometry": { "type": "Point", "coordinates": [76.6346, 27.5530] },
+      "properties": {
+        "name": "Alwar Rajya Praja Mandal (1938)",
+        "type": "praja_mandal",
+        "category": "custom",
+        "district": "Alwar",
+        "founded": "1938",
+        "leaders": "Kunwar Madho Singh, Harinarayan Sharma",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕊",
+        "notes": {
+          "facts": [
+            "Founded 1938 by Kunwar Madho Singh — the direct political response to the 1925 Neemuchana Massacre and the state's authoritarian regime.",
+            "Merged Alwar into the Matsya Union (Integration Phase 1) on 18 March 1948; Kunwar Madho Singh joined the Matsya Union cabinet.",
+            "Its 1946 satyagraha at Alwar Bala Qila secured the reinstatement of exiled Praja Mandal leaders — a pre-Integration political victory."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pm-kota-praja-mandal",
+      "geometry": { "type": "Point", "coordinates": [75.8648, 25.2138] },
+      "properties": {
+        "name": "Kota Rajya Praja Mandal (1939)",
+        "type": "praja_mandal",
+        "category": "custom",
+        "district": "Kota",
+        "founded": "1939",
+        "leaders": "Nayanuram Sharma, Abhinn Hari",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕊",
+        "notes": {
+          "facts": [
+            "Founded 1939 in Kota by Nayanuram Sharma — the Hadoti belt's principal civil-liberties platform.",
+            "Coordinated with the Bundi and Jhalawar branches to form the Hadoti States People's Federation.",
+            "Merged with the USR-Congress on 25 March 1948 (Integration Phase 2) when Kota joined the United State of Rajasthan."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pm-bharatpur-praja-mandal",
+      "geometry": { "type": "Point", "coordinates": [77.4940, 27.2160] },
+      "properties": {
+        "name": "Bharatpur Rajya Praja Mandal (1938)",
+        "type": "praja_mandal",
+        "category": "custom",
+        "district": "Bharatpur",
+        "founded": "1938",
+        "leaders": "Kishan Lal Joshi, Gopilal Yadav, Master Adityendra",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🕊",
+        "notes": {
+          "facts": [
+            "Founded 1938 in Bharatpur — the Matsya region's largest civil-liberties movement outside Alwar.",
+            "Kishan Lal Joshi coordinated with the Jat-community Kisan movements and the Delhi-facing satyagraha network.",
+            "Bharatpur joined the Matsya Union on 18 March 1948 (Integration Phase 1) with the Praja Mandal leadership integrated into the Union cabinet."
+          ]
+        }
+      }
+    }
+
+  ]
+}

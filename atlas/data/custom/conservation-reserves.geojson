@@ -1,0 +1,197 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "cr-jorbeed",
+      "geometry": { "type": "Point", "coordinates": [73.3000, 28.0800] },
+      "properties": {
+        "name": "Jorbeed Conservation Reserve",
+        "type": "conservation_reserve",
+        "category": "custom",
+        "district": "Bikaner",
+        "notified": "2015",
+        "area_km2": 56.5,
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan Forest Dept notifications",
+        "lastUpdated": "2026-07-12",
+        "icon": "🌳",
+        "notes": {
+          "facts": [
+            "Rajasthan's first Conservation Reserve — notified 2015 to protect the migratory raptor congregation at Bikaner's Jorbeed carcass dump.",
+            "Home to Rajasthan's densest wintering raptor population — Steppe Eagle, Egyptian Vulture, Griffon, Cinereous Vulture congregate here (~5,000 birds).",
+            "Global significance — one of only 3 sites in India where the Endangered Egyptian Vulture reliably winters in large numbers."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cr-sundhamata",
+      "geometry": { "type": "Point", "coordinates": [72.5500, 24.8500] },
+      "properties": {
+        "name": "Sundhamata Conservation Reserve",
+        "type": "conservation_reserve",
+        "category": "custom",
+        "district": "Jalore, Sirohi",
+        "notified": "2012",
+        "area_km2": 117.5,
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan Forest Dept notifications",
+        "lastUpdated": "2026-07-12",
+        "icon": "🌳",
+        "notes": {
+          "facts": [
+            "Aravalli hill forest around the Sundha Mata shrine — Rajasthan's third-highest peak (Sundha Mata Peak, 1,220 m).",
+            "Straddles Jalore-Sirohi boundary; protects the corridor between Mount Abu WLS and Kumbhalgarh WLS.",
+            "Sloth bear, leopard, chinkara, langur; Aravalli's most southerly leopard population."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cr-gudha-bishnoiyan",
+      "geometry": { "type": "Point", "coordinates": [73.0500, 26.0500] },
+      "properties": {
+        "name": "Gudha Bishnoiyan Conservation Reserve",
+        "type": "conservation_reserve",
+        "category": "custom",
+        "district": "Jodhpur",
+        "notified": "2018",
+        "area_km2": 21.5,
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan Forest Dept notifications",
+        "lastUpdated": "2026-07-12",
+        "icon": "🌳",
+        "notes": {
+          "facts": [
+            "Protects the community-conserved khejri-and-blackbuck landscape of the Bishnoi villages south of Jodhpur.",
+            "The 1730 Khejarli martyrdom (363 Bishnois died protecting khejri trees) happened in this cluster — the world's first recorded environmental sacrifice.",
+            "One of India's few CRs where local community management is written into the notification itself."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cr-beed-jhunjhunu",
+      "geometry": { "type": "Point", "coordinates": [75.4000, 28.1500] },
+      "properties": {
+        "name": "Beed Ghas Farm Conservation Reserve, Jhunjhunu",
+        "type": "conservation_reserve",
+        "category": "custom",
+        "district": "Jhunjhunu",
+        "notified": "2012",
+        "area_km2": 19.6,
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan Forest Dept notifications",
+        "lastUpdated": "2026-07-12",
+        "icon": "🌳",
+        "notes": {
+          "facts": [
+            "One of Rajasthan's earliest CRs — a semi-arid grass-and-scrub reserve carved out of the erstwhile Beed Ghas Farm.",
+            "Shelter for chinkara, blackbuck, desert fox, migratory bustards in the Shekhawati belt.",
+            "Community-managed alongside the Rajasthan Forest Department — one of the state's first co-managed reserves."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cr-rotu",
+      "geometry": { "type": "Point", "coordinates": [73.9500, 27.3500] },
+      "properties": {
+        "name": "Rotu Conservation Reserve",
+        "type": "conservation_reserve",
+        "category": "custom",
+        "district": "Nagaur",
+        "notified": "2012",
+        "area_km2": 0.72,
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan Forest Dept notifications",
+        "lastUpdated": "2026-07-12",
+        "icon": "🌳",
+        "notes": {
+          "facts": [
+            "One of India's smallest Conservation Reserves — just 0.72 sq km — but a critical demoiselle-crane wintering site in the Nagaur belt.",
+            "The community-conserved pond at Rotu village hosts ~4,000 demoiselle cranes (Kurja) from November to March.",
+            "Second only to Khichan (Phalodi) in Rajasthan for demoiselle-crane winter concentration."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cr-basi",
+      "geometry": { "type": "Point", "coordinates": [74.7000, 24.9500] },
+      "properties": {
+        "name": "Basi Conservation Reserve",
+        "type": "conservation_reserve",
+        "category": "custom",
+        "district": "Chittorgarh",
+        "notified": "2015",
+        "area_km2": 45.8,
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan Forest Dept notifications",
+        "lastUpdated": "2026-07-12",
+        "icon": "🌳",
+        "notes": {
+          "facts": [
+            "Dry-deciduous forest around Basi village near Chittorgarh; contiguous with the Bassi Wildlife Sanctuary.",
+            "Supports leopard, chausingha (four-horned antelope), sloth bear and migratory water-birds at Basi Talab.",
+            "Together with Bassi WLS forms one of eastern Rajasthan's largest continuous forest corridors."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cr-bansiya-bhagi",
+      "geometry": { "type": "Point", "coordinates": [76.4000, 25.5000] },
+      "properties": {
+        "name": "Bansiya-Bhagi Conservation Reserve",
+        "type": "conservation_reserve",
+        "category": "custom",
+        "district": "Bundi, Kota",
+        "notified": "2019",
+        "area_km2": 128.0,
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan Forest Dept notifications",
+        "lastUpdated": "2026-07-12",
+        "icon": "🌳",
+        "notes": {
+          "facts": [
+            "Extends the Ramgarh Vishdhari Tiger Reserve corridor into the Chambal ravines of Bundi-Kota.",
+            "Buffers the Mukundra Hills TR and the Ranthambhore TR — key to the tiger movement corridor across southeast Rajasthan.",
+            "Rich in leopard, hyena, chinkara, and Chambal ravine bird species (Bonelli's Eagle, Chestnut-shouldered Petronia)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cr-shakambhari",
+      "geometry": { "type": "Point", "coordinates": [75.5000, 27.9500] },
+      "properties": {
+        "name": "Shakambhari Conservation Reserve",
+        "type": "conservation_reserve",
+        "category": "custom",
+        "district": "Sikar",
+        "notified": "2012",
+        "area_km2": 130.0,
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan Forest Dept notifications",
+        "lastUpdated": "2026-07-12",
+        "icon": "🌳",
+        "notes": {
+          "facts": [
+            "Aravalli forest around the Shakambhari Devi shrine — the historical hearth of the Chauhans of Shakambhari (7th–12th c.).",
+            "Corridor between the Sariska TR and the Jaisamand-Bassi complex; migratory route for leopards and sambar.",
+            "The Shakambhari temple is Rajasthan's oldest continuously worshipped Shakti shrine — dates to the Gupta era."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -107,18 +107,21 @@
       }
       const feature = params.get('feature');
       if (feature) {
-        setTimeout(() => {
+        // Custom layers load async via CustomContent — retry up to 2 s
+        // in case the feature's layer is still registering when the
+        // deep-link arrives (cold-start race).
+        const tryResolve = (attempt = 0) => {
           for (const cfg of Atlas.layers.list()) {
             const f = Atlas.data.getFeature(cfg.id, feature);
             if (f) {
-              // Ensure the feature's layer is on before selecting so
-              // hidden layers still render for a deep-linked feature.
               try { Atlas.layers.setVisible?.(cfg.id, true); } catch (_) {}
               Atlas.interaction.select(cfg.id, feature, { zoom: true });
-              break;
+              return;
             }
           }
-        }, 300);
+          if (attempt < 8) setTimeout(() => tryResolve(attempt + 1), 250);
+        };
+        setTimeout(tryResolve, 200);
       }
     });
   </script>

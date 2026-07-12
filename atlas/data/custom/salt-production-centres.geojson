@@ -1,0 +1,121 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "salt-sambhar",
+      "geometry": { "type": "Point", "coordinates": [74.9500, 26.9333] },
+      "properties": {
+        "name": "Sambhar Salt Lake — Central Works",
+        "type": "salt_production",
+        "category": "custom",
+        "district": "Nagaur / Jaipur / Ajmer",
+        "productionShare": "~9% of India's total salt output",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Salt Commissioner records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🧂",
+        "notes": {
+          "facts": [
+            "India's largest inland salt lake — 22.5 km long, 3-11 km wide; ~230 sq km at full spread.",
+            "Sambhar Salts Ltd (a Hindustan Salts joint venture) is one of only two Government of India salt-producing PSUs.",
+            "Solar evaporation produces ~200,000 tonnes annually — 9% of India's salt output and India's largest source of inland (rock-and-brine) salt.",
+            "Also a Ramsar site (1990) — hosts Rajasthan's largest flamingo congregation during winter (~50,000 lesser and greater flamingoes)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "salt-didwana",
+      "geometry": { "type": "Point", "coordinates": [74.5744, 27.4000] },
+      "properties": {
+        "name": "Didwana Salt Lake",
+        "type": "salt_production",
+        "category": "custom",
+        "district": "Didwana-Kuchaman",
+        "productionShare": "Rajasthan's 2nd largest inland salt source",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Salt Commissioner records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🧂",
+        "notes": {
+          "facts": [
+            "Rajasthan's second-largest saline lake after Sambhar; the Rajasthan State Chemical Works produces salt and sodium sulphate here.",
+            "The salt has a slightly higher sulphate content than Sambhar's, so Didwana salt is prized for the chemical industry rather than edible use.",
+            "Nawalgarh Salts co-operative is Rajasthan's oldest continuously-operating salt cooperative (1908)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "salt-pachpadra",
+      "geometry": { "type": "Point", "coordinates": [72.2800, 25.9500] },
+      "properties": {
+        "name": "Pachpadra Salt Works",
+        "type": "salt_production",
+        "category": "custom",
+        "district": "Balotra",
+        "productionShare": "~500 tonnes/day (edible salt grade)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Salt Commissioner records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🧂",
+        "notes": {
+          "facts": [
+            "Unique 'lana khar' method — sub-surface brine is drawn up by lowering thorny khejri branches into pits; salt crystallises around the twigs and is harvested manually.",
+            "The traditional method produces some of India's cleanest edible salt; Balotra's salt is prized for its low bitter-magnesium content.",
+            "Sits atop the Barmer petroleum basin; the same evaporite geology explains both the salt and the deep oil-and-gas reserves."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "salt-lunkaransar",
+      "geometry": { "type": "Point", "coordinates": [73.7833, 28.5167] },
+      "properties": {
+        "name": "Lunkaransar Salt Lake",
+        "type": "salt_production",
+        "category": "custom",
+        "district": "Bikaner",
+        "productionShare": "Small-scale seasonal",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Salt Commissioner records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🧂",
+        "notes": {
+          "facts": [
+            "Northernmost saline lake in Rajasthan; salt is harvested only in dry monsoon years (highly variable).",
+            "The lake bed is a well-studied palaeoclimate record — sediment cores show 8,000+ years of monsoon variability.",
+            "Nearby IGNP command has diluted the natural salinity somewhat since 1980s; production has declined."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "salt-kuchaman",
+      "geometry": { "type": "Point", "coordinates": [74.8578, 27.1414] },
+      "properties": {
+        "name": "Kuchaman Salt Works",
+        "type": "salt_production",
+        "category": "custom",
+        "district": "Didwana-Kuchaman",
+        "productionShare": "Small industrial",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Salt Commissioner records",
+        "lastUpdated": "2026-07-12",
+        "icon": "🧂",
+        "notes": {
+          "facts": [
+            "Small salt lake in the Nagaur belt — historically part of the same aquifer system as Didwana and Sambhar.",
+            "Kuchaman salt is sold to nearby chemical works in Bhiwadi and Alwar; not sold as edible salt.",
+            "Overshadowed by Sambhar and Didwana; still a functioning industrial salt source."
+          ]
+        }
+      }
+    }
+  ]
+}

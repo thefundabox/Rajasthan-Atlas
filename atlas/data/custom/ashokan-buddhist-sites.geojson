@@ -1,0 +1,76 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "bud-bairat-viratnagar",
+      "geometry": { "type": "Point", "coordinates": [76.1830, 27.4500] },
+      "properties": {
+        "name": "Bairat (Viratnagar) — Ashokan Edicts & Buddhist Monastery",
+        "type": "buddhist_heritage",
+        "category": "custom",
+        "district": "Kotputli-Behror",
+        "period": "3rd c. BCE (Ashoka Maurya)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ASI records",
+        "lastUpdated": "2026-07-12",
+        "icon": "☸",
+        "notes": {
+          "facts": [
+            "Rajasthan's ONLY Ashokan edict site — the Bhabru rock edict + Minor Rock Edict No. 1 were both issued from Bairat in the 3rd c. BCE.",
+            "The Bhabru edict is unique — it is the only Ashokan inscription that directly names Buddhist texts (7 works Ashoka commended to monks).",
+            "Ancient name 'Viratnagar' — the Mahabharata identifies this as King Virata's capital where the Pandavas spent their 13th year of exile in disguise.",
+            "The Bijak-ki-Pahari hill above the town has the ruins of India's earliest known circular Buddhist temple (chaitya), 3rd c. BCE."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bud-kolvi-caves",
+      "geometry": { "type": "Point", "coordinates": [76.3400, 24.5000] },
+      "properties": {
+        "name": "Kolvi Buddhist Caves",
+        "type": "buddhist_heritage",
+        "category": "custom",
+        "district": "Jhalawar",
+        "period": "5th–7th c. CE (Gupta–Post-Gupta)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ASI Rajasthan Circle",
+        "lastUpdated": "2026-07-12",
+        "icon": "☸",
+        "notes": {
+          "facts": [
+            "The largest group of rock-cut Buddhist caves in Rajasthan — ~50 caves cut into a laterite hill near Jhalarapatan.",
+            "Chaityas (prayer halls) and viharas (monastic cells) with a large seated Buddha in the main chaitya cave.",
+            "Contemporary with Ajanta's later phase (5-7th c.) — evidence that Buddhism survived in southeast Rajasthan long after it declined in the Ganges plain.",
+            "Adjoining caves at Vinayaka and Hathi-Gomph extend the same rock-cut monastic complex."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bud-baran-caves",
+      "geometry": { "type": "Point", "coordinates": [76.5240, 25.1000] },
+      "properties": {
+        "name": "Vinayaka / Ramgarh Buddhist Caves, Baran",
+        "type": "buddhist_heritage",
+        "category": "custom",
+        "district": "Baran",
+        "period": "5th–7th c. CE (Post-Gupta)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + ASI Rajasthan Circle",
+        "lastUpdated": "2026-07-12",
+        "icon": "☸",
+        "notes": {
+          "facts": [
+            "Rock-cut Buddhist monastic complex near Ramgarh village — a sister site to Kolvi with the same 5-7th c. dating.",
+            "Ramgarh Crater — India's third recognised meteorite impact crater — sits ~10 km from the caves; the caves may have been carved into the crater's raised rim.",
+            "Together with Kolvi and the nearby Hathi-Gomph, these mark southeastern Rajasthan as Rajputana's principal Buddhist heartland."
+          ]
+        }
+      }
+    }
+  ]
+}

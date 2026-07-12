@@ -299,6 +299,71 @@
       "visible":  false,
       "searchable": true,
       "featureType": "tribal_group"
+    },
+    {
+      "id":       "ashokan-buddhist-sites",
+      "name":     "Ashokan & Buddhist Heritage",
+      "type":     "point",
+      "data":     "atlas/data/custom/ashokan-buddhist-sites.geojson",
+      "category": "human",
+      "icon":     "☸",
+      "color":    "#8a6a3a",
+      "zIndex":   55,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "buddhist_heritage"
+    },
+    {
+      "id":       "salt-production-centres",
+      "name":     "Salt Production Centres",
+      "type":     "point",
+      "data":     "atlas/data/custom/salt-production-centres.geojson",
+      "category": "industry",
+      "icon":     "🧂",
+      "color":    "#8a8a4a",
+      "zIndex":   56,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "salt_production"
+    },
+    {
+      "id":       "conservation-reserves",
+      "name":     "Conservation Reserves",
+      "type":     "point",
+      "data":     "atlas/data/custom/conservation-reserves.geojson",
+      "category": "environment",
+      "icon":     "🌳",
+      "color":    "#3a6a3a",
+      "zIndex":   57,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "conservation_reserve"
+    },
+    {
+      "id":       "sand-dune-types",
+      "name":     "Sand-Dune Types (Thar)",
+      "type":     "point",
+      "data":     "atlas/data/custom/sand-dune-types.geojson",
+      "category": "physical",
+      "icon":     "🏜",
+      "color":    "#c4a06a",
+      "zIndex":   58,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "sand_dune"
+    },
+    {
+      "id":       "freedom-movement",
+      "name":     "Freedom Movement & Praja Mandal",
+      "type":     "point",
+      "data":     "atlas/data/custom/freedom-movement.geojson",
+      "category": "human",
+      "icon":     "🕊",
+      "color":    "#8a3a3a",
+      "zIndex":   59,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "freedom_movement"
     }
   ]
 }

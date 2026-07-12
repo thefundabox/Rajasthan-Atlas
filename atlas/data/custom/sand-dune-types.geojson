@@ -1,0 +1,97 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "dune-barchan-jaisalmer",
+      "geometry": { "type": "Point", "coordinates": [70.9750, 26.7000] },
+      "properties": {
+        "name": "Barchan (Crescent) Dunes — Sam & Khuri, Jaisalmer",
+        "type": "sand_dune",
+        "category": "custom",
+        "district": "Jaisalmer",
+        "duneType": "Barchan (crescent)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + CAZRI + GSI publications",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏜",
+        "notes": {
+          "facts": [
+            "Rajasthan's classic 'crescent' dunes — form perpendicular to the prevailing SW monsoon wind; migrate 3-15 m per year.",
+            "The Sam Sand Dunes and Khuri Sand Dunes (~42 km SW of Jaisalmer) are India's premier barchan tourism sites — the 'desert safari' venue.",
+            "Concave slip-face on the leeward side (~34° angle) and gentler stoss slope windward — the signature crescent profile that gave the type its name."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dune-transverse-bikaner",
+      "geometry": { "type": "Point", "coordinates": [73.2000, 28.2500] },
+      "properties": {
+        "name": "Transverse Dunes — Bikaner Belt",
+        "type": "sand_dune",
+        "category": "custom",
+        "district": "Bikaner",
+        "duneType": "Transverse (wave-like ridges)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + CAZRI + GSI publications",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏜",
+        "notes": {
+          "facts": [
+            "Long, wave-like ridges running perpendicular to the wind — form where sand supply is abundant and vegetation cover is low.",
+            "Bikaner-Ganganagar belt has Rajasthan's most extensive transverse dune fields — the IGNP command area was carved through this landscape.",
+            "Move slower than barchan (unified wave front stabilises the sand column); ridges 3-25 m tall running 100s of metres in length."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dune-longitudinal-barmer",
+      "geometry": { "type": "Point", "coordinates": [71.5000, 25.7000] },
+      "properties": {
+        "name": "Longitudinal (Seif) Dunes — Barmer",
+        "type": "sand_dune",
+        "category": "custom",
+        "district": "Barmer",
+        "duneType": "Longitudinal (seif — Arabic 'sword')",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + CAZRI + GSI publications",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏜",
+        "notes": {
+          "facts": [
+            "Long parallel ridges running IN THE DIRECTION of the dominant wind — 'seif' = sword in Arabic, from the sword-shape profile.",
+            "The Barmer-Balotra belt hosts Rajasthan's longest longitudinal dunes — some ridges 15 km long, 20-30 m tall.",
+            "Form where two wind directions of nearly equal strength combine — the ridges align between the two vectors."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dune-star-shergarh",
+      "geometry": { "type": "Point", "coordinates": [72.1500, 26.5500] },
+      "properties": {
+        "name": "Star Dunes — Shergarh, Jodhpur",
+        "type": "sand_dune",
+        "category": "custom",
+        "district": "Jodhpur, Phalodi",
+        "duneType": "Star (pyramidal, multi-armed)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + CAZRI + GSI publications",
+        "lastUpdated": "2026-07-12",
+        "icon": "🏜",
+        "notes": {
+          "facts": [
+            "Pyramidal dunes with 3-5 arms radiating from a central peak — form where winds shift from multiple directions across the year.",
+            "The tallest dune type in the Thar (up to 100+ m); Shergarh-Phalodi belt has Rajasthan's best-developed star dunes.",
+            "Nearly stationary — each arm grows and retreats seasonally but the central peak barely moves; some star dunes here are dated to 4,000+ years old."
+          ]
+        }
+      }
+    }
+  ]
+}
