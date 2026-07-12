@@ -1,0 +1,305 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "dyn-chauhans-ajmer",
+      "geometry": { "type": "Point", "coordinates": [74.6399, 26.4499] },
+      "properties": {
+        "name": "Chauhans of Shakambhari / Ajmer",
+        "type": "rajput_dynasty",
+        "category": "custom",
+        "dynasty": "Chauhan",
+        "capital": "Ajmer (with Sambhar)",
+        "district": "Ajmer",
+        "period": "7th c. – 1192",
+        "founder": "Vasudev Chauhan (551 CE, legendary)",
+        "peakRuler": "Prithviraj III (r. 1178–92)",
+        "fall": "1192 — Second Battle of Tarain (Muhammad Ghuri)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "👑",
+        "notes": {
+          "facts": [
+            "Rajasthan's first great Rajput empire — controlled Ajmer, Sambhar, Nagaur, Delhi and parts of Punjab at their peak.",
+            "Prithviraj III defeated Muhammad Ghuri at the First Battle of Tarain (1191) but lost the Second Battle of Tarain (1192) — end of independent Rajput rule at Delhi.",
+            "Chand Bardai's 'Prithviraj Raso' — Rajasthan's greatest medieval epic — celebrates Prithviraj III's court.",
+            "Prithviraj's uncle Someshwar built the Anasagar Lake at Ajmer (~1135) — still the city's largest waterbody.",
+            "The Chauhan lineage survived through cadet branches: Bundi-Kota (Hadas), Sirohi (Deora Chauhans), and the Nadol Chauhans."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dyn-sisodias-mewar",
+      "geometry": { "type": "Point", "coordinates": [74.6460, 24.8870] },
+      "properties": {
+        "name": "Sisodias (Guhilas) of Mewar",
+        "type": "rajput_dynasty",
+        "category": "custom",
+        "dynasty": "Sisodia (Guhila)",
+        "capital": "Chittor → Udaipur (1568)",
+        "district": "Chittorgarh",
+        "period": "728 CE – 1949",
+        "founder": "Bappa Rawal (r. 728–753)",
+        "peakRuler": "Rana Kumbha (r. 1433–68), Rana Sanga (r. 1508–28), Maharana Pratap (r. 1572–97)",
+        "fall": "1949 — merged into United State of Rajasthan (Phase 3)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "👑",
+        "notes": {
+          "facts": [
+            "India's oldest continuous royal house — 1,221 years of Sisodia-Guhila rule (728 CE to 1949) from Chittor and later Udaipur.",
+            "Three great jauhars at Chittor: 1303 (Padmini vs Alauddin Khilji), 1535 (Karnavati vs Bahadur Shah), 1568 (final vs Akbar).",
+            "Rana Kumbha built 32 of Mewar's 84 forts including Kumbhalgarh; his court had scholar Atri and musician Sarangdhar.",
+            "Rana Sanga fought Babur at Khanwa (1527) — the largest Rajput confederacy in Indian history assembled under him.",
+            "Maharana Pratap's 1576 Haldighati stand made him Rajputana's most enduring folk-hero; he refused every Mughal alliance offered by Akbar."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dyn-rathores-marwar",
+      "geometry": { "type": "Point", "coordinates": [73.0243, 26.2830] },
+      "properties": {
+        "name": "Rathores of Marwar (Jodhpur)",
+        "type": "rajput_dynasty",
+        "category": "custom",
+        "dynasty": "Rathore",
+        "capital": "Mandore → Jodhpur (1459)",
+        "district": "Jodhpur",
+        "period": "1226 – 1949",
+        "founder": "Rao Siha Rathore (~1226, from Kannauj Rathores)",
+        "peakRuler": "Rao Maldev (r. 1532–62), Maharaja Jaswant Singh (r. 1638–78), Maharaja Man Singh (r. 1803–43)",
+        "fall": "1949 — merged into United State of Rajasthan (Phase 4)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "👑",
+        "notes": {
+          "facts": [
+            "Rajasthan's largest princely state by area (~93,000 km²) — spanning Jodhpur, Pali, Nagaur, Barmer, Jalore and the western Thar.",
+            "Rao Jodha founded Jodhpur and Mehrangarh Fort in 1459, shifting the capital from Mandore.",
+            "Rao Maldev built Marwar into a rival of Sher Shah — the 1544 Battle of Sammel between them is one of the fiercest Rajput-Afghan engagements.",
+            "Maharaja Man Singh patronised the Nath sect — Marwar painting reached its stylistic peak (bold flat-colour) under him.",
+            "The Rathores expanded eastward to form Bikaner (Rao Bika, 1488) and southward to found Kishangarh (Kishan Singh, 1611)."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dyn-rathores-bikaner",
+      "geometry": { "type": "Point", "coordinates": [73.3180, 28.0200] },
+      "properties": {
+        "name": "Rathores of Bikaner",
+        "type": "rajput_dynasty",
+        "category": "custom",
+        "dynasty": "Rathore (Bikaner branch)",
+        "capital": "Bikaner",
+        "district": "Bikaner",
+        "period": "1488 – 1949",
+        "founder": "Rao Bika (r. 1488–1504, son of Rao Jodha of Marwar)",
+        "peakRuler": "Raja Rai Singh (r. 1571–1611), Maharaja Karni Singh (r. 1950–88)",
+        "fall": "1949 — merged into United State of Rajasthan (Phase 4)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "👑",
+        "notes": {
+          "facts": [
+            "Founded 1488 by Rao Bika, son of Rao Jodha of Marwar — the split created Marwar's northern rival covering Bikaner, Churu, Ganganagar, Hanumangarh.",
+            "Raja Rai Singh built Junagarh Fort (1594) — one of only two Rajput forts on a plain (with Nagaur), and never breached in war.",
+            "Bikaner's court hosted the greatest concentration of Mughal-trained painters outside Delhi — the Bikaner School's Ali Raza and Ruknuddin lineage lasted three generations.",
+            "Ganga Singh (r. 1887–1943) built the Ganga Canal (1927) — Rajasthan's first major irrigation system — bringing Sutlej water to Ganganagar.",
+            "Bikaner sent troops to fight in both World Wars — the Bikaner Camel Corps (Ganga Risala) served under British command."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dyn-kachhawahas-jaipur",
+      "geometry": { "type": "Point", "coordinates": [75.8510, 26.9860] },
+      "properties": {
+        "name": "Kachhawahas of Amber–Jaipur",
+        "type": "rajput_dynasty",
+        "category": "custom",
+        "dynasty": "Kachhawaha",
+        "capital": "Amber (Amer) → Jaipur (1727)",
+        "district": "Jaipur",
+        "period": "1128 – 1949",
+        "founder": "Dulha Rai (~1128, from the Kachhawaha Rajputs of Gwalior)",
+        "peakRuler": "Raja Man Singh I (r. 1589–1614), Sawai Jai Singh II (r. 1699–1743)",
+        "fall": "1949 — merged into United State of Rajasthan (Phase 4)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "👑",
+        "notes": {
+          "facts": [
+            "The Kachhawaha–Mughal alliance was Rajasthan's most successful — 5 generations of Amber Rajas served as Mughal generals from Akbar's court onwards.",
+            "Raja Man Singh I was Akbar's most trusted general and 'Mansabdar of 7000' — Rajputana's highest Mughal rank; commanded Mughal campaigns in Bengal, Kabul and Odisha.",
+            "Sawai Jai Singh II founded Jaipur city in 1727 on a formal grid plan designed with Vidyadhar Bhattacharya — one of India's first planned cities.",
+            "Jai Singh II built five Jantar Mantar observatories (Delhi, Jaipur, Ujjain, Mathura, Varanasi) — Jaipur's is a UNESCO World Heritage Site (2010).",
+            "Alwar (1770) and Kishangarh sub-branches were Kachhawaha cadet lines that became independent princely states."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dyn-bhatis-jaisalmer",
+      "geometry": { "type": "Point", "coordinates": [70.9130, 26.9120] },
+      "properties": {
+        "name": "Bhatis of Jaisalmer",
+        "type": "rajput_dynasty",
+        "category": "custom",
+        "dynasty": "Bhati",
+        "capital": "Lodhruva → Jaisalmer (1156)",
+        "district": "Jaisalmer",
+        "period": "1156 – 1949",
+        "founder": "Rawal Jaisal (r. 1156)",
+        "peakRuler": "Rawal Ratansi (r. 1301, defended against Alauddin Khilji), Maharawal Akhai Singh (r. 1722–61)",
+        "fall": "1949 — merged into United State of Rajasthan (Phase 4)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "👑",
+        "notes": {
+          "facts": [
+            "One of Rajputana's oldest continuous ruling houses — 793 years of Bhati rule from Jaisalmer's founding (1156) to 1949.",
+            "The Bhatis trace descent from Krishna's Yaduvanshi clan — same lineage as the Yaduvanshis of Karauli.",
+            "Site of two great jauhars: 1294 (against Alauddin Khilji's siege for 8 years) and 1550 (against Ahmad Shah Suri).",
+            "Jaisalmer commanded the Silk Route caravan traffic between India and Central Asia — the city's wealth came from levies on trade convoys.",
+            "The Bhatis produced no famous Mughal general — Jaisalmer remained the most isolated princely state, largely untouched by Mughal administration."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dyn-hadas-bundi-kota",
+      "geometry": { "type": "Point", "coordinates": [75.6410, 25.4300] },
+      "properties": {
+        "name": "Hadas of Bundi–Kota",
+        "type": "rajput_dynasty",
+        "category": "custom",
+        "dynasty": "Hada (Chauhan branch)",
+        "capital": "Bundi (Bundi state); Kota (split 1631)",
+        "district": "Bundi",
+        "period": "1241 – 1949",
+        "founder": "Rao Deva (~1241, from the Chauhan lineage)",
+        "peakRuler": "Rao Ratan Singh of Bundi (r. 1607–31), Rao Madho Singh of Kota (r. 1631–48)",
+        "fall": "1949 — merged into United State of Rajasthan (Phase 2)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "👑",
+        "notes": {
+          "facts": [
+            "The Hadas descend from the Chauhans of Nadol — Rao Deva captured Bundi from the Meenas in 1241 to found the dynasty.",
+            "Kota split from Bundi in 1631 when Shah Jahan granted Rao Madho Singh (younger brother of Bundi's ruler) his own princely state.",
+            "Bundi and Kota schools of miniature painting emerged from the Hada courts — both descended from the 1591 Chunar Ragamala set.",
+            "Kota's Rao Ram Singh II (r. 1828–66) turned Kota into Rajputana's most Anglicised court — first to hire British architects.",
+            "The Hadoti region (Kota, Bundi, Baran, Jhalawar) still carries their name — Hadoti = 'land of the Hadas'."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dyn-jats-bharatpur",
+      "geometry": { "type": "Point", "coordinates": [77.4940, 27.2160] },
+      "properties": {
+        "name": "Jats of Bharatpur",
+        "type": "rajput_dynasty",
+        "category": "custom",
+        "dynasty": "Sinsinwar Jat",
+        "capital": "Bharatpur (Lohagarh Fort)",
+        "district": "Bharatpur",
+        "period": "1670s – 1949",
+        "founder": "Churaman (r. 1695–1721) and Badan Singh (r. 1722–56)",
+        "peakRuler": "Maharaja Suraj Mal (r. 1756–63)",
+        "fall": "1949 — merged into Matsya Union (Phase 1) then USR",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Indian historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "👑",
+        "notes": {
+          "facts": [
+            "The only major NON-RAJPUT princely state in Rajasthan — a Jat power that rose in the vacuum left by the declining Mughal empire.",
+            "Maharaja Suraj Mal was called the 'Plato of the Jat people' by Sir Jadunath Sarkar for his political shrewdness; expanded Bharatpur to include Agra, Aligarh, Etah and Rewari.",
+            "Lohagarh (Iron Fort) at Bharatpur withstood 13 British sieges (1805) — the ONLY Rajputana fort the British could not breach.",
+            "Bharatpur allied with the Marathas, Rohillas and later the British as convenient — a distinctive realpolitik strategy.",
+            "Deeg Palace (built by Suraj Mal, 1772) is one of North India's finest 18th c. garden palaces — carved out of a single sandstone block."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dyn-yaduvanshis-karauli",
+      "geometry": { "type": "Point", "coordinates": [77.0240, 26.5020] },
+      "properties": {
+        "name": "Yaduvanshis of Karauli",
+        "type": "rajput_dynasty",
+        "category": "custom",
+        "dynasty": "Yaduvanshi (Jadaun Rajput)",
+        "capital": "Karauli",
+        "district": "Karauli",
+        "period": "1348 – 1949",
+        "founder": "Raja Arjun Pal (r. 1348, descendant of Bijai Pal)",
+        "peakRuler": "Maharaja Gopal Singh (r. 1725–57)",
+        "fall": "1949 — merged into Matsya Union (Phase 1) then USR",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "👑",
+        "notes": {
+          "facts": [
+            "The Karauli royals trace unbroken descent from Krishna's Yadu clan — one of only three Yaduvanshi royal houses in India (with Jaisalmer Bhatis and Jaisalmer's western branch).",
+            "Karauli's founding legend: Arjun Pal (1348) recovered ancestral lands lost after Delhi's sack by Muhammad Ghuri.",
+            "The Madan Mohan-ji temple at Karauli — dedicated to a form of Krishna — is one of North India's four principal Krishna shrines.",
+            "The state was small (~5,000 km²) but remained a full 17-gun-salute princely state under the British — a status marker of its ancient lineage.",
+            "Karauli merged into Matsya Union on 18 March 1948 — the first phase of Rajasthan's integration."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dyn-nawabs-tonk",
+      "geometry": { "type": "Point", "coordinates": [75.7890, 26.1690] },
+      "properties": {
+        "name": "Nawabs of Tonk",
+        "type": "rajput_dynasty",
+        "category": "custom",
+        "dynasty": "Tonk Nawab (Pindari-origin)",
+        "capital": "Tonk",
+        "district": "Tonk",
+        "period": "1806 – 1949",
+        "founder": "Amir Khan Pindari (r. 1806–34)",
+        "peakRuler": "Nawab Muhammad Ibrahim Ali Khan (r. 1868–1930)",
+        "fall": "1949 — merged into United State of Rajasthan (Phase 2)",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Indian historiography",
+        "lastUpdated": "2026-07-12",
+        "icon": "👑",
+        "notes": {
+          "facts": [
+            "Rajasthan's ONLY Muslim princely state — founded when the British granted the Pindari leader Amir Khan a hereditary state at Tonk in 1806.",
+            "The Nawabs claimed Pashtun (Buner) origin; Amir Khan's Pindari confederacy had been Central India's most feared irregular cavalry force until the 1817 Third Anglo-Maratha War.",
+            "Tonk's Arabic-Persian manuscript library — the 'Maulana Azad Arabic-Persian Research Institute' — holds one of India's largest Islamic manuscript collections (~150,000 volumes).",
+            "The Sunehri Kothi (Golden Palace) at Tonk is one of Rajasthan's finest Islamic-Rajput fusion buildings — gold-leaf interior and Mughal miniature architecture.",
+            "Tonk was also Rajputana's largest Namda (felted-wool rug) cluster — patronised by the Nawabs and still practised today."
+          ]
+        }
+      }
+    }
+  ]
+}

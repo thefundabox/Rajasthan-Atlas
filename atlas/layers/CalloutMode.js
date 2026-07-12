@@ -102,12 +102,15 @@ function buildOverlays() {
 function refreshEverything() {
   const activeLayers = eligibleLayers().filter(l => Atlas.layers.list().find(x => x.id === l.id));
   renderIcons(activeLayers);
-  // The rajasthan-integration layer has its own chronology UI in
-  // IntegrationTimeline.js. When that's mounted, skip its edge callouts
-  // (icons still paint at each capital's location on the map).
-  const timelineActive = typeof window !== 'undefined' && window.__integrationTimelineActive?.();
-  const forCallouts = timelineActive
-    ? activeLayers.filter(l => l.id !== 'rajasthan-integration')
+  // Chronology-timeline layers have their own accordion UI in the
+  // respective plug-ins. When the plug-in is mounted, skip that layer's
+  // edge callouts (icons still paint at each point's location on the map).
+  const w = typeof window !== 'undefined' ? window : null;
+  const skip = new Set();
+  if (w?.__integrationTimelineActive?.()) skip.add('rajasthan-integration');
+  if (w?.__dynastiesTimelineActive?.())   skip.add('rajput-dynasties');
+  const forCallouts = skip.size
+    ? activeLayers.filter(l => !skip.has(l.id))
     : activeLayers;
   renderSikhwal(forCallouts);
 }

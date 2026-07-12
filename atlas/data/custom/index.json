@@ -169,6 +169,19 @@
       "visible":  false,
       "searchable": true,
       "featureType": "painting_school"
+    },
+    {
+      "id":       "rajput-dynasties",
+      "name":     "Rajput Dynasties",
+      "type":     "point",
+      "data":     "atlas/data/custom/rajput-dynasties.geojson",
+      "category": "human",
+      "icon":     "👑",
+      "color":    "#6a3a3a",
+      "zIndex":   45,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "rajput_dynasty"
     }
   ]
 }
