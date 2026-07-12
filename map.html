@@ -110,7 +110,13 @@
         setTimeout(() => {
           for (const cfg of Atlas.layers.list()) {
             const f = Atlas.data.getFeature(cfg.id, feature);
-            if (f) { Atlas.interaction.select(cfg.id, feature); break; }
+            if (f) {
+              // Ensure the feature's layer is on before selecting so
+              // hidden layers still render for a deep-linked feature.
+              try { Atlas.layers.setVisible?.(cfg.id, true); } catch (_) {}
+              Atlas.interaction.select(cfg.id, feature, { zoom: true });
+              break;
+            }
           }
         }, 300);
       }

@@ -60,7 +60,37 @@ export class InteractionManager {
     this.atlas.renderer.updateFeatureStyle(layerId, featureId, { addClass: 'selected' });
     const feature = this.atlas.data.getFeature(layerId, featureId);
     this.atlas.bus.emit('selection:changed', { layerId, featureId, feature });
-    if (zoom && feature?.properties?.bbox) this.zoomToBBox(feature.properties.bbox);
+    if (zoom && feature) this._zoomToFeature(feature);
+  }
+
+  /* Pick the best available geometry hint and frame the view around it.
+   * Point features (and features with a degenerate bbox like [x,y,x,y])
+   * use a fixed-radius pan-and-zoom; polygons/lines with a real bbox
+   * use zoomToBBox as before. */
+  _zoomToFeature(feature) {
+    const bbox = feature.properties?.bbox;
+    const geom = feature.geometry;
+    const validBBox = Array.isArray(bbox) && bbox.length === 4
+      && bbox[2] > bbox[0] && bbox[3] > bbox[1];
+    if (validBBox) {
+      this.zoomToBBox(bbox);
+      return;
+    }
+    // Fall back to point / centroid.
+    const pt = (geom?.type === 'Point' && geom.coordinates)
+      || feature.properties?.centroid
+      || feature.properties?.labelAnchor;
+    if (Array.isArray(pt) && pt.length >= 2) {
+      this.zoomToPoint(pt[0], pt[1]);
+    }
+  }
+
+  /* Frame a fixed lon/lat window centred on a point — used for point
+   * features that don't have a natural bounding box. Default half-side
+   * (0.55°) gives ~55 km at Rajasthan's latitudes: a city-scale view
+   * that still shows the neighbouring district border. */
+  zoomToPoint(lon, lat, halfSide = 0.55) {
+    this.zoomToBBox([lon - halfSide, lat - halfSide, lon + halfSide, lat + halfSide]);
   }
   currentSelection() { return this._sel; }
 
