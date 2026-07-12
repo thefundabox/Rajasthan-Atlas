@@ -34,6 +34,7 @@ function install() {
   mountFabStack();
   mountSheetDriver();
   mountMobileSearchOverlay();
+  mountLayersOverlayHeader();
   document.body.classList.add('mobile-chrome-on');
 }
 
@@ -44,6 +45,7 @@ function uninstall() {
   document.querySelector('.m-menu-drop')?.remove();
   document.querySelector('.m-fabs')?.remove();
   document.querySelector('.m-search-overlay')?.remove();
+  document.querySelector('.m-layers-overlay-head')?.remove();
   document.body.classList.remove('mobile-chrome-on');
 }
 
@@ -93,6 +95,24 @@ function toggleMenu() {
 function closeMenu() {
   const drop = document.querySelector('.m-menu-drop');
   if (drop) drop.hidden = true;
+}
+
+/* ── Layers overlay header (title + close ×) ─────────────────────── */
+
+function mountLayersOverlayHeader() {
+  const panel = document.querySelector('.layers-popover .lp-panel');
+  if (!panel || panel.querySelector('.m-layers-overlay-head')) return;
+  const head = document.createElement('div');
+  head.className = 'm-layers-overlay-head';
+  head.innerHTML = `
+    <div class="m-layers-overlay-title">Layers</div>
+    <button class="m-layers-close" aria-label="Close layers">← Back to map</button>
+  `;
+  panel.prepend(head);
+  head.querySelector('.m-layers-close').addEventListener('click', ev => {
+    ev.stopPropagation();
+    document.querySelector('.layers-popover')?.classList.remove('open');
+  });
 }
 
 /* ── FAB stack ───────────────────────────────────────────────────── */
@@ -330,6 +350,40 @@ function injectStyles() {
         color: white;
         border-color: var(--indigo-600, #4f46e5);
       }
+
+      /* Layers overlay header — a sticky back-to-map bar so the user
+       * always has a visible way to leave the layers panel. */
+      .m-layers-overlay-head {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 8px 4px 12px;
+        margin: -16px -16px 12px;
+        padding-left: 16px; padding-right: 12px;
+        background: var(--paper);
+        border-bottom: 1px solid var(--hair);
+      }
+      .m-layers-overlay-title {
+        font-family: var(--serif);
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--ink);
+        letter-spacing: -0.005em;
+      }
+      .m-layers-close {
+        background: var(--indigo-600, #4f46e5);
+        color: white;
+        border: none;
+        border-radius: 999px;
+        padding: 8px 14px;
+        font-family: var(--sans);
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        display: inline-flex; align-items: center; gap: 4px;
+      }
+      .m-layers-close:active { transform: scale(0.98); }
 
       /* Mobile search overlay */
       .m-search-overlay {
