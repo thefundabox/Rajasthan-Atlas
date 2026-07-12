@@ -169,9 +169,9 @@ function mount() {
   const mapEl = document.querySelector('.a-map');
   if (!mapEl) return;
   strip = el('div', { class: 'itl-strip' });
-  strip.append(el('div', { class: 'itl-title' }, [
-    'Integration of Rajasthan · 1948 - 1956',
-  ]));
+  // Title dropped — nodes carry enough context. Card compacts into a
+  // single tight paragraph. Every pixel saved keeps the strip out of
+  // Rajasthan's northern silhouette when the card expands.
   const row = el('div', { class: 'itl-row' });
   PHASES.forEach((p, idx) => {
     const node = el('button', {
@@ -218,24 +218,18 @@ function select(phaseN) {
     return;
   }
   card.innerHTML = '';
+  // Ultra-compact single-line head: "④ Greater Rajasthan · 30 Mar 1949"
   card.append(el('div', { class: 'itl-card-head' }, [
     el('span', { class: 'itl-card-roman' }, [phase.roman]),
     el('span', { class: 'itl-card-name' },  [` ${phase.name}`]),
     el('span', { class: 'itl-card-date' },  [` · ${phase.date}`]),
   ]));
-  card.append(el('div', { class: 'itl-card-states' }, [
-    'States: ' + phase.states.join(' · '),
-  ]));
-  // Blurb + tight inline legend combined into one compact row.
-  card.append(el('div', { class: 'itl-card-blurb' }, [phase.blurb]));
-  const hasNew      = (NEW_AT_PHASE[phaseN]      || []).length > 0;
-  const hasExisting = ((MAIN_BODY_PHASES[phaseN] || []).filter(p => !(NEW_AT_PHASE[phaseN] || []).includes(p))).length > 0;
-  if (hasNew || hasExisting) {
-    const legend = el('div', { class: 'itl-legend' });
-    if (hasNew)      legend.append(el('span', {}, [el('span', { class: 'itl-swatch itl-sw-new' }),      'new']));
-    if (hasExisting) legend.append(el('span', {}, [el('span', { class: 'itl-swatch itl-sw-existing' }), 'already in union']));
-    card.append(legend);
-  }
+  // Two-column mini layout — states on the left, blurb on the right —
+  // keeps the total card height under ~50px even for verbose phases.
+  const body = el('div', { class: 'itl-card-body' });
+  body.append(el('div', { class: 'itl-card-states' }, [phase.states.join(' · ')]));
+  body.append(el('div', { class: 'itl-card-blurb' }, [phase.blurb]));
+  card.append(body);
   card.classList.remove('hidden');
   applyHighlight(phaseN);
   applyDistrictHighlight(phaseN);
@@ -402,11 +396,11 @@ function injectStyles() {
       background: color-mix(in srgb, var(--ink-3, #ba9863) 55%, transparent);
     }
     .itl-card {
-      margin-top: 6px;
-      padding-top: 5px;
+      margin-top: 4px;
+      padding-top: 4px;
       border-top: 1px dotted color-mix(in srgb, var(--ink-3, #ba9863) 45%, transparent);
-      font-size: 11px;
-      line-height: 1.35;
+      font-size: 10.5px;
+      line-height: 1.3;
       color: var(--ink-1, #3d2f10);
     }
     .itl-card.hidden { display: none; }
@@ -414,14 +408,31 @@ function injectStyles() {
       font-weight: 600;
       color: var(--sym-tr, #7a5a2a);
       margin-bottom: 2px;
+      font-size: 11px;
     }
     .itl-card-name  { color: var(--ink-1, #3d2f10); font-weight: 600; }
     .itl-card-date  { color: var(--ink-2, #6b5030); font-weight: 500; }
-    .itl-card-roman { font-size: 15px; }
+    .itl-card-roman { font-size: 13px; }
+    .itl-card-body {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
     .itl-card-states {
-      font-size: 10.8px;
+      flex: 0 0 40%;
+      font-size: 10px;
       color: var(--ink-2, #6b5030);
-      margin-bottom: 3px;
+      border-right: 1px dotted color-mix(in srgb, var(--ink-3, #ba9863) 40%, transparent);
+      padding-right: 8px;
+    }
+    .itl-card-blurb {
+      flex: 1 1 auto;
+      font-size: 10.5px;
+      color: var(--ink-1, #3d2f10);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
     /* Highlighted point icons for the selected phase's features. */
     .point-icon.itl-hi {
