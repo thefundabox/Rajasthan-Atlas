@@ -72,7 +72,7 @@
       "type":     "point",
       "data":     "atlas/data/custom/rajasthan-integration.geojson",
       "category": "human",
-      "icon":     "🇮🇳",
+      "icon":     "👑",
       "color":    "#4a6b8a",
       "zIndex":   37,
       "visible":  false,
