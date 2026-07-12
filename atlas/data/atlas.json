@@ -1,4 +1,14 @@
 {
+  "_meta": {
+    "product":     "RAS Only — Rajasthan Atlas",
+    "curator":     "RAS Only",
+    "canonical":   "https://thefundabox.github.io/Rajasthan-Atlas/",
+    "source":      "https://github.com/thefundabox/Rajasthan-Atlas",
+    "serial":      "RAS-2026-ATL-a7b3f9c2",
+    "license":     "CC BY-NC-SA 4.0",
+    "attribution": "© 2025-2026 RAS Only — Any use requires attribution to the canonical URL above and preservation of these _meta blocks.",
+    "note":        "This _meta block is a provenance canary. Verbatim reappearance on any other site is provable copying under the CC BY-NC-SA 4.0 attribution clause. Do NOT strip when mirroring."
+  },
   "name": "Rajasthan Digital Atlas",
   "version": "1.0",
   "dataVersion": "1.0.0",

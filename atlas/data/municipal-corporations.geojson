@@ -1,1 +1,214 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","id":"municipal-corporations-mc-jaipur-greater","properties":{"name":"Jaipur Municipal Corporation \u2014 Greater","type":"municipal_corporation","category":"urban","state":"Rajasthan","district":"Jaipur","source":"Government of Rajasthan notification 2019","lastUpdated":"2026-07-07","centroid":[75.81,26.97],"labelAnchor":[75.81,26.97],"bbox":[75.81,26.97,75.81,26.97],"geometryQuality":"point","notes":{"facts":["Splitting of erstwhile JMC into Greater and Heritage was notified in 2019.","Greater corporation covers eastern and southern Jaipur."],"mnemonic":"","significance":"high","confusedWith":[]},"ecology":{"flora":[],"fauna":[],"ecosystem":""},"governance":{"authority":"Government of Rajasthan","status":"active"},"id":"mc-jaipur-greater","population_lakh":30},"geometry":{"type":"Point","coordinates":[75.81,26.97]}},{"type":"Feature","id":"municipal-corporations-mc-jaipur-heritage","properties":{"name":"Jaipur Municipal Corporation \u2014 Heritage","type":"municipal_corporation","category":"urban","state":"Rajasthan","district":"Jaipur","source":"Government of Rajasthan notification 2019","lastUpdated":"2026-07-07","centroid":[75.825,26.925],"labelAnchor":[75.825,26.925],"bbox":[75.825,26.925,75.825,26.925],"geometryQuality":"point","notes":{"facts":["Heritage corporation includes the old walled city (UNESCO-listed).","Focused on heritage-conservation policy."],"mnemonic":"","significance":"high","confusedWith":[]},"ecology":{"flora":[],"fauna":[],"ecosystem":""},"governance":{"authority":"Government of Rajasthan","status":"active"},"id":"mc-jaipur-heritage","population_lakh":15},"geometry":{"type":"Point","coordinates":[75.825,26.925]}},{"type":"Feature","id":"municipal-corporations-mc-jodhpur-north","properties":{"name":"Jodhpur Municipal Corporation \u2014 North","type":"municipal_corporation","category":"urban","state":"Rajasthan","district":"Jodhpur","source":"GoR notification 2019","lastUpdated":"2026-07-07","centroid":[73.02,26.283],"labelAnchor":[73.02,26.283],"bbox":[73.02,26.283,73.02,26.283],"geometryQuality":"point","notes":{"facts":["Post-2019 split of the erstwhile Jodhpur Municipal Corporation.","Includes the old city + Mehrangarh fort area."],"mnemonic":"","significance":"high","confusedWith":[]},"ecology":{"flora":[],"fauna":[],"ecosystem":""},"governance":{"authority":"Government of Rajasthan","status":"active"},"id":"mc-jodhpur-north","population_lakh":6},"geometry":{"type":"Point","coordinates":[73.02,26.283]}},{"type":"Feature","id":"municipal-corporations-mc-jodhpur-south","properties":{"name":"Jodhpur Municipal Corporation \u2014 South","type":"municipal_corporation","category":"urban","state":"Rajasthan","district":"Jodhpur","source":"GoR notification 2019","lastUpdated":"2026-07-07","centroid":[73.03,26.265],"labelAnchor":[73.03,26.265],"bbox":[73.03,26.265,73.03,26.265],"geometryQuality":"point","notes":{"facts":["South corporation covers newer developments south of the city."],"mnemonic":"","significance":"high","confusedWith":[]},"ecology":{"flora":[],"fauna":[],"ecosystem":""},"governance":{"authority":"Government of Rajasthan","status":"active"},"id":"mc-jodhpur-south","population_lakh":6},"geometry":{"type":"Point","coordinates":[73.03,26.265]}},{"type":"Feature","id":"municipal-corporations-mc-kota-north","properties":{"name":"Kota Municipal Corporation \u2014 North","type":"municipal_corporation","category":"urban","state":"Rajasthan","district":"Kota","source":"GoR notification 2019","lastUpdated":"2026-07-07","centroid":[75.845,25.19],"labelAnchor":[75.845,25.19],"bbox":[75.845,25.19,75.845,25.19],"geometryQuality":"point","notes":{"facts":["Kota was split in 2019 \u2014 the northern half + educational quarter.","Includes the Kota coaching-industry core."],"mnemonic":"","significance":"high","confusedWith":[]},"ecology":{"flora":[],"fauna":[],"ecosystem":""},"governance":{"authority":"Government of Rajasthan","status":"active"},"id":"mc-kota-north","population_lakh":5},"geometry":{"type":"Point","coordinates":[75.845,25.19]}},{"type":"Feature","id":"municipal-corporations-mc-kota-south","properties":{"name":"Kota Municipal Corporation \u2014 South","type":"municipal_corporation","category":"urban","state":"Rajasthan","district":"Kota","source":"GoR notification 2019","lastUpdated":"2026-07-07","centroid":[75.85,25.155],"labelAnchor":[75.85,25.155],"bbox":[75.85,25.155,75.85,25.155],"geometryQuality":"point","notes":{"facts":["Southern corporation \u2014 includes RIICO industrial estates."],"mnemonic":"","significance":"high","confusedWith":[]},"ecology":{"flora":[],"fauna":[],"ecosystem":""},"governance":{"authority":"Government of Rajasthan","status":"active"},"id":"mc-kota-south","population_lakh":4},"geometry":{"type":"Point","coordinates":[75.85,25.155]}},{"type":"Feature","id":"municipal-corporations-mc-udaipur","properties":{"name":"Udaipur Municipal Corporation","type":"municipal_corporation","category":"urban","state":"Rajasthan","district":"Udaipur","source":"GoR Municipal Act","lastUpdated":"2026-07-07","centroid":[73.69,24.585],"labelAnchor":[73.69,24.585],"bbox":[73.69,24.585,73.69,24.585],"geometryQuality":"point","notes":{"facts":["Udaipur's tourism-centric corporation \u2014 covers the lake belt."],"mnemonic":"","significance":"high","confusedWith":[]},"ecology":{"flora":[],"fauna":[],"ecosystem":""},"governance":{"authority":"Government of Rajasthan","status":"active"},"id":"mc-udaipur","population_lakh":5.5},"geometry":{"type":"Point","coordinates":[73.69,24.585]}},{"type":"Feature","id":"municipal-corporations-mc-ajmer","properties":{"name":"Ajmer Municipal Corporation","type":"municipal_corporation","category":"urban","state":"Rajasthan","district":"Ajmer","source":"GoR Municipal Act","lastUpdated":"2026-07-07","centroid":[74.63,26.45],"labelAnchor":[74.63,26.45],"bbox":[74.63,26.45,74.63,26.45],"geometryQuality":"point","notes":{"facts":["Includes the Dargah Sharif area."],"mnemonic":"","significance":"high","confusedWith":[]},"ecology":{"flora":[],"fauna":[],"ecosystem":""},"governance":{"authority":"Government of Rajasthan","status":"active"},"id":"mc-ajmer","population_lakh":6},"geometry":{"type":"Point","coordinates":[74.63,26.45]}},{"type":"Feature","id":"municipal-corporations-mc-bikaner","properties":{"name":"Bikaner Municipal Corporation","type":"municipal_corporation","category":"urban","state":"Rajasthan","district":"Bikaner","source":"GoR Municipal Act","lastUpdated":"2026-07-07","centroid":[73.312,28.023],"labelAnchor":[73.312,28.023],"bbox":[73.312,28.023,73.312,28.023],"geometryQuality":"point","notes":{"facts":["Wool + camel-hide crafts + Junagarh Fort area."],"mnemonic":"","significance":"high","confusedWith":[]},"ecology":{"flora":[],"fauna":[],"ecosystem":""},"governance":{"authority":"Government of Rajasthan","status":"active"},"id":"mc-bikaner","population_lakh":6.5},"geometry":{"type":"Point","coordinates":[73.312,28.023]}},{"type":"Feature","id":"municipal-corporations-mc-bharatpur","properties":{"name":"Bharatpur Municipal Corporation","type":"municipal_corporation","category":"urban","state":"Rajasthan","district":"Bharatpur","source":"GoR Municipal Act","lastUpdated":"2026-07-07","centroid":[77.48,27.217],"labelAnchor":[77.48,27.217],"bbox":[77.48,27.217,77.48,27.217],"geometryQuality":"point","notes":{"facts":["Youngest municipal corporation in the state.","Anchored on the Keoladeo Ghana Ramsar / UNESCO WHS."],"mnemonic":"","significance":"high","confusedWith":[]},"ecology":{"flora":[],"fauna":[],"ecosystem":""},"governance":{"authority":"Government of Rajasthan","status":"active"},"id":"mc-bharatpur","population_lakh":3.5},"geometry":{"type":"Point","coordinates":[77.48,27.217]}}]}
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "municipal-corporations-mc-jaipur",
+      "geometry": { "type": "Point", "coordinates": [75.7873, 26.9124] },
+      "properties": {
+        "name": "Jaipur Municipal Corporation",
+        "type": "municipal_corporation",
+        "category": "urban",
+        "state": "Rajasthan",
+        "district": "Jaipur",
+        "wards": 150,
+        "source": "GoR notification Nov 2025 (Bhajan Lal Sharma government) — 'one city, one civic body' merger",
+        "lastUpdated": "2026-07-13",
+        "centroid": [75.7873, 26.9124],
+        "labelAnchor": [75.7873, 26.9124],
+        "bbox": [75.7873, 26.9124, 75.7873, 26.9124],
+        "geometryQuality": "point",
+        "notes": {
+          "facts": [
+            "Merged Nov 2025 from Jaipur Greater + Jaipur Heritage (both split in 2019 under the Congress Ashok Gehlot government).",
+            "150 wards — Rajasthan's largest civic body by ward count.",
+            "Covers the UNESCO-listed walled city (heritage), Malviya Nagar and Mansarovar (south), and Vidyadhar Nagar (north-east)."
+          ],
+          "mnemonic": "",
+          "significance": "very-high",
+          "confusedWith": []
+        },
+        "ecology": { "flora": [], "fauna": [], "ecosystem": "" },
+        "governance": { "authority": "Government of Rajasthan", "status": "active" },
+        "id": "mc-jaipur",
+        "population_lakh": 45
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "municipal-corporations-mc-jodhpur",
+      "geometry": { "type": "Point", "coordinates": [73.0243, 26.2830] },
+      "properties": {
+        "name": "Jodhpur Municipal Corporation",
+        "type": "municipal_corporation",
+        "category": "urban",
+        "state": "Rajasthan",
+        "district": "Jodhpur",
+        "source": "GoR notification Nov 2025 (Bhajan Lal Sharma government) — 'one city, one civic body' merger",
+        "lastUpdated": "2026-07-13",
+        "centroid": [73.0243, 26.2830],
+        "labelAnchor": [73.0243, 26.2830],
+        "bbox": [73.0243, 26.2830, 73.0243, 26.2830],
+        "geometryQuality": "point",
+        "notes": {
+          "facts": [
+            "Merged Nov 2025 from Jodhpur North + Jodhpur South (split under the Congress Ashok Gehlot government in 2019).",
+            "Covers the old city (Mehrangarh, Ghantaghar, Sardar Market) plus the newer Kudi Bhagtasani southern quarter.",
+            "Rajasthan's second-largest civic body by population."
+          ],
+          "significance": "very-high",
+          "confusedWith": []
+        },
+        "governance": { "authority": "Government of Rajasthan", "status": "active" },
+        "id": "mc-jodhpur",
+        "population_lakh": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "municipal-corporations-mc-kota",
+      "geometry": { "type": "Point", "coordinates": [75.8648, 25.2138] },
+      "properties": {
+        "name": "Kota Municipal Corporation",
+        "type": "municipal_corporation",
+        "category": "urban",
+        "state": "Rajasthan",
+        "district": "Kota",
+        "wards": 100,
+        "source": "GoR notification Nov 2025 (Bhajan Lal Sharma government) — 'one city, one civic body' merger",
+        "lastUpdated": "2026-07-13",
+        "centroid": [75.8648, 25.2138],
+        "labelAnchor": [75.8648, 25.2138],
+        "bbox": [75.8648, 25.2138, 75.8648, 25.2138],
+        "geometryQuality": "point",
+        "notes": {
+          "facts": [
+            "Merged Nov 2025 from Kota North + Kota South (both split in 2019 under the Congress Ashok Gehlot government).",
+            "100 wards. Anchor of Rajasthan's coaching-education economy.",
+            "Covers the Chambal river-front, the Kota coaching quarter, and the RIICO industrial estates south of the river."
+          ],
+          "significance": "very-high",
+          "confusedWith": []
+        },
+        "governance": { "authority": "Government of Rajasthan", "status": "active" },
+        "id": "mc-kota",
+        "population_lakh": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "municipal-corporations-mc-udaipur",
+      "geometry": { "type": "Point", "coordinates": [73.6822, 24.5760] },
+      "properties": {
+        "name": "Udaipur Municipal Corporation",
+        "type": "municipal_corporation",
+        "category": "urban",
+        "state": "Rajasthan",
+        "district": "Udaipur",
+        "source": "GoR Municipal Act",
+        "lastUpdated": "2026-07-13",
+        "centroid": [73.6822, 24.5760],
+        "labelAnchor": [73.6822, 24.5760],
+        "bbox": [73.6822, 24.5760, 73.6822, 24.5760],
+        "geometryQuality": "point",
+        "notes": {
+          "facts": [
+            "Tourism-anchored civic body — covers Pichola, Fateh Sagar, City Palace and Lake Palace zones.",
+            "Was never split into twin corporations — remained a single unified body."
+          ],
+          "significance": "high",
+          "confusedWith": []
+        },
+        "governance": { "authority": "Government of Rajasthan", "status": "active" },
+        "id": "mc-udaipur",
+        "population_lakh": 5.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "municipal-corporations-mc-ajmer",
+      "geometry": { "type": "Point", "coordinates": [74.6399, 26.4499] },
+      "properties": {
+        "name": "Ajmer Municipal Corporation",
+        "type": "municipal_corporation",
+        "category": "urban",
+        "state": "Rajasthan",
+        "district": "Ajmer",
+        "source": "GoR Municipal Act",
+        "lastUpdated": "2026-07-13",
+        "centroid": [74.6399, 26.4499],
+        "labelAnchor": [74.6399, 26.4499],
+        "bbox": [74.6399, 26.4499, 74.6399, 26.4499],
+        "geometryQuality": "point",
+        "notes": {
+          "facts": [
+            "Covers the Dargah Sharif precinct and the Anasagar lake belt.",
+            "One of Rajasthan's oldest municipal bodies — established under British Ajmer-Merwara Chief Commissioner's Province."
+          ],
+          "significance": "high",
+          "confusedWith": []
+        },
+        "governance": { "authority": "Government of Rajasthan", "status": "active" },
+        "id": "mc-ajmer",
+        "population_lakh": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "municipal-corporations-mc-bikaner",
+      "geometry": { "type": "Point", "coordinates": [73.3119, 28.0229] },
+      "properties": {
+        "name": "Bikaner Municipal Corporation",
+        "type": "municipal_corporation",
+        "category": "urban",
+        "state": "Rajasthan",
+        "district": "Bikaner",
+        "source": "GoR Municipal Act",
+        "lastUpdated": "2026-07-13",
+        "centroid": [73.3119, 28.0229],
+        "labelAnchor": [73.3119, 28.0229],
+        "bbox": [73.3119, 28.0229, 73.3119, 28.0229],
+        "geometryQuality": "point",
+        "notes": {
+          "facts": [
+            "Covers Junagarh Fort, the walled-city havelis, and the wool + Bikaneri-bhujia manufacturing quarter."
+          ],
+          "significance": "high",
+          "confusedWith": []
+        },
+        "governance": { "authority": "Government of Rajasthan", "status": "active" },
+        "id": "mc-bikaner",
+        "population_lakh": 6.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "municipal-corporations-mc-bharatpur",
+      "geometry": { "type": "Point", "coordinates": [77.4940, 27.2160] },
+      "properties": {
+        "name": "Bharatpur Municipal Corporation",
+        "type": "municipal_corporation",
+        "category": "urban",
+        "state": "Rajasthan",
+        "district": "Bharatpur",
+        "source": "GoR Municipal Act",
+        "lastUpdated": "2026-07-13",
+        "centroid": [77.4940, 27.2160],
+        "labelAnchor": [77.4940, 27.2160],
+        "bbox": [77.4940, 27.2160, 77.4940, 27.2160],
+        "geometryQuality": "point",
+        "notes": {
+          "facts": [
+            "The most-recently-notified Municipal Corporation in Rajasthan (upgraded from Nagar Palika in the mid-2010s).",
+            "Anchored on the Keoladeo Ghana Ramsar / UNESCO World Heritage bird sanctuary."
+          ],
+          "significance": "high",
+          "confusedWith": []
+        },
+        "governance": { "authority": "Government of Rajasthan", "status": "active" },
+        "id": "mc-bharatpur",
+        "population_lakh": 3.5
+      }
+    }
+  ]
+}
