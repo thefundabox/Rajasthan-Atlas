@@ -170,19 +170,82 @@ const STATE_SYMBOLS = [
 // ── Boot ──────────────────────────────────────────────────────────
 (async function boot() {
   try {
-    const [demo, districts] = await Promise.all([
+    const [demo, districts, confusions] = await Promise.all([
       fetch('atlas/data/district-demographics.json').then(r => r.json()),
       fetch('atlas/data/districts.geojson').then(r => r.json()),
+      fetch('atlas/data/confusions.json').then(r => r.json()).catch(() => null),
     ]);
     renderTopics();
     renderDistricts(districts, demo);
     renderRecords(demo);
     renderSymbols();
+    if (confusions) renderConfusions(confusions);
     renderChains();
   } catch (err) {
     console.error('[StudyHome] boot failed:', err);
   }
 })();
+
+// ── Commonly confused pairs ───────────────────────────────────────
+const CONFUSION_CATEGORIES = [
+  { id: 'all',            label: 'All' },
+  { id: 'physical',       label: 'Physical' },
+  { id: 'environment',    label: 'Environment' },
+  { id: 'history',        label: 'History' },
+  { id: 'culture',        label: 'Culture' },
+  { id: 'administrative', label: 'Administrative' },
+];
+
+function renderConfusions(payload) {
+  const grid = document.getElementById('confusion-grid');
+  const filters = document.getElementById('confusion-filters');
+  if (!grid || !payload?.confusions) return;
+  const items = payload.confusions;
+
+  for (const cat of CONFUSION_CATEGORIES) {
+    const count = cat.id === 'all' ? items.length : items.filter(c => c.category === cat.id).length;
+    if (!count) continue;
+    const btn = document.createElement('button');
+    btn.className = 'confusion-filter' + (cat.id === 'all' ? ' is-active' : '');
+    btn.dataset.category = cat.id;
+    btn.innerHTML = `${cat.label} <span class="confusion-filter-count">${count}</span>`;
+    btn.addEventListener('click', () => {
+      filters.querySelectorAll('.confusion-filter').forEach(b => b.classList.toggle('is-active', b === btn));
+      grid.querySelectorAll('.confusion-card').forEach(card => {
+        card.style.display = (cat.id === 'all' || card.dataset.category === cat.id) ? '' : 'none';
+      });
+    });
+    filters.append(btn);
+  }
+
+  for (const c of items) {
+    const card = document.createElement('div');
+    card.className = 'confusion-card';
+    card.dataset.category = c.category;
+    const leftLink  = c.left.featureId  ? `map.html?feature=${encodeURIComponent(c.left.featureId)}`  : null;
+    const rightLink = c.right.featureId ? `map.html?feature=${encodeURIComponent(c.right.featureId)}` : null;
+    const leftName  = leftLink  ? `<a href="${leftLink}">${c.left.name}</a>`   : c.left.name;
+    const rightName = rightLink ? `<a href="${rightLink}">${c.right.name}</a>` : c.right.name;
+    card.innerHTML = `
+      <div class="confusion-head">
+        <span class="confusion-cat">${c.category}</span>
+      </div>
+      <div class="confusion-body">
+        <div class="confusion-side">
+          <div class="confusion-name">${leftName}</div>
+          <p class="confusion-dist">${c.left.distinguisher}</p>
+        </div>
+        <div class="confusion-vs">vs</div>
+        <div class="confusion-side">
+          <div class="confusion-name">${rightName}</div>
+          <p class="confusion-dist">${c.right.distinguisher}</p>
+        </div>
+      </div>
+      <div class="confusion-key"><strong>Rule:</strong> ${c.key}</div>
+    `;
+    grid.append(card);
+  }
+}
 
 function renderSymbols() {
   const grid = document.getElementById('symbol-grid');

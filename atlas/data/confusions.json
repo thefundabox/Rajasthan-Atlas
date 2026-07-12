@@ -1,0 +1,207 @@
+{
+  "_readme": "Curated 'commonly confused' pair index. Each pair is A vs B with a one-line distinguisher. featureId links into the map via map.html?feature=<id>; leave null if the counterpart isn't in the atlas.",
+  "lastUpdated": "2026-07-12",
+  "confusions": [
+
+    {
+      "id": "aravalli-vs-vindhya",
+      "category": "physical",
+      "key": "Aravalli runs SW–NE INSIDE Rajasthan; Vindhya runs E–W SOUTH of Rajasthan.",
+      "left":  { "name": "Aravalli Range",  "featureId": "aravalli-main-axis", "distinguisher": "~800 Ma fold mountains; runs SW-NE through Rajasthan; climatic divide (Thar west, semi-arid east); Guru Shikhar is highest peak." },
+      "right": { "name": "Vindhya Range",   "featureId": null,                 "distinguisher": "E-W trend on the Malwa plateau margin, SOUTH of Rajasthan; separates North Indian plain from Deccan; the Kota-Bundi plateau is its northern edge." }
+    },
+
+    {
+      "id": "chambal-vs-banas",
+      "category": "physical",
+      "key": "Chambal enters Rajasthan from MP (south); Banas is an entirely intra-Rajasthan river draining Mewar into Chambal.",
+      "left":  { "name": "Chambal River",   "featureId": "chambal-river", "distinguisher": "1,024 km — longest river in Rajasthan; rises in Janapav (MP), forms the Kota-Baran Chambal cascade with Gandhi Sagar, Rana Pratap Sagar, Jawahar Sagar, Kota Barrage." },
+      "right": { "name": "Banas River",     "featureId": "banas-river",   "distinguisher": "Longest INTRA-Rajasthan river; rises in Khamnor (Rajsamand), flows through Bhilwara-Tonk and joins Chambal at Rameshwar Ghat; Bisalpur dam is on the Banas." }
+    },
+
+    {
+      "id": "luni-vs-ghaggar",
+      "category": "physical",
+      "key": "Luni ends in the Rann of Kutch (a saline swamp); Ghaggar simply disappears into the desert with NO outlet.",
+      "left":  { "name": "Luni River",      "featureId": "luni-river",    "distinguisher": "Rises in the Aravalli near Ajmer (Naga hills); Rajasthan's principal Marwar drainage; 495 km; terminates in the Rann of Kutch (Gujarat). Its water turns saline downstream of Balotra." },
+      "right": { "name": "Ghaggar River",   "featureId": "ghaggar-river", "distinguisher": "The 'lost' Saraswati candidate; enters at Hanumangarh, dies out in the Thar without reaching the sea; associated with the Kalibangan Harappan site." }
+    },
+
+    {
+      "id": "sambhar-vs-pachpadra",
+      "category": "physical",
+      "key": "Sambhar is India's largest inland salt lake AND a Ramsar site; Pachpadra is smaller but the source of Sambhar-quality 'Punjab salt' historically.",
+      "left":  { "name": "Sambhar Lake",    "featureId": "sambhar-ramsar", "distinguisher": "Rajasthan's LARGEST salt lake; ~9% of India's salt output; Ramsar site (1990); on the Nagaur-Jaipur boundary." },
+      "right": { "name": "Pachpadra Lake",  "featureId": null,             "distinguisher": "Smaller salt lake in Barmer; unique for the twig-based crystallisation method ('lana khar'). No Ramsar status. Sits above the Barmer petroleum basin." }
+    },
+
+    {
+      "id": "ranthambhore-np-vs-tr",
+      "category": "environment",
+      "key": "Ranthambhore NP is inside Ranthambhore Tiger Reserve — the TR is larger (adds Sawai Man Singh WLS + Kailadevi WLS).",
+      "left":  { "name": "Ranthambhore NP",  "featureId": "ranthambore-np", "distinguisher": "Notified 1980, ~392 km²; the CORE zone; sits within the tiger reserve." },
+      "right": { "name": "Ranthambhore TR",  "featureId": "ranthambore-tr", "distinguisher": "Notified 1973; ~1411 km² total (NP + Sawai Man Singh WLS + Kailadevi WLS); one of India's first 9 Project Tiger reserves." }
+    },
+
+    {
+      "id": "keoladeo-vs-sultanpur",
+      "category": "environment",
+      "key": "Keoladeo (Bharatpur) is a UNESCO World Heritage bird sanctuary; Sultanpur (Haryana) is a smaller NP without WHS status.",
+      "left":  { "name": "Keoladeo Ghana NP", "featureId": "keoladeo-np",   "distinguisher": "UNESCO WHS (1985); Ramsar site (1981); man-made 18th-c. Bharatpur royal duck-shoot converted into India's premier bird sanctuary." },
+      "right": { "name": "Sultanpur NP",       "featureId": null,           "distinguisher": "In Haryana (Gurgaon) — NOT Rajasthan; also famous for migratory birds, but neither a WHS nor a Ramsar site of the same scale." }
+    },
+
+    {
+      "id": "desert-np-vs-kutch-desert-ws",
+      "category": "environment",
+      "key": "Desert NP is in Rajasthan (Jaisalmer-Barmer); Kutch Desert WS is in Gujarat.",
+      "left":  { "name": "Desert National Park", "featureId": "desert-np", "distinguisher": "Rajasthan's largest NP (~3162 km²); in Jaisalmer-Barmer; the last stronghold of the Godawan (Great Indian Bustard)." },
+      "right": { "name": "Kutch Desert WS",       "featureId": null,        "distinguisher": "In Gujarat's Rann of Kutch; famous for wild ass (Ghudkhur) and flamingoes. Different biome (salt marsh, not sand-desert)." }
+    },
+
+    {
+      "id": "godawan-vs-sonchiraiya",
+      "category": "environment",
+      "key": "Godawan = Great Indian Bustard (Rajasthan's state bird); Sonchiraiya = Lesser Florican, a smaller bustard.",
+      "left":  { "name": "Godawan (Great Indian Bustard)", "featureId": null, "distinguisher": "Rajasthan's state bird (1981); critically endangered; stronghold in Desert NP; ~150 birds left in India." },
+      "right": { "name": "Sonchiraiya (Lesser Florican)",   "featureId": null, "distinguisher": "Smaller bustard, endangered; monsoon breeding visitor to Shokaliya (Ajmer); NOT the state bird — often confused because both are grassland bustards." }
+    },
+
+    {
+      "id": "khejri-vs-rohira",
+      "category": "environment",
+      "key": "Khejri is the state TREE; Rohira is the state FLOWER (and also a tree — the desert teak).",
+      "left":  { "name": "Khejri",  "featureId": null, "distinguisher": "State tree (1983). Prosopis cineraria. Sacred to the Bishnoi; the 1730 Khejarli sacrifice defended it." },
+      "right": { "name": "Rohira",  "featureId": null, "distinguisher": "State FLOWER (not tree, 1983). Tecomella undulata. Called 'Marwar teak'; golden-yellow flowers; native to Aravalli-Thar." }
+    },
+
+    {
+      "id": "chittor-jauhars",
+      "category": "history",
+      "key": "Chittorgarh saw three great jauhars; each by a different queen against a different attacker.",
+      "left":  { "name": "1303 Padmini Jauhar",    "featureId": "chittor-siege-1303", "distinguisher": "Rani Padmini; attacker Alauddin Khilji (Delhi Sultanate); Rawal Ratan Singh's queen." },
+      "right": { "name": "1535 & 1568 Jauhars",     "featureId": "chittorgarh-fort",   "distinguisher": "1535: Rani Karnavati vs Bahadur Shah of Gujarat. 1568: 'Sakka' vs Akbar (final jauhar under Rani Phool Kanwar); after this, Chittor never rebuilt as capital." }
+    },
+
+    {
+      "id": "khanwa-vs-haldighati",
+      "category": "history",
+      "key": "Khanwa (1527) was Rana Sanga's DEFEAT by Babur; Haldighati (1576) was Maharana Pratap's indecisive stand against Akbar's Man Singh.",
+      "left":  { "name": "Battle of Khanwa (1527)", "featureId": "khanwa",     "distinguisher": "Rana Sanga of Mewar vs Babur; decisive Mughal victory that consolidated Babur's Indian conquest. Site: Khanwa near Bharatpur." },
+      "right": { "name": "Battle of Haldighati (1576)", "featureId": "haldighati", "distinguisher": "Maharana Pratap vs Akbar's forces led by Raja Man Singh I of Amber; tactically inconclusive; Pratap escaped on Chetak; site: Rakt Talai near Nathdwara." }
+    },
+
+    {
+      "id": "kumbhalgarh-vs-chittorgarh",
+      "category": "history",
+      "key": "Both were Mewar capitals — but Kumbhalgarh was NEVER breached in war; Chittor fell three times (jauhars).",
+      "left":  { "name": "Kumbhalgarh Fort",  "featureId": "kumbhalgarh-fort", "distinguisher": "Built by Rana Kumbha (r. 1433-68); 36-km walls — world's 2nd longest continuous wall; birthplace of Maharana Pratap; NEVER breached (fell only once via water-poisoning trick, 1578)." },
+      "right": { "name": "Chittorgarh Fort",  "featureId": "chittorgarh-fort", "distinguisher": "India's largest fort by area (280 ha); Mewar CAPITAL until 1568; site of the three great jauhars; abandoned as capital after 1568 Akbar siege." }
+    },
+
+    {
+      "id": "amber-vs-jaigarh-vs-nahargarh",
+      "category": "history",
+      "key": "All three ring Jaipur — Amber is the old CAPITAL (pre-1727); Jaigarh has the cannon foundry; Nahargarh is the northern watchtower.",
+      "left":  { "name": "Amber (Amer) Fort",  "featureId": "amber-fort",    "distinguisher": "Kachhawaha CAPITAL from 967 CE to 1727; UNESCO Hill Fort; the Sheesh Mahal is here; built up by Raja Man Singh I (1592)." },
+      "right": { "name": "Jaigarh + Nahargarh", "featureId": "jaigarh-fort", "distinguisher": "Jaigarh (1726): direct above Amber, houses 'Jaivan' — the world's largest wheeled cannon; had India's only in-fort cannon foundry. Nahargarh (1734): northern watchtower; ring-fort trio with Amber and Jaigarh." }
+    },
+
+    {
+      "id": "thewa-vs-meenakari-vs-kundan",
+      "category": "culture",
+      "key": "Three gold-based crafts — all different: Thewa is gold-on-glass (Pratapgarh); Meenakari is enamel-on-gold (Jaipur); Kundan is uncut-stone gem-setting (Jaipur).",
+      "left":  { "name": "Thewa (Pratapgarh)",   "featureId": "handicraft-clusters-thewa",         "distinguisher": "Openwork gold sheet fused onto molten COLOURED GLASS at 500°C. Only in Pratapgarh; only Raj-Soni families make it." },
+      "right": { "name": "Meenakari + Kundan (Jaipur)", "featureId": "handicraft-clusters-kundan-meena", "distinguisher": "Meenakari = enamel (mineral oxides fired on gold, no glass). Kundan = 24-carat gold gem-setting with uncut precious stones. Both practised together in Jaipur's Johari Bazaar." }
+    },
+
+    {
+      "id": "bandhej-vs-block-print",
+      "category": "culture",
+      "key": "Bandhej is TIE-DYE (resist); Bagru/Sanganer are BLOCK-PRINTS (applied dye). Different technique family.",
+      "left":  { "name": "Bandhej & Leheriya", "featureId": "handicraft-clusters-bandhej",        "distinguisher": "TIE-DYE — thousands of knots tied before dyeing (Bandhej dots) or diagonal rolling (Leheriya waves). Shekhawati and Jaipur belt." },
+      "right": { "name": "Bagru & Sanganer",    "featureId": "handicraft-clusters-sanganeri-printing", "distinguisher": "HAND-BLOCK PRINTS — carved wooden blocks stamp dye onto cloth. Sanganer = fine floral; Bagru = earth-tone geometric with iron-mordant dyes." }
+    },
+
+    {
+      "id": "bagru-vs-sanganer",
+      "category": "culture",
+      "key": "Both are block-print villages 30 km apart — but Sanganeri uses fine floral vegetable dyes; Bagru uses earth-tone iron-mordant.",
+      "left":  { "name": "Sanganeri Printing", "featureId": "handicraft-clusters-sanganeri-printing", "distinguisher": "Fine floral motifs on cotton; VEGETABLE dyes; light palette (pastel red, indigo); practised by the Chhipa community." },
+      "right": { "name": "Bagru Printing",      "featureId": "handicraft-clusters-bagru-printing",   "distinguisher": "Earth-tone geometric patterns; IRON-MORDANT dyes; darker palette (indigo, ochre, madder); black lines from ferrous mud." }
+    },
+
+    {
+      "id": "danka-vs-gota-patti",
+      "category": "culture",
+      "key": "Both are metal-work embroidery of Rajasthan; Danka uses SQUARE leaf-pieces (Udaipur); Gota-Patti uses ribbon STRIPS (Ajmer/Jaipur).",
+      "left":  { "name": "Danka (Udaipur)",       "featureId": "handicraft-clusters-danka", "distinguisher": "Tiny SQUARE dankas of gold/silver leaf hand-stitched onto silk. Only ~20 master families; Mewar royalty commission." },
+      "right": { "name": "Gota-Patti (Jaipur/Ajmer)", "featureId": null,                    "distinguisher": "Continuous thin metal RIBBONS applied as appliqué. Cheaper, more widespread; hallmark of Jaipuri bridal outfits." }
+    },
+
+    {
+      "id": "pichwai-vs-phad",
+      "category": "culture",
+      "key": "Pichwai hangs BEHIND a temple deity (small ritual cloth); Phad is a LONG NARRATIVE scroll for wandering priests.",
+      "left":  { "name": "Pichwai (Nathdwara)", "featureId": "painting-nathdwara", "distinguisher": "Devotional cloth painting placed BEHIND the Shrinathji idol; 24 seasonal rotations; deep blacks/greens/gold; Adi-Gaur painter families." },
+      "right": { "name": "Phad (Bhilwara)",      "featureId": null,               "distinguisher": "20-30 ft long horizontal narrative scroll; unrolled by wandering Bhopa priests as they sing folk-hero epics (Pabuji, Devnarayan). Practised in Bhilwara-Shahpura." }
+    },
+
+    {
+      "id": "bundi-vs-kota-school",
+      "category": "culture",
+      "key": "Sister schools that split in 1631 — Bundi favoured baramasa and rasikapriya; Kota specialised in JUNGLE HUNTS.",
+      "left":  { "name": "Bundi School",  "featureId": "painting-bundi", "distinguisher": "Palatial night skies, monsoon-clouds, round faces with fish-eyes; Baramasa/Ragamala themes; Chitrashala within Taragarh Fort." },
+      "right": { "name": "Kota School",   "featureId": "painting-kota",  "distinguisher": "Over-life-size TIGER AND BOAR HUNTS; dense entangled forest; action-drawing at a scale unusual for miniature painting. Peaked under Umed Singh I." }
+    },
+
+    {
+      "id": "kishangarh-vs-bikaner-school",
+      "category": "culture",
+      "key": "Both are Mughal-influenced BUT — Kishangarh gave us Bani-Thani (elongated faces, Krishna themes); Bikaner is the most technically REFINED and Sufi-linked.",
+      "left":  { "name": "Kishangarh School", "featureId": "painting-kishangarh", "distinguisher": "'Bani-Thani' style — elongated faces, half-closed almond eyes; developed under Sawant Singh (Nagari Das); painter Nihal Chand. Radha-Krishna themes." },
+      "right": { "name": "Bikaner School",     "featureId": "painting-bikaner",   "distinguisher": "Pale ivory tones, Persian palette (mauve, silver, sap-green); painters SIGNED and dated (rare); Usta-Muslim community; Ali Raza, Ruknuddin masters." }
+    },
+
+    {
+      "id": "ghoomar-vs-kalbeliya",
+      "category": "culture",
+      "key": "Ghoomar is the STATE dance (Rajput women); Kalbeliya is the UNESCO-listed serpent dance of the Kalbelia gypsy community.",
+      "left":  { "name": "Ghoomar",    "featureId": null, "distinguisher": "Bhil-origin women's whirl dance adopted by Rajputs; STATE DANCE; concentric circles around a central lamp; hallmark of Teej and weddings." },
+      "right": { "name": "Kalbeliya",   "featureId": null, "distinguisher": "UNESCO Intangible Heritage (2010); serpent-inspired sinuous movement; performed by the Kalbelia snake-charmer community; Gulabo Sapera brought it to world attention." }
+    },
+
+    {
+      "id": "marwar-vs-merwara",
+      "category": "administrative",
+      "key": "Marwar = the JODHPUR cultural region (Rathore heartland). Merwara = the British-era ADMINISTRATIVE province around Ajmer (a Chief-Commissioner's Province till 1956).",
+      "left":  { "name": "Marwar (cultural region)", "featureId": "regional-zones-marwar", "distinguisher": "The classical Rathore homeland — Jodhpur, Pali, Nagaur, Barmer, Jalore, Jaisalmer. A CULTURAL region." },
+      "right": { "name": "Ajmer-Merwara (colonial unit)", "featureId": null, "distinguisher": "1818-1956 British Chief-Commissioner's Province around Ajmer; NOT a princely state; joined Rajasthan by 1956 States Reorganisation, not by the 1948-50 integration." }
+    },
+
+    {
+      "id": "matsya-vs-vagad",
+      "category": "administrative",
+      "key": "Both are cultural regions; Matsya is the NORTHEAST (Alwar-Bharatpur), Vagad is the SOUTHERN tribal belt (Banswara-Dungarpur).",
+      "left":  { "name": "Matsya region",  "featureId": "regional-zones-matsya", "distinguisher": "Northeast Rajasthan — Alwar, Bharatpur, Dholpur, Karauli; Mahabharata-era name; briefly a merged state (18 Mar 1948-15 May 1949) before joining Rajasthan Union." },
+      "right": { "name": "Vagad region",    "featureId": "regional-zones-vagad", "distinguisher": "Southern tribal belt — Banswara, Dungarpur, southern Pratapgarh; Bhil-dominated; TSP Fifth-Schedule Area; Mahi Bajaj Sagar irrigates the belt." }
+    },
+
+    {
+      "id": "chinkara-vs-blackbuck",
+      "category": "environment",
+      "key": "Chinkara is the STATE animal (a small gazelle); Blackbuck is a separate antelope with spiral horns.",
+      "left":  { "name": "Chinkara",   "featureId": null, "distinguisher": "State animal (1981) — the Indian gazelle, small (~25 kg), pale-tan coat, straight horns. Ranges across Thar, Sariska, Ranthambhore." },
+      "right": { "name": "Blackbuck",   "featureId": null, "distinguisher": "Larger (~40 kg) antelope; males turn black-brown with SPIRAL horns; state animal of neighbouring Haryana/Punjab. Tal Chhapar Sanctuary (Churu) is Rajasthan's key blackbuck reserve." }
+    },
+
+    {
+      "id": "kalibangan-vs-ahar",
+      "category": "history",
+      "key": "Kalibangan is a HARAPPAN site on the Ghaggar (northwest Rajasthan); Ahar (Aharh) is a CHALCOLITHIC pre-Harappan culture on the Ayad river near Udaipur.",
+      "left":  { "name": "Kalibangan",  "featureId": null, "distinguisher": "Hanumangarh district; on the (extinct) Saraswati/Ghaggar; MATURE HARAPPAN + pre-Harappan phases; oldest ploughed field known in the world (c. 2800 BCE); world's earliest earthquake evidence." },
+      "right": { "name": "Ahar-Banas culture", "featureId": null, "distinguisher": "Ayad river near Udaipur; ~3000-1500 BCE; CHALCOLITHIC (copper-stone), independent of Harappa; ~90 sites in southern Rajasthan; Ahar copper artefacts predate Harappan copper." }
+    }
+
+  ]
+}

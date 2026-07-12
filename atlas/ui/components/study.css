@@ -311,6 +311,117 @@
   line-height: 1.45;
 }
 
+/* -- Commonly confused ----------------------------------------- */
+.confusion-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+.confusion-filter {
+  padding: 4px 10px;
+  background: transparent;
+  border: 1px solid var(--hair);
+  border-radius: 14px;
+  font-family: var(--sans);
+  font-size: 11.5px;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.confusion-filter:hover { border-color: var(--accent, #8b5a2b); color: var(--ink); }
+.confusion-filter.is-active {
+  background: var(--accent, #8b5a2b);
+  border-color: var(--accent, #8b5a2b);
+  color: white;
+}
+.confusion-filter-count {
+  font-size: 10px;
+  padding: 0 4px;
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--ink-3);
+}
+.confusion-filter.is-active .confusion-filter-count { background: rgba(255,255,255,0.22); color: white; }
+
+.confusion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 12px;
+}
+.confusion-card {
+  padding: 14px 16px;
+  background: var(--card);
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+}
+.confusion-head {
+  margin-bottom: 8px;
+}
+.confusion-cat {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  padding: 2px 8px;
+  background: var(--paper);
+  border-radius: 10px;
+}
+.confusion-body {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 10px;
+  align-items: start;
+}
+.confusion-side {
+  min-width: 0;
+}
+.confusion-name {
+  font-family: var(--serif);
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+.confusion-name a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent, #8b5a2b);
+}
+.confusion-name a:hover { color: var(--accent, #8b5a2b); }
+.confusion-dist {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 11.5px;
+  color: var(--ink-2);
+  line-height: 1.45;
+}
+.confusion-vs {
+  font-family: var(--serif);
+  font-size: 12px;
+  font-style: italic;
+  color: var(--ink-4);
+  padding-top: 4px;
+}
+.confusion-key {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--hair);
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--ink);
+  line-height: 1.45;
+}
+.confusion-key strong {
+  color: var(--accent, #8b5a2b);
+  font-weight: 600;
+}
+
 /* -- Chain strips ----------------------------------------------- */
 .chain-list {
   display: flex;
@@ -399,6 +510,9 @@
   .topic-grid { grid-template-columns: 1fr; }
   .record-grid { grid-template-columns: repeat(2, 1fr); }
   .symbol-grid { grid-template-columns: 1fr; }
+  .confusion-grid { grid-template-columns: 1fr; }
+  .confusion-body { grid-template-columns: 1fr; }
+  .confusion-vs { text-align: center; padding: 4px 0; }
   .chain-title { font-size: 11px; }
   .chain-pill { font-size: 12.5px; padding: 5px 10px; }
 }
@@ -410,8 +524,13 @@
 .theme-dark .topic-card,
 .theme-dark .record-card,
 .theme-dark .symbol-card,
+.theme-dark .confusion-card,
 .theme-dark .chain-wrap { background: #2b2820; border-color: #3a3a3e; }
-.theme-dark .symbol-year { border-color: #3a3a3e; }
+.theme-dark .symbol-year,
+.theme-dark .confusion-filter,
+.theme-dark .confusion-key { border-color: #3a3a3e; }
+.theme-dark .confusion-cat,
+.theme-dark .confusion-filter-count { background: #1e1e21; }
 .theme-dark .chain-pill { background: #1e1e21; border-color: #3a3a3e; color: #e8e2d3; }
 
 /* ── District directory ────────────────────────────────────────── */
