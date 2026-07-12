@@ -173,7 +173,9 @@
 .layers-popover {
   position: absolute;
   top: var(--sp-4); left: var(--sp-4);
-  z-index: 6;
+  /* Above the Sikhwal edge-column callouts (z-index 10) so it can be
+   * opened and used even while callouts flank the map. */
+  z-index: 20;
 }
 .layers-popover .lp-toggle {
   background: var(--card);

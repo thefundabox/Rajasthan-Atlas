@@ -196,7 +196,10 @@ function renderSikhwal(activeLayers) {
   if (!activeLayers.length) return;
 
   // Cap per-layer callouts so the perimeter doesn't drown in text.
-  const MAX_PER_LAYER = 12;
+  // 8 keeps a single layer clean, and multi-layer combinations
+  // (fairs + forts + palaces) remain readable when a hard column cap
+  // is applied later in repositionSikhwal.
+  const MAX_PER_LAYER = 8;
 
   for (const layer of activeLayers) {
     const feats = [...layer.features].slice(0, MAX_PER_LAYER);
@@ -248,8 +251,8 @@ function repositionSikhwal() {
   // Map centre in viewport coords (used as the axis-split threshold).
   const cx = svgRect.left + svgRect.width / 2;
 
-  // Clear any old per-box leader SVGs — boxes stay, only lines redrawn.
-  sikhwalRoot.querySelectorAll('.sikhwal-line').forEach(n => n.remove());
+  // Clear any old per-box leader SVGs + previous "+N more" tags.
+  sikhwalRoot.querySelectorAll('.sikhwal-line, .sikhwal-more').forEach(n => n.remove());
 
   /* Compute each slot's on-screen anchor point in viewport coords. */
   const slots = sikhwalSlots.map(slot => {
@@ -276,32 +279,50 @@ function repositionSikhwal() {
   const EDGE_MARGIN = 12;           // Distance from viewport edge to box outer edge.
   const TOP_MARGIN  = 76;           // Reserve top area for zoom controls, search, etc.
 
-  const leftCol  = slots.filter(s => s.ax <  cx).sort((a, b) => a.ay - b.ay);
-  const rightCol = slots.filter(s => s.ax >= cx).sort((a, b) => a.ay - b.ay);
-
+  // Hard cap per column — if we exceed this, the tail is hidden and a
+  // "+N more" tag appears in place of the last slot. Prevents bottom
+  // boxes from falling below the map area with no way to scroll to them.
   const usable = rect.height - TOP_MARGIN - EDGE_MARGIN;
-  const packColumn = (col, rightSide) => {
-    if (!col.length) return;
-    // Distribute evenly across usable height so columns of ≤6 look
-    // balanced and columns of many use the minimum stride.
-    const stride = col.length > 1
-      ? Math.max(STRIDE_Y, (usable - H) / (col.length - 1))
+  const MAX_COL = Math.max(3, Math.floor((usable - H) / STRIDE_Y) + 1);
+
+  const allLeft  = slots.filter(s => s.ax <  cx).sort((a, b) => a.ay - b.ay);
+  const allRight = slots.filter(s => s.ax >= cx).sort((a, b) => a.ay - b.ay);
+  const leftCol   = allLeft.slice(0, MAX_COL);
+  const rightCol  = allRight.slice(0, MAX_COL);
+  const leftHidden  = allLeft.slice(MAX_COL);
+  const rightHidden = allRight.slice(MAX_COL);
+  // Hide overflow boxes from the DOM flow so the "+N more" tag can take
+  // their visual position.
+  [...leftHidden, ...rightHidden].forEach(s => { s.div.style.display = 'none'; });
+
+  const packColumn = (col, rightSide, hiddenCount) => {
+    if (!col.length && !hiddenCount) return;
+    const slotCount = col.length + (hiddenCount > 0 ? 1 : 0);
+    const stride = slotCount > 1
+      ? Math.max(STRIDE_Y, (usable - H) / (slotCount - 1))
       : 0;
-    // Centre the column vertically inside usable band when it doesn't
-    // fill the whole height — pins nicely to the Rajasthan silhouette.
-    const totalHeight = (col.length - 1) * stride + H;
+    const totalHeight = (slotCount - 1) * stride + H;
     const startY = rect.top + TOP_MARGIN + Math.max(0, (usable - totalHeight) / 2);
-    // Viewport-absolute X: hug the map area's outer edge, not the page.
     const x = rightSide ? (rect.right - W - EDGE_MARGIN) : (rect.left + EDGE_MARGIN);
     col.forEach((slot, idx) => {
       const y = startY + idx * stride;
+      slot.div.style.display = '';
       slot.div.style.left = `${x}px`;
       slot.div.style.top  = `${y}px`;
       slot.boxX = x; slot.boxY = y;
     });
+    if (hiddenCount > 0) {
+      const y = startY + col.length * stride;
+      const tag = document.createElement('div');
+      tag.className = 'sikhwal-more';
+      tag.textContent = `+${hiddenCount} more`;
+      tag.style.left = `${x}px`;
+      tag.style.top  = `${y}px`;
+      sikhwalRoot.append(tag);
+    }
   };
-  packColumn(leftCol,  false);
-  packColumn(rightCol, true);
+  packColumn(leftCol,  false, leftHidden.length);
+  packColumn(rightCol, true,  rightHidden.length);
 
   /* Draw one small SVG per box, sized to just the leader-line bounding
    * box + anchor dot. This keeps every SVG tiny and never spans the
@@ -402,6 +423,23 @@ function injectStyles() {
     }
     /* Per-box mini SVGs — sized to just the leader-line bounding box. */
     .sikhwal-line { pointer-events: none; }
+    /* "+N more" tag replaces the tail of any column that overflows the
+     * viewport height. Callouts to items further down remain accessible
+     * via the Layers popover / search. */
+    .sikhwal-more {
+      position: fixed;
+      width: 190px;
+      padding: 6px 9px;
+      background: color-mix(in srgb, var(--bg-1, #f5efe0) 93%, transparent);
+      border: 1px dashed var(--ink-3, #ba9863);
+      border-radius: 4px;
+      font-family: var(--sans);
+      font-size: 11px;
+      color: var(--ink-2, #6b5030);
+      text-align: center;
+      pointer-events: none;
+      box-sizing: border-box;
+    }
     .sikhwal-box {
       position: fixed;
       width: 190px;
