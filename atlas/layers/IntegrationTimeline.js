@@ -180,8 +180,9 @@ function mount() {
       onclick: () => select(p.n),
     });
     node.append(el('div', { class: 'itl-roman' }, [p.roman]));
-    node.append(el('div', { class: 'itl-date' }, [p.shortDate]));
-    node.append(el('div', { class: 'itl-year' }, [p.shortYear]));
+    // Single-line date + year keeps the strip compact so the expanded
+    // phase card doesn't spill over the Rajasthan silhouette.
+    node.append(el('div', { class: 'itl-date' }, [`${p.shortDate} ${p.shortYear.slice(2)}`]));
     row.append(node);
     if (idx < PHASES.length - 1) row.append(el('div', { class: 'itl-connector' }));
   });
@@ -225,19 +226,16 @@ function select(phaseN) {
   card.append(el('div', { class: 'itl-card-states' }, [
     'States: ' + phase.states.join(' · '),
   ]));
+  // Blurb + tight inline legend combined into one compact row.
   card.append(el('div', { class: 'itl-card-blurb' }, [phase.blurb]));
-  // Legend — only show swatches for the colours actually in play this phase.
-  const legend = el('div', { class: 'itl-legend' });
   const hasNew      = (NEW_AT_PHASE[phaseN]      || []).length > 0;
   const hasExisting = ((MAIN_BODY_PHASES[phaseN] || []).filter(p => !(NEW_AT_PHASE[phaseN] || []).includes(p))).length > 0;
-  const hasSeparate = (SEPARATE_AT_PHASE[phaseN] || []).length > 0;
-  if (hasNew)      legend.append(el('span', {}, [el('span', { class: 'itl-swatch itl-sw-new' }),      'newly added this phase']));
-  if (hasExisting) legend.append(el('span', {}, [el('span', { class: 'itl-swatch itl-sw-existing' }), 'already in the union']));
-  if (hasSeparate) legend.append(el('span', {}, [el('span', { class: 'itl-swatch itl-sw-separate' }), 'formed but separate (Matsya)']));
-  card.append(legend);
-  card.append(el('div', { class: 'itl-card-note' }, [
-    'Modern-district boundaries approximate the pre-1956 princely-state extents.',
-  ]));
+  if (hasNew || hasExisting) {
+    const legend = el('div', { class: 'itl-legend' });
+    if (hasNew)      legend.append(el('span', {}, [el('span', { class: 'itl-swatch itl-sw-new' }),      'new']));
+    if (hasExisting) legend.append(el('span', {}, [el('span', { class: 'itl-swatch itl-sw-existing' }), 'already in union']));
+    card.append(legend);
+  }
   card.classList.remove('hidden');
   applyHighlight(phaseN);
   applyDistrictHighlight(phaseN);
@@ -334,12 +332,15 @@ function injectStyles() {
   s.textContent = `
     .itl-strip {
       position: absolute;
-      top: 14px;
+      /* Pull the strip up close to the top so the expanded phase card
+       * still fits inside the map's northern whitespace without touching
+       * the Rajasthan silhouette. */
+      top: 2px;
       left: 50%;
       transform: translateX(-50%);
       z-index: 6;
-      width: min(760px, calc(100% - 40px));
-      padding: 10px 14px 12px;
+      width: min(720px, calc(100% - 40px));
+      padding: 5px 12px 7px;
       background: color-mix(in srgb, var(--bg-1, #f5efe0) 96%, transparent);
       border: 1px solid var(--ink-3, #ba9863);
       border-radius: 8px;
@@ -348,13 +349,13 @@ function injectStyles() {
       color: var(--ink-1, #3d2f10);
     }
     .itl-title {
-      font-size: 11px;
+      font-size: 10.5px;
       text-transform: uppercase;
       letter-spacing: 0.09em;
       color: var(--ink-2, #6b5030);
       font-weight: 600;
       text-align: center;
-      margin-bottom: 8px;
+      margin-bottom: 3px;
     }
     .itl-row {
       display: flex;
@@ -367,10 +368,10 @@ function injectStyles() {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 4px 6px;
+      padding: 2px 5px;
       border: 1px solid transparent;
       background: transparent;
-      border-radius: 6px;
+      border-radius: 5px;
       cursor: pointer;
       font-family: inherit;
       color: var(--ink-1, #3d2f10);
@@ -384,39 +385,35 @@ function injectStyles() {
       border-color: var(--sym-tr, #7a5a2a);
     }
     .itl-roman {
-      font-size: 20px;
+      font-size: 16px;
       line-height: 1;
       color: var(--sym-tr, #7a5a2a);
     }
     .itl-date {
-      font-size: 10.5px;
+      font-size: 9.5px;
       color: var(--ink-1, #3d2f10);
-      margin-top: 2px;
-    }
-    .itl-year {
-      font-size: 10px;
-      color: var(--ink-2, #6b5030);
-      opacity: 0.85;
+      margin-top: 1px;
+      white-space: nowrap;
     }
     .itl-connector {
       flex: 1 1 auto;
       height: 1px;
-      margin: 0 4px 12px;
+      margin: 0 3px 10px;
       background: color-mix(in srgb, var(--ink-3, #ba9863) 55%, transparent);
     }
     .itl-card {
-      margin-top: 10px;
-      padding-top: 8px;
+      margin-top: 6px;
+      padding-top: 5px;
       border-top: 1px dotted color-mix(in srgb, var(--ink-3, #ba9863) 45%, transparent);
-      font-size: 11.5px;
-      line-height: 1.42;
+      font-size: 11px;
+      line-height: 1.35;
       color: var(--ink-1, #3d2f10);
     }
     .itl-card.hidden { display: none; }
     .itl-card-head {
       font-weight: 600;
       color: var(--sym-tr, #7a5a2a);
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
     .itl-card-name  { color: var(--ink-1, #3d2f10); font-weight: 600; }
     .itl-card-date  { color: var(--ink-2, #6b5030); font-weight: 500; }
