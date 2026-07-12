@@ -156,6 +156,19 @@
       "visible":  false,
       "searchable": true,
       "featureType": "folk_goddess"
+    },
+    {
+      "id":       "painting-schools",
+      "name":     "Rajput Painting Schools",
+      "type":     "point",
+      "data":     "atlas/data/custom/painting-schools.geojson",
+      "category": "human",
+      "icon":     "🎨",
+      "color":    "#8a4a7a",
+      "zIndex":   44,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "painting_school"
     }
   ]
 }

@@ -67,6 +67,10 @@ const TOPICS = [
     blurb: 'CAZRI · AFRI · CSWRI · IIT · IIM · NLU · KVK · Camel research · SEVAR',
     layers: 'research-centers',
     layerCount: 1 },
+  { id: 'arts-crafts', icon: '🎨', name: 'Arts & Crafts',
+    blurb: 'Mewar · Kishangarh · Bundi-Kota painting · Thewa · Kundan-Meena · Kavad · Bandhej · Blue Pottery',
+    layers: 'painting-schools,handicraft-clusters',
+    layerCount: 2 },
 ];
 
 // ── Curated concept chains ────────────────────────────────────────

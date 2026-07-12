@@ -1,0 +1,230 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "painting-mewar",
+      "geometry": { "type": "Point", "coordinates": [73.6822, 24.5760] },
+      "properties": {
+        "name": "Mewar School (Udaipur)",
+        "type": "painting_school",
+        "category": "custom",
+        "district": "Udaipur",
+        "period": "17th–19th c.",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput painting canon",
+        "lastUpdated": "2026-07-12",
+        "icon": "🎨",
+        "notes": {
+          "facts": [
+            "Earliest and most influential Rajput painting school — the reference from which every other Rajasthani school takes its bearings.",
+            "Peaked 1605-1680 under Rana Amar Singh I, Karan Singh and Jagat Singh I; the master Sahibdin painted the 1652 Ramayana of Jagat Singh (British Library).",
+            "Signature: saturated flat colour (deep reds, ochres and lapis blues), direct emotional intensity, minimal shading.",
+            "Favoured themes: Ragamala sets, Bhagavata Purana, Gita Govinda, Krishna Leela.",
+            "Sahibdin and Manohar are the two master painters most associated with mid-17th c. Mewar."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "painting-marwar",
+      "geometry": { "type": "Point", "coordinates": [73.0243, 26.2389] },
+      "properties": {
+        "name": "Marwar School (Jodhpur)",
+        "type": "painting_school",
+        "category": "custom",
+        "district": "Jodhpur",
+        "period": "17th–19th c.",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput painting canon",
+        "lastUpdated": "2026-07-12",
+        "icon": "🎨",
+        "notes": {
+          "facts": [
+            "Bold outlines, wide flat areas of colour, and folk-flavoured energy — the least Mughal-influenced of the major Rajput schools.",
+            "Peaked under Maharaja Man Singh (r. 1803-1843), a devout follower of the Nath sect — Nath-guru portraits and Siddha-charitas dominate his commissions.",
+            "Signature palette: intense ochre-yellow ground, magenta drapery, ivory faces with sharply-drawn profiles.",
+            "Marwar sub-schools: Nagaur (softer), Ghanerao and Pali (bolder folk expression).",
+            "Bhim Sen and Amar Das were the leading atelier painters in Man Singh's Jodhpur court."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "painting-kishangarh",
+      "geometry": { "type": "Point", "coordinates": [74.8635, 26.5836] },
+      "properties": {
+        "name": "Kishangarh School",
+        "type": "painting_school",
+        "category": "custom",
+        "district": "Ajmer",
+        "period": "18th c.",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput painting canon",
+        "lastUpdated": "2026-07-12",
+        "icon": "🎨",
+        "notes": {
+          "facts": [
+            "Home of India's most-loved miniature — 'Bani-Thani' (c. 1750), often called the 'Indian Mona Lisa' and issued on an Indian postage stamp in 1973.",
+            "Developed under Raja Sawant Singh (r. 1748-1764), a Krishna-devotee poet who wrote under the pen-name 'Nagari Das'.",
+            "Bani-Thani was a real courtesan-poet at Sawant Singh's court; the master painter Nihal Chand idealised her features.",
+            "Signature: elongated faces, arched brows, half-closed almond eyes, pointed nose and chin, lotus-petal lips — a stylised Krishna–Radha ideal.",
+            "Almost entirely devoted to Radha–Krishna themes set against lush Kishangarh lakes and moonlit skies."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "painting-bundi",
+      "geometry": { "type": "Point", "coordinates": [75.6371, 25.4423] },
+      "properties": {
+        "name": "Bundi School",
+        "type": "painting_school",
+        "category": "custom",
+        "district": "Bundi",
+        "period": "17th–19th c.",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput painting canon",
+        "lastUpdated": "2026-07-12",
+        "icon": "🎨",
+        "notes": {
+          "facts": [
+            "Founded from the 1591 Chunar Ragamala — a dispersed set painted by Mughal-trained artists that became the DNA of both Bundi and Kota schools.",
+            "Signature: rich vegetation (banana, mango, tamarind), dark night skies, luminous white palaces, and a distinctive round-faced female type with fish-shaped eyes.",
+            "Themes favoured Baramasa (12-month seasonal), Ragamala, Rasikapriya and elephant-and-tiger hunts.",
+            "Chitrashala within Taragarh Fort — an open-corridor gallery — holds the largest surviving in-situ display of Bundi murals.",
+            "Rao Chattar Sal (r. 1631-58) and Rao Ummed Singh (r. 1749-70) were the school's leading patrons."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "painting-kota",
+      "geometry": { "type": "Point", "coordinates": [75.8698, 25.2032] },
+      "properties": {
+        "name": "Kota School",
+        "type": "painting_school",
+        "category": "custom",
+        "district": "Kota",
+        "period": "17th–19th c.",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput painting canon",
+        "lastUpdated": "2026-07-12",
+        "icon": "🎨",
+        "notes": {
+          "facts": [
+            "Sister school of Bundi — shares the same DNA but specialised in hunt-and-jungle scenes with dense, energetic foliage.",
+            "Split from Bundi after Kota state was separated in 1631 under Rao Madho Singh.",
+            "Signature: over-life-size tiger and boar hunts, dense forest with tangled trees, action-drawing at a scale unusual for miniature painting.",
+            "Peaked under Maharao Umed Singh I (r. 1770-1819) — a passionate hunter whose personal hunts fill hundreds of surviving Kota paintings.",
+            "The famous 'Elephant Fight' and 'Tiger Hunt' at Bundi Palace are Kota-style compositions."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "painting-jaipur",
+      "geometry": { "type": "Point", "coordinates": [75.7873, 26.9124] },
+      "properties": {
+        "name": "Jaipur (Dhundhar) School",
+        "type": "painting_school",
+        "category": "custom",
+        "district": "Jaipur",
+        "period": "18th–19th c.",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput painting canon",
+        "lastUpdated": "2026-07-12",
+        "icon": "🎨",
+        "notes": {
+          "facts": [
+            "Most Mughal-influenced of the Rajput schools — inherited direct patronage from Mughal ateliers via the Kachhawaha family's long service in Delhi.",
+            "Peaked under Sawai Pratap Singh (r. 1778-1803), who set up the 'Suratkhana' — the royal painting workshop that employed 50+ artists.",
+            "Specialised in large-scale life-size portraiture, Krishna-Leela sets, Ragamala and Baramasa themes.",
+            "Signature: refined Mughal-style drawing, sober palette dominated by ivory and mauve, meticulous jewellery detail.",
+            "Also known as 'Dhundhar' school after the historic Dhundhar region name for the Jaipur territory."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "painting-bikaner",
+      "geometry": { "type": "Point", "coordinates": [73.3119, 28.0229] },
+      "properties": {
+        "name": "Bikaner School",
+        "type": "painting_school",
+        "category": "custom",
+        "district": "Bikaner",
+        "period": "17th–19th c.",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput painting canon",
+        "lastUpdated": "2026-07-12",
+        "icon": "🎨",
+        "notes": {
+          "facts": [
+            "The most technically refined Rajput school — Bikaner artists frequently signed and dated their work (rare among Rajasthani ateliers).",
+            "Founded when Raja Rai Singh (r. 1571-1611) brought Mughal-trained Usta-community painters from Delhi and Agra to Junagarh Fort.",
+            "Signature: pale ivory skin tones, lyrical lines, cool Persian palette (mauve, silver-grey, sap-green) — very different from the ochre-dominated Marwar palette next door.",
+            "Ali Raza, Ruknuddin and Nathu were the school's most celebrated masters — three generations of the same family across the 17-18th c.",
+            "Overlaps with the 'Bikaner Usta Art' craft tradition — the same community also created gold-manauti painted camel-hide manuscripts."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "painting-alwar",
+      "geometry": { "type": "Point", "coordinates": [76.6346, 27.5530] },
+      "properties": {
+        "name": "Alwar School",
+        "type": "painting_school",
+        "category": "custom",
+        "district": "Alwar",
+        "period": "19th c.",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajput painting canon",
+        "lastUpdated": "2026-07-12",
+        "icon": "🎨",
+        "notes": {
+          "facts": [
+            "The last major Rajput painting school to emerge — bloomed in the 19th c. after Alwar became a princely state (1770).",
+            "Peaked under Maharaja Vinay Singh (r. 1815-57) and Maharaja Sheodan Singh (r. 1857-74).",
+            "Signature technique: paintings on ivory tablets and mother-of-pearl — a departure from paper miniatures.",
+            "Themes: Persian-inspired 'Yogini' and 'Kavi-Priya' (poet-and-lover) series, portrait sets, and detailed erotic manuscripts.",
+            "Ghulam Ali, Baldev, Buddha Ram and Chotu Ram are the main Alwar-court painters recorded in surviving colophons."
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "painting-nathdwara",
+      "geometry": { "type": "Point", "coordinates": [73.8215, 24.9354] },
+      "properties": {
+        "name": "Nathdwara School (Pichwai)",
+        "type": "painting_school",
+        "category": "custom",
+        "district": "Rajsamand",
+        "period": "17th c.–present",
+        "state": "Rajasthan",
+        "source": "Sikhwal Manchitrawali (16th ed.) + Nathdwara Adi-Gaur painter archives",
+        "lastUpdated": "2026-07-12",
+        "icon": "🎨",
+        "notes": {
+          "facts": [
+            "Devotional-cloth painting school built around the Shrinathji temple, established at Nathdwara in 1672 after the deity's flight from Braj.",
+            "'Pichwai' means 'behind' — the large cloth hangings placed behind the Shrinathji idol to depict the season or festival.",
+            "24 seasonal Pichwai themes rotate through the temple's ritual year — from Sharad Purnima (moonlight cows) to Annakut (mountain of food offerings).",
+            "Practised by the Adi-Gaur community of painter families — many trace unbroken lineage back to the Braj artists who arrived with the deity.",
+            "Distinctive palette: rich blacks, deep greens, gold-leaf highlights and lotus-pink for Shrinathji's ceremonial garments."
+          ]
+        }
+      }
+    }
+  ]
+}
