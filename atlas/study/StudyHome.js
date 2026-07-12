@@ -147,6 +147,26 @@ const CHAINS = [
     ]},
 ];
 
+// ── State symbols (declared by the Rajasthan government) ──────────
+const STATE_SYMBOLS = [
+  { icon: '🦆', label: 'State bird',           name: 'Godawan',    sub: 'Great Indian Bustard',       year: 1981,
+    foot: 'Critically endangered — largest population in Desert National Park, Jaisalmer.' },
+  { icon: '🦌', label: 'State animal (wild)',   name: 'Chinkara',   sub: 'Indian gazelle',              year: 1981,
+    foot: 'Best sighted at Ranthambhore, Sariska and Desert National Park.' },
+  { icon: '🐪', label: 'State animal (domestic)', name: 'Camel',    sub: 'Camelus dromedarius',          year: 2014,
+    foot: 'Rajasthan holds ~85% of India\'s camel population; Bikaner, Jaisalmer, Barmer heartland.' },
+  { icon: '🌳', label: 'State tree',            name: 'Khejri',     sub: 'Prosopis cineraria',          year: 1983,
+    foot: 'Sacred to the Bishnoi; the 1730 Khejarli sacrifice defended it before the Chipko movement.' },
+  { icon: '🌼', label: 'State flower',          name: 'Rohira',     sub: 'Tecomella undulata',           year: 1983,
+    foot: 'The "desert teak" of Marwar — golden-yellow flowers, drought-hardy Aravalli-Thar tree.' },
+  { icon: '💃', label: 'State dance',           name: 'Ghoomar',    sub: 'Bhil-origin whirl dance',      year: null,
+    foot: 'Adopted from the Bhils by Rajput women; hallmark of Mewar-Marwar weddings and Teej.' },
+  { icon: '🎵', label: 'State song',            name: 'Kesariya Balam', sub: 'Padharo Maare Des',        year: null,
+    foot: 'A Mand-genre folk song, most famously sung by Allah Jilai Bai of Bikaner.' },
+  { icon: '🏀', label: 'State game',            name: 'Basketball', sub: 'Declared before India\'s national', year: 1948,
+    foot: 'Rajasthan is one of the few Indian states whose official game is not a native folk sport.' },
+];
+
 // ── Boot ──────────────────────────────────────────────────────────
 (async function boot() {
   try {
@@ -157,11 +177,31 @@ const CHAINS = [
     renderTopics();
     renderDistricts(districts, demo);
     renderRecords(demo);
+    renderSymbols();
     renderChains();
   } catch (err) {
     console.error('[StudyHome] boot failed:', err);
   }
 })();
+
+function renderSymbols() {
+  const grid = document.getElementById('symbol-grid');
+  if (!grid) return;
+  for (const s of STATE_SYMBOLS) {
+    const card = document.createElement('div');
+    card.className = 'symbol-card';
+    card.innerHTML = `
+      <span class="symbol-icon">${s.icon}</span>
+      <div class="symbol-body">
+        <div class="symbol-label">${s.label}${s.year ? ` <span class="symbol-year">${s.year}</span>` : ''}</div>
+        <div class="symbol-name">${s.name}</div>
+        <div class="symbol-sub">${s.sub}</div>
+        <div class="symbol-foot">${s.foot}</div>
+      </div>
+    `;
+    grid.append(card);
+  }
+}
 
 // ── Districts directory (grouped by division) ────────────────────
 const DIVISIONS = ['Jaipur','Jodhpur','Ajmer','Bikaner','Bharatpur','Kota','Udaipur'];
