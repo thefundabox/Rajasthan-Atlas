@@ -162,17 +162,19 @@ function renderDistrictProfile(district) {
 
   /* Physical & climate */
   wrap.append(gatherSection('Physical & climate', memberships, [
-    'physiography', 'drainage-basins', 'thar',
+    'physiography', 'drainage-basins', 'thar', 'aravalli',
+    'peaks', 'aravalli-passes', 'sand-dune-types',
     'climate-regions', 'rainfall', 'temperature',
     'soil-types', 'vegetation', 'agro-climatic-zones',
     'desertification', 'drought-vulnerability',
   ]));
 
-  /* Agriculture & water */
-  wrap.append(gatherSection('Agriculture & water', memberships, [
+  /* Agriculture, water & livestock */
+  wrap.append(gatherSection('Agriculture · water · livestock', memberships, [
     'major-crops', 'cropping-seasons', 'agro-economic-zones',
     'irrigation-sources', 'command-areas', 'groundwater',
     'major-canals', 'dams',
+    'water-harvesting', 'livestock-breeds',
   ]));
 
   /* Geology & mining */
@@ -180,20 +182,40 @@ function renderDistrictProfile(district) {
     'geological-provinces', 'rock-types',
     'mineral-belts', 'building-stones', 'mining-clusters',
     'major-mines', 'petroleum-gas',
+    'salt-production-centres',
   ]));
 
-  /* Industry & energy */
-  wrap.append(gatherSection('Industry & energy', memberships, [
+  /* Industry, energy & infrastructure */
+  wrap.append(gatherSection('Industry · energy · infrastructure', memberships, [
     'industrial-regions', 'industrial-clusters', 'industrial-areas',
     'major-industries', 'special-economic-zones', 'handicraft-clusters',
     'energy-mix', 'renewable-zones', 'transmission-corridors',
     'power-plants', 'solar-parks', 'wind-farms',
+    'airports', 'national-highways',
   ]));
 
   /* Environment */
   wrap.append(gatherSection('Environment · protected areas', memberships, [
     'national-parks', 'tiger-reserves', 'wildlife-sanctuaries',
-    'ramsar-sites', 'wetlands',
+    'ramsar-sites', 'wetlands', 'biosphere-reserves',
+    'conservation-reserves',
+  ]));
+
+  /* Culture & heritage — forts, palaces, painting schools, faith */
+  wrap.append(gatherSection('Culture · heritage · faith', memberships, [
+    'heritage-forts', 'palaces', 'havelis',
+    'painting-schools', 'major-fairs',
+    'folk-deity-shrines', 'folk-goddesses',
+    'sufi-shrines', 'jain-pilgrimage',
+    'rajput-dynasties', 'research-centers',
+  ]));
+
+  /* History & freedom struggle */
+  wrap.append(gatherSection('History & freedom struggle', memberships, [
+    'ancient-civilizations', 'ashokan-buddhist-sites',
+    'battle-sites', 'major-prashastis',
+    'revolt-sites-1857', 'freedom-movement',
+    'rajasthan-integration',
   ]));
 
   /* Human geography */
@@ -201,6 +223,7 @@ function renderDistrictProfile(district) {
     'regional-zones', 'border-districts',
     'administrative-divisions', 'scheduled-areas', 'population-corridors',
     'urban-centres', 'municipal-corporations', 'smart-cities',
+    'language-regions', 'tribal-groups',
   ]));
 
   /* References */

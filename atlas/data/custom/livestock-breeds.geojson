@@ -4,7 +4,13 @@
     {
       "type": "Feature",
       "id": "breed-rathi",
-      "geometry": { "type": "Point", "coordinates": [73.31, 28.02] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.31,
+          28.02
+        ]
+      },
       "properties": {
         "name": "Rathi Cattle",
         "type": "livestock_breed",
@@ -21,13 +27,22 @@
             "Named after the Rath (nomadic Muslim pastoralist) community; average lactation 1,500–2,000 kg over 300 days.",
             "The Rathi breeding centre at Nokha (Bikaner) is India's flagship Rathi genetic-improvement facility."
           ]
-        }
+        },
+        "districts_included": [
+          "Bikaner"
+        ]
       }
     },
     {
       "type": "Feature",
       "id": "breed-tharparkar",
-      "geometry": { "type": "Point", "coordinates": [70.91, 26.91] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.91,
+          26.91
+        ]
+      },
       "properties": {
         "name": "Tharparkar Cattle",
         "type": "livestock_breed",
@@ -44,13 +59,23 @@
             "Home tract straddles the Thar Parkar region (Sindh) and India's Barmer-Jaisalmer border.",
             "Chotan Cattle Breeding Farm (Barmer) is Rajasthan's principal Tharparkar conservation herd; lactation 1,000–1,500 kg."
           ]
-        }
+        },
+        "districts_included": [
+          "Barmer",
+          "Jaisalmer"
+        ]
       }
     },
     {
       "type": "Feature",
       "id": "breed-nagauri",
-      "geometry": { "type": "Point", "coordinates": [73.74, 27.20] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.74,
+          27.2
+        ]
+      },
       "properties": {
         "name": "Nagauri Cattle",
         "type": "livestock_breed",
@@ -67,13 +92,22 @@
             "Named after Nagaur district; the bullocks are prized for tilling heavy Nagaur loam.",
             "Poor milk yield (~500 kg/lactation) — a specialist plough-and-cart breed, not a dairy breed."
           ]
-        }
+        },
+        "districts_included": [
+          "Nagaur"
+        ]
       }
     },
     {
       "type": "Feature",
       "id": "breed-kankrej",
-      "geometry": { "type": "Point", "coordinates": [71.42, 25.75] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.42,
+          25.75
+        ]
+      },
       "properties": {
         "name": "Kankrej Cattle",
         "type": "livestock_breed",
@@ -90,13 +124,23 @@
             "Home tract straddles the Rajasthan-Gujarat border (Kankrej taluka, Banaskantha); Rajasthan population concentrated in Barmer-Jalore.",
             "Dual-purpose (milk + draught); the American Brahman breed was developed by crossing Kankrej with three other Indian breeds."
           ]
-        }
+        },
+        "districts_included": [
+          "Barmer",
+          "Jalore"
+        ]
       }
     },
     {
       "type": "Feature",
       "id": "breed-malvi",
-      "geometry": { "type": "Point", "coordinates": [76.16, 24.60] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.16,
+          24.6
+        ]
+      },
       "properties": {
         "name": "Malvi Cattle",
         "type": "livestock_breed",
@@ -113,13 +157,23 @@
             "Named after the Malwa region that spans MP and southeastern Rajasthan (Hadoti).",
             "Bullocks are prized for cart-pulling on the plateau's rough terrain; the cows give ~600 kg milk/lactation."
           ]
-        }
+        },
+        "districts_included": [
+          "Baran",
+          "Jhalawar"
+        ]
       }
     },
     {
       "type": "Feature",
       "id": "breed-mewati",
-      "geometry": { "type": "Point", "coordinates": [76.62, 27.55] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.62,
+          27.55
+        ]
+      },
       "properties": {
         "name": "Mewati (Hariana) Cattle",
         "type": "livestock_breed",
@@ -136,13 +190,23 @@
             "Home tract in Alwar-Bharatpur-Dholpur; used both for milk (moderate) and heavy field work.",
             "Numbers falling with mechanisation of Bharatpur's mustard fields — now a NBAGR conservation-priority breed."
           ]
-        }
+        },
+        "districts_included": [
+          "Alwar",
+          "Bharatpur"
+        ]
       }
     },
     {
       "type": "Feature",
       "id": "breed-chokla",
-      "geometry": { "type": "Point", "coordinates": [75.14, 27.60] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.14,
+          27.6
+        ]
+      },
       "properties": {
         "name": "Chokla Sheep",
         "type": "livestock_breed",
@@ -159,13 +223,24 @@
             "Fleece is exported for Persian and Kashmiri carpet weaving; average wool yield 1.5 kg/year.",
             "Bikaner's Central Sheep and Wool Research Institute (CSWRI) branch runs the Chokla nucleus flock."
           ]
-        }
+        },
+        "districts_included": [
+          "Churu",
+          "Jhunjhunu",
+          "Sikar"
+        ]
       }
     },
     {
       "type": "Feature",
       "id": "breed-marwari-sheep",
-      "geometry": { "type": "Point", "coordinates": [72.85, 25.75] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.85,
+          25.75
+        ]
+      },
       "properties": {
         "name": "Marwari Sheep",
         "type": "livestock_breed",
@@ -182,13 +257,24 @@
             "Nomadic Raika shepherds herd Marwari flocks across the Barmer-Jodhpur-Jaisalmer belt during monsoon migrations.",
             "Coarse carpet wool; ~1 kg/animal/year; the mutton is prized for its low fat content."
           ]
-        }
+        },
+        "districts_included": [
+          "Barmer",
+          "Jodhpur",
+          "Pali"
+        ]
       }
     },
     {
       "type": "Feature",
       "id": "breed-sirohi-goat",
-      "geometry": { "type": "Point", "coordinates": [72.85, 24.88] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.85,
+          24.88
+        ]
+      },
       "properties": {
         "name": "Sirohi Goat",
         "type": "livestock_breed",
@@ -205,13 +291,22 @@
             "Rapidly gains weight (25-30 kg by 12 months); popular for stall-feeding across North India.",
             "Home tract in Sirohi's Aravalli foothills; ~4 million goats of this breed across Rajasthan."
           ]
-        }
+        },
+        "districts_included": [
+          "Sirohi"
+        ]
       }
     },
     {
       "type": "Feature",
       "id": "breed-bikaneri-camel",
-      "geometry": { "type": "Point", "coordinates": [73.31, 28.02] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.31,
+          28.02
+        ]
+      },
       "properties": {
         "name": "Bikaneri Camel",
         "type": "livestock_breed",
@@ -228,13 +323,22 @@
             "Home tract in Bikaner, Ganganagar, Churu; the National Research Centre on Camel at Bikaner is India's flagship camel institute.",
             "Rajasthan holds ~85% of India's camels; population has fallen from 500k (2007) to under 250k (2019) — a conservation crisis."
           ]
-        }
+        },
+        "districts_included": [
+          "Bikaner"
+        ]
       }
     },
     {
       "type": "Feature",
       "id": "breed-jaisalmeri-camel",
-      "geometry": { "type": "Point", "coordinates": [70.91, 26.91] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.91,
+          26.91
+        ]
+      },
       "properties": {
         "name": "Jaisalmeri Camel",
         "type": "livestock_breed",
@@ -251,13 +355,22 @@
             "The Jaisalmer Desert Festival's camel race is contested exclusively on this breed.",
             "Home tract in deep Thar (Jaisalmer, Barmer); requires less water than Bikaneri camels but slower to mature."
           ]
-        }
+        },
+        "districts_included": [
+          "Jaisalmer"
+        ]
       }
     },
     {
       "type": "Feature",
       "id": "breed-mewari-camel",
-      "geometry": { "type": "Point", "coordinates": [73.90, 24.90] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9,
+          24.9
+        ]
+      },
       "properties": {
         "name": "Mewari Camel",
         "type": "livestock_breed",
@@ -274,7 +387,11 @@
             "Used historically by the Sisodias as a pack animal in the hilly Mewar terrain — Bikaneri camels cannot manage the slopes.",
             "Population under 10,000; NRC-Camel Bikaner runs a Mewari conservation herd at Sadri."
           ]
-        }
+        },
+        "districts_included": [
+          "Rajsamand",
+          "Udaipur"
+        ]
       }
     }
   ]

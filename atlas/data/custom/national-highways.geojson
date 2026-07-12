@@ -7,14 +7,38 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [76.55, 27.83],
-          [75.79, 26.92],
-          [74.82, 26.60],
-          [74.64, 26.45],
-          [74.63, 25.35],
-          [74.63, 24.89],
-          [73.68, 24.58],
-          [73.55, 24.10]
+          [
+            76.55,
+            27.83
+          ],
+          [
+            75.79,
+            26.92
+          ],
+          [
+            74.82,
+            26.6
+          ],
+          [
+            74.64,
+            26.45
+          ],
+          [
+            74.63,
+            25.35
+          ],
+          [
+            74.63,
+            24.89
+          ],
+          [
+            73.68,
+            24.58
+          ],
+          [
+            73.55,
+            24.1
+          ]
         ]
       },
       "properties": {
@@ -34,7 +58,11 @@
             "Enters at Behror/Kotputli (Alwar-Jaipur border); exits south at Bhatuan (Udaipur-Gujarat border) — ~688 km through Rajasthan.",
             "Being upgraded as the Delhi-Mumbai Expressway spine (opened Delhi-Sohna 2023, target completion 2025)."
           ]
-        }
+        },
+        "districts_included": [
+          "Alwar",
+          "Udaipur"
+        ]
       }
     },
     {
@@ -43,12 +71,30 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [73.87, 29.92],
-          [73.31, 28.02],
-          [73.02, 26.28],
-          [72.05, 25.75],
-          [71.42, 25.75],
-          [71.30, 24.68]
+          [
+            73.87,
+            29.92
+          ],
+          [
+            73.31,
+            28.02
+          ],
+          [
+            73.02,
+            26.28
+          ],
+          [
+            72.05,
+            25.75
+          ],
+          [
+            71.42,
+            25.75
+          ],
+          [
+            71.3,
+            24.68
+          ]
         ]
       },
       "properties": {
@@ -68,7 +114,11 @@
             "Only all-weather artery serving the border districts along the Pakistan frontier.",
             "Rajasthan's principal north-south alternative to NH-48; parallels the IGNP for much of its northern stretch."
           ]
-        }
+        },
+        "districts_included": [
+          "Barmer",
+          "Sri Ganganagar"
+        ]
       }
     },
     {
@@ -77,12 +127,30 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [77.68, 27.15],
-          [76.99, 27.03],
-          [75.79, 26.92],
-          [75.14, 27.60],
-          [74.72, 27.71],
-          [73.31, 28.02]
+          [
+            77.68,
+            27.15
+          ],
+          [
+            76.99,
+            27.03
+          ],
+          [
+            75.79,
+            26.92
+          ],
+          [
+            75.14,
+            27.6
+          ],
+          [
+            74.72,
+            27.71
+          ],
+          [
+            73.31,
+            28.02
+          ]
         ]
       },
       "properties": {
@@ -102,7 +170,11 @@
             "Passes through the Shekhawati painted-haveli belt (Sikar, Jhunjhunu) — key tourism artery.",
             "Was formerly NH-11 (Agra-Bikaner); renumbered NH-21 in the 2010 restructure."
           ]
-        }
+        },
+        "districts_included": [
+          "Bharatpur",
+          "Bikaner"
+        ]
       }
     },
     {
@@ -111,12 +183,30 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [72.85, 24.68],
-          [73.20, 24.87],
-          [74.63, 24.89],
-          [75.87, 25.21],
-          [76.16, 24.60],
-          [76.63, 24.65]
+          [
+            72.85,
+            24.68
+          ],
+          [
+            73.2,
+            24.87
+          ],
+          [
+            74.63,
+            24.89
+          ],
+          [
+            75.87,
+            25.21
+          ],
+          [
+            76.16,
+            24.6
+          ],
+          [
+            76.63,
+            24.65
+          ]
         ]
       },
       "properties": {
@@ -136,7 +226,11 @@
             "Serves Chittor, Kota, Bundi, Baran — the entire Hadoti belt.",
             "Handles heavy cement, stone and industrial freight from the Kota-Bundi mineral belt."
           ]
-        }
+        },
+        "districts_included": [
+          "Baran",
+          "Sirohi"
+        ]
       }
     },
     {
@@ -145,11 +239,26 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [74.64, 26.45],
-          [74.30, 25.90],
-          [74.63, 25.35],
-          [75.10, 24.63],
-          [75.50, 24.05]
+          [
+            74.64,
+            26.45
+          ],
+          [
+            74.3,
+            25.9
+          ],
+          [
+            74.63,
+            25.35
+          ],
+          [
+            75.1,
+            24.63
+          ],
+          [
+            75.5,
+            24.05
+          ]
         ]
       },
       "properties": {
@@ -169,7 +278,11 @@
             "Passes through the Bhilwara textile cluster and the Chittor-Nimbahera cement belt.",
             "The Chittor bypass segment was among Rajasthan's first four-lane conversions (2011)."
           ]
-        }
+        },
+        "districts_included": [
+          "Ajmer",
+          "Pratapgarh"
+        ]
       }
     },
     {
@@ -178,11 +291,26 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [77.29, 28.35],
-          [76.62, 27.55],
-          [76.35, 27.02],
-          [75.55, 26.82],
-          [75.14, 26.92]
+          [
+            77.29,
+            28.35
+          ],
+          [
+            76.62,
+            27.55
+          ],
+          [
+            76.35,
+            27.02
+          ],
+          [
+            75.55,
+            26.82
+          ],
+          [
+            75.14,
+            26.92
+          ]
         ]
       },
       "properties": {
@@ -202,7 +330,11 @@
             "Serves the Delhi-Mumbai Industrial Corridor's Neemrana-Bhiwadi cluster.",
             "Renumbered NH-52 in the 2010 restructure (parts were formerly NH-11A/NH-8)."
           ]
-        }
+        },
+        "districts_included": [
+          "Alwar",
+          "Jaipur"
+        ]
       }
     }
   ]
