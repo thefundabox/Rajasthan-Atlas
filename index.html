@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rajasthan Atlas — Study Companion</title>
-  <meta name="description" content="A study companion for Rajasthan geography, economy and people — 64 layers, 473 features, 975 cross-links." />
+  <meta name="description" content="A study companion for Rajasthan geography, economy and people — 90+ layers, 500+ features." />
 
   <link rel="stylesheet" href="atlas/ui/styles/theme.css" />
   <link rel="stylesheet" href="atlas/ui/components/study.css" />
 </head>
-<body class="study-body">
+<body class="study-body view-home">
 
   <header class="study-header">
     <div class="study-brand">
@@ -25,59 +25,101 @@
 
   <main class="study-main">
 
+    <!-- Compact hero — one line, no stats padding. -->
     <section class="study-hero">
-      <h2 class="study-hero-title">Learn Rajasthan by topic, records, and connections.</h2>
-      <p class="study-hero-sub"><strong>64 layers</strong> · <strong>473 features</strong> · <strong>975 typed relationships</strong> across geography, economy, culture and people.</p>
+      <p class="study-hero-eyebrow">RAJASTHAN, MAPPED</p>
+      <h2 class="study-hero-title">Where would you like to start?</h2>
+      <p class="study-hero-sub">Pick one of four ways in. Everything else is a click away.</p>
     </section>
 
-    <section class="study-section" id="topics-section">
-      <div class="study-section-head">
-        <h2>Study by topic</h2>
-        <p class="study-section-hint">Pick a theme — opens the map with just that layer's colours plus a legend.</p>
-      </div>
-      <div class="topic-grid" id="topic-grid"></div>
+    <!-- Four role cards — one decision per screen. -->
+    <section class="role-cards" id="role-cards" aria-label="Choose your entry">
+      <a class="role-card role-card--indigo" href="./map.html">
+        <span class="role-card-icon">🗺</span>
+        <div class="role-card-title">Open the map</div>
+        <p class="role-card-desc">Interactive atlas — 90+ layers, tick what you want to see.</p>
+        <div class="role-card-arrow">Open →</div>
+      </a>
+      <a class="role-card role-card--emerald" href="#districts">
+        <span class="role-card-icon">🏛</span>
+        <div class="role-card-title">Browse districts</div>
+        <p class="role-card-desc">Walk through all 41 districts across 7 divisions with full profiles.</p>
+        <div class="role-card-arrow">Browse →</div>
+      </a>
+      <a class="role-card role-card--amber" href="#confusions">
+        <span class="role-card-icon">⚔</span>
+        <div class="role-card-title">Commonly confused</div>
+        <p class="role-card-desc">25 curated pairs with a one-line rule that separates the two.</p>
+        <div class="role-card-arrow">Drill in →</div>
+      </a>
+      <a class="role-card role-card--slate" href="#topics">
+        <span class="role-card-icon">📚</span>
+        <div class="role-card-title">Study by topic</div>
+        <p class="role-card-desc">17 curated topics — physical geography, culture, history, more.</p>
+        <div class="role-card-arrow">Explore →</div>
+      </a>
     </section>
 
-    <section class="study-section" id="districts-section">
-      <div class="study-section-head">
-        <h2>Districts</h2>
-        <p class="study-section-hint">Click any district to open its full synthesized profile — 9 Census 2011 metrics, cultural region, records the district holds, and 40&#8209;50 chips for every related feature across all layers.</p>
-      </div>
-      <div class="district-directory" id="district-directory"></div>
-    </section>
+    <!-- Secondary nav — less-frequent sections. -->
+    <nav class="study-secondary" id="secondary-nav" aria-label="More sections">
+      <a href="#records">Records &amp; extremes</a>
+      <a href="#symbols">State symbols</a>
+      <a href="#chains">Concept chains</a>
+    </nav>
 
-    <section class="study-section" id="records-section">
-      <div class="study-section-head">
-        <h2>Records &amp; extremes</h2>
-        <p class="study-section-hint">Auto-computed from Census 2011 and operator disclosures. Click a card to jump to the map.</p>
-      </div>
-      <div class="record-grid" id="record-grid"></div>
-    </section>
+    <!-- Sub-view container — populated by hash router. Hidden on home. -->
+    <div id="subview-container">
+      <a href="#" class="subview-back" aria-label="Back to home">← Back</a>
 
-    <section class="study-section" id="symbols-section">
-      <div class="study-section-head">
-        <h2>State symbols</h2>
-        <p class="study-section-hint">The eight official symbols of Rajasthan — declared by the state government at various dates.</p>
-      </div>
-      <div class="symbol-grid" id="symbol-grid"></div>
-    </section>
+      <section class="study-view" data-view="topics">
+        <div class="study-section-head">
+          <h2>Study by topic</h2>
+          <p class="study-section-hint">Pick a theme — opens the map with just that layer's colours plus a legend.</p>
+        </div>
+        <div class="topic-grid" id="topic-grid"></div>
+      </section>
 
-    <section class="study-section" id="confusions-section">
-      <div class="study-section-head">
-        <h2>Commonly confused</h2>
-        <p class="study-section-hint">Pairs that trip up almost every learner. Each card ends with a one-line rule that separates the two.</p>
-        <div class="confusion-filters" id="confusion-filters"></div>
-      </div>
-      <div class="confusion-grid" id="confusion-grid"></div>
-    </section>
+      <section class="study-view" data-view="districts">
+        <div class="study-section-head">
+          <h2>Districts</h2>
+          <p class="study-section-hint">Click any district to open its full profile — 9 Census 2011 metrics, cultural region, records it holds, and every related feature across all layers.</p>
+        </div>
+        <div class="district-directory" id="district-directory"></div>
+      </section>
 
-    <section class="study-section" id="chains-section">
-      <div class="study-section-head">
-        <h2>Concept chains</h2>
-        <p class="study-section-hint">Follow a chain from cause to effect. Each stop is a feature on the map.</p>
-      </div>
-      <div class="chain-list" id="chain-list"></div>
-    </section>
+      <section class="study-view" data-view="records">
+        <div class="study-section-head">
+          <h2>Records &amp; extremes</h2>
+          <p class="study-section-hint">Auto-computed from Census 2011 and operator disclosures. Click a card to jump to the map.</p>
+        </div>
+        <div class="record-grid" id="record-grid"></div>
+      </section>
+
+      <section class="study-view" data-view="symbols">
+        <div class="study-section-head">
+          <h2>State symbols</h2>
+          <p class="study-section-hint">The eight official symbols of Rajasthan — declared by the state government at various dates.</p>
+        </div>
+        <div class="symbol-grid" id="symbol-grid"></div>
+      </section>
+
+      <section class="study-view" data-view="confusions">
+        <div class="study-section-head">
+          <h2>Commonly confused</h2>
+          <p class="study-section-hint">Pairs that trip up almost every learner. Each card ends with a one-line rule that separates the two.</p>
+          <div class="confusion-filters" id="confusion-filters"></div>
+        </div>
+        <div class="confusion-grid" id="confusion-grid"></div>
+      </section>
+
+      <section class="study-view" data-view="chains">
+        <div class="study-section-head">
+          <h2>Concept chains</h2>
+          <p class="study-section-hint">Follow a chain from cause to effect. Each stop is a feature on the map.</p>
+        </div>
+        <div class="chain-list" id="chain-list"></div>
+      </section>
+    </div>
 
   </main>
 

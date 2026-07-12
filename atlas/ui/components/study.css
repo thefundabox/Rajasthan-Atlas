@@ -3,6 +3,39 @@
  *  Editorial paper aesthetic; mobile-first; no map, no atlas chrome.
  * ==========================================================================*/
 
+/* -- DESIGN.md palette — role accents on top of the editorial base --- */
+:root {
+  /* Slate (neutral, admin-like) */
+  --slate-50:   #F8FAFC;
+  --slate-100:  #F1F5F9;
+  --slate-200:  #E2E8F0;
+  --slate-300:  #CBD5E1;
+  --slate-400:  #94A3B8;
+  --slate-500:  #64748B;
+  --slate-600:  #475569;
+  --slate-700:  #334155;
+  --slate-800:  #1E293B;
+  --slate-900:  #0F172A;
+  /* Indigo (primary study action — "student" in DESIGN.md) */
+  --indigo-50:  #EEF2FF;
+  --indigo-100: #E0E7FF;
+  --indigo-300: #A5B4FC;
+  --indigo-600: #4F46E5;
+  --indigo-700: #4338CA;
+  /* Emerald (structured success — "mentor" in DESIGN.md) */
+  --emerald-50:  #ECFDF5;
+  --emerald-100: #D1FAE5;
+  --emerald-300: #6EE7B7;
+  --emerald-600: #059669;
+  --emerald-700: #047857;
+  /* Amber (coaching / "almost right" — DESIGN.md §10) */
+  --amber-50:  #FFFBEB;
+  --amber-100: #FEF3C7;
+  --amber-300: #FCD34D;
+  --amber-500: #F59E0B;
+  --amber-700: #B45309;
+}
+
 .study-body {
   margin: 0;
   padding: 0;
@@ -71,9 +104,17 @@
 }
 
 .study-hero {
-  padding: 24px 0 40px;
-  border-bottom: 1px dashed var(--hair);
-  margin-bottom: 40px;
+  padding: 32px 0 24px;
+  max-width: 720px;
+  margin-bottom: 24px;
+}
+.study-hero-eyebrow {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--indigo-600);
+  margin: 0 0 8px;
 }
 .study-hero-title {
   margin: 0;
@@ -95,6 +136,165 @@
   color: var(--ink);
   font-weight: 500;
 }
+
+/* -- Role cards (DESIGN.md §15 landing card pattern) ------------- */
+.role-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+  max-width: 980px;
+  margin: 0 0 32px;
+}
+.role-card {
+  display: block;
+  padding: 22px 22px 20px;
+  border-radius: 16px;
+  border: 2px solid var(--slate-200);
+  background: var(--card, #ffffff);
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 1px 2px rgba(15,23,42,0.04);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+  cursor: pointer;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.role-card:hover {
+  transform: translateY(-2px);
+}
+.role-card-icon {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  margin-bottom: 14px;
+  line-height: 1;
+}
+.role-card-title {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--slate-900);
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+.role-card-desc {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--slate-500);
+  line-height: 1.5;
+  flex: 1;
+}
+.role-card-arrow {
+  margin-top: 14px;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.55;
+  transition: opacity 0.15s;
+}
+.role-card:hover .role-card-arrow { opacity: 1; }
+
+/* Indigo variant — Map (primary study action) */
+.role-card--indigo .role-card-icon { background: var(--indigo-50); color: var(--indigo-700); }
+.role-card--indigo .role-card-arrow { color: var(--indigo-600); }
+.role-card--indigo:hover {
+  border-color: var(--indigo-300);
+  box-shadow: 0 10px 24px rgba(79,70,229,0.14);
+}
+
+/* Emerald variant — Districts (structured walk-through) */
+.role-card--emerald .role-card-icon { background: var(--emerald-50); color: var(--emerald-700); }
+.role-card--emerald .role-card-arrow { color: var(--emerald-600); }
+.role-card--emerald:hover {
+  border-color: var(--emerald-300);
+  box-shadow: 0 10px 24px rgba(5,150,105,0.14);
+}
+
+/* Amber variant — Confusions (coaching / almost-right, DESIGN §10) */
+.role-card--amber .role-card-icon { background: var(--amber-50); color: var(--amber-700); }
+.role-card--amber .role-card-arrow { color: var(--amber-700); }
+.role-card--amber:hover {
+  border-color: var(--amber-300);
+  box-shadow: 0 10px 24px rgba(217,119,6,0.16);
+}
+
+/* Slate variant — All topics (comprehensive catalog) */
+.role-card--slate .role-card-icon { background: var(--slate-100); color: var(--slate-700); }
+.role-card--slate .role-card-arrow { color: var(--slate-700); }
+.role-card--slate:hover {
+  border-color: var(--slate-400);
+  box-shadow: 0 10px 24px rgba(15,23,42,0.10);
+}
+
+/* -- Secondary nav (less-frequent sections) --------------------- */
+.study-secondary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 28px;
+  padding: 12px 0 0;
+  margin-bottom: 48px;
+  font-family: var(--sans);
+  font-size: 13px;
+  border-top: 1px dashed var(--hair);
+}
+.study-secondary a {
+  color: var(--slate-500);
+  text-decoration: none;
+  padding-top: 12px;
+  border-bottom: 1px dotted transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+.study-secondary a:hover {
+  color: var(--slate-800);
+  border-bottom-color: var(--slate-400);
+}
+
+/* -- Sub-view container (hash-routed) --------------------------- */
+.study-view { display: none; }
+.study-view.is-active { display: block; }
+.subview-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  border: 1px solid var(--slate-200);
+  background: var(--card, #fff);
+  color: var(--slate-700);
+  text-decoration: none;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.15s, border-color 0.15s;
+}
+.subview-back:hover {
+  background: var(--slate-50);
+  border-color: var(--slate-300);
+}
+
+/* Home view: hide sub-view container. Sub-view: hide hero, role cards, secondary. */
+body.view-home #subview-container { display: none; }
+body.view-sub #role-cards,
+body.view-sub #secondary-nav,
+body.view-sub .study-hero { display: none; }
+
+/* Dark theme accent overrides */
+.theme-dark {
+  --slate-50:  #1a1a1e;
+  --slate-100: #26262a;
+  --slate-200: #3a3a3e;
+  --slate-300: #4a4a4e;
+  --slate-400: #6a6a6e;
+  --slate-500: #8a8a8e;
+  --slate-700: #c4c4c8;
+  --slate-800: #dcdce0;
+  --slate-900: #e8e2d3;
+}
+.theme-dark .role-card { background: #2b2820; border-color: #3a3a3e; }
 
 /* -- Section shell ---------------------------------------------- */
 .study-section {

@@ -181,10 +181,48 @@ const STATE_SYMBOLS = [
     renderSymbols();
     if (confusions) renderConfusions(confusions);
     renderChains();
+    setupRouter();
   } catch (err) {
     console.error('[StudyHome] boot failed:', err);
   }
 })();
+
+// ── Hash router for Option A landing ──────────────────────────────
+// URL hash → which sub-view (topics / districts / etc.) is visible.
+// Empty / '#' hash = home (role cards + secondary nav).
+const KNOWN_VIEWS = new Set(['topics', 'districts', 'records', 'symbols', 'confusions', 'chains']);
+
+function currentView() {
+  const raw = (window.location.hash || '').replace(/^#\/?/, '').trim();
+  return KNOWN_VIEWS.has(raw) ? raw : 'home';
+}
+
+function applyView() {
+  const v = currentView();
+  document.body.classList.remove('view-home', 'view-sub');
+  document.body.classList.add(v === 'home' ? 'view-home' : 'view-sub');
+  for (const el of document.querySelectorAll('.study-view')) {
+    el.classList.toggle('is-active', el.dataset.view === v);
+  }
+  // Reset scroll on navigation so the sub-view starts at the top.
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  // Update page title so the browser tab reflects the current view.
+  const titleMap = {
+    home:       'Rajasthan Atlas — Study Companion',
+    topics:     'Study by topic — Rajasthan Atlas',
+    districts:  'Districts — Rajasthan Atlas',
+    records:    'Records & extremes — Rajasthan Atlas',
+    symbols:    'State symbols — Rajasthan Atlas',
+    confusions: 'Commonly confused — Rajasthan Atlas',
+    chains:     'Concept chains — Rajasthan Atlas',
+  };
+  document.title = titleMap[v] || titleMap.home;
+}
+
+function setupRouter() {
+  window.addEventListener('hashchange', applyView);
+  applyView(); // initial
+}
 
 // ── Commonly confused pairs ───────────────────────────────────────
 const CONFUSION_CATEGORIES = [
