@@ -121,7 +121,9 @@
       "searchable": true,
       "visible": true,
       "zIndex": 60,
-      "featureType": "peak"
+      "featureType": "peak",
+      "icon": "⛰",
+      "color": "#6a5a4a"
     },
     {
       "id": "national-parks",
@@ -188,7 +190,7 @@
       "visible": false,
       "zIndex": 55,
       "featureType": "biosphere_reserve",
-      "note": "Empty by design \u2014 Rajasthan has no MoEFCC-notified Biosphere Reserve."
+      "note": "Empty by design — Rajasthan has no MoEFCC-notified Biosphere Reserve."
     },
     {
       "id": "rainfall",
@@ -342,7 +344,9 @@
       "searchable": true,
       "visible": false,
       "zIndex": 58,
-      "featureType": "dam"
+      "featureType": "dam",
+      "icon": "🌊",
+      "color": "#3a7a9a"
     },
     {
       "id": "groundwater",
@@ -430,7 +434,9 @@
       "searchable": true,
       "visible": false,
       "zIndex": 62,
-      "featureType": "mine"
+      "featureType": "mine",
+      "icon": "⛏",
+      "color": "#7a5a2a"
     },
     {
       "id": "petroleum-gas",
@@ -474,7 +480,9 @@
       "searchable": true,
       "visible": false,
       "zIndex": 64,
-      "featureType": "industrial_area"
+      "featureType": "industrial_area",
+      "icon": "🏗",
+      "color": "#6a6a6a"
     },
     {
       "id": "major-industries",
@@ -485,7 +493,9 @@
       "searchable": true,
       "visible": false,
       "zIndex": 66,
-      "featureType": "major_industry"
+      "featureType": "major_industry",
+      "icon": "🏭",
+      "color": "#8a4a4a"
     },
     {
       "id": "special-economic-zones",
@@ -496,7 +506,9 @@
       "searchable": true,
       "visible": false,
       "zIndex": 65,
-      "featureType": "special_economic_zone"
+      "featureType": "special_economic_zone",
+      "icon": "🌐",
+      "color": "#4a8a6a"
     },
     {
       "id": "handicraft-clusters",
@@ -507,7 +519,9 @@
       "searchable": true,
       "visible": false,
       "zIndex": 63,
-      "featureType": "handicraft_cluster"
+      "featureType": "handicraft_cluster",
+      "icon": "🧵",
+      "color": "#a05a2a"
     },
     {
       "id": "energy-mix",
@@ -551,7 +565,9 @@
       "searchable": true,
       "visible": false,
       "zIndex": 68,
-      "featureType": "power_plant"
+      "featureType": "power_plant",
+      "icon": "⚡",
+      "color": "#b06a30"
     },
     {
       "id": "solar-parks",
@@ -562,7 +578,9 @@
       "searchable": true,
       "visible": false,
       "zIndex": 67,
-      "featureType": "solar_park"
+      "featureType": "solar_park",
+      "icon": "☀",
+      "color": "#d4a83a"
     },
     {
       "id": "wind-farms",
@@ -573,7 +591,9 @@
       "searchable": true,
       "visible": false,
       "zIndex": 67,
-      "featureType": "wind_farm"
+      "featureType": "wind_farm",
+      "icon": "🌬",
+      "color": "#4a8ab0"
     },
     {
       "id": "population-density",
@@ -705,7 +725,9 @@
       "searchable": true,
       "visible": false,
       "zIndex": 70,
-      "featureType": "municipal_corporation"
+      "featureType": "municipal_corporation",
+      "icon": "🏛",
+      "color": "#6a5a3a"
     },
     {
       "id": "smart-cities",
@@ -716,7 +738,9 @@
       "searchable": true,
       "visible": false,
       "zIndex": 71,
-      "featureType": "smart_city"
+      "featureType": "smart_city",
+      "icon": "🌆",
+      "color": "#4a6a8a"
     },
     {
       "id": "urban-centres",
@@ -727,7 +751,9 @@
       "searchable": true,
       "visible": false,
       "zIndex": 72,
-      "featureType": "urban_centre"
+      "featureType": "urban_centre",
+      "icon": "🏙",
+      "color": "#6a3a6a"
     },
     {
       "id": "population-corridors",
@@ -751,7 +777,7 @@
     },
     {
       "name": "Rajasthan gazette notifications",
-      "used": "District\u2192division and district\u2192HQ mapping"
+      "used": "District→division and district→HQ mapping"
     },
     {
       "name": "Rajasthan Forest Department",
@@ -806,7 +832,7 @@
       "used": "Forest-type classification for the Vegetation layer"
     },
     {
-      "name": "ISRO Space Applications Centre \u2014 Desertification Atlas of India",
+      "name": "ISRO Space Applications Centre — Desertification Atlas of India",
       "used": "District-level desertification severity"
     },
     {
@@ -829,19 +855,19 @@
     {
       "name": "Rajasthan Water Resources Department",
       "url": "https://water.rajasthan.gov.in/",
-      "used": "Canals, dams, reservoirs \u2014 coordinates and capacities"
+      "used": "Canals, dams, reservoirs — coordinates and capacities"
     },
     {
       "name": "Command Area Development Department, GoR",
       "used": "Command-area boundaries and district-service mapping"
     },
     {
-      "name": "Central Ground Water Board \u2014 Dynamic Groundwater Resources",
+      "name": "Central Ground Water Board — Dynamic Groundwater Resources",
       "url": "https://cgwb.gov.in/",
       "used": "Groundwater status classification (2023 assessment)"
     },
     {
-      "name": "Central Water Commission \u2014 Dam Register",
+      "name": "Central Water Commission — Dam Register",
       "url": "https://cwc.gov.in/",
       "used": "Dam capacities, heights, commissioning dates"
     },
@@ -858,7 +884,7 @@
     {
       "name": "Indian Bureau of Mines (IBM)",
       "url": "https://ibm.gov.in/",
-      "used": "Indian Mineral Yearbook \u2014 production statistics and mineral status"
+      "used": "Indian Mineral Yearbook — production statistics and mineral status"
     },
     {
       "name": "Ministry of Mines, Government of India",
@@ -868,7 +894,7 @@
     {
       "name": "Hindustan Zinc Ltd. (public disclosures)",
       "url": "https://www.hzlindia.com/",
-      "used": "Rampura Agucha, Zawar, Rajpura Dariba, Sindesar Khurd, Kayad \u2014 operational data"
+      "used": "Rampura Agucha, Zawar, Rajpura Dariba, Sindesar Khurd, Kayad — operational data"
     },
     {
       "name": "Hindustan Copper Ltd. (public disclosures)",
@@ -880,7 +906,7 @@
       "used": "Jhamarkotra, Kapurdi-Jalipa, Palana-Gurha operational data"
     },
     {
-      "name": "Cairn Oil & Gas (Vedanta) \u2014 public disclosures",
+      "name": "Cairn Oil & Gas (Vedanta) — public disclosures",
       "used": "Barmer Basin oil and gas fields data"
     },
     {
@@ -899,21 +925,21 @@
       "used": "Sectoral cluster classifications, MSME cluster mapping"
     },
     {
-      "name": "Ministry of Commerce & Industry \u2014 SEZ notifications",
+      "name": "Ministry of Commerce & Industry — SEZ notifications",
       "url": "https://sezindia.gov.in/",
       "used": "Notified SEZ locations, sector types and gazette references"
     },
     {
       "name": "Geographical Indications Registry (Chennai)",
       "url": "https://ipindia.gov.in/",
-      "used": "GI-tag numbers for Rajasthan\u2019s handicraft clusters"
+      "used": "GI-tag numbers for Rajasthan’s handicraft clusters"
     },
     {
       "name": "Rajasthan Handicraft Development Corporation (RUDA)",
       "used": "Traditional-craft cluster locations and cooperative rosters"
     },
     {
-      "name": "Company disclosures \u2014 Nissan / Honda / Hero / Shree / JK / Ambuja / UltraTech / Wonder / Birla Corp / Chambal Fertilisers / HPCL-Rajasthan Refinery",
+      "name": "Company disclosures — Nissan / Honda / Hero / Shree / JK / Ambuja / UltraTech / Wonder / Birla Corp / Chambal Fertilisers / HPCL-Rajasthan Refinery",
       "used": "Flagship-industry plant coordinates, commissioning dates and outputs"
     },
     {
@@ -929,7 +955,7 @@
     {
       "name": "Nuclear Power Corporation of India Ltd. (NPCIL)",
       "url": "https://npcil.nic.in/",
-      "used": "Rawatbhata (RAPS 1-6, RAPS 7-8 under construction) \u2014 reactor sizes, commissioning dates"
+      "used": "Rawatbhata (RAPS 1-6, RAPS 7-8 under construction) — reactor sizes, commissioning dates"
     },
     {
       "name": "Solar Energy Corporation of India (SECI)",
@@ -952,13 +978,13 @@
       "used": "Solar-park roster + state renewable-energy policy"
     },
     {
-      "name": "Operator disclosures \u2014 NTPC / Adani Green / ReNew Power / Suzlon / JSW-Raj West / Vedanta Cairn",
+      "name": "Operator disclosures — NTPC / Adani Green / ReNew Power / Suzlon / JSW-Raj West / Vedanta Cairn",
       "used": "Plant / park capacity + commissioning dates + fuel source"
     },
     {
-      "name": "Census of India 2011 \u00b7 Registrar General of India",
+      "name": "Census of India 2011 · Registrar General of India",
       "url": "https://censusindia.gov.in/",
-      "used": "District Census Handbook \u2014 per-district population, density, literacy, sex ratio, ST %, SC %, urbanisation, 2001\u20132011 decadal growth"
+      "used": "District Census Handbook — per-district population, density, literacy, sex ratio, ST %, SC %, urbanisation, 2001–2011 decadal growth"
     },
     {
       "name": "Directorate of Economics & Statistics, Government of Rajasthan",
@@ -966,26 +992,26 @@
       "used": "State demographic profile updates + Rajasthan Statistical Abstract"
     },
     {
-      "name": "NITI Aayog \u2014 Aspirational Districts + Smart Cities Mission",
+      "name": "NITI Aayog — Aspirational Districts + Smart Cities Mission",
       "url": "https://niti.gov.in/",
       "used": "Smart-city roster + development-index cross-reference"
     },
     {
       "name": "Tribal Area Development Department (TAD), Government of Rajasthan",
-      "used": "Scheduled Areas (Fifth Schedule TSP block) \u2014 district roster + PESA applicability"
+      "used": "Scheduled Areas (Fifth Schedule TSP block) — district roster + PESA applicability"
     },
     {
-      "name": "Ministry of Housing & Urban Affairs (MoHUA) \u2014 Smart Cities Mission",
+      "name": "Ministry of Housing & Urban Affairs (MoHUA) — Smart Cities Mission",
       "url": "https://smartcities.gov.in/",
       "used": "Smart-city selection rounds and anchor projects"
     },
     {
-      "name": "Government of Rajasthan \u00b7 Municipal Act notifications",
+      "name": "Government of Rajasthan · Municipal Act notifications",
       "used": "Municipal Corporation splits (Jaipur / Jodhpur / Kota 2019)"
     },
     {
       "name": "Rajasthan historical gazetteer + cultural anthropology sources",
-      "used": "Nine regional cultural zones (Marwar / Mewar / Hadoti / Shekhawati / Dhundhar / Vagad / Matsya / Godwar / Mewat) \u2014 historical seats, dialects and signature identity"
+      "used": "Nine regional cultural zones (Marwar / Mewar / Hadoti / Shekhawati / Dhundhar / Vagad / Matsya / Godwar / Mewat) — historical seats, dialects and signature identity"
     },
     {
       "name": "Border Security Force (BSF) + Survey of India",
