@@ -94,6 +94,10 @@
   padding: 2px;
   box-sizing: border-box;
 }
+
+/* Mobile map-chrome overrides are appended at the very END of this
+ * file (search for MOBILE MAP CHROME) so they win the cascade over
+ * the desktop .a-map .map-controls rule that sits later in the file. */
 .a-map .overlay.north svg { width: 100%; height: 100%; }
 
 .a-map .overlay.scale {
@@ -495,4 +499,82 @@
   font-size: 9.5px;
   letter-spacing: var(--small-caps-letter-spacing);
   text-transform: uppercase;
+}
+
+/* ═══ MOBILE MAP CHROME ═══════════════════════════════════════════════
+ * Placed at file-end so the mobile @media rules follow (and therefore
+ * beat, at equal specificity) the desktop rules above. */
+@media (max-width: 640px) {
+  /* Zoom +/- pill sits TOP-RIGHT of the map on mobile so the compass
+   * has clean run of the bottom-left corner. */
+  .a-map .map-controls {
+    top: 12px !important; right: 12px !important;
+    bottom: auto !important; left: auto !important;
+    flex-direction: row !important;
+    gap: 0 !important;
+    background: color-mix(in srgb, var(--card) 90%, transparent);
+    backdrop-filter: blur(4px);
+    border: 1px solid var(--hair);
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  }
+  .a-map .map-controls .divider { display: none; }
+  .a-map .map-controls .mc {
+    width: 36px !important; height: 36px !important;
+    border: none;
+    background: transparent;
+    border-radius: 6px;
+  }
+  /* Compass tucks smaller into bottom-left */
+  .a-map .overlay.north {
+    width: 40px; height: 40px;
+    bottom: 12px; left: 12px;
+  }
+  /* Hide the desktop zoom-level pill on mobile — the info isn't
+   * essential and it fights the FAB stack for corner real-estate. */
+  .a-map .overlay.zoom { display: none !important; }
+  /* Selection breadcrumb — was hidden below 640 by SelectionBreadcrumb's
+   * own CSS. Override that: on mobile it's THE way to know what you
+   * selected. Docks below the header. */
+  .a-map .overlay.selection-breadcrumb {
+    display: inline-flex !important;
+    top: 12px;
+    max-width: min(60vw, 240px);
+    font-size: 11.5px;
+    padding: 6px 12px;
+  }
+  .a-map .overlay.selection-breadcrumb .sb-feature { max-width: 160px; }
+
+  /* Layers popover — full-width overlay panel on mobile */
+  .layers-popover { top: 12px; left: 12px; }
+  .layers-popover .lp-toggle {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+  .layers-popover .lp-panel {
+    position: fixed;
+    top: 56px; left: 0; right: 0; bottom: 0;
+    min-width: 0; max-width: 100vw;
+    max-height: none;
+    border-radius: 0;
+    border-left: none; border-right: none;
+    border-top: 1px solid var(--hair);
+    padding: 16px;
+    z-index: 40;
+    display: none;
+  }
+  .layers-popover.open .lp-panel { display: block; }
+  .layers-popover .lp-row {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+  .layers-popover .lp-row input[type="checkbox"] {
+    width: 20px; height: 20px;
+  }
+  .layers-popover h4 {
+    font-size: 11px;
+    padding: 10px 4px 6px;
+    border-bottom: 1px solid var(--hair);
+  }
 }

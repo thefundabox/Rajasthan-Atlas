@@ -496,8 +496,66 @@ function injectStyles() {
       opacity: 0.72;
       font-style: italic;
     }
-    @media (max-width: 780px) {
+    /* Below 780 px but above 640 px we still hide — the layout doesn't
+     * have room for the accordion but the mobile ribbon isn't right
+     * either. */
+    @media (max-width: 780px) and (min-width: 641px) {
       .itl-strip { display: none; }
+    }
+    /* True mobile — convert the vertical accordion into a horizontal
+     * scrollable ribbon docked to the bottom of the map. */
+    @media (max-width: 640px) {
+      .itl-strip {
+        top: auto !important;
+        left: 0 !important; right: 0 !important; bottom: 0 !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        height: 128px !important;
+        max-height: 128px !important;
+        border-radius: 14px 14px 0 0 !important;
+        border-left: none !important; border-right: none !important;
+        border-bottom: none !important;
+        padding: 8px 12px 4px !important;
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+        z-index: 22 !important;
+        box-shadow: 0 -4px 14px rgba(0,0,0,0.08) !important;
+      }
+      .itl-title { font-size: 10.5px !important; margin-bottom: 6px !important; display: flex; justify-content: space-between; align-items: baseline; }
+      .itl-title-sub { display: inline !important; font-size: 9.5px; margin-top: 0; text-transform: none; letter-spacing: 0.02em; }
+      .itl-list { flex-direction: row !important; gap: 6px !important; overflow-x: auto; padding-bottom: 4px; }
+      .itl-row { flex-shrink: 0; width: 112px; }
+      .itl-node {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 2px !important;
+        height: 66px;
+        padding: 6px 8px !important;
+        border-radius: 8px !important;
+      }
+      .itl-node.active { border-width: 2px !important; }
+      .itl-roman { font-size: 20px !important; }
+      .itl-label { align-items: center !important; text-align: center; }
+      .itl-name { font-size: 10px !important; line-height: 1.2 !important; }
+      .itl-date { font-size: 9px !important; }
+      /* Expanded details float above the ribbon on mobile */
+      .itl-detail {
+        position: fixed !important;
+        left: 12px; right: 12px;
+        bottom: 136px;
+        padding: 10px 12px !important;
+        background: var(--bg-1, #f5efe0);
+        border: 1px solid var(--ink-3, #ba9863);
+        border-radius: 10px;
+        max-height: 40vh;
+        overflow-y: auto;
+        z-index: 23;
+        box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+      }
+      .itl-detail.hidden { display: none !important; }
+      /* Slide the ribbon out of the way when the feature-detail sheet
+       * is open (mobile). Uses :has() — modern browsers. */
+      body:has(.a-right.open) .itl-strip { transform: translateY(100%); transition: transform 0.2s; }
     }
   `;
   document.head.append(s);

@@ -370,8 +370,56 @@ function injectStyles() {
       stroke-width: 1.3 !important;
       opacity: 1 !important;
     }
-    @media (max-width: 780px) {
+    @media (max-width: 780px) and (min-width: 641px) {
       .rdt-strip { display: none; }
+    }
+    /* Mobile ribbon — mirror of IntegrationTimeline's mobile rules. */
+    @media (max-width: 640px) {
+      .rdt-strip {
+        top: auto !important;
+        left: 0 !important; right: 0 !important; bottom: 0 !important;
+        width: 100vw !important; max-width: 100vw !important;
+        height: 128px !important; max-height: 128px !important;
+        border-radius: 14px 14px 0 0 !important;
+        border-left: none !important; border-right: none !important;
+        border-bottom: none !important;
+        padding: 8px 12px 4px !important;
+        overflow-y: hidden !important;
+        z-index: 22 !important;
+        box-shadow: 0 -4px 14px rgba(0,0,0,0.08) !important;
+      }
+      .rdt-title { font-size: 10.5px !important; margin-bottom: 6px !important; display: flex; justify-content: space-between; align-items: baseline; }
+      .rdt-title-sub { display: inline !important; font-size: 9.5px; margin-top: 0; text-transform: none; letter-spacing: 0.02em; }
+      .rdt-list { flex-direction: row !important; gap: 6px !important; overflow-x: auto; padding-bottom: 4px; }
+      .rdt-row { flex-shrink: 0; width: 118px; }
+      .rdt-node {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 2px !important;
+        height: 66px;
+        padding: 6px 8px !important;
+        border-radius: 8px !important;
+      }
+      .rdt-node.active { border-width: 2px !important; }
+      .rdt-crown { font-size: 18px !important; }
+      .rdt-label { align-items: center !important; text-align: center; }
+      .rdt-name { font-size: 10px !important; line-height: 1.2 !important; }
+      .rdt-date { font-size: 9px !important; }
+      .rdt-detail {
+        position: fixed !important;
+        left: 12px; right: 12px;
+        bottom: 136px;
+        padding: 10px 12px !important;
+        background: var(--bg-1, #f5efe0);
+        border: 1px solid var(--ink-3, #ba9863);
+        border-radius: 10px;
+        max-height: 40vh;
+        overflow-y: auto;
+        z-index: 23;
+        box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+      }
+      .rdt-detail.hidden { display: none !important; }
+      body:has(.a-right.open) .rdt-strip { transform: translateY(100%); transition: transform 0.2s; }
     }
   `;
   document.head.append(s);
