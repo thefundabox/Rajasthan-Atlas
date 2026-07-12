@@ -35,7 +35,9 @@ import { el } from '../core/util/dom.js';
  */
 
 let iconOverlay = null;   // <div> HTML overlay holding per-point icons
-let sikhwalRoot = null;   // <div> container for boxes + per-box leader-line SVGs
+let sikhwalRoot     = null;  // zero-size container in <body> — holds leader-line SVGs
+let sikhwalColLeft  = null;  // scrollable column pinned to the map's left edge
+let sikhwalColRight = null;  // scrollable column pinned to the map's right edge
 
 Atlas.bus.on('atlas:ready', () => {
   injectStyles();
@@ -60,11 +62,14 @@ Atlas.bus.on('atlas:ready', () => {
   Atlas.bus.on('layer:visibility', () => refreshEverything());
   Atlas.bus.on('view:changed',     () => { positionIcons(); repositionSikhwal(); });
   Atlas.bus.on('selection:changed', ({ feature }) => {
-    // Hide the whole callout root while a feature is selected so it
-    // doesn't compete with the detail card slide-in. Returns when the
-    // selection is cleared (either by clicking the map background or
-    // by the delegated × handler above).
-    if (sikhwalRoot) sikhwalRoot.classList.toggle('hidden', !!feature);
+    // Hide the whole callout apparatus (columns + leader lines) while a
+    // feature is selected so it doesn't compete with the detail card
+    // slide-in. Returns when the selection is cleared (either by
+    // clicking the map background or by the delegated × handler).
+    const hide = !!feature;
+    if (sikhwalRoot)     sikhwalRoot.classList.toggle('hidden', hide);
+    if (sikhwalColLeft)  sikhwalColLeft.classList.toggle('hidden', hide);
+    if (sikhwalColRight) sikhwalColRight.classList.toggle('hidden', hide);
   });
   window.addEventListener('resize', () => repositionSikhwal());
 });
@@ -76,15 +81,20 @@ function buildOverlays() {
   if (!mapEl) return;
   iconOverlay = el('div', { class: 'point-icon-overlay' });
   mapEl.append(iconOverlay);
-  // sikhwal-root is a zero-size, pointer-events:none container
-  // appended to <body>, NOT to .a-map. It holds absolutely positioned
-  // callout boxes and per-box mini SVGs whose visual position is
-  // computed against the map's screen rect on each reposition. Nothing
-  // sits above the map SVG — the map renders exactly as it would
-  // without callouts; the boxes flank it and only thin leader lines
-  // cross into the map area.
-  sikhwalRoot = el('div', { class: 'sikhwal-root' });
+  // Sikhwal preview layout: two scrollable column DIVs pinned to the
+  // map's left / right edges, plus a zero-size root for the leader-line
+  // mini-SVGs. Boxes flow inside their column with position:relative,
+  // so users can scroll to all features — no more +N more truncation.
+  // sikhwal-root stays for the leader-line SVGs, computed against each
+  // box's live screen rect on every reposition.
+  sikhwalRoot     = el('div', { class: 'sikhwal-root' });
+  sikhwalColLeft  = el('div', { class: 'sikhwal-col sikhwal-col-left' });
+  sikhwalColRight = el('div', { class: 'sikhwal-col sikhwal-col-right' });
   document.body.append(sikhwalRoot);
+  document.body.append(sikhwalColLeft);
+  document.body.append(sikhwalColRight);
+  sikhwalColLeft.addEventListener('scroll',  () => repositionSikhwal());
+  sikhwalColRight.addEventListener('scroll', () => repositionSikhwal());
 }
 
 /* ── Refresh — called when layer visibility changes ──────────────── */
@@ -190,28 +200,24 @@ const sikhwalSlots = [];
 
 function renderSikhwal(activeLayers) {
   if (!sikhwalRoot) return;
-  // Clear previous callouts (boxes + any per-box leader-line SVGs).
+  // Clear previous callouts + leader-lines from all containers.
   sikhwalRoot.innerHTML = '';
+  if (sikhwalColLeft)  sikhwalColLeft.innerHTML  = '';
+  if (sikhwalColRight) sikhwalColRight.innerHTML = '';
   sikhwalSlots.length = 0;
   if (!activeLayers.length) return;
 
-  // Cap per-layer callouts so the perimeter doesn't drown in text.
-  // 8 keeps a single layer clean, and multi-layer combinations
-  // (fairs + forts + palaces) remain readable when a hard column cap
-  // is applied later in repositionSikhwal.
-  const MAX_PER_LAYER = 8;
-
+  // Build every eligible callout — no per-layer cap since columns now
+  // scroll. First stage: create the boxes and collect their lat/lon;
+  // second stage (in repositionSikhwal) sorts them into the appropriate
+  // column and draws leader lines.
   for (const layer of activeLayers) {
-    const feats = [...layer.features].slice(0, MAX_PER_LAYER);
-    for (const feat of feats) {
+    for (const feat of layer.features) {
       const c = feat.properties?.centroid
         || (feat.geometry?.type === 'Point' ? feat.geometry.coordinates : null);
       if (!c) continue;
       const facts = Array.isArray(feat.properties?.notes?.facts)
         ? feat.properties.notes.facts : [];
-      // Tight teaser — keeps every box to 2-3 lines so the edge columns
-      // pack predictably. Long facts get truncated with an ellipsis; the
-      // full fact reads in the detail card on click.
       const teaser = facts[0]
         ? (facts[0].length > 90 ? facts[0].slice(0, 88).trimEnd() + '…' : facts[0])
         : '';
@@ -228,7 +234,9 @@ function renderSikhwal(activeLayers) {
       ]);
       box.append(header);
       if (teaser) box.append(el('div', { class: 'sikhwal-body' }, [teaser]));
-      sikhwalRoot.append(box);
+      // Not appended to DOM yet — repositionSikhwal will attach to the
+      // correct column based on the feature's longitude relative to the
+      // map centre.
       sikhwalSlots.push({ div: box, lon: c[0], lat: c[1] });
     }
   }
@@ -267,71 +275,36 @@ function repositionSikhwal() {
     };
   });
 
-  /* Edge-column layout — no more angular collisions.
-   * Assign each feature to the LEFT column (feature west of map centre)
-   * or the RIGHT column (east of map centre). Within each column, sort
-   * by the feature's Y coordinate and distribute along the edge with a
-   * fixed vertical stride. This guarantees no vertical overlap, and
-   * leader lines run monotonically inward.
+  /* Edge-column layout — split features by longitude into LEFT / RIGHT.
+   * Each column is a scrollable container appended to <body>; boxes
+   * inside use position:relative and flow with normal margin. The
+   * leader-line SVG for each box is drawn from the box's LIVE screen
+   * rect (getBoundingClientRect) to the feature centroid, so lines
+   * follow the column as the user scrolls it.
    */
-  const W = 190, H = 96;            // Box dimensions — matches .sikhwal-box CSS.
-  const STRIDE_Y = H + 12;          // Vertical spacing — guarantees a visible gap between stacked boxes.
-  const EDGE_MARGIN = 12;           // Distance from viewport edge to box outer edge.
-  const TOP_MARGIN  = 76;           // Reserve top area for zoom controls, search, etc.
+  const leftCol  = slots.filter(s => s.ax <  cx).sort((a, b) => a.ay - b.ay);
+  const rightCol = slots.filter(s => s.ax >= cx).sort((a, b) => a.ay - b.ay);
 
-  // Hard cap per column — if we exceed this, the tail is hidden and a
-  // "+N more" tag appears in place of the last slot. Prevents bottom
-  // boxes from falling below the map area with no way to scroll to them.
-  const usable = rect.height - TOP_MARGIN - EDGE_MARGIN;
-  const MAX_COL = Math.max(3, Math.floor((usable - H) / STRIDE_Y) + 1);
+  // Attach boxes into their columns in order (only if not already there
+  // — repositionSikhwal may be called on scroll, when the DOM is stable).
+  leftCol.forEach(s => {
+    if (s.div.parentNode !== sikhwalColLeft) sikhwalColLeft.append(s.div);
+  });
+  rightCol.forEach(s => {
+    if (s.div.parentNode !== sikhwalColRight) sikhwalColRight.append(s.div);
+  });
 
-  const allLeft  = slots.filter(s => s.ax <  cx).sort((a, b) => a.ay - b.ay);
-  const allRight = slots.filter(s => s.ax >= cx).sort((a, b) => a.ay - b.ay);
-  const leftCol   = allLeft.slice(0, MAX_COL);
-  const rightCol  = allRight.slice(0, MAX_COL);
-  const leftHidden  = allLeft.slice(MAX_COL);
-  const rightHidden = allRight.slice(MAX_COL);
-  // Hide overflow boxes from the DOM flow so the "+N more" tag can take
-  // their visual position.
-  [...leftHidden, ...rightHidden].forEach(s => { s.div.style.display = 'none'; });
-
-  const packColumn = (col, rightSide, hiddenCount) => {
-    if (!col.length && !hiddenCount) return;
-    const slotCount = col.length + (hiddenCount > 0 ? 1 : 0);
-    const stride = slotCount > 1
-      ? Math.max(STRIDE_Y, (usable - H) / (slotCount - 1))
-      : 0;
-    const totalHeight = (slotCount - 1) * stride + H;
-    const startY = rect.top + TOP_MARGIN + Math.max(0, (usable - totalHeight) / 2);
-    const x = rightSide ? (rect.right - W - EDGE_MARGIN) : (rect.left + EDGE_MARGIN);
-    col.forEach((slot, idx) => {
-      const y = startY + idx * stride;
-      slot.div.style.display = '';
-      slot.div.style.left = `${x}px`;
-      slot.div.style.top  = `${y}px`;
-      slot.boxX = x; slot.boxY = y;
-    });
-    if (hiddenCount > 0) {
-      const y = startY + col.length * stride;
-      const tag = document.createElement('div');
-      tag.className = 'sikhwal-more';
-      tag.textContent = `+${hiddenCount} more`;
-      tag.style.left = `${x}px`;
-      tag.style.top  = `${y}px`;
-      sikhwalRoot.append(tag);
-    }
-  };
-  packColumn(leftCol,  false, leftHidden.length);
-  packColumn(rightCol, true,  rightHidden.length);
-
-  /* Draw one small SVG per box, sized to just the leader-line bounding
-   * box + anchor dot. This keeps every SVG tiny and never spans the
-   * whole map — so nothing shadows the base map SVG behind. */
+  /* Draw one small SVG per box, from its live screen rect to the
+   * feature's on-map anchor. Boxes whose rect falls outside the map's
+   * vertical band are still valid — the line just runs off-screen and
+   * the SVG clips itself. */
   for (const slot of [...leftCol, ...rightCol]) {
-    const rightSide = slot.boxX + W / 2 > cx;
-    const bcy = slot.boxY + H / 2;
+    const br = slot.div.getBoundingClientRect();
+    if (br.width === 0 || br.height === 0) continue;   // hidden / offscreen
+    const rightSide = br.left + br.width / 2 > cx;
+    const bcy = br.top + br.height / 2;
     // Line origin: inner edge of the box, halfway down.
-    const ox = rightSide ? slot.boxX : slot.boxX + W;
+    const ox = rightSide ? br.left : br.right;
     const oy = bcy;
     // Elbow: short horizontal, then diagonal.
     const elbowX = ox + (rightSide ? -22 : 22);
@@ -423,27 +396,39 @@ function injectStyles() {
     }
     /* Per-box mini SVGs — sized to just the leader-line bounding box. */
     .sikhwal-line { pointer-events: none; }
-    /* "+N more" tag replaces the tail of any column that overflows the
-     * viewport height. Callouts to items further down remain accessible
-     * via the Layers popover / search. */
-    .sikhwal-more {
+    /* Scrollable columns pinned to the map's left / right edges. Boxes
+     * flow inside with normal margin — user can wheel or drag to reach
+     * every feature; nothing gets truncated any more. */
+    .sikhwal-col {
       position: fixed;
-      width: 190px;
-      padding: 6px 9px;
-      background: color-mix(in srgb, var(--bg-1, #f5efe0) 93%, transparent);
-      border: 1px dashed var(--ink-3, #ba9863);
-      border-radius: 4px;
-      font-family: var(--sans);
-      font-size: 11px;
-      color: var(--ink-2, #6b5030);
-      text-align: center;
-      pointer-events: none;
+      /* Start below the header + Layers button so we never obscure them. */
+      top: 165px;
+      bottom: 12px;
+      width: 200px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      z-index: 10;
+      padding: 4px;
       box-sizing: border-box;
+      /* pointer-events auto lets the wheel scroll the column; children
+       * still get their own auto/none as needed. */
+      pointer-events: auto;
+      /* Transparent — only the child .sikhwal-box tiles are visible;
+       * the rest of the column area lets the map peek through. */
+      background: transparent;
+    }
+    .sikhwal-col-left  { left: 12px; }
+    .sikhwal-col-right { right: 12px; }
+    .sikhwal-col::-webkit-scrollbar { width: 6px; }
+    .sikhwal-col::-webkit-scrollbar-thumb {
+      background: color-mix(in srgb, var(--ink-3, #ba9863) 55%, transparent);
+      border-radius: 3px;
     }
     .sikhwal-box {
-      position: fixed;
-      width: 190px;
+      position: relative;
+      width: 100%;
       max-height: 96px;
+      margin-bottom: 10px;
       overflow: hidden;
       pointer-events: auto;
       padding: 6px 9px;
@@ -465,7 +450,8 @@ function injectStyles() {
       box-shadow: 0 4px 12px rgba(0,0,0,0.22);
       z-index: 6;
     }
-    .sikhwal-root.hidden { display: none; }
+    .sikhwal-root.hidden,
+    .sikhwal-col.hidden { display: none; }
 
     /* No CSS overrides on district paths — the base map renders exactly
      * as it would without Sikhwal mode. */
