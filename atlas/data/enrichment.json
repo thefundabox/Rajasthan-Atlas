@@ -1825,6 +1825,92 @@
         "One of only two Rajasthan rivers that reach the Arabian Sea; the other is the Mahi.",
         "Its Gujarat lower course is dammed at Dantiwada — Rajasthan's contribution is monsoon flow only."
       ]
+    },
+
+    "painting-kishangarh": {
+      "images": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/4_Radha_%28Bani_Thani%29%2C_Kishangarh%2C_ca._1750%2C_National_Museum_New_Delhi.jpg",
+          "caption": "Bani Thani (c. 1750) by Nihal Chand — the iconic Kishangarh portrait; National Museum, New Delhi.",
+          "credit": "Wikimedia Commons · Public domain (18th c.)" },
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/7_attrib_to_Nihal_Chand_Raja_Savant_Singh_and_Bani_Thani_as_Krishna_and_Radha_Artwork_ca_1760_Fine_Arts_Museums_of_San_Francisco.jpg",
+          "caption": "Raja Savant Singh and Bani Thani as Krishna and Radha (c. 1760), attributed to Nihal Chand.",
+          "credit": "Fine Arts Museums of San Francisco · Wikimedia Commons · Public domain" }
+      ]
+    },
+    "painting-mewar": {
+      "images": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Shahadin_001.jpg",
+          "caption": "Ragamala folio attributed to Sahibdin (17th c.) — the defining master of the Mewar school.",
+          "credit": "Wikimedia Commons · Public domain (17th c.)" }
+      ]
+    },
+    "painting-marwar": {
+      "images": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Maharaja_Ram_singh_celebrating_Diwali_with_a_companion.jpg",
+          "caption": "Marwar-school painting: Maharaja Ram Singh celebrating Diwali — bold flat colour typical of Jodhpur.",
+          "credit": "Wikimedia Commons · Public domain" }
+      ]
+    },
+    "painting-nathdwara": {
+      "images": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/MET_DP156677.jpg",
+          "caption": "Pichhwai: Krishna as Shrinathji with cows (19th c., Nathdwara school).",
+          "credit": "Metropolitan Museum of Art · Wikimedia Commons · Public domain" },
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Shrinathji_Vitthalanath_Birthday_Shringar.jpg",
+          "caption": "Shrinathji shringar on Vitthalnathji's birthday — a seasonal Pichwai theme.",
+          "credit": "Wikimedia Commons" }
+      ]
+    },
+
+    "karni-mata-deshnok": {
+      "images": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Shri_Karni_Mata_Deshnoke.png",
+          "caption": "Karni Mata temple at Deshnoke, Bikaner — the 'rat temple' housing ~25,000 kabbas.",
+          "credit": "Wikimedia Commons · CC BY-SA" }
+      ]
+    },
+    "sacchiyay-mata-osian": {
+      "images": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Osiyan_Mata_Temple%2C_Osiyan%2C_Jodhpur_02.jpg",
+          "caption": "Sachiya Mata Temple at Osian, Jodhpur — 8th c. Pratihara sandstone shikhara.",
+          "credit": "Wikimedia Commons · CC BY-SA" }
+      ]
+    },
+
+    "chittorgarh-fort": {
+      "images": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Chittorgarh_fort.JPG",
+          "caption": "Chittorgarh Fort — India's largest fort by area (280 hectares); UNESCO Hill Fort of Rajasthan.",
+          "credit": "Wikimedia Commons · CC BY-SA" }
+      ]
+    },
+    "kumbhalgarh-fort": {
+      "images": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Kumbhalgarh_055.jpg",
+          "caption": "Kumbhalgarh Fort — 36 km walls, world's second-longest continuous fortification.",
+          "credit": "Wikimedia Commons · CC BY-SA" }
+      ]
+    },
+    "amber-fort": {
+      "images": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg",
+          "caption": "Amber Fort, Amer — Kachhawaha capital before Jaipur (1727); UNESCO Hill Fort of Rajasthan.",
+          "credit": "Wikimedia Commons · CC BY-SA" }
+      ]
+    },
+    "mehrangarh-fort": {
+      "images": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Mehrangarh_Fort_sanhita.jpg",
+          "caption": "Mehrangarh Fort, Jodhpur — Rao Jodha's 1459 seat of the Rathores, rising 122 m above the city.",
+          "credit": "Wikimedia Commons · CC BY-SA" }
+      ]
+    },
+    "jaisalmer-fort": {
+      "images": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Jaisalmer_forteresse.jpg",
+          "caption": "Jaisalmer Fort — Rajasthan's only 'living fort', yellow-sandstone Bhati capital (1156).",
+          "credit": "Wikimedia Commons · CC BY-SA" }
+      ]
     }
   }
 }
