@@ -115,19 +115,73 @@ function refreshEverything() {
   renderSikhwal(forCallouts);
 }
 
+// Polygon layers eligible for edge callouts. Point layers with an icon
+// are always eligible; polygons need to be either in a callout-friendly
+// category (environment / climate / agriculture / etc.) or have an
+// explicit `calloutable: true` in their config. Icons for polygons
+// without one in atlas.json come from POLYGON_CALLOUT_ICONS below.
+const POLYGON_CALLOUT_CATEGORIES = new Set([
+  'environment',
+  'climate',
+  'agriculture',
+  'demographic',
+]);
+
+const POLYGON_CALLOUT_ICONS = {
+  'wildlife-sanctuaries':   '🦌',
+  'ramsar-sites':           '🦩',
+  'wetlands':               '💧',
+  'biosphere-reserves':     '🌿',
+  'conservation-reserves':  '🌿',
+  'national-parks':         '🌲',
+  'tiger-reserves':         '🐅',
+  'rainfall':               '🌧',
+  'temperature':            '🌡',
+  'climate-regions':        '🌤',
+  'agro-climatic-zones':    '🌾',
+  'soil-types':             '🟤',
+  'vegetation':             '🌳',
+  'desertification':        '🏜',
+  'drought-vulnerability':  '☀️',
+  'major-crops':            '🌾',
+  'cropping-seasons':       '📆',
+  'agro-economic-zones':    '🚜',
+  'irrigation-sources':     '💧',
+  'command-areas':          '🚰',
+  'groundwater':            '⛲',
+  'population-density':     '👥',
+  'population-growth':      '📈',
+  'literacy':               '📖',
+  'sex-ratio':              '⚖️',
+  'urbanisation':           '🏙',
+  'scheduled-tribes':       '🪶',
+  'scheduled-castes':       '🪶',
+};
+
 function eligibleLayers() {
-  // Return every point-type layer that is currently visible AND has an
-  // icon defined in its config. We look up the private `_layers` map on
-  // LayerManager to get the visibility bit (LayerManager.list() returns
-  // configs but they all read `visible` from the same source).
   const out = [];
   for (const cfg of Atlas.layers.list()) {
-    if (cfg.type !== 'point') continue;
     if (!cfg.visible) continue;
-    if (!cfg.icon) continue;              // skip layers without an emoji icon
     const feats = Atlas.layers.features(cfg.id) || [];
     if (!feats.length) continue;
-    out.push({ id: cfg.id, name: cfg.name, icon: cfg.icon, color: cfg.color, features: feats });
+
+    if (cfg.type === 'point') {
+      if (!cfg.icon) continue;            // legacy point-layer rule preserved
+      out.push({ id: cfg.id, name: cfg.name, icon: cfg.icon, color: cfg.color, features: feats });
+      continue;
+    }
+
+    // Polygon opt-in: category-based OR explicit calloutable flag.
+    const inCategory = cfg.category && POLYGON_CALLOUT_CATEGORIES.has(cfg.category);
+    if (!inCategory && !cfg.calloutable) continue;
+
+    // Only include features that have a centroid or labelAnchor — without one,
+    // the callout leader-line has nowhere to point.
+    const anchored = feats.filter(f => f.properties?.centroid || f.properties?.labelAnchor);
+    if (!anchored.length) continue;
+
+    const icon = cfg.icon || POLYGON_CALLOUT_ICONS[cfg.id] || '◆';
+    out.push({ id: cfg.id, name: cfg.name, icon, color: cfg.color, features: anchored });
   }
   return out;
 }
@@ -217,6 +271,7 @@ function renderSikhwal(activeLayers) {
   for (const layer of activeLayers) {
     for (const feat of layer.features) {
       const c = feat.properties?.centroid
+        || feat.properties?.labelAnchor
         || (feat.geometry?.type === 'Point' ? feat.geometry.coordinates : null);
       if (!c) continue;
       const facts = Array.isArray(feat.properties?.notes?.facts)
