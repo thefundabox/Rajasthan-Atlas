@@ -164,13 +164,59 @@ function injectStyles() {
   s.id = 'mobile-feature-tooltip-styles';
   s.textContent = `
     @media (max-width: 640px) {
-      /* Hide the sikhwal callout apparatus entirely on mobile — it's a
-       * desktop marginal-notes pattern. The point-icon overlay still
-       * paints the emoji icons on the map; interaction is now the
-       * MobileFeatureTooltip below. */
-      .sikhwal-col-left,
-      .sikhwal-col-right,
+      /* Point-layer sikhwal boxes stay hidden — they'd flood a small
+       * viewport. Polygon-layer boxes (env, choropleth, agriculture,
+       * climate) reflow into a horizontal-scroll strip docked at the
+       * top of the map (below the header). Without it the colored
+       * zones read as unnamed splotches on mobile. */
+      .sikhwal-box[data-layer-type="point"] { display: none !important; }
+      .sikhwal-line { display: none !important; }
       .sikhwal-root { display: none !important; }
+      /* Both columns collapse into a single horizontal scroll strip
+       * docked at the map's bottom edge, above the bottom sheet and
+       * to the left of the FAB stack. Users horizontal-scroll to
+       * browse every class band / sanctuary. Left- and right-column
+       * halves preserve the longitude split, side by side. */
+      .sikhwal-col-left,
+      .sikhwal-col-right {
+        position: fixed;
+        top: auto; bottom: 148px;      /* clear the peek bottom-sheet + FABs */
+        height: auto; max-height: none;
+        display: flex; flex-direction: row;
+        overflow-x: auto; overflow-y: hidden;
+        gap: 8px;
+        padding: 6px 8px;
+        z-index: 8;
+        scroll-snap-type: x proximity;
+        -webkit-overflow-scrolling: touch;
+        pointer-events: auto;
+      }
+      .sikhwal-col-left  { left: 8px;   right: auto; width: calc(50vw - 12px); }
+      .sikhwal-col-right { right: 76px; left: auto;  width: calc(50vw - 44px); }
+      /* If one column is empty, let the other span the full width. */
+      .sikhwal-col-left:empty,
+      .sikhwal-col-right:empty { display: none !important; }
+      .sikhwal-col-left:empty + .sikhwal-col-right,
+      .sikhwal-col-right:empty ~ .sikhwal-col-left { width: calc(100vw - 92px); }
+      .sikhwal-box {
+        position: relative !important;
+        left: 0 !important; top: 0 !important;
+        margin: 0 !important;
+        flex: 0 0 220px;
+        max-width: 220px !important;
+        font-size: 11px;
+        padding: 6px 10px;
+        scroll-snap-align: start;
+        background: var(--card, #fff);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      }
+      .sikhwal-box .sikhwal-title { gap: 6px; }
+      .sikhwal-box .sikhwal-name  { font-size: 11.5px; line-height: 1.2; }
+      .sikhwal-box .sikhwal-body {
+        font-size: 10.5px; line-height: 1.35;
+        display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
 
       /* Floating tap-preview card */
       .m-tap-tooltip {

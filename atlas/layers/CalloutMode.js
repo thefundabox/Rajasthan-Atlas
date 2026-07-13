@@ -279,10 +279,13 @@ function renderSikhwal(activeLayers) {
       const teaser = facts[0]
         ? (facts[0].length > 90 ? facts[0].slice(0, 88).trimEnd() + '…' : facts[0])
         : '';
+      const cfg = Atlas.layers.list().find(l => l.id === layer.id);
       const box = el('div', {
         class: `sikhwal-box`,
         'data-layer': layer.id,
         'data-feature': feat.id,
+        'data-layer-type': cfg?.type ?? 'point',
+        'data-layer-category': cfg?.category ?? '',
         onclick: () => Atlas.interaction.select(layer.id, feat.id, { zoom: true }),
       });
       const icon = feat.properties?.icon || layer.icon;
