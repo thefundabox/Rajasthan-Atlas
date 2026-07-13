@@ -271,14 +271,33 @@ export class InteractionManager {
   }
   _showTooltip(feat, x, y) {
     const p = feat.properties ?? {};
-    const rows = [`<div class="tt-name">${esc(p.name)}</div>`];
-    if (p.division || p.headquarters) {
-      const bits = [];
-      if (p.division)     bits.push(`${esc(p.division)} div`);
-      if (p.headquarters) bits.push(`HQ ${esc(p.headquarters)}`);
-      rows.push(`<div class="tt-meta">${bits.join(' · ')}</div>`);
+    const rows = [`<div class="tt-name">${esc(p.name ?? feat.id)}</div>`];
+
+    // Meta line — the most useful one-line context for this feature.
+    const meta = [];
+    if (p.division)     meta.push(`${esc(p.division)} div`);
+    if (p.headquarters) meta.push(`HQ ${esc(p.headquarters)}`);
+    if (p.type && !p.division) meta.push(esc(String(p.type).replace(/_/g, ' ')));
+    if (p.year_established || p.established) meta.push(`Est. ${esc(p.year_established ?? p.established)}`);
+    if (p.area_km2)     meta.push(`${p.area_km2.toLocaleString('en-IN')} km²`);
+    if (p.district && !p.division) meta.push(`in ${esc(p.district)}`);
+    if (meta.length) rows.push(`<div class="tt-meta">${meta.join(' · ')}</div>`);
+
+    // Metric value line — for choropleth / classification layers.
+    if (p.unit && (p.class_min != null || p.class_max != null)) {
+      const rng = p.class_min === p.class_max
+        ? `${p.class_min}${p.unit}`
+        : `${p.class_min}–${p.class_max}${p.unit}`;
+      const metric = p.metric_key ? `${esc(p.metric_key.replace(/_/g, ' '))} ${rng}` : rng;
+      rows.push(`<div class="tt-meta tt-metric">${metric}</div>`);
     }
+
+    // First key fact — the strongest single sentence of context.
+    const fact = p.notes?.facts?.[0] ?? p.facts?.[0] ?? p.significance ?? p.description;
+    if (fact) rows.push(`<div class="tt-fact">${esc(String(fact))}</div>`);
+
     if (p.newDistrict) rows.push('<div class="tt-tag">Retained new district</div>');
+
     this._tt.innerHTML = rows.join('');
     this._tt.style.left = x + 'px';
     this._tt.style.top  = y + 'px';

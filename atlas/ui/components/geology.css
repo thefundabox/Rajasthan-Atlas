@@ -142,6 +142,13 @@
 .a-map svg.mode-mining #atlas-terrain,
 .a-map svg.mode-petroleum #atlas-terrain { opacity: 0.32; }
 
+/* -- Popover-visibility gate ---------------------------------------- */
+.a-map .layer-geological-provinces.layer-active path.feature { fill-opacity: 0.6;  stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-rock-types.layer-active            path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-mineral-belts.layer-active         path.feature { fill-opacity: 0.35; stroke-width: 1.2; stroke-dasharray: 0; }
+.a-map .layer-building-stones.layer-active       path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-mining-clusters.layer-active       path.feature { fill: none; stroke: var(--cluster-outline); stroke-width: 1.5; stroke-dasharray: 4 3; }
+
 /* -- Labels --------------------------------------------------------- */
 .a-map #atlas-labels .lbl-province {
   fill: var(--ink-2); font-family: var(--serif); font-size:9.5px;

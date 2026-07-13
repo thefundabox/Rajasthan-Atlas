@@ -494,7 +494,7 @@
   padding: 8px 10px;
   font-family: var(--sans);
   font-size: var(--t-small);
-  max-width: 260px;
+  max-width: 300px;
   opacity: 0;
   transform: translate(-50%, calc(-100% - 12px));
   transition: opacity var(--motion-fast) var(--ease);
@@ -511,6 +511,19 @@
   color: var(--ink-3);
   font-size: var(--t-meta);
   letter-spacing: 0.03em;
+}
+.tooltip .tt-metric {
+  font-family: var(--mono);
+  letter-spacing: 0.02em;
+  margin-top: 1px;
+}
+.tooltip .tt-fact {
+  color: var(--ink-2);
+  font-size: var(--t-small);
+  line-height: 1.35;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--hair);
 }
 .tooltip .tt-tag {
   display: inline-block;

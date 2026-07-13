@@ -177,6 +177,14 @@
 .a-map svg.mode-dams #atlas-terrain,
 .a-map svg.mode-groundwater #atlas-terrain { opacity: 0.35; }
 
+/* -- Popover-visibility gate ---------------------------------------- */
+.a-map .layer-major-crops.layer-active         path.feature { fill-opacity: 0.5;  stroke: rgba(0,0,0,0.15); stroke-width: 0.35; }
+.a-map .layer-cropping-seasons.layer-active    path.feature { fill-opacity: 0.4; }
+.a-map .layer-agro-economic-zones.layer-active path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-irrigation-sources.layer-active  path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-command-areas.layer-active       path.feature { fill-opacity: 0.35; stroke: var(--irr-canal); stroke-width: 0.5; stroke-dasharray: 3 2; }
+.a-map .layer-groundwater.layer-active         path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.35; }
+
 /* -- Labels ------------------------------------------------------------- */
 .a-map #atlas-labels .lbl-crop {
   fill: var(--ink-2); font-family: var(--serif); font-size: 9.5px;

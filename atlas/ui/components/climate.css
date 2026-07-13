@@ -205,3 +205,13 @@
 .a-map svg.mode-vegetation #atlas-terrain,
 .a-map svg.mode-desertification #atlas-terrain,
 .a-map svg.mode-drought #atlas-terrain { opacity: 0.35; }
+
+/* -- Popover-visibility gate ---------------------------------------- */
+.a-map .layer-rainfall.layer-active              path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.3; }
+.a-map .layer-temperature.layer-active           path.feature { fill-opacity: 0.45; }
+.a-map .layer-climate-regions.layer-active       path.feature { fill-opacity: 0.6;  stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-agro-climatic-zones.layer-active   path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-soil-types.layer-active            path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-vegetation.layer-active            path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+.a-map .layer-desertification.layer-active       path.feature { fill-opacity: 0.55; }
+.a-map .layer-drought-vulnerability.layer-active path.feature { fill-opacity: 0.55; }

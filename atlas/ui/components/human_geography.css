@@ -357,3 +357,19 @@
 .chain-step.chip-scheduled-tribes,          .ed-related-chip.chip-scheduled-tribes          { background: var(--st-high); color: white; }
 .chain-step.chip-scheduled-castes,          .ed-related-chip.chip-scheduled-castes          { background: var(--sc-high); color: white; }
 .chain-step.chip-population-growth,         .ed-related-chip.chip-population-growth         { background: var(--grw-high); color: white; }
+
+/* -- Popover-visibility gate ---------------------------------------- */
+/* Mirrors the svg.mode-* rules above but keys on .layer-active so a
+   layer toggled directly from the Layers popover paints correctly,
+   without needing a preset URL param to set the SVG mode class. */
+.a-map .layer-population-density.layer-active   path.feature,
+.a-map .layer-population-growth.layer-active    path.feature,
+.a-map .layer-literacy.layer-active             path.feature,
+.a-map .layer-sex-ratio.layer-active            path.feature,
+.a-map .layer-urbanisation.layer-active         path.feature,
+.a-map .layer-scheduled-tribes.layer-active     path.feature,
+.a-map .layer-scheduled-castes.layer-active     path.feature { fill-opacity: 0.6; stroke: rgba(0,0,0,0.12); stroke-width: 0.3; }
+.a-map .layer-scheduled-areas.layer-active      path.feature { fill-opacity: 0.35; stroke: rgba(0,0,0,0.2); stroke-width: 0.4; }
+.a-map .layer-regional-zones.layer-active       path.feature { fill-opacity: 0.42; stroke: rgba(0,0,0,0.15); stroke-width: 0.5; }
+.a-map .layer-border-districts.layer-active     path.feature { fill-opacity: 0.28; stroke: var(--border-interstate); stroke-width: 0.5; stroke-dasharray: 3 2; }
+.a-map .layer-population-corridors.layer-active path.feature { fill-opacity: 0.32; stroke: var(--pc-stroke); stroke-width: 1.2; stroke-dasharray: 5 3; }

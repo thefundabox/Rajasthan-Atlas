@@ -88,6 +88,7 @@ export class Renderer {
     const layer = this._layers.get(layerId);
     if (!layer) return;
     layer.g.style.display = visible ? '' : 'none';
+    layer.g.classList.toggle('layer-active', !!visible);
   }
 
   /** Move a layer's <g> to the top / bottom of the render order. */

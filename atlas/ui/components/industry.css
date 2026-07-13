@@ -144,6 +144,10 @@
 .a-map svg.mode-sez                 #atlas-terrain,
 .a-map svg.mode-handicrafts         #atlas-terrain { opacity: 0.32; }
 
+/* -- Popover-visibility gate ---------------------------------------- */
+.a-map .layer-industrial-regions.layer-active  path.feature { fill-opacity: 0.4;  stroke: rgba(0,0,0,0.18); stroke-width: 0.5; stroke-dasharray: 4 2; }
+.a-map .layer-industrial-clusters.layer-active path.feature { fill-opacity: 0.55; stroke: rgba(0,0,0,0.15); stroke-width: 0.4; }
+
 /* -- Labels --------------------------------------------------------- */
 .a-map #atlas-labels .lbl-industrial-region {
   fill: var(--industry-ink); font-family: var(--serif); font-size: 9.5px;
