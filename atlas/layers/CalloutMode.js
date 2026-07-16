@@ -125,6 +125,13 @@ const POLYGON_CALLOUT_CATEGORIES = new Set([
   'climate',
   'agriculture',
   'demographic',
+  'physical',
+  'water',
+  'geology',
+  'mining',
+  'industry',
+  'energy',
+  'human',
 ]);
 
 const POLYGON_CALLOUT_ICONS = {
@@ -156,6 +163,29 @@ const POLYGON_CALLOUT_ICONS = {
   'urbanisation':           '🏙',
   'scheduled-tribes':       '🪶',
   'scheduled-castes':       '🪶',
+  /* Physical / water */
+  'physiography':           '🏔',
+  'drainage-basins':        '💧',
+  'thar':                   '🏜',
+  'lakes':                  '🏞',
+  /* Geology / mining */
+  'geological-provinces':   '🪨',
+  'rock-types':             '🗿',
+  'mineral-belts':          '⛏',
+  'building-stones':        '🧱',
+  'mining-clusters':        '⛏',
+  'petroleum-gas':          '🛢',
+  /* Industry / energy */
+  'industrial-regions':     '🏭',
+  'industrial-clusters':    '🏭',
+  'energy-mix':             '⚡',
+  'renewable-zones':        '🌞',
+  'transmission-corridors': '🔌',
+  /* Human-geography polygons */
+  'regional-zones':         '🏛',
+  'border-districts':       '🚧',
+  'population-corridors':   '🛣',
+  'scheduled-areas':        '🏞',
 };
 
 function eligibleLayers() {

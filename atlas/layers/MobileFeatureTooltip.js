@@ -190,7 +190,13 @@ function injectStyles() {
         scroll-snap-type: x proximity;
         -webkit-overflow-scrolling: touch;
         pointer-events: auto;
+        /* Hide the visible horizontal scrollbar — it competes with the
+         * bottom-sheet grip for attention and duplicates the visual
+         * affordance of the scroll-snap cards. Touch scroll still works. */
+        scrollbar-width: none;
       }
+      .sikhwal-col-left::-webkit-scrollbar,
+      .sikhwal-col-right::-webkit-scrollbar { display: none; width: 0; height: 0; }
       .sikhwal-col-left  { left: 8px;   right: auto; width: calc(50vw - 12px); }
       .sikhwal-col-right { right: 76px; left: auto;  width: calc(50vw - 44px); }
       /* If one column is empty, let the other span the full width. */

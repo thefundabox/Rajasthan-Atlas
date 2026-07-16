@@ -28,7 +28,15 @@
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
         "lastUpdated": "2026-07-11",
-        "icon": "🐫"
+        "icon": "🐫",
+        "centroid": [
+          74.5511,
+          26.4899
+        ],
+        "labelAnchor": [
+          74.5511,
+          26.4899
+        ]
       }
     },
     {
@@ -52,13 +60,24 @@
             "Rajasthan's biggest tribal fair — often called the 'Kumbh of the Bhils' — held at the Mahi-Som-Jakham triveni sangam.",
             "The Beneshwar Mahadev shrine here is the only Shiva temple in India where a naturally-broken (khandit) shivling is worshipped.",
             "Draws over 200,000 tribal pilgrims from Rajasthan, Gujarat and Madhya Pradesh over the 5-day Magh Purnima mela.",
-            "Rituals combine Bhil animist tradition, Vaishnavite Nishkalank Sant Mavji reformism, and Shaivite Beneshwar worship."
+            "Rituals combine Bhil animist tradition, Vaishnavite Nishkalank Sant Mavji reformism, and Shaivite Beneshwar worship.",
+            "Held on Magha Purnima at the confluence (sangam) of the Mahi, Som and Jakham rivers in Dungarpur.",
+            "Associated with a Swayambhu (self-manifest) Shivlinga at the Beneshwar Mahadev shrine.",
+            "Called the \"Kumbh of the tribals\" — the largest tribal fair in India, drawing Bhil pilgrims from Rajasthan, Gujarat and Madhya Pradesh."
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11",
-        "icon": "🪘"
+        "lastUpdated": "2026-07-16",
+        "icon": "🪘",
+        "centroid": [
+          74.145,
+          23.663
+        ],
+        "labelAnchor": [
+          74.145,
+          23.663
+        ]
       }
     },
     {
@@ -82,13 +101,24 @@
             "Held at Kolayat Lake — the traditional site where Sage Kapila (Kapil Muni) meditated and founded the Sankhya school of Indian philosophy.",
             "Kartik Purnima ritual bath and lamp-floating on the sacred lake — one of Rajasthan's oldest continuously-held fairs.",
             "The Kolayat Ashram houses over 40 shrines and dharamshalas around the lake perimeter.",
-            "Draws pilgrims from the Rajasthan-Sindh-Punjab-Haryana Yogi and Nath traditions."
+            "Draws pilgrims from the Rajasthan-Sindh-Punjab-Haryana Yogi and Nath traditions.",
+            "Held on Kartik Purnima at Kolayat (Bikaner district) — a five-day fair centred on the Kolayat lake.",
+            "Associated with Sage Kapil Muni, founder of the Samkhya school of Hindu philosophy.",
+            "The holy dip in Kolayat lake is believed to remove sins — the site is linked to Puranic legends of the sage's tapasya."
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11",
-        "icon": "🎡"
+        "lastUpdated": "2026-07-16",
+        "icon": "🎡",
+        "centroid": [
+          72.943,
+          27.833
+        ],
+        "labelAnchor": [
+          72.943,
+          27.833
+        ]
       }
     },
     {
@@ -112,13 +142,24 @@
             "Twin fairs held at the Karni Mata Temple, Deshnok — the tutelary Kul Devi (family goddess) of the Bikaner Rathores.",
             "The temple houses ~25,000 protected black rats ('kabas'); spotting the rare white rat is considered auspicious.",
             "Karni Mata is worshipped as an incarnation of Durga; the deity is credited with foretelling the Bikaner kingdom's rise.",
-            "Rao Bika founded Bikaner in 1488 after receiving Karni Mata's blessing at this site."
+            "Rao Bika founded Bikaner in 1488 after receiving Karni Mata's blessing at this site.",
+            "Held at the Karni Mata temple in Deshnok during Chaitra and Ashwin Navratras.",
+            "Famous as the \"Temple of Rats\" — the sacred kabas are believed to be reincarnated Charan family members.",
+            "Karni Mata is the Kuldevi (family goddess) of the Rathore rulers of Bikaner and Jodhpur."
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11",
-        "icon": "🎡"
+        "lastUpdated": "2026-07-16",
+        "icon": "🎡",
+        "centroid": [
+          73.34,
+          27.792
+        ],
+        "labelAnchor": [
+          73.34,
+          27.792
+        ]
       }
     },
     {
@@ -142,13 +183,23 @@
             "Rajasthan's biggest folk-deity pilgrimage — draws over 10 million pilgrims each Bhadrapada.",
             "Ramdev Pir (1352-1385) was a Tomar Rajput saint worshipped by all castes and both Hindus and Muslims (as 'Ramshah Pir').",
             "The Ramdevra samadhi is believed to grant relief from paralysis and skin ailments; pilgrims walk barefoot from all directions.",
-            "Ramdev's five 'panch pir' companions — including the Meghwal Dalit saint Harji Bhati — are worshipped alongside him."
+            "Ramdev's five 'panch pir' companions — including the Meghwal Dalit saint Harji Bhati — are worshipped alongside him.",
+            "Held annually at Ramdevra (also called Runicha) near Pokharan — the samadhi of Baba Ramdevji, a Rajasthani folk deity revered across caste lines.",
+            "A major pilgrimage fair drawing lakhs of devotees from Rajasthan and neighbouring states, walking barefoot from as far as Gujarat."
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11",
-        "icon": "🎡"
+        "lastUpdated": "2026-07-16",
+        "icon": "🎡",
+        "centroid": [
+          71.9,
+          26.925
+        ],
+        "labelAnchor": [
+          71.9,
+          26.925
+        ]
       }
     },
     {
@@ -172,13 +223,24 @@
             "Rajasthan's fourth-biggest fair — draws over 4 million pilgrims each Chaitra Navratri.",
             "Kaila Devi is the tutelary goddess of the Karauli Yadav ruling clan (traced descent from Krishna).",
             "The fair spans 15 days; the temple sits at the base of the Trikoot hill, on the Kalisil river.",
-            "Lakhs of devotees perform the 3-km barefoot 'lakh danva' (100,000 steps) around the temple perimeter."
+            "Lakhs of devotees perform the 3-km barefoot 'lakh danva' (100,000 steps) around the temple perimeter.",
+            "Held on Chaitra Shukla Ashtami at the Trikuta hills in Karauli.",
+            "Called \"Lakkhi Mela\" because pilgrim numbers cross a lakh.",
+            "The temple houses two idols — Kaila Devi (Mahalakshmi form) and Chamunda — worshipped side by side."
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11",
-        "icon": "🎡"
+        "lastUpdated": "2026-07-16",
+        "icon": "🎡",
+        "centroid": [
+          76.994,
+          26.164
+        ],
+        "labelAnchor": [
+          76.994,
+          26.164
+        ]
       }
     },
     {
@@ -208,7 +270,15 @@
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
         "lastUpdated": "2026-07-11",
-        "icon": "🐫"
+        "icon": "🐫",
+        "centroid": [
+          71.943,
+          25.833
+        ],
+        "labelAnchor": [
+          71.943,
+          25.833
+        ]
       }
     },
     {
@@ -238,7 +308,15 @@
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
         "lastUpdated": "2026-07-11",
-        "icon": "🐫"
+        "icon": "🐫",
+        "centroid": [
+          73.735,
+          27.199
+        ],
+        "labelAnchor": [
+          73.735,
+          27.199
+        ]
       }
     },
     {
@@ -262,13 +340,25 @@
             "Held at Shitala Mata temple, Chaksu (35 km south of Jaipur) — Rajasthan's biggest fair for the smallpox-goddess.",
             "The fair is a week-long women's ritual event — bassi-bhojan (cold food offerings) mark the goddess's cooling nature.",
             "Shitala Ashtami (7 days after Holi) is the traditional starting day.",
-            "Historic: the temple predates Jaipur city (1727) by centuries; Chaksu was a Kachhawaha stronghold before Amber."
+            "Historic: the temple predates Jaipur city (1727) by centuries; Chaksu was a Kachhawaha stronghold before Amber.",
+            "Held on Chaitra Krishna Saptami-Ashtami at Sheet Dungri near Chaksu (Jaipur).",
+            "The temple was built by Maharaja Madhav Singh of Jaipur.",
+            "Known as the \"bullock cart fair\" — the mela includes a large animal fair alongside the pilgrimage.",
+            "Sheetla Mata is worshipped as the protectress against diseases like smallpox, chickenpox and measles."
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11",
-        "icon": "🎡"
+        "lastUpdated": "2026-07-16",
+        "icon": "🎡",
+        "centroid": [
+          75.945,
+          26.598
+        ],
+        "labelAnchor": [
+          75.945,
+          26.598
+        ]
       }
     },
     {
@@ -298,7 +388,15 @@
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
         "lastUpdated": "2026-07-11",
-        "icon": "🎡"
+        "icon": "🎡",
+        "centroid": [
+          73.1,
+          27.9
+        ],
+        "labelAnchor": [
+          73.1,
+          27.9
+        ]
       }
     },
     {
@@ -322,13 +420,24 @@
             "Rajasthan's biggest Jain fair — draws over 500,000 Jain pilgrims each Chaitra Purnima.",
             "The Shri Mahavirji temple houses an idol of the 24th Tirthankara believed to have been miraculously discovered at this spot.",
             "The 8-day mela combines Digambara Jain rituals with tribal Meena participation — a rare Jain-tribal syncretic event.",
-            "The 'ratha yatra' (chariot procession) on the Gambhiri river is the mela's climax."
+            "The 'ratha yatra' (chariot procession) on the Gambhiri river is the mela's climax.",
+            "Jain fair held from Chaitra Shukla Trayodashi to Vaishakh Krishna Pratipada at Chandanpur (Karauli district).",
+            "The largest Jain fair in India — draws pilgrims from every Jain sect.",
+            "Features a chariot procession (rath yatra) and a ritual where descendants of a tanner community lead the first pull — a tradition traced to the idol's discovery legend."
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11",
-        "icon": "🪘"
+        "lastUpdated": "2026-07-16",
+        "icon": "🪘",
+        "centroid": [
+          76.995,
+          26.727
+        ],
+        "labelAnchor": [
+          76.995,
+          26.727
+        ]
       }
     },
     {
@@ -358,7 +467,311 @@
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
         "lastUpdated": "2026-07-11",
-        "icon": "🎡"
+        "icon": "🎡",
+        "centroid": [
+          76.155,
+          24.549
+        ],
+        "labelAnchor": [
+          76.155,
+          24.549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jeenmata-fair",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.152,
+          27.548
+        ]
+      },
+      "properties": {
+        "name": "Jeenmata Fair",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Sikar",
+        "month": "Chaitra & Ashwin Navratras",
+        "notes": {
+          "facts": [
+            "Held at the Jeenmata temple in Rewasa village (Sikar) during Chaitra and Ashwin Navratras.",
+            "The goddess is depicted with eight arms; lamps of ghee and oil are said to have burned continuously in her sanctum for centuries.",
+            "Linked to the folk tale of the sibling deities Harsha and Jeen — devotees visit for the fulfilment of wishes."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Current Affairs Today (June 2026), pp. 7-8",
+        "lastUpdated": "2026-07-16",
+        "icon": "🪔",
+        "centroid": [
+          75.152,
+          27.548
+        ],
+        "labelAnchor": [
+          75.152,
+          27.548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "khatu-shyamji-fair",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.048,
+          27.401
+        ]
+      },
+      "properties": {
+        "name": "Khatu Shyamji Fair",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Sikar",
+        "month": "Phalgun Shukla Dashami – Dwadashi (Feb-Mar)",
+        "notes": {
+          "facts": [
+            "Dedicated to Shyamji, a form of Krishna, revered here as \"Sheesh ke Dani\" (the giver of his head).",
+            "The principal mela runs from Phalgun Shukla Dashami to Dwadashi and attracts devotees year-round.",
+            "The Shyam Kund water tank and the temple garden are the two main draws beyond the sanctum."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Current Affairs Today (June 2026), pp. 7-8",
+        "lastUpdated": "2026-07-16",
+        "icon": "🪷",
+        "centroid": [
+          75.048,
+          27.401
+        ],
+        "labelAnchor": [
+          75.048,
+          27.401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bhartari-fair",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.503,
+          27.556
+        ]
+      },
+      "properties": {
+        "name": "Bhartari Fair",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Alwar",
+        "month": "Vaishakh & Bhadrapada (twice a year)",
+        "notes": {
+          "facts": [
+            "Held twice a year in Vaishakh and Bhadrapada in Alwar district.",
+            "Commemorates King Bhartrihari (Bhartari) who renounced his throne to become an ascetic.",
+            "A \"mini Kumbh\" — sadhus and jogis from across north India gather with traditional appearance and disciplines."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Current Affairs Today (June 2026), pp. 7-8",
+        "lastUpdated": "2026-07-16",
+        "icon": "🕉️",
+        "centroid": [
+          76.503,
+          27.556
+        ],
+        "labelAnchor": [
+          76.503,
+          27.556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "diggi-kalyanji-fair",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.59,
+          26.156
+        ]
+      },
+      "properties": {
+        "name": "Diggi Kalyanji Fair",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Tonk",
+        "month": "Shravan Amavasya (July-Aug)",
+        "notes": {
+          "facts": [
+            "Held on Shravan Amavasya at Diggi village in Tonk district.",
+            "Dedicated to Lord Vishnu, worshipped here in the form of Kalyanji.",
+            "Linked to the legend of King Digva who was cured of leprosy by the divine idol."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Current Affairs Today (June 2026), pp. 7-8",
+        "lastUpdated": "2026-07-16",
+        "icon": "🛕",
+        "centroid": [
+          75.59,
+          26.156
+        ],
+        "labelAnchor": [
+          75.59,
+          26.156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tejaji-fair-parbatsar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.767,
+          26.898
+        ]
+      },
+      "properties": {
+        "name": "Tejaji Fair, Parbatsar",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Nagaur",
+        "month": "Bhadrapada Shukla Dashami",
+        "notes": {
+          "facts": [
+            "Held at Parbatsar (Nagaur) in honour of the folk deity Tejaji — a Jat hero venerated across rural Rajasthan.",
+            "Central to Tejaji devotion — devotees seek protection from snake bites, invoking his final promise to return in serpent form.",
+            "Includes one of Rajasthan's largest cattle fairs, held alongside the religious gathering."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Current Affairs Today (June 2026), pp. 7-8",
+        "lastUpdated": "2026-07-16",
+        "icon": "🐍",
+        "centroid": [
+          74.767,
+          26.898
+        ],
+        "labelAnchor": [
+          74.767,
+          26.898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pabuji-fair-kolu",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.353,
+          26.913
+        ]
+      },
+      "properties": {
+        "name": "Pabuji Fair, Kolumund",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Phalodi",
+        "month": "Chaitra Amavasya",
+        "notes": {
+          "facts": [
+            "Held at Kolumund / Kolu Pabuji village in Phalodi district — the birthplace of the folk deity Pabuji.",
+            "Associated with the heroic traditions of the Pabuji Ki Phad — a scroll-narrated epic of cattle-raiding and honour.",
+            "Bhopa priests from the Nayak community perform the phad rendition through the night as part of the mela ritual."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Current Affairs Today (June 2026), pp. 7-8",
+        "lastUpdated": "2026-07-16",
+        "icon": "🐫",
+        "centroid": [
+          72.353,
+          26.913
+        ],
+        "labelAnchor": [
+          72.353,
+          26.913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gogaji-fair-gogamedi",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.339,
+          29.313
+        ]
+      },
+      "properties": {
+        "name": "Gogaji Fair, Gogamedi",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Hanumangarh",
+        "month": "Bhadrapada Shukla Navami (Goga Navami)",
+        "notes": {
+          "facts": [
+            "Held at Gogamedi (Hanumangarh) in honour of Gogaji, the folk snake-deity — devotees also visit his birthplace Dadrewa (Churu).",
+            "Reflects the rural faith in protection from snake bites and cattle disease — Gogaji is often invoked alongside Tejaji.",
+            "Cross-community following — the shrine has both a Hindu temple and a Muslim tomb (mazar) at the site."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Current Affairs Today (June 2026), pp. 7-8",
+        "lastUpdated": "2026-07-16",
+        "icon": "🐍",
+        "centroid": [
+          74.339,
+          29.313
+        ],
+        "labelAnchor": [
+          74.339,
+          29.313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sitabari-fair-baran",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.85,
+          24.606
+        ]
+      },
+      "properties": {
+        "name": "Sitabari Fair",
+        "type": "major_fair",
+        "category": "custom",
+        "district": "Baran",
+        "month": "Jyeshtha Amavasya",
+        "notes": {
+          "facts": [
+            "The principal tribal fair of the Sahariya community, held at Sitabari in Shahabad tehsil (Baran).",
+            "Sitabari is associated with Sita's exile — Valmiki's ashram and Lav-Kush's birthplace are placed here in local tradition.",
+            "A major religious and cultural gathering of Sahariya society — the tribe has PVTG status in Rajasthan."
+          ]
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Current Affairs Today (June 2026), pp. 7-8",
+        "lastUpdated": "2026-07-16",
+        "icon": "🏹",
+        "centroid": [
+          76.85,
+          24.606
+        ],
+        "labelAnchor": [
+          76.85,
+          24.606
+        ]
       }
     }
   ]
