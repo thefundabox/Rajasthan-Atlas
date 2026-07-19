@@ -132,6 +132,32 @@
       "featureType": "temple"
     },
     {
+      "id":       "environmental-hotspots",
+      "name":     "Environmental Hotspots",
+      "type":     "point",
+      "data":     "atlas/data/custom/environmental-hotspots.geojson",
+      "category": "environment",
+      "icon":     "⚠️",
+      "color":    "#b04030",
+      "zIndex":   42,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "environmental_hotspot"
+    },
+    {
+      "id":       "folk-arts",
+      "name":     "Folk Arts (Dances, Dramas, Instruments)",
+      "type":     "point",
+      "data":     "atlas/data/custom/folk-arts.geojson",
+      "category": "custom",
+      "icon":     "💃",
+      "color":    "#8f4d8a",
+      "zIndex":   43,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "folk_art"
+    },
+    {
       "id":       "havelis",
       "name":     "Historic Havelis",
       "type":     "point",

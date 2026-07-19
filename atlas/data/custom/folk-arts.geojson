@@ -1,0 +1,1486 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "fa-ghoomar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.023,
+          26.283
+        ]
+      },
+      "properties": {
+        "name": "Ghoomar (State Dance)",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Marwar (Jodhpur)",
+        "community": "Rajput women; state-wide",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          73.023,
+          26.283
+        ],
+        "labelAnchor": [
+          73.023,
+          26.283
+        ],
+        "notes": {
+          "facts": [
+            "Rajasthan's official State Dance — performed by women in a circle on Gangaur, Teej and auspicious occasions.",
+            "The name comes from ghoom (skirt-swirl of the ghagra); dhol, nagara and shehnai accompany the swirl.",
+            "Song most associated with the dance: \"Mhari Ghoomar chhe nakhrali ae maa gori, Ghoomar ramva mhe jasyan.\""
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-gair-mewar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.712,
+          24.578
+        ]
+      },
+      "properties": {
+        "name": "Gair Dance",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Mewar (Udaipur) + Barmer",
+        "community": "Bhil men",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          73.712,
+          24.578
+        ],
+        "labelAnchor": [
+          73.712,
+          24.578
+        ],
+        "notes": {
+          "facts": [
+            "Men-only Holi dance — dancers circle (ghera → gair) striking wooden sticks in rhythm.",
+            "Farmers perform Gair from harvest until the next sowing — a farming-cycle folk dance.",
+            "Predominantly a Bhil community expression; the Barmer version pairs Gair with dhol."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-gair-gindad-shekhawati",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.14,
+          27.61
+        ]
+      },
+      "properties": {
+        "name": "Gidad / Chang (Shekhawati Holi Dance)",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Shekhawati (Sikar / Jhunjhunu)",
+        "community": "Jat, Bania, Rajput men",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          75.14,
+          27.61
+        ],
+        "labelAnchor": [
+          75.14,
+          27.61
+        ],
+        "notes": {
+          "facts": [
+            "Men's Holi dance across Shekhawati — Chang (round-hoop tambourine) is played, dancers strike sticks.",
+            "Nagara, dhol, daph, chang mark the rhythm; men gather at the centre of the circle to sing Dhamal.",
+            "Called Gidad in Shekhawati and Chang across the wider region — the thread that binds Shekhawati Holi celebrations."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-kachhi-ghodi",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.398,
+          27.614
+        ]
+      },
+      "properties": {
+        "name": "Kachhi Ghodi Dance",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Shekhawati (Sikar-Jhunjhunu)",
+        "community": "Men from various castes",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          75.398,
+          27.614
+        ],
+        "labelAnchor": [
+          75.398,
+          27.614
+        ],
+        "notes": {
+          "facts": [
+            "Four men in \"horse-costume\" formations advance and retreat at rapid rhythm — the dance mimics a mock-battle horse charge.",
+            "The line-forming-and-dispersing effect looks like flower petals opening.",
+            "Also popular at weddings — the \"horse and rider\" is symbolic of the groom's baraat."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-chari-kishangarh",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.85,
+          26.59
+        ]
+      },
+      "properties": {
+        "name": "Chari Dance",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Ajmer (Kishangarh)",
+        "community": "Gujjar women",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          74.85,
+          26.59
+        ],
+        "labelAnchor": [
+          74.85,
+          26.59
+        ],
+        "notes": {
+          "facts": [
+            "Women dance with seven brass pots (charis) stacked on the head; cotton-seed lamps burn in the topmost pot.",
+            "Bankiya, dhol and thali accompany; the Gujjar community considers Chari a sacred dance.",
+            "Falbagh Kanwar of Kishangarh is the most-recognised classical Chari artist."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-terahtali",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.72,
+          26.48
+        ]
+      },
+      "properties": {
+        "name": "Terahtali Dance",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Pokharan / Ramdevra area",
+        "community": "Kamad caste",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          73.72,
+          26.48
+        ],
+        "labelAnchor": [
+          73.72,
+          26.48
+        ],
+        "notes": {
+          "facts": [
+            "Named for the 13 manjiras (terah taal) attached to the dancer's body — nine on the right leg, two on the elbows, one in each hand.",
+            "Dancers sit and produce rhythm by striking cymbals with the hand-held ones — a seated dance rare in Indian folk tradition.",
+            "Sung in praise of Baba Ramdev at his Ramdevra fair; accompanied by tandoora, tanpura and chautara."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-bhavai",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.712,
+          24.578
+        ]
+      },
+      "properties": {
+        "name": "Bhavai Dance",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Udaipur division",
+        "community": "Bhavai / Nat caste",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          73.712,
+          24.578
+        ],
+        "labelAnchor": [
+          73.712,
+          24.578
+        ],
+        "notes": {
+          "facts": [
+            "Balancing act — seven to eight brass pots stacked on the head while dancing; picking up a handkerchief with the mouth; dancing on glass edges or a sword.",
+            "Performed as Shankariya, Surdas, Bikaji and Dhola-Maru sub-variants.",
+            "Padma Shri Krishna Devi is the best-known modern Bhavai exponent."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-walar-garasia",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.858,
+          24.55
+        ]
+      },
+      "properties": {
+        "name": "Walar Dance",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Sirohi",
+        "community": "Garasia tribe",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          72.858,
+          24.55
+        ],
+        "labelAnchor": [
+          72.858,
+          24.55
+        ],
+        "notes": {
+          "facts": [
+            "Rare among Rajasthan folk dances — performed WITHOUT musical instruments.",
+            "Wedding dance of the Garasia tribe; men lead holding a sword or umbrella.",
+            "The Garasia hills of Sirohi and Pindwara are its exclusive home."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-gavari-bhil",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.687,
+          24.575
+        ]
+      },
+      "properties": {
+        "name": "Gavari Dance",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Mewar (Udaipur)",
+        "community": "Bhil men",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          73.687,
+          24.575
+        ],
+        "labelAnchor": [
+          73.687,
+          24.575
+        ],
+        "notes": {
+          "facts": [
+            "Men-only Sawan-Bhadon (rainy-season) worship of Parvati (Gauri); mandal + thali provide rhythm.",
+            "Also called \"Rai Nritya\"; a month-long dance-drama, unique among Indian folk-arts calendars for its length.",
+            "Bhil villages of Udaipur, Rajsamand, Salumbar and Chittor host the annual cycle."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-agni-nritya",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5,
+          28.47
+        ]
+      },
+      "properties": {
+        "name": "Agni Nritya (Fire Dance)",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Bikaner (Katariasar)",
+        "community": "Jasnathi sect (Jat)",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          74.5,
+          28.47
+        ],
+        "labelAnchor": [
+          74.5,
+          28.47
+        ],
+        "notes": {
+          "facts": [
+            "Men of the Jasnathi sect dance on glowing embers and perform matira-phodna (\"watermelon-smash\") on the burning coals.",
+            "Origin: Katariasar village, Bikaner; the sect combines Nath-yogic and Sufi-inspired asceticism.",
+            "Performed on Ashwin Shukla Saptami — the only Rajasthan folk dance involving direct contact with live fire."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-shankariya-kalbelia",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.552,
+          26.49
+        ]
+      },
+      "properties": {
+        "name": "Kalbelia / Shankariya / Idani Dance",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Ajmer (Pushkar) + Nagaur",
+        "community": "Kalbelia (snake-charmer) community",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          74.552,
+          26.49
+        ],
+        "labelAnchor": [
+          74.552,
+          26.49
+        ],
+        "notes": {
+          "facts": [
+            "UNESCO Intangible Cultural Heritage of Humanity (2010) — Rajasthan's only folk dance with UNESCO recognition.",
+            "Pungi and khanjari drive the rhythm; women in mirror-work black skirts perform serpentine body movements.",
+            "Gulabo Sapera of Pushkar is the internationally recognised face of the form (Padma Shri, 2016)."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-bam-alwar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.605,
+          27.567
+        ]
+      },
+      "properties": {
+        "name": "Bam Rasiya Dance",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Alwar-Bharatpur",
+        "community": "Men of Alwar-Bharatpur villages",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          76.605,
+          27.567
+        ],
+        "labelAnchor": [
+          76.605,
+          27.567
+        ],
+        "notes": {
+          "facts": [
+            "Performed on arrival of the new crop and during Phalguna revelry; a large drum (bam) is played with two thick sticks.",
+            "Rasiya songs (Braj-influenced love lyrics) are sung with the bam beat — hence \"Bam-Rasiya\".",
+            "The Braj-Rajasthan cultural overlap belt (Alwar-Bharatpur-Karauli) is its home."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-ghudla",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.024,
+          26.284
+        ]
+      },
+      "properties": {
+        "name": "Ghudla Dance",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Jodhpur",
+        "community": "Marwari women",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          73.024,
+          26.284
+        ],
+        "labelAnchor": [
+          73.024,
+          26.284
+        ],
+        "notes": {
+          "facts": [
+            "A woman dances with a perforated brass pot (ghudla) on her head, with a lit lamp inside — spinning circles in a Ghoomar-Panihari hybrid.",
+            "Padma Shri Kamal Kothari and Devilal Samar promoted Ghudla to national and international stages.",
+            "Historically tied to the killing of Ghudla — a folk-hero figure remembered in Marwar songs."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-chakri-hadoti",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.834,
+          25.213
+        ]
+      },
+      "properties": {
+        "name": "Chakri Dance",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Hadoti (Kota-Bundi)",
+        "community": "Kanjar / Kalbelia / Bedia women",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          75.834,
+          25.213
+        ],
+        "labelAnchor": [
+          75.834,
+          25.213
+        ],
+        "notes": {
+          "facts": [
+            "Unmarried girls spin like a wheel (chakri) at fast rhythm to the chang beat.",
+            "Gulabo demonstrated Chakri at the Festival of India in Paris — her signature act on the international circuit.",
+            "A Hadoti-belt export that occasionally features in Sawai Madhopur-Baran festivals."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-garba-vagad",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.443,
+          23.55
+        ]
+      },
+      "properties": {
+        "name": "Garba / Raas / Dandiya (Vagad Style)",
+        "type": "folk_art",
+        "artForm": "dance",
+        "category": "custom",
+        "district": "Banswara / Dungarpur",
+        "community": "Bhil + non-tribal both",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "💃",
+        "centroid": [
+          74.443,
+          23.55
+        ],
+        "labelAnchor": [
+          74.443,
+          23.55
+        ],
+        "notes": {
+          "facts": [
+            "Vagad-region Navratri dance — Gujarat-influenced Garba, Raas and Dandiya blended with Gavari.",
+            "Devotional rhythm; society dances \"without discrimination\" (Class 11 Ch 3 phrasing) across castes.",
+            "Bansdara and Kushalgarh belts are its Rajasthan strongholds."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-kuchamani-khayal",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.869,
+          27.153
+        ]
+      },
+      "properties": {
+        "name": "Kuchamani Khayal",
+        "type": "folk_art",
+        "artForm": "drama",
+        "category": "custom",
+        "district": "Nagaur (Kuchaman)",
+        "community": "Male performers (originator: Lacchiram)",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🎭",
+        "centroid": [
+          74.869,
+          27.153
+        ],
+        "labelAnchor": [
+          74.869,
+          27.153
+        ],
+        "notes": {
+          "facts": [
+            "Founded by folk-playwright Lacchiram at Kuchaman — folk drama in operatic form with predominance of folk songs.",
+            "All-male cast — men play female roles; dhol and shehnai are the accompanying instruments.",
+            "Signature khayals: Chand Nilgiri, Rao Ridmal, Mira Mangal."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-jaipuri-khayal",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.824,
+          26.923
+        ]
+      },
+      "properties": {
+        "name": "Jaipuri Khayal",
+        "type": "folk_art",
+        "artForm": "drama",
+        "category": "custom",
+        "district": "Jaipur",
+        "community": "Mixed-gender troupes",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🎭",
+        "centroid": [
+          75.824,
+          26.923
+        ],
+        "labelAnchor": [
+          75.824,
+          26.923
+        ],
+        "notes": {
+          "facts": [
+            "Unlike Kuchamani, women play female roles — a modern flexible khayal style open to new experiments.",
+            "Popular khayals: Jogi-Jogan, Kan-Gujari, Miyan-Bibu, Pathan, Rasili Tambolan.",
+            "A staple of Chomu-Sikar-Dausa folk-theatre circuits."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-turra-kalangi",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.632,
+          24.884
+        ]
+      },
+      "properties": {
+        "name": "Turra Kalangi Khayal",
+        "type": "folk_art",
+        "artForm": "drama",
+        "category": "custom",
+        "district": "Chittorgarh (Ghosunda-Nimbahera)",
+        "community": "Mewar Sufi-Shaiva composers",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🎭",
+        "centroid": [
+          74.632,
+          24.884
+        ],
+        "labelAnchor": [
+          74.632,
+          24.884
+        ],
+        "notes": {
+          "facts": [
+            "Composed by Shah Ali and Tukanagir — \"Turra\" symbolises Shiva, \"Kalangi\" symbolises Parvati.",
+            "Poetry-competition format (\"Dangal\") — audience participation is high; centres at Ghosunda, Chittor, Nimbahera, Neemuch.",
+            "A rare folk-drama form uniting Sufi and Shaiva devotional streams; best known modern practitioner was Soni Jayadayal."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-shekhawati-khayal",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.145,
+          27.61
+        ]
+      },
+      "properties": {
+        "name": "Shekhawati Khayal",
+        "type": "folk_art",
+        "artForm": "drama",
+        "category": "custom",
+        "district": "Sikar",
+        "community": "Nanuram's tradition",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🎭",
+        "centroid": [
+          75.145,
+          27.61
+        ],
+        "labelAnchor": [
+          75.145,
+          27.61
+        ],
+        "notes": {
+          "facts": [
+            "Founded by Nanuram — surviving khayals: Heer Ranjha, Harichand, Bhartrihari, Jaidev Kalali, Dhola Marvan, Alhadev.",
+            "Full orchestra: harmonium, sarangi, shehnai, flute, nagara, dholak.",
+            "The Duliya-Rana lineage of Nanuram's disciples still bankroll the annual Khayal festival."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-nautanki-hathras",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5,
+          27.216
+        ]
+      },
+      "properties": {
+        "name": "Nautanki (Hathras Style)",
+        "type": "folk_art",
+        "artForm": "drama",
+        "category": "custom",
+        "district": "Bharatpur / Dholpur / Karauli",
+        "community": "Bharatpur-Braj troupes",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🎭",
+        "centroid": [
+          77.5,
+          27.216
+        ],
+        "labelAnchor": [
+          77.5,
+          27.216
+        ],
+        "notes": {
+          "facts": [
+            "Performed in Karauli, Bharatpur, Dholpur, Alwar, Gangapur, Sawai Madhopur — the Hathras stylistic variant is standard here.",
+            "Repertoire: Amar Singh Rathore, Alha-Udal, Harishchandra Taramati, Satyavan Savitri, Laila-Majnu.",
+            "Village-fair and wedding staple — sarangi, shehnai and dholak accompany."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-rammat-bikaner",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.317,
+          28.022
+        ]
+      },
+      "properties": {
+        "name": "Rammat",
+        "type": "folk_art",
+        "artForm": "drama",
+        "category": "custom",
+        "district": "Bikaner / Jaisalmer",
+        "community": "Poet-composer akhadas",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🎭",
+        "centroid": [
+          73.317,
+          28.022
+        ],
+        "labelAnchor": [
+          73.317,
+          28.022
+        ],
+        "notes": {
+          "facts": [
+            "Originated in Bikaner-Jaisalmer folk-poetry competitions on Holi and Sawan; nagara + dholak, no stage decoration.",
+            "Composers include Tulsidas, Phagu Maharaj, Sua Maharaj and Tej Kavi Jaisalmeri — Tej Kavi composed \"Swatantra Bawani\" (1943) for Gandhi.",
+            "Recognised as a Rajasthan cultural heritage form by the Rajasthan Sangeet Natak Akademi."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-swang-bhilwara",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.641,
+          25.345
+        ]
+      },
+      "properties": {
+        "name": "Swang (Bahurupiya Tradition)",
+        "type": "folk_art",
+        "artForm": "drama",
+        "category": "custom",
+        "district": "Bhilwara",
+        "community": "Bahurupiya artists",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🎭",
+        "centroid": [
+          74.641,
+          25.345
+        ],
+        "labelAnchor": [
+          74.641,
+          25.345
+        ],
+        "notes": {
+          "facts": [
+            "Costume-imitation drama — the artist (bahurupiya) becomes the character (historical, mythological, folk).",
+            "Padma Shri Janaki Lal Bhand of Bhilwara is the form's modern master.",
+            "Nomadic — bahurupiyas travel village-to-village performing daily; a living folk-theatre form."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-phad-shahpura",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.94,
+          25.623
+        ]
+      },
+      "properties": {
+        "name": "Phad Scroll Painting & Reading",
+        "type": "folk_art",
+        "artForm": "drama",
+        "category": "custom",
+        "district": "Bhilwara (Shahpura)",
+        "community": "Joshi (Chhipa caste)",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🎭",
+        "centroid": [
+          74.94,
+          25.623
+        ],
+        "labelAnchor": [
+          74.94,
+          25.623
+        ],
+        "notes": {
+          "facts": [
+            "Combined folk-drama-painting-oral-literature form; a 30'×5' cloth scroll narrates the life of a folk deity (Pabuji, Devnarayan, Ramdevji).",
+            "Bhopa reads the phad, Bhopi dances in front — the ravanhatha accompanies the recital.",
+            "Padma Shri Lal Joshi (Bhilwara) — internationally recognised phad painter; his Devnarayan scrolls are museum-collected."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-inst-algoza",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.418,
+          26.912
+        ]
+      },
+      "properties": {
+        "name": "Algoza (State Instrument)",
+        "type": "folk_art",
+        "artForm": "instrument",
+        "category": "custom",
+        "district": "Jaisalmer-Barmer-Jodhpur",
+        "community": "Bhil + Kalbelia performers",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🪕",
+        "centroid": [
+          72.418,
+          26.912
+        ],
+        "labelAnchor": [
+          72.418,
+          26.912
+        ],
+        "notes": {
+          "facts": [
+            "Rajasthan's official State Instrument — twin-flute played with both simultaneously (one drone, one melody).",
+            "Six holes per pipe; Ramnath Chaudhary of Padmapura (Jaipur) famously plays the algoza with his nose.",
+            "Used in Tejaji recitations, Diggipuri Raja epic, Dhola-Maru dance and Chakka-Bhavai."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-inst-kamaycha",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.418,
+          26.912
+        ]
+      },
+      "properties": {
+        "name": "Kamaycha",
+        "type": "folk_art",
+        "artForm": "instrument",
+        "category": "custom",
+        "district": "Jaisalmer-Barmer",
+        "community": "Manganiyar Muslims",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🪕",
+        "centroid": [
+          72.418,
+          26.912
+        ],
+        "labelAnchor": [
+          72.418,
+          26.912
+        ],
+        "notes": {
+          "facts": [
+            "Sarangi-family bowed instrument with a wide, round, leather-topped resonator — Manganiyar Muslim identity marker.",
+            "Sakar Khan Manganiyar (Padma Shri) is the internationally acclaimed 20th-century kamaycha master.",
+            "Central to the Langa-Manganiyar performance economy that spans Jaisalmer-Barmer villages."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-inst-khartal",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.394,
+          25.75
+        ]
+      },
+      "properties": {
+        "name": "Khartal",
+        "type": "folk_art",
+        "artForm": "instrument",
+        "category": "custom",
+        "district": "Barmer",
+        "community": "Devotee-saint performers",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🪕",
+        "centroid": [
+          71.394,
+          25.75
+        ],
+        "labelAnchor": [
+          71.394,
+          25.75
+        ],
+        "notes": {
+          "facts": [
+            "Wooden clappers (from Ker or Babool wood) with brass discs between the two blocks; played with iktara.",
+            "Padma Shri Sadiq Khan Manganiyar of Barmer — nicknamed \"the magician of khartal\".",
+            "Standard accompaniment for saint-poet bhajans and Sufi qawwali sessions across western Rajasthan."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-inst-bhapang",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.605,
+          27.567
+        ]
+      },
+      "properties": {
+        "name": "Bhapang",
+        "type": "folk_art",
+        "artForm": "instrument",
+        "category": "custom",
+        "district": "Mewat (Alwar-Bharatpur)",
+        "community": "Meo Muslims",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🪕",
+        "centroid": [
+          76.605,
+          27.567
+        ],
+        "labelAnchor": [
+          76.605,
+          27.567
+        ],
+        "notes": {
+          "facts": [
+            "Damaru-shaped single-string instrument played by pressing between the armpit and body while varying string tension.",
+            "Padma Shri Yusuf Khan Meo — internationally-famed bhapang master (\"Bhapang samrat\").",
+            "A Mewat cultural identity marker; taught at the Rajasthan Institute of Folk Music."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-inst-ravanhatha",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.712,
+          25.31
+        ]
+      },
+      "properties": {
+        "name": "Ravanhatha",
+        "type": "folk_art",
+        "artForm": "instrument",
+        "category": "custom",
+        "district": "Marwar (Nagaur-Rajsamand)",
+        "community": "Bhopa performers",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🪕",
+        "centroid": [
+          73.712,
+          25.31
+        ],
+        "labelAnchor": [
+          73.712,
+          25.31
+        ],
+        "notes": {
+          "facts": [
+            "Bhopas' signature bowed lute — coconut-shell resonator with leather top, bamboo neck, one or two strings played with a horsehair bow.",
+            "Central to the Pabuji-ki-Phad recitation; Bhopas travel village-to-village phad-singing with the ravanhatha.",
+            "Sometimes called \"Dhap\"; considered the oldest surviving bowed instrument in South Asia."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-inst-jantar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.712,
+          24.578
+        ]
+      },
+      "properties": {
+        "name": "Jantar",
+        "type": "folk_art",
+        "artForm": "instrument",
+        "category": "custom",
+        "district": "Mewar (Udaipur)",
+        "community": "Devnarayan Bhopas",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🪕",
+        "centroid": [
+          73.712,
+          24.578
+        ],
+        "labelAnchor": [
+          73.712,
+          24.578
+        ],
+        "notes": {
+          "facts": [
+            "Veena-family instrument with two gourds and 22 crocodile-skin frets on a bamboo stem — played standing, hung around the neck.",
+            "Standard accompaniment for the Devnarayan-ki-Phad recital; sung with the Bagrawats epic.",
+            "A Mewar-only survival — the jantar tradition is now taught formally at Udaipur's Lok Kala Mandal."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-inst-sarangi-langa",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.394,
+          25.75
+        ]
+      },
+      "properties": {
+        "name": "Sarangi (Langa Style)",
+        "type": "folk_art",
+        "artForm": "instrument",
+        "category": "custom",
+        "district": "Jaisalmer-Barmer",
+        "community": "Langa Muslims",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🪕",
+        "centroid": [
+          71.394,
+          25.75
+        ],
+        "labelAnchor": [
+          71.394,
+          25.75
+        ],
+        "notes": {
+          "facts": [
+            "The Langa community's bowed instrument — 27 strings, upper strings from goat intestines; horsehair bow rubbed on biroja (rosin).",
+            "Padma Shri Bhungar Khan and Padma Shri Kadar Khan Langa — 20th-century Langa sarangi masters.",
+            "Langa songs (Mand style, \"Nimbuda\") share the world stage with Manganiyar kamaycha music."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-inst-shehnai-mand",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.687,
+          24.575
+        ]
+      },
+      "properties": {
+        "name": "Shehnai (Mand style, Mewar)",
+        "type": "folk_art",
+        "artForm": "instrument",
+        "category": "custom",
+        "district": "Udaipur",
+        "community": "Mangi Bai's Mand tradition",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🪕",
+        "centroid": [
+          73.687,
+          24.575
+        ],
+        "labelAnchor": [
+          73.687,
+          24.575
+        ],
+        "notes": {
+          "facts": [
+            "Wind reed instrument with 8 holes and a palm-leaf reed; auspicious-occasion instrument across Rajasthan.",
+            "Padma Shri Mangi Bai Arya (Mewar) — legendary Mand-style singer who accompanied the shehnai at royal Mewar occasions.",
+            "\"Padharo Mhare Des\", the tourism anthem sung by Allah Jilai Bai, is the Mand-mother of Rajasthan's branded folk sound."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-inst-mashak",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.023,
+          26.283
+        ]
+      },
+      "properties": {
+        "name": "Mashak (Bagpipe)",
+        "type": "folk_art",
+        "artForm": "instrument",
+        "category": "custom",
+        "district": "Marwar (Jodhpur)",
+        "community": "Bhairuji Bhopas",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🪕",
+        "centroid": [
+          73.023,
+          26.283
+        ],
+        "labelAnchor": [
+          73.023,
+          26.283
+        ],
+        "notes": {
+          "facts": [
+            "Rajasthan's indigenous bagpipe — leather bag, mouth-blown; sound resembles a pungi.",
+            "Played chiefly by Bhairuji Bhopas at Bhairon temples and mata-shrines.",
+            "A Marwar folk survival with striking similarities to the Scottish Highland pipes."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-inst-pungi",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.552,
+          26.49
+        ]
+      },
+      "properties": {
+        "name": "Pungi (Been)",
+        "type": "folk_art",
+        "artForm": "instrument",
+        "category": "custom",
+        "district": "Ajmer (Pushkar) + Nagaur",
+        "community": "Kalbelia snake-charmers",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🪕",
+        "centroid": [
+          74.552,
+          26.49
+        ],
+        "labelAnchor": [
+          74.552,
+          26.49
+        ],
+        "notes": {
+          "facts": [
+            "Gourd-based double-reed instrument used by snake-charmers of the Kalbelia caste — one pipe for drone, one for melody.",
+            "Standard accompaniment for the Kalbelia dance (a UNESCO Intangible Cultural Heritage form).",
+            "The Bhopa performances at Nagaur cattle fair still open with the pungi."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-inst-chang-shekhawati",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.14,
+          27.61
+        ]
+      },
+      "properties": {
+        "name": "Chang (Shekhawati Tambourine)",
+        "type": "folk_art",
+        "artForm": "instrument",
+        "category": "custom",
+        "district": "Sikar-Jhunjhunu",
+        "community": "Shekhawati performers",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🪕",
+        "centroid": [
+          75.14,
+          27.61
+        ],
+        "labelAnchor": [
+          75.14,
+          27.61
+        ],
+        "notes": {
+          "facts": [
+            "Circular wooden hoop with goatskin on one side — played with both hands during Holi.",
+            "Signature instrument of the Gidad and Chang dance forms of Shekhawati.",
+            "Ram Sahay of Bissau is the most-recorded 20th-century chang exponent."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-mand-singing",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.687,
+          24.575
+        ]
+      },
+      "properties": {
+        "name": "Mand Singing Tradition",
+        "type": "folk_art",
+        "artForm": "music",
+        "category": "custom",
+        "district": "Mewar / Marwar",
+        "community": "Court and folk masters (Allah Jilai Bai lineage)",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🎶",
+        "centroid": [
+          73.687,
+          24.575
+        ],
+        "labelAnchor": [
+          73.687,
+          24.575
+        ],
+        "notes": {
+          "facts": [
+            "The classical folk-tradition of Rajasthan — semi-classical singing on ceremonial ragas.",
+            "Padma Shri Allah Jilai Bai (Bikaner) sang \"Padharo Mhare Des\" — the tourism-industry anthem of the state.",
+            "Mangi Bai Arya (Mewar) and Gavri Devi (Jodhpur) are Mand's other 20th-century greats."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-langa-manganiyar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.394,
+          26.7
+        ]
+      },
+      "properties": {
+        "name": "Langa-Manganiyar Musical Community",
+        "type": "folk_art",
+        "artForm": "music",
+        "category": "custom",
+        "district": "Barmer / Jaisalmer",
+        "community": "Langa + Manganiyar Muslims",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🎶",
+        "centroid": [
+          71.394,
+          26.7
+        ],
+        "labelAnchor": [
+          71.394,
+          26.7
+        ],
+        "notes": {
+          "facts": [
+            "Two Muslim professional-musician communities whose Hindu-Rajput patronage economy has survived for centuries.",
+            "Langas sing on Mand / Nimbuda / Kayamkhan themes with sarangi; Manganiyars on Sindhi bhairavi / khamachi with kamaycha.",
+            "The Rajasthan International Folk Festival (Jodhpur RIFF) has taken the community to Womad-Glastonbury circuits since 2007."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-bana-bani",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.023,
+          26.283
+        ]
+      },
+      "properties": {
+        "name": "Bana-Bani Songs (Wedding Cycle)",
+        "type": "folk_art",
+        "artForm": "music",
+        "category": "custom",
+        "district": "Rajasthan-wide",
+        "community": "Rajasthani women",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🎶",
+        "centroid": [
+          73.023,
+          26.283
+        ],
+        "labelAnchor": [
+          73.023,
+          26.283
+        ],
+        "notes": {
+          "facts": [
+            "Bana-Bani expresses love and playful dialogue between bride and groom after marriage; reflects family bonds and customs.",
+            "Ghodi songs (groom's procession), Bindoli songs (wedding procession) and Jala songs (bride's side sees groom's camp) form the four-song wedding cycle.",
+            "A cycle-song tradition sung by women; part of the Sangeet-Natak Akademi's intangible-heritage protection list."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fa-jacha-songs",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.822,
+          26.925
+        ]
+      },
+      "properties": {
+        "name": "Jacha (Birth) Songs",
+        "type": "folk_art",
+        "artForm": "music",
+        "category": "custom",
+        "district": "Rajasthan-wide",
+        "community": "Rajasthani women",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 3 (Folk Arts) + Class 12 Ch 8 (Cultural Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "🎶",
+        "centroid": [
+          75.822,
+          26.925
+        ],
+        "labelAnchor": [
+          75.822,
+          26.925
+        ],
+        "notes": {
+          "facts": [
+            "Songs sung at a child's birth — praise of the pregnant woman, joy of lineage, and blessings for the newborn.",
+            "Distinctive from the North-Indian sohar songs — a distinct Rajasthani mother-daughter singing tradition."
+          ],
+          "significance": "high"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "eh-pali-dyeing",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.322,
+          25.771
+        ]
+      },
+      "properties": {
+        "name": "Pali Dyeing-Printing Water Pollution",
+        "type": "water_pollution",
+        "category": "custom",
+        "district": "Pali",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 6 (Environmental Challenges) + RSPCB + CGWB",
+        "lastUpdated": "2026-07-18",
+        "icon": "⚠️",
+        "centroid": [
+          73.322,
+          25.771
+        ],
+        "labelAnchor": [
+          73.322,
+          25.771
+        ],
+        "notes": {
+          "facts": [
+            "Dyeing-printing industries at Pali have made the Luni river one of Rajasthan's worst-polluted water bodies.",
+            "Chromium, dyes and detergent chemicals from Pali's Mandia and Punayata industrial estates cross the Central Pollution Control Board's effluent thresholds regularly.",
+            "Downstream Luni water is unusable for agriculture — a case study cited in the Class 12 syllabus."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eh-sanganer-groundwater",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.795,
+          26.816
+        ]
+      },
+      "properties": {
+        "name": "Sanganer Dyeing-Print Groundwater Contamination",
+        "type": "water_pollution",
+        "category": "custom",
+        "district": "Jaipur",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 6 (Environmental Challenges) + RSPCB + CGWB",
+        "lastUpdated": "2026-07-18",
+        "icon": "⚠️",
+        "centroid": [
+          75.795,
+          26.816
+        ],
+        "labelAnchor": [
+          75.795,
+          26.816
+        ],
+        "notes": {
+          "facts": [
+            "Sanganeri hand-block printing and washing use the Amanishah drain — recharge from it has contaminated Sanganer's groundwater.",
+            "Salinity, iron and dye residues make Sanganer aquifer water unfit for drinking within the industrial zone.",
+            "Traditional two-colour (red-black) natural-dye Sanganeri print survives with GI status — the pollution is from newer chemical-dye workshops."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eh-kota-thermal",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.855,
+          25.18
+        ]
+      },
+      "properties": {
+        "name": "Kota Super Thermal Plant Air Pollution",
+        "type": "air_pollution",
+        "category": "custom",
+        "district": "Kota",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 6 (Environmental Challenges) + RSPCB + CGWB",
+        "lastUpdated": "2026-07-18",
+        "icon": "⚠️",
+        "centroid": [
+          75.855,
+          25.18
+        ],
+        "labelAnchor": [
+          75.855,
+          25.18
+        ],
+        "notes": {
+          "facts": [
+            "The Kota Super Thermal Plant (KSTPS) at the city's edge drives Rajasthan's single largest urban air-pollution footprint.",
+            "Fly ash spreads 1-2 km into surrounding agricultural land; the Kota-Ramganjmandi limestone belt adds cement-dust drift.",
+            "Suratgarh and Chhabra thermal plants are the state's two other major SPM and SO₂ sources."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eh-chambal-industrial",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.18,
+          25.22
+        ]
+      },
+      "properties": {
+        "name": "Chambal Industrial Water Pollution (Kota)",
+        "type": "water_pollution",
+        "category": "custom",
+        "district": "Kota",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 6 (Environmental Challenges) + RSPCB + CGWB",
+        "lastUpdated": "2026-07-18",
+        "icon": "⚠️",
+        "centroid": [
+          76.18,
+          25.22
+        ],
+        "labelAnchor": [
+          76.18,
+          25.22
+        ],
+        "notes": {
+          "facts": [
+            "Rajasthan's only perennial river — the Chambal — has been placed under a formal Chambal Purification Programme against industrial-effluent pollution.",
+            "Kota-based fertiliser and chemical plants (Chambal Fertilisers, IPCL) are the main downstream contributors.",
+            "The pollution here directly threatens the National Chambal Sanctuary (gharial + Gangetic dolphin habitat)."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eh-nimbahera-cement",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.694,
+          24.626
+        ]
+      },
+      "properties": {
+        "name": "Chittor–Nimbahera Cement Belt Air Pollution",
+        "type": "air_pollution",
+        "category": "custom",
+        "district": "Chittorgarh",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 6 (Environmental Challenges) + RSPCB + CGWB",
+        "lastUpdated": "2026-07-18",
+        "icon": "⚠️",
+        "centroid": [
+          74.694,
+          24.626
+        ],
+        "labelAnchor": [
+          74.694,
+          24.626
+        ],
+        "notes": {
+          "facts": [
+            "The Nimbahera–Chittorgarh–Chanderiya cement belt hosts J.K. White, Wonder, Ultra-Tech and Birla Cement clinker plants.",
+            "Cement dust deposition within 1-2 km of the plants reduces soil fertility across Rajasthan's largest cement corridor.",
+            "Vindhyan-limestone quarries here feed the belt — the cluster is Rajasthan's largest single-industry air-pollution source outside Kota."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eh-bhilwara-textile",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.64,
+          25.347
+        ]
+      },
+      "properties": {
+        "name": "Bhilwara Textile Effluent",
+        "type": "water_pollution",
+        "category": "custom",
+        "district": "Bhilwara",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 6 (Environmental Challenges) + RSPCB + CGWB",
+        "lastUpdated": "2026-07-18",
+        "icon": "⚠️",
+        "centroid": [
+          74.64,
+          25.347
+        ],
+        "labelAnchor": [
+          74.64,
+          25.347
+        ],
+        "notes": {
+          "facts": [
+            "Bhilwara (\"Manchester of Rajasthan\") — India's largest suiting-fabric hub — discharges textile-mill effluents into the Kothari (Banas tributary) sub-basin.",
+            "Chemical dyes and processing wash-water have been repeatedly flagged by the Rajasthan State Pollution Control Board as non-compliant with CETP norms.",
+            "The Angucha-Dariba lead-zinc belt to the north-east adds heavy-metal load in the same catchment."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eh-jhamarkotra-mining",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.845,
+          24.472
+        ]
+      },
+      "properties": {
+        "name": "Jhamarkotra Rock-Phosphate Mine — Dust & Runoff",
+        "type": "mining_pollution",
+        "category": "custom",
+        "district": "Udaipur",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 6 (Environmental Challenges) + RSPCB + CGWB",
+        "lastUpdated": "2026-07-18",
+        "icon": "⚠️",
+        "centroid": [
+          73.845,
+          24.472
+        ],
+        "labelAnchor": [
+          73.845,
+          24.472
+        ],
+        "notes": {
+          "facts": [
+            "India's largest rock-phosphate mine (RSMML, Jhamarkotra) — critical to India's phosphatic-fertiliser sovereignty.",
+            "Open-cast blasting and heavy machinery raise SPM by up to 5x background within a 3 km radius.",
+            "Acid-mine drainage risks contaminating the Ahar river headwaters — a permanent Udaipur-basin concern."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eh-khetri-copper",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.78,
+          28.008
+        ]
+      },
+      "properties": {
+        "name": "Khetri Copper Belt Pollution",
+        "type": "mining_pollution",
+        "category": "custom",
+        "district": "Jhunjhunu",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 6 (Environmental Challenges) + RSPCB + CGWB",
+        "lastUpdated": "2026-07-18",
+        "icon": "⚠️",
+        "centroid": [
+          75.78,
+          28.008
+        ],
+        "labelAnchor": [
+          75.78,
+          28.008
+        ],
+        "notes": {
+          "facts": [
+            "Khetri copper concentrator + HCL smelter emit SO₂ and heavy-metal dust — historically the state's dirtiest metal-mining hub.",
+            "Tailings-pond seepage has raised copper and cadmium in Kolihan groundwater to unsafe levels for decades.",
+            "The belt was Rajasthan's first mining site to receive Central Pollution Control Board action orders (1980s)."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eh-sambhar-salt",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.087,
+          27.02
+        ]
+      },
+      "properties": {
+        "name": "Sambhar Salt Lake — Ecological Stress",
+        "type": "biodiversity_stress",
+        "category": "custom",
+        "district": "Jaipur / Nagaur",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 6 (Environmental Challenges) + RSPCB + CGWB",
+        "lastUpdated": "2026-07-18",
+        "icon": "⚠️",
+        "centroid": [
+          75.087,
+          27.02
+        ],
+        "labelAnchor": [
+          75.087,
+          27.02
+        ],
+        "notes": {
+          "facts": [
+            "India's largest inland saline lake — encroachment by illegal salt-pan operators has shrunk the water body over the last 30 years.",
+            "2019 mass die-off of migratory birds (Sambhar avian botulism) killed 25,000+ ducks, geese and waders in three weeks.",
+            "Rajasthan Government notified Sambhar as a wetland-conservation site under the Ramsar framework in 2022."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eh-neemuchana-mining",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.615,
+          26.91
+        ]
+      },
+      "properties": {
+        "name": "Aravalli Illegal Mining — Alwar-Rajgarh Belt",
+        "type": "mining_pollution",
+        "category": "custom",
+        "district": "Alwar",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 6 (Environmental Challenges) + RSPCB + CGWB",
+        "lastUpdated": "2026-07-18",
+        "icon": "⚠️",
+        "centroid": [
+          74.615,
+          26.91
+        ],
+        "labelAnchor": [
+          74.615,
+          26.91
+        ],
+        "notes": {
+          "facts": [
+            "The Supreme Court has repeatedly ordered a halt to illegal quarrying in the Rajgarh-Neemli belt (Alwar) — the Aravalli's northern rampart.",
+            "Deforestation and pit-mining here open the \"Delhi-Alwar gap\" that funnels desert dust storms into the NCR.",
+            "A key case-study in the Central Empowered Committee's Aravalli reports since 2018."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eh-fluorosis-jalore",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.611,
+          25.348
+        ]
+      },
+      "properties": {
+        "name": "Fluorosis Belt — Jalore-Barmer-Nagaur",
+        "type": "water_pollution",
+        "category": "custom",
+        "district": "Jalore",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 6 (Environmental Challenges) + RSPCB + CGWB",
+        "lastUpdated": "2026-07-18",
+        "icon": "⚠️",
+        "centroid": [
+          72.611,
+          25.348
+        ],
+        "labelAnchor": [
+          72.611,
+          25.348
+        ],
+        "notes": {
+          "facts": [
+            "Groundwater fluoride tops 10 PPM in 1,452 Rajasthani villages — Jalore, Banswara, Barmer, Jaisalmer, Nagaur and Sirohi are worst affected.",
+            "Fluorosis symptoms: dental mottling, skeletal fluorosis (hunchback), joint stiffness, bone-decay.",
+            "Rajasthan Adhyan Class 12 Ch 6 flags this as the state's most systemic drinking-water crisis."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eh-mangarh-hill",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.01,
+          23.492
+        ]
+      },
+      "properties": {
+        "name": "Mangarh Hill Sacred Forest Regeneration",
+        "type": "positive_conservation",
+        "category": "custom",
+        "district": "Banswara",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 6 (Environmental Challenges) + RSPCB + CGWB",
+        "lastUpdated": "2026-07-18",
+        "icon": "🌿",
+        "centroid": [
+          74.01,
+          23.492
+        ],
+        "labelAnchor": [
+          74.01,
+          23.492
+        ],
+        "notes": {
+          "facts": [
+            "Following the National Mangarh Dham memorial dedication (2022), the Rajasthan Government notified an eco-restoration project for the hill.",
+            "Restored dry-deciduous forest cover — Bhil-community-led plantation of local dhok, salar and khejri.",
+            "A rare case where the state's freedom-struggle memorialisation directly triggered environmental recovery."
+          ],
+          "significance": "high"
+        }
+      }
+    }
+  ]
+}
