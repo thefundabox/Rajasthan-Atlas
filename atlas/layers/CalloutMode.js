@@ -26,6 +26,7 @@
  */
 
 import { el } from '../core/util/dom.js';
+import { t, tf, tfacts } from '../core/i18n.js';
 
 /* ── Which layers this plug-in speaks to ─────────────────────────
  * Point layers eligible for callouts + icon overlay. We restrict to
@@ -304,8 +305,7 @@ function renderSikhwal(activeLayers) {
         || feat.properties?.labelAnchor
         || (feat.geometry?.type === 'Point' ? feat.geometry.coordinates : null);
       if (!c) continue;
-      const facts = Array.isArray(feat.properties?.notes?.facts)
-        ? feat.properties.notes.facts : [];
+      const facts = tfacts(feat.properties);
       const teaser = facts[0]
         ? (facts[0].length > 90 ? facts[0].slice(0, 88).trimEnd() + '…' : facts[0])
         : '';
@@ -321,7 +321,7 @@ function renderSikhwal(activeLayers) {
       const icon = feat.properties?.icon || layer.icon;
       const header = el('div', { class: 'sikhwal-title' }, [
         el('span', { class: 'sikhwal-icon' }, [icon]),
-        el('span', { class: 'sikhwal-name' }, [feat.properties?.name || feat.id]),
+        el('span', { class: 'sikhwal-name' }, [tf(feat.properties, 'name') || feat.id]),
       ]);
       box.append(header);
       // Classifier subline — surface fortType, artForm, period, etc. so
@@ -329,15 +329,15 @@ function renderSikhwal(activeLayers) {
       // click. Falls back gracefully when none are set.
       const p = feat.properties || {};
       const metaBits = [];
-      if (p.fortType)     metaBits.push(p.fortType);
-      if (p.artForm)      metaBits.push(String(p.artForm).replace(/_/g, ' '));
-      if (p.movementType) metaBits.push(p.movementType);
-      if (p.genre)        metaBits.push(p.genre);
-      if (p.period)       metaBits.push(p.period);
-      if (p.month)        metaBits.push(p.month);
-      if (p.date)         metaBits.push(p.date);
-      if (p.polityUnit)   metaBits.push(p.polityUnit);
-      if (p.builder)      metaBits.push('Built by ' + p.builder);
+      if (p.fortType)     metaBits.push(tf(p, 'fortType'));
+      if (p.artForm)      metaBits.push(String(tf(p, 'artForm')).replace(/_/g, ' '));
+      if (p.movementType) metaBits.push(tf(p, 'movementType'));
+      if (p.genre)        metaBits.push(tf(p, 'genre'));
+      if (p.period)       metaBits.push(tf(p, 'period'));
+      if (p.month)        metaBits.push(tf(p, 'month'));
+      if (p.date)         metaBits.push(tf(p, 'date'));
+      if (p.polityUnit)   metaBits.push(tf(p, 'polityUnit'));
+      if (p.builder)      metaBits.push(t('Built by') + ' ' + tf(p, 'builder'));
       if (metaBits.length) {
         box.append(el('div', { class: 'sikhwal-meta' }, [metaBits.join(' · ')]));
       }

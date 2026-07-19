@@ -13,6 +13,8 @@
  * desktop-only marginal-notes pattern that doesn't fit a phone.
  */
 
+import { t, tf, tfacts } from '../core/i18n.js';
+
 const MOBILE_MQ = window.matchMedia('(max-width: 640px)');
 
 let currentTip = null;
@@ -78,11 +80,10 @@ function showTooltipFor(icon) {
   const feature = Atlas.data.getFeature(layerId, featureId);
   if (!feature) return;
   const cfg = Atlas.layers.list().find(l => l.id === layerId);
-  const layerName = cfg?.name || layerId;
+  const layerName = t(cfg?.name || layerId);
   const iconEmoji = feature.properties?.icon || cfg?.icon || '•';
-  const name = feature.properties?.name || featureId;
-  const facts = Array.isArray(feature.properties?.notes?.facts)
-    ? feature.properties.notes.facts : [];
+  const name = tf(feature.properties, 'name') || featureId;
+  const facts = tfacts(feature.properties);
   let fact = facts[0] || '';
   if (fact.length > 140) fact = fact.slice(0, 138).trimEnd() + '…';
 
@@ -98,7 +99,7 @@ function showTooltipFor(icon) {
       <button class="mtt-close" aria-label="Close">×</button>
     </div>
     ${fact ? `<div class="mtt-fact">${escapeHtml(fact)}</div>` : ''}
-    <button class="mtt-more">See full details →</button>
+    <button class="mtt-more">${t('See full details →')}</button>
   `;
   document.body.append(tip);
   positionNear(tip, icon);

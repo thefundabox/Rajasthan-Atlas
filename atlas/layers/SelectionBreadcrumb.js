@@ -9,6 +9,8 @@
  * right-side detail panel.
  */
 
+import { t, tf } from '../core/i18n.js';
+
 let pill = null;
 
 Atlas.bus.on('atlas:ready', () => {
@@ -20,9 +22,9 @@ Atlas.bus.on('atlas:ready', () => {
       return;
     }
     const cfg = Atlas.layers.list().find(l => l.id === layerId);
-    const layerName = cfg?.name || layerId || 'Feature';
+    const layerName = t(cfg?.name || layerId || 'Feature');
     const layerIcon = cfg?.icon || '';
-    const featureName = feature.properties?.name || feature.id || '';
+    const featureName = tf(feature.properties, 'name') || feature.id || '';
     show(layerIcon, layerName, featureName);
   });
 });

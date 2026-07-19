@@ -26,6 +26,7 @@
 
 import { Atlas } from '../core/AtlasCore.js';
 import { el, esc } from '../core/util/dom.js';
+import { t, tf, tfacts } from '../core/i18n.js';
 
 let enrichment = null;
 
@@ -70,22 +71,22 @@ function renderCustomCard(feature) {
   const wrap = el('div', { class: 'ed' });
   const hero = el('div', { class: 'ed-hero' });
   hero.append(el('div', { class: 'ed-kicker' }, [prettyKicker(p)]));
-  hero.append(el('h2', { class: 'ed-title' }, [p.name || feature.id]));
+  hero.append(el('h2', { class: 'ed-title' }, [tf(p, 'name') || feature.id]));
   const tags = el('div', { class: 'ed-tags' });
-  if (p.district) tags.append(el('span', { class: 'ed-tag tag-point' }, [p.district]));
-  if (p.period)   tags.append(el('span', { class: 'ed-tag tag-wls' }, [p.period]));
-  if (p.month)    tags.append(el('span', { class: 'ed-tag tag-ramsar' }, [p.month]));
-  if (p.date)     tags.append(el('span', { class: 'ed-tag tag-np' }, [p.date]));
-  if (p.deity)    tags.append(el('span', { class: 'ed-tag tag-np' }, [p.deity]));
-  if (p.unescoStatus) tags.append(el('span', { class: 'ed-tag tag-ramsar' }, [p.unescoStatus]));
+  if (p.district) tags.append(el('span', { class: 'ed-tag tag-point' }, [tf(p, 'district')]));
+  if (p.period)   tags.append(el('span', { class: 'ed-tag tag-wls' }, [tf(p, 'period')]));
+  if (p.month)    tags.append(el('span', { class: 'ed-tag tag-ramsar' }, [tf(p, 'month')]));
+  if (p.date)     tags.append(el('span', { class: 'ed-tag tag-np' }, [tf(p, 'date')]));
+  if (p.deity)    tags.append(el('span', { class: 'ed-tag tag-np' }, [tf(p, 'deity')]));
+  if (p.unescoStatus) tags.append(el('span', { class: 'ed-tag tag-ramsar' }, [tf(p, 'unescoStatus')]));
   if (tags.children.length) hero.append(tags);
   wrap.append(hero);
-  const facts = Array.isArray(p.notes?.facts) ? p.notes.facts : [];
+  const facts = tfacts(p);
   if (facts.length) {
     const ul = el('ul', { class: 'dp-facts' });
     for (const f of facts) ul.append(el('li', {}, [f]));
     const s = el('div', { class: 'ed-section' });
-    s.append(el('h3', { class: 'ed-h' }, ['Did you know']));
+    s.append(el('h3', { class: 'ed-h' }, [t('Did you know')]));
     s.append(ul);
     wrap.append(s);
   }

@@ -15,6 +15,7 @@
 
 import { Atlas } from '../core/AtlasCore.js';
 import { el, esc } from '../core/util/dom.js';
+import { t, tf } from '../core/i18n.js';
 
 let demographicsPayload = null;
 
@@ -256,11 +257,11 @@ function gatherSection(title, memberships, layerIds) {
     for (const f of feats) {
       const chip = el('button', {
         class: 'dp-chip',
-        title: `${rec.config.name} — ${f.properties.name}`,
+        title: `${t(rec.config.name)} — ${tf(f.properties, 'name')}`,
         onclick: () => Atlas.interaction.select(layerId, f.id),
       });
-      chip.append(el('span', { class: 'dp-chip-layer' }, [rec.config.name]));
-      chip.append(el('span', { class: 'dp-chip-name' }, [f.properties.name]));
+      chip.append(el('span', { class: 'dp-chip-layer' }, [t(rec.config.name)]));
+      chip.append(el('span', { class: 'dp-chip-name' }, [tf(f.properties, 'name')]));
       chips.append(chip);
     }
     rows.push(chips);

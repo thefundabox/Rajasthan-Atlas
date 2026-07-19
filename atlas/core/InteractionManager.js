@@ -16,6 +16,7 @@
 
 import { CONFIG } from './config.js';
 import { esc, el } from './util/dom.js';
+import { tf, tfacts } from './i18n.js';
 
 export class InteractionManager {
   constructor(atlas) {
@@ -271,27 +272,28 @@ export class InteractionManager {
   }
   _showTooltip(feat, x, y) {
     const p = feat.properties ?? {};
-    const rows = [`<div class="tt-name">${esc(p.name ?? feat.id)}</div>`];
+    const name = tf(p, 'name') ?? feat.id;
+    const rows = [`<div class="tt-name">${esc(name)}</div>`];
 
     // Meta line — the most useful one-line context for this feature.
     const meta = [];
-    if (p.division)     meta.push(`${esc(p.division)} div`);
-    if (p.headquarters) meta.push(`HQ ${esc(p.headquarters)}`);
-    if (p.fortType)     meta.push(esc(p.fortType));
-    if (p.artForm)      meta.push(esc(String(p.artForm).replace(/_/g, ' ')));
-    if (p.movementType) meta.push(esc(p.movementType));
-    if (p.genre)        meta.push(esc(p.genre));
-    if (p.period)       meta.push(esc(p.period));
-    if (p.month)        meta.push(esc(p.month));
-    if (p.date)         meta.push(esc(p.date));
+    if (p.division)     meta.push(`${esc(tf(p, 'division'))} div`);
+    if (p.headquarters) meta.push(`HQ ${esc(tf(p, 'headquarters'))}`);
+    if (p.fortType)     meta.push(esc(tf(p, 'fortType')));
+    if (p.artForm)      meta.push(esc(String(tf(p, 'artForm')).replace(/_/g, ' ')));
+    if (p.movementType) meta.push(esc(tf(p, 'movementType')));
+    if (p.genre)        meta.push(esc(tf(p, 'genre')));
+    if (p.period)       meta.push(esc(tf(p, 'period')));
+    if (p.month)        meta.push(esc(tf(p, 'month')));
+    if (p.date)         meta.push(esc(tf(p, 'date')));
     if (p.type && !p.division && !p.fortType && !p.artForm && !p.movementType && !p.genre && !p.period) {
-      meta.push(esc(String(p.type).replace(/_/g, ' ')));
+      meta.push(esc(String(tf(p, 'type') ?? p.type).replace(/_/g, ' ')));
     }
     if (p.year_established || p.established) meta.push(`Est. ${esc(p.year_established ?? p.established)}`);
-    if (p.builder)      meta.push(`Built by ${esc(p.builder)}`);
-    if (p.community)    meta.push(esc(p.community));
+    if (p.builder)      meta.push(`Built by ${esc(tf(p, 'builder'))}`);
+    if (p.community)    meta.push(esc(tf(p, 'community')));
     if (p.area_km2)     meta.push(`${p.area_km2.toLocaleString('en-IN')} km²`);
-    if (p.district && !p.division) meta.push(`in ${esc(p.district)}`);
+    if (p.district && !p.division) meta.push(`in ${esc(tf(p, 'district'))}`);
     if (meta.length) rows.push(`<div class="tt-meta">${meta.join(' · ')}</div>`);
 
     // Metric value line — for choropleth / classification layers.
@@ -304,7 +306,8 @@ export class InteractionManager {
     }
 
     // First key fact — the strongest single sentence of context.
-    const fact = p.notes?.facts?.[0] ?? p.facts?.[0] ?? p.significance ?? p.description;
+    const localFacts = tfacts(p);
+    const fact = localFacts[0] ?? p.facts?.[0] ?? p.significance ?? p.description;
     if (fact) rows.push(`<div class="tt-fact">${esc(String(fact))}</div>`);
 
     if (p.newDistrict) rows.push('<div class="tt-tag">Retained new district</div>');

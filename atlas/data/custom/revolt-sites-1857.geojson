@@ -18,19 +18,21 @@
         "district": "Ajmer",
         "date": "28 May 1857",
         "notes": {
-          "facts": [
-            "Origin of the 1857 revolt in Rajasthan — the 15th Bengal Native Infantry mutinied here on 28 May 1857.",
-            "Sepoys marched from Nasirabad towards Delhi to join Bahadur Shah Zafar; the British scrambled to raise Punjab-Marwar loyalist forces.",
-            "The cantonment's church, hospital and residency were burned — some ruins survive at the Nasirabad old cantonment site.",
-            "Sowars of the 30th Bombay Native Infantry joined the mutiny 15 days later, on 12 June 1857.",
-            "Rajasthan's first heritage marker of the 1857 revolt was installed at Nasirabad in 2007 (150th anniversary).",
-            "The 15th BNI's revolt on 28 May 1857 was Rajasthan's first military mutiny of the year — 18 days after Meerut.",
-            "The sepoys marched from Nasirabad via Beawar and Deoli to Delhi; villagers en route were reported by Captain Pritchard as openly hostile to the retreating British."
+          "facts_hi": [
+            "राजस्थान में 1857 विद्रोह का प्रारंभ — 28 मई 1857 को 15वीं बंगाल नेटिव इन्फैंट्री का विद्रोह।",
+            "सैनिकों ने नसीराबाद से दिल्ली की ओर कूच किया — बहादुर शाह ज़फर के साथ मिलने के लिए।",
+            "छावनी का चर्च, अस्पताल और रेजिडेंसी जला दिए गए — कुछ अवशेष पुरानी छावनी स्थल पर मौजूद हैं।",
+            "30वीं बंबई नेटिव इन्फैंट्री के सवारों ने 15 दिन बाद, 12 जून 1857 को विद्रोह में शामिल होकर मेरठ मार्च किया।",
+            "2007 में 150वीं वर्षगांठ पर राजस्थान का पहला 1857-विद्रोह स्मारक नसीराबाद में लगाया गया।",
+            "मीरठ के 18 दिन बाद — भारत के दूसरे प्रमुख विद्रोहों में गिना जाता है।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-18"
+        "lastUpdated": "2026-07-18",
+        "name_hi": "नसीराबाद छावनी",
+        "district_hi": "अजमेर",
+        "date_hi": "28 मई 1857"
       }
     },
     {
@@ -50,20 +52,18 @@
         "district": "Chittorgarh (border with MP)",
         "date": "3 June 1857",
         "notes": {
-          "facts": [
-            "Second Rajasthan cantonment to mutiny after Nasirabad — the 1st Bengal Cavalry rose on 3 June 1857.",
-            "Sepoys marched to Delhi via Chittorgarh; the Rani of Neemuch's hospitality helped shelter the Rajputana Field Force.",
-            "The revolt spread via Neemuch to the Mewar princely states — Salumbar and Bhinder saw parallel unrest.",
-            "The Neemuch cantonment today straddles the Rajasthan–MP border; ruins of the barracks remain.",
-            "The Neemuch memorial ('Sepoy Mutiny Column') was raised in 1858.",
-            "Sepoys of the Neemuch Brigade mutinied on 3 June 1857; they burned the cantonment, looted the treasury and joined the Nasirabad column on the way to Delhi.",
-            "Captain Showers recaptured Neemuch by mid-June with the Kota, Bundi and Mewar loyal armies.",
-            "The village of Nimbahera welcomed the fleeing sepoys and supplied them with provisions — a signal event of civilian sympathy."
+          "facts_hi": [
+            "नीमच ब्रिगेड के सैनिकों ने 3 जून 1857 को विद्रोह किया — छावनी जलाई, ख़ज़ाना लूटा और दिल्ली के लिए नसीराबाद दल में शामिल हो गए।",
+            "कप्तान शावर्स ने कोटा, बूँदी और मेवाड़ की राजस्व सेनाओं के सहयोग से जून के मध्य तक नीमच पुनः प्राप्त किया।",
+            "निंबाहेड़ा गाँव के लोगों ने भागते सैनिकों का स्वागत किया और भोजन दिया — नागरिक समर्थन की उल्लेखनीय घटना।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-18"
+        "lastUpdated": "2026-07-18",
+        "name_hi": "नीमच छावनी",
+        "district_hi": "चित्तौड़गढ़ (सीमा)",
+        "date_hi": "3 जून 1857"
       }
     },
     {
@@ -83,21 +83,19 @@
         "district": "Pali",
         "date": "September 1857",
         "notes": {
-          "facts": [
-            "Thakur Kushal Singh of Auwa led the Marwar 1857 rebellion — Rajasthan's only princely-state-scale uprising.",
-            "Kushal Singh defeated Jodhpur's Political Agent A. G. G. Mark Mason at Bithora on 8 September 1857.",
-            "British forces under Colonel George Lawrence retook Auwa on 24 January 1858 — the fort was demolished as reprisal.",
-            "Kushal Singh escaped to Salumbar and continued rebellion until his exile; celebrated as Rajasthan's principal 1857 hero.",
-            "The Auwa fort ruins and Kushal Singh's samadhi are pilgrimage sites for Marwar-nationalist historiography.",
-            "Thakur Kushal Singh of Auwa (Pali) led the Jodhpur Legion sepoys who mutinied at Erinpura on 21 Aug 1857 — his slogan was \"Chalo Delhi, Maro Firangi\".",
-            "His army defeated the royal Jodhpur force at Bithoda (8 Sep 1857) and AGG George Lawrence in the Auwa siege (18 Sep 1857) — Political Agent Monck Mason was killed and his head hung on the fort gate.",
-            "Auwa fell to Brigadier Holmes on 29 Jan 1858; Kushal Singh took refuge in Kotharia Fort (Salumbar), later surrendered at Neemuch (8 Aug 1860) and was acquitted.",
-            "The British removed the Mahakali (Sugali Mata) idol from Auwa to Ajmer as a punitive measure — it was returned to Auwa in 2017."
+          "facts_hi": [
+            "आउवा (पाली) के ठाकुर कुशाल सिंह ने जोधपुर लीजन के सैनिकों का नेतृत्व किया, जिन्होंने 21 अगस्त 1857 को एरिनपुरा में विद्रोह कर \"चलो दिल्ली, मारो फिरंगी\" का नारा लगाया।",
+            "उनकी सेना ने 8 सितंबर 1857 को बिथोड़ा में जोधपुर राजकीय सेना को हराया और 18 सितंबर को AGG जॉर्ज लॉरेंस के आउवा-अभियान को — पॉलिटिकल एजेंट मोंक मेसन मारा गया, उसका सिर आउवा किले के द्वार पर टाँगा गया।",
+            "29 जनवरी 1858 को ब्रिगेडियर होम्स के हमले में आउवा गिरा — कुशाल सिंह ने कोठारिया (सलूम्बर) किले में शरण ली, 8 अगस्त 1860 को नीमच में आत्मसमर्पण किया और मुक़दमे में बरी हुए।",
+            "आउवा की महाकाली (सुगली माता) मूर्ति दंडात्मक कार्रवाई में अंग्रेज़ अजमेर ले गए थे — 2017 में मूर्ति आउवा वापस लाई गई।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-18"
+        "lastUpdated": "2026-07-18",
+        "name_hi": "आउवा (कुशाल सिंह का विद्रोह)",
+        "district_hi": "पाली",
+        "date_hi": "अगस्त 1857 – जनवरी 1858"
       }
     },
     {
@@ -117,21 +115,19 @@
         "district": "Kota",
         "date": "15 October 1857",
         "notes": {
-          "facts": [
-            "Kota Political Agent Major Charles Burton and his two sons were assassinated in Kota on 15 October 1857.",
-            "The Kota Palace guards led by Jai Dyal and Mehrab Khan attacked the residency at Kotah.",
-            "British reprisal was harsh — General Roberts recaptured Kota in March 1858; the Kota army was disbanded.",
-            "Kota was thereafter placed under an English Political Agent rather than a Resident — reducing its princely status.",
-            "The Burton Residency was rebuilt and used as the Rajputana Agency HQ until 1947.",
-            "On 15 October 1857, the Kota state army surrounded the Residency and killed Political Agent Major Burton, both his sons and Dr Sadler.",
-            "Risaldar Mehrab Khan and Lala Jayadayal led the rebel army for six months; the Maharao was effectively imprisoned in his own palace.",
-            "General Roberts liberated Kota on 22 Mar 1858; Jayadayal and Mehrab Khan were publicly hanged on a neem tree near the Agency.",
-            "The Kota rebellion was Rajasthan's deepest civilian-and-army revolt — its Maharao Ram Singh II's gun-salute was reduced from 15 to 11 as collective punishment."
+          "facts_hi": [
+            "15 अक्टूबर 1857 को कोटा राजकीय सेना ने रेजिडेंसी घेरी और पॉलिटिकल एजेंट मेजर बर्टन, उसके दो बेटों और डॉ. सैडलर की हत्या कर दी।",
+            "रिसालदार मेहराब खान और लाला जयदयाल ने विद्रोही सेना का नेतृत्व लगभग छह महीने तक किया — महाराव अपने ही महल में क़ैद जैसे हो गए।",
+            "22 मार्च 1858 को जनरल रॉबर्ट्स ने कोटा को मुक्त कराया — जयदयाल और मेहराब खान को एजेंसी के पास नीम के पेड़ पर सार्वजनिक रूप से फाँसी दी गई।",
+            "राजस्थान का सबसे गहन नागरिक-सैन्य विद्रोह — महाराव राम सिंह द्वितीय की तोप-सलामी 15 से घटाकर 11 कर दी गई।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-18"
+        "lastUpdated": "2026-07-18",
+        "name_hi": "कोटा — पॉलिटिकल एजेंट की हत्या",
+        "district_hi": "कोटा",
+        "date_hi": "15 अक्टूबर 1857"
       }
     },
     {
@@ -151,20 +147,18 @@
         "district": "Sirohi",
         "date": "21 August 1857",
         "notes": {
-          "facts": [
-            "The Jodhpur Legion — a company of 300 sepoys stationed at Erinpura — mutinied on 21 August 1857.",
-            "The Legion marched to join Kushal Singh at Auwa (Pali), forming the core of the Marwar rebellion.",
-            "British forces retook Erinpura in October 1857; the Jodhpur Legion was disbanded.",
-            "The site is remembered for the shared Rajput-Muslim character of the mutiny — Awadhi Muslim sepoys and Marwar Rajputs fighting together.",
-            "The cantonment ruins and the memorial obelisk survive on the Erinpura–Bali road.",
-            "The Jodhpur Legion (raised 1835 as auxiliary cavalry) was headquartered at Erinpura; its Purbia sepoys mutinied on 21 Aug 1857.",
-            "They looted the cantonment, absorbed remaining Jodhpur Legion soldiers, and marched via Khairwa where Thakur Kushal Singh of Auwa joined them as commander.",
-            "Erinpura is Rajasthan's only cantonment whose entire garrison went over to the mutiny en bloc."
+          "facts_hi": [
+            "जोधपुर लीजन (1835 में सहायक अश्व-सेना के रूप में) का मुख्यालय एरिनपुरा में था — 21 अगस्त 1857 को इसके पूर्वी सैनिकों ने विद्रोह किया।",
+            "छावनी लूटी, बाकी जोधपुर लीजन सैनिकों को साथ लिया और खैरवा के रास्ते आउवा गए, जहाँ ठाकुर कुशाल सिंह ने नेतृत्व संभाला।",
+            "राजस्थान की एकमात्र छावनी जिसकी पूरी सेना एकसाथ विद्रोह में शामिल हो गई।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-18"
+        "lastUpdated": "2026-07-18",
+        "name_hi": "एरिनपुरा छावनी",
+        "district_hi": "सिरोही",
+        "date_hi": "21 अगस्त 1857"
       }
     },
     {
@@ -184,19 +178,17 @@
         "district": "Kota",
         "date": "March 1858",
         "notes": {
-          "facts": [
-            "The 1858 British siege of Kota Fort was Rajasthan's biggest 1857-era military engagement.",
-            "General Roberts commanded 3000+ British-Indian troops in a 10-day artillery bombardment.",
-            "Rebels held the fort under Jai Dyal and Mehrab Khan; the fort was breached on 30 March 1858.",
-            "Kota Maharao Ram Singh II was reduced to nominal rule; British Political Agent Sir Robert Bourke replaced the Resident.",
-            "Marks the effective end of the 1857 revolt in Rajasthan.",
-            "Alias for the Kota rebels' assault on the Delhi/Kota fort during 15 Oct-30 Nov 1857 — the rebels controlled the state stores, treasury and Kotwali for six months.",
-            "The Maharao was compelled by the rebels to sign a warrant declaring that Major Burton had been killed on his orders — later used as evidence against him at the inquiry."
+          "facts_hi": [
+            "कोटा विद्रोहियों का 15 अक्टूबर से 30 नवंबर 1857 तक फोर्ट पर आधिपत्य — छह महीने तक राज्य के ख़ज़ाने, कोतवाली और भंडारों पर नियंत्रण।",
+            "महाराव को विद्रोहियों ने ऐसा वारंट हस्ताक्षर करने को मजबूर किया जिसमें बर्टन-हत्या को महाराव के आदेश पर बताया गया — बाद में जाँच में इसका उपयोग हुआ।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-18"
+        "lastUpdated": "2026-07-18",
+        "name_hi": "कोटा फोर्ट पर विद्रोही आधिपत्य",
+        "district_hi": "कोटा",
+        "date_hi": "15 अक्टूबर – 30 नवंबर 1857"
       }
     },
     {
@@ -216,12 +208,11 @@
         "district": "Tonk",
         "date": "June 1857 (siege by mutineers)",
         "notes": {
-          "facts": [
-            "Cantonment of the Deoli Irregular Force; besieged by Nasirabad and Neemuch mutineers on their way to Agra and Delhi (June 1857).",
-            "The Deoli sepoys inside the cantonment joined the mutineers rather than resist — the rebels looted the treasury before pushing on.",
-            "From Deoli the united column reached Tonk, where the public welcomed the rebels against the Nawab's pro-British orders."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "देवली अनियमित सेना (Irregular Force) की छावनी — नसीराबाद और नीमच के विद्रोही सैनिकों ने आगरा-दिल्ली की राह में जून 1857 में घेरा डाला।",
+            "देवली के भीतर के सैनिक विद्रोहियों से मिल गए, बजाय प्रतिरोध के — विद्रोहियों ने ख़ज़ाना लूटा।",
+            "देवली से संयुक्त दल टोंक पहुँचा जहाँ नवाब के आदेश के विरुद्ध जनता ने विद्रोहियों का स्वागत किया।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 1 + standard 1857 historiography",
@@ -234,7 +225,10 @@
         "labelAnchor": [
           75.336,
           25.76
-        ]
+        ],
+        "name_hi": "देवली छावनी",
+        "district_hi": "टोंक",
+        "date_hi": "जून 1857"
       }
     },
     {
@@ -254,12 +248,11 @@
         "district": "Pali (near Auwa)",
         "date": "8 September 1857",
         "notes": {
-          "facts": [
-            "Thakur Kushal Singh of Auwa's rebel army defeated the royal Jodhpur force under Anad Singh at Bithoda — Anad Singh was killed.",
-            "The first pitched-battle victory by an Indian rebel army over a princely state force in the 1857 war in western Rajasthan.",
-            "Precipitated AGG George Lawrence's march on Auwa 10 days later, which the rebels also defeated (18 Sep 1857) — killing Monck Mason."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "आउवा के ठाकुर कुशाल सिंह की विद्रोही सेना ने आनाड़ सिंह के नेतृत्व वाली जोधपुर राजकीय सेना को बिथोड़ा में हराया — आनाड़ सिंह मारे गए।",
+            "1857 युद्ध में पश्चिमी राजस्थान में किसी भारतीय विद्रोही सेना की किसी रियासती सेना पर पहली विजय।",
+            "10 दिन बाद 18 सितंबर को विद्रोहियों ने AGG जॉर्ज लॉरेंस को भी हराया — पॉलिटिकल एजेंट मोंक मेसन इसी युद्ध में मारे गए।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 1 + standard 1857 historiography",
@@ -272,7 +265,10 @@
         "labelAnchor": [
           73.34,
           25.68
-        ]
+        ],
+        "name_hi": "बिथोड़ा युद्ध (8 सितंबर 1857)",
+        "district_hi": "पाली (आउवा के पास)",
+        "date_hi": "8 सितंबर 1857"
       }
     },
     {
@@ -292,12 +288,11 @@
         "district": "Tonk",
         "date": "Jun 1857 (mutiny), Jan 1858 (Tantia Tope visit)",
         "notes": {
-          "facts": [
-            "The Nawab Waziruddaula was pro-British, but the public and half his army sympathised with the mutineers.",
-            "A large section of the Tonk army joined the Nasirabad-Neemuch column marching to Delhi (June 1857); the Nawab's uncle Mir Alam Khan openly supported the rebels.",
-            "Tantia Tope reached Tonk in early 1858 — the Nawab locked himself in his fort while his Jagirdar Nasir Muhammad Khan gave Tantia public support."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "नवाब वज़ीरुद्दौला अंग्रेज़-समर्थक था, लेकिन जनता और आधी सेना विद्रोहियों के साथ थी।",
+            "टोंक सेना का बड़ा हिस्सा नसीराबाद-नीमच दिल्ली-मार्ग दल में शामिल हो गया — नवाब के चाचा मीर आलम खान ने खुले तौर पर विद्रोहियों का समर्थन किया।",
+            "1858 की शुरुआत में तांत्या टोपे के टोंक पहुँचने पर नवाब किले में बंद हो गया, जबकि जागीरदार नासिर मुहम्मद खान ने तांत्या को सार्वजनिक समर्थन दिया।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 1 + standard 1857 historiography",
@@ -310,7 +305,10 @@
         "labelAnchor": [
           75.786,
           26.166
-        ]
+        ],
+        "name_hi": "टोंक — नवाब बनाम जनता",
+        "district_hi": "टोंक",
+        "date_hi": "जून 1857 – जनवरी 1858"
       }
     },
     {
@@ -330,12 +328,11 @@
         "district": "Bhilwara (Shahpura)",
         "date": "August 1857",
         "notes": {
-          "facts": [
-            "The Neemuch mutineers, after burning their cantonment, reached Shahpura looting treasuries; the Rao of Shahpura sheltered them behind closed gates.",
-            "Kotharia and Salumber thakurs in Mewar joined Shahpura in sending men and arms to Auwa's rebellion.",
-            "The Shahpura ruler alone in Mewar denied the pursuing Captain the fort keys — one of two open acts of solidarity by a Rajasthani noble house."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "नीमच विद्रोहियों ने छावनी जलाकर रास्ते के ख़ज़ाने लूटते हुए शाहपुरा पहुँचकर शरण ली — शाहपुरा राव ने बंद द्वारों के पीछे उन्हें आश्रय दिया।",
+            "मेवाड़ के कोठारिया और सलूम्बर ठाकुरों ने शाहपुरा के साथ आउवा विद्रोह के लिए सैनिक और शस्त्र भेजे।",
+            "पीछा करने वाले कप्तान को किले की चाबियाँ न देने वाले शाहपुरा राव — मेवाड़ का एकमात्र खुला विद्रोह-समर्थक कुलीन।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 1 + standard 1857 historiography",
@@ -348,7 +345,10 @@
         "labelAnchor": [
           74.94,
           25.623
-        ]
+        ],
+        "name_hi": "शाहपुरा ठिकाना — विद्रोहियों की शरणस्थली",
+        "district_hi": "भीलवाड़ा (शाहपुरा)",
+        "date_hi": "अगस्त 1857"
       }
     },
     {
@@ -368,12 +368,11 @@
         "district": "Dholpur",
         "date": "October-December 1857",
         "notes": {
-          "facts": [
-            "Gwalior and Indore mutineers entered Dholpur in October 1857; the Dholpur army and officers joined them.",
-            "The rebels held state control for two months — the longest civilian rebel administration in eastern Rajasthan.",
-            "In December 1857 the Patiala army (British ally) drove the rebels out; Maharaja Bhagwant Singh (pro-British) was reinstated."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "ग्वालियर और इंदौर के विद्रोही सैनिक अक्टूबर 1857 में धौलपुर में आए — धौलपुर की सेना और अधिकारी उनसे मिल गए।",
+            "विद्रोहियों ने दो महीने तक राज्य पर नियंत्रण रखा — पूर्वी राजस्थान में सबसे लंबा नागरिक विद्रोही प्रशासन।",
+            "दिसंबर 1857 में पटियाला की सेना (अंग्रेज़-मित्र) ने विद्रोहियों को खदेड़ा — महाराजा भगवंत सिंह (अंग्रेज़-समर्थक) पुनः स्थापित।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 1 + standard 1857 historiography",
@@ -386,7 +385,10 @@
         "labelAnchor": [
           77.9,
           26.7
-        ]
+        ],
+        "name_hi": "धौलपुर — विद्रोहियों का दो-महीने का शासन",
+        "district_hi": "धौलपुर",
+        "date_hi": "अक्टूबर – दिसंबर 1857"
       }
     },
     {
@@ -406,12 +408,11 @@
         "district": "Banswara",
         "date": "11 December 1857",
         "notes": {
-          "facts": [
-            "Tantia Tope captured Banswara city on 11 Dec 1857; Maharawal Laxman Singh fled leaving the capital undefended.",
-            "The state's nobles openly welcomed Tantia — a rare instance of a princely court's nobility siding against its ruler.",
-            "Tantia moved on within days but the episode broke Banswara's public standing with the British for a decade."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "तांत्या टोपे ने 11 दिसंबर 1857 को बांसवाड़ा शहर पर क़ब्ज़ा किया — महारावल लक्ष्मण सिंह राजधानी छोड़कर भाग गए।",
+            "राज्य के सरदारों ने खुलकर तांत्या का स्वागत किया — किसी रियासती राजदरबार के कुलीनों का अपने ही शासक के विरुद्ध खुला समर्थन दुर्लभ था।",
+            "तांत्या कुछ दिनों में आगे बढ़ गया — पर इस घटना ने बांसवाड़ा की अंग्रेज़ों में साख एक दशक के लिए बिगाड़ दी।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 1 + standard 1857 historiography",
@@ -424,7 +425,10 @@
         "labelAnchor": [
           74.443,
           23.55
-        ]
+        ],
+        "name_hi": "बांसवाड़ा — तांत्या टोपे का क़ब्ज़ा (11 दिसंबर 1857)",
+        "district_hi": "बांसवाड़ा",
+        "date_hi": "11 दिसंबर 1857"
       }
     },
     {
@@ -444,12 +448,11 @@
         "district": "Bharatpur",
         "date": "August-October 1857",
         "notes": {
-          "facts": [
-            "Bharatpur was under British Political-Agent administration in 1857 (minor Maharaja); the state army was sent to suppress rebels.",
-            "The Meo and Gurjar population supported the mutineers — British officers were compelled to leave the state for their own safety.",
-            "The unrest lingered even after the mutineers departed; the state's Meo villages remained politically restive till the 1932 Neemuchana massacre in neighbouring Alwar."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "1857 में भरतपुर ब्रिटिश पॉलिटिकल-एजेंट के प्रशासन में था (महाराजा बालक) — राज्य सेना विद्रोहियों को दबाने भेजी गई।",
+            "मेव और गूजर आबादी ने विद्रोहियों का समर्थन किया — अंग्रेज़ अधिकारियों को अपनी सुरक्षा के लिए राज्य छोड़ना पड़ा।",
+            "विद्रोहियों के जाने के बाद भी बेचैनी बनी रही — भरतपुर के मेव गाँव 1932 के अलवर-नीमूचाना नरसंहार तक राजनीतिक रूप से बेचैन रहे।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 1 + standard 1857 historiography",
@@ -462,7 +465,10 @@
         "labelAnchor": [
           77.501,
           27.216
-        ]
+        ],
+        "name_hi": "भरतपुर — मेव और गूजर समर्थन (1857)",
+        "district_hi": "भरतपुर",
+        "date_hi": "अगस्त – अक्टूबर 1857"
       }
     }
   ]

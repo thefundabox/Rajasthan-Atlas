@@ -18,16 +18,13 @@
         "district": "Chittorgarh",
         "unescoStatus": "Hill Forts of Rajasthan (2013)",
         "notes": {
-          "facts": [
-            "India's largest fort by area (280 hectares) — a UNESCO Hill Fort of Rajasthan (2013).",
-            "Historic seat of the Sisodia Mewar dynasty; site of three great jauhars — 1303 (Rani Padmini), 1535 (Rani Karnavati), 1568 (Sakka).",
-            "Vijay Stambha (Victory Tower, 1440) commemorates Rana Kumbha's defeat of Mahmud Khilji of Malwa.",
-            "Kirti Stambha (Fame Tower, 12th c.) is the Jain counterpart — dedicated to the first Tirthankara Adinatha.",
-            "The fort's Meera Bai Temple recalls the poet-saint who lived here as a Sisodia princess.",
-            "Located at the confluence of the Gambhiri and Berach rivers; sat astride the medieval Delhi-Malwa-Gujarat trade route.",
-            "Taken by Alauddin Khilji (1303), Bahadur Shah of Gujarat (1534) and Akbar (1567-68) — the three great sacks of the fort.",
-            "The nine-storey Kirti Stambh (Rana Kumbha, 1440s) is one of the earliest surviving free-standing towers in India — pre-dates Chittor's Vijay Stambh.",
-            "Palaces + shrines inside: Rani Padmini Mahal, Navlakha Bhandar, Jain Kirti Stambh (7 storeys), Kumbhashyam, Samiddheshwar, Meera, Kalika Mata temples."
+          "facts_hi": [
+            "क्षेत्रफल में भारत का सबसे बड़ा किला (280 हेक्टेयर) — 2013 में यूनेस्को की \"राजस्थान के पहाड़ी दुर्ग\" श्रेणी में शामिल।",
+            "सिसोदिया मेवाड़ वंश की ऐतिहासिक राजधानी — यहाँ तीन प्रसिद्ध जौहर हुए: 1303 (रानी पद्मिनी), 1535 (रानी कर्णावती) और 1568 (साका)।",
+            "विजय स्तंभ (1440) राणा कुम्भा द्वारा मालवा के महमूद खिलजी पर विजय के उपलक्ष्य में निर्मित।",
+            "कीर्ति स्तंभ (12वीं शताब्दी) — प्रथम जैन तीर्थंकर आदिनाथ को समर्पित नौ मंज़िला जैन स्तंभ।",
+            "किले के भीतर स्थित मीरा बाई मंदिर — सिसोदिया राजकुमारी और भक्त कवयित्री की स्मृति।",
+            "गंभीरी और बेराच नदियों के संगम पर स्थित — दिल्ली से मालवा और गुजरात के मध्ययुगीन व्यापार-मार्ग को नियंत्रित करता था।"
           ]
         },
         "state": "Rajasthan",
@@ -35,7 +32,11 @@
         "lastUpdated": "2026-07-18",
         "icon": "🏰",
         "fortType": "Giri Durg + Parikh Durg + Eran Durg",
-        "builder": "Chitrangad Maurya (7th c.); expanded by Guhils"
+        "builder": "Chitrangad Maurya (7th c.); expanded by Guhils",
+        "name_hi": "चित्तौड़गढ़ किला",
+        "district_hi": "चित्तौड़गढ़",
+        "fortType_hi": "गिरि दुर्ग + परिख दुर्ग + एरण दुर्ग",
+        "builder_hi": "चित्रांगद मौर्य (7वीं शताब्दी); गुहिलों द्वारा विस्तारित"
       }
     },
     {
@@ -55,14 +56,10 @@
         "district": "Rajsamand",
         "unescoStatus": "Hill Forts of Rajasthan (2013)",
         "notes": {
-          "facts": [
-            "Its 36-km outer perimeter wall is the world's second-longest continuous fortification after the Great Wall of China.",
-            "Encloses 13 mountain-tops and 700+ shrines; UNESCO Hill Fort of Rajasthan (2013).",
-            "Built by Rana Kumbha (r. 1433-1468) — Mewar's most prolific fort-builder; birthplace of Maharana Pratap in 1540.",
-            "Never breached in war; only fell once (1578) after joint Mughal-Rajput siege used arsenic to poison the fort's water supply.",
-            "The 36-km long rampart is possibly the longest continuous wall in India — often called the \"Great Wall of India\".",
-            "Rana Kumbha built an inner fort called Katargarh within Kumbhalgarh for the royal quarter — the birthplace of Maharana Pratap and coronation site of Rana Udai Singh.",
-            "Kumbhalgarh served as the emergency capital of Mewar; only Akbar's 1576 army broke its lower defences briefly."
+          "facts_hi": [
+            "36 किमी लंबी परकोटा दीवार भारत की संभवतः सबसे लंबी सतत दीवार — \"भारत की चीन दीवार\" के नाम से प्रसिद्ध।",
+            "राणा कुम्भा ने कुम्भलगढ़ के भीतर एक भीतरी दुर्ग \"कटारगढ़\" बनवाया — यहीं महाराणा प्रताप का जन्म और राणा उदय सिंह का राज्याभिषेक हुआ।",
+            "मेवाड़ की आपातकालीन राजधानी — केवल अकबर की 1576 की सेना ही थोड़े समय के लिए बाहरी सुरक्षा तोड़ पाई।"
           ]
         },
         "state": "Rajasthan",
@@ -70,7 +67,11 @@
         "lastUpdated": "2026-07-18",
         "icon": "🏰",
         "fortType": "Giri Durg",
-        "builder": "Rana Kumbha (arch. Mandan Mishra, 1443-58)"
+        "builder": "Rana Kumbha (arch. Mandan Mishra, 1443-58)",
+        "name_hi": "कुम्भलगढ़ किला",
+        "district_hi": "राजसमंद",
+        "fortType_hi": "गिरि दुर्ग",
+        "builder_hi": "राणा कुम्भा (वास्तुकार: मंडन मिश्रा, 1443-58)"
       }
     },
     {
@@ -90,15 +91,11 @@
         "district": "Jhalawar",
         "unescoStatus": "Hill Forts of Rajasthan (2013)",
         "notes": {
-          "facts": [
-            "Rajasthan's only 'jal-durg' (water fortress) — enclosed on three sides by the confluence of the Ahu and Kalisindh rivers.",
-            "UNESCO Hill Fort of Rajasthan (2013); built by the Khichi Chauhans in the 12th c.",
-            "Site of two great jauhars (1444 and 1524) — the second by Rani Prakashkumari when the fort fell to Alauddin Khilji's descendants.",
-            "The nearby dargah of Sufi Mitteshah is a shared Hindu-Muslim pilgrimage centre.",
-            "At the confluence of the Kali Sindh and Ahu rivers, 4 km from Jhalawar — classic water-fort typology.",
-            "Sant Pipa, disciple of Ramananda, was king here — renounced the throne to his brother Achaldas Khinchi.",
-            "Achaldas Khinchi and his queens Jauhar-ed against Sultan Hoshang Shah of Mandu (1423).",
-            "The dargah of the Muslim saint Peer Mitthe Saheb inside the fort still hosts an annual urs."
+          "facts_hi": [
+            "झालावाड़ से 4 किमी दूर काली सिंध और आहू नदियों के संगम पर स्थित — क्लासिक जल-दुर्ग टाइपोलॉजी।",
+            "रामानंद के शिष्य संत पीपा यहाँ राजा थे — उन्होंने राज्य त्यागकर अपने भाई अचलदास खींची को सौंप दिया।",
+            "अचलदास खींची और उनकी रानियों ने मांडू के सुल्तान होशंग शाह के विरुद्ध जौहर किया (1423)।",
+            "किले के भीतर मुस्लिम संत पीर मिट्ठे साहब की दरगाह — यहाँ आज भी वार्षिक उर्स होता है।"
           ]
         },
         "state": "Rajasthan",
@@ -106,7 +103,11 @@
         "lastUpdated": "2026-07-18",
         "icon": "🏰",
         "fortType": "Jal Durg (Water Fort)",
-        "builder": "Dod King Bijaldev (12th c.)"
+        "builder": "Dod King Bijaldev (12th c.)",
+        "name_hi": "गागरोन किला",
+        "district_hi": "झालावाड़",
+        "fortType_hi": "जल दुर्ग",
+        "builder_hi": "दोड़ राजा बीजलदेव (12वीं शताब्दी)"
       }
     },
     {
@@ -126,15 +127,10 @@
         "district": "Sawai Madhopur",
         "unescoStatus": "Hill Forts of Rajasthan (2013)",
         "notes": {
-          "facts": [
-            "One of the six UNESCO Hill Forts of Rajasthan (2013) — built ~10th c. by Chauhan Yadava rulers.",
-            "Sits inside Rajasthan's first National Park (1980) and India's first Tiger Reserve (1973).",
-            "Withstood Alauddin Khilji's siege for over a year (1301) before falling — remembered for Rani Rangdevi's jauhar.",
-            "Trinetra Ganesh Temple within the fort is India's oldest and largest three-eyed Ganesh shrine.",
-            "'Ran-thambhore' = 'fortress-standing-in-the-battlefield' — its defensive design inspired the name.",
-            "Abul Fazl called Ranthambore an \"armoured\" (Bakhtarbund) fort — surrounded by seven Aravalli hills and dense forest.",
-            "Hammir Dev Chauhan's stand against Alauddin Khilji (1301) ended in his martyrdom; his queen Rangadevi's jauhar is regarded the first recorded jauhar of Rajasthan.",
-            "The Trinetra Ganesh Temple inside — the only three-eyed Ganesha shrine in India — is petitioned by the first invitation of every Rajasthani wedding."
+          "facts_hi": [
+            "अबुल फ़ज़ल ने रणथंभौर को \"बख्तरबंद\" (कवचयुक्त) दुर्ग कहा — सात अरावली पहाड़ियों और घने वन से घिरा।",
+            "1301 में हम्मीर देव चौहान का अलाउद्दीन खिलजी के विरुद्ध युद्ध — शहीदी के साथ; रानी रंगदेवी का जौहर राजस्थान का पहला ज्ञात जौहर माना जाता है।",
+            "किले के भीतर त्रिनेत्र गणेश मंदिर — भारत का एकमात्र त्रिनेत्र गणेश — हर राजस्थानी विवाह का पहला निमंत्रण-पत्र इन्हें भेजा जाता है।"
           ]
         },
         "state": "Rajasthan",
@@ -142,7 +138,11 @@
         "lastUpdated": "2026-07-18",
         "icon": "🏰",
         "fortType": "Giri Durg (armoured — \"Bakhtarbund\")",
-        "builder": "Chauhans (8th c.)"
+        "builder": "Chauhans (8th c.)",
+        "name_hi": "रणथंभौर किला",
+        "district_hi": "सवाई माधोपुर",
+        "fortType_hi": "गिरि दुर्ग (कवचयुक्त — \"बख्तरबंद\")",
+        "builder_hi": "चौहान वंश (8वीं शताब्दी)"
       }
     },
     {
@@ -162,15 +162,10 @@
         "district": "Jaipur",
         "unescoStatus": "Hill Forts of Rajasthan (2013)",
         "notes": {
-          "facts": [
-            "UNESCO Hill Fort of Rajasthan (2013); built by Raja Man Singh I (1592) and extended by Raja Jai Singh II.",
-            "Sheesh Mahal (Mirror Palace) — mosaic of thousands of tiny mirrors that reflect a single candle as a starry sky.",
-            "Historic seat of the Kachhawaha Rajputs before Jaipur city was founded (1727); connected by a walled tunnel to Jaigarh above.",
-            "Ganesh Pol (elephant gateway) — one of India's most photographed painted gateways.",
-            "Below the fort, Maota Lake mirrors the Amber palace complex — one of Rajasthan's iconic view-sheds.",
-            "Amer differs from every other Rajasthan fort — the palaces are perched on the mountain slope, not on flat ground within the rampart.",
-            "The security ring is the Jaigarh fort above and Maota Lake below; the political friendship with the Mughals kept it unattacked.",
-            "Interior shrines: Shila Devi (Man Singh brought the idol from Jessore, Bengal), Jagat Shiromani (Kankawati's memorial with Meera's Krishna idol) and Ambikeshwar Mahadev."
+          "facts_hi": [
+            "आमेर अन्य राजस्थानी किलों से भिन्न — महल पहाड़ी की ढलान पर बने हैं, दीवारों के भीतर समतल भूमि पर नहीं।",
+            "सुरक्षा का प्रबंध ऊपरी जयगढ़ किले और नीचे माओटा झील से — मुगलों के साथ राजनीतिक मित्रता ने इसे आक्रमण से बचाए रखा।",
+            "भीतरी देवालय: शिला देवी (मान सिंह जेस्सोर, बंगाल से मूर्ति लाए), जगत शिरोमणि (कंकावती की स्मृति में — मीरा बाई की कृष्ण-मूर्ति यहाँ स्थापित) और अंबिकेश्वर महादेव।"
           ]
         },
         "state": "Rajasthan",
@@ -178,7 +173,11 @@
         "lastUpdated": "2026-07-18",
         "icon": "🏰",
         "fortType": "Giri Durg (hillside palace-fort hybrid)",
-        "builder": "Raja Man Singh I (1592); expanded by Sawai Jai Singh II"
+        "builder": "Raja Man Singh I (1592); expanded by Sawai Jai Singh II",
+        "name_hi": "आमेर किला",
+        "district_hi": "जयपुर",
+        "fortType_hi": "गिरि दुर्ग (पहाड़ी-ढाल महल-दुर्ग)",
+        "builder_hi": "राजा मान सिंह प्रथम (1592); सवाई जय सिंह द्वितीय द्वारा विस्तारित"
       }
     },
     {
@@ -198,15 +197,10 @@
         "district": "Jaisalmer",
         "unescoStatus": "Hill Forts of Rajasthan (2013)",
         "notes": {
-          "facts": [
-            "Rajasthan's only 'living fort' — 3000+ residents still live within its walls today.",
-            "UNESCO Hill Fort of Rajasthan (2013); built 1156 by Rawal Jaisal Bhati of the Bhati Rajputs.",
-            "Nicknamed 'Sonar Qila' (Golden Fort) — yellow sandstone glows amber at sunset.",
-            "The interior has three Jain temples (12-15th c.) with 6600+ intricately-carved Tirthankara figures.",
-            "Rajasthan's second-oldest surviving fort after Chittorgarh; its haveli belt (Patwon-ki-Haveli) is India's finest merchant-architecture cluster.",
-            "Built of yellow Jaisalmer sandstone on Trikut Hill — the \"Sonar Qila\". 99 bastions, held together without lime.",
-            "The fort's Jain temples (Parshvanath, Rishabhdev) rival Dilwara for craft — the Jaisalmer complex also holds a priceless rare-manuscripts library.",
-            "Famous for \"Two-and-a-half Sakas\" — the full jauhars during Alauddin Khilji's and Firoz Tughlaq's sieges, plus the half-saka of 1550 when queens did not perform jauhar because the Bhatis defeated Amir Ali of Kandahar."
+          "facts_hi": [
+            "त्रिकुट पहाड़ी पर पीले जैसलमेर बलुआ पत्थर से निर्मित — \"सोनार क़िला\" के नाम से प्रसिद्ध। 99 बुर्ज, चूने का प्रयोग किए बिना जोड़े गए।",
+            "भीतर के जैन मंदिर (पार्श्वनाथ, ऋषभनाथ) शिल्प में दिलवाड़ा की टक्कर के हैं — प्राचीन दुर्लभ पांडुलिपियों का बहुमूल्य संग्रह भी यहाँ है।",
+            "\"ढाई साके\" (2½ Sakas) के लिए प्रसिद्ध — अलाउद्दीन खिलजी और फ़िरोज़ तुगलक की घेराबंदियों में पूर्ण जौहर, और 1550 में अमीर अली को हराने के बाद रानियों के जौहर न करने का \"आधा साका\"।"
           ]
         },
         "state": "Rajasthan",
@@ -214,7 +208,11 @@
         "lastUpdated": "2026-07-18",
         "icon": "🏰",
         "fortType": "Dhanvan Durg (Desert Fort)",
-        "builder": "Rao Jaisal Bhati (1156)"
+        "builder": "Rao Jaisal Bhati (1156)",
+        "name_hi": "जैसलमेर किला (सोनार क़िला)",
+        "district_hi": "जैसलमेर",
+        "fortType_hi": "धन्वन दुर्ग (मरुस्थल दुर्ग)",
+        "builder_hi": "राव जैसल भाटी (1156)"
       }
     },
     {
@@ -233,16 +231,11 @@
         "category": "custom",
         "district": "Jodhpur",
         "notes": {
-          "facts": [
-            "Built 1459 by Rao Jodha — the Rathore capital and one of India's largest still-inhabited forts.",
-            "Rises 122 m above Jodhpur city on the Bhaurcheeria (Mountain of Birds).",
-            "Chittar Mahal / Umaid Bhawan Palace (1943) below is the world's largest privately-inhabited residential palace.",
-            "The Chamunda Mata temple within the fort is Rajasthan's most-photographed skyline landmark.",
-            "The fort's museum — often ranked among Asia's best — houses palanquins, howdahs and Rajasthani miniatures.",
-            "Built on Chidiyatuk hill above Jodhpur; plan is peacock-shaped, hence the alias \"Mayurdhwaj\".",
-            "The Kilkila and Bhawani cannons are among the heaviest surviving field pieces in India.",
-            "The fort commemorates Veer Durgadas — the noble who saved the infant prince Ajit Singh from Aurangzeb.",
-            "Interior palaces: Moti Mahal, Fatah Mahal, Zenana Mahal, Shringar Chowki, Takhat, Ajit, Umaid Vilas."
+          "facts_hi": [
+            "जोधपुर की चिड़ियाटूक पहाड़ी पर बनाया गया — योजना मोर के आकार में है, इसलिए \"मयूरध्वज\" उपनाम।",
+            "किलकिला और भवानी जैसी तोपें भारत की सबसे भारी सुरक्षित तोपों में गिनी जाती हैं।",
+            "वीर दुर्गादास — जिन्होंने शिशु अजीत सिंह को औरंगज़ेब से बचाया — की स्मृति यहीं है।",
+            "भीतरी महल: मोती महल, फ़तह महल, ज़नाना महल, शृंगार चौकी, तख़्त, अजित और उम्मेद विलास।"
           ]
         },
         "state": "Rajasthan",
@@ -250,7 +243,11 @@
         "lastUpdated": "2026-07-18",
         "icon": "🏛",
         "fortType": "Giri Durg",
-        "builder": "Rao Jodha (1459)"
+        "builder": "Rao Jodha (1459)",
+        "name_hi": "मेहरानगढ़ किला, जोधपुर",
+        "district_hi": "जोधपुर",
+        "fortType_hi": "गिरि दुर्ग",
+        "builder_hi": "राव जोधा (1459)"
       }
     },
     {
@@ -269,15 +266,10 @@
         "category": "custom",
         "district": "Bikaner",
         "notes": {
-          "facts": [
-            "Built 1594 by Raja Rai Singh of Bikaner — one of only two Rajput forts on a plain (with Nagaur Fort).",
-            "Its walls have never been breached in war — resisted every siege including the 1733 Aurangzeb-era assault.",
-            "Bikaneri red sandstone — an ochre-red Marwar SG stone — gives the fort its distinctive colour.",
-            "Anup Mahal Palace within the fort holds an ornate gold-leaf audience hall.",
-            "The Ganga Mahal Museum inside houses Rajasthan's second-largest collection of period arms and armour after Mehrangarh.",
-            "Rare Rajasthan fort built on the plain, without a hill; 37 bastions with cannon-mounts on top.",
-            "Surajpol carries the Rai Singh Prashasti (praise inscription) and elephant-mounted statues of Jaimal Medtiya and Fatta Sisodia.",
-            "The Ganga Niwas hall's stone Krishna-Rasleela panels and the interior palaces — Phool Mahal, Gaj Mandir, Anup Mahal, Karan Mahal, Lal Niwas, Sardar Niwas — blend Mughal grammar with Rajput plans."
+          "facts_hi": [
+            "राजस्थान का दुर्लभ किला जो मैदान पर बना है, पहाड़ी पर नहीं — 37 बुर्जों पर तोपें लगी थीं।",
+            "सूरजपोल पर राय सिंह प्रशस्ति और हाथी-सवार जयमल मेड़तिया व फत्ता सीसोदिया की मूर्तियाँ।",
+            "गंगा निवास हॉल की पत्थर की कृष्ण-रासलीला और भीतरी महल — फूल महल, गज मंदिर, अनूप महल, करण महल, लाल निवास, सरदार निवास — मुगल शैली को राजपूत योजना से मिलाते हैं।"
           ]
         },
         "state": "Rajasthan",
@@ -285,7 +277,11 @@
         "lastUpdated": "2026-07-18",
         "icon": "🏛",
         "fortType": "Parikh Durg (Moat Fort — no natural hill)",
-        "builder": "Raja Rai Singh Rathore (1589-94)"
+        "builder": "Raja Rai Singh Rathore (1589-94)",
+        "name_hi": "जूनागढ़ किला, बीकानेर",
+        "district_hi": "बीकानेर",
+        "fortType_hi": "परिख दुर्ग (पहाड़ी के बिना — मैदान का किला)",
+        "builder_hi": "राजा राय सिंह राठौड़ (1589-94)"
       }
     },
     {
@@ -304,15 +300,10 @@
         "category": "custom",
         "district": "Jaipur",
         "notes": {
-          "facts": [
-            "Built 1734 by Sawai Jai Singh II as one of the three defensive forts (with Amber and Jaigarh) that ring Jaipur.",
-            "Madhavendra Bhawan within has 12 identical suites — designed for Jai Singh's twelve queens.",
-            "Named for Nahar Singh Bhomia, whose ghost was said to hinder construction; a shrine to Nahar was built to appease him.",
-            "Adjoins the Nahargarh Biological Park — Rajasthan's flagship ex-situ wildlife conservation centre.",
-            "Its ridge-top position gives the best panoramic view of Jaipur's Pink City.",
-            "The northern guard of Jaipur, also called Sudarshangarh — built as a Maratha-era defensive outpost.",
-            "Sawai Madho Singh II added nine identical palaces named for his nine paswans (concubines).",
-            "The fort's Padao stepped courtyard is where the state escaped in 1857 while the British held the plains."
+          "facts_hi": [
+            "जयपुर का उत्तरी प्रहरी — \"सुदर्शनगढ़\" भी कहलाता है — मराठा-युग की रक्षा-चौकी के रूप में बनाया गया।",
+            "सवाई माधो सिंह द्वितीय ने अपनी नौ पासवानों के नाम पर नौ एकसमान महल जोड़े।",
+            "1857 में जब अंग्रेज़ मैदान पर थे, राज्य के प्रमुख यहीं आकर बच निकले।"
           ]
         },
         "state": "Rajasthan",
@@ -320,7 +311,11 @@
         "lastUpdated": "2026-07-18",
         "icon": "🏛",
         "fortType": "Giri Durg",
-        "builder": "Sawai Jai Singh II (1734); expanded Sawai Madho Singh II"
+        "builder": "Sawai Jai Singh II (1734); expanded Sawai Madho Singh II",
+        "name_hi": "नाहरगढ़ किला, जयपुर",
+        "district_hi": "जयपुर",
+        "fortType_hi": "गिरि दुर्ग",
+        "builder_hi": "सवाई जय सिंह द्वितीय (1734); सवाई माधो सिंह द्वितीय ने विस्तार किया"
       }
     },
     {
@@ -339,15 +334,10 @@
         "category": "custom",
         "district": "Jaipur",
         "notes": {
-          "facts": [
-            "Built 1726 by Sawai Jai Singh II — sits directly above Amber Fort, connected by a walled tunnel.",
-            "Houses 'Jaivan' — the world's largest wheeled cannon by weight (~50 tonnes), cast at the fort's own foundry in 1720.",
-            "Only medieval fort in India with an in-house cannon foundry — Rajasthan's premier armament complex.",
-            "The Diya Burj tower gives 360° views of the Aravalli tail into Jaipur city.",
-            "Legend: Jai Singh II's treasure was hidden within the fort's water tanks — searched by Indira Gandhi's government during the 1976 Emergency.",
-            "Only Rajasthan fort with a major cannon-casting foundry; the Jaiban cannon here is the largest wheeled cannon in Asia.",
-            "A rain-water harvesting system channels the surrounding hill runoff into massive underground tanks.",
-            "Referred to as a \"mysterious fort\" — the multiple secret tunnels connect Jaigarh to Amer; long rumoured to hold Raja Man Singh I's treasure."
+          "facts_hi": [
+            "राजस्थान का एकमात्र किला जिसमें बड़ी तोप-ढलाई की भट्टी थी — यहीं की \"जयबाण\" तोप एशिया की सबसे बड़ी पहिया-वाहित तोप मानी जाती है।",
+            "वर्षा-जल संचयन प्रणाली — आसपास की पहाड़ियों का पानी विशाल भूमिगत टंकियों में भेजा जाता था।",
+            "\"रहस्यमयी किला\" — इसकी अनेक गुप्त सुरंगें जयगढ़ को आमेर से जोड़ती हैं; लंबे समय से मान सिंह प्रथम के ख़ज़ाने की कथाएँ इससे जुड़ी हैं।"
           ]
         },
         "state": "Rajasthan",
@@ -355,7 +345,11 @@
         "lastUpdated": "2026-07-18",
         "icon": "🏛",
         "fortType": "Giri Durg",
-        "builder": "Kachwaha rulers (12th c.); modernised by Sawai Jai Singh II"
+        "builder": "Kachwaha rulers (12th c.); modernised by Sawai Jai Singh II",
+        "name_hi": "जयगढ़ किला, जयपुर",
+        "district_hi": "जयपुर",
+        "fortType_hi": "गिरि दुर्ग",
+        "builder_hi": "कच्छवाहा शासक (12वीं शताब्दी); सवाई जय सिंह द्वितीय द्वारा आधुनिकीकृत"
       }
     },
     {
@@ -374,15 +368,10 @@
         "category": "custom",
         "district": "Bundi",
         "notes": {
-          "facts": [
-            "Built 1354 by Rao Bar Singh — 'Taragarh' means 'star fort' after its many-pointed bastion plan.",
-            "Bhim Burj, its largest tower, holds 'Garbh Ganjan' — one of Rajasthan's largest surviving cannons.",
-            "Chitrashala within the fort hosts the Bundi school of miniature painting — a distinctive branch of Rajput art.",
-            "Below the fort, the Raniji-ki-Baori stepwell (46 m deep, 1699) is among Rajasthan's most ornate.",
-            "Rudyard Kipling wrote descriptions of Rajasthan after staying at the Sukh Mahal (1887) below the fort.",
-            "On Taragarh peak above Bundi city — its silhouette resembles a star, hence the name.",
-            "Repelled Mahmud Khilji of Malwa and Rana Kshetra Singh of Mewar — indirectly became Mughal after Rao Surjan Hada accepted Akbar's suzerainty (1569).",
-            "The frescoes inside its Chhatra, Aniruddh, Badal and Phool Mahals define the Bundi (Hadoti) painting school."
+          "facts_hi": [
+            "बूँदी शहर के ऊपर तारागढ़ शिखर पर — इसका बाहरी आकार तारे जैसा दिखता है, इसीलिए नाम।",
+            "मालवा के महमूद खिलजी और मेवाड़ के राणा क्षेत्र सिंह के आक्रमण झेले — 1569 में राव सुरजन हाड़ा के अकबर की अधीनता स्वीकार करने पर परोक्ष रूप से मुगल हो गया।",
+            "भीतर के छत्र, अनिरुद्ध, बादल और फूल महलों के भित्ति-चित्र बूँदी (हाड़ोती) चित्रशैली की परिभाषा हैं।"
           ]
         },
         "state": "Rajasthan",
@@ -390,7 +379,11 @@
         "lastUpdated": "2026-07-18",
         "icon": "🏛",
         "fortType": "Giri Durg (peak-shape)",
-        "builder": "Hada ruler Bar Singh (14th c.)"
+        "builder": "Hada ruler Bar Singh (14th c.)",
+        "name_hi": "तारागढ़ किला, बूँदी",
+        "district_hi": "बूँदी",
+        "fortType_hi": "गिरि दुर्ग (शिखर-आकार)",
+        "builder_hi": "हाड़ा राजा बर सिंह (14वीं शताब्दी)"
       }
     },
     {
@@ -409,15 +402,10 @@
         "category": "custom",
         "district": "Nagaur",
         "notes": {
-          "facts": [
-            "One of only two Rajput forts built on a plain (with Junagarh Bikaner) — 12th c. Naga Rajput fort extended by Rao Amar Singh Rathore.",
-            "'Ahhichatragarh' = 'fortress of the hooded cobra' — named for the Naga-Rajput lineage.",
-            "Won a UNESCO Asia-Pacific Heritage Award (2002) for the restoration of its Persian-inspired water pavilions.",
-            "Sufi Hameeduddin Nagauri's dargah lies below the fort — a Chishti pilgrimage site.",
-            "Amar Singh Rathore, Rao of Nagaur (1613-1644), is the subject of Rajasthan's most-loved folk-ballad — celebrating his 1644 Agra Fort escape.",
-            "Ahhichatragarh Fort of Nagaur — the \"Fort of the Hooded Cobra\" — famous for its intricate Rajput-Mughal-Marwar hydraulic system.",
-            "Won the UNESCO Asia-Pacific Award of Excellence for Cultural Heritage Conservation (2002) for its water-garden restoration.",
-            "Bakht Singh built the Hadi Rani Mahal and the audience halls with painted Rajput frescoes in Marwar-Nagaur style."
+          "facts_hi": [
+            "नागौर का अहिच्छत्रगढ़ (\"फणी-नाग का किला\") — जटिल राजपूत-मुगल-मारवाड़ी जल-प्रणाली के लिए प्रसिद्ध।",
+            "यूनेस्को एशिया-प्रशांत सांस्कृतिक विरासत उत्कृष्टता पुरस्कार (2002) — जल-उद्यान संरक्षण के लिए।",
+            "बख्त सिंह द्वारा हादी रानी महल और चित्रित मारवाड़-नागौर शैली की दरबार-हॉलों का निर्माण।"
           ]
         },
         "state": "Rajasthan",
@@ -425,7 +413,11 @@
         "lastUpdated": "2026-07-18",
         "icon": "🏛",
         "fortType": "Parikh Durg",
-        "builder": "Bhamvara Chauhans (11th c.); rebuilt by Bakht Singh Rathore (18th c.)"
+        "builder": "Bhamvara Chauhans (11th c.); rebuilt by Bakht Singh Rathore (18th c.)",
+        "name_hi": "अहिच्छत्रगढ़ किला, नागौर",
+        "district_hi": "नागौर",
+        "fortType_hi": "परिख दुर्ग",
+        "builder_hi": "भँवरा चौहान (11वीं शताब्दी); बख्त सिंह राठौड़ ने पुनर्निर्माण किया (18वीं शताब्दी)"
       }
     },
     {
@@ -458,14 +450,17 @@
           26.454
         ],
         "notes": {
-          "facts": [
-            "Built by Akbar in 1570 as an act of respect for Khwaja Moinuddin Chishti — Hindu-Muslim composite architectural style.",
-            "The 1576 Battle of Haldighati against Maharana Pratap was planned in this fort.",
-            "Sir Thomas Roe, ambassador of King James I of England, met Emperor Jahangir here on 10 Jan 1616 — Britain's first accredited embassy in India.",
-            "The British took the fort in 1801 and turned it into the Ajmer Magazine; today it houses the Ajmer Government Museum."
-          ],
-          "significance": "high"
-        }
+          "facts_hi": [
+            "अकबर ने 1570 में ख्वाजा मोइनुद्दीन चिश्ती के प्रति सम्मान के प्रतीक स्वरूप बनवाया — हिंदू-मुस्लिम मिश्रित स्थापत्य।",
+            "1576 का हल्दीघाटी युद्ध महाराणा प्रताप के विरुद्ध यहीं से योजित हुआ।",
+            "इंग्लैंड-नरेश जेम्स प्रथम के राजदूत सर थॉमस रो 10 जनवरी 1616 को यहीं जहाँगीर से मिले — भारत में ब्रिटेन का पहला औपचारिक दूतावास-प्रयास।",
+            "अंग्रेज़ों ने 1801 में किले को अजमेर मैगज़ीन बनाया — आज यहाँ अजमेर राजकीय संग्रहालय है।"
+          ]
+        },
+        "name_hi": "अकबर का किला (दौलतखाना), अजमेर",
+        "district_hi": "अजमेर",
+        "fortType_hi": "परिख दुर्ग (नगर-दुर्ग)",
+        "builder_hi": "अकबर (1570)"
       }
     },
     {
@@ -498,14 +493,17 @@
           25.339
         ],
         "notes": {
-          "facts": [
-            "On the Sonagiri hill above the Sukri river; known in inscriptions as Suvarngiri and its town as Jabalipur.",
-            "Passed through the Pratiharas, Paramaras, Chauhans, Solankis, Turks and Rathores over eight centuries.",
-            "Kanhadade Chauhan (r. 1305-11) attained martyrdom defending Jalore against Alauddin Khilji — the epic \"Kanhadade Prabandh\" (Padmanabha, 1455) recounts the siege.",
-            "The Topkhana Mosque inside was originally a Paramara Sanskrit school built by Raja Bhoj."
-          ],
-          "significance": "high"
-        }
+          "facts_hi": [
+            "सुखरी नदी के ऊपर सोनगिरि पहाड़ी पर — शिलालेखों में सुवर्णगिरि और नगर जबालिपुर के नाम से उल्लिखित।",
+            "आठ शताब्दियों में प्रतिहार, परमार, चौहान, सोलंकी, तुर्क और राठौर शासन से गुज़रा।",
+            "कन्हड़देव चौहान (शासन 1305-11) ने अलाउद्दीन खिलजी से जालोर की रक्षा में शहादत पाई — कवि पद्मनाभ की \"कान्हड़दे प्रबंध\" (1455) इस घेराबंदी का महाकाव्य है।",
+            "भीतर की तोपखाना मस्जिद मूलतः राजा भोज द्वारा बनाई गई परमार-युगीन संस्कृत पाठशाला थी।"
+          ]
+        },
+        "name_hi": "जालोर किला (सुवर्णगिरि)",
+        "district_hi": "जालोर",
+        "fortType_hi": "गिरि दुर्ग + वन दुर्ग",
+        "builder_hi": "प्रतिहार वंश (8वीं शताब्दी)"
       }
     },
     {
@@ -538,14 +536,17 @@
           27.216
         ],
         "notes": {
-          "facts": [
-            "The only fort in Rajasthan that British General Lord Lake failed to conquer — attacked five times (1804-05) with heavy artillery and repulsed every time.",
-            "The Lohagarh rampart is an earth mound with a deep water moat — the mud absorbed cannon-shot rather than shattering.",
-            "The eight-metal (ashtadhatu) main door was brought by Maharaja Jawahar Singh from Delhi after his 1765 raid.",
-            "Interior palaces: Kishori Mahal, Kothi Khas, Wazir Ki Kothi; twin victory pillars — Jawahar Burj and Fateh Burj."
-          ],
-          "significance": "high"
-        }
+          "facts_hi": [
+            "राजस्थान का एकमात्र किला जिसे ब्रिटिश जनरल लॉर्ड लेक जीत नहीं पाया — 1804-05 में पाँच बार भारी तोपखाने से हमला किया और हर बार पीछे हटना पड़ा।",
+            "लोहागढ़ की मेढ़ मिट्टी की है और चारों ओर गहरी खाई — मिट्टी तोप के गोले सोखती है, टूटने के बजाय।",
+            "मुख्य द्वार अष्टधातु का — महाराजा जवाहर सिंह 1765 में दिल्ली विजय के बाद उठा लाए थे।",
+            "भीतरी महल: किशोरी महल, कोठी खास, वज़ीर की कोठी; विजय-स्तंभ जवाहर बुर्ज और फ़तह बुर्ज।"
+          ]
+        },
+        "name_hi": "लोहागढ़ किला, भरतपुर",
+        "district_hi": "भरतपुर",
+        "fortType_hi": "परिख दुर्ग (मिट्टी और जल की मेढ़)",
+        "builder_hi": "महाराजा सूरजमल (1733)"
       }
     },
     {
@@ -578,13 +579,16 @@
           25.649
         ],
         "notes": {
-          "facts": [
-            "Classic Van Durg — the surrounding thorn-jungle and the Halesari hill gave it a triple defensive ring.",
-            "Sotalayaji Deo (Sonagara Chauhan) died defending Siwana against Alauddin Khilji (1308) — jauhar performed by the queens.",
-            "The Malani Igneous Suite rock beneath the fort is the same granite that yields Barmer's imperial-red dimension stone."
-          ],
-          "significance": "high"
-        }
+          "facts_hi": [
+            "क्लासिक वन-दुर्ग — आस-पास के कँटीले वन और हलेसरी पहाड़ी ने तिहरी सुरक्षा-वलय बनाया।",
+            "सोतलायाजी देव (सोनगरा चौहान) ने अलाउद्दीन खिलजी से सिवाणा की रक्षा में शहादत पाई (1308) — रानियों का जौहर हुआ।",
+            "किले के नीचे मालाणी अग्नीय समूह की चट्टान — यही ग्रेनाइट बाड़मेर के प्रसिद्ध \"इम्पीरियल रेड\" पत्थर देती है।"
+          ]
+        },
+        "name_hi": "सिवाणा किला",
+        "district_hi": "बाड़मेर",
+        "fortType_hi": "वन दुर्ग (वन-कँटीली रक्षा)",
+        "builder_hi": "परमार वीरनारायण (10वीं शताब्दी)"
       }
     }
   ]

@@ -18,13 +18,12 @@
         "district": "Hanumangarh",
         "period": "Pre-Harappan (Early Harappan) + Mature Harappan (3500-1750 BCE)",
         "notes": {
-          "facts": [
-            "India's third-largest Indus-Sarasvati site — on the Ghaggar palaeochannel; excavated by B.B. Lal (ASI, 1961-69).",
-            "Only Indus site with pre-Harappan and Harappan settlement stacked one over the other — plus the world's earliest known ploughed field (Pre-Harappan, ~2900 BCE).",
-            "The seven \"fire altars\" arranged in a row in the citadel are unique to Kalibangan — the strongest evidence of Vedic-adjacent ritual at any Indus site.",
-            "Its collapse c. 1750 BCE is attributed to the drying of the Sarasvati/Ghaggar — a template case for climate-driven civilisational collapse."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "भारत का तीसरा सबसे बड़ा सिंधु-सरस्वती स्थल — घग्घर पुरा-वाहिनी पर स्थित; बी.बी. लाल (ASI, 1961-69) द्वारा उत्खनन।",
+            "एकमात्र सिंधु स्थल जहाँ पूर्व-हड़प्पा और हड़प्पा बस्तियाँ एक के ऊपर एक बनी हैं — साथ ही विश्व का ज्ञात प्राचीनतम जुते हुए खेत का साक्ष्य (पूर्व-हड़प्पा, ~2900 ई.पू.)।",
+            "गढ़ में एक पंक्ति में सात \"अग्नि-वेदियाँ\" कालीबंगा की विशिष्टता है — किसी भी सिंधु स्थल पर वैदिक-समान अनुष्ठान का सबसे मज़बूत साक्ष्य।",
+            "~1750 ई.पू. के पतन का कारण सरस्वती/घग्घर के सूखने को माना जाता है — जलवायु-चालित सभ्यता-पतन का मॉडल-केस।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
@@ -37,7 +36,10 @@
         "labelAnchor": [
           74.13,
           29.47
-        ]
+        ],
+        "name_hi": "कालीबंगा (सिंधु-सरस्वती स्थल)",
+        "district_hi": "हनुमानगढ़",
+        "period_hi": "पूर्व-हड़प्पा (आदि हड़प्पा) + परिपक्व हड़प्पा (3500-1750 ई.पू.)"
       }
     },
     {
@@ -57,13 +59,12 @@
         "district": "Udaipur",
         "period": "Chalcolithic (~2500-1500 BCE)",
         "notes": {
-          "facts": [
-            "Type-site of Rajasthan's Chalcolithic \"Ahar (Aharan) Culture\" — a copper-using pre-iron farming civilisation of the Berach basin.",
-            "Excavated by H.D. Sankalia (Deccan College, 1954-56) — famous \"Black-and-Red Ware\" (BRW) ceramic sequence.",
-            "Cotton spinning wheels & spindles here (with Kalibangan) prove cotton textile use in Rajasthan going back ~4000 years.",
-            "Site sits on Udaipur's northern edge, on the Ayad river — the \"Aravalli lakeside civilisation\" cognate of Malwa's Kayatha and Navdatoli."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "राजस्थान की ताम्रयुगीन \"आहड़ संस्कृति\" का प्रकार-स्थल — बेराच बेसिन की ताम्र-प्रयोग करने वाली पूर्व-लौह कृषि सभ्यता।",
+            "एच.डी. सांकलिया (डेक्कन कॉलेज, 1954-56) द्वारा उत्खनन — प्रसिद्ध \"काला-लाल बर्तन\" (BRW) मृद्भांड-अनुक्रम।",
+            "यहाँ (और कालीबंगा) की कपास कातने की चरखी-सूत साक्ष्य सिद्ध करता है कि राजस्थान में लगभग 4000 वर्ष पूर्व से कपास वस्त्र-निर्माण होता था।",
+            "उदयपुर के उत्तरी छोर पर, आयड़ नदी पर — मालवा के कायथा और नवदाटोली से समकालीन \"अरावली झील-सभ्यता\"।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
@@ -76,7 +77,10 @@
         "labelAnchor": [
           73.712,
           24.581
-        ]
+        ],
+        "name_hi": "आहड़ (आहड़ संस्कृति — ताम्रयुगीन)",
+        "district_hi": "उदयपुर",
+        "period_hi": "ताम्रयुगीन (~2500-1500 ई.पू.)"
       }
     },
     {
@@ -96,12 +100,11 @@
         "district": "Udaipur (Vallabhnagar)",
         "period": "Chalcolithic (~3000-1500 BCE) + Early Historic (~500 BCE-200 CE)",
         "notes": {
-          "facts": [
-            "Chalcolithic Ahar-Banas culture site 42 km north-east of Udaipur; excavated by Deccan College with Rajasthan Vidyapeeth (1993-2000).",
-            "Uncovered a huge fortified enclosure with copper-using farming settlements — one of India's earliest fortified villages.",
-            "Also yielded India's oldest known \"sanyasi burial\" — a c. 500 BCE seated skeleton in a ritual posture."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "उदयपुर से 42 किमी उत्तर-पूर्व में ताम्रयुगीन आहड़-बनास संस्कृति स्थल; डेक्कन कॉलेज ने राजस्थान विद्यापीठ के साथ मिलकर (1993-2000) उत्खनन किया।",
+            "ताम्र-प्रयोग करने वाली कृषि बस्ती के साथ एक विशाल किलेबंद परकोटा — भारत के सबसे प्राचीन किलेबंद गाँवों में से एक।",
+            "भारत का ज्ञात सबसे प्राचीन \"संन्यासी दफ़नाना\" भी यहाँ मिला — ~500 ई.पू. का बैठी हुई कंकाल-मुद्रा।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
@@ -114,7 +117,10 @@
         "labelAnchor": [
           73.855,
           24.716
-        ]
+        ],
+        "name_hi": "बालाथल (ताम्रयुगीन – प्रारंभिक ऐतिहासिक)",
+        "district_hi": "उदयपुर (वल्लभनगर)",
+        "period_hi": "ताम्रयुगीन (~3000-1500 ई.पू.) + प्रारंभिक ऐतिहासिक (~500 ई.पू. - 200 ई.)"
       }
     },
     {
@@ -134,12 +140,11 @@
         "district": "Rajsamand",
         "period": "Chalcolithic (~3000-1500 BCE)",
         "notes": {
-          "facts": [
-            "Twin site of Ahar-Banas Chalcolithic culture (with Balathal & Ahar) on the Banas river — jointly excavated by Deccan College + University of Pennsylvania (1959-60; 2003-05).",
-            "Yielded a hoard of 100+ clay seal-impressions — the most ceramic sealings from any Chalcolithic Indian site.",
-            "Two mud-brick platforms suggest an early public architecture tradition in the Aravalli piedmont."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "बनास नदी पर आहड़-बनास ताम्रयुगीन संस्कृति का जुड़वाँ स्थल (बालाथल और आहड़ के साथ) — डेक्कन कॉलेज + पेन्सिल्वेनिया विश्वविद्यालय ने संयुक्त उत्खनन (1959-60; 2003-05) किया।",
+            "100+ मिट्टी की मुहर-छापों का ज़ख़ीरा प्राप्त हुआ — किसी भी ताम्रयुगीन भारतीय स्थल से सबसे अधिक मृद-मुहरें।",
+            "दो कच्ची-ईंट के मंच अरावली-पिडमोंट पर प्रारंभिक सार्वजनिक स्थापत्य परंपरा का संकेत देते हैं।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
@@ -152,7 +157,10 @@
         "labelAnchor": [
           74.075,
           24.885
-        ]
+        ],
+        "name_hi": "गिलुंड (आहड़-बनास ताम्रयुगीन)",
+        "district_hi": "राजसमंद",
+        "period_hi": "ताम्रयुगीन (~3000-1500 ई.पू.)"
       }
     },
     {
@@ -172,12 +180,11 @@
         "district": "Bhilwara",
         "period": "Mesolithic (5000-1500 BCE)",
         "notes": {
-          "facts": [
-            "Rajasthan's type Mesolithic site on the Kothari river; excavated by V.N. Misra (Deccan College, 1967-72).",
-            "One of the largest microlithic tool assemblages in India — thousands of geometric microliths and animal-bone remains.",
-            "Domestication of cattle here (~5000 BCE) is among the earliest evidence of Indian pastoral economy."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "कोठारी नदी पर राजस्थान का मध्य-प्रस्तर-युग प्रकार-स्थल; वी.एन. मिश्रा (डेक्कन कॉलेज, 1967-72) द्वारा उत्खनन।",
+            "भारत के सबसे बड़े सूक्ष्म-पाषाण उपकरण-संग्रहों में से एक — हज़ारों ज्यामितीय सूक्ष्म-उपकरण और पशु-अस्थियाँ।",
+            "यहाँ मवेशियों का पालन (~5000 ई.पू.) — भारतीय पशुपालक-अर्थव्यवस्था के प्राचीनतम साक्ष्यों में।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
@@ -190,7 +197,10 @@
         "labelAnchor": [
           74.463,
           25.343
-        ]
+        ],
+        "name_hi": "बागोर (मध्य-प्रस्तर युग)",
+        "district_hi": "भीलवाड़ा",
+        "period_hi": "मध्य-प्रस्तर युग (5000-1500 ई.पू.)"
       }
     },
     {
@@ -210,12 +220,11 @@
         "district": "Kotputli-Behror (formerly Jaipur)",
         "period": "Mahajanapada (Matsya) + Ashokan Maurya (3rd c. BCE)",
         "notes": {
-          "facts": [
-            "The Matsya Mahajanapada capital of Virata Nagar mentioned in the Mahabharata — where the Pandavas spent their year of ajnatavas.",
-            "Two Ashokan edicts survive here — the Bhabru Minor Rock Edict (Ashoka's letter to the Sangha) plus a fragmentary standing pillar edict.",
-            "Bairath's circular Buddhist stupa was the westernmost brick Buddhist monument in ancient India — the state's earliest known Buddhist site."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "महाभारत में उल्लिखित मत्स्य महाजनपद की राजधानी विराट नगर — जहाँ पांडवों ने अज्ञातवास व्यतीत किया।",
+            "यहाँ अशोक के दो शिलालेख हैं — भाब्रू लघु शिलालेख (अशोक का संघ को पत्र) और खंडित स्तंभ शिलालेख।",
+            "बैराठ का वृत्ताकार बौद्ध स्तूप प्राचीन भारत का पश्चिमी-सबसे कोने का ईंट-निर्मित बौद्ध स्मारक था — राज्य का प्राचीनतम ज्ञात बौद्ध स्थल।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
@@ -228,7 +237,10 @@
         "labelAnchor": [
           76.185,
           27.451
-        ]
+        ],
+        "name_hi": "बैराठ (विराटनगर) — अशोक-कालीन बौद्ध स्थल",
+        "district_hi": "कोटपुतली-बहरोड़ (पूर्व में जयपुर)",
+        "period_hi": "महाजनपद (मत्स्य) + अशोक-मौर्य (तीसरी शताब्दी ई.पू.)"
       }
     },
     {
@@ -248,12 +260,11 @@
         "district": "Bharatpur",
         "period": "Shunga-Kushana (~2nd c. BCE-3rd c. CE)",
         "notes": {
-          "facts": [
-            "The Yakshi statue from Noh (life-size, red sandstone) is one of the earliest surviving Shunga-period female figures.",
-            "The Jakhababa (Yaksha) sculpture — a huge male Yaksha attendant figure — represents the Shunga sculptural tradition in Bharatpur.",
-            "Both statues are housed in the Government Museum, Bharatpur (Lohagarh Fort)."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "नोह की यक्षी मूर्ति (जीवन-आकार, लाल बलुआ पत्थर) शुंग-कालीन जीवित सबसे प्राचीन नारी मूर्तियों में से एक।",
+            "जाखा-बाबा (यक्ष) मूर्ति — विशाल पुरुष यक्ष सेवक प्रतिमा — भरतपुर में शुंग-कालीन मूर्ति-परंपरा का उदाहरण।",
+            "दोनों मूर्तियाँ राजकीय संग्रहालय, भरतपुर (लोहागढ़ किला) में हैं।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
@@ -266,7 +277,10 @@
         "labelAnchor": [
           77.499,
           27.221
-        ]
+        ],
+        "name_hi": "नोह (यक्षी और जाखा-बाबा मूर्तियाँ)",
+        "district_hi": "भरतपुर",
+        "period_hi": "शुंग-कुषाण (~2वीं ई.पू. - 3वीं शताब्दी ई.)"
       }
     },
     {
@@ -286,13 +300,12 @@
         "district": "Chittorgarh",
         "period": "Sivi Janapada + Post-Maurya + Gupta (5th c. BCE-6th c. CE)",
         "notes": {
-          "facts": [
-            "Ancient Madhyamika — capital of the Sivi (Shibi) republic (janapada) north of Chittorgarh, on the Bedach river.",
-            "Yielded some of India's earliest coins bearing the \"Majhamikaya Sibi Janapadasa\" legend — 3rd-2nd c. BCE.",
-            "Colonel James Tod first identified Madhyamika with the Nagari ruins (1820s) — the site anchors the earliest urban history of Mewar.",
-            "Grand temples of the Gupta era and a Vaishnava enclosure survive as ruins on the site."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "प्राचीन मध्यमिका — चित्तौड़गढ़ के उत्तर में बेराच नदी पर शिवि (शिबि) गणराज्य (जनपद) की राजधानी।",
+            "भारत के प्राचीनतम सिक्कों में से कुछ यहाँ मिले जिन पर \"मज्झमिकाय शिबि जनपदस\" अंकित है — 3वीं-2वीं शताब्दी ई.पू.।",
+            "कर्नल जेम्स टॉड ने पहली बार 1820 के दशक में नगरी के अवशेषों को मध्यमिका से पहचाना — यह स्थल मेवाड़ के प्राचीनतम नगरीय इतिहास को केंद्र देता है।",
+            "गुप्त-युगीन भव्य मंदिर और एक वैष्णव प्रांगण खंडहरों के रूप में स्थल पर बचे हैं।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
@@ -305,7 +318,10 @@
         "labelAnchor": [
           74.556,
           24.891
-        ]
+        ],
+        "name_hi": "नगरी (मध्यमिका — शिवि गणराज्य की राजधानी)",
+        "district_hi": "चित्तौड़गढ़",
+        "period_hi": "शिवि जनपद + मौर्योत्तर + गुप्त (5वीं ई.पू. - 6वीं शताब्दी ई.)"
       }
     },
     {
@@ -325,12 +341,11 @@
         "district": "Tonk",
         "period": "Post-Maurya to early Gupta (3rd c. BCE-4th c. CE)",
         "notes": {
-          "facts": [
-            "Second-largest coin-hoard site in ancient India (after Kaushambi) — over 3,000 punch-marked and Yaudheya coins excavated in 1938-39.",
-            "The huge terracotta-mould workshop suggests Rairh was a regional mint town serving the Malava-Yaudheya coin economy.",
-            "Rairh + Nagar (Tonk district) together dominate Rajasthan's numismatic corpus for the immediate post-Maurya centuries."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "प्राचीन भारत में सिक्का-निधि का दूसरा सबसे बड़ा स्थल (कौशाम्बी के बाद) — 1938-39 में 3,000 से अधिक आहत और यौधेय सिक्कों का उत्खनन।",
+            "विशाल टेराकोटा-साँचा कार्यशाला रैढ़ को मालव-यौधेय सिक्का-अर्थव्यवस्था का क्षेत्रीय टकसाल-नगर सिद्ध करती है।",
+            "रैढ़ और नगर (टोंक ज़िला) मौर्योत्तर सदियों के लिए राजस्थान के मुद्रा-संग्रह पर संयुक्त रूप से प्रभुत्व रखते हैं।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
@@ -343,7 +358,10 @@
         "labelAnchor": [
           75.855,
           26.076
-        ]
+        ],
+        "name_hi": "रैढ़ (मौर्योत्तर सिक्का-केंद्र)",
+        "district_hi": "टोंक",
+        "period_hi": "मौर्योत्तर से प्रारंभिक गुप्त (3वीं ई.पू. - 4वीं शताब्दी ई.)"
       }
     },
     {
@@ -363,12 +381,11 @@
         "district": "Hanumangarh",
         "period": "Kushana-Gupta (~1st-4th c. CE)",
         "notes": {
-          "facts": [
-            "On the dried Sarasvati/Ghaggar channel; excavated by Rikke Hanna-Rooijakkers, Swedish mission (1952-54).",
-            "Terracotta plaques of Kushana-Gupta iconography (Krishna Leela, Ramayan scenes) — the state's finest early historical terracotta corpus.",
-            "Along with Kalibangan, evidence of continuous habitation on the Sarasvati/Ghaggar palaeochannel from Harappan through Gupta eras."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "सूखी सरस्वती/घग्घर धारा पर स्थित; रिक्के हन्ना-रूइजाकर, स्वीडिश मिशन (1952-54) द्वारा उत्खनन।",
+            "कुषाण-गुप्त-कालीन (कृष्ण-लीला, रामायण-दृश्य) टेराकोटा फलक — राज्य का सर्वोत्तम प्रारंभिक-ऐतिहासिक टेराकोटा-संग्रह।",
+            "कालीबंगा के साथ, सरस्वती/घग्घर पुरा-वाहिनी पर हड़प्पा से गुप्त काल तक निरंतर आवास का साक्ष्य।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
@@ -381,7 +398,10 @@
         "labelAnchor": [
           74.3,
           29.1
-        ]
+        ],
+        "name_hi": "रंगमहल (कुषाण-गुप्त काल)",
+        "district_hi": "हनुमानगढ़",
+        "period_hi": "कुषाण-गुप्त (~1-4 शताब्दी ई.)"
       }
     },
     {
@@ -401,12 +421,11 @@
         "district": "Sikar (Khetri belt)",
         "period": "Chalcolithic (~2800-1500 BCE)",
         "notes": {
-          "facts": [
-            "Chalcolithic copper-hoard site in the Khetri copper belt — the \"supplier\" for Harappan copper artefacts, per J.P. Joshi's hypothesis.",
-            "Yielded India's largest single Chalcolithic copper-object cache — 400+ pieces (arrows, harpoons, rings, celts).",
-            "Site anchors the Chalcolithic copper economy of the Aravalli's northern edge — the ancestor of modern Khetri's HCL smelter."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "खेतड़ी ताम्र-पेटी में ताम्रयुगीन ताम्र-निधि स्थल — जे.पी. जोशी के अनुमान के अनुसार हड़प्पा की ताम्र-कलाकृतियों का \"आपूर्तिकर्ता\"।",
+            "भारत का सबसे बड़ा ताम्रयुगीन ताम्र-वस्तु ज़ख़ीरा — 400+ टुकड़े (तीर, बंसी, अंगूठियाँ, कुल्हाड़ियाँ)।",
+            "स्थल अरावली के उत्तरी छोर की ताम्रयुगीन ताम्र-अर्थव्यवस्था को केंद्र देता है — आज के खेतड़ी के HCL स्मेल्टर का पूर्वज।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
@@ -419,7 +438,10 @@
         "labelAnchor": [
           75.66,
           27.63
-        ]
+        ],
+        "name_hi": "गणेश्वर (ताम्रयुगीन ताम्र-निधि)",
+        "district_hi": "सीकर (खेतड़ी पेटी)",
+        "period_hi": "ताम्रयुगीन (~2800-1500 ई.पू.)"
       }
     },
     {
@@ -439,12 +461,11 @@
         "district": "Bundi",
         "period": "Prehistoric to Chalcolithic (~7000-1500 BCE)",
         "notes": {
-          "facts": [
-            "Rock-shelter paintings at Garadada, Gopalpura, Chatarkund and Rambali in the Bundi hills — Rajasthan's prime prehistoric-rock-art corpus.",
-            "Depictions include hunting scenes, cattle, elephants and dancing figures; discovered by Om Prakash Sharma in 1997.",
-            "Compared with Bhimbetka, Bundi's pigment survival is remarkable given the Vindhyan limestone substrate."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "बूँदी की पहाड़ियों में गरादड़ा, गोपालपुरा, चतरकुंड और रामबली की शैल-आश्रयों की चित्रकारियाँ — राजस्थान का प्रमुख पूर्व-ऐतिहासिक शैल-कला संग्रह।",
+            "चित्रों में शिकार-दृश्य, मवेशी, हाथी और नर्तक दिखाई देते हैं; 1997 में ओम प्रकाश शर्मा द्वारा खोज।",
+            "भीमबेटका की तुलना में, बूँदी की विंध्यन चूना-पत्थर सतह पर रंगों का बचना उल्लेखनीय है।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
@@ -457,7 +478,10 @@
         "labelAnchor": [
           75.638,
           25.437
-        ]
+        ],
+        "name_hi": "बूँदी शैलचित्र (पूर्व-ऐतिहासिक शैल-कला)",
+        "district_hi": "बूँदी",
+        "period_hi": "पूर्व-ऐतिहासिक से ताम्रयुगीन (~7000-1500 ई.पू.)"
       }
     },
     {
@@ -477,12 +501,11 @@
         "district": "Banswara",
         "period": "Late Colonial (1913) + present-day Memorial (2022)",
         "notes": {
-          "facts": [
-            "Site of the 1913 Mangarh Massacre — 1,500 Bhil tribals killed by British forces during Govind Guru's Samp Sabha meeting.",
-            "Notified as a National Monument (2022) — the National Mangarh Dham Memorial was dedicated by the PM in November 2022.",
-            "A rare \"modern archaeological site\" — its stratigraphy is being formally documented by the ASI since 2023."
-          ],
-          "significance": "high"
+          "facts_hi": [
+            "1913 के मानगढ़ नरसंहार का स्थल — गोविंद गुरु की संप सभा में 1,500 भील अंग्रेज़ी सेनाओं द्वारा मारे गए।",
+            "2022 में राष्ट्रीय स्मारक अधिसूचित — नवंबर 2022 में प्रधानमंत्री द्वारा राष्ट्रीय मानगढ़ धाम स्मारक समर्पित।",
+            "दुर्लभ \"आधुनिक पुरातत्व स्थल\" — 2023 से भारतीय पुरातत्व सर्वेक्षण औपचारिक स्तर-निर्धारण दस्तावेज़ीकरण कर रहा है।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
@@ -495,7 +518,10 @@
         "labelAnchor": [
           74.01,
           23.492
-        ]
+        ],
+        "name_hi": "मानगढ़ पहाड़ी (भील प्रतिरोध का आधुनिक स्मारक)",
+        "district_hi": "बांसवाड़ा",
+        "period_hi": "देर औपनिवेशिक (1913) + वर्तमान स्मारक (2022)"
       }
     }
   ]

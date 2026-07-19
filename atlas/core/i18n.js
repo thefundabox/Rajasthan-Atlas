@@ -121,7 +121,8 @@ const DICT = {
   'Close panel':              'पैनल बंद करें',
   'Select a district or protected area from the map to explore.': 'खोजने के लिए मानचित्र से कोई जिला या संरक्षित क्षेत्र चुनें।',
   'Est.':                     'स्थापित',
-  'Built by':                 'निर्माता',
+  'Built by':                 'निर्माता:',
+  'Built by ':                'निर्माता: ',
   'in':                       'में',
   'div':                      'संभाग',
   'Retained new district':    'रखा गया नया जिला (2023 → 2024)',
@@ -296,6 +297,31 @@ export function tObj(obj, keys) {
   if (getLang() !== 'hi' || !obj) return obj;
   for (const k of keys) if (typeof obj[k] === 'string') obj[k] = t(obj[k]);
   return obj;
+}
+
+/**
+ * Pick the localised value of a feature property. Returns `obj[field + '_hi']`
+ * when the language is Hindi AND that key exists; otherwise `obj[field]`.
+ * Gracefully falls back to English when a Hindi variant hasn't been written
+ * yet for a given feature — so partial coverage is safe.
+ *
+ *   tf(feat.properties, 'name')            // "Pushkar Camel Fair" or "पुष्कर ऊँट मेला"
+ *   tf(feat.properties, 'fortType')        // "Giri Durg" or its Hindi form
+ */
+export function tf(obj, field) {
+  if (!obj) return '';
+  if (getLang() === 'hi' && obj[field + '_hi'] != null) return obj[field + '_hi'];
+  return obj[field];
+}
+
+/**
+ * Return the localised facts[] array for a feature. Looks for
+ * `notes.facts_hi` under Hindi, falls back to `notes.facts`. Always returns
+ * an array (never null) so callers can `.map()` / `.[0]` without guarding.
+ */
+export function tfacts(props) {
+  if (getLang() === 'hi' && Array.isArray(props?.notes?.facts_hi)) return props.notes.facts_hi;
+  return props?.notes?.facts || [];
 }
 
 /* Expose on window for easy debugging + non-module scripts. */
