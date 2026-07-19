@@ -1,11 +1,16 @@
 {
   "type": "FeatureCollection",
   "features": [
-
     {
       "type": "Feature",
       "id": "fm-bijoliya-kisan-andolan",
-      "geometry": { "type": "Point", "coordinates": [75.2833, 25.1833] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2833,
+          25.1833
+        ]
+      },
       "properties": {
         "name": "Bijoliya Kisan Andolan (1897–1941)",
         "type": "freedom_movement",
@@ -16,14 +21,17 @@
         "period": "1897–1941",
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard freedom-struggle historiography",
-        "lastUpdated": "2026-07-12",
+        "lastUpdated": "2026-07-18",
         "icon": "✊",
         "notes": {
           "facts": [
             "India's longest-running organised peasant movement — 44 years against the 84-plus 'lag-bag' cesses levied by the Bijoliya thikana under Mewar.",
             "Sadhu Sitaram Das started the agitation in 1897; Vijay Singh Pathik built it into an all-India cause after 1916, drawing Tilak's and Gandhi's endorsement.",
             "The 1922 Bijoliya Settlement — the first peasant-victory settlement in princely India — reduced 84 taxes to 30 and became a template for later kisan movements.",
-            "The 1941 final resolution ended the last cesses and returned confiscated lands — one of pre-Independence India's few complete peasant victories."
+            "The 1941 final resolution ended the last cesses and returned confiscated lands — one of pre-Independence India's few complete peasant victories.",
+            "The Dhakad caste dominated the movement — the first princely-state peasant struggle led by a single farming caste in India.",
+            "When \"Pratap\" newspaper carried Bijoliya's atrocities in print (c. 1919), the movement became a national cause with Tilak and Gandhi backing it.",
+            "The struggle produced Manikya Lal Verma, later the founder of Mewar Praja Mandal (1938)."
           ]
         }
       }
@@ -31,7 +39,13 @@
     {
       "type": "Feature",
       "id": "fm-begun-kisan-andolan",
-      "geometry": { "type": "Point", "coordinates": [74.4000, 25.0000] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4,
+          25.0
+        ]
+      },
       "properties": {
         "name": "Begun Kisan Andolan (1921–23)",
         "type": "freedom_movement",
@@ -42,13 +56,15 @@
         "period": "1921–1923",
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard freedom-struggle historiography",
-        "lastUpdated": "2026-07-12",
+        "lastUpdated": "2026-07-18",
         "icon": "✊",
         "notes": {
           "facts": [
             "Sister peasant movement to Bijoliya — Begun thikana peasants demanded abolition of the same 'lag-bag' cesses.",
             "Ramnarayan Chaudhary and Vijay Singh Pathik led the agitation; 1923 saw peasants shot at Govind Pura by state forces.",
-            "The 1923 Rajputana Political Officer's inquiry sided with the peasants; this became a rare instance of the British colonial government intervening against a princely jagirdar."
+            "The 1923 Rajputana Political Officer's inquiry sided with the peasants; this became a rare instance of the British colonial government intervening against a princely jagirdar.",
+            "A break-away wing of the Bijoliya movement — Begun's cesses (lag-bag) fell heaviest on Dhakad and Gujar tenants.",
+            "Ramnarayan Chaudhary took over after Vijay Singh Pathik was jailed; the movement continued as a non-violent tenants-' strike."
           ]
         }
       }
@@ -56,7 +72,13 @@
     {
       "type": "Feature",
       "id": "fm-ekki-bhil-tejawat",
-      "geometry": { "type": "Point", "coordinates": [73.5000, 24.1000] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5,
+          24.1
+        ]
+      },
       "properties": {
         "name": "Ekki (Bhil) Movement (1921–22)",
         "type": "freedom_movement",
@@ -67,13 +89,16 @@
         "period": "1921–1922",
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard freedom-struggle historiography",
-        "lastUpdated": "2026-07-12",
+        "lastUpdated": "2026-07-18",
         "icon": "✊",
         "notes": {
           "facts": [
             "Motilal Tejawat's tribal-solidarity movement across Mewar-Vagad-Sirohi Bhils — 'ekki' = 'unity' — against forced labour and thikana cesses.",
             "The 7 March 1922 Neemuchana-style massacre at Pal-Chitariya (Sirohi) — Mewar Bhil Corps killed ~1,200 Bhil protestors — is Rajasthan's Jallianwala Bagh.",
-            "Tejawat's khadi-clad tribal army carried tricolour flags 5 years before the AICC officially adopted it as a national symbol."
+            "Tejawat's khadi-clad tribal army carried tricolour flags 5 years before the AICC officially adopted it as a national symbol.",
+            "Ran under Motilal Tejavat, an Oswal from Udaipur — the first non-tribal to organise Bhils on caste-blind demands.",
+            "At Nimda village (Vijayanagar state), March 1922, the combined armies of Mewar-Sirohi-Idar-Vijayanagar opened fire on the Bhil conference — an estimated 1,200 killed.",
+            "Tejavat went underground for eight years; surrendered in 1929 on Gandhi's advice."
           ]
         }
       }
@@ -81,7 +106,13 @@
     {
       "type": "Feature",
       "id": "fm-neemuchana-massacre",
-      "geometry": { "type": "Point", "coordinates": [76.5000, 27.5000] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5,
+          27.5
+        ]
+      },
       "properties": {
         "name": "Neemuchana Massacre (14 May 1925)",
         "type": "freedom_movement",
@@ -92,13 +123,16 @@
         "period": "1925",
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard freedom-struggle historiography",
-        "lastUpdated": "2026-07-12",
+        "lastUpdated": "2026-07-18",
         "icon": "✊",
         "notes": {
           "facts": [
             "Alwar state forces opened fire on a peasant assembly at Neemuchana on 14 May 1925 — killed ~200 peasants protesting land-revenue hikes.",
             "Called 'Alwar's Jallianwala Bagh' — Mahatma Gandhi condemned the killings in Young India (June 1925) as a 'crime of tyranny'.",
-            "The massacre triggered the formation of the Alwar Rajya Praja Mandal (1938) and long-term pressure on Alwar Maharaja Jai Singh."
+            "The massacre triggered the formation of the Alwar Rajya Praja Mandal (1938) and long-term pressure on Alwar Maharaja Jai Singh.",
+            "Alwar peasants had refused a new 40 % land-revenue hike; 500-600 gathered at Neemuchana on 14 May 1925.",
+            "Colonel Ramsay's troops opened fire — 156 killed, 600 wounded — often called the \"Jallianwala Bagh of Rajputana\".",
+            "Gandhi wrote in Young India that \"the Alwar state carnage matches Punjab in cruelty\"."
           ]
         }
       }
@@ -106,7 +140,13 @@
     {
       "type": "Feature",
       "id": "fm-sikar-kisan-andolan",
-      "geometry": { "type": "Point", "coordinates": [75.1414, 27.6094] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1414,
+          27.6094
+        ]
+      },
       "properties": {
         "name": "Sikar Kisan Andolan / Shekhawati (1922–34)",
         "type": "freedom_movement",
@@ -117,22 +157,29 @@
         "period": "1922–1934",
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard freedom-struggle historiography",
-        "lastUpdated": "2026-07-12",
+        "lastUpdated": "2026-07-18",
         "icon": "✊",
         "notes": {
           "facts": [
             "Shekhawati's Jat peasant movement against Rajput jagirdars — one of pre-Independence India's largest caste-and-class agitations.",
             "Chaudhary Ghasiram Verma organised the peasants; the 1934 Kumbharam Arya settlement won revenue reforms across the Shekhawati thikanas.",
-            "Formative movement — many Shekhawati political leaders (including future PM Chaudhary Charan Singh's mentor circle) trained in this agitation."
+            "Formative movement — many Shekhawati political leaders (including future PM Chaudhary Charan Singh's mentor circle) trained in this agitation.",
+            "Shekhawati Jat peasants organised against the Rao Raja of Sikar (a Thikana under Jaipur); leader Chetram Jat, later Pt. Tara Kesh.",
+            "Ran alongside the Kisan Sabha of Sardar Harlal Singh — culminated in the abolition of Jagir cesses after 1947."
           ]
         }
       }
     },
-
     {
       "type": "Feature",
       "id": "pm-mewar-praja-mandal",
-      "geometry": { "type": "Point", "coordinates": [73.6822, 24.5760] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6822,
+          24.576
+        ]
+      },
       "properties": {
         "name": "Mewar Praja Mandal (Udaipur, 24 April 1938)",
         "type": "praja_mandal",
@@ -142,13 +189,16 @@
         "leaders": "Manikya Lal Verma, Balwant Singh Mehta, Bhurelal Baya",
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
-        "lastUpdated": "2026-07-12",
+        "lastUpdated": "2026-07-18",
         "icon": "🕊",
         "notes": {
           "facts": [
             "Founded 24 April 1938 by Manikya Lal Verma at Udaipur — Mewar's principal Congress-aligned platform for civil-liberties and responsible-government demands.",
             "Verma spent nearly a decade in Mewar prisons for organising it; his letters from jail became foundational anti-monarchic literature.",
-            "Merged into the Indian National Congress in 1948 when Mewar joined the United State of Rajasthan (Integration Phase 3)."
+            "Merged into the Indian National Congress in 1948 when Mewar joined the United State of Rajasthan (Integration Phase 3).",
+            "Founded by Manikya Lal Verma, a graduate of the Bijoliya movement — its aim was responsible government, not just tax relief.",
+            "Nathdwara, Bhilwara and Chittorgarh were the movement's second-tier centres during the Quit India struggle.",
+            "The Maharana banned the organisation immediately after its formation; workers went underground and re-surfaced in 1942."
           ]
         }
       }
@@ -156,7 +206,13 @@
     {
       "type": "Feature",
       "id": "pm-marwar-praja-mandal",
-      "geometry": { "type": "Point", "coordinates": [73.0243, 26.2389] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0243,
+          26.2389
+        ]
+      },
       "properties": {
         "name": "Marwar Praja Mandal (Jodhpur, 16 May 1938)",
         "type": "praja_mandal",
@@ -166,13 +222,16 @@
         "leaders": "Jai Narayan Vyas, Ranchhod Das Gattani, Bhanwar Lal Sarraf",
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
-        "lastUpdated": "2026-07-12",
+        "lastUpdated": "2026-07-18",
         "icon": "🕊",
         "notes": {
           "facts": [
             "Founded 16 May 1938 at Jodhpur by Jai Narayan Vyas — Marwar's biggest civil-disobedience platform against the Rathore autocracy.",
             "Jai Narayan Vyas served two long jail terms; became Rajasthan's third Chief Minister (1951-52 and 1952-54).",
-            "The 1942 Marwar Lok Parishad session at Jodhpur — 30,000 attendees — was the largest political rally in a princely state during Quit India."
+            "The 1942 Marwar Lok Parishad session at Jodhpur — 30,000 attendees — was the largest political rally in a princely state during Quit India.",
+            "Founded 16 May 1938 in Jodhpur under Jainarayan Vyas, with Bhanwarlal Sarraf and Prayagram Bhandari as merchant patrons.",
+            "The 1942 movement here produced its own martyr — Balmukund Bissa, who died on hunger-strike in Jodhpur jail.",
+            "About 400 Marwaris went to jail during Quit India — the largest turnout from any princely state."
           ]
         }
       }
@@ -180,7 +239,13 @@
     {
       "type": "Feature",
       "id": "pm-jaipur-praja-mandal",
-      "geometry": { "type": "Point", "coordinates": [75.7873, 26.9124] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7873,
+          26.9124
+        ]
+      },
       "properties": {
         "name": "Jaipur Rajya Praja Mandal (1936)",
         "type": "praja_mandal",
@@ -190,13 +255,16 @@
         "leaders": "Kapoor Chand Patni, Jamnalal Bajaj, Hiralal Shastri, Chiranji Lal Mishra",
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
-        "lastUpdated": "2026-07-12",
+        "lastUpdated": "2026-07-18",
         "icon": "🕊",
         "notes": {
           "facts": [
             "Founded 1936 by Kapoor Chand Patni and Jamnalal Bajaj — the earliest Praja Mandal in the big Rajputana states.",
             "Hiralal Shastri became its most influential leader — he was Rajasthan's first Chief Minister (April-Dec 1949) after Integration.",
-            "Coordinated with Jaipur's textile-mill workers' union — one of few Praja Mandals with a strong industrial-worker base."
+            "Coordinated with Jaipur's textile-mill workers' union — one of few Praja Mandals with a strong industrial-worker base.",
+            "Established 1936 under Jamnalal Bajaj; later led by Pt. Hiralal Shastri who negotiated a \"responsible-government\" settlement with PM Mirza Ismail.",
+            "The Quit India split — Baba Harishchand set up the parallel \"Azad Morcha\" (1942) when Shastri refused to launch the movement.",
+            "Post-integration (1949), Shastri became Rajasthan's first Chief Minister."
           ]
         }
       }
@@ -204,7 +272,13 @@
     {
       "type": "Feature",
       "id": "pm-bikaner-praja-mandal",
-      "geometry": { "type": "Point", "coordinates": [73.3119, 28.0229] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3119,
+          28.0229
+        ]
+      },
       "properties": {
         "name": "Bikaner Rajya Praja Mandal (1936, Kolkata)",
         "type": "praja_mandal",
@@ -214,13 +288,16 @@
         "leaders": "Magha Ram Vaidya, Lakshman Das Swami, Raghuvardayal Goyal",
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
-        "lastUpdated": "2026-07-12",
+        "lastUpdated": "2026-07-18",
         "icon": "🕊",
         "notes": {
           "facts": [
             "Unusually, founded outside its own state — 22 July 1936 in Kolkata, because Ganga Singh's Bikaner state had banned political organising.",
             "Magha Ram Vaidya smuggled Praja Mandal literature into Bikaner via the Bikaner-Kolkata railway route.",
-            "Legalised inside Bikaner only in 1942 when Maharaja Sadul Singh relaxed the ban."
+            "Legalised inside Bikaner only in 1942 when Maharaja Sadul Singh relaxed the ban.",
+            "Founded outside the state (Kolkata, 1936) — Ganga Singh's Bikaner exiled its leader Raghuvar Dayal Goyal from the moment the Mandal formed.",
+            "Nemichand Aanchaliya was sentenced to 7 years rigorous imprisonment for a critical article — the harshest single sentence during Quit India in Rajasthan.",
+            "Flag Satyagraha (hoisting the tricolour) was the Mandal's signature tactic; the Bikaner darbar treated it as sedition."
           ]
         }
       }
@@ -228,7 +305,13 @@
     {
       "type": "Feature",
       "id": "pm-alwar-praja-mandal",
-      "geometry": { "type": "Point", "coordinates": [76.6346, 27.5530] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6346,
+          27.553
+        ]
+      },
       "properties": {
         "name": "Alwar Rajya Praja Mandal (1938)",
         "type": "praja_mandal",
@@ -238,13 +321,15 @@
         "leaders": "Kunwar Madho Singh, Harinarayan Sharma",
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
-        "lastUpdated": "2026-07-12",
+        "lastUpdated": "2026-07-18",
         "icon": "🕊",
         "notes": {
           "facts": [
             "Founded 1938 by Kunwar Madho Singh — the direct political response to the 1925 Neemuchana Massacre and the state's authoritarian regime.",
             "Merged Alwar into the Matsya Union (Integration Phase 1) on 18 March 1948; Kunwar Madho Singh joined the Matsya Union cabinet.",
-            "Its 1946 satyagraha at Alwar Bala Qila secured the reinstatement of exiled Praja Mandal leaders — a pre-Integration political victory."
+            "Its 1946 satyagraha at Alwar Bala Qila secured the reinstatement of exiled Praja Mandal leaders — a pre-Integration political victory.",
+            "Formed after Maharaja Jai Singh — an early progressive who banned child marriage in 1903 — was himself exiled by the British.",
+            "Diwan Faizullah Khan's sympathy with 1857 rebels foreshadowed the state's later constitutional agitation."
           ]
         }
       }
@@ -252,7 +337,13 @@
     {
       "type": "Feature",
       "id": "pm-kota-praja-mandal",
-      "geometry": { "type": "Point", "coordinates": [75.8648, 25.2138] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8648,
+          25.2138
+        ]
+      },
       "properties": {
         "name": "Kota Rajya Praja Mandal (1939)",
         "type": "praja_mandal",
@@ -262,13 +353,15 @@
         "leaders": "Nayanuram Sharma, Abhinn Hari",
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
-        "lastUpdated": "2026-07-12",
+        "lastUpdated": "2026-07-18",
         "icon": "🕊",
         "notes": {
           "facts": [
             "Founded 1939 in Kota by Nayanuram Sharma — the Hadoti belt's principal civil-liberties platform.",
             "Coordinated with the Bundi and Jhalawar branches to form the Hadoti States People's Federation.",
-            "Merged with the USR-Congress on 25 March 1948 (Integration Phase 2) when Kota joined the United State of Rajasthan."
+            "Merged with the USR-Congress on 25 March 1948 (Integration Phase 2) when Kota joined the United State of Rajasthan.",
+            "Founded 1939 by Pt. Nayanuram Sharma and Pt. Abhinn Hari; its first session at Mangrol (Baran) chose responsible government as the goal.",
+            "Quit India high point: Kota students locked the state police in barracks and hoisted the tricolour on Rampura Kotwali (14-16 Aug 1942) for two weeks."
           ]
         }
       }
@@ -276,7 +369,13 @@
     {
       "type": "Feature",
       "id": "pm-bharatpur-praja-mandal",
-      "geometry": { "type": "Point", "coordinates": [77.4940, 27.2160] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.494,
+          27.216
+        ]
+      },
       "properties": {
         "name": "Bharatpur Rajya Praja Mandal (1938)",
         "type": "praja_mandal",
@@ -286,17 +385,623 @@
         "leaders": "Kishan Lal Joshi, Gopilal Yadav, Master Adityendra",
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + Rajasthan freedom-struggle records",
-        "lastUpdated": "2026-07-12",
+        "lastUpdated": "2026-07-18",
         "icon": "🕊",
         "notes": {
           "facts": [
             "Founded 1938 in Bharatpur — the Matsya region's largest civil-liberties movement outside Alwar.",
             "Kishan Lal Joshi coordinated with the Jat-community Kisan movements and the Delhi-facing satyagraha network.",
-            "Bharatpur joined the Matsya Union on 18 March 1948 (Integration Phase 1) with the Praja Mandal leadership integrated into the Union cabinet."
+            "Bharatpur joined the Matsya Union on 18 March 1948 (Integration Phase 1) with the Praja Mandal leadership integrated into the Union cabinet.",
+            "Grew out of the Hindi Sahitya Samiti (1912) — the first Praja Mandal in Rajasthan with a clear literary-cultural base.",
+            "Maharaja Kishan Singh was forced by the British to leave the throne for his progressive stance — his successor banned meetings and even possession of national leaders' pictures.",
+            "The 1942 movement here ended in the state's promise of an elected-majority assembly after floods forced a pause and negotiations."
           ]
         }
       }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-govind-guru-samp-sabha",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.01,
+          23.492
+        ]
+      },
+      "properties": {
+        "name": "Samp Sabha & Mangarh Massacre (1913)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Banswara / Kadana Gujarat",
+        "movementType": "Tribal awakening",
+        "leaders": "Govind Guru (1858-1931)",
+        "period": "1905-1929 (Mangarh massacre 17 Nov 1913)",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          74.01,
+          23.492
+        ],
+        "labelAnchor": [
+          74.01,
+          23.492
+        ],
+        "notes": {
+          "facts": [
+            "Govind Guru founded Samp Sabha in 1905 to reform Bhil society — end drinking, forced labour and cesses; educate the young; settle disputes in tribal panchayats.",
+            "The annual Ashwin Purnima gathering at Mangarh Hill (Rajasthan-Gujarat border) grew into a mass movement of Bhil-Garasia farmers.",
+            "On 17 Nov 1913 the British-Mewar-Vagad forces surrounded the hill and opened fire — an estimated 1,500 tribals were killed; Govind Guru got the death sentence, commuted to 20 years, released after 10.",
+            "The site is India's only tribal-massacre memorial anchored to a hilltop; the National Mangarh Dham Memorial was formally dedicated by the PM in Nov 2022."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-motilal-tejawat-eki",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.688,
+          24.577
+        ]
+      },
+      "properties": {
+        "name": "Motilal Tejavat — Bhil Ekki Movement (1921-29)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Udaipur, Sirohi, Dungarpur, Idar",
+        "movementType": "Tribal awakening",
+        "leaders": "Motilal Tejavat (1888-1963)",
+        "period": "1921-1929",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          73.688,
+          24.577
+        ],
+        "labelAnchor": [
+          73.688,
+          24.577
+        ],
+        "notes": {
+          "facts": [
+            "Tejavat, an Oswal from Udaipur, resigned Thikana service in 1921 and organised Bhils against forced labour (baith-begar) and Jagirdar cesses (lag-bag).",
+            "Nimda (Vijayanagar state) massacre, Mar 1922 — armies of Mewar, Sirohi, Idar and Vijayanagar surrounded a Bhil conference and opened fire, killing about 1,200.",
+            "Tejavat went underground for 8 years; surrendered at Idar in 1929 on Gandhi's advice; released 1936.",
+            "The Ekki movement produced the second wave of tribal awakening in Rajasthan after Govind Guru's Samp Sabha."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-sagarmal-gopa-jaisalmer",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.914,
+          26.914
+        ]
+      },
+      "properties": {
+        "name": "Sagarmal Gopa — Jaisalmer Gundaraj (1946)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Jaisalmer",
+        "movementType": "Prajamandal martyrdom",
+        "leaders": "Sagarmal Gopa",
+        "period": "1940-1946",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          70.914,
+          26.914
+        ],
+        "labelAnchor": [
+          70.914,
+          26.914
+        ],
+        "notes": {
+          "facts": [
+            "Sagarmal Gopa printed \"Jaisalmer Mein Gundaraj\" (1940) exposing Maharawal Jawahar Singh's misrule — was exiled immediately.",
+            "On his return in 1941 for his father's funeral, arrested and given 6 years rigorous imprisonment for sedition; Thanedar Guman Singh reportedly tortured him.",
+            "On 3 April 1946 Gopa was burned alive by pouring kerosene on him inside the jail — died 4 April; the news spread nationally with Nehru and Jainarayan Vyas condemning it.",
+            "Rajasthan's most enduring symbol of Prajamandal-era judicial murder; Gopa Jayanti is observed 3 April in Jaisalmer every year."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-balmukund-bissa-jodhpur",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.023,
+          26.284
+        ]
+      },
+      "properties": {
+        "name": "Balmukund Bissa — Jodhpur Prajamandal Martyr (1942)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Jodhpur (native: Pilwa, Didwana-Kuchaman)",
+        "movementType": "Prajamandal martyrdom",
+        "leaders": "Balmukund Bissa",
+        "period": "1942",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          73.023,
+          26.284
+        ],
+        "labelAnchor": [
+          73.023,
+          26.284
+        ],
+        "notes": {
+          "facts": [
+            "A Marwari from Pilwa (Didwana) who opened Jawahar Khadi Bhandar in Jodhpur (1934); made it the nerve-centre of Marwar Praja Mandal activity.",
+            "Arrested during the Quit India movement (1942); died in Jodhpur jail after a prolonged hunger-strike and reported torture — the first Praja Mandal hunger-strike martyr in Rajasthan.",
+            "His martyrdom galvanised the ~400 Marwaris who filled Jodhpur jails during Quit India — the largest turnout from any princely state."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-kesari-singh-barhath",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.94,
+          25.623
+        ]
+      },
+      "properties": {
+        "name": "Barhath Revolutionary Family — Shahpura",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Bhilwara (Shahpura)",
+        "movementType": "Revolutionary underground",
+        "leaders": "Kesari Singh Barhath (1872-1941), Pratap Singh Barhath, Zoravar Singh Barhath",
+        "period": "1903-1941",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          74.94,
+          25.623
+        ],
+        "labelAnchor": [
+          74.94,
+          25.623
+        ],
+        "notes": {
+          "facts": [
+            "Progenitor family of Rajasthan's revolutionary underground; the three-generation Charan household of Shahpura sent all its men to jail.",
+            "Kesari Singh's \"Chetavani Ka Chungatya\" verses (1903) persuaded Mewar Maharana Fateh Singh not to attend the Delhi Durbar.",
+            "Pratap Singh was tortured to death in Bareilly Jail (May 1918) after a mahant-murder charge to raise revolutionary funds.",
+            "Kesari Singh got 20 years in Hazaribagh, released after 16; Zoravar Singh was involved in the 1912 Delhi bomb attempt on Viceroy Hardinge."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-arjun-lal-sethi-vardhman",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.823,
+          26.923
+        ]
+      },
+      "properties": {
+        "name": "Arjun Lal Sethi — Vardhman Pathshala, Jaipur",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Jaipur",
+        "movementType": "Revolutionary school",
+        "leaders": "Arjun Lal Sethi (1880-1941)",
+        "period": "1907-1912 (school active)",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          75.823,
+          26.923
+        ],
+        "labelAnchor": [
+          75.823,
+          26.923
+        ],
+        "notes": {
+          "facts": [
+            "Sethi resigned Chomu Thikana service to found Vardhman Pathshala (Jaipur, 1907) — a Jain seminary that doubled as a revolutionary nursery.",
+            "Pupils included Pratap Singh Barhath (Shahpura), Vishnudutt Bhargava and Motichand — the core of the 1912 Delhi-Hardinge conspiracy.",
+            "Arrested 1914 on a false mahant-murder charge; released 1920 after 6 years and turned to Gandhian methods."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-rao-gopal-singh-kharwa",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.309,
+          26.151
+        ]
+      },
+      "properties": {
+        "name": "Rao Gopal Singh — Kharwa Armed Revolution (1915)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Ajmer (Kharwa Thikana, Beawar area)",
+        "movementType": "Revolutionary underground",
+        "leaders": "Rao Gopal Singh (1872-1956)",
+        "period": "21 February 1915 (planned)",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          74.309,
+          26.151
+        ],
+        "labelAnchor": [
+          74.309,
+          26.151
+        ],
+        "notes": {
+          "facts": [
+            "Kharwa Thikanedar Rao Gopal Singh, in contact with Rash Behari Bose, planned an armed Rajasthan-wide rising on 21 Feb 1915 — one of the Ghadar-linked conspiracies.",
+            "The plan was betrayed; Rao Gopal put under house-arrest at Tadgarh, escaped, was re-arrested and jailed at Ajmer till 1920.",
+            "Kesari Singh Barhath wrote: \"As Punjab is proud of Lala Lajpat Rai, Rajasthan is proud of Rao Gopal Singh Kharwa.\""
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-kalibai-rastapal-dungarpur",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.72,
+          23.81
+        ]
+      },
+      "properties": {
+        "name": "Kalibai Bhil — Rastapal Martyrdom (19 Jun 1947)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Dungarpur",
+        "movementType": "Tribal martyrdom",
+        "leaders": "Kalibai (schoolgirl)",
+        "period": "19 June 1947",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          73.72,
+          23.81
+        ],
+        "labelAnchor": [
+          73.72,
+          23.81
+        ],
+        "notes": {
+          "facts": [
+            "A Bhil schoolgirl of Rastapal village in Dungarpur, martyred on 19 June 1947 while shielding her teacher Sengabhai from state police fire.",
+            "The Rastapal Satyagraha was part of the Bhogilal Pandya-led Dungarpur Praja Mandal campaign; her sacrifice became the movement's emotional pivot.",
+            "Kalibai Balika Cycle Yojana (2007) — Rajasthan's free-cycle scheme for tribal girls — is named after her."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-swami-dayanand-ajmer",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.634,
+          26.449
+        ]
+      },
+      "properties": {
+        "name": "Swami Dayanand & Arya Samaj — Ajmer",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Ajmer",
+        "movementType": "Social-religious reform",
+        "leaders": "Swami Dayanand Saraswati (1824-1883)",
+        "period": "1865, 1881-83",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          74.634,
+          26.449
+        ],
+        "labelAnchor": [
+          74.634,
+          26.449
+        ],
+        "notes": {
+          "facts": [
+            "Swami Dayanand founded the Arya Samaj at Ajmer; the head office and his samadhi (Rishi Udyan) are here.",
+            "His 2nd Rajasthan visit (1881-83) took him to Bharatpur, Jaipur, Chittor, Udaipur (where he wrote the Satyarth Prakash preface) and Jodhpur; died at Ajmer 30 Oct 1883 — believed poisoned by the courtesan Nanhijan of Jodhpur.",
+            "Arya Samaj's Rajasthan wing produced Master Adityendra, Chandkaran & Harbilas Sarda and the Nagari Pracharini Sabha of Beawar — the intellectual backbone of the Praja Mandal era."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-rajputana-madhya-bharat-sabha",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.634,
+          26.454
+        ]
+      },
+      "properties": {
+        "name": "Rajputana Madhya Bharat Sabha, Ajmer (1919-20)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Ajmer",
+        "movementType": "Political organisation",
+        "leaders": "Jamnalal Bajaj (chair); Vijay Singh Pathik, Arjun Lal Sethi, Kesari Singh Barhath, Rao Gopal Singh",
+        "period": "1919 (formed) — early 1920s",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          74.634,
+          26.454
+        ],
+        "labelAnchor": [
+          74.634,
+          26.454
+        ],
+        "notes": {
+          "facts": [
+            "First all-Rajputana political forum; brought Rajasthan's revolutionaries and Gandhians onto a single platform under Jamnalal Bajaj.",
+            "Its 1920 session at Ajmer coincided with the arrival of the Rajasthan Seva Sangh (from Wardha) — the mainspring of Prajamandal-era organising.",
+            "The Prince of Wales boycott at Ajmer (28 Nov 1921) — Rajasthan's first mass non-cooperation event — emerged from this network."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-bhagat-movement-vagad",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.02,
+          23.5
+        ]
+      },
+      "properties": {
+        "name": "Bhagat Movement (Vagad, 1921-29)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Banswara, Dungarpur (Vagad region)",
+        "movementType": "Tribal reform + resistance",
+        "leaders": "Govind Guru",
+        "period": "1921-1929 (post-Mangarh phase)",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          74.02,
+          23.5
+        ],
+        "labelAnchor": [
+          74.02,
+          23.5
+        ],
+        "notes": {
+          "facts": [
+            "Govind Guru's Bhil uplift work after his release from jail — organised the \"Bhagat\" (devout) sub-community across Banswara-Dungarpur.",
+            "Non-violent programme: end drinking and animal sacrifice, girl schooling, Vaishnava vegetarianism; a white-flag emblem borrowed from Kabir-panthi tradition.",
+            "Bhogilal Pandya's \"Vagad Seva Mandir\" (1930s Dungarpur) grew directly out of this movement."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-seth-damodardas-beawar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.324,
+          26.098
+        ]
+      },
+      "properties": {
+        "name": "Seth Damodardas Rathi — Beawar (1910s-1920s)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Ajmer (Beawar)",
+        "movementType": "Merchant-industrialist patronage",
+        "leaders": "Seth Damodardas Rathi",
+        "period": "1914-1925",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          74.324,
+          26.098
+        ],
+        "labelAnchor": [
+          74.324,
+          26.098
+        ],
+        "notes": {
+          "facts": [
+            "Rathi ran his Krishna Mill accounts entirely in Hindi from 1914 — a Swadeshi-Nagari precedent later cited across northern India.",
+            "Founded Nagari Pracharini Sabha, Beawar; petitioned the British Commissioner to switch Ajmer-Merwara court records to Nagari.",
+            "Financed the underground work of Vijay Singh Pathik, Kesari Singh Barhath, Rao Gopal Singh and Arjun Lal Sethi — the five who steered Rajasthan's revolutionary phase."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-shekhawati-peasant",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.14,
+          27.61
+        ]
+      },
+      "properties": {
+        "name": "Shekhawati Peasant Movement (1922-34)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Sikar, Jhunjhunu, Churu",
+        "movementType": "Peasant movement",
+        "leaders": "Sardar Harlal Singh, Chetram Jat, Pt. Tara Kesh",
+        "period": "1922-1934 (main phase); revived 1946-47",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          75.14,
+          27.61
+        ],
+        "labelAnchor": [
+          75.14,
+          27.61
+        ],
+        "notes": {
+          "facts": [
+            "Jat-caste peasant struggle against Rao Raja Kalyan Singh of Sikar and other Shekhawati Thikanas; the Jaipur Prime Minister Mirza Ismail sent troops.",
+            "Kudan (Sikar) firing 25 Apr 1935: 4 killed, 250 injured — the Shekhawati equivalent of Neemuchana.",
+            "Produced women leaders — Kishori Devi and Utma Devi organised satyagrahis; the movement was joined by the Meo peasant movement in Alwar-Bharatpur."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-rastapal-satyagraha",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.72,
+          23.81
+        ]
+      },
+      "properties": {
+        "name": "Rastapal Satyagraha, Dungarpur (1947)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Dungarpur",
+        "movementType": "Prajamandal satyagraha",
+        "leaders": "Bhogilal Pandya, Sengabhai (teacher), Shobhalal Gupta",
+        "period": "May-July 1947",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          73.72,
+          23.81
+        ],
+        "labelAnchor": [
+          73.72,
+          23.81
+        ],
+        "notes": {
+          "facts": [
+            "School-opening satyagraha in Bhil villages of Dungarpur under Bhogilal Pandya; the police fired on a school procession at Rastapal on 19 Jun 1947.",
+            "Kalibai Bhil died shielding her teacher Sengabhai — the day is observed as Kalibai Martyrs' Day.",
+            "One of the last Praja Mandal actions before Independence and Rajasthan's integration."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fm-quit-india-kota-rampura",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.833,
+          25.18
+        ]
+      },
+      "properties": {
+        "name": "Quit India — Rampura Kotwali, Kota (14-16 Aug 1942)",
+        "type": "freedom_movement",
+        "category": "custom",
+        "district": "Kota",
+        "movementType": "Quit India",
+        "leaders": "Nathulal Jain, Kota students",
+        "period": "14-16 August 1942",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 1 (Public Awakening & Freedom Struggle) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "✊",
+        "centroid": [
+          75.833,
+          25.18
+        ],
+        "labelAnchor": [
+          75.833,
+          25.18
+        ],
+        "notes": {
+          "facts": [
+            "Kota students locked the state police in barracks, took over Rampura Kotwali and hoisted the tricolour on 14 August 1942.",
+            "The public administered the city for about two weeks until the Maharao promised no reprisals; arrested workers were released.",
+            "Rajasthan's longest civilian control during Quit India — 14-16 days of citizen rule."
+          ],
+          "significance": "high"
+        }
+      }
     }
-
   ]
 }

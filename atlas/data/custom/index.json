@@ -119,6 +119,19 @@
       "featureType": "palace"
     },
     {
+      "id":       "temples",
+      "name":     "Historic Temples",
+      "type":     "point",
+      "data":     "atlas/data/custom/temples.geojson",
+      "category": "human",
+      "icon":     "🛕",
+      "color":    "#c05a2a",
+      "zIndex":   41,
+      "visible":  false,
+      "searchable": true,
+      "featureType": "temple"
+    },
+    {
       "id":       "havelis",
       "name":     "Historic Havelis",
       "type":     "point",

@@ -1,0 +1,486 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "eklingji-udaipur",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.723,
+          24.653
+        ]
+      },
+      "properties": {
+        "name": "Eklingji Temple (Kailashpuri)",
+        "type": "temple",
+        "category": "custom",
+        "district": "Udaipur",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 (Architecture, Sculpture, Painting Styles) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "🛕",
+        "centroid": [
+          73.723,
+          24.653
+        ],
+        "labelAnchor": [
+          73.723,
+          24.653
+        ],
+        "notes": {
+          "facts": [
+            "Built by Guhil king Bappa Rawal in the 8th century; the four-faced black-stone Eklingji is the kul-devta of the Mewar Sisodia dynasty — the Maharana rules as his diwan.",
+            "Present form given by Maharana Raimal; complex houses a Vishnu temple built by Rana Kumbha popularly known as Meera Bai's temple.",
+            "Annual Shivratri fair is Mewar's single largest religious gathering."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kiradu-temples",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.4,
+          25.923
+        ]
+      },
+      "properties": {
+        "name": "Kiradu Temples (\"Khajuraho of Rajasthan\")",
+        "type": "temple",
+        "category": "custom",
+        "district": "Barmer",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 (Architecture, Sculpture, Painting Styles) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "🛕",
+        "centroid": [
+          71.4,
+          25.923
+        ],
+        "labelAnchor": [
+          71.4,
+          25.923
+        ],
+        "notes": {
+          "facts": [
+            "Group of 11th-12th century temples near Hathma village, Barmer — the Someshwar temple is the finest for sculpture.",
+            "Erotic (kamashastra) panels alongside veer-ras, shringar-ras and dance panels — earned Kiradu the \"Khajuraho of Rajasthan\" epithet.",
+            "The complex was abandoned after Muslim raids in the 12th century — local folklore attributes the desertion to a saint's curse."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jagdish-temple-udaipur",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.685,
+          24.582
+        ]
+      },
+      "properties": {
+        "name": "Jagdish Temple, Udaipur",
+        "type": "temple",
+        "category": "custom",
+        "district": "Udaipur",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 (Architecture, Sculpture, Painting Styles) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "🛕",
+        "centroid": [
+          73.685,
+          24.582
+        ],
+        "labelAnchor": [
+          73.685,
+          24.582
+        ],
+        "notes": {
+          "facts": [
+            "Built 1651 by Maharana Jagat Singh — Panchayatan style with Shiva-Parvati, Ganapati, Surya and Devi at four corners around Vishnu's central shrine.",
+            "Five-foot black-stone idol of Lord Jagdish (Vishnu) with a huge Garuda in front — praised by Colonel Tod, G.H. Ojha and Kaviraj Shyamaldas for its sculpture.",
+            "On a high plinth, its shikhara is visible across old Udaipur."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ranakpur-jain-temple",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.474,
+          25.117
+        ]
+      },
+      "properties": {
+        "name": "Ranakpur Jain Temple",
+        "type": "temple",
+        "category": "custom",
+        "district": "Pali",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 (Architecture, Sculpture, Painting Styles) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "🛕",
+        "centroid": [
+          73.474,
+          25.117
+        ],
+        "labelAnchor": [
+          73.474,
+          25.117
+        ],
+        "notes": {
+          "facts": [
+            "Built 1433-68 under Rana Kumbha by Jain merchant Dharanshah; the architect Depak's design uses 1,444 carved marble pillars — none alike.",
+            "Dedicated to Adinath (first Jain Tirthankara); the sanctum has a chaumukha (four-faced) idol, hence its alt name \"Chaumukha Temple\".",
+            "Nicknamed the \"Museum of Pillars\"; among the largest Jain temple complexes anywhere."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "delwara-jain-temples",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.716,
+          24.61
+        ]
+      },
+      "properties": {
+        "name": "Dilwara Jain Temples",
+        "type": "temple",
+        "category": "custom",
+        "district": "Sirohi (Mt Abu)",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 (Architecture, Sculpture, Painting Styles) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "🛕",
+        "centroid": [
+          72.716,
+          24.61
+        ],
+        "labelAnchor": [
+          72.716,
+          24.61
+        ],
+        "notes": {
+          "facts": [
+            "Two principal temples: Vimal Vasahi (1031, by Vimal Shah, Rishabhdev) and Luna Vasahi (1230, by Vastupal-Tejpal, Neminath).",
+            "Regarded the finest example of Rajput-era marble carving anywhere in India — pavilions, pillars, umbrellas and altars all carved in a single medium.",
+            "Chalukya-era craft — carried into Rajasthan by Gujarat-based merchant patrons via Sirohi."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sun-temple-jhalrapatan",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.164,
+          24.596
+        ]
+      },
+      "properties": {
+        "name": "Sun Temple, Jhalrapatan",
+        "type": "temple",
+        "category": "custom",
+        "district": "Jhalawar",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 (Architecture, Sculpture, Painting Styles) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "🛕",
+        "centroid": [
+          76.164,
+          24.596
+        ],
+        "labelAnchor": [
+          76.164,
+          24.596
+        ],
+        "notes": {
+          "facts": [
+            "10th-century temple in the middle of Jhalrapatan — combined Sun-Vishnu idol in the sanctum, Shiva-Tandava panels outside.",
+            "One of Rajasthan's three surviving classical Sun temples (with Osian and Ranakpur's Suriyanarayan shrine).",
+            "The three-faced Sun idol shows Vaishnava-Saura syncretism typical of the Vindhyan-plateau temples."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bhand-devara-baran",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.671,
+          24.783
+        ]
+      },
+      "properties": {
+        "name": "Bhand Devara Shiva Temple (\"Khajuraho of Hadoti\")",
+        "type": "temple",
+        "category": "custom",
+        "district": "Baran (Ramgarh)",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 (Architecture, Sculpture, Painting Styles) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "🛕",
+        "centroid": [
+          76.671,
+          24.783
+        ],
+        "labelAnchor": [
+          76.671,
+          24.783
+        ],
+        "notes": {
+          "facts": [
+            "10th-century Panchayatan Shiva temple in Ramgarh (Baran) — its erotic sculpture panels earn it the \"Khajuraho of Hadoti\" name.",
+            "Built by the Medvanshi king Malay Verma; sits inside the meteor-crater rim of Ramgarh Crater (a Geo-Heritage site).",
+            "One of the few Rajasthan temples on a demonstrated impact-crater geology — approved as a UNESCO Geopark candidate."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "brahma-temple-pushkar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.552,
+          26.49
+        ]
+      },
+      "properties": {
+        "name": "Brahma Temple, Pushkar",
+        "type": "temple",
+        "category": "custom",
+        "district": "Ajmer",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 (Architecture, Sculpture, Painting Styles) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "🛕",
+        "centroid": [
+          74.552,
+          26.49
+        ],
+        "labelAnchor": [
+          74.552,
+          26.49
+        ],
+        "notes": {
+          "facts": [
+            "One of India's few Brahma temples — for centuries the only one, and still the country's pre-eminent Brahma pilgrimage centre.",
+            "Four-faced Brahma idol; Kartik Purnima witnesses Pushkar's classical camel-fair pilgrimage snan (holy dip) in Pushkar Lake.",
+            "Present form is 14th-15th c. reconstruction of a much older shrine."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "shrinathji-nathdwara",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.821,
+          24.933
+        ]
+      },
+      "properties": {
+        "name": "Shrinathji Temple, Nathdwara",
+        "type": "temple",
+        "category": "custom",
+        "district": "Rajsamand",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 (Architecture, Sculpture, Painting Styles) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "🛕",
+        "centroid": [
+          73.821,
+          24.933
+        ],
+        "labelAnchor": [
+          73.821,
+          24.933
+        ],
+        "notes": {
+          "facts": [
+            "The principal seat of the Pushtimarga Vaishnava sect — Shrinathji's child-Krishna idol brought from Mathura when Aurangzeb's iconoclasm threatened it.",
+            "Maharana Raj Singh of Mewar gave the fugitive deity refuge at Sihad (modern Nathdwara), converting a village into a temple town.",
+            "\"Haveli sangeet\" (Ashtachhap padas) and the Pichwai painted backdrops make Nathdwara a living centre of Bhakti performance."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sachiya-mata-osian",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.913,
+          26.719
+        ]
+      },
+      "properties": {
+        "name": "Sachiya Mata Temple, Osian",
+        "type": "temple",
+        "category": "custom",
+        "district": "Jodhpur",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 (Architecture, Sculpture, Painting Styles) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "🛕",
+        "centroid": [
+          72.913,
+          26.719
+        ],
+        "labelAnchor": [
+          72.913,
+          26.719
+        ],
+        "notes": {
+          "facts": [
+            "12th-century Panchayatan temple — Vishnu, Shiva and Surya shrines at three corners plus a Jain Mahavir sub-temple; Sachiya Mata (Osian's kuldevi) at centre.",
+            "Revered by both Hindus and the Oswal Jain community — Osian is the traditional birthplace of the Oswal caste.",
+            "Toranas and door-jambs of the Osian group are the finest surviving Pratihara-era temple ornament."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sas-bahu-nagda",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.751,
+          24.66
+        ]
+      },
+      "properties": {
+        "name": "Sas-Bahu Temple, Nagda",
+        "type": "temple",
+        "category": "custom",
+        "district": "Udaipur",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 (Architecture, Sculpture, Painting Styles) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "🛕",
+        "centroid": [
+          73.751,
+          24.66
+        ],
+        "labelAnchor": [
+          73.751,
+          24.66
+        ],
+        "notes": {
+          "facts": [
+            "Twin temples — the larger \"Sas\" (Vishnu, surrounded by 10 subsidiary shrines) and the smaller \"Bahu\" (Panchayatan) — 10th c., in Nagda, an early Guhil capital.",
+            "White marble with brick shikhara on the Sas; carved pillars and stone slabs praised as prime examples of Solanki-Maru-Gurjar sculpture.",
+            "Restored by the ASI; part of the wider Nagda-Delwara archaeological cluster near Eklingji."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baroli-temple",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.514,
+          24.797
+        ]
+      },
+      "properties": {
+        "name": "Shiva Temple, Baroli",
+        "type": "temple",
+        "category": "custom",
+        "district": "Chittorgarh (Rawatbhata)",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 (Architecture, Sculpture, Painting Styles) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "🛕",
+        "centroid": [
+          75.514,
+          24.797
+        ],
+        "labelAnchor": [
+          75.514,
+          24.797
+        ],
+        "notes": {
+          "facts": [
+            "Panchayatan-style Baroli complex is the earliest surviving Rajasthan temple group (9th c.), attributed to the Huna king Mihirakula's son Toramana.",
+            "Rediscovered for the modern audience by Colonel James Tod during his 1820s Rajputana survey.",
+            "Now inside the Rana Pratap Sagar reservoir buffer — the ASI relocated some sculptures to the Kota museum in the 1960s."
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sheetaleshwar-jhalrapatan",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.166,
+          24.594
+        ]
+      },
+      "properties": {
+        "name": "Sheetaleshwar Temple, Jhalrapatan",
+        "type": "temple",
+        "category": "custom",
+        "district": "Jhalawar",
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 (Architecture, Sculpture, Painting Styles) + standard historiography",
+        "lastUpdated": "2026-07-18",
+        "icon": "🛕",
+        "centroid": [
+          76.166,
+          24.594
+        ],
+        "labelAnchor": [
+          76.166,
+          24.594
+        ],
+        "notes": {
+          "facts": [
+            "On the Chandrabhaga bank, dated 689 CE (Vikram Samvat 746) — the oldest DATED temple in Rajasthan.",
+            "Only the sanctum sanctorum and a roofless vestibule survive; the dating inscription is preserved on the door-lintel.",
+            "A rare 7th-century Vaishnava shrine anticipating the Gurjara-Pratihara Maha-Maru school."
+          ],
+          "significance": "high"
+        }
+      }
+    }
+  ]
+}
