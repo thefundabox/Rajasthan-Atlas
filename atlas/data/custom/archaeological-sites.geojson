@@ -1,0 +1,502 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "arch-kalibangan",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.13,
+          29.47
+        ]
+      },
+      "properties": {
+        "name": "Kalibangan (Indus-Sarasvati site)",
+        "type": "archaeological_site",
+        "category": "custom",
+        "district": "Hanumangarh",
+        "period": "Pre-Harappan (Early Harappan) + Mature Harappan (3500-1750 BCE)",
+        "notes": {
+          "facts": [
+            "India's third-largest Indus-Sarasvati site — on the Ghaggar palaeochannel; excavated by B.B. Lal (ASI, 1961-69).",
+            "Only Indus site with pre-Harappan and Harappan settlement stacked one over the other — plus the world's earliest known ploughed field (Pre-Harappan, ~2900 BCE).",
+            "The seven \"fire altars\" arranged in a row in the citadel are unique to Kalibangan — the strongest evidence of Vedic-adjacent ritual at any Indus site.",
+            "Its collapse c. 1750 BCE is attributed to the drying of the Sarasvati/Ghaggar — a template case for climate-driven civilisational collapse."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
+        "lastUpdated": "2026-07-18",
+        "icon": "🏛",
+        "centroid": [
+          74.13,
+          29.47
+        ],
+        "labelAnchor": [
+          74.13,
+          29.47
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arch-ahar-udaipur",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.712,
+          24.581
+        ]
+      },
+      "properties": {
+        "name": "Ahar (Aharan Sanskriti — Chalcolithic)",
+        "type": "archaeological_site",
+        "category": "custom",
+        "district": "Udaipur",
+        "period": "Chalcolithic (~2500-1500 BCE)",
+        "notes": {
+          "facts": [
+            "Type-site of Rajasthan's Chalcolithic \"Ahar (Aharan) Culture\" — a copper-using pre-iron farming civilisation of the Berach basin.",
+            "Excavated by H.D. Sankalia (Deccan College, 1954-56) — famous \"Black-and-Red Ware\" (BRW) ceramic sequence.",
+            "Cotton spinning wheels & spindles here (with Kalibangan) prove cotton textile use in Rajasthan going back ~4000 years.",
+            "Site sits on Udaipur's northern edge, on the Ayad river — the \"Aravalli lakeside civilisation\" cognate of Malwa's Kayatha and Navdatoli."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
+        "lastUpdated": "2026-07-18",
+        "icon": "🏛",
+        "centroid": [
+          73.712,
+          24.581
+        ],
+        "labelAnchor": [
+          73.712,
+          24.581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arch-balathal-udaipur",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.855,
+          24.716
+        ]
+      },
+      "properties": {
+        "name": "Balathal (Chalcolithic – Early Historic)",
+        "type": "archaeological_site",
+        "category": "custom",
+        "district": "Udaipur (Vallabhnagar)",
+        "period": "Chalcolithic (~3000-1500 BCE) + Early Historic (~500 BCE-200 CE)",
+        "notes": {
+          "facts": [
+            "Chalcolithic Ahar-Banas culture site 42 km north-east of Udaipur; excavated by Deccan College with Rajasthan Vidyapeeth (1993-2000).",
+            "Uncovered a huge fortified enclosure with copper-using farming settlements — one of India's earliest fortified villages.",
+            "Also yielded India's oldest known \"sanyasi burial\" — a c. 500 BCE seated skeleton in a ritual posture."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
+        "lastUpdated": "2026-07-18",
+        "icon": "🏛",
+        "centroid": [
+          73.855,
+          24.716
+        ],
+        "labelAnchor": [
+          73.855,
+          24.716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arch-gilund-chittor",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.075,
+          24.885
+        ]
+      },
+      "properties": {
+        "name": "Gilund (Ahar-Banas Chalcolithic)",
+        "type": "archaeological_site",
+        "category": "custom",
+        "district": "Rajsamand",
+        "period": "Chalcolithic (~3000-1500 BCE)",
+        "notes": {
+          "facts": [
+            "Twin site of Ahar-Banas Chalcolithic culture (with Balathal & Ahar) on the Banas river — jointly excavated by Deccan College + University of Pennsylvania (1959-60; 2003-05).",
+            "Yielded a hoard of 100+ clay seal-impressions — the most ceramic sealings from any Chalcolithic Indian site.",
+            "Two mud-brick platforms suggest an early public architecture tradition in the Aravalli piedmont."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
+        "lastUpdated": "2026-07-18",
+        "icon": "🏛",
+        "centroid": [
+          74.075,
+          24.885
+        ],
+        "labelAnchor": [
+          74.075,
+          24.885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arch-bagor-bhilwara",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.463,
+          25.343
+        ]
+      },
+      "properties": {
+        "name": "Bagor (Mesolithic)",
+        "type": "archaeological_site",
+        "category": "custom",
+        "district": "Bhilwara",
+        "period": "Mesolithic (5000-1500 BCE)",
+        "notes": {
+          "facts": [
+            "Rajasthan's type Mesolithic site on the Kothari river; excavated by V.N. Misra (Deccan College, 1967-72).",
+            "One of the largest microlithic tool assemblages in India — thousands of geometric microliths and animal-bone remains.",
+            "Domestication of cattle here (~5000 BCE) is among the earliest evidence of Indian pastoral economy."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
+        "lastUpdated": "2026-07-18",
+        "icon": "🏛",
+        "centroid": [
+          74.463,
+          25.343
+        ],
+        "labelAnchor": [
+          74.463,
+          25.343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arch-bairath-viratnagar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.185,
+          27.451
+        ]
+      },
+      "properties": {
+        "name": "Bairath (Viratnagar) — Ashokan Buddhist",
+        "type": "archaeological_site",
+        "category": "custom",
+        "district": "Kotputli-Behror (formerly Jaipur)",
+        "period": "Mahajanapada (Matsya) + Ashokan Maurya (3rd c. BCE)",
+        "notes": {
+          "facts": [
+            "The Matsya Mahajanapada capital of Virata Nagar mentioned in the Mahabharata — where the Pandavas spent their year of ajnatavas.",
+            "Two Ashokan edicts survive here — the Bhabru Minor Rock Edict (Ashoka's letter to the Sangha) plus a fragmentary standing pillar edict.",
+            "Bairath's circular Buddhist stupa was the westernmost brick Buddhist monument in ancient India — the state's earliest known Buddhist site."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
+        "lastUpdated": "2026-07-18",
+        "icon": "🏛",
+        "centroid": [
+          76.185,
+          27.451
+        ],
+        "labelAnchor": [
+          76.185,
+          27.451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arch-noh-bharatpur",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.499,
+          27.221
+        ]
+      },
+      "properties": {
+        "name": "Noh (Yakshi & Jakhababa Sculptures)",
+        "type": "archaeological_site",
+        "category": "custom",
+        "district": "Bharatpur",
+        "period": "Shunga-Kushana (~2nd c. BCE-3rd c. CE)",
+        "notes": {
+          "facts": [
+            "The Yakshi statue from Noh (life-size, red sandstone) is one of the earliest surviving Shunga-period female figures.",
+            "The Jakhababa (Yaksha) sculpture — a huge male Yaksha attendant figure — represents the Shunga sculptural tradition in Bharatpur.",
+            "Both statues are housed in the Government Museum, Bharatpur (Lohagarh Fort)."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
+        "lastUpdated": "2026-07-18",
+        "icon": "🏛",
+        "centroid": [
+          77.499,
+          27.221
+        ],
+        "labelAnchor": [
+          77.499,
+          27.221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arch-nagari-chittor",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.556,
+          24.891
+        ]
+      },
+      "properties": {
+        "name": "Nagari (Madhyamika — Sivi Republic Capital)",
+        "type": "archaeological_site",
+        "category": "custom",
+        "district": "Chittorgarh",
+        "period": "Sivi Janapada + Post-Maurya + Gupta (5th c. BCE-6th c. CE)",
+        "notes": {
+          "facts": [
+            "Ancient Madhyamika — capital of the Sivi (Shibi) republic (janapada) north of Chittorgarh, on the Bedach river.",
+            "Yielded some of India's earliest coins bearing the \"Majhamikaya Sibi Janapadasa\" legend — 3rd-2nd c. BCE.",
+            "Colonel James Tod first identified Madhyamika with the Nagari ruins (1820s) — the site anchors the earliest urban history of Mewar.",
+            "Grand temples of the Gupta era and a Vaishnava enclosure survive as ruins on the site."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
+        "lastUpdated": "2026-07-18",
+        "icon": "🏛",
+        "centroid": [
+          74.556,
+          24.891
+        ],
+        "labelAnchor": [
+          74.556,
+          24.891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arch-rairh-tonk",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.855,
+          26.076
+        ]
+      },
+      "properties": {
+        "name": "Rairh (Post-Maurya Coinage Centre)",
+        "type": "archaeological_site",
+        "category": "custom",
+        "district": "Tonk",
+        "period": "Post-Maurya to early Gupta (3rd c. BCE-4th c. CE)",
+        "notes": {
+          "facts": [
+            "Second-largest coin-hoard site in ancient India (after Kaushambi) — over 3,000 punch-marked and Yaudheya coins excavated in 1938-39.",
+            "The huge terracotta-mould workshop suggests Rairh was a regional mint town serving the Malava-Yaudheya coin economy.",
+            "Rairh + Nagar (Tonk district) together dominate Rajasthan's numismatic corpus for the immediate post-Maurya centuries."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
+        "lastUpdated": "2026-07-18",
+        "icon": "🏛",
+        "centroid": [
+          75.855,
+          26.076
+        ],
+        "labelAnchor": [
+          75.855,
+          26.076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arch-rangmahal-hanumangarh",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.3,
+          29.1
+        ]
+      },
+      "properties": {
+        "name": "Rangmahal (Kushana-Gupta era)",
+        "type": "archaeological_site",
+        "category": "custom",
+        "district": "Hanumangarh",
+        "period": "Kushana-Gupta (~1st-4th c. CE)",
+        "notes": {
+          "facts": [
+            "On the dried Sarasvati/Ghaggar channel; excavated by Rikke Hanna-Rooijakkers, Swedish mission (1952-54).",
+            "Terracotta plaques of Kushana-Gupta iconography (Krishna Leela, Ramayan scenes) — the state's finest early historical terracotta corpus.",
+            "Along with Kalibangan, evidence of continuous habitation on the Sarasvati/Ghaggar palaeochannel from Harappan through Gupta eras."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
+        "lastUpdated": "2026-07-18",
+        "icon": "🏛",
+        "centroid": [
+          74.3,
+          29.1
+        ],
+        "labelAnchor": [
+          74.3,
+          29.1
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arch-ganeshwar-sikar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.66,
+          27.63
+        ]
+      },
+      "properties": {
+        "name": "Ganeshwar (Chalcolithic Copper Hoard)",
+        "type": "archaeological_site",
+        "category": "custom",
+        "district": "Sikar (Khetri belt)",
+        "period": "Chalcolithic (~2800-1500 BCE)",
+        "notes": {
+          "facts": [
+            "Chalcolithic copper-hoard site in the Khetri copper belt — the \"supplier\" for Harappan copper artefacts, per J.P. Joshi's hypothesis.",
+            "Yielded India's largest single Chalcolithic copper-object cache — 400+ pieces (arrows, harpoons, rings, celts).",
+            "Site anchors the Chalcolithic copper economy of the Aravalli's northern edge — the ancestor of modern Khetri's HCL smelter."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
+        "lastUpdated": "2026-07-18",
+        "icon": "🏛",
+        "centroid": [
+          75.66,
+          27.63
+        ],
+        "labelAnchor": [
+          75.66,
+          27.63
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arch-bundi-cave-paintings",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.638,
+          25.437
+        ]
+      },
+      "properties": {
+        "name": "Bundi Cave Paintings (Prehistoric Rock Art)",
+        "type": "archaeological_site",
+        "category": "custom",
+        "district": "Bundi",
+        "period": "Prehistoric to Chalcolithic (~7000-1500 BCE)",
+        "notes": {
+          "facts": [
+            "Rock-shelter paintings at Garadada, Gopalpura, Chatarkund and Rambali in the Bundi hills — Rajasthan's prime prehistoric-rock-art corpus.",
+            "Depictions include hunting scenes, cattle, elephants and dancing figures; discovered by Om Prakash Sharma in 1997.",
+            "Compared with Bhimbetka, Bundi's pigment survival is remarkable given the Vindhyan limestone substrate."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
+        "lastUpdated": "2026-07-18",
+        "icon": "🏛",
+        "centroid": [
+          75.638,
+          25.437
+        ],
+        "labelAnchor": [
+          75.638,
+          25.437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arch-mangarh-hill-tribal",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.01,
+          23.492
+        ]
+      },
+      "properties": {
+        "name": "Mangarh Hill (Modern Memorial to Bhil Resistance)",
+        "type": "archaeological_site",
+        "category": "custom",
+        "district": "Banswara",
+        "period": "Late Colonial (1913) + present-day Memorial (2022)",
+        "notes": {
+          "facts": [
+            "Site of the 1913 Mangarh Massacre — 1,500 Bhil tribals killed by British forces during Govind Guru's Samp Sabha meeting.",
+            "Notified as a National Monument (2022) — the National Mangarh Dham Memorial was dedicated by the PM in November 2022.",
+            "A rare \"modern archaeological site\" — its stratigraphy is being formally documented by the ASI since 2023."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 11 Ch 2 + Class 12 Chs 6, 8 (Cultural Rajasthan) + ASI Rajasthan bulletins",
+        "lastUpdated": "2026-07-18",
+        "icon": "🏛",
+        "centroid": [
+          74.01,
+          23.492
+        ],
+        "labelAnchor": [
+          74.01,
+          23.492
+        ]
+      }
+    }
+  ]
+}

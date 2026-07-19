@@ -1,0 +1,463 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ma-mewar-samant-salumber",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9,
+          24.15
+        ]
+      },
+      "properties": {
+        "name": "Mewar Samant System — Umrao (Salumber Head)",
+        "type": "medieval_admin",
+        "category": "custom",
+        "district": "Udaipur (Salumber)",
+        "polityUnit": "Umrao — 16 first-category + 32 second-category + Gol ke Umrao (hundreds)",
+        "headOffice": "Salumber Thakur",
+        "notes": {
+          "facts": [
+            "Mewar's Umrao (samant) system was three-tiered — the Salumber Thakur headed the 16 first-category Umraos and governed Udaipur in the Maharana's absence.",
+            "Alone in Rajputana, Mewar refused the Mughal Mansabdari succession-tax — the state's samants kept their pre-Akbar prerogatives.",
+            "The Salumber Thakur's troops joined Auwa's Kushal Singh in the 1857 rebellion, the last time the Umrao system flexed independent military power."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "👑",
+        "centroid": [
+          73.9,
+          24.15
+        ],
+        "labelAnchor": [
+          73.9,
+          24.15
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ma-marwar-rajvi",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.028,
+          26.283
+        ]
+      },
+      "properties": {
+        "name": "Marwar Feudal Categories — Rajvi/Sardar/Ganayat/Mutsaddi",
+        "type": "medieval_admin",
+        "category": "custom",
+        "district": "Jodhpur",
+        "polityUnit": "Four samant categories with distinct rights",
+        "notes": {
+          "facts": [
+            "Marwar samants were classified as Rajvi (close royal kin up to 3 generations), Sardar, Ganayat and Mutsaddi.",
+            "Rajvi were exempt from Rekh (revenue), Hukmnama tax and Chakri (military service) — the highest hereditary tier in Rajputana.",
+            "The 1835 Jodhpur Legion (raised by the British) uprooted the pre-Mughal Marwar military balance; the samants' revolt at Erinpura in 1857 was partly a defence of that balance."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "👑",
+        "centroid": [
+          73.028,
+          26.283
+        ],
+        "labelAnchor": [
+          73.028,
+          26.283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ma-jaipur-kotri",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.822,
+          26.923
+        ]
+      },
+      "properties": {
+        "name": "Jaipur Kotri System (12 Kotris of Prithvi Singh)",
+        "type": "medieval_admin",
+        "category": "custom",
+        "district": "Jaipur",
+        "polityUnit": "12 permanent Jagirs named after the 12 sons of Prithvi Singh",
+        "notes": {
+          "facts": [
+            "Jaipur's samant categories were fixed by Maharaja Prithvi Singh — 12 permanent Jagirs held in the names of his 12 sons, called Kotri.",
+            "The Musahib was the Pradhan (prime minister) of Jaipur — a title unique to this state.",
+            "The Kachwaha-Mughal alliance from Bhagwant Das (1568) onward made Jaipur the most-Mughal-adjacent Rajputana court; Man Singh I's Kotri system was the model for it."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "👑",
+        "centroid": [
+          75.822,
+          26.923
+        ],
+        "labelAnchor": [
+          75.822,
+          26.923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ma-kota-rajvi-hada",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.833,
+          25.18
+        ]
+      },
+      "properties": {
+        "name": "Kota Feudal System — 30 Rajvi Sardars (Hada Chauhans)",
+        "type": "medieval_admin",
+        "category": "custom",
+        "district": "Kota",
+        "polityUnit": "30 Rajvi Sardars, majority Hada Chauhan",
+        "notes": {
+          "facts": [
+            "Kota samants were called Rajvi; 30 Rajvi Sardars ran the state, most from the Hada Chauhan branch.",
+            "Only two Rajputana courts (Kota, Bundi) called their Pradhan a \"Diwan\" — a Rajput adaptation of the Mughal revenue-administration title.",
+            "The rebel Kota administration of Oct 1857-Mar 1858 (Jayadayal, Mehrab Khan) briefly bypassed the entire Rajvi hierarchy — the last time public + army defeated a Rajputana court from within."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "👑",
+        "centroid": [
+          75.833,
+          25.18
+        ],
+        "labelAnchor": [
+          75.833,
+          25.18
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ma-bikaner-samant-tiers",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.317,
+          28.022
+        ]
+      },
+      "properties": {
+        "name": "Bikaner Three-Tier Samant Categories",
+        "type": "medieval_admin",
+        "category": "custom",
+        "district": "Bikaner",
+        "polityUnit": "3 samant tiers based on lineage proximity",
+        "notes": {
+          "facts": [
+            "Bikaner samants: (i) Rao Bika's direct male-line kin, (ii) other blood-related Rathores, (iii) pre-Rathore ruling houses (Bhati, Sankhla + others).",
+            "The Pradhan (prime minister) here carried the title Mukhtyar — again unique among Rajputana states.",
+            "Ganga Singh (1887-1943) modernised the samant system by anchoring it to a written Rekh register — often called the last active Rajputana samant reform."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "👑",
+        "centroid": [
+          73.317,
+          28.022
+        ],
+        "labelAnchor": [
+          73.317,
+          28.022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ma-jaisalmer-samant-tiers",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.912,
+          26.912
+        ]
+      },
+      "properties": {
+        "name": "Jaisalmer Samant System — Davi / Jeevani (Left / Right)",
+        "type": "medieval_admin",
+        "category": "custom",
+        "district": "Jaisalmer",
+        "polityUnit": "Two samant tiers Davi (Left) + Jeevani (Right)",
+        "notes": {
+          "facts": [
+            "Jaisalmer's Bhati samants were divided into Davi (Left) and Jeevani (Right) categories from Rawal Harraj's reign onwards.",
+            "Jaisalmer was the ONLY Rajputana state that never collected a Succession Tax (Peshkashi / Nazrana / Hukmnama) from its samants.",
+            "The two-tier system reflected the Bhati court's ceremonial seating on left and right of the ruler — an unusually formal Rajput courtly arrangement."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "👑",
+        "centroid": [
+          70.912,
+          26.912
+        ],
+        "labelAnchor": [
+          70.912,
+          26.912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ma-bharatpur-mukhtyar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5,
+          27.216
+        ]
+      },
+      "properties": {
+        "name": "Bharatpur — Suraj Mal's Jat Administrative Reform",
+        "type": "medieval_admin",
+        "category": "custom",
+        "district": "Bharatpur",
+        "polityUnit": "Caste-blind administrative posts under a Mukhtyar Pradhan",
+        "notes": {
+          "facts": [
+            "Raja Suraj Mal (r. 1756-1763) built a non-caste administrative structure — Bharatpur's Pradhan (called Mukhtyar) could be from any community.",
+            "His agricultural policy pushed the state's revenue to ₹17.5 lakh per year by 1763 (the final year of his reign) — the highest in any Rajputana Jat state.",
+            "A Kirti Stambh at Kumher records Suraj Mal's administrative rules — cited by Colonel Todd as the \"most rational\" Rajputana revenue code."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "👑",
+        "centroid": [
+          77.5,
+          27.216
+        ],
+        "labelAnchor": [
+          77.5,
+          27.216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ma-succession-tax-varieties",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5,
+          26.0
+        ]
+      },
+      "properties": {
+        "name": "Succession Tax Vocabulary Across Courts",
+        "type": "medieval_admin",
+        "category": "custom",
+        "district": "Rajasthan-wide (Marwar-Mewar-Jaipur)",
+        "polityUnit": "Different names of the same tax across courts",
+        "notes": {
+          "facts": [
+            "Same tax, different names: Jodhpur — Peshkashi (later Hukmnama); Mewar & Jaipur — Nazrana; other states — Qaid Khalsa / Talwar Bandhai.",
+            "Jaisalmer alone was exempt — the Bhati court never took a succession tax.",
+            "The tax was in effect the renewal of the Jagir lease (Patta); non-payment triggered the Diwan to declare the Jagir Khalsa (crown-resumed)."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "👑",
+        "centroid": [
+          73.5,
+          26.0
+        ],
+        "labelAnchor": [
+          73.5,
+          26.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ma-khalisa-jagir-split",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.822,
+          26.923
+        ]
+      },
+      "properties": {
+        "name": "Khalisa vs Jagir Land — the Four Jagir Types",
+        "type": "medieval_admin",
+        "category": "custom",
+        "district": "Rajasthan-wide (Jaipur as diagram exemplar)",
+        "polityUnit": "Khalisa (crown) + 4 Jagir types",
+        "notes": {
+          "facts": [
+            "Khalisa land — direct crown estate; Hakim officers ran justice and revenue here.",
+            "Four Jagir types: (i) Samant Jagir — hereditary clan grant; (ii) Hukumat Jagir — salary grant to Mutsaddi, resumed on death; (iii) Bhom Jagir — border-defence grant, un-evictable; (iv) Sasan Jagir — tax-free (Maafi) grant to Charans, Bhats and temples.",
+            "Only Samant Jagir was hereditary — the other three reverted to Khalisa on the holder's death."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "👑",
+        "centroid": [
+          75.822,
+          26.923
+        ],
+        "labelAnchor": [
+          75.822,
+          26.923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ma-lata-batai-rent-methods",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.4,
+          26.4
+        ]
+      },
+      "properties": {
+        "name": "Rent Collection Methods — Lata/Batai, Kunta, Mukata, Dori, Ghughri",
+        "type": "medieval_admin",
+        "category": "custom",
+        "district": "Rajasthan-wide",
+        "polityUnit": "Field-level revenue-assessment methods",
+        "notes": {
+          "facts": [
+            "Lata/Batai — physical grain division at the threshing floor under an officer's supervision.",
+            "Kunta — estimation of the standing crop by eye, without weighing.",
+            "Mukata (lump sum), Dori (measured area) and Ghughri (equal to the seed given by the state) were three cash-and-kind variants used in leaner years.",
+            "Barani land (rain-fed) and Unnao land (irrigated by tank/well/baori) were assessed at different rates in every state."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "👑",
+        "centroid": [
+          75.4,
+          26.4
+        ],
+        "labelAnchor": [
+          75.4,
+          26.4
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ma-bapidar-bhomia",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9,
+          26.5
+        ]
+      },
+      "properties": {
+        "name": "Bapidar vs Gair-Bapidar (Khudkashtkar vs Shikmi Kashtkar)",
+        "type": "medieval_admin",
+        "category": "custom",
+        "district": "Rajasthan-wide",
+        "polityUnit": "Peasant categories under medieval revenue",
+        "notes": {
+          "facts": [
+            "Bapidar (a.k.a. Khudkashtkar) — hereditary land-owner peasant; could not be evicted, retained the field even after leaving in famine years.",
+            "Gair-Bapidar (a.k.a. Shikmi Kashtkar) — non-hereditary tenant farmer, closer to an agricultural labourer.",
+            "The saying Colonel Todd recorded — \"Bhog ra dhani Raj ho, Bhom ra dhani ma chhau\" — captures the ruler-peasant split: king owns the revenue, tiller owns the land."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "👑",
+        "centroid": [
+          72.9,
+          26.5
+        ],
+        "labelAnchor": [
+          72.9,
+          26.5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ma-bhomia-grasia-samants",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6,
+          27.0
+        ]
+      },
+      "properties": {
+        "name": "Bhomia & Grasia Samants — Border-Defence Grants",
+        "type": "medieval_admin",
+        "category": "custom",
+        "district": "Rajasthan-wide (Marwar frontier)",
+        "polityUnit": "Border-defence samant classes",
+        "notes": {
+          "facts": [
+            "Bhomia — jagir grantees who died defending the border or village; the grant was un-evictable in perpetuity.",
+            "Grasia — took a share of the harvest (gras) in return for military service; lax service could cost them the grant.",
+            "These were the two samant classes Todd said kept Rajputana border villages defensible against Mughal, Maratha and Pindari incursions."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "👑",
+        "centroid": [
+          73.6,
+          27.0
+        ],
+        "labelAnchor": [
+          73.6,
+          27.0
+        ]
+      }
+    }
+  ]
+}

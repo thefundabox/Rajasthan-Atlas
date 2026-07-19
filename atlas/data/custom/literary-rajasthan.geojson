@@ -1,0 +1,499 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "lit-chandradhar-sharma-guleri",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.822,
+          26.923
+        ]
+      },
+      "properties": {
+        "name": "Chandradhar Sharma \"Guleri\" — Usne Kaha Tha (1915)",
+        "type": "literary_figure",
+        "category": "custom",
+        "district": "Jaipur",
+        "genre": "Hindi short story",
+        "notes": {
+          "facts": [
+            "The three-story author whose 1915 \"Usne Kaha Tha\" (Saraswati magazine) remains one of the finest short stories in Hindi literature — a Sikh soldier's First World War memory.",
+            "Contemporary of Ojha and Deviprasad Mishra; formed the Nagari Pracharini Patrika editorial trio.",
+            "Guleri set the modernist Hindi short-story template used by Yashpal, Premchand and Mannu Bhandari."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 9 (Literary Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "📚",
+        "centroid": [
+          75.822,
+          26.923
+        ],
+        "labelAnchor": [
+          75.822,
+          26.923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lit-rangeya-raghav-jaipur",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.822,
+          26.923
+        ]
+      },
+      "properties": {
+        "name": "Rangeya Raghav — Kab Tak Pukaroon (1957)",
+        "type": "literary_figure",
+        "category": "custom",
+        "district": "Rajasthan-wide",
+        "genre": "Hindi novel + short story",
+        "notes": {
+          "facts": [
+            "11 story collections + numerous novels in a life of only 39 years — Rajasthan's most prolific 20th-century writer.",
+            "\"Kab Tak Pukaroon\" (1957) put nomadic and tribal Rajasthan on the mainstream Hindi literary map; his \"Murdon Ka Teela\" is a landmark novel of the Indus-Sarasvati site.",
+            "His story \"Gadal\" is treated as required-reading in Hindi MA syllabi."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 9 (Literary Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "📚",
+        "centroid": [
+          75.822,
+          26.923
+        ],
+        "labelAnchor": [
+          75.822,
+          26.923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lit-mannu-bhandari-mahabhoj",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1,
+          24.9
+        ]
+      },
+      "properties": {
+        "name": "Mannu Bhandari — Mahabhoj / Aapka Bunty",
+        "type": "literary_figure",
+        "category": "custom",
+        "district": "Bhanpura (MP-Rajasthan border)",
+        "genre": "Hindi novel + screenplay",
+        "notes": {
+          "facts": [
+            "\"Mahabhoj\" (1979) — signature political novel of caste violence, adapted for stage across India by NSD.",
+            "\"Aapka Bunty\" (1971) — one of Hindi's most-read novels on modern Indian childhood and divorce.",
+            "Screenplay for Basu Chatterjee's \"Rajnigandha\" and Yash Chopra's \"Silsila\" credited her among Hindi cinema's finest women screenwriters."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 9 (Literary Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "📚",
+        "centroid": [
+          76.1,
+          24.9
+        ],
+        "labelAnchor": [
+          76.1,
+          24.9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lit-vijay-singh-pathik",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.283,
+          25.183
+        ]
+      },
+      "properties": {
+        "name": "Vijay Singh Pathik — Poet-Activist of Bijolia",
+        "type": "literary_figure",
+        "category": "custom",
+        "district": "Bhilwara (Bijolia)",
+        "genre": "Nationalist poetry + prose journalism",
+        "notes": {
+          "facts": [
+            "Founder-editor of Rajasthan Kesari (Wardha, then Ajmer, 1920) — the paper that took the Bijolia peasant story national.",
+            "Wrote in Braj and Khadi Boli; his songs anchored the Bijolia satyagraha for 25 years.",
+            "Both writer and organiser — remembered together with Kesari Singh Barhath as the founder of Rajasthan's literary-political tradition."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 9 (Literary Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "📚",
+        "centroid": [
+          75.283,
+          25.183
+        ],
+        "labelAnchor": [
+          75.283,
+          25.183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lit-kanhaiyalal-sethia",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.317,
+          28.022
+        ]
+      },
+      "properties": {
+        "name": "Kanhaiyalal Sethia — Padma Shri Poet",
+        "type": "literary_figure",
+        "category": "custom",
+        "district": "Bikaner (Sujangarh, Churu)",
+        "genre": "Rajasthani + Hindi poetry",
+        "notes": {
+          "facts": [
+            "Padma Shri (2004) poet whose \"Dharti Dhora Ri\" is Rajasthan's unofficial anthem in Rajasthani.",
+            "Wrote in both Rajasthani and Hindi; his volumes traverse Chhayavad, progressivism and Nayi Kavita.",
+            "The Kanhaiyalal Sethia Literary Award (Rajasthan Sahitya Akademi) is given to the best Rajasthani-language book of the year."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 9 (Literary Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "📚",
+        "centroid": [
+          73.317,
+          28.022
+        ],
+        "labelAnchor": [
+          73.317,
+          28.022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lit-suryamall-misran-bundi",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.638,
+          25.437
+        ]
+      },
+      "properties": {
+        "name": "Suryamall Misran — Bundi Court Poet",
+        "type": "literary_figure",
+        "category": "custom",
+        "district": "Bundi",
+        "genre": "Rajasthani heroic (Dingal) verse",
+        "notes": {
+          "facts": [
+            "Court poet of Bundi (1815-1868); his epic \"Vansh Bhaskar\" is the largest Dingal-verse dynastic history in Rajasthani.",
+            "His 1857 correspondence with Thakur Phool Singh of Pipalya sharply criticised pro-British Rajput rulers — treated as Rajputana's first Dingal protest literature.",
+            "Suryamall's courtroom in the Bundi Chitrashala inspired the Hadoti painting school's literary-illustration tradition."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 9 (Literary Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "📚",
+        "centroid": [
+          75.638,
+          25.437
+        ],
+        "labelAnchor": [
+          75.638,
+          25.437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lit-bankidas-marwar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.028,
+          26.283
+        ]
+      },
+      "properties": {
+        "name": "Bankidas — Marwar Charan Poet",
+        "type": "literary_figure",
+        "category": "custom",
+        "district": "Jodhpur",
+        "genre": "Rajasthani Dingal history",
+        "notes": {
+          "facts": [
+            "Charan court poet of Marwar under Man Singh Rathore (r. 1803-43); his \"Bankidas Ki Khyat\" is a Rajasthani chronicle across the entire Marwar dynasty.",
+            "Bankidas's verses condemning Rajput rulers who \"served as slaves\" of the British foreshadowed the 1857-Auwa spirit.",
+            "The Bankidas Prasasti at Nagaur is a rare Rajasthani-language inscription of the early 19th century."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 9 (Literary Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "📚",
+        "centroid": [
+          73.028,
+          26.283
+        ],
+        "labelAnchor": [
+          73.028,
+          26.283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lit-harish-bhadani-vatayan",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.317,
+          28.022
+        ]
+      },
+      "properties": {
+        "name": "Harish Bhadani — Editor of Vatayan",
+        "type": "literary_figure",
+        "category": "custom",
+        "district": "Bikaner",
+        "genre": "Hindi Nayi Kavita + little-magazine editor",
+        "notes": {
+          "facts": [
+            "Editor-poet of the little magazine \"Vatayan\" (Bikaner) — nurtured a generation of Rajasthan's Sathottari Kavita.",
+            "His poetry cycle \"Sadi Ko Saakhya Karein\" appears in Kendra Sahitya Akademi anthologies.",
+            "Bhadani's magazine editing paralleled Prakash Jain's \"Lahar\" and Kamar Mewari's \"Sambodhan\" in shaping Rajasthan's Hindi literary sphere."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 9 (Literary Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "📚",
+        "centroid": [
+          73.317,
+          28.022
+        ],
+        "labelAnchor": [
+          73.317,
+          28.022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lit-nand-chaturvedi-udaipur",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.712,
+          24.578
+        ]
+      },
+      "properties": {
+        "name": "Nand Chaturvedi — Udaipur Poet-Critic",
+        "type": "literary_figure",
+        "category": "custom",
+        "district": "Udaipur",
+        "genre": "Hindi poetry + criticism + memoir",
+        "notes": {
+          "facts": [
+            "Central Sahitya Akademi Award (2008) for \"Yaha Samay Manghne Aane Ka Hai\" — a landmark of Rajasthani-Hindi poetry.",
+            "His memoir \"Ateet Raag\" (2010) is Rajasthan's finest 20th-century literary autobiography.",
+            "Long-time associate of the Rajasthan Sahitya Akademi and the Vishvavidyalaya of Rajasthan, Udaipur."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 9 (Literary Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "📚",
+        "centroid": [
+          73.712,
+          24.578
+        ],
+        "labelAnchor": [
+          73.712,
+          24.578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lit-muni-jin-vijay",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.712,
+          24.578
+        ]
+      },
+      "properties": {
+        "name": "Muni Jin Vijay — Jain Research Pioneer",
+        "type": "literary_figure",
+        "category": "custom",
+        "district": "Udaipur (Rajputana Jain circuits)",
+        "genre": "Sanskrit-Prakrit editing + Jain manuscript research",
+        "notes": {
+          "facts": [
+            "Pioneer of Jain manuscript research in early 20th century Rajasthan; catalogued the Jaisalmer, Patan and Bikaner bhandars.",
+            "Founding director of the Rajasthan Prachyavidya Pratishthan (Jodhpur, 1950) — India's premier Rajasthani-Sanskrit research library.",
+            "His edited series \"Singhi Jaina Granthmala\" preserved hundreds of medieval Rajasthan Jain texts."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 9 (Literary Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "📚",
+        "centroid": [
+          73.712,
+          24.578
+        ],
+        "labelAnchor": [
+          73.712,
+          24.578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lit-chand-bardai-ajmer",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.634,
+          26.449
+        ]
+      },
+      "properties": {
+        "name": "Chand Bardai — Prithviraj Raso",
+        "type": "literary_figure",
+        "category": "custom",
+        "district": "Ajmer (Chauhan court)",
+        "genre": "Rajasthani-Braj heroic epic",
+        "notes": {
+          "facts": [
+            "Court poet of Prithviraj Chauhan III (12th c.) — his 100,000-couplet \"Prithviraj Raso\" is the earliest recorded Rajasthani epic.",
+            "Considered the founding text of the Dingal poetic tradition; disputed for its historical accuracy but foundational for Rajputana literary consciousness.",
+            "The Ajmer Chauhan court where Chand composed became the template for the Bardic (Charan-Bhat) tradition across Rajputana."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 9 (Literary Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "📚",
+        "centroid": [
+          74.634,
+          26.449
+        ],
+        "labelAnchor": [
+          74.634,
+          26.449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lit-meera-bai-mewar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.687,
+          24.575
+        ]
+      },
+      "properties": {
+        "name": "Meera Bai — Bhakti Poetry of Mewar",
+        "type": "literary_figure",
+        "category": "custom",
+        "district": "Mewar (Chittor)",
+        "genre": "Bhakti poetry (Rajasthani-Braj)",
+        "notes": {
+          "facts": [
+            "Sisodia princess of Mewar and Bhakti poet — her Krishna padas travel in every north-Indian devotional collection.",
+            "Wrote in Rajasthani-Marwari-Braj mix; her \"Meera Padavali\" is compiled from oral tradition rather than a single manuscript.",
+            "The Meera Temple at Chittorgarh Fort (Sisodia era) memorialises her — she is the only Rajputana Bhakti poet with a dedicated fort shrine."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 9 (Literary Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "📚",
+        "centroid": [
+          73.687,
+          24.575
+        ],
+        "labelAnchor": [
+          73.687,
+          24.575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lit-dhola-maru-marwar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.628,
+          25.749
+        ]
+      },
+      "properties": {
+        "name": "Dhola-Maru — Marwar Folk Epic",
+        "type": "literary_figure",
+        "category": "custom",
+        "district": "Marwar (Sirohi-Barmer)",
+        "genre": "Rajasthani folk romance (Dingal)",
+        "notes": {
+          "facts": [
+            "The 14th-century \"Dhola-Maru-ra Duha\" is Rajasthani's finest medieval folk romance — the Pungal princess Marvani's eight-year separation from her Narwar husband Dhola.",
+            "A Dingal-style oral epic sung by Charans and Manganiyars; performances still open with the Dhola-Maru sthayi.",
+            "A model for later Rajasthani love-cycles (Nihalde-Sultan, Beeja-Sorath, Momal-Mahendra)."
+          ],
+          "significance": "high"
+        },
+        "state": "Rajasthan",
+        "source": "Rajasthan Adhyan Class 12 Ch 9 (Literary Rajasthan)",
+        "lastUpdated": "2026-07-18",
+        "icon": "📚",
+        "centroid": [
+          72.628,
+          25.749
+        ],
+        "labelAnchor": [
+          72.628,
+          25.749
+        ]
+      }
+    }
+  ]
+}
