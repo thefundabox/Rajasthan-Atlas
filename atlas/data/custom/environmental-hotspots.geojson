@@ -34,8 +34,16 @@
             "Chromium, dyes and detergent chemicals from Pali's Mandia and Punayata industrial estates cross the Central Pollution Control Board's effluent thresholds regularly.",
             "Downstream Luni water is unusable for agriculture — a case study cited in the Class 12 syllabus."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "पाली के रंगाई-छपाई उद्योगों ने लूणी नदी को राजस्थान के सर्वाधिक प्रदूषित जल-निकायों में से एक बना दिया है।",
+            "पाली के मंडिया और पुनायता औद्योगिक क्षेत्रों से क्रोमियम, रंजक और अपमार्जक रसायन नियमित रूप से Central Pollution Control Board की बहिःस्राव-सीमाएँ पार करते हैं।",
+            "प्रवाह-अनुगामी लूणी जल कृषि के लिए अनुपयोगी — कक्षा 12 पाठ्यक्रम में उद्धृत केस-स्टडी।"
+          ]
+        },
+        "name_hi": "पाली रंगाई-छपाई जल प्रदूषण",
+        "district_hi": "पाली",
+        "type_hi": "जल प्रदूषण"
       }
     },
     {
@@ -71,8 +79,16 @@
             "Salinity, iron and dye residues make Sanganer aquifer water unfit for drinking within the industrial zone.",
             "Traditional two-colour (red-black) natural-dye Sanganeri print survives with GI status — the pollution is from newer chemical-dye workshops."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "सांगानेरी हाथ-ब्लॉक छपाई और धुलाई अमानीशाह नाले का उपयोग करती है — इसके पुनर्भरण ने सांगानेर का भूजल दूषित कर दिया है।",
+            "लवणता, लोहा और रंजक-अवशेष औद्योगिक क्षेत्र के भीतर सांगानेर के भूजल को पेयजल के अयोग्य बना देते हैं।",
+            "पारंपरिक दो-रंगी (लाल-काली) प्राकृतिक-रंजक सांगानेरी छपाई GI दर्जे के साथ जीवित है — प्रदूषण नई रासायनिक-रंजक कार्यशालाओं से है।"
+          ]
+        },
+        "name_hi": "सांगानेर रंगाई-छपाई भूजल संदूषण",
+        "district_hi": "जयपुर",
+        "type_hi": "जल प्रदूषण"
       }
     },
     {
@@ -108,8 +124,16 @@
             "Fly ash spreads 1-2 km into surrounding agricultural land; the Kota-Ramganjmandi limestone belt adds cement-dust drift.",
             "Suratgarh and Chhabra thermal plants are the state's two other major SPM and SO₂ sources."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "शहर के किनारे स्थित Kota Super Thermal Plant (KSTPS) राजस्थान की सबसे बड़ी एकल नगरीय वायु-प्रदूषण छाप का कारण है।",
+            "फ्लाई ऐश आसपास की कृषि-भूमि में 1-2 किमी तक फैलती है; कोटा-रामगंजमंडी चूना-पत्थर पेटी सीमेंट-धूल का बहाव और जोड़ती है।",
+            "सूरतगढ़ और छाबड़ा ताप-संयंत्र राज्य के दो अन्य प्रमुख SPM और SO₂ स्रोत हैं।"
+          ]
+        },
+        "name_hi": "कोटा सुपर थर्मल प्लांट वायु प्रदूषण",
+        "district_hi": "कोटा",
+        "type_hi": "वायु प्रदूषण"
       }
     },
     {
@@ -145,8 +169,16 @@
             "Kota-based fertiliser and chemical plants (Chambal Fertilisers, IPCL) are the main downstream contributors.",
             "The pollution here directly threatens the National Chambal Sanctuary (gharial + Gangetic dolphin habitat)."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "राजस्थान की एकमात्र बारहमासी नदी — चंबल — को औद्योगिक-बहिःस्राव प्रदूषण के विरुद्ध औपचारिक Chambal Purification Programme के अंतर्गत रखा गया है।",
+            "कोटा-स्थित उर्वरक और रासायनिक संयंत्र (Chambal Fertilisers, IPCL) मुख्य प्रवाह-अनुगामी योगदानकर्ता हैं।",
+            "यहाँ का प्रदूषण राष्ट्रीय चंबल अभयारण्य (घड़ियाल + गंगा डॉल्फ़िन का आवास) को सीधे संकट में डालता है।"
+          ]
+        },
+        "name_hi": "चंबल औद्योगिक जल प्रदूषण (कोटा)",
+        "district_hi": "कोटा",
+        "type_hi": "जल प्रदूषण"
       }
     },
     {
@@ -182,8 +214,16 @@
             "Cement dust deposition within 1-2 km of the plants reduces soil fertility across Rajasthan's largest cement corridor.",
             "Vindhyan-limestone quarries here feed the belt — the cluster is Rajasthan's largest single-industry air-pollution source outside Kota."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "निंबाहेड़ा–चित्तौड़गढ़–चंदेरिया सीमेंट पेटी में J.K. White, Wonder, Ultra-Tech और Birla Cement के क्लिंकर संयंत्र हैं।",
+            "संयंत्रों के 1-2 किमी के भीतर सीमेंट-धूल का जमाव राजस्थान के सबसे बड़े सीमेंट गलियारे में मृदा-उर्वरता घटाता है।",
+            "यहाँ की विंध्यन-चूना-पत्थर खदानें पेटी को कच्चा माल देती हैं — कोटा के बाहर यह क्लस्टर राजस्थान का सबसे बड़ा एकल-उद्योग वायु-प्रदूषण स्रोत है।"
+          ]
+        },
+        "name_hi": "चित्तौड़–निंबाहेड़ा सीमेंट पेटी वायु प्रदूषण",
+        "district_hi": "चित्तौड़गढ़",
+        "type_hi": "वायु प्रदूषण"
       }
     },
     {
@@ -219,8 +259,16 @@
             "Chemical dyes and processing wash-water have been repeatedly flagged by the Rajasthan State Pollution Control Board as non-compliant with CETP norms.",
             "The Angucha-Dariba lead-zinc belt to the north-east adds heavy-metal load in the same catchment."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "भीलवाड़ा ('राजस्थान का मैनचेस्टर') — भारत का सबसे बड़ा सूटिंग-वस्त्र केंद्र — वस्त्र-मिल बहिःस्राव कोठारी (बनास सहायक) उप-बेसिन में छोड़ता है।",
+            "रासायनिक रंजक और प्रसंस्करण धुलाई-जल को Rajasthan State Pollution Control Board ने बार-बार CETP मानकों के अननुरूप बताया है।",
+            "उत्तर-पूर्व की अगुचा-दरीबा सीसा-जस्ता पेटी उसी जल-ग्रहण क्षेत्र में भारी-धातु भार जोड़ती है।"
+          ]
+        },
+        "name_hi": "भीलवाड़ा वस्त्र-उद्योग बहिःस्राव",
+        "district_hi": "भीलवाड़ा",
+        "type_hi": "जल प्रदूषण"
       }
     },
     {
@@ -256,8 +304,16 @@
             "Open-cast blasting and heavy machinery raise SPM by up to 5x background within a 3 km radius.",
             "Acid-mine drainage risks contaminating the Ahar river headwaters — a permanent Udaipur-basin concern."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "भारत की सबसे बड़ी रॉक-फॉस्फेट खान (RSMML, झामरकोटड़ा) — भारत की फॉस्फेटिक-उर्वरक आत्मनिर्भरता के लिए महत्त्वपूर्ण।",
+            "खुली-खान विस्फोट और भारी मशीनरी 3 किमी की परिधि में SPM को सामान्य से 5 गुना तक बढ़ा देती है।",
+            "अम्ल-खान निकास आहड़ नदी के उद्गम को दूषित करने का ख़तरा रखता है — उदयपुर-बेसिन की स्थायी चिंता।"
+          ]
+        },
+        "name_hi": "झामरकोटड़ा रॉक-फॉस्फेट खान — धूल और बहाव",
+        "district_hi": "उदयपुर",
+        "type_hi": "खनन प्रदूषण"
       }
     },
     {
@@ -293,8 +349,16 @@
             "Tailings-pond seepage has raised copper and cadmium in Kolihan groundwater to unsafe levels for decades.",
             "The belt was Rajasthan's first mining site to receive Central Pollution Control Board action orders (1980s)."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "खेतड़ी तांबा-सांद्रक + HCL प्रगालक SO₂ और भारी-धातु धूल उत्सर्जित करते हैं — ऐतिहासिक रूप से राज्य का सर्वाधिक प्रदूषणकारी धातु-खनन केंद्र।",
+            "टेलिंग्स-तालाब के रिसाव ने दशकों से कोलिहान के भूजल में तांबा और कैडमियम को असुरक्षित स्तर तक बढ़ा रखा है।",
+            "यह पेटी Central Pollution Control Board के कार्रवाई-आदेश पाने वाला राजस्थान का पहला खनन स्थल थी (1980 का दशक)।"
+          ]
+        },
+        "name_hi": "खेतड़ी तांबा पेटी प्रदूषण",
+        "district_hi": "झुंझुनूँ",
+        "type_hi": "खनन प्रदूषण"
       }
     },
     {
@@ -330,8 +394,16 @@
             "2019 mass die-off of migratory birds (Sambhar avian botulism) killed 25,000+ ducks, geese and waders in three weeks.",
             "Rajasthan Government notified Sambhar as a wetland-conservation site under the Ramsar framework in 2022."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "भारत की सबसे बड़ी अंतःस्थलीय खारी झील — अवैध नमक-क्यारी संचालकों के अतिक्रमण से पिछले 30 वर्षों में जल-निकाय सिकुड़ गया है।",
+            "2019 में प्रवासी पक्षियों की सामूहिक मृत्यु (सांभर एवियन बोटुलिज़्म) ने तीन सप्ताह में 25,000+ बत्तख, हंस और जल-पक्षी मार डाले।",
+            "राजस्थान सरकार ने 2022 में सांभर को रामसर ढाँचे के अंतर्गत आर्द्रभूमि-संरक्षण स्थल अधिसूचित किया।"
+          ]
+        },
+        "name_hi": "सांभर लवण झील — पारिस्थितिक संकट",
+        "district_hi": "जयपुर / नागौर",
+        "type_hi": "जैव-विविधता संकट"
       }
     },
     {
@@ -367,8 +439,16 @@
             "Deforestation and pit-mining here open the \"Delhi-Alwar gap\" that funnels desert dust storms into the NCR.",
             "A key case-study in the Central Empowered Committee's Aravalli reports since 2018."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "उच्चतम न्यायालय ने राजगढ़-नीमली पेटी (अलवर) — अरावली की उत्तरी प्राचीर — में अवैध खनन रोकने के बार-बार आदेश दिए हैं।",
+            "यहाँ वनोन्मूलन और गड्ढा-खनन 'दिल्ली-अलवर दरार' खोल देते हैं, जो मरुस्थलीय धूल-भरी आँधियों को NCR में पहुँचाती है।",
+            "2018 से Central Empowered Committee की अरावली रिपोर्टों में एक प्रमुख केस-स्टडी।"
+          ]
+        },
+        "name_hi": "अरावली अवैध खनन — अलवर-राजगढ़ पेटी",
+        "district_hi": "अलवर",
+        "type_hi": "खनन प्रदूषण"
       }
     },
     {
@@ -404,8 +484,16 @@
             "Fluorosis symptoms: dental mottling, skeletal fluorosis (hunchback), joint stiffness, bone-decay.",
             "Rajasthan Adhyan Class 12 Ch 6 flags this as the state's most systemic drinking-water crisis."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "1,452 राजस्थानी गाँवों में भूजल फ्लोराइड 10 PPM से अधिक — जालोर, बांसवाड़ा, बाड़मेर, जैसलमेर, नागौर और सिरोही सर्वाधिक प्रभावित।",
+            "फ्लोरोसिस के लक्षण: दंत-धब्बे, अस्थि-फ्लोरोसिस (कुबड़ापन), जोड़ों की जकड़न, अस्थि-क्षय।",
+            "राजस्थान अध्ययन कक्षा 12 अध्याय 6 इसे राज्य का सबसे व्यापक पेयजल संकट बताता है।"
+          ]
+        },
+        "name_hi": "फ्लोरोसिस पेटी — जालोर-बाड़मेर-नागौर",
+        "district_hi": "जालोर",
+        "type_hi": "जल प्रदूषण"
       }
     },
     {
@@ -441,8 +529,16 @@
             "Restored dry-deciduous forest cover — Bhil-community-led plantation of local dhok, salar and khejri.",
             "A rare case where the state's freedom-struggle memorialisation directly triggered environmental recovery."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "राष्ट्रीय मानगढ़ धाम स्मारक समर्पण (2022) के बाद राजस्थान सरकार ने पहाड़ी के लिए एक पारिस्थितिक-पुनर्स्थापन परियोजना अधिसूचित की।",
+            "पुनर्स्थापित शुष्क-पर्णपाती वन-आवरण — भील-समुदाय-नेतृत्व में स्थानीय धोक, सालर और खेजड़ी का रोपण।",
+            "एक दुर्लभ उदाहरण जहाँ राज्य के स्वतंत्रता-संग्राम स्मारकीकरण ने सीधे पर्यावरणीय पुनर्प्राप्ति को जन्म दिया।"
+          ]
+        },
+        "name_hi": "मानगढ़ पहाड़ी पवित्र-वन पुनर्जनन",
+        "district_hi": "बांसवाड़ा",
+        "type_hi": "सकारात्मक संरक्षण"
       }
     }
   ]

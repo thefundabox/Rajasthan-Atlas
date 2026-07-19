@@ -21,8 +21,16 @@
             "Rajasthan's first Conservation Reserve — notified 2015 to protect the migratory raptor congregation at Bikaner's Jorbeed carcass dump.",
             "Home to Rajasthan's densest wintering raptor population — Steppe Eagle, Egyptian Vulture, Griffon, Cinereous Vulture congregate here (~5,000 birds).",
             "Global significance — one of only 3 sites in India where the Endangered Egyptian Vulture reliably winters in large numbers."
+          ],
+          "facts_hi": [
+            "राजस्थान का पहला संरक्षण आरक्षण — बीकानेर के जोरबीड़ मृत-पशु स्थल पर प्रवासी शिकारी-पक्षियों के जमावड़े की रक्षा हेतु 2015 में अधिसूचित।",
+            "राजस्थान की सघनतम शीतकालीन शिकारी-पक्षी आबादी — स्टेपी ईगल, इजिप्शियन गिद्ध, ग्रिफ़ॉन और सिनेरियस गिद्ध यहाँ जुटते हैं (~5,000 पक्षी)।",
+            "वैश्विक महत्त्व — भारत के केवल 3 स्थलों में से एक जहाँ संकटग्रस्त इजिप्शियन गिद्ध नियमित रूप से बड़ी संख्या में शीत बिताता है।"
           ]
-        }
+        },
+        "name_hi": "जोरबीड़ संरक्षण आरक्षण",
+        "district_hi": "बीकानेर",
+        "type_hi": "संरक्षण आरक्षण"
       }
     },
     {
@@ -45,8 +53,16 @@
             "Aravalli hill forest around the Sundha Mata shrine — Rajasthan's third-highest peak (Sundha Mata Peak, 1,220 m).",
             "Straddles Jalore-Sirohi boundary; protects the corridor between Mount Abu WLS and Kumbhalgarh WLS.",
             "Sloth bear, leopard, chinkara, langur; Aravalli's most southerly leopard population."
+          ],
+          "facts_hi": [
+            "सुंधा माता मंदिर के इर्द-गिर्द अरावली पहाड़ी वन — राजस्थान की तीसरी सबसे ऊँची चोटी (सुंधा माता शिखर, 1,220 मी)।",
+            "जालोर-सिरोही सीमा पर फैला; माउंट आबू और कुंभलगढ़ अभयारण्यों के बीच गलियारे की रक्षा करता है।",
+            "भालू, तेंदुआ, चिंकारा, लंगूर; अरावली की सबसे दक्षिणी तेंदुआ-आबादी।"
           ]
-        }
+        },
+        "name_hi": "सुंधामाता संरक्षण आरक्षण",
+        "district_hi": "जालोर, सिरोही",
+        "type_hi": "संरक्षण आरक्षण"
       }
     },
     {
@@ -69,8 +85,16 @@
             "Protects the community-conserved khejri-and-blackbuck landscape of the Bishnoi villages south of Jodhpur.",
             "The 1730 Khejarli martyrdom (363 Bishnois died protecting khejri trees) happened in this cluster — the world's first recorded environmental sacrifice.",
             "One of India's few CRs where local community management is written into the notification itself."
+          ],
+          "facts_hi": [
+            "जोधपुर के दक्षिण में विश्नोई गाँवों के समुदाय-संरक्षित खेजड़ी-और-कृष्णमृग भूदृश्य की रक्षा करता है।",
+            "1730 का खेजड़ली बलिदान (खेजड़ी वृक्षों की रक्षा में 363 विश्नोइयों का प्राण-त्याग) इसी क्षेत्र में हुआ — विश्व का प्रथम अभिलिखित पर्यावरण-बलिदान।",
+            "भारत के उन गिने-चुने संरक्षण आरक्षणों में से एक जहाँ स्थानीय समुदाय-प्रबंधन अधिसूचना में ही दर्ज है।"
           ]
-        }
+        },
+        "name_hi": "गुढ़ा विश्नोइयान संरक्षण आरक्षण",
+        "district_hi": "जोधपुर",
+        "type_hi": "संरक्षण आरक्षण"
       }
     },
     {
@@ -93,8 +117,16 @@
             "One of Rajasthan's earliest CRs — a semi-arid grass-and-scrub reserve carved out of the erstwhile Beed Ghas Farm.",
             "Shelter for chinkara, blackbuck, desert fox, migratory bustards in the Shekhawati belt.",
             "Community-managed alongside the Rajasthan Forest Department — one of the state's first co-managed reserves."
+          ],
+          "facts_hi": [
+            "राजस्थान के आरंभिक संरक्षण आरक्षणों में से एक — पूर्ववर्ती बीड़ घास फार्म से बना अर्ध-शुष्क घास-और-झाड़ी आरक्षण।",
+            "शेखावाटी पेटी में चिंकारा, कृष्णमृग, मरु-लोमड़ी और प्रवासी सोहनचिड़िया की शरणस्थली।",
+            "राजस्थान वन विभाग के साथ समुदाय-प्रबंधित — राज्य के पहले सह-प्रबंधित आरक्षणों में से एक।"
           ]
-        }
+        },
+        "name_hi": "बीड़ घास फार्म संरक्षण आरक्षण, झुंझुनूँ",
+        "district_hi": "झुंझुनूँ",
+        "type_hi": "संरक्षण आरक्षण"
       }
     },
     {
@@ -117,8 +149,16 @@
             "One of India's smallest Conservation Reserves — just 0.72 sq km — but a critical demoiselle-crane wintering site in the Nagaur belt.",
             "The community-conserved pond at Rotu village hosts ~4,000 demoiselle cranes (Kurja) from November to March.",
             "Second only to Khichan (Phalodi) in Rajasthan for demoiselle-crane winter concentration."
+          ],
+          "facts_hi": [
+            "भारत के सबसे छोटे संरक्षण आरक्षणों में से एक — मात्र 0.72 वर्ग किमी — पर नागौर पेटी में कुरजाँ का महत्त्वपूर्ण शीतकालीन स्थल।",
+            "रोटू गाँव का समुदाय-संरक्षित तालाब नवंबर से मार्च तक ~4,000 कुरजाँ (डेमोइज़ेल सारस) को आश्रय देता है।",
+            "कुरजाँ के शीतकालीन जमावड़े में राजस्थान में खींचन (फलोदी) के बाद दूसरे स्थान पर।"
           ]
-        }
+        },
+        "name_hi": "रोटू संरक्षण आरक्षण",
+        "district_hi": "नागौर",
+        "type_hi": "संरक्षण आरक्षण"
       }
     },
     {
@@ -141,8 +181,16 @@
             "Dry-deciduous forest around Basi village near Chittorgarh; contiguous with the Bassi Wildlife Sanctuary.",
             "Supports leopard, chausingha (four-horned antelope), sloth bear and migratory water-birds at Basi Talab.",
             "Together with Bassi WLS forms one of eastern Rajasthan's largest continuous forest corridors."
+          ],
+          "facts_hi": [
+            "चित्तौड़गढ़ के निकट बस्सी गाँव के इर्द-गिर्द शुष्क-पर्णपाती वन; बस्सी वन्यजीव अभयारण्य से सटा हुआ।",
+            "बस्सी तालाब पर तेंदुआ, चौसिंगा, भालू और प्रवासी जल-पक्षियों को आश्रय देता है।",
+            "बस्सी अभयारण्य के साथ मिलकर पूर्वी राजस्थान के सबसे बड़े निरंतर वन-गलियारों में से एक बनाता है।"
           ]
-        }
+        },
+        "name_hi": "बस्सी संरक्षण आरक्षण",
+        "district_hi": "चित्तौड़गढ़",
+        "type_hi": "संरक्षण आरक्षण"
       }
     },
     {
@@ -165,8 +213,16 @@
             "Extends the Ramgarh Vishdhari Tiger Reserve corridor into the Chambal ravines of Bundi-Kota.",
             "Buffers the Mukundra Hills TR and the Ranthambhore TR — key to the tiger movement corridor across southeast Rajasthan.",
             "Rich in leopard, hyena, chinkara, and Chambal ravine bird species (Bonelli's Eagle, Chestnut-shouldered Petronia)."
+          ],
+          "facts_hi": [
+            "रामगढ़ विषधारी टाइगर रिज़र्व के गलियारे को बूँदी-कोटा के चंबल बीहड़ों तक विस्तारित करता है।",
+            "मुकुंदरा हिल्स और रणथंभौर टाइगर रिज़र्वों के बीच बफ़र — दक्षिण-पूर्वी राजस्थान में बाघ-संचरण गलियारे की कुंजी।",
+            "तेंदुआ, लकड़बग्घा, चिंकारा और चंबल-बीहड़ की पक्षी-प्रजातियों (बोनेली ईगल, चेस्टनट-शोल्डर्ड पेट्रोनिया) से समृद्ध।"
           ]
-        }
+        },
+        "name_hi": "बंसिया-भागी संरक्षण आरक्षण",
+        "district_hi": "बूँदी, कोटा",
+        "type_hi": "संरक्षण आरक्षण"
       }
     },
     {
@@ -189,8 +245,16 @@
             "Aravalli forest around the Shakambhari Devi shrine — the historical hearth of the Chauhans of Shakambhari (7th–12th c.).",
             "Corridor between the Sariska TR and the Jaisamand-Bassi complex; migratory route for leopards and sambar.",
             "The Shakambhari temple is Rajasthan's oldest continuously worshipped Shakti shrine — dates to the Gupta era."
+          ],
+          "facts_hi": [
+            "शाकंभरी देवी मंदिर के इर्द-गिर्द अरावली वन — शाकंभरी के चौहानों (7वीं–12वीं शताब्दी) का ऐतिहासिक उद्गम।",
+            "सरिस्का टाइगर रिज़र्व और जयसमंद-बस्सी परिसर के बीच गलियारा; तेंदुओं और सांभर का प्रवास-मार्ग।",
+            "शाकंभरी मंदिर राजस्थान का सबसे प्राचीन निरंतर-पूजित शक्ति-स्थल है — गुप्त काल से।"
           ]
-        }
+        },
+        "name_hi": "शाकंभरी संरक्षण आरक्षण",
+        "district_hi": "सीकर",
+        "type_hi": "संरक्षण आरक्षण"
       }
     }
   ]
