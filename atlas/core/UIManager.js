@@ -19,6 +19,7 @@
 import { CONFIG } from './config.js';
 import { esc, el } from './util/dom.js';
 import { qualityBadgeHTML } from './util/quality.js';
+import { t, getLang, setLang } from './i18n.js';
 
 export class UIManager {
   constructor(atlas) {
@@ -65,9 +66,9 @@ export class UIManager {
     }
     nav.append(el('button', {
       class: 'h-btn', 'data-action': 'stats',
-      title: 'By the numbers — atlas statistics',
+      title: t('By the numbers — atlas statistics'),
       onclick: () => this._toggleStats(true),
-    }, ['Statistics']));
+    }, [t('Statistics')]));
     nav.append(el('button', {
       class: 'h-btn', 'data-action': 'theme',
       title: 'Cycle theme (D)',
@@ -75,9 +76,17 @@ export class UIManager {
     }, [el('span', { class: 'label' }, [this._themeButtonLabel()])]));
     nav.append(el('button', {
       class: 'h-btn', 'data-action': 'print',
-      title: 'Print / save as PDF',
+      title: t('Print / save as PDF'),
       onclick: () => this.atlas.export.print(),
-    }, ['Print']));
+    }, [t('Print')]));
+    // Language toggle — EN ⇄ हिं. Persists in localStorage and reloads.
+    const isHi = getLang() === 'hi';
+    nav.append(el('button', {
+      class: 'h-btn h-lang', 'data-action': 'lang',
+      'aria-pressed': isHi ? 'true' : 'false',
+      title: isHi ? 'Switch to English' : t('Switch to Hindi'),
+      onclick: () => setLang(isHi ? 'en' : 'hi'),
+    }, [isHi ? 'EN' : 'हिं']));
   }
 
   /* ------------------------------------------------------------------ */
@@ -90,12 +99,12 @@ export class UIManager {
 
     // Floating zoom / reset controls, top-right.
     const controls = el('div', { class: 'map-controls' });
-    controls.append(el('button', { class: 'mc', title: 'Zoom in (+)',
+    controls.append(el('button', { class: 'mc', title: t('Zoom in (+)'),
       onclick: () => this.atlas.interaction.zoomBy(CONFIG.zoom.buttonStep) }, ['+']));
-    controls.append(el('button', { class: 'mc', title: 'Zoom out (−)',
+    controls.append(el('button', { class: 'mc', title: t('Zoom out (−)'),
       onclick: () => this.atlas.interaction.zoomBy(1 / CONFIG.zoom.buttonStep) }, ['−']));
     controls.append(el('div', { class: 'divider' }));
-    controls.append(el('button', { class: 'mc', title: 'Reset view (0)',
+    controls.append(el('button', { class: 'mc', title: t('Reset view (0)'),
       onclick: () => this.atlas.interaction.reset() }, ['⌂']));
     map.append(controls);
 
@@ -144,9 +153,9 @@ export class UIManager {
     const wrap = el('div', { class: 'layers-popover' });
     const toggle = el('button', {
       class: 'lp-toggle',
-      title: 'Layers, modes, and legend',
+      title: t('Layers, modes, and legend'),
       onclick: () => wrap.classList.toggle('open'),
-    }, ['☰  Layers']);
+    }, [t('☰  Layers')]);
     const panel  = el('div', { class: 'lp-panel' });
 
     // ── Tab panel: Presets (retained as a hidden panel so setMode() +
@@ -269,7 +278,7 @@ export class UIManager {
       class: 'lp-tab-panel active', 'data-panel': 'layers', role: 'tabpanel',
     });
     layersPanel.append(el('p', { class: 'lp-hint' }, [
-      'Tick a dataset to show or hide it on the map.',
+      t('Tick a dataset to show or hide it on the map.'),
     ]));
     this._els.layerList = el('div');
     layersPanel.append(this._els.layerList);
@@ -313,12 +322,12 @@ export class UIManager {
     }
     // Divisions summary (still relevant for admin category).
     for (const [g, items] of groups) {
-      box.append(el('h4', {}, [g.toUpperCase()]));
+      box.append(el('h4', {}, [t(g.toUpperCase())]));
       const listEl = el('div');
       for (const c of items) {
-        const row = el('label', { class: 'lp-row', title: 'Toggle visibility' });
+        const row = el('label', { class: 'lp-row', title: t('Toggle visibility') });
         const chk = el('input', { type: 'checkbox', checked: c.visible });
-        const name = el('span', { class: 'lp-name' }, [c.name]);
+        const name = el('span', { class: 'lp-name' }, [t(c.name)]);
         const swch = el('span', { class: 'lp-switch' + (c.visible ? ' on' : ''), 'aria-hidden': 'true' });
         chk.addEventListener('change', () => {
           this.atlas.layers.setVisible(c.id, chk.checked);
@@ -376,12 +385,12 @@ export class UIManager {
     const km = (n) => n?.toLocaleString('en-IN', { maximumFractionDigits: 1 });
     overlay.innerHTML = '';
     overlay.append(el('button', {
-      class: 'close-btn', title: 'Close (Esc)',
+      class: 'close-btn', title: t('Close (Esc)'),
       onclick: () => this._toggleStats(false),
     }, ['×']));
-    overlay.append(el('h2', {}, ['Rajasthan by the numbers']));
+    overlay.append(el('h2', {}, [t('Rajasthan by the numbers')]));
     overlay.append(el('div', { class: 'stats-lede' },
-      ['A live audit of the atlas\'s environment and administrative layers, drawn from the current dataset.']));
+      [t("A live audit of the atlas's environment and administrative layers, drawn from the current dataset.")]));
 
     const grid = el('div', { class: 'stats-grid' });
     const card = (label, big, unit, foot) => {
@@ -395,22 +404,22 @@ export class UIManager {
       grid.append(c);
     };
 
-    card('Districts', s.districts);
-    card('Divisions', s.divisions);
-    card('National parks',  s.nationalParks);
-    card('Tiger reserves',  s.tigerReserves);
-    card('Wildlife sanctuaries', s.wildlifeSanctuaries);
-    card('Ramsar sites',    s.ramsarSites);
-    card('Wetlands (non-Ramsar)', s.wetlands);
-    card('Biosphere reserves', s.biosphereReserves,
+    card(t('Districts'), s.districts);
+    card(t('Divisions'), s.divisions);
+    card(t('National parks'),  s.nationalParks);
+    card(t('Tiger reserves'),  s.tigerReserves);
+    card(t('Wildlife sanctuaries'), s.wildlifeSanctuaries);
+    card(t('Ramsar sites'),    s.ramsarSites);
+    card(t('Wetlands (non-Ramsar)'), s.wetlands);
+    card(t('Biosphere reserves'), s.biosphereReserves,
       null, 'None notified by MoEFCC.');
-    card('Total PA area', km(s.totalPAArea), 'km²', 'Sum of NP + TR + WLS areas.');
-    card('Coverage of Rajasthan', s.coveragePct.toFixed(1), '%', 'Protected-area extent vs 342,239 km² state area.');
-    card('Point-only features', s.pointOnlyCount, null,
+    card(t('Total PA area'), km(s.totalPAArea), 'km²', 'Sum of NP + TR + WLS areas.');
+    card(t('Coverage of Rajasthan'), s.coveragePct.toFixed(1), '%', 'Protected-area extent vs 342,239 km² state area.');
+    card(t('Point-only features'), s.pointOnlyCount, null,
       'Features shipped as points because their polygons are unpublished.');
-    if (s.largest)  card('Largest PA',   km(s.largest.area),  'km²', s.largest.name);
-    if (s.smallest) card('Smallest PA',  km(s.smallest.area), 'km²', s.smallest.name);
-    if (s.mostRecent) card('Most recent notification', s.mostRecent.year, null, s.mostRecent.name);
+    if (s.largest)  card(t('Largest PA'),   km(s.largest.area),  'km²', s.largest.name);
+    if (s.smallest) card(t('Smallest PA'),  km(s.smallest.area), 'km²', s.smallest.name);
+    if (s.mostRecent) card(t('Most recent notification'), s.mostRecent.year, null, s.mostRecent.name);
     overlay.append(grid);
   }
 
@@ -424,7 +433,7 @@ export class UIManager {
     // Prepend the close button.
     const closer = el('div', { class: 'close-btn' });
     closer.append(el('button', {
-      title: 'Close (Esc)', 'aria-label': 'Close panel',
+      title: t('Close (Esc)'), 'aria-label': t('Close panel'),
       onclick: () => this._closeDetail(),
     }, ['×']));
     right.prepend(closer);
@@ -440,7 +449,7 @@ export class UIManager {
   _renderDetailEmpty() {
     this._els.detail.innerHTML = '';
     this._els.detail.append(el('div', { class: 'ed ed-empty' },
-      ['Select a district or protected area from the map to explore.']));
+      [t('Select a district or protected area from the map to explore.')]));
   }
 
   /**
@@ -453,14 +462,14 @@ export class UIManager {
 
     // Hero
     const hero = el('div', { class: 'ed-hero' });
-    hero.append(el('div', { class: 'ed-kicker' }, [(p.division ? `${p.division} Division · ` : '') + 'District']));
+    hero.append(el('div', { class: 'ed-kicker' }, [(p.division ? `${p.division} ${t('Division')} · ` : '') + t('District')]));
     const title = el('h2', { class: 'ed-title' }); title.textContent = p.name ?? feat.id; hero.append(title);
     if (p.headquarters) {
       const sub = el('p', { class: 'ed-sub' }); sub.textContent = `Headquartered at ${p.headquarters}`;
       hero.append(sub);
     }
     const tags = el('div', { class: 'ed-tags' });
-    if (p.newDistrict) tags.append(el('span', { class: 'ed-tag tag-new' }, ['Retained new district (2023 → 2024)']));
+    if (p.newDistrict) tags.append(el('span', { class: 'ed-tag tag-new' }, [t('Retained new district (2023 → 2024)')]));
     // Quality badge — districts derive from OSM admin_level=5 relations.
     const badge = el('span');
     badge.innerHTML = qualityBadgeHTML('multipolygon');
@@ -470,29 +479,29 @@ export class UIManager {
 
     // Key figures — if we have a bbox, compute rough area indicator using bbox.
     const figures = el('div', { class: 'ed-figures' });
-    figures.append(figCard('Division', p.division ?? '—'));
-    figures.append(figCard('HQ', p.headquarters ?? '—'));
+    figures.append(figCard(t('Division'), p.division ?? '—'));
+    figures.append(figCard(t('HQ'), p.headquarters ?? '—'));
     if (p.bbox) figures.append(figCard('BBox span', `${(p.bbox[2] - p.bbox[0]).toFixed(2)}°`));
     if (p.centroid) figures.append(figCard('Centre', `${p.centroid[1].toFixed(2)}°N`));
-    wrap.append(sectionEl('Key figures', figures));
+    wrap.append(sectionEl(t('Key figures'), figures));
 
     // Location dl
     const dl = el('dl', { class: 'ed-row' });
-    dl.append(el('dt', {}, ['Division']));         dl.append(el('dd', {}, [p.division ?? '—']));
-    dl.append(el('dt', {}, ['Headquarters']));     dl.append(el('dd', {}, [p.headquarters ?? '—']));
-    dl.append(el('dt', {}, ['State']));            dl.append(el('dd', {}, ['Rajasthan']));
+    dl.append(el('dt', {}, [t('Division')]));         dl.append(el('dd', {}, [p.division ?? '—']));
+    dl.append(el('dt', {}, [t('Headquarters')]));     dl.append(el('dd', {}, [p.headquarters ?? '—']));
+    dl.append(el('dt', {}, [t('State')]));            dl.append(el('dd', {}, ['Rajasthan']));
     if (p.centroid) {
-      dl.append(el('dt', {}, ['Centroid']));
+      dl.append(el('dt', {}, [t('Centroid')]));
       dl.append(el('dd', { class: 'mono' }, [`${p.centroid[1].toFixed(3)}°N, ${p.centroid[0].toFixed(3)}°E`]));
     }
-    wrap.append(sectionEl('Location', dl));
+    wrap.append(sectionEl(t('Location'), dl));
 
     // References
     const src = el('div', { class: 'ed-sources' });
     (p.source ? p.source.split('+').map(s => s.trim()) : [])
       .filter(Boolean).forEach(s => src.append(el('span', { class: 'ed-source' }, [s])));
     if (p.osmRelation) src.append(el('span', { class: 'ed-source' }, [`OSM rel/${p.osmRelation}`]));
-    if (src.children.length) wrap.append(sectionEl('References', src));
+    if (src.children.length) wrap.append(sectionEl(t('References'), src));
 
     this._els.detail.innerHTML = '';
     this._els.detail.append(wrap);
@@ -511,19 +520,19 @@ export class UIManager {
       const dcount = districts?.features.length ?? 0;
       const divs   = new Set(districts?.features.map(f => f.properties.division) ?? []).size;
       bar.innerHTML =
-        `<div class="s-item"><span class="s-label">Districts</span><span class="s-value">${dcount}</span></div>` +
-        `<div class="s-item"><span class="s-label">Divisions</span><span class="s-value">${divs}</span></div>` +
-        `<div class="s-item"><span class="s-label">Projection</span><span class="s-value">${esc(this.atlas.projection.meta()?.description ?? 'EPSG:4326')}</span></div>` +
+        `<div class="s-item"><span class="s-label">${esc(t('Districts'))}</span><span class="s-value">${dcount}</span></div>` +
+        `<div class="s-item"><span class="s-label">${esc(t('Divisions'))}</span><span class="s-value">${divs}</span></div>` +
+        `<div class="s-item"><span class="s-label">${esc(t('Projection'))}</span><span class="s-value">${esc(this.atlas.projection.meta()?.description ?? 'EPSG:4326')}</span></div>` +
         `<div class="spacer"></div>` +
-        `<div class="s-item"><span class="s-label">© OpenStreetMap contributors · ODbL 1.0</span></div>`;
+        `<div class="s-item"><span class="s-label">${esc(t('© OpenStreetMap contributors · ODbL 1.0'))}</span></div>`;
       return;
     }
     const p = feature.properties ?? {};
     bar.innerHTML =
-      `<div class="s-item"><span class="s-label">Selected</span><span class="s-value">${esc(p.name)}</span></div>` +
-      (p.division    ? `<div class="s-item"><span class="s-label">Division</span><span class="s-value">${esc(p.division)}</span></div>` : '') +
+      `<div class="s-item"><span class="s-label">${esc(t('Selected'))}</span><span class="s-value">${esc(p.name)}</span></div>` +
+      (p.division    ? `<div class="s-item"><span class="s-label">${esc(t('Division'))}</span><span class="s-value">${esc(p.division)}</span></div>` : '') +
       `<div class="spacer"></div>` +
-      (p.source      ? `<div class="s-item"><span class="s-label">Source</span><span class="s-value">${esc(p.source)}</span></div>` : '');
+      (p.source      ? `<div class="s-item"><span class="s-label">${esc(t('Source'))}</span><span class="s-value">${esc(p.source)}</span></div>` : '');
   }
 
   /* ------------------------------------------------------------------ */
@@ -537,7 +546,7 @@ export class UIManager {
     // Show the CURRENT theme so the button reads as a state indicator.
     // Cycling is documented in the button's title tooltip.
     const active = this.atlas.theme.active();
-    return this.atlas.theme.meta(active)?.name ?? 'Theme';
+    return t(this.atlas.theme.meta(active)?.name ?? 'Theme');
   }
 
   /* ------------------------------------------------------------------ */

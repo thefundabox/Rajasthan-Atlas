@@ -15,6 +15,7 @@
 
 import { Atlas } from '../core/AtlasCore.js';
 import { el }    from '../core/util/dom.js';
+import { t }     from '../core/i18n.js';
 import { renderConceptChains } from './ConceptChains.js';
 
 let districtDemographics = null;
@@ -42,9 +43,9 @@ function install() {
   if (nav) {
     nav.insertBefore(el('button', {
       class: 'h-btn', 'data-action': 'revision',
-      title: 'Revision Dashboard — study cards + concept chains (V)',
+      title: t('Revision Dashboard — study cards + concept chains (V)'),
       onclick: () => open(overlay),
-    }, ['Revise']), nav.firstChild);
+    }, [t('Revise')]), nav.firstChild);
   }
   // Layers popover button
   const modes = document.querySelector('.lp-modes');

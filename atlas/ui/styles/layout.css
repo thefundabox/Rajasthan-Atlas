@@ -68,6 +68,21 @@ body {
   gap: var(--sp-2);
   align-items: center;
 }
+/* Language toggle in the header — a compact pill that shows the OPPOSITE
+ * language (i.e. what a click would switch to). Persists via localStorage
+ * and reloads the page. */
+.a-header .h-btn.h-lang {
+  min-width: 32px;
+  text-align: center;
+  font-family: var(--sans);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.a-header .h-btn.h-lang[aria-pressed="true"] {
+  background: var(--sel-bg);
+  border-color: var(--sel);
+  color: var(--ink);
+}
 .a-header .search-wrap { flex: 0 0 300px; }
 
 /* -- Right rail — slide-in feature panel ------------------------------- */

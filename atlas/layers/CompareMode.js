@@ -12,6 +12,7 @@
 
 import { Atlas } from '../core/AtlasCore.js';
 import { esc, el } from '../core/util/dom.js';
+import { t }        from '../core/i18n.js';
 
 let districtDemographics = null;
 Atlas.bus.on('atlas:ready', async () => {
@@ -38,16 +39,16 @@ function install() {
   const nav = document.querySelector('.a-header .h-nav');
   if (nav) nav.insertBefore(el('button', {
     class: 'h-btn', 'data-action': 'compare',
-    title: 'Compare two features (X)',
+    title: t('Compare two features (X)'),
     onclick: () => toggle(),
-  }, ['Compare']), nav.firstChild);
+  }, [t('Compare')]), nav.firstChild);
 
   const modes = document.querySelector('.lp-modes');
   if (modes) modes.append(el('button', {
     class: 'lp-mode', 'data-mode': 'compare',
-    title: 'Compare mode',
+    title: t('Compare mode'),
     onclick: () => toggle(),
-  }, ['Compare']));
+  }, [t('Compare')]));
 
   Atlas.interaction.registerShortcut('x', () => toggle());
   Atlas.interaction.registerShortcut('X', () => toggle());
