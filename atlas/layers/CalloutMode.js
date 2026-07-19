@@ -519,10 +519,15 @@ function injectStyles() {
      * the left Sikhwal column to avoid overlap; other-layer callouts
      * remain on the right column, which scrolls. */
     body.itl-active .sikhwal-col-left { display: none; }
-    .sikhwal-col::-webkit-scrollbar { width: 6px; }
-    .sikhwal-col::-webkit-scrollbar-thumb {
-      background: color-mix(in srgb, var(--ink-3, #ba9863) 55%, transparent);
-      border-radius: 3px;
+    /* Desktop-only thin scroll-track. Mobile MobileFeatureTooltip.js
+     * hides the scrollbar entirely (the horizontal strip form uses
+     * scroll-snap cards as the affordance instead). */
+    @media (min-width: 641px) {
+      .sikhwal-col::-webkit-scrollbar { width: 6px; }
+      .sikhwal-col::-webkit-scrollbar-thumb {
+        background: color-mix(in srgb, var(--ink-3, #ba9863) 55%, transparent);
+        border-radius: 3px;
+      }
     }
     .sikhwal-box {
       position: relative;

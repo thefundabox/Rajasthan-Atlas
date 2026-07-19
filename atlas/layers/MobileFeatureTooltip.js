@@ -192,11 +192,22 @@ function injectStyles() {
         pointer-events: auto;
         /* Hide the visible horizontal scrollbar — it competes with the
          * bottom-sheet grip for attention and duplicates the visual
-         * affordance of the scroll-snap cards. Touch scroll still works. */
-        scrollbar-width: none;
+         * affordance of the scroll-snap cards. Touch scroll still works.
+         * !important defeats the base .sikhwal-col::-webkit-scrollbar
+         * rule which has equal specificity — source order alone is
+         * fragile because both plug-ins inject styles at atlas:ready. */
+        scrollbar-width: none !important;
       }
       .sikhwal-col-left::-webkit-scrollbar,
-      .sikhwal-col-right::-webkit-scrollbar { display: none; width: 0; height: 0; }
+      .sikhwal-col-right::-webkit-scrollbar,
+      .sikhwal-col-left::-webkit-scrollbar-thumb,
+      .sikhwal-col-right::-webkit-scrollbar-thumb,
+      .sikhwal-col-left::-webkit-scrollbar-track,
+      .sikhwal-col-right::-webkit-scrollbar-track {
+        display: none !important;
+        width: 0 !important; height: 0 !important;
+        background: transparent !important;
+      }
       .sikhwal-col-left  { left: 8px;   right: auto; width: calc(50vw - 12px); }
       .sikhwal-col-right { right: 76px; left: auto;  width: calc(50vw - 44px); }
       /* If one column is empty, let the other span the full width. */
