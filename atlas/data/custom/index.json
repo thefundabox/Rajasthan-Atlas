@@ -75,7 +75,7 @@
       "icon": "👑",
       "color": "#4a6b8a",
       "zIndex": 37,
-      "visible": false,
+      "visible": true,
       "searchable": true,
       "featureType": "integration_stage"
     },
