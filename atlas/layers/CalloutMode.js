@@ -324,6 +324,23 @@ function renderSikhwal(activeLayers) {
         el('span', { class: 'sikhwal-name' }, [feat.properties?.name || feat.id]),
       ]);
       box.append(header);
+      // Classifier subline — surface fortType, artForm, period, etc. so
+      // the callout carries structural information without requiring a
+      // click. Falls back gracefully when none are set.
+      const p = feat.properties || {};
+      const metaBits = [];
+      if (p.fortType)     metaBits.push(p.fortType);
+      if (p.artForm)      metaBits.push(String(p.artForm).replace(/_/g, ' '));
+      if (p.movementType) metaBits.push(p.movementType);
+      if (p.genre)        metaBits.push(p.genre);
+      if (p.period)       metaBits.push(p.period);
+      if (p.month)        metaBits.push(p.month);
+      if (p.date)         metaBits.push(p.date);
+      if (p.polityUnit)   metaBits.push(p.polityUnit);
+      if (p.builder)      metaBits.push('Built by ' + p.builder);
+      if (metaBits.length) {
+        box.append(el('div', { class: 'sikhwal-meta' }, [metaBits.join(' · ')]));
+      }
       if (teaser) box.append(el('div', { class: 'sikhwal-body' }, [teaser]));
       // Not appended to DOM yet — repositionSikhwal will attach to the
       // correct column based on the feature's longitude relative to the
@@ -571,6 +588,14 @@ function injectStyles() {
     }
     .sikhwal-icon { font-size: 12px; }
     .sikhwal-name { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sikhwal-meta {
+      font-size: 9.5px;
+      color: var(--ink-3, #8a7550);
+      font-style: italic;
+      margin: 1px 0 2px;
+      letter-spacing: 0.01em;
+      line-height: 1.25;
+    }
     .sikhwal-body { color: var(--ink-1, #3d2f10); }
     @media (max-width: 900px) {
       .sikhwal-root { display: none; }

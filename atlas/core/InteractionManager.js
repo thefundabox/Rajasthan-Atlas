@@ -277,8 +277,19 @@ export class InteractionManager {
     const meta = [];
     if (p.division)     meta.push(`${esc(p.division)} div`);
     if (p.headquarters) meta.push(`HQ ${esc(p.headquarters)}`);
-    if (p.type && !p.division) meta.push(esc(String(p.type).replace(/_/g, ' ')));
+    if (p.fortType)     meta.push(esc(p.fortType));
+    if (p.artForm)      meta.push(esc(String(p.artForm).replace(/_/g, ' ')));
+    if (p.movementType) meta.push(esc(p.movementType));
+    if (p.genre)        meta.push(esc(p.genre));
+    if (p.period)       meta.push(esc(p.period));
+    if (p.month)        meta.push(esc(p.month));
+    if (p.date)         meta.push(esc(p.date));
+    if (p.type && !p.division && !p.fortType && !p.artForm && !p.movementType && !p.genre && !p.period) {
+      meta.push(esc(String(p.type).replace(/_/g, ' ')));
+    }
     if (p.year_established || p.established) meta.push(`Est. ${esc(p.year_established ?? p.established)}`);
+    if (p.builder)      meta.push(`Built by ${esc(p.builder)}`);
+    if (p.community)    meta.push(esc(p.community));
     if (p.area_km2)     meta.push(`${p.area_km2.toLocaleString('en-IN')} km²`);
     if (p.district && !p.division) meta.push(`in ${esc(p.district)}`);
     if (meta.length) rows.push(`<div class="tt-meta">${meta.join(' · ')}</div>`);
