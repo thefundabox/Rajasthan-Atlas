@@ -249,6 +249,64 @@ const DICT = {
   'Mild':                             'हल्का',
   'Stable':                           'स्थिर',
 
+  /* Environment detail card (EnvironmentLayer.js) — section headers.
+   * 'Key figures' / 'Location' / 'References' are deliberately left in
+   * English above, matching the Hinglish register used elsewhere. */
+  'Overview':                         'सिंहावलोकन',
+  'Ecology':                          'पारिस्थितिकी',
+  'Conservation':                     'संरक्षण',
+  'Key Facts':                        'मुख्य तथ्य',
+  'Timeline':                         'कालक्रम',
+  'Related features':                 'संबंधित फ़ीचर',
+  'Locator':                          'स्थिति-मानचित्र',
+
+  /* Detail card — field labels */
+  'Area':                             'क्षेत्रफल',
+  'Notified':                         'अधिसूचित',
+  'IUCN category':                    'IUCN श्रेणी',
+  'IUCN':                             'IUCN',
+  'Authority':                        'प्राधिकरण',
+  'Programme':                        'कार्यक्रम',
+  'Status':                           'स्थिति',
+  'Key fauna':                        'प्रमुख जीव',
+  'Key flora':                        'प्रमुख वनस्पति',
+  'Also: ':                           'अन्य नाम: ',
+  'Remember':                         'याद रखें',
+  'Common Confusion: ':               'सामान्य भ्रम: ',
+  'Why It Matters':                   'क्यों महत्त्वपूर्ण है',
+  'Retrieved ':                       'लिया गया ',
+  'Commissionerate':                  'संभाग',
+  'Rajasthan':                        'राजस्थान',
+
+  /* Detail card — feature kind labels */
+  'National Park':                    'राष्ट्रीय उद्यान',
+  'Tiger Reserve':                    'टाइगर रिज़र्व',
+  'Wildlife Sanctuary':               'वन्यजीव अभयारण्य',
+  'Ramsar Site':                      'रामसर स्थल',
+  'Wetland':                          'आर्द्रभूमि',
+  'Biosphere Reserve':                'जीवमंडल आरक्षण',
+  'Feature':                          'फ़ीचर',
+
+  /* Detail card — badge tags */
+  'New (2023)':                       'नया (2023)',
+  'Point-only geometry':              'केवल-बिंदु ज्यामिति',
+
+  /* Detail card — "Why It Matters" prose */
+  "This feature is one of Rajasthan's cornerstone landmarks — often the first mentioned in state geography and biodiversity contexts.":
+    'यह राजस्थान के आधारस्तंभ स्थलों में से एक है — राज्य के भूगोल और जैव-विविधता के संदर्भ में प्रायः सबसे पहले इसी का उल्लेख होता है।',
+  "This feature is a widely cited landmark in Rajasthan's environmental fabric.":
+    'यह राजस्थान के पर्यावरणीय ताने-बाने में व्यापक रूप से उद्धृत स्थल है।',
+
+  /* Related-feature chip kinds (LAYER_LABEL) */
+  'Region':                           'क्षेत्र',
+  'Basin':                            'बेसिन',
+  'River':                            'नदी',
+  'Lake':                             'झील',
+  'Desert':                           'मरुस्थल',
+  'Range':                            'श्रेणी',
+  'Peak':                             'शिखर',
+  'Biosphere':                        'जीवमंडल',
+
   /* Language toggle button labels */
   'Switch to Hindi':                  'हिंदी में देखें',
   'Switch to English':                'Switch to English',

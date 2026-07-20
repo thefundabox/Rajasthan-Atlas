@@ -19,7 +19,7 @@
 import { CONFIG } from './config.js';
 import { esc, el } from './util/dom.js';
 import { qualityBadgeHTML } from './util/quality.js';
-import { t, getLang, setLang } from './i18n.js';
+import { t, tf, getLang, setLang } from './i18n.js';
 
 export class UIManager {
   constructor(atlas) {
@@ -529,8 +529,8 @@ export class UIManager {
     }
     const p = feature.properties ?? {};
     bar.innerHTML =
-      `<div class="s-item"><span class="s-label">${esc(t('Selected'))}</span><span class="s-value">${esc(p.name)}</span></div>` +
-      (p.division    ? `<div class="s-item"><span class="s-label">${esc(t('Division'))}</span><span class="s-value">${esc(p.division)}</span></div>` : '') +
+      `<div class="s-item"><span class="s-label">${esc(t('Selected'))}</span><span class="s-value">${esc(tf(p, 'name'))}</span></div>` +
+      (p.division    ? `<div class="s-item"><span class="s-label">${esc(t('Division'))}</span><span class="s-value">${esc(tf(p, 'division'))}</span></div>` : '') +
       `<div class="spacer"></div>` +
       (p.source      ? `<div class="s-item"><span class="s-label">${esc(t('Source'))}</span><span class="s-value">${esc(p.source)}</span></div>` : '');
   }

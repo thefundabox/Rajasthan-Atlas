@@ -111,7 +111,11 @@ async function loadEnrichment() {
     enrichment = await r.json();
     if (!enrichment?.features) { enrichment = null; return; }
 
-    // Merge extraFacts into every referenced feature's notes.facts.
+    // Merge extraFacts into every referenced feature's notes.facts, and
+    // mirror extraFacts_hi into notes.facts_hi so the Hindi fact list stays
+    // in step with the English one. When a feature has Hindi facts but the
+    // patch has no Hindi text, fall back to the English lines rather than
+    // silently dropping them from the Hindi list.
     for (const [featId, patch] of Object.entries(enrichment.features)) {
       if (!Array.isArray(patch.extraFacts) || !patch.extraFacts.length) continue;
       const feat = findFeature(featId);
@@ -119,6 +123,10 @@ async function loadEnrichment() {
       const p = feat.properties = feat.properties || {};
       p.notes = p.notes || {};
       p.notes.facts = [...(p.notes.facts || []), ...patch.extraFacts];
+      if (p.notes.facts_hi || Array.isArray(patch.extraFacts_hi)) {
+        const extraHi = Array.isArray(patch.extraFacts_hi) ? patch.extraFacts_hi : patch.extraFacts;
+        p.notes.facts_hi = [...(p.notes.facts_hi || []), ...extraHi];
+      }
     }
     console.info(`[CustomContent] merged enrichment into ${Object.keys(enrichment.features).length} feature id(s)`);
   } catch (err) {
