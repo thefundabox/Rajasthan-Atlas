@@ -26,6 +26,11 @@
             "Rajasthan's most-spoken dialect — Marwar region's language, closely related to Gujarati.",
             "Rich literary tradition: 'Dhola-Maru', 'Padmavat' (Malik Muhammad Jayasi's Hindi is stylistically Marwari-influenced), 'Vachanika Rathore'.",
             "Written in the Mahajani (Marwari merchant) script; modern usage has shifted to Devanagari."
+          ],
+          "facts_hi": [
+            "राजस्थान की सर्वाधिक बोली जाने वाली बोली — मारवाड़ क्षेत्र की भाषा, गुजराती से घनिष्ठ रूप से संबंधित।",
+            "समृद्ध साहित्यिक परंपरा: 'ढोला-मारू', 'पद्मावत' (मलिक मुहम्मद जायसी की हिंदी शैलीगत रूप से मारवाड़ी-प्रभावित है), 'वचनिका राठौड़'।",
+            "महाजनी (मारवाड़ी व्यापारी) लिपि में लिखी जाती थी; आधुनिक प्रयोग देवनागरी की ओर खिसक गया है।"
           ]
         },
         "districts_included": [
@@ -34,7 +39,10 @@
           "Jodhpur",
           "Nagaur",
           "Pali"
-        ]
+        ],
+        "name_hi": "मारवाड़ी",
+        "district_hi": "जोधपुर, पाली, नागौर, बाड़मेर, जालोर",
+        "type_hi": "भाषा क्षेत्र"
       }
     },
     {
@@ -62,6 +70,11 @@
             "Language of the Mewar region — softer, more Sanskritised than Marwari to the west.",
             "Preserved in Sisodia court chronicles: 'Ekling Mahatmya', 'Vir Vinod', 'Amar Kavya Vamshavali'.",
             "Meera Bai's bhajans are in a Braj-Mewari mixed dialect that shaped North Indian bhakti poetry."
+          ],
+          "facts_hi": [
+            "मेवाड़ क्षेत्र की भाषा — पश्चिम की मारवाड़ी की तुलना में कोमल और अधिक संस्कृतनिष्ठ।",
+            "सिसोदिया दरबारी वृत्तांतों में संरक्षित: 'एकलिंग महात्म्य', 'वीर विनोद', 'अमर काव्य वंशावली'।",
+            "मीराबाई के भजन ब्रज-मेवाड़ी मिश्रित बोली में हैं जिसने उत्तर भारतीय भक्ति काव्य को आकार दिया।"
           ]
         },
         "districts_included": [
@@ -70,7 +83,10 @@
           "Pratapgarh",
           "Rajsamand",
           "Udaipur"
-        ]
+        ],
+        "name_hi": "मेवाड़ी",
+        "district_hi": "उदयपुर, चित्तौड़, राजसमंद, भीलवाड़ा, प्रतापगढ़",
+        "type_hi": "भाषा क्षेत्र"
       }
     },
     {
@@ -98,6 +114,11 @@
             "Language of the Dhundhar region (historic Kachhawaha territory around Jaipur); closer to Braj Bhasha and Khari Boli Hindi than western Rajasthani.",
             "Sawai Jai Singh II patronised Dhundhari literature at the Jaipur court in the 18th c.",
             "Also called Jaipuri; the vernacular of most day-to-day Jaipur commerce alongside Hindi."
+          ],
+          "facts_hi": [
+            "ढूँढाड़ क्षेत्र (जयपुर के आसपास ऐतिहासिक कछवाहा क्षेत्र) की भाषा; पश्चिमी राजस्थानी की तुलना में ब्रज भाषा और खड़ी बोली हिंदी के अधिक निकट।",
+            "सवाई जय सिंह द्वितीय ने 18वीं शताब्दी में जयपुर दरबार में ढूँढाड़ी साहित्य को संरक्षण दिया।",
+            "जयपुरी भी कहलाती है; हिंदी के साथ-साथ अधिकांश दैनिक जयपुर व्यापार की बोलचाल।"
           ]
         },
         "districts_included": [
@@ -105,7 +126,10 @@
           "Jaipur",
           "Sawai Madhopur",
           "Tonk"
-        ]
+        ],
+        "name_hi": "ढूँढाड़ी (जयपुरी)",
+        "district_hi": "जयपुर, दौसा, सवाई माधोपुर, टोंक",
+        "type_hi": "भाषा क्षेत्र"
       }
     },
     {
@@ -133,6 +157,11 @@
             "Language of the Hadoti region (Chauhan-Hada territory of Bundi-Kota); influenced by Malvi to the east and Dhundhari to the north.",
             "Distinct vocabulary borrowed from Malwa plateau traditions and Bhil substrates.",
             "The Bundi and Kota court histories, and Bhavani Singh's 'Hadoti Vachanika', are the school's landmark texts."
+          ],
+          "facts_hi": [
+            "हाड़ौती क्षेत्र (बूँदी-कोटा का चौहान-हाड़ा क्षेत्र) की भाषा; पूर्व में मालवी और उत्तर में ढूँढाड़ी से प्रभावित।",
+            "मालवा पठार परंपराओं और भील अधःस्तर से उधार ली विशिष्ट शब्दावली।",
+            "बूँदी और कोटा के दरबारी इतिहास, और भवानी सिंह की 'हाड़ौती वचनिका', इस शैली के प्रमुख ग्रंथ हैं।"
           ]
         },
         "districts_included": [
@@ -140,7 +169,10 @@
           "Bundi",
           "Jhalawar",
           "Kota"
-        ]
+        ],
+        "name_hi": "हाड़ौती",
+        "district_hi": "कोटा, बूँदी, बारां, झालावाड़",
+        "type_hi": "भाषा क्षेत्र"
       }
     },
     {
@@ -168,13 +200,21 @@
             "Language of the Vagad tribal belt — a Bhili-Gujarati transitional dialect spoken by the Bhil, Damor and Meena communities.",
             "Classified by linguists as a Bhil language rather than Rajasthani; contains many Austroasiatic substrate loanwords.",
             "Ganeshi Lal Vyas (1912-1997) is Wagdi's most-celebrated modern folk-song composer."
+          ],
+          "facts_hi": [
+            "वागड़ जनजातीय पेटी की भाषा — भील, डामोर और मीणा समुदायों द्वारा बोली जाने वाली भीली-गुजराती संक्रमणकालीन बोली।",
+            "भाषाविदों द्वारा राजस्थानी के बजाय एक भील भाषा के रूप में वर्गीकृत; इसमें कई ऑस्ट्रोएशियाटिक अधःस्तर शब्द हैं।",
+            "गणेशी लाल व्यास (1912-1997) वागड़ी के सर्वाधिक प्रसिद्ध आधुनिक लोकगीत रचयिता हैं।"
           ]
         },
         "districts_included": [
           "Banswara",
           "Dungarpur",
           "Pratapgarh"
-        ]
+        ],
+        "name_hi": "वागड़ी (वागड़ी / भीली)",
+        "district_hi": "बांसवाड़ा, डूंगरपुर, दक्षिणी प्रतापगढ़",
+        "type_hi": "भाषा क्षेत्र"
       }
     },
     {
@@ -202,12 +242,20 @@
             "Language of the Malwa plateau — Rajasthan's share is limited to Jhalawar-Baran (former Kota state territory that lay on the Malwa plateau).",
             "Bulk of Malvi speakers live in Madhya Pradesh; Rajasthan holds the northern fringe.",
             "Distinct enough from Hadoti (its western neighbour) that most linguists treat it as a separate Central-Zone Hindi dialect, not Rajasthani."
+          ],
+          "facts_hi": [
+            "मालवा पठार की भाषा — राजस्थान का भाग झालावाड़-बारां (पूर्व कोटा राज्य का वह क्षेत्र जो मालवा पठार पर था) तक सीमित।",
+            "अधिकांश मालवी भाषी मध्य प्रदेश में रहते हैं; राजस्थान के पास उत्तरी छोर है।",
+            "हाड़ौती (इसकी पश्चिमी पड़ोसी) से इतनी भिन्न कि अधिकांश भाषाविद इसे राजस्थानी नहीं, एक अलग मध्य-क्षेत्रीय हिंदी बोली मानते हैं।"
           ]
         },
         "districts_included": [
           "Baran",
           "Jhalawar"
-        ]
+        ],
+        "name_hi": "मालवी",
+        "district_hi": "झालावाड़, बारां (राजस्थान का भाग)",
+        "type_hi": "भाषा क्षेत्र"
       }
     },
     {
@@ -235,13 +283,21 @@
             "Language of the Shekhawati region (Sikar-Jhunjhunu-Churu) — a Marwari-Dhundhari transitional dialect.",
             "The Marwari merchant diaspora (Birlas, Bajajs, Poddars, Goenkas) originated here — spread Shekhawati vocabulary into Kolkata and Bombay commerce.",
             "Preserved through Shekhawati folk songs and the Kayasth poet Gopinath's 19th c. compositions."
+          ],
+          "facts_hi": [
+            "शेखावाटी क्षेत्र (सीकर-झुंझुनूँ-चूरू) की भाषा — मारवाड़ी-ढूँढाड़ी संक्रमणकालीन बोली।",
+            "मारवाड़ी व्यापारी प्रवासी (बिड़ला, बजाज, पोद्दार, गोयनका) यहीं से निकले — शेखावाटी शब्दावली को कलकत्ता और बंबई के व्यापार में फैलाया।",
+            "शेखावाटी लोकगीतों और कायस्थ कवि गोपीनाथ की 19वीं शताब्दी की रचनाओं के माध्यम से संरक्षित।"
           ]
         },
         "districts_included": [
           "Churu",
           "Jhunjhunu",
           "Sikar"
-        ]
+        ],
+        "name_hi": "शेखावाटी",
+        "district_hi": "सीकर, झुंझुनूँ, चूरू",
+        "type_hi": "भाषा क्षेत्र"
       }
     },
     {
@@ -269,13 +325,21 @@
             "Language of the Matsya (Mewat) region — Alwar-Bharatpur in Rajasthan plus Nuh (Mewat) in Haryana.",
             "Spoken by the Meo community (Muslim Rajput converts); distinct Islamic-Hindu syncretic literary tradition.",
             "The 12th c. 'Prithviraj Raso' contains passages in an early form of Mewati."
+          ],
+          "facts_hi": [
+            "मत्स्य (मेवात) क्षेत्र की भाषा — राजस्थान में अलवर-भरतपुर तथा हरियाणा में नूँह (मेवात)।",
+            "मेव समुदाय (मुस्लिम राजपूत धर्मांतरित) द्वारा बोली जाती है; विशिष्ट इस्लामी-हिंदू समन्वित साहित्यिक परंपरा।",
+            "12वीं शताब्दी के 'पृथ्वीराज रासो' में मेवाती के आरंभिक रूप के अंश हैं।"
           ]
         },
         "districts_included": [
           "Alwar",
           "Bharatpur",
           "Deeg"
-        ]
+        ],
+        "name_hi": "मेवाती",
+        "district_hi": "अलवर, भरतपुर, डीग",
+        "type_hi": "भाषा क्षेत्र"
       }
     }
   ]

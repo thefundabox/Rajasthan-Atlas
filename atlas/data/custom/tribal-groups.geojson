@@ -26,6 +26,11 @@
             "Rajasthan's largest tribe — 39% of the state's ST population; heartland in the southern Aravalli-Vagad belt.",
             "Bhils were pivotal in Maharana Pratap's Haldighati campaign — his ally Rana Punja of the Bhils commanded 5,000 archers.",
             "Speaks Wagdi/Bhili; practises Ghoomar (adopted by Rajputs later), Gair dance, and the annual Baneshwar Fair on Shivaratri."
+          ],
+          "facts_hi": [
+            "राजस्थान की सबसे बड़ी जनजाति — राज्य की ST आबादी का 39%; हृदयस्थल दक्षिणी अरावली-वागड़ पेटी में।",
+            "भील महाराणा प्रताप के हल्दीघाटी अभियान में निर्णायक थे — उनके सहयोगी भीलों के राणा पूँजा ने 5,000 धनुर्धरों का नेतृत्व किया।",
+            "वागड़ी/भीली बोलते हैं; घूमर (बाद में राजपूतों द्वारा अपनाया गया), गैर नृत्य, और शिवरात्रि पर वार्षिक बेणेश्वर मेला मनाते हैं।"
           ]
         },
         "districts_included": [
@@ -34,7 +39,10 @@
           "Dungarpur",
           "Pratapgarh",
           "Udaipur"
-        ]
+        ],
+        "name_hi": "भील",
+        "district_hi": "बांसवाड़ा, डूंगरपुर, उदयपुर, चित्तौड़, प्रतापगढ़",
+        "type_hi": "जनजातीय समूह"
       }
     },
     {
@@ -62,6 +70,11 @@
             "Rajasthan's second-largest tribe — heartland in the eastern belt (Dhundhar, Matsya) and the Amber pre-Kachhawaha era.",
             "The original rulers of Amber (Amer) — displaced by the Kachhawaha Dulha Rai in the 11th c. after a marriage-alliance takeover.",
             "The Panna Meena stepwell (below Amber Fort) commemorates their community; the Meenas were the potters of Amber city."
+          ],
+          "facts_hi": [
+            "राजस्थान की दूसरी सबसे बड़ी जनजाति — हृदयस्थल पूर्वी पेटी (ढूँढाड़, मत्स्य) और आमेर के पूर्व-कछवाहा युग में।",
+            "आमेर के मूल शासक — 11वीं शताब्दी में विवाह-गठबंधन अधिग्रहण के बाद कछवाहा दूल्हा राय द्वारा विस्थापित।",
+            "पन्ना मीणा बावड़ी (आमेर दुर्ग के नीचे) उनके समुदाय की स्मृति है; मीणा आमेर नगर के कुम्हार थे।"
           ]
         },
         "districts_included": [
@@ -70,7 +83,10 @@
           "Jaipur",
           "Karauli",
           "Sawai Madhopur"
-        ]
+        ],
+        "name_hi": "मीणा (मीना)",
+        "district_hi": "सवाई माधोपुर, करौली, दौसा, जयपुर, अलवर",
+        "type_hi": "जनजातीय समूह"
       }
     },
     {
@@ -98,12 +114,20 @@
             "Rajputana-origin tribe of the Sirohi-Aravalli hills — legend has them as Rajputs displaced from Mewar who took to the forests.",
             "Distinctive matrilineal customs: 'Dapa' marriage where the groom pays bride-price to the bride's family.",
             "Two sub-groups — 'Bhil-Garasia' (more Bhil-influenced) and 'Dungri-Garasia' (more Rajputana-influenced)."
+          ],
+          "facts_hi": [
+            "सिरोही-अरावली पहाड़ियों की राजपूताना-मूल जनजाति — किंवदंती इन्हें मेवाड़ से विस्थापित राजपूत बताती है जिन्होंने वन अपना लिया।",
+            "विशिष्ट मातृवंशीय रीति: 'दापा' विवाह जहाँ दूल्हा वधू के परिवार को वधू-मूल्य देता है।",
+            "दो उप-समूह — 'भील-गरासिया' (अधिक भील-प्रभावित) और 'डूंगरी-गरासिया' (अधिक राजपूताना-प्रभावित)।"
           ]
         },
         "districts_included": [
           "Sirohi",
           "Udaipur"
-        ]
+        ],
+        "name_hi": "गरासिया",
+        "district_hi": "सिरोही, उदयपुर (अरावली तलहटी)",
+        "type_hi": "जनजातीय समूह"
       }
     },
     {
@@ -131,11 +155,19 @@
             "Rajasthan's only PVTG (Particularly Vulnerable Tribal Group) — concentrated in Baran district's Shahbad and Kishanganj blocks.",
             "Traditionally forest-dwellers dependent on minor forest produce (Mahua, Chironji, Tendu); still Rajasthan's poorest tribe by literacy and income.",
             "The Sahariya PVTG development plan is a flagship of Rajasthan's Tribal Sub-Plan; the Sahariya Mission was launched 2018."
+          ],
+          "facts_hi": [
+            "राजस्थान की एकमात्र PVTG (विशेष रूप से कमज़ोर जनजातीय समूह) — बारां जिले के शाहबाद और किशनगंज खंडों में केंद्रित।",
+            "पारंपरिक रूप से वनवासी, लघु वनोपज (महुआ, चिरौंजी, तेंदू) पर निर्भर; आज भी साक्षरता और आय में राजस्थान की सबसे ग़रीब जनजाति।",
+            "सहरिया PVTG विकास योजना राजस्थान की जनजातीय उप-योजना का प्रमुख अंग है; सहरिया मिशन 2018 में शुरू हुआ।"
           ]
         },
         "districts_included": [
           "Baran"
-        ]
+        ],
+        "name_hi": "सहरिया",
+        "district_hi": "बारां (शाहबाद, किशनगंज खंड)",
+        "type_hi": "जनजातीय समूह"
       }
     },
     {
@@ -163,12 +195,20 @@
             "Smaller tribe of the Vagad region; closely related to Bhils but with a distinct clan structure.",
             "Home tract in the Mahi-Bajaj-Sagar catchment; traditional occupation is settled maize cultivation on Vagad hill slopes.",
             "Speaks Wagdi (a Bhili dialect); shares cultural festivals with the Bhils but retains distinct wedding customs."
+          ],
+          "facts_hi": [
+            "वागड़ क्षेत्र की छोटी जनजाति; भीलों से घनिष्ठ संबंधित पर विशिष्ट कुल-संरचना के साथ।",
+            "मूल क्षेत्र माही-बजाज-सागर जल-ग्रहण में; पारंपरिक व्यवसाय वागड़ पहाड़ी ढलानों पर स्थायी मक्का-खेती।",
+            "वागड़ी (एक भीली बोली) बोलते हैं; भीलों के साथ सांस्कृतिक त्योहार साझा करते हैं पर विशिष्ट विवाह-रीतियाँ बनाए रखते हैं।"
           ]
         },
         "districts_included": [
           "Banswara",
           "Dungarpur"
-        ]
+        ],
+        "name_hi": "डामोर",
+        "district_hi": "डूंगरपुर, बांसवाड़ा",
+        "type_hi": "जनजातीय समूह"
       }
     },
     {
@@ -196,11 +236,19 @@
             "Rajasthan's smallest tribe by population — a Maharashtra-origin group historically employed in extracting 'kaath' (catechu) from khair trees around Mount Abu.",
             "Migrated to Sirohi's Aravalli from the Western Ghats during Maratha ascendancy in the 18th c.",
             "Extraordinary marginalisation — 40%+ still practise itinerant forest labour; recognised on the PVTG watchlist."
+          ],
+          "facts_hi": [
+            "आबादी में राजस्थान की सबसे छोटी जनजाति — महाराष्ट्र-मूल समूह जो ऐतिहासिक रूप से माउंट आबू के आसपास खैर वृक्षों से 'काथ' (कत्था) निकालने में लगा था।",
+            "18वीं शताब्दी में मराठा उत्कर्ष के दौरान पश्चिमी घाट से सिरोही की अरावली में प्रवास किया।",
+            "असाधारण हाशियाकरण — 40%+ आज भी घुमंतू वन-श्रम करते हैं; PVTG निगरानी-सूची में मान्यता प्राप्त।"
           ]
         },
         "districts_included": [
           "Sirohi"
-        ]
+        ],
+        "name_hi": "कथौड़ी (कथकरी)",
+        "district_hi": "सिरोही (माउंट आबू क्षेत्र)",
+        "type_hi": "जनजातीय समूह"
       }
     }
   ]

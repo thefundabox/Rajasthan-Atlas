@@ -26,11 +26,19 @@
             "Rajasthan's best dual-purpose milk cattle — the 'Kamdhenu of Rajasthan'. Homes tract: Bikaner, Ganganagar, Hanumangarh.",
             "Named after the Rath (nomadic Muslim pastoralist) community; average lactation 1,500–2,000 kg over 300 days.",
             "The Rathi breeding centre at Nokha (Bikaner) is India's flagship Rathi genetic-improvement facility."
+          ],
+          "facts_hi": [
+            "राजस्थान की सर्वोत्तम दोहरे-उद्देश्य दुधारू गाय — 'राजस्थान की कामधेनु'। मूल क्षेत्र: बीकानेर, गंगानगर, हनुमानगढ़।",
+            "राठ (घुमंतू मुस्लिम पशुपालक) समुदाय पर नाम; औसत दुग्ध-काल 300 दिनों में 1,500–2,000 किग्रा।",
+            "नोखा (बीकानेर) का राठी प्रजनन केंद्र भारत की प्रमुख राठी आनुवंशिक-सुधार सुविधा है।"
           ]
         },
         "districts_included": [
           "Bikaner"
-        ]
+        ],
+        "name_hi": "राठी गाय",
+        "district_hi": "बीकानेर (मूल क्षेत्र)",
+        "type_hi": "पशु नस्ल"
       }
     },
     {
@@ -58,12 +66,20 @@
             "The world's best desert dairy breed — pale grey coat, hump; thrives on scanty desert forage.",
             "Home tract straddles the Thar Parkar region (Sindh) and India's Barmer-Jaisalmer border.",
             "Chotan Cattle Breeding Farm (Barmer) is Rajasthan's principal Tharparkar conservation herd; lactation 1,000–1,500 kg."
+          ],
+          "facts_hi": [
+            "विश्व की सर्वोत्तम मरु दुधारू नस्ल — हल्का धूसर रंग, कूबड़; अल्प मरु चारे पर पनपती है।",
+            "मूल क्षेत्र थारपारकर क्षेत्र (सिंध) और भारत की बाड़मेर-जैसलमेर सीमा में फैला है।",
+            "चौटन पशु प्रजनन फार्म (बाड़मेर) राजस्थान का प्रमुख थारपारकर संरक्षण झुंड है; दुग्ध-काल 1,000–1,500 किग्रा।"
           ]
         },
         "districts_included": [
           "Barmer",
           "Jaisalmer"
-        ]
+        ],
+        "name_hi": "थारपारकर गाय",
+        "district_hi": "जैसलमेर, बाड़मेर (मूल क्षेत्र)",
+        "type_hi": "पशु नस्ल"
       }
     },
     {
@@ -91,11 +107,19 @@
             "Rajasthan's premier draught cattle — long horns, powerful build; historically pulled the Marwar army's cannon wagons.",
             "Named after Nagaur district; the bullocks are prized for tilling heavy Nagaur loam.",
             "Poor milk yield (~500 kg/lactation) — a specialist plough-and-cart breed, not a dairy breed."
+          ],
+          "facts_hi": [
+            "राजस्थान की प्रमुख भार-वाहक गाय — लंबे सींग, शक्तिशाली गठन; ऐतिहासिक रूप से मारवाड़ सेना की तोप-गाड़ियाँ खींचती थी।",
+            "नागौर जिले पर नाम; बैल भारी नागौर दोमट जोतने के लिए मूल्यवान हैं।",
+            "कम दुग्ध-उत्पादन (~500 किग्रा/दुग्ध-काल) — एक विशेषज्ञ हल-और-गाड़ी नस्ल, दुधारू नस्ल नहीं।"
           ]
         },
         "districts_included": [
           "Nagaur"
-        ]
+        ],
+        "name_hi": "नागौरी गाय",
+        "district_hi": "नागौर (मूल क्षेत्र)",
+        "type_hi": "पशु नस्ल"
       }
     },
     {
@@ -123,12 +147,20 @@
             "India's largest cattle breed — bulls weigh 500-600 kg with distinctive lyre-shaped horns.",
             "Home tract straddles the Rajasthan-Gujarat border (Kankrej taluka, Banaskantha); Rajasthan population concentrated in Barmer-Jalore.",
             "Dual-purpose (milk + draught); the American Brahman breed was developed by crossing Kankrej with three other Indian breeds."
+          ],
+          "facts_hi": [
+            "भारत की सबसे बड़ी गाय नस्ल — बैल का वज़न 500-600 किग्रा, विशिष्ट वीणा-आकार सींगों के साथ।",
+            "मूल क्षेत्र राजस्थान-गुजरात सीमा (कांकरेज तालुका, बनासकांठा) पर फैला; राजस्थान की आबादी बाड़मेर-जालोर में केंद्रित।",
+            "दोहरे-उद्देश्य (दूध + भार); अमेरिकी ब्राह्मण नस्ल कांकरेज को तीन अन्य भारतीय नस्लों से संकरण कर विकसित की गई।"
           ]
         },
         "districts_included": [
           "Barmer",
           "Jalore"
-        ]
+        ],
+        "name_hi": "कांकरेज गाय",
+        "district_hi": "बाड़मेर, जालोर (मूल क्षेत्र)",
+        "type_hi": "पशु नस्ल"
       }
     },
     {
@@ -156,12 +188,20 @@
             "Draught breed of the Malwa plateau — white/grey coat, medium build; excellent for the heavy black soils of Jhalawar-Baran.",
             "Named after the Malwa region that spans MP and southeastern Rajasthan (Hadoti).",
             "Bullocks are prized for cart-pulling on the plateau's rough terrain; the cows give ~600 kg milk/lactation."
+          ],
+          "facts_hi": [
+            "मालवा पठार की भार-वाहक नस्ल — श्वेत/धूसर रंग, मध्यम गठन; झालावाड़-बारां की भारी काली मिट्टी के लिए उत्कृष्ट।",
+            "मालवा क्षेत्र पर नाम, जो म.प्र. और दक्षिण-पूर्वी राजस्थान (हाड़ौती) में फैला है।",
+            "बैल पठार के ऊबड़-खाबड़ भूभाग पर गाड़ी-खींचने के लिए मूल्यवान; गायें ~600 किग्रा दूध/दुग्ध-काल देती हैं।"
           ]
         },
         "districts_included": [
           "Baran",
           "Jhalawar"
-        ]
+        ],
+        "name_hi": "मालवी गाय",
+        "district_hi": "झालावाड़, बारां (मूल क्षेत्र)",
+        "type_hi": "पशु नस्ल"
       }
     },
     {
@@ -189,12 +229,20 @@
             "Sturdy draught breed of the Matsya region — reddish-brown coat; a cousin of the neighbouring Hariana breed of Haryana.",
             "Home tract in Alwar-Bharatpur-Dholpur; used both for milk (moderate) and heavy field work.",
             "Numbers falling with mechanisation of Bharatpur's mustard fields — now a NBAGR conservation-priority breed."
+          ],
+          "facts_hi": [
+            "मत्स्य क्षेत्र की मज़बूत भार-वाहक नस्ल — लालिमा-भूरा रंग; पड़ोसी हरियाणा की हरियाणा नस्ल की बहन।",
+            "मूल क्षेत्र अलवर-भरतपुर-धौलपुर में; दूध (मध्यम) और भारी खेत-कार्य दोनों के लिए उपयोग।",
+            "भरतपुर के सरसों-खेतों के मशीनीकरण से संख्या घट रही है — अब एक NBAGR संरक्षण-प्राथमिकता नस्ल।"
           ]
         },
         "districts_included": [
           "Alwar",
           "Bharatpur"
-        ]
+        ],
+        "name_hi": "मेवाती (हरियाणा) गाय",
+        "district_hi": "अलवर, भरतपुर (मूल क्षेत्र)",
+        "type_hi": "पशु नस्ल"
       }
     },
     {
@@ -222,13 +270,21 @@
             "India's finest carpet-wool sheep — white fleece, small size, thrives in the Shekhawati semi-arid tract.",
             "Fleece is exported for Persian and Kashmiri carpet weaving; average wool yield 1.5 kg/year.",
             "Bikaner's Central Sheep and Wool Research Institute (CSWRI) branch runs the Chokla nucleus flock."
+          ],
+          "facts_hi": [
+            "भारत की सर्वोत्तम कालीन-ऊन भेड़ — श्वेत ऊन, छोटा आकार, शेखावाटी अर्ध-शुष्क क्षेत्र में पनपती है।",
+            "ऊन फ़ारसी और कश्मीरी कालीन बुनाई के लिए निर्यात होता है; औसत ऊन-उपज 1.5 किग्रा/वर्ष।",
+            "बीकानेर के केंद्रीय भेड़ एवं ऊन अनुसंधान संस्थान (CSWRI) की शाखा चोकला केंद्रक झुंड चलाती है।"
           ]
         },
         "districts_included": [
           "Churu",
           "Jhunjhunu",
           "Sikar"
-        ]
+        ],
+        "name_hi": "चोकला भेड़",
+        "district_hi": "सीकर, झुंझुनूँ, चूरू (मूल क्षेत्र)",
+        "type_hi": "पशु नस्ल"
       }
     },
     {
@@ -256,13 +312,21 @@
             "The most numerous sheep breed of Rajasthan — black face, medium build; a hardy Marwar-Thar dual-purpose (wool + mutton) breed.",
             "Nomadic Raika shepherds herd Marwari flocks across the Barmer-Jodhpur-Jaisalmer belt during monsoon migrations.",
             "Coarse carpet wool; ~1 kg/animal/year; the mutton is prized for its low fat content."
+          ],
+          "facts_hi": [
+            "राजस्थान की सर्वाधिक संख्यक भेड़ नस्ल — काला मुख, मध्यम गठन; एक कठोर मारवाड़-थार दोहरे-उद्देश्य (ऊन + मांस) नस्ल।",
+            "घुमंतू रायका गड़रिये मानसून प्रवास के दौरान बाड़मेर-जोधपुर-जैसलमेर पेटी में मारवाड़ी झुंड चराते हैं।",
+            "मोटा कालीन-ऊन; ~1 किग्रा/पशु/वर्ष; मांस अपनी कम वसा-मात्रा के लिए मूल्यवान है।"
           ]
         },
         "districts_included": [
           "Barmer",
           "Jodhpur",
           "Pali"
-        ]
+        ],
+        "name_hi": "मारवाड़ी भेड़",
+        "district_hi": "बाड़मेर, जोधपुर, पाली (मूल क्षेत्र)",
+        "type_hi": "पशु नस्ल"
       }
     },
     {
@@ -290,11 +354,19 @@
             "India's most-farmed meat goat — reddish-brown coat with light spots, dual-purpose (milk + meat).",
             "Rapidly gains weight (25-30 kg by 12 months); popular for stall-feeding across North India.",
             "Home tract in Sirohi's Aravalli foothills; ~4 million goats of this breed across Rajasthan."
+          ],
+          "facts_hi": [
+            "भारत की सर्वाधिक पाली जाने वाली मांस-बकरी — हल्के धब्बों वाला लालिमा-भूरा रंग, दोहरे-उद्देश्य (दूध + मांस)।",
+            "तेज़ी से वज़न बढ़ाती है (12 माह में 25-30 किग्रा); उत्तर भारत भर में स्टॉल-फ़ीडिंग के लिए लोकप्रिय।",
+            "मूल क्षेत्र सिरोही की अरावली तलहटी में; राजस्थान भर में इस नस्ल की ~40 लाख बकरियाँ।"
           ]
         },
         "districts_included": [
           "Sirohi"
-        ]
+        ],
+        "name_hi": "सिरोही बकरी",
+        "district_hi": "सिरोही (मूल क्षेत्र)",
+        "type_hi": "पशु नस्ल"
       }
     },
     {
@@ -322,11 +394,19 @@
             "Rajasthan's principal draught camel — dark brown, heavy build; served as the mount of the Ganga Risala (Bikaner Camel Corps).",
             "Home tract in Bikaner, Ganganagar, Churu; the National Research Centre on Camel at Bikaner is India's flagship camel institute.",
             "Rajasthan holds ~85% of India's camels; population has fallen from 500k (2007) to under 250k (2019) — a conservation crisis."
+          ],
+          "facts_hi": [
+            "राजस्थान का प्रमुख भार-वाहक ऊँट — गहरा भूरा, भारी गठन; गंगा रिसाला (बीकानेर ऊँट सेना) की सवारी रहा।",
+            "मूल क्षेत्र बीकानेर, गंगानगर, चूरू में; बीकानेर का राष्ट्रीय ऊँट अनुसंधान केंद्र भारत का प्रमुख ऊँट संस्थान है।",
+            "राजस्थान में भारत के ~85% ऊँट हैं; आबादी 5 लाख (2007) से घटकर 2.5 लाख से कम (2019) रह गई — एक संरक्षण संकट।"
           ]
         },
         "districts_included": [
           "Bikaner"
-        ]
+        ],
+        "name_hi": "बीकानेरी ऊँट",
+        "district_hi": "बीकानेर (मूल क्षेत्र)",
+        "type_hi": "पशु नस्ल"
       }
     },
     {
@@ -354,11 +434,19 @@
             "Rajasthan's fastest camel breed — light-tan coat, tall and lean; the preferred riding camel of the Bhati Rajputs.",
             "The Jaisalmer Desert Festival's camel race is contested exclusively on this breed.",
             "Home tract in deep Thar (Jaisalmer, Barmer); requires less water than Bikaneri camels but slower to mature."
+          ],
+          "facts_hi": [
+            "राजस्थान का सबसे तेज़ ऊँट नस्ल — हल्के-भूरे रंग का, लंबा और दुबला; भाटी राजपूतों का पसंदीदा सवारी ऊँट।",
+            "जैसलमेर मरु महोत्सव की ऊँट-दौड़ केवल इसी नस्ल पर लड़ी जाती है।",
+            "मूल क्षेत्र गहरे थार (जैसलमेर, बाड़मेर) में; बीकानेरी ऊँटों से कम पानी चाहिए पर परिपक्व होने में धीमा।"
           ]
         },
         "districts_included": [
           "Jaisalmer"
-        ]
+        ],
+        "name_hi": "जैसलमेरी ऊँट",
+        "district_hi": "जैसलमेर (मूल क्षेत्र)",
+        "type_hi": "पशु नस्ल"
       }
     },
     {
@@ -386,12 +474,20 @@
             "Rajasthan's rarest and shortest camel breed — home tract in the Aravalli foothills of Mewar (Rajsamand, Udaipur, Chittor).",
             "Used historically by the Sisodias as a pack animal in the hilly Mewar terrain — Bikaneri camels cannot manage the slopes.",
             "Population under 10,000; NRC-Camel Bikaner runs a Mewari conservation herd at Sadri."
+          ],
+          "facts_hi": [
+            "राजस्थान का दुर्लभतम और सबसे छोटा ऊँट नस्ल — मूल क्षेत्र मेवाड़ की अरावली तलहटी (राजसमंद, उदयपुर, चित्तौड़) में।",
+            "ऐतिहासिक रूप से सिसोदियों द्वारा पहाड़ी मेवाड़ भूभाग में भार-पशु के रूप में उपयोग — बीकानेरी ऊँट ढलानों पर नहीं चढ़ पाते।",
+            "आबादी 10,000 से कम; NRC-ऊँट बीकानेर सादड़ी में एक मेवाड़ी संरक्षण झुंड चलाता है।"
           ]
         },
         "districts_included": [
           "Rajsamand",
           "Udaipur"
-        ]
+        ],
+        "name_hi": "मेवाड़ी ऊँट",
+        "district_hi": "राजसमंद, उदयपुर (मूल क्षेत्र)",
+        "type_hi": "पशु नस्ल"
       }
     }
   ]

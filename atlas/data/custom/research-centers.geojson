@@ -26,9 +26,18 @@
             "Pioneered India's dune-stabilisation science, drip irrigation for arid crops, and khejri (Prosopis cineraria) shelterbelt system.",
             "Regional stations at Bikaner, Pali, Kukma (Kutch) and Leh — spans the entire Thar-Ladakh arid belt.",
             "Developed Rajasthan's foundation seed programme for bajra, guar, moth and cluster-bean."
+          ],
+          "facts_hi": [
+            "भारत का प्रमुख शुष्क-क्षेत्र कृषि अनुसंधान संस्थान (ICAR) — 1959 में जोधपुर में स्थापित।",
+            "भारत के बालुका-स्तूप स्थिरीकरण विज्ञान, शुष्क फ़सलों के लिए ड्रिप सिंचाई, और खेजड़ी (Prosopis cineraria) शेल्टरबेल्ट प्रणाली का अग्रदूत।",
+            "बीकानेर, पाली, कुकमा (कच्छ) और लेह में क्षेत्रीय केंद्र — संपूर्ण थार-लद्दाख शुष्क पेटी में फैला।",
+            "बाजरा, ग्वार, मोठ और क्लस्टर-बीन के लिए राजस्थान का आधार-बीज कार्यक्रम विकसित किया।"
           ]
         },
-        "icon": "🔬"
+        "icon": "🔬",
+        "name_hi": "CAZRI — केंद्रीय शुष्क क्षेत्र अनुसंधान संस्थान",
+        "district_hi": "जोधपुर",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -56,9 +65,18 @@
             "Develops silvicultural systems for khejri, rohira, kair, ker and neem in <500 mm rainfall.",
             "Runs the National Herbal Garden and the arid-zone tissue-culture bank.",
             "AFRI's shelterbelt models informed India's Green India Mission dryland strategy."
+          ],
+          "facts_hi": [
+            "शुष्क क्षेत्र के लिए भारत का एकमात्र वानिकी अनुसंधान संस्थान (ICFRE) — 1985 में स्थापित।",
+            "<500 मिमी वर्षा में खेजड़ी, रोहिड़ा, कैर, केर और नीम के लिए वन-संवर्धन प्रणालियाँ विकसित करता है।",
+            "राष्ट्रीय हर्बल गार्डन और शुष्क-क्षेत्र ऊतक-संवर्धन बैंक चलाता है।",
+            "AFRI के शेल्टरबेल्ट मॉडल ने भारत के ग्रीन इंडिया मिशन की शुष्कभूमि रणनीति को दिशा दी।"
           ]
         },
-        "icon": "🔬"
+        "icon": "🔬",
+        "name_hi": "AFRI — शुष्क वन अनुसंधान संस्थान",
+        "district_hi": "जोधपुर",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -86,9 +104,18 @@
             "Developed the Avikalin, Bharat Merino and Malpura Cross breeds — India's leading fine-wool synthetics.",
             "Runs the National Wool Research and Training Institute for the northern-region wool cluster.",
             "Rajasthan produces 30% of India's wool — CSWRI's breeding programme underpins that share."
+          ],
+          "facts_hi": [
+            "अविकानगर (मालपुरा, टोंक) में भारत का प्रमुख भेड़-और-ऊन अनुसंधान संस्थान — 1962 में स्थापित।",
+            "अविकालीन, भारत मेरिनो और मालपुरा क्रॉस नस्लें विकसित कीं — भारत की अग्रणी महीन-ऊन संकर।",
+            "उत्तरी-क्षेत्र ऊन क्लस्टर के लिए राष्ट्रीय ऊन अनुसंधान एवं प्रशिक्षण संस्थान चलाता है।",
+            "राजस्थान भारत का 30% ऊन उत्पादित करता है — CSWRI का प्रजनन कार्यक्रम उस भाग को आधार देता है।"
           ]
         },
-        "icon": "🔬"
+        "icon": "🔬",
+        "name_hi": "CSWRI — केंद्रीय भेड़ एवं ऊन अनुसंधान संस्थान",
+        "district_hi": "टोंक (मालपुरा)",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -116,9 +143,18 @@
             "Home to Asia's first camel-milk dairy — commercialising camel milk since 2015.",
             "Maintains the germplasm of India's four camel breeds: Bikaneri, Jaisalmeri, Kachhi, Mewari.",
             "Rajasthan holds ~41% of India's camel population; NRC-Camel underpins the Rebari pastoralist economy."
+          ],
+          "facts_hi": [
+            "भारत का राष्ट्रीय ऊँट अनुसंधान केंद्र — बीकानेर (झोरबीड़), 1984 में एक परियोजना निदेशालय के रूप में स्थापित, 1995 में NRC में उन्नत।",
+            "एशिया की पहली ऊँटनी-दूध डेयरी का घर — 2015 से ऊँटनी-दूध का व्यावसायीकरण।",
+            "भारत की चार ऊँट नस्लों का जननद्रव्य बनाए रखता है: बीकानेरी, जैसलमेरी, कच्छी, मेवाड़ी।",
+            "राजस्थान में भारत के ~41% ऊँट हैं; NRC-ऊँट रेबारी पशुपालक अर्थव्यवस्था को आधार देता है।"
           ]
         },
-        "icon": "🔬"
+        "icon": "🔬",
+        "name_hi": "NRC ऊँट (झोरबीड़)",
+        "district_hi": "बीकानेर",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -146,9 +182,18 @@
             "Announced 2004 by Vajpayee, operationalised 2012 with 960-bed hospital.",
             "Anchors Rajasthan's western-tertiary healthcare — covers Barmer, Jaisalmer, Bikaner catchment.",
             "Runs India's first Fibrodysplasia Ossificans Progressiva (FOP) research programme."
+          ],
+          "facts_hi": [
+            "राजस्थान का एकमात्र AIIMS — PMSSY के अंतर्गत 2012 में खुले छह दूसरी-पीढ़ी के AIIMS में से एक।",
+            "2004 में वाजपेयी द्वारा घोषित, 2012 में 960-बिस्तर अस्पताल के साथ संचालित।",
+            "राजस्थान की पश्चिमी-तृतीयक स्वास्थ्य-सेवा का केंद्र — बाड़मेर, जैसलमेर, बीकानेर क्षेत्र को कवर करता है।",
+            "भारत का पहला फ़ाइब्रोडिस्प्लेसिया ऑसिफ़िकैंस प्रोग्रेसिवा (FOP) अनुसंधान कार्यक्रम चलाता है।"
           ]
         },
-        "icon": "🏥"
+        "icon": "🏥",
+        "name_hi": "AIIMS जोधपुर",
+        "district_hi": "जोधपुर",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -176,9 +221,18 @@
             "Distinctive academic programme: no rigid department boundaries; interdisciplinary M-schools model.",
             "Anchors the Jodhpur AI and IoT cluster; hosts India's first drone-technology research lab (2021).",
             "The IIT campus is one of India's most sustainable — 100% solar-powered daytime operations."
+          ],
+          "facts_hi": [
+            "राजस्थान का एकमात्र IIT — 2008 में करवड़ (नागौर रोड, जोधपुर) में स्थापित।",
+            "विशिष्ट शैक्षणिक कार्यक्रम: कोई कठोर विभाग-सीमाएँ नहीं; अंतर-विषयक M-स्कूल मॉडल।",
+            "जोधपुर के AI और IoT क्लस्टर का केंद्र; भारत की पहली ड्रोन-प्रौद्योगिकी अनुसंधान प्रयोगशाला (2021) की मेज़बानी करता है।",
+            "IIT परिसर भारत के सर्वाधिक टिकाऊ परिसरों में से एक है — 100% सौर-संचालित दिवा-संचालन।"
           ]
         },
-        "icon": "🎓"
+        "icon": "🎓",
+        "name_hi": "IIT जोधपुर",
+        "district_hi": "जोधपुर",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -206,9 +260,18 @@
             "One of India's fastest-rising business schools; anchors the western-India MBA market.",
             "The Balicha campus is India's second-largest IIM campus by area (300+ acres).",
             "Home to India's only IIM PhD programme with a formal Digital Enterprise Management stream."
+          ],
+          "facts_hi": [
+            "राजस्थान का एकमात्र IIM — 2011 में छह नई-पीढ़ी के IIM में से एक के रूप में स्थापित।",
+            "भारत के सबसे तेज़ी से उभरते बिज़नेस स्कूलों में से एक; पश्चिमी-भारत MBA बाज़ार का केंद्र।",
+            "बलीचा परिसर क्षेत्रफल की दृष्टि से भारत का दूसरा सबसे बड़ा IIM परिसर है (300+ एकड़)।",
+            "औपचारिक डिजिटल एंटरप्राइज़ मैनेजमेंट धारा वाला भारत का एकमात्र IIM PhD कार्यक्रम यहीं है।"
           ]
         },
-        "icon": "🎓"
+        "icon": "🎓",
+        "name_hi": "IIM उदयपुर",
+        "district_hi": "उदयपुर",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -236,9 +299,18 @@
             "First NLU in India to offer a two-year LLM programme (2006) and integrated BA-BSc-LLB (2004).",
             "Located at Mandore (Jodhpur) — the ancient Marwar capital.",
             "Consistently ranks in India's top-5 law schools."
+          ],
+          "facts_hi": [
+            "भारत के प्रमुख राष्ट्रीय विधि विश्वविद्यालयों में से एक — 1999 में राजस्थान राज्य अधिनियम द्वारा स्थापित।",
+            "दो-वर्षीय LLM कार्यक्रम (2006) और एकीकृत BA-BSc-LLB (2004) देने वाला भारत का पहला NLU।",
+            "मंडोर (जोधपुर) में स्थित — प्राचीन मारवाड़ राजधानी।",
+            "निरंतर भारत के शीर्ष-5 विधि विद्यालयों में स्थान रखता है।"
           ]
         },
-        "icon": "🎓"
+        "icon": "🎓",
+        "name_hi": "राष्ट्रीय विधि विश्वविद्यालय जोधपुर",
+        "district_hi": "जोधपुर (मंडोर)",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -266,9 +338,18 @@
             "Achieved deemed-university status in 1964 as Birla Institute of Technology and Science.",
             "Runs India's largest industry-linked engineering internship programme (BITS Practice School).",
             "Anchors the Shekhawati engineering-talent belt; alumni founded Cognizant, Tata Consultancy, Flipkart."
+          ],
+          "facts_hi": [
+            "1929 में घनश्याम दास बिड़ला द्वारा बिड़ला कॉलेज के रूप में स्थापित — भारत का पहला उद्योगपति-वित्तपोषित विज्ञान संस्थान।",
+            "1964 में बिड़ला इंस्टीट्यूट ऑफ़ टेक्नोलॉजी एंड साइंस के रूप में मानद-विश्वविद्यालय दर्जा प्राप्त।",
+            "भारत का सबसे बड़ा उद्योग-संबद्ध इंजीनियरिंग इंटर्नशिप कार्यक्रम चलाता है (BITS प्रैक्टिस स्कूल)।",
+            "शेखावाटी इंजीनियरिंग-प्रतिभा पेटी का केंद्र; पूर्व-छात्रों ने कॉग्निज़ेंट, टाटा कंसल्टेंसी, फ़्लिपकार्ट की स्थापना की।"
           ]
         },
-        "icon": "🎓"
+        "icon": "🎓",
+        "name_hi": "BITS पिलानी",
+        "district_hi": "झुंझुनूँ (पिलानी)",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -295,9 +376,17 @@
             "Rajasthan's first Krishi Vigyan Kendra (KVK) — established 1976 at Fatehpur Shekhawati.",
             "Pioneered India's district-level KVK extension model, later scaled to 700+ KVKs across the country.",
             "Anchor of the Shekhawati groundnut and bajra research cluster."
+          ],
+          "facts_hi": [
+            "राजस्थान का पहला कृषि विज्ञान केंद्र (KVK) — 1976 में फतेहपुर शेखावाटी में स्थापित।",
+            "भारत के जिला-स्तरीय KVK विस्तार मॉडल का अग्रदूत, जो बाद में देश भर में 700+ KVK तक बढ़ा।",
+            "शेखावाटी मूँगफली और बाजरा अनुसंधान क्लस्टर का केंद्र।"
           ]
         },
-        "icon": "🔬"
+        "icon": "🔬",
+        "name_hi": "KVK फतेहपुर शेखावाटी",
+        "district_hi": "सीकर",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -325,9 +414,18 @@
             "India's premier mustard breeding institute; Bharatpur district is India's largest mustard producer.",
             "Developed the RH-30, RH-819, Vardaan and Bio-902 varieties that anchor Rajasthan's rabi mustard belt.",
             "Rajasthan produces 45% of India's mustard — SEVAR underpins that share."
+          ],
+          "facts_hi": [
+            "सेवर (भरतपुर) में रेपसीड-सरसों अनुसंधान निदेशालय (SEVAR), 1993 में स्थापित।",
+            "भारत का प्रमुख सरसों प्रजनन संस्थान; भरतपुर जिला भारत का सबसे बड़ा सरसों उत्पादक है।",
+            "RH-30, RH-819, वरदान और बायो-902 किस्में विकसित कीं जो राजस्थान की रबी सरसों पेटी को आधार देती हैं।",
+            "राजस्थान भारत की 45% सरसों उत्पादित करता है — SEVAR उस भाग को आधार देता है।"
           ]
         },
-        "icon": "🔬"
+        "icon": "🔬",
+        "name_hi": "SEVAR — सरसों अनुसंधान (भरतपुर)",
+        "district_hi": "भरतपुर",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -354,9 +452,17 @@
             "Twin arid-fruit research centres at Bikaner — Ber (Indian jujube) and Khajur (date palm), both founded 1978.",
             "Developed arid-zone commercial cultivars: Gola, Mundia, Kaithli (ber); Barhee, Halawy, Khadrawy (date).",
             "Rajasthan produces India's largest ber crop; date palm cultivation has expanded 4x since 2000 thanks to KVK extension."
+          ],
+          "facts_hi": [
+            "बीकानेर में जुड़वाँ शुष्क-फल अनुसंधान केंद्र — बेर (भारतीय बेर) और खजूर, दोनों 1978 में स्थापित।",
+            "शुष्क-क्षेत्र वाणिज्यिक किस्में विकसित कीं: गोला, मुंडिया, कैथली (बेर); बरही, हलावी, खद्रावी (खजूर)।",
+            "राजस्थान भारत की सबसे बड़ी बेर फ़सल उत्पादित करता है; KVK विस्तार के कारण खजूर खेती 2000 से 4 गुना बढ़ी।"
           ]
         },
-        "icon": "🔬"
+        "icon": "🔬",
+        "name_hi": "बेर और खजूर अनुसंधान केंद्र, बीकानेर",
+        "district_hi": "बीकानेर",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -383,9 +489,17 @@
             "First institution to formally research indigenous Indian cattle breeds and Panchagavya products.",
             "Pathmeda (Sanchore, Jalore) is home to India's largest gaushala — over 200,000 cattle sheltered.",
             "Sanchore also hosts India's first Gau-Mutra Bank."
+          ],
+          "facts_hi": [
+            "देशी भारतीय गाय नस्लों और पंचगव्य उत्पादों पर औपचारिक अनुसंधान करने वाला पहला संस्थान।",
+            "पथमेड़ा (सांचौर, जालोर) भारत की सबसे बड़ी गौशाला का घर है — 2,00,000 से अधिक गायें आश्रित।",
+            "सांचौर भारत के पहले गौ-मूत्र बैंक की भी मेज़बानी करता है।"
           ]
         },
-        "icon": "🎓"
+        "icon": "🎓",
+        "name_hi": "राष्ट्रीय कामधेनु विश्वविद्यालय, पथमेड़ा",
+        "district_hi": "जालोर (सांचौर)",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -413,9 +527,18 @@
             "Anchors research on Bhil, Meena, Garasia, Damor, Sahariya and Kathodia tribes.",
             "Publishes the Adivasi Sansar journal and runs the state's tribal-language documentation programme.",
             "Named after Rajasthan's tribal-rights pioneer Manikya Lal Verma (1897-1969)."
+          ],
+          "facts_hi": [
+            "राजस्थान का प्रमुख जनजातीय अनुसंधान संस्थान — 1964 में उदयपुर में स्थापित।",
+            "भील, मीणा, गरासिया, डामोर, सहरिया और कथौड़िया जनजातियों पर अनुसंधान का केंद्र।",
+            "आदिवासी संसार पत्रिका प्रकाशित करता है और राज्य का जनजातीय-भाषा प्रलेखन कार्यक्रम चलाता है।",
+            "राजस्थान के जनजातीय-अधिकार अग्रदूत माणिक्य लाल वर्मा (1897-1969) पर नामित।"
           ]
         },
-        "icon": "🔬"
+        "icon": "🔬",
+        "name_hi": "माणिक्य लाल वर्मा आदिवासी शोध एवं प्रशिक्षण संस्थान",
+        "district_hi": "उदयपुर",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -443,9 +566,18 @@
             "Holds Rajasthan's largest Persian, Urdu and Rajasthani manuscript collection.",
             "Houses Mughal farmans, princely-state records, and hand-painted Rajput miniatures.",
             "One of India's largest state-level archival collections — over 8 lakh documents."
+          ],
+          "facts_hi": [
+            "राजस्थान का राज्य अभिलेखागार — 1955 में जयपुर में स्थापित, 1966 में बीकानेर स्थानांतरित।",
+            "राजस्थान का सबसे बड़ा फ़ारसी, उर्दू और राजस्थानी पांडुलिपि संग्रह रखता है।",
+            "मुग़ल फ़रमान, रियासती-राज्य अभिलेख, और हस्त-चित्रित राजपूत लघुचित्र संजोए हुए है।",
+            "भारत के सबसे बड़े राज्य-स्तरीय अभिलेखीय संग्रहों में से एक — 8 लाख से अधिक दस्तावेज़।"
           ]
         },
-        "icon": "📚"
+        "icon": "📚",
+        "name_hi": "राजस्थान राज्य अभिलेखागार, बीकानेर",
+        "district_hi": "बीकानेर",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -473,9 +605,18 @@
             "India's premier ethnomusicology and folk-arts research centre — Rupayan documented 1000+ Langa-Manganiar songs.",
             "Its work led to UNESCO recognition of Rajasthan's oral folk traditions.",
             "Continues to run Rajasthan's largest folk-art field research programme."
+          ],
+          "facts_hi": [
+            "1960 में पद्मश्री कोमल कोठारी द्वारा बोरुंदा (बिलाड़ा, जोधपुर) में स्थापित।",
+            "भारत का प्रमुख नृजातिसंगीत और लोक-कला अनुसंधान केंद्र — रूपायन ने 1000+ लंगा-मांगणियार गीत प्रलेखित किए।",
+            "इसके कार्य ने राजस्थान की मौखिक लोक-परंपराओं को UNESCO मान्यता दिलाई।",
+            "राजस्थान का सबसे बड़ा लोक-कला क्षेत्र-अनुसंधान कार्यक्रम आज भी चलाता है।"
           ]
         },
-        "icon": "📚"
+        "icon": "📚",
+        "name_hi": "रूपायन संस्थान (राष्ट्रीय कला मंडल), बोरुंदा",
+        "district_hi": "जोधपुर",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -503,9 +644,18 @@
             "Houses the world's largest collection of Rajasthani puppetry (Kathputli).",
             "Runs Rajasthan's only professional puppetry academy; the 'Puppet Museum' is a UNESCO study centre.",
             "Anchors Udaipur's cultural-heritage tourism circuit."
+          ],
+          "facts_hi": [
+            "राजस्थान का सबसे पुराना लोक-कला अनुसंधान केंद्र — 22 फ़रवरी 1952 को पद्मश्री देवीलाल सामर द्वारा स्थापित।",
+            "राजस्थानी कठपुतली (कठपुतली) का विश्व का सबसे बड़ा संग्रह रखता है।",
+            "राजस्थान की एकमात्र पेशेवर कठपुतली अकादमी चलाता है; 'कठपुतली संग्रहालय' एक UNESCO अध्ययन केंद्र है।",
+            "उदयपुर के सांस्कृतिक-विरासत पर्यटन परिपथ का केंद्र।"
           ]
         },
-        "icon": "📚"
+        "icon": "📚",
+        "name_hi": "भारतीय लोक कला मंडल, उदयपुर",
+        "district_hi": "उदयपुर",
+        "type_hi": "शोध संस्थान"
       }
     },
     {
@@ -532,9 +682,17 @@
             "Founded 1931 by Mohan Singh Mehta as Rajasthan's first modern educational society under Mewar princely rule.",
             "Runs the state's oldest teacher-training institute (VBTC) and India's largest rural-college network under a single society.",
             "Anchors the Aravalli-region rural education movement; pioneered vocational Krishak Vidyapeeth model in the 1950s."
+          ],
+          "facts_hi": [
+            "1931 में मोहन सिंह मेहता द्वारा मेवाड़ रियासत के अधीन राजस्थान की पहली आधुनिक शैक्षिक सोसायटी के रूप में स्थापित।",
+            "राज्य का सबसे पुराना शिक्षक-प्रशिक्षण संस्थान (VBTC) और एक ही सोसायटी के अधीन भारत का सबसे बड़ा ग्रामीण-कॉलेज नेटवर्क चलाता है।",
+            "अरावली-क्षेत्र ग्रामीण शिक्षा आंदोलन का केंद्र; 1950 के दशक में व्यावसायिक कृषक विद्यापीठ मॉडल का अग्रदूत।"
           ]
         },
-        "icon": "🔬"
+        "icon": "🔬",
+        "name_hi": "विद्या भवन संस्थान, उदयपुर",
+        "district_hi": "उदयपुर",
+        "type_hi": "शोध संस्थान"
       }
     }
   ]

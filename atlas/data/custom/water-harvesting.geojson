@@ -21,8 +21,17 @@
             "India's deepest and largest stepwell — 13 storeys, ~3,500 symmetrical steps, 20 m deep.",
             "Built by King Chanda of the Nikumbha Chauhan dynasty in the 8th-9th c. to harvest scarce rainfall in the dry Dausa plain.",
             "The stepwell's geometric mathematical precision inspired the throne-room scene in 'The Dark Knight Rises' (2012)."
+          ],
+          "facts_hi": [
+            "भारत की सबसे गहरी और सबसे बड़ी बावड़ी — 13 मंज़िल, ~3,500 सममित सीढ़ियाँ, 20 मी गहरी।",
+            "8वीं-9वीं शताब्दी में निकुंभ चौहान राजवंश के राजा चाँद द्वारा शुष्क दौसा मैदान में अल्प वर्षा-जल संचय हेतु निर्मित।",
+            "बावड़ी की ज्यामितीय गणितीय परिशुद्धता ने 'द डार्क नाइट राइज़ेज़' (2012) के सिंहासन-कक्ष दृश्य को प्रेरित किया।"
           ]
-        }
+        },
+        "name_hi": "चाँद बावड़ी, आभानेरी",
+        "district_hi": "दौसा",
+        "type_hi": "जल-संचयन",
+        "period_hi": "8वीं–9वीं शताब्दी (निकुंभ चौहान)"
       }
     },
     {
@@ -45,8 +54,17 @@
             "Below Amber Fort — an 8-storey symmetrical stepwell with the distinctive Rajputana criss-cross step pattern.",
             "Built as a community water source for Amber city and its potters (Meena community) before Jaipur's founding.",
             "One of Rajasthan's most photographed stepwells; recently restored by the Jaipur Development Authority."
+          ],
+          "facts_hi": [
+            "आमेर दुर्ग के नीचे — विशिष्ट राजपूताना क्रॉस-क्रॉस सीढ़ी-प्रतिरूप वाली 8-मंज़िला सममित बावड़ी।",
+            "जयपुर की स्थापना से पहले आमेर नगर और उसके कुम्हारों (मीणा समुदाय) के लिए एक सामुदायिक जल-स्रोत के रूप में निर्मित।",
+            "राजस्थान की सर्वाधिक फ़ोटोग्राफ़ की जाने वाली बावड़ियों में से एक; हाल ही में जयपुर विकास प्राधिकरण द्वारा जीर्णोद्धारित।"
           ]
-        }
+        },
+        "name_hi": "पन्ना मीणा का कुंड, आमेर",
+        "district_hi": "जयपुर",
+        "type_hi": "जल-संचयन",
+        "period_hi": "16वीं शताब्दी"
       }
     },
     {
@@ -69,8 +87,17 @@
             "Built 1740 by Rani Tanwarji Ranghawat, queen of Maharaja Abhay Singh — a royal 'jhalra' for the queens' bathing rituals.",
             "Rediscovered and restored 2010-2016 after being buried under silt and construction; now Jodhpur's Old City centrepiece.",
             "Reveals the classical Marwari stepwell geometry: 250 ft deep, carved from a single Jodhpur red sandstone block."
+          ],
+          "facts_hi": [
+            "1740 में महाराजा अभय सिंह की रानी तँवरजी रांघावत द्वारा निर्मित — रानियों के स्नान-अनुष्ठानों के लिए एक राजसी 'झालरा'।",
+            "गाद और निर्माण के नीचे दबे रहने के बाद 2010-2016 में पुनः खोजा और जीर्णोद्धारित; अब जोधपुर के पुराने शहर का केंद्र-बिंदु।",
+            "शास्त्रीय मारवाड़ी बावड़ी-ज्यामिति दर्शाता है: 250 फुट गहरा, एकल जोधपुर लाल बलुआ पत्थर खंड से तराशा।"
           ]
-        }
+        },
+        "name_hi": "तूरजी का झालरा, जोधपुर",
+        "district_hi": "जोधपुर",
+        "type_hi": "जल-संचयन",
+        "period_hi": "1740 (रानी तँवरजी रांघावत)"
       }
     },
     {
@@ -93,8 +120,17 @@
             "Rajasthan's most ornate stepwell — 46 m deep, built 1699 by Rani Nathavati Ji, junior queen of Rao Raja Anirudh Singh of Bundi.",
             "The four ornamental gateways with elephant-carved brackets are unique among Indian stepwells.",
             "Bundi has ~50 stepwells (the 'city of stepwells'); Raniji is the finest and most-photographed."
+          ],
+          "facts_hi": [
+            "राजस्थान की सर्वाधिक अलंकृत बावड़ी — 46 मी गहरी, 1699 में बूँदी के राव राजा अनिरुद्ध सिंह की छोटी रानी नाथावती जी द्वारा निर्मित।",
+            "हाथी-तराशे कोष्ठकों वाले चार अलंकृत प्रवेश-द्वार भारतीय बावड़ियों में अद्वितीय हैं।",
+            "बूँदी में ~50 बावड़ियाँ हैं ('बावड़ियों का नगर'); रानीजी सबसे सुंदर और सर्वाधिक फ़ोटोग्राफ़ की जाने वाली है।"
           ]
-        }
+        },
+        "name_hi": "रानीजी की बावड़ी, बूँदी",
+        "district_hi": "बूँदी",
+        "type_hi": "जल-संचयन",
+        "period_hi": "1699 (रानी नाथावती जी)"
       }
     },
     {
@@ -117,8 +153,17 @@
             "9-storey stepwell built 1750 by Thakur Todar Mal, then jagirdar of Neemrana under the Chauhans.",
             "Built as a caravanserai water source on the Delhi-Jaipur trade route.",
             "Fell into disrepair in the 20th c.; now under restoration by the Neemrana Fort-Palace estate."
+          ],
+          "facts_hi": [
+            "1750 में चौहानों के अधीन नीमराना के तत्कालीन जागीरदार ठाकुर टोडरमल द्वारा निर्मित 9-मंज़िला बावड़ी।",
+            "दिल्ली-जयपुर व्यापार-मार्ग पर एक कारवाँसराय जल-स्रोत के रूप में निर्मित।",
+            "20वीं शताब्दी में जीर्ण-शीर्ण हो गई; अब नीमराना फ़ोर्ट-पैलेस संपदा द्वारा जीर्णोद्धार के अधीन।"
           ]
-        }
+        },
+        "name_hi": "नीमराना बावड़ी",
+        "district_hi": "खैरथल-तिजारा",
+        "type_hi": "जल-संचयन",
+        "period_hi": "1750 (ठाकुर टोडरमल)"
       }
     },
     {
@@ -141,8 +186,17 @@
             "Traditional Thar farming system — a rain-fed earthen embankment (bund) that traps monsoon runoff on gentle slopes to grow wheat and chickpea after the water percolates.",
             "Invented by the Paliwal Brahmins in the 15th c.; the Kuldhara ruins near Jaisalmer still show intact khadin fields.",
             "One of India's oldest recorded soil-and-moisture conservation practices; endorsed by CAZRI for revival across the Thar."
+          ],
+          "facts_hi": [
+            "पारंपरिक थार खेती-प्रणाली — एक वर्षा-आधारित मिट्टी का तटबंध (बंध) जो कोमल ढलानों पर मानसून बहाव रोकता है ताकि पानी रिसने के बाद गेहूँ और चना उगाया जा सके।",
+            "15वीं शताब्दी में पालीवाल ब्राह्मणों द्वारा आविष्कृत; जैसलमेर के निकट कुलधरा खंडहर आज भी अक्षत खड़ीन खेत दर्शाते हैं।",
+            "भारत की सबसे पुरानी अभिलिखित मृदा-और-नमी संरक्षण प्रथाओं में से एक; थार भर में पुनरुद्धार हेतु CAZRI द्वारा अनुमोदित।"
           ]
-        }
+        },
+        "name_hi": "खड़ीन प्रणाली, जैसलमेर",
+        "district_hi": "जैसलमेर",
+        "type_hi": "जल-संचयन",
+        "period_hi": "15वीं शताब्दी (पालीवाल ब्राह्मण)"
       }
     },
     {
@@ -165,8 +219,17 @@
             "Traditional underground cistern (3-4.5 m deep, cylindrical) that harvests rooftop and courtyard runoff — every Thar haveli has one.",
             "Bikaner's Junagarh Fort has 12 tankas that supplied the entire garrison during 6-month sieges.",
             "The 2013 Jal Kranti scheme has revived tanka construction in ~150 Thar villages; average tanka holds 20,000 litres."
+          ],
+          "facts_hi": [
+            "पारंपरिक भूमिगत कुंड (3-4.5 मी गहरा, बेलनाकार) जो छत और आँगन का बहाव संचित करता है — हर थार हवेली में एक होता है।",
+            "बीकानेर के जूनागढ़ दुर्ग में 12 टांके हैं जो 6-माह की घेराबंदियों के दौरान पूरी सेना को जल देते थे।",
+            "2013 की जल क्रांति योजना ने ~150 थार गाँवों में टांका-निर्माण पुनर्जीवित किया; औसत टांका 20,000 लीटर रखता है।"
           ]
-        }
+        },
+        "name_hi": "टांका (घरेलू वर्षाजल कुंड)",
+        "district_hi": "बीकानेर",
+        "type_hi": "जल-संचयन",
+        "period_hi": "पारंपरिक (आधुनिक-पूर्व)"
       }
     },
     {
@@ -189,8 +252,17 @@
             "Rajendra Singh — the 'Waterman of India' — and Tarun Bharat Sangh revived 8,600+ johads (village earthen ponds) across Alwar from 1985.",
             "The Bhaonta-Kolyala johads brought the dead Arvari river back to life in 1996 — an internationally cited case of decentralised water restoration.",
             "Won Rajendra Singh the Stockholm Water Prize (2015); catalyst for India's national watershed programme."
+          ],
+          "facts_hi": [
+            "राजेंद्र सिंह — 'भारत के जलपुरुष' — और तरुण भारत संघ ने 1985 से अलवर भर में 8,600+ जोहड़ (गाँव के मिट्टी के तालाब) पुनर्जीवित किए।",
+            "भांवता-कोल्याला के जोहड़ों ने 1996 में मृत अरवरी नदी को पुनर्जीवित किया — विकेंद्रित जल-पुनर्स्थापन का एक अंतरराष्ट्रीय स्तर पर उद्धृत उदाहरण।",
+            "राजेंद्र सिंह को स्टॉकहोम जल पुरस्कार (2015) दिलाया; भारत के राष्ट्रीय जलग्रहण कार्यक्रम का उत्प्रेरक।"
           ]
-        }
+        },
+        "name_hi": "भांवता-कोल्याला जोहड़ पुनरुद्धार",
+        "district_hi": "अलवर",
+        "type_hi": "जल-संचयन",
+        "period_hi": "1985–वर्तमान (तरुण भारत संघ)"
       }
     },
     {
@@ -213,8 +285,17 @@
             "'Chauka' system: a network of shallow rectangular ponds on grazing land that recharge groundwater while nourishing pasture.",
             "Devised by Laxman Singh at Laporiya village (Dudu tehsil, Jaipur) from 1977; now covers ~400 hectares.",
             "Raised the village water table by 4 m and turned dry pasture into productive grazing land — a textbook decentralised water case."
+          ],
+          "facts_hi": [
+            "'चौका' प्रणाली: चरागाह-भूमि पर उथले आयताकार तालाबों का जाल जो भूजल पुनर्भरण करते हुए चरागाह को पोषित करता है।",
+            "लक्ष्मण सिंह द्वारा लापोड़िया गाँव (दूदू तहसील, जयपुर) में 1977 से विकसित; अब ~400 हेक्टेयर में फैला।",
+            "गाँव का जलस्तर 4 मी बढ़ाया और सूखी चरागाह को उत्पादक चराई-भूमि में बदला — एक आदर्श विकेंद्रित जल उदाहरण।"
           ]
-        }
+        },
+        "name_hi": "लापोड़िया चौका प्रणाली",
+        "district_hi": "जयपुर",
+        "type_hi": "जल-संचयन",
+        "period_hi": "1977–वर्तमान (लक्ष्मण सिंह)"
       }
     },
     {
@@ -237,8 +318,17 @@
             "Rajsamand village where the panchayat plants 111 trees for every girl born — 350,000+ trees since 2007.",
             "The tree-planting is paired with kund (traditional pond) revival — village water table rose 12 m in a decade.",
             "Now a model village for India's Beti Bachao and Jal Shakti Abhiyan programmes; visited by dozens of state delegations."
+          ],
+          "facts_hi": [
+            "राजसमंद का गाँव जहाँ पंचायत हर बेटी के जन्म पर 111 वृक्ष रोपती है — 2007 से 3,50,000+ वृक्ष।",
+            "वृक्षारोपण कुंड (पारंपरिक तालाब) पुनरुद्धार के साथ जुड़ा है — गाँव का जलस्तर एक दशक में 12 मी बढ़ा।",
+            "अब भारत के बेटी बचाओ और जल शक्ति अभियान कार्यक्रमों के लिए एक आदर्श गाँव; दर्जनों राज्य प्रतिनिधिमंडलों द्वारा देखा गया।"
           ]
-        }
+        },
+        "name_hi": "पिपलांत्री (प्रति बेटी 111 वृक्ष)",
+        "district_hi": "राजसमंद",
+        "type_hi": "जल-संचयन",
+        "period_hi": "2007–वर्तमान"
       }
     }
   ]
