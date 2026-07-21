@@ -318,6 +318,31 @@ function composeOverview(p, kind) {
       case 'drought_zone':
         bits.push(`${esc(name)} सूखा-संवेदनशीलता — पुनरावृत्ति लगभग ${esc(tf(p, 'frequency') ?? '?')}।`);
         return bits.join(' ');
+      case 'industrial_region': {
+        bits.push(`${esc(name)} ${esc(tf(p, 'corridor') ?? '')} के साथ ${dcount} जिलों में फैला है।`);
+        const ps = tf(p, 'primary_sectors');
+        if (Array.isArray(ps)) bits.push(`विशिष्ट क्षेत्र: ${esc(ps.join(', '))}।`);
+        return bits.join(' ');
+      }
+      case 'industrial_cluster':
+        bits.push(`${esc(name)} — ${dcount} जिलों में ${esc(tf(p, 'sector') ?? 'क्षेत्रीय क्लस्टर')}।`);
+        if (p.ranking) bits.push(esc(tf(p, 'ranking')));
+        return bits.join(' ');
+      case 'industrial_area':
+        bits.push(`${esc(name)} — आधार क्षेत्र: <em>${esc(tf(p, 'anchor_sector') ?? '')}</em>। जिला: ${esc(tf(p, 'district') ?? '')}।`);
+        if (p.commissioned) bits.push(`${esc(tf(p, 'commissioned'))} में चालू।`);
+        return bits.join(' ');
+      case 'major_industry':
+        bits.push(`${esc(name)} — क्षेत्र: <em>${esc(tf(p, 'sector') ?? '')}</em>। ${esc(tf(p, 'district') ?? '')} में स्थित।`);
+        if (p.output) bits.push(esc(tf(p, 'output')) + '।');
+        return bits.join(' ');
+      case 'special_economic_zone':
+        bits.push(`${esc(name)} — ${esc(tf(p, 'notified') ?? '?')} में अधिसूचित। क्षेत्र: <em>${esc(tf(p, 'sector') ?? '')}</em>।`);
+        return bits.join(' ');
+      case 'handicraft_cluster':
+        bits.push(`${esc(name)} — ${esc(tf(p, 'craft') ?? '')}। जिला: ${esc(tf(p, 'district') ?? '')}।`);
+        if (p.gi_status) bits.push(esc(tf(p, 'gi_status')) + '।');
+        return bits.join(' ');
     }
   }
 
