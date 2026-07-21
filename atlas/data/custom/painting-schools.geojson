@@ -22,8 +22,19 @@
             "Signature: saturated flat colour (deep reds, ochres and lapis blues), direct emotional intensity, minimal shading.",
             "Favoured themes: Ragamala sets, Bhagavata Purana, Gita Govinda, Krishna Leela.",
             "Sahibdin and Manohar are the two master painters most associated with mid-17th c. Mewar."
+          ],
+          "facts_hi": [
+            "सबसे आरंभिक और सर्वाधिक प्रभावशाली राजपूत चित्र-शैली — वह मानक जिससे हर दूसरी राजस्थानी शैली अपनी दिशा तय करती है।",
+            "1605-1680 में राणा अमर सिंह प्रथम, कर्ण सिंह और जगत सिंह प्रथम के काल में चरम पर; गुरु साहिबदीन ने जगत सिंह की 1652 की रामायण चित्रित की (ब्रिटिश लाइब्रेरी)।",
+            "पहचान: संतृप्त सपाट रंग (गहरे लाल, गेरू और लाजवर्द नीले), सीधी भावनात्मक तीव्रता, न्यूनतम छायांकन।",
+            "प्रिय विषय: रागमाला शृंखलाएँ, भागवत पुराण, गीत गोविंद, कृष्ण-लीला।",
+            "साहिबदीन और मनोहर 17वीं शताब्दी के मध्यकालीन मेवाड़ से सर्वाधिक जुड़े दो गुरु-चित्रकार हैं।"
           ]
-        }
+        },
+        "name_hi": "मेवाड़ शैली (उदयपुर)",
+        "district_hi": "उदयपुर",
+        "type_hi": "चित्रकला शैली",
+        "period_hi": "17वीं–19वीं शताब्दी"
       }
     },
     {
@@ -47,8 +58,19 @@
             "Signature palette: intense ochre-yellow ground, magenta drapery, ivory faces with sharply-drawn profiles.",
             "Marwar sub-schools: Nagaur (softer), Ghanerao and Pali (bolder folk expression).",
             "Bhim Sen and Amar Das were the leading atelier painters in Man Singh's Jodhpur court."
+          ],
+          "facts_hi": [
+            "बोल्ड रेखाएँ, रंग के चौड़े सपाट क्षेत्र और लोक-रंगी ऊर्जा — प्रमुख राजपूत शैलियों में सबसे कम मुग़ल-प्रभावित।",
+            "महाराजा मानसिंह (शासन 1803-1843) के काल में चरम पर, जो नाथ संप्रदाय के निष्ठावान अनुयायी थे — नाथ-गुरु चित्र और सिद्ध-चरित उनके आदेशों में प्रमुख हैं।",
+            "पहचान-रंग: तीव्र गेरू-पीली पृष्ठभूमि, मैजेंटा वस्त्र, तीखे खींचे प्रोफ़ाइल वाले हाथीदाँती चेहरे।",
+            "मारवाड़ उप-शैलियाँ: नागौर (कोमल), घाणेराव और पाली (अधिक बोल्ड लोक-अभिव्यक्ति)।",
+            "भीम सेन और अमर दास मानसिंह के जोधपुर दरबार के प्रमुख कारख़ाना-चित्रकार थे।"
           ]
-        }
+        },
+        "name_hi": "मारवाड़ शैली (जोधपुर)",
+        "district_hi": "जोधपुर",
+        "type_hi": "चित्रकला शैली",
+        "period_hi": "17वीं–19वीं शताब्दी"
       }
     },
     {
@@ -72,8 +94,19 @@
             "Bani-Thani was a real courtesan-poet at Sawant Singh's court; the master painter Nihal Chand idealised her features.",
             "Signature: elongated faces, arched brows, half-closed almond eyes, pointed nose and chin, lotus-petal lips — a stylised Krishna–Radha ideal.",
             "Almost entirely devoted to Radha–Krishna themes set against lush Kishangarh lakes and moonlit skies."
+          ],
+          "facts_hi": [
+            "भारत की सर्वाधिक प्रिय लघुचित्र-कृति 'बणी-ठणी' (लगभग 1750) का घर, जिसे अक्सर 'भारतीय मोना लिसा' कहा जाता है और 1973 में भारतीय डाक-टिकट पर जारी किया गया।",
+            "राजा सावंत सिंह (शासन 1748-1764) के काल में विकसित, जो 'नागरी दास' उपनाम से लिखने वाले कृष्ण-भक्त कवि थे।",
+            "बणी-ठणी सावंत सिंह के दरबार की एक वास्तविक गायिका-कवयित्री थीं; गुरु-चित्रकार निहाल चंद ने उनके रूप को आदर्श रूप दिया।",
+            "पहचान: लंबे चेहरे, धनुषाकार भौंहें, अधखुली बादामी आँखें, नुकीली नाक और ठोड़ी, कमल-पंखुड़ी होंठ — एक शैलीकृत कृष्ण-राधा आदर्श।",
+            "लगभग पूर्णतः राधा-कृष्ण विषयों को समर्पित, किशनगढ़ की हरी-भरी झीलों और चाँदनी आकाश की पृष्ठभूमि में।"
           ]
-        }
+        },
+        "name_hi": "किशनगढ़ शैली",
+        "district_hi": "अजमेर",
+        "type_hi": "चित्रकला शैली",
+        "period_hi": "18वीं शताब्दी"
       }
     },
     {
@@ -97,8 +130,19 @@
             "Themes favoured Baramasa (12-month seasonal), Ragamala, Rasikapriya and elephant-and-tiger hunts.",
             "Chitrashala within Taragarh Fort — an open-corridor gallery — holds the largest surviving in-situ display of Bundi murals.",
             "Rao Chattar Sal (r. 1631-58) and Rao Ummed Singh (r. 1749-70) were the school's leading patrons."
+          ],
+          "facts_hi": [
+            "1591 की चुनार रागमाला से उत्पन्न — मुग़ल-प्रशिक्षित कलाकारों द्वारा चित्रित एक बिखरी शृंखला जो बूँदी और कोटा दोनों शैलियों का DNA बनी।",
+            "पहचान: घनी वनस्पति (केला, आम, इमली), गहरे रात्रि-आकाश, दीप्त श्वेत महल, और मछली-आकार आँखों वाला विशिष्ट गोल-मुख स्त्री-रूप।",
+            "विषयों में बारहमासा (12-मासी ऋतु), रागमाला, रसिकप्रिया और हाथी-बाघ शिकार प्रिय रहे।",
+            "तारागढ़ दुर्ग के भीतर चित्रशाला — एक खुले-गलियारे की दीर्घा — बूँदी भित्तिचित्रों का सबसे बड़ा जीवित यथास्थान प्रदर्शन रखती है।",
+            "राव छत्रसाल (शासन 1631-58) और राव उम्मेद सिंह (शासन 1749-70) शैली के प्रमुख संरक्षक थे।"
           ]
-        }
+        },
+        "name_hi": "बूँदी शैली",
+        "district_hi": "बूँदी",
+        "type_hi": "चित्रकला शैली",
+        "period_hi": "17वीं–19वीं शताब्दी"
       }
     },
     {
@@ -122,8 +166,19 @@
             "Signature: over-life-size tiger and boar hunts, dense forest with tangled trees, action-drawing at a scale unusual for miniature painting.",
             "Peaked under Maharao Umed Singh I (r. 1770-1819) — a passionate hunter whose personal hunts fill hundreds of surviving Kota paintings.",
             "The famous 'Elephant Fight' and 'Tiger Hunt' at Bundi Palace are Kota-style compositions."
+          ],
+          "facts_hi": [
+            "बूँदी की सहोदर शैली — वही DNA साझा करती है पर घने, ऊर्जावान पर्णसमूह वाले शिकार-और-जंगल दृश्यों में विशेषज्ञ।",
+            "1631 में राव माधो सिंह के अधीन कोटा राज्य के पृथक होने के बाद बूँदी से अलग हुई।",
+            "पहचान: विशालकाय बाघ और सूअर शिकार, उलझे वृक्षों वाला घना वन, लघुचित्रकला के लिए असामान्य पैमाने पर क्रिया-चित्रण।",
+            "महाराव उम्मेद सिंह प्रथम (शासन 1770-1819) के काल में चरम पर — एक भावुक शिकारी जिनके निजी शिकार सैकड़ों जीवित कोटा चित्रों को भरते हैं।",
+            "बूँदी महल में प्रसिद्ध 'हाथी-युद्ध' और 'बाघ-शिकार' कोटा-शैली की रचनाएँ हैं।"
           ]
-        }
+        },
+        "name_hi": "कोटा शैली",
+        "district_hi": "कोटा",
+        "type_hi": "चित्रकला शैली",
+        "period_hi": "17वीं–19वीं शताब्दी"
       }
     },
     {
@@ -147,8 +202,19 @@
             "Specialised in large-scale life-size portraiture, Krishna-Leela sets, Ragamala and Baramasa themes.",
             "Signature: refined Mughal-style drawing, sober palette dominated by ivory and mauve, meticulous jewellery detail.",
             "Also known as 'Dhundhar' school after the historic Dhundhar region name for the Jaipur territory."
+          ],
+          "facts_hi": [
+            "राजपूत शैलियों में सर्वाधिक मुग़ल-प्रभावित — कछवाहा परिवार की दिल्ली में लंबी सेवा के माध्यम से मुग़ल कारख़ानों से सीधा संरक्षण विरासत में मिला।",
+            "सवाई प्रताप सिंह (शासन 1778-1803) के काल में चरम पर, जिन्होंने 'सूरतखाना' — 50+ कलाकारों को नियुक्त करने वाली राजसी चित्र-कार्यशाला — स्थापित की।",
+            "बड़े पैमाने के जीवन-आकार चित्रांकन, कृष्ण-लीला शृंखला, रागमाला और बारहमासा विषयों में विशेषज्ञ।",
+            "पहचान: परिष्कृत मुग़ल-शैली रेखांकन, हाथीदाँती और मौव प्रधान संयत रंग-पट्ट, बारीक आभूषण-विवरण।",
+            "जयपुर क्षेत्र के ऐतिहासिक ढूँढाड़ नाम पर इसे 'ढूँढाड़' शैली भी कहा जाता है।"
           ]
-        }
+        },
+        "name_hi": "जयपुर (ढूँढाड़) शैली",
+        "district_hi": "जयपुर",
+        "type_hi": "चित्रकला शैली",
+        "period_hi": "18वीं–19वीं शताब्दी"
       }
     },
     {
@@ -172,8 +238,19 @@
             "Signature: pale ivory skin tones, lyrical lines, cool Persian palette (mauve, silver-grey, sap-green) — very different from the ochre-dominated Marwar palette next door.",
             "Ali Raza, Ruknuddin and Nathu were the school's most celebrated masters — three generations of the same family across the 17-18th c.",
             "Overlaps with the 'Bikaner Usta Art' craft tradition — the same community also created gold-manauti painted camel-hide manuscripts."
+          ],
+          "facts_hi": [
+            "तकनीकी रूप से सर्वाधिक परिष्कृत राजपूत शैली — बीकानेर कलाकार अक्सर अपनी कृतियों पर हस्ताक्षर और तिथि अंकित करते थे (राजस्थानी कारख़ानों में दुर्लभ)।",
+            "तब स्थापित जब राजा राय सिंह (शासन 1571-1611) दिल्ली और आगरा से मुग़ल-प्रशिक्षित उस्ता-समुदाय के चित्रकारों को जूनागढ़ दुर्ग लाए।",
+            "पहचान: हल्के हाथीदाँती त्वचा-रंग, लयात्मक रेखाएँ, शीतल फ़ारसी रंग-पट्ट (मौव, चाँदी-धूसर, सैप-हरा) — पड़ोसी मारवाड़ के गेरू-प्रधान रंग-पट्ट से बहुत भिन्न।",
+            "अली रज़ा, रुक्नुद्दीन और नाथू शैली के सबसे प्रसिद्ध गुरु थे — 17वीं-18वीं शताब्दी में एक ही परिवार की तीन पीढ़ियाँ।",
+            "'बीकानेर उस्ता कला' शिल्प-परंपरा से अतिव्यापन — यही समुदाय स्वर्ण-मनौती चित्रित ऊँट-चर्म पांडुलिपियाँ भी बनाता था।"
           ]
-        }
+        },
+        "name_hi": "बीकानेर शैली",
+        "district_hi": "बीकानेर",
+        "type_hi": "चित्रकला शैली",
+        "period_hi": "17वीं–19वीं शताब्दी"
       }
     },
     {
@@ -197,8 +274,19 @@
             "Signature technique: paintings on ivory tablets and mother-of-pearl — a departure from paper miniatures.",
             "Themes: Persian-inspired 'Yogini' and 'Kavi-Priya' (poet-and-lover) series, portrait sets, and detailed erotic manuscripts.",
             "Ghulam Ali, Baldev, Buddha Ram and Chotu Ram are the main Alwar-court painters recorded in surviving colophons."
+          ],
+          "facts_hi": [
+            "उभरने वाली अंतिम प्रमुख राजपूत चित्र-शैली — अलवर के रियासत बनने (1770) के बाद 19वीं शताब्दी में विकसित हुई।",
+            "महाराजा विनय सिंह (शासन 1815-57) और महाराजा शिवदान सिंह (शासन 1857-74) के काल में चरम पर।",
+            "पहचान-तकनीक: हाथीदाँती फलकों और सीप (मदर-ऑफ़-पर्ल) पर चित्रण — कागज़ी लघुचित्रों से हटकर।",
+            "विषय: फ़ारसी-प्रेरित 'योगिनी' और 'कवि-प्रिया' (कवि-और-प्रेमी) शृंखला, चित्र-समुच्चय, और विस्तृत शृंगारिक पांडुलिपियाँ।",
+            "ग़ुलाम अली, बलदेव, बुद्ध राम और छोटू राम जीवित पुष्पिकाओं में दर्ज मुख्य अलवर-दरबार चित्रकार हैं।"
           ]
-        }
+        },
+        "name_hi": "अलवर शैली",
+        "district_hi": "अलवर",
+        "type_hi": "चित्रकला शैली",
+        "period_hi": "19वीं शताब्दी"
       }
     },
     {
@@ -222,8 +310,19 @@
             "24 seasonal Pichwai themes rotate through the temple's ritual year — from Sharad Purnima (moonlight cows) to Annakut (mountain of food offerings).",
             "Practised by the Adi-Gaur community of painter families — many trace unbroken lineage back to the Braj artists who arrived with the deity.",
             "Distinctive palette: rich blacks, deep greens, gold-leaf highlights and lotus-pink for Shrinathji's ceremonial garments."
+          ],
+          "facts_hi": [
+            "श्रीनाथजी मंदिर के इर्द-गिर्द बनी वस्त्र-भक्ति चित्र-शैली, जो 1672 में ब्रज से विग्रह के आगमन के बाद नाथद्वारा में स्थापित हुई।",
+            "'पिछवाई' का अर्थ है 'पीछे' — श्रीनाथजी की मूर्ति के पीछे लगाए जाने वाले बड़े वस्त्र-पट, जो ऋतु या त्योहार दर्शाते हैं।",
+            "24 ऋतु-आधारित पिछवाई विषय मंदिर के अनुष्ठान-वर्ष में घूमते हैं — शरद पूर्णिमा (चाँदनी में गायें) से अन्नकूट (भोग का पर्वत) तक।",
+            "चित्रकार परिवारों के आदि-गौड़ समुदाय द्वारा अभ्यस्त — कई अपनी अटूट वंश-परंपरा उन ब्रज कलाकारों तक जोड़ते हैं जो विग्रह के साथ आए।",
+            "विशिष्ट रंग-पट्ट: गहरे काले, गहरे हरे, स्वर्ण-पत्र उभार और श्रीनाथजी के अनुष्ठानिक वस्त्रों के लिए कमल-गुलाबी।"
           ]
-        }
+        },
+        "name_hi": "नाथद्वारा शैली (पिछवाई)",
+        "district_hi": "राजसमंद",
+        "type_hi": "चित्रकला शैली",
+        "period_hi": "17वीं शताब्दी–वर्तमान"
       }
     }
   ]

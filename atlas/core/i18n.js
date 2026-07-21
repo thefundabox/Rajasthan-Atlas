@@ -290,6 +290,7 @@ const DICT = {
   'Folk Deity Shrine':                'लोकदेव तीर्थ',
   'Folk Goddess':                     'लोकदेवी',
   'Buddhist Heritage':                'बौद्ध विरासत',
+  'Painting School':                  'चित्रकला शैली',
 
   /* Detail card — feature kind labels */
   'National Park':                    'राष्ट्रीय उद्यान',
