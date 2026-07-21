@@ -1,0 +1,2096 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-ajmer",
+      "geometry": {"type": "Point", "coordinates": [74.86422, 26.28411]},
+      "properties": {
+        "name": "Ajmer",
+        "name_hi": "अजमेर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Rose",
+        "crop_hi": "गुलाब",
+        "tree": "Neem",
+        "tree_hi": "नीम",
+        "product": "Granite & marble products",
+        "product_hi": "ग्रेनाइट एवं मार्बल के उत्पाद",
+        "tourismSite": "Pushkar Teerth",
+        "tourismSite_hi": "पुष्कर तीर्थ",
+        "sport": "Kabaddi",
+        "sport_hi": "कबड्डी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          74.86422,
+          26.28411
+        ],
+        "labelAnchor": [
+          74.86422,
+          26.28411
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Rose",
+            "Tree — Neem",
+            "Product — Granite & marble products",
+            "Tourism — Pushkar Teerth",
+            "Sport — Kabaddi"
+          ],
+          "facts_hi": [
+            "उपज — गुलाब",
+            "वनस्पति — नीम",
+            "उत्पाद — ग्रेनाइट एवं मार्बल के उत्पाद",
+            "पर्यटन स्थल — पुष्कर तीर्थ",
+            "खेल — कबड्डी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-alwar",
+      "geometry": {"type": "Point", "coordinates": [76.64414, 27.37873]},
+      "properties": {
+        "name": "Alwar",
+        "name_hi": "अलवर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Onion",
+        "crop_hi": "प्याज",
+        "tree": "Arjun",
+        "tree_hi": "अर्जुन",
+        "product": "Automobile parts",
+        "product_hi": "ऑटोमोबाइल पार्ट्स",
+        "tourismSite": "Sariska Tiger Reserve",
+        "tourismSite_hi": "सरिस्का टाइगर रिजर्व",
+        "sport": "Wrestling",
+        "sport_hi": "कुश्ती",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          76.64414,
+          27.37873
+        ],
+        "labelAnchor": [
+          76.64414,
+          27.37873
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Onion",
+            "Tree — Arjun",
+            "Product — Automobile parts",
+            "Tourism — Sariska Tiger Reserve",
+            "Sport — Wrestling"
+          ],
+          "facts_hi": [
+            "उपज — प्याज",
+            "वनस्पति — अर्जुन",
+            "उत्पाद — ऑटोमोबाइल पार्ट्स",
+            "पर्यटन स्थल — सरिस्का टाइगर रिजर्व",
+            "खेल — कुश्ती"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-balotra",
+      "geometry": {"type": "Point", "coordinates": [72.13, 25.87564]},
+      "properties": {
+        "name": "Balotra",
+        "name_hi": "बालोतरा",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Pomegranate",
+        "crop_hi": "अनार",
+        "tree": "Rohida",
+        "tree_hi": "रोहिड़ा",
+        "product": "Textile products",
+        "product_hi": "टैक्सटाइल उत्पाद",
+        "tourismSite": "Nakoda Jain Temple",
+        "tourismSite_hi": "नाकोड़ा जैन मंदिर",
+        "sport": "Cricket",
+        "sport_hi": "क्रिकेट",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          72.13,
+          25.87564
+        ],
+        "labelAnchor": [
+          72.13,
+          25.87564
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Pomegranate",
+            "Tree — Rohida",
+            "Product — Textile products",
+            "Tourism — Nakoda Jain Temple",
+            "Sport — Cricket"
+          ],
+          "facts_hi": [
+            "उपज — अनार",
+            "वनस्पति — रोहिड़ा",
+            "उत्पाद — टैक्सटाइल उत्पाद",
+            "पर्यटन स्थल — नाकोड़ा जैन मंदिर",
+            "खेल — क्रिकेट"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-banswara",
+      "geometry": {"type": "Point", "coordinates": [74.36221, 23.47635]},
+      "properties": {
+        "name": "Banswara",
+        "name_hi": "बांसवाड़ा",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Mango",
+        "crop_hi": "आम",
+        "tree": "Teak",
+        "tree_hi": "सागवान",
+        "product": "Marble products",
+        "product_hi": "मार्बल के उत्पाद",
+        "tourismSite": "Tripura Sundari Temple",
+        "tourismSite_hi": "त्रिपुरा सुंदरी मंदिर",
+        "sport": "Archery",
+        "sport_hi": "तीरंदाजी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          74.36221,
+          23.47635
+        ],
+        "labelAnchor": [
+          74.36221,
+          23.47635
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Mango",
+            "Tree — Teak",
+            "Product — Marble products",
+            "Tourism — Tripura Sundari Temple",
+            "Sport — Archery"
+          ],
+          "facts_hi": [
+            "उपज — आम",
+            "वनस्पति — सागवान",
+            "उत्पाद — मार्बल के उत्पाद",
+            "पर्यटन स्थल — त्रिपुरा सुंदरी मंदिर",
+            "खेल — तीरंदाजी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-baran",
+      "geometry": {"type": "Point", "coordinates": [76.74766, 24.99597]},
+      "properties": {
+        "name": "Baran",
+        "name_hi": "बारां",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Garlic",
+        "crop_hi": "लहसुन",
+        "tree": "Chironji",
+        "tree_hi": "चिरौंजी",
+        "product": "Garlic products",
+        "product_hi": "गारलिक प्रोडक्ट",
+        "tourismSite": "Ramgarh Crater",
+        "tourismSite_hi": "रामगढ़ क्रेटर",
+        "sport": "Football",
+        "sport_hi": "फुटबॉल",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          76.74766,
+          24.99597
+        ],
+        "labelAnchor": [
+          76.74766,
+          24.99597
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Garlic",
+            "Tree — Chironji",
+            "Product — Garlic products",
+            "Tourism — Ramgarh Crater",
+            "Sport — Football"
+          ],
+          "facts_hi": [
+            "उपज — लहसुन",
+            "वनस्पति — चिरौंजी",
+            "उत्पाद — गारलिक प्रोडक्ट",
+            "पर्यटन स्थल — रामगढ़ क्रेटर",
+            "खेल — फुटबॉल"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-barmer",
+      "geometry": {"type": "Point", "coordinates": [71.10859, 25.65621]},
+      "properties": {
+        "name": "Barmer",
+        "name_hi": "बाड़मेर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Isabgol",
+        "crop_hi": "ईसबगोल",
+        "tree": "Rohida",
+        "tree_hi": "रोहिड़ा",
+        "product": "Embroidery",
+        "product_hi": "कशीदाकारी",
+        "tourismSite": "Kiradu Temple",
+        "tourismSite_hi": "किराडू मंदिर",
+        "sport": "Basketball",
+        "sport_hi": "बास्केटबॉल",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          71.10859,
+          25.65621
+        ],
+        "labelAnchor": [
+          71.10859,
+          25.65621
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Isabgol",
+            "Tree — Rohida",
+            "Product — Embroidery",
+            "Tourism — Kiradu Temple",
+            "Sport — Basketball"
+          ],
+          "facts_hi": [
+            "उपज — ईसबगोल",
+            "वनस्पति — रोहिड़ा",
+            "उत्पाद — कशीदाकारी",
+            "पर्यटन स्थल — किराडू मंदिर",
+            "खेल — बास्केटबॉल"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-beawar",
+      "geometry": {"type": "Point", "coordinates": [74.19359, 26.09204]},
+      "properties": {
+        "name": "Beawar",
+        "name_hi": "ब्यावर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Wheat",
+        "crop_hi": "गेहूं",
+        "tree": "Karanj",
+        "tree_hi": "करंज का पेड़",
+        "product": "Quartz & feldspar powder",
+        "product_hi": "क्वार्ट्ज एवं फेल्डस्पार पाउडर",
+        "tourismSite": "Todgarh",
+        "tourismSite_hi": "टॉडगढ़",
+        "sport": "Hockey",
+        "sport_hi": "हॉकी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          74.19359,
+          26.09204
+        ],
+        "labelAnchor": [
+          74.19359,
+          26.09204
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Wheat",
+            "Tree — Karanj",
+            "Product — Quartz & feldspar powder",
+            "Tourism — Todgarh",
+            "Sport — Hockey"
+          ],
+          "facts_hi": [
+            "उपज — गेहूं",
+            "वनस्पति — करंज का पेड़",
+            "उत्पाद — क्वार्ट्ज एवं फेल्डस्पार पाउडर",
+            "पर्यटन स्थल — टॉडगढ़",
+            "खेल — हॉकी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-bharatpur",
+      "geometry": {"type": "Point", "coordinates": [77.31951, 27.04845]},
+      "properties": {
+        "name": "Bharatpur",
+        "name_hi": "भरतपुर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Honey",
+        "crop_hi": "शहद",
+        "tree": "Kadamb",
+        "tree_hi": "कदम्ब",
+        "product": "Agro-based products",
+        "product_hi": "कृषि आधारित उत्पाद",
+        "tourismSite": "Keoladeo National Park",
+        "tourismSite_hi": "केवलादेव नेशनल पार्क",
+        "sport": "Wrestling",
+        "sport_hi": "कुश्ती",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          77.31951,
+          27.04845
+        ],
+        "labelAnchor": [
+          77.31951,
+          27.04845
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Honey",
+            "Tree — Kadamb",
+            "Product — Agro-based products",
+            "Tourism — Keoladeo National Park",
+            "Sport — Wrestling"
+          ],
+          "facts_hi": [
+            "उपज — शहद",
+            "वनस्पति — कदम्ब",
+            "उत्पाद — कृषि आधारित उत्पाद",
+            "पर्यटन स्थल — केवलादेव नेशनल पार्क",
+            "खेल — कुश्ती"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-bhilwara",
+      "geometry": {"type": "Point", "coordinates": [74.74317, 25.46657]},
+      "properties": {
+        "name": "Bhilwara",
+        "name_hi": "भीलवाड़ा",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Orange",
+        "crop_hi": "संतरा",
+        "tree": "Arjun",
+        "tree_hi": "अर्जुन",
+        "product": "Textile products",
+        "product_hi": "टेक्सटाइल उत्पाद",
+        "tourismSite": "Mandalgarh Fort",
+        "tourismSite_hi": "माण्डलगढ़ किला",
+        "sport": "Basketball",
+        "sport_hi": "बास्केटबॉल",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          74.74317,
+          25.46657
+        ],
+        "labelAnchor": [
+          74.74317,
+          25.46657
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Orange",
+            "Tree — Arjun",
+            "Product — Textile products",
+            "Tourism — Mandalgarh Fort",
+            "Sport — Basketball"
+          ],
+          "facts_hi": [
+            "उपज — संतरा",
+            "वनस्पति — अर्जुन",
+            "उत्पाद — टेक्सटाइल उत्पाद",
+            "पर्यटन स्थल — माण्डलगढ़ किला",
+            "खेल — बास्केटबॉल"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-bikaner",
+      "geometry": {"type": "Point", "coordinates": [73.17464, 28.17707]},
+      "properties": {
+        "name": "Bikaner",
+        "name_hi": "बीकानेर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Moth bean",
+        "crop_hi": "मोठ",
+        "tree": "Rohida",
+        "tree_hi": "रोहिड़ा",
+        "product": "Bikaneri namkeen",
+        "product_hi": "बीकानेरी नमकीन",
+        "tourismSite": "Karni Mata Temple",
+        "tourismSite_hi": "करणी माता मंदिर",
+        "sport": "Archery",
+        "sport_hi": "तीरंदाजी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          73.17464,
+          28.17707
+        ],
+        "labelAnchor": [
+          73.17464,
+          28.17707
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Moth bean",
+            "Tree — Rohida",
+            "Product — Bikaneri namkeen",
+            "Tourism — Karni Mata Temple",
+            "Sport — Archery"
+          ],
+          "facts_hi": [
+            "उपज — मोठ",
+            "वनस्पति — रोहिड़ा",
+            "उत्पाद — बीकानेरी नमकीन",
+            "पर्यटन स्थल — करणी माता मंदिर",
+            "खेल — तीरंदाजी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-bundi",
+      "geometry": {"type": "Point", "coordinates": [75.79062, 25.48563]},
+      "properties": {
+        "name": "Bundi",
+        "name_hi": "बूँदी",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Rice",
+        "crop_hi": "चावल",
+        "tree": "Dhok",
+        "tree_hi": "धोक",
+        "product": "Sandstone",
+        "product_hi": "सेन्ड स्टोन",
+        "tourismSite": "Ramgarh Vishdhari Sanctuary",
+        "tourismSite_hi": "रामगढ़ विषधारी सेन्चुरी",
+        "sport": "Kabaddi",
+        "sport_hi": "कबड्डी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          75.79062,
+          25.48563
+        ],
+        "labelAnchor": [
+          75.79062,
+          25.48563
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Rice",
+            "Tree — Dhok",
+            "Product — Sandstone",
+            "Tourism — Ramgarh Vishdhari Sanctuary",
+            "Sport — Kabaddi"
+          ],
+          "facts_hi": [
+            "उपज — चावल",
+            "वनस्पति — धोक",
+            "उत्पाद — सेन्ड स्टोन",
+            "पर्यटन स्थल — रामगढ़ विषधारी सेन्चुरी",
+            "खेल — कबड्डी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-chittorgarh",
+      "geometry": {"type": "Point", "coordinates": [74.58603, 24.81697]},
+      "properties": {
+        "name": "Chittorgarh",
+        "name_hi": "चित्तौड़गढ़",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Custard apple",
+        "crop_hi": "सीताफल",
+        "tree": "Bael",
+        "tree_hi": "बिल्व पत्र",
+        "product": "Granite & marble products",
+        "product_hi": "ग्रेनाईट एवं मार्बल के उत्पाद",
+        "tourismSite": "Chittorgarh Fort",
+        "tourismSite_hi": "चित्तौड़गढ़ दुर्ग",
+        "sport": "Kabaddi",
+        "sport_hi": "कबड्डी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          74.58603,
+          24.81697
+        ],
+        "labelAnchor": [
+          74.58603,
+          24.81697
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Custard apple",
+            "Tree — Bael",
+            "Product — Granite & marble products",
+            "Tourism — Chittorgarh Fort",
+            "Sport — Kabaddi"
+          ],
+          "facts_hi": [
+            "उपज — सीताफल",
+            "वनस्पति — बिल्व पत्र",
+            "उत्पाद — ग्रेनाईट एवं मार्बल के उत्पाद",
+            "पर्यटन स्थल — चित्तौड़गढ़ दुर्ग",
+            "खेल — कबड्डी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-churu",
+      "geometry": {"type": "Point", "coordinates": [74.69651, 28.34514]},
+      "properties": {
+        "name": "Churu",
+        "name_hi": "चूरू",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Aloe vera",
+        "crop_hi": "ग्वारपाठा",
+        "tree": "Khejri",
+        "tree_hi": "खेजड़ी",
+        "product": "Wood products",
+        "product_hi": "लकड़ी के उत्पाद",
+        "tourismSite": "Salasar Balaji Temple",
+        "tourismSite_hi": "सालासर बालाजी मंदिर",
+        "sport": "Athletics",
+        "sport_hi": "एथलेटिक्स",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          74.69651,
+          28.34514
+        ],
+        "labelAnchor": [
+          74.69651,
+          28.34514
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Aloe vera",
+            "Tree — Khejri",
+            "Product — Wood products",
+            "Tourism — Salasar Balaji Temple",
+            "Sport — Athletics"
+          ],
+          "facts_hi": [
+            "उपज — ग्वारपाठा",
+            "वनस्पति — खेजड़ी",
+            "उत्पाद — लकड़ी के उत्पाद",
+            "पर्यटन स्थल — सालासर बालाजी मंदिर",
+            "खेल — एथलेटिक्स"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-dausa",
+      "geometry": {"type": "Point", "coordinates": [76.5097, 26.85764]},
+      "properties": {
+        "name": "Dausa",
+        "name_hi": "दौसा",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Fennel",
+        "crop_hi": "सौंफ",
+        "tree": "Dhak",
+        "tree_hi": "ढाक",
+        "product": "Stone products",
+        "product_hi": "पत्थर के उत्पाद",
+        "tourismSite": "Mehandipur Balaji Temple",
+        "tourismSite_hi": "मेहंदीपुर बालाजी मंदिर",
+        "sport": "Football",
+        "sport_hi": "फुटबॉल",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          76.5097,
+          26.85764
+        ],
+        "labelAnchor": [
+          76.5097,
+          26.85764
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Fennel",
+            "Tree — Dhak",
+            "Product — Stone products",
+            "Tourism — Mehandipur Balaji Temple",
+            "Sport — Football"
+          ],
+          "facts_hi": [
+            "उपज — सौंफ",
+            "वनस्पति — ढाक",
+            "उत्पाद — पत्थर के उत्पाद",
+            "पर्यटन स्थल — मेहंदीपुर बालाजी मंदिर",
+            "खेल — फुटबॉल"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-deeg",
+      "geometry": {"type": "Point", "coordinates": [77.21913, 27.51296]},
+      "properties": {
+        "name": "Deeg",
+        "name_hi": "डीग",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Mustard",
+        "crop_hi": "सरसों",
+        "tree": "Arjun",
+        "tree_hi": "अर्जुन",
+        "product": "Stone-based products",
+        "product_hi": "स्टोन आधारित उत्पाद",
+        "tourismSite": "Deeg Palace",
+        "tourismSite_hi": "डीग महल",
+        "sport": "Wrestling",
+        "sport_hi": "कुश्ती",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          77.21913,
+          27.51296
+        ],
+        "labelAnchor": [
+          77.21913,
+          27.51296
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Mustard",
+            "Tree — Arjun",
+            "Product — Stone-based products",
+            "Tourism — Deeg Palace",
+            "Sport — Wrestling"
+          ],
+          "facts_hi": [
+            "उपज — सरसों",
+            "वनस्पति — अर्जुन",
+            "उत्पाद — स्टोन आधारित उत्पाद",
+            "पर्यटन स्थल — डीग महल",
+            "खेल — कुश्ती"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-dholpur",
+      "geometry": {"type": "Point", "coordinates": [77.70226, 26.68092]},
+      "properties": {
+        "name": "Dholpur",
+        "name_hi": "धौलपुर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Potato",
+        "crop_hi": "आलू",
+        "tree": "Karanj",
+        "tree_hi": "करंज",
+        "product": "Stone-based products",
+        "product_hi": "स्टोन आधारित उत्पाद",
+        "tourismSite": "Machkund",
+        "tourismSite_hi": "मचकुण्ड",
+        "sport": "Hockey",
+        "sport_hi": "हॉकी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          77.70226,
+          26.68092
+        ],
+        "labelAnchor": [
+          77.70226,
+          26.68092
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Potato",
+            "Tree — Karanj",
+            "Product — Stone-based products",
+            "Tourism — Machkund",
+            "Sport — Hockey"
+          ],
+          "facts_hi": [
+            "उपज — आलू",
+            "वनस्पति — करंज",
+            "उत्पाद — स्टोन आधारित उत्पाद",
+            "पर्यटन स्थल — मचकुण्ड",
+            "खेल — हॉकी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-didwana-kuchaman",
+      "geometry": {"type": "Point", "coordinates": [74.66574, 27.18917]},
+      "properties": {
+        "name": "Didwana-Kuchaman",
+        "name_hi": "डीडवाना-कुचामन",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Onion",
+        "crop_hi": "प्याज",
+        "tree": "Khejri",
+        "tree_hi": "खेजड़ी",
+        "product": "Marble & granite products",
+        "product_hi": "मार्बल एवं ग्रेनाईट के उत्पाद",
+        "tourismSite": "Didwana Lake",
+        "tourismSite_hi": "डीडवाना झील",
+        "sport": "Basketball",
+        "sport_hi": "बास्केटबॉल",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          74.66574,
+          27.18917
+        ],
+        "labelAnchor": [
+          74.66574,
+          27.18917
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Onion",
+            "Tree — Khejri",
+            "Product — Marble & granite products",
+            "Tourism — Didwana Lake",
+            "Sport — Basketball"
+          ],
+          "facts_hi": [
+            "उपज — प्याज",
+            "वनस्पति — खेजड़ी",
+            "उत्पाद — मार्बल एवं ग्रेनाईट के उत्पाद",
+            "पर्यटन स्थल — डीडवाना झील",
+            "खेल — बास्केटबॉल"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-dungarpur",
+      "geometry": {"type": "Point", "coordinates": [73.8533, 23.73178]},
+      "properties": {
+        "name": "Dungarpur",
+        "name_hi": "डूंगरपुर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Mango",
+        "crop_hi": "आम",
+        "tree": "Teak",
+        "tree_hi": "सागवान",
+        "product": "Marble products",
+        "product_hi": "मार्बल के उत्पाद",
+        "tourismSite": "Beneshwar Dham",
+        "tourismSite_hi": "बेणेश्वर धाम",
+        "sport": "Hockey",
+        "sport_hi": "हॉकी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          73.8533,
+          23.73178
+        ],
+        "labelAnchor": [
+          73.8533,
+          23.73178
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Mango",
+            "Tree — Teak",
+            "Product — Marble products",
+            "Tourism — Beneshwar Dham",
+            "Sport — Hockey"
+          ],
+          "facts_hi": [
+            "उपज — आम",
+            "वनस्पति — सागवान",
+            "उत्पाद — मार्बल के उत्पाद",
+            "पर्यटन स्थल — बेणेश्वर धाम",
+            "खेल — हॉकी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-hanumangarh",
+      "geometry": {"type": "Point", "coordinates": [74.56151, 29.26562]},
+      "properties": {
+        "name": "Hanumangarh",
+        "name_hi": "हनुमानगढ़",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Kinnow",
+        "crop_hi": "किन्नू",
+        "tree": "Sheesham",
+        "tree_hi": "शीशम",
+        "product": "Agro-based products",
+        "product_hi": "कृषि आधारित उत्पाद",
+        "tourismSite": "Gogamedi Temple",
+        "tourismSite_hi": "गोगामेड़ी मंदिर",
+        "sport": "Hockey",
+        "sport_hi": "हॉकी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          74.56151,
+          29.26562
+        ],
+        "labelAnchor": [
+          74.56151,
+          29.26562
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Kinnow",
+            "Tree — Sheesham",
+            "Product — Agro-based products",
+            "Tourism — Gogamedi Temple",
+            "Sport — Hockey"
+          ],
+          "facts_hi": [
+            "उपज — किन्नू",
+            "वनस्पति — शीशम",
+            "उत्पाद — कृषि आधारित उत्पाद",
+            "पर्यटन स्थल — गोगामेड़ी मंदिर",
+            "खेल — हॉकी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-jaipur",
+      "geometry": {"type": "Point", "coordinates": [75.6674, 26.89811]},
+      "properties": {
+        "name": "Jaipur",
+        "name_hi": "जयपुर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Amla",
+        "crop_hi": "आंवला",
+        "tree": "Lisoda",
+        "tree_hi": "लिसोड़ा",
+        "product": "Gems & jewellery",
+        "product_hi": "रत्नाभूषण",
+        "tourismSite": "Amer Fort",
+        "tourismSite_hi": "आमेर दुर्ग",
+        "sport": "Kabaddi",
+        "sport_hi": "कबड्डी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          75.6674,
+          26.89811
+        ],
+        "labelAnchor": [
+          75.6674,
+          26.89811
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Amla",
+            "Tree — Lisoda",
+            "Product — Gems & jewellery",
+            "Tourism — Amer Fort",
+            "Sport — Kabaddi"
+          ],
+          "facts_hi": [
+            "उपज — आंवला",
+            "वनस्पति — लिसोड़ा",
+            "उत्पाद — रत्नाभूषण",
+            "पर्यटन स्थल — आमेर दुर्ग",
+            "खेल — कबड्डी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-jaisalmer",
+      "geometry": {"type": "Point", "coordinates": [70.901, 27.07517]},
+      "properties": {
+        "name": "Jaisalmer",
+        "name_hi": "जैसलमेर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Date palm",
+        "crop_hi": "खजूर",
+        "tree": "Jaal",
+        "tree_hi": "जाल",
+        "product": "Yellow stone products",
+        "product_hi": "येलो स्टोन के उत्पाद",
+        "tourismSite": "Jaisalmer Fort",
+        "tourismSite_hi": "जैसलमेर दुर्ग",
+        "sport": "Gymnastics",
+        "sport_hi": "जिमनास्टिक",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          70.901,
+          27.07517
+        ],
+        "labelAnchor": [
+          70.901,
+          27.07517
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Date palm",
+            "Tree — Jaal",
+            "Product — Yellow stone products",
+            "Tourism — Jaisalmer Fort",
+            "Sport — Gymnastics"
+          ],
+          "facts_hi": [
+            "उपज — खजूर",
+            "वनस्पति — जाल",
+            "उत्पाद — येलो स्टोन के उत्पाद",
+            "पर्यटन स्थल — जैसलमेर दुर्ग",
+            "खेल — जिमनास्टिक"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-jalore",
+      "geometry": {"type": "Point", "coordinates": [72.21108, 25.0987]},
+      "properties": {
+        "name": "Jalore",
+        "name_hi": "जालोर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Pomegranate",
+        "crop_hi": "अनार",
+        "tree": "Jaal",
+        "tree_hi": "जाल",
+        "product": "Granite products",
+        "product_hi": "ग्रेनाईट के उत्पाद",
+        "tourismSite": "Sundha Mata Temple",
+        "tourismSite_hi": "सुंधा माता मंदिर",
+        "sport": "Boxing",
+        "sport_hi": "बॉक्सिंग",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          72.21108,
+          25.0987
+        ],
+        "labelAnchor": [
+          72.21108,
+          25.0987
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Pomegranate",
+            "Tree — Jaal",
+            "Product — Granite products",
+            "Tourism — Sundha Mata Temple",
+            "Sport — Boxing"
+          ],
+          "facts_hi": [
+            "उपज — अनार",
+            "वनस्पति — जाल",
+            "उत्पाद — ग्रेनाईट के उत्पाद",
+            "पर्यटन स्थल — सुंधा माता मंदिर",
+            "खेल — बॉक्सिंग"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-jhalawar",
+      "geometry": {"type": "Point", "coordinates": [76.19344, 24.33604]},
+      "properties": {
+        "name": "Jhalawar",
+        "name_hi": "झालावाड़",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Orange",
+        "crop_hi": "संतरा",
+        "tree": "Teak",
+        "tree_hi": "सागवान",
+        "product": "Kota stone products",
+        "product_hi": "कोटा स्टोन के उत्पाद",
+        "tourismSite": "Gagron Fort",
+        "tourismSite_hi": "गागरोन दुर्ग",
+        "sport": "Basketball",
+        "sport_hi": "बास्केटबॉल",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          76.19344,
+          24.33604
+        ],
+        "labelAnchor": [
+          76.19344,
+          24.33604
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Orange",
+            "Tree — Teak",
+            "Product — Kota stone products",
+            "Tourism — Gagron Fort",
+            "Sport — Basketball"
+          ],
+          "facts_hi": [
+            "उपज — संतरा",
+            "वनस्पति — सागवान",
+            "उत्पाद — कोटा स्टोन के उत्पाद",
+            "पर्यटन स्थल — गागरोन दुर्ग",
+            "खेल — बास्केटबॉल"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-jhunjhunu",
+      "geometry": {"type": "Point", "coordinates": [75.54919, 28.09278]},
+      "properties": {
+        "name": "Jhunjhunu",
+        "name_hi": "झुंझुनूँ",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Mustard",
+        "crop_hi": "सरसों",
+        "tree": "Neem",
+        "tree_hi": "नीम",
+        "product": "Wooden handicraft products",
+        "product_hi": "लकड़ी के हस्तशिल्प उत्पाद",
+        "tourismSite": "Lohargal",
+        "tourismSite_hi": "लोहार्गल",
+        "sport": "Basketball",
+        "sport_hi": "बास्केटबॉल",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          75.54919,
+          28.09278
+        ],
+        "labelAnchor": [
+          75.54919,
+          28.09278
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Mustard",
+            "Tree — Neem",
+            "Product — Wooden handicraft products",
+            "Tourism — Lohargal",
+            "Sport — Basketball"
+          ],
+          "facts_hi": [
+            "उपज — सरसों",
+            "वनस्पति — नीम",
+            "उत्पाद — लकड़ी के हस्तशिल्प उत्पाद",
+            "पर्यटन स्थल — लोहार्गल",
+            "खेल — बास्केटबॉल"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-jodhpur",
+      "geometry": {"type": "Point", "coordinates": [73.01002, 26.44603]},
+      "properties": {
+        "name": "Jodhpur",
+        "name_hi": "जोधपुर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Cumin",
+        "crop_hi": "जीरा",
+        "tree": "Jaal",
+        "tree_hi": "जाल",
+        "product": "Wooden furniture",
+        "product_hi": "लकड़ी के फर्नीचर",
+        "tourismSite": "Mehrangarh Fort",
+        "tourismSite_hi": "मेहरानगढ़ दुर्ग",
+        "sport": "Gymnastics",
+        "sport_hi": "जिमनास्टिक",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          73.01002,
+          26.44603
+        ],
+        "labelAnchor": [
+          73.01002,
+          26.44603
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Cumin",
+            "Tree — Jaal",
+            "Product — Wooden furniture",
+            "Tourism — Mehrangarh Fort",
+            "Sport — Gymnastics"
+          ],
+          "facts_hi": [
+            "उपज — जीरा",
+            "वनस्पति — जाल",
+            "उत्पाद — लकड़ी के फर्नीचर",
+            "पर्यटन स्थल — मेहरानगढ़ दुर्ग",
+            "खेल — जिमनास्टिक"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-karauli",
+      "geometry": {"type": "Point", "coordinates": [76.95874, 26.52306]},
+      "properties": {
+        "name": "Karauli",
+        "name_hi": "करौली",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Sesame",
+        "crop_hi": "तिल",
+        "tree": "Banyan",
+        "tree_hi": "बरगद",
+        "product": "Sandstone products",
+        "product_hi": "सेण्ड स्टोन के उत्पाद",
+        "tourismSite": "Kaila Devi Temple",
+        "tourismSite_hi": "कैलादेवी मंदिर",
+        "sport": "Cricket",
+        "sport_hi": "क्रिकेट",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          76.95874,
+          26.52306
+        ],
+        "labelAnchor": [
+          76.95874,
+          26.52306
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Sesame",
+            "Tree — Banyan",
+            "Product — Sandstone products",
+            "Tourism — Kaila Devi Temple",
+            "Sport — Cricket"
+          ],
+          "facts_hi": [
+            "उपज — तिल",
+            "वनस्पति — बरगद",
+            "उत्पाद — सेण्ड स्टोन के उत्पाद",
+            "पर्यटन स्थल — कैलादेवी मंदिर",
+            "खेल — क्रिकेट"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-khairthal-tijara",
+      "geometry": {"type": "Point", "coordinates": [76.70925, 27.9225]},
+      "properties": {
+        "name": "Khairthal-Tijara",
+        "name_hi": "खैरथल-तिजारा",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Onion",
+        "crop_hi": "प्याज",
+        "tree": "Sheesham",
+        "tree_hi": "शीशम",
+        "product": "Automobile parts",
+        "product_hi": "ऑटोमोबाईल पार्ट्स",
+        "tourismSite": "Tijara Jain Temple",
+        "tourismSite_hi": "तिजारा जैन मंदिर",
+        "sport": "Wrestling",
+        "sport_hi": "कुश्ती",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          76.70925,
+          27.9225
+        ],
+        "labelAnchor": [
+          76.70925,
+          27.9225
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Onion",
+            "Tree — Sheesham",
+            "Product — Automobile parts",
+            "Tourism — Tijara Jain Temple",
+            "Sport — Wrestling"
+          ],
+          "facts_hi": [
+            "उपज — प्याज",
+            "वनस्पति — शीशम",
+            "उत्पाद — ऑटोमोबाईल पार्ट्स",
+            "पर्यटन स्थल — तिजारा जैन मंदिर",
+            "खेल — कुश्ती"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-kota",
+      "geometry": {"type": "Point", "coordinates": [76.1057, 25.10949]},
+      "properties": {
+        "name": "Kota",
+        "name_hi": "कोटा",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Coriander",
+        "crop_hi": "धनिया",
+        "tree": "Khair",
+        "tree_hi": "खैर",
+        "product": "Kota Doria",
+        "product_hi": "कोटा डोरिया",
+        "tourismSite": "Chambal River Front",
+        "tourismSite_hi": "चम्बल रिवर फ्रंट",
+        "sport": "Wrestling",
+        "sport_hi": "कुश्ती",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          76.1057,
+          25.10949
+        ],
+        "labelAnchor": [
+          76.1057,
+          25.10949
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Coriander",
+            "Tree — Khair",
+            "Product — Kota Doria",
+            "Tourism — Chambal River Front",
+            "Sport — Wrestling"
+          ],
+          "facts_hi": [
+            "उपज — धनिया",
+            "वनस्पति — खैर",
+            "उत्पाद — कोटा डोरिया",
+            "पर्यटन स्थल — चम्बल रिवर फ्रंट",
+            "खेल — कुश्ती"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-kotputli-behror",
+      "geometry": {"type": "Point", "coordinates": [76.24217, 27.69888]},
+      "properties": {
+        "name": "Kotputli-Behror",
+        "name_hi": "कोटपूतली-बहरोड़",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Carrot",
+        "crop_hi": "गाजर",
+        "tree": "Guggul",
+        "tree_hi": "गूगल",
+        "product": "Automobile parts",
+        "product_hi": "ऑटोमोबाइल पार्ट्स",
+        "tourismSite": "Bairath",
+        "tourismSite_hi": "बैराठ",
+        "sport": "Wrestling",
+        "sport_hi": "कुश्ती",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          76.24217,
+          27.69888
+        ],
+        "labelAnchor": [
+          76.24217,
+          27.69888
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Carrot",
+            "Tree — Guggul",
+            "Product — Automobile parts",
+            "Tourism — Bairath",
+            "Sport — Wrestling"
+          ],
+          "facts_hi": [
+            "उपज — गाजर",
+            "वनस्पति — गूगल",
+            "उत्पाद — ऑटोमोबाइल पार्ट्स",
+            "पर्यटन स्थल — बैराठ",
+            "खेल — कुश्ती"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-nagaur",
+      "geometry": {"type": "Point", "coordinates": [73.87195, 26.98957]},
+      "properties": {
+        "name": "Nagaur",
+        "name_hi": "नागौर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Moong",
+        "crop_hi": "मूंग",
+        "tree": "Khejri",
+        "tree_hi": "खेजड़ी",
+        "product": "Paan-methi & spice processing",
+        "product_hi": "पान मैथी एवं मसाला प्रसंस्करण",
+        "tourismSite": "Meerabai Memorial",
+        "tourismSite_hi": "मीराबाई स्मारक",
+        "sport": "Kabaddi",
+        "sport_hi": "कबड्डी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          73.87195,
+          26.98957
+        ],
+        "labelAnchor": [
+          73.87195,
+          26.98957
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Moong",
+            "Tree — Khejri",
+            "Product — Paan-methi & spice processing",
+            "Tourism — Meerabai Memorial",
+            "Sport — Kabaddi"
+          ],
+          "facts_hi": [
+            "उपज — मूंग",
+            "वनस्पति — खेजड़ी",
+            "उत्पाद — पान मैथी एवं मसाला प्रसंस्करण",
+            "पर्यटन स्थल — मीराबाई स्मारक",
+            "खेल — कबड्डी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-pali",
+      "geometry": {"type": "Point", "coordinates": [73.38469, 25.58352]},
+      "properties": {
+        "name": "Pali",
+        "name_hi": "पाली",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Henna",
+        "crop_hi": "मेंहदी",
+        "tree": "Neem",
+        "tree_hi": "नीम",
+        "product": "Textile products",
+        "product_hi": "टेक्सटाईल के उत्पाद",
+        "tourismSite": "Ranakpur Jain Temple",
+        "tourismSite_hi": "रणकपुर जैन मंदिर",
+        "sport": "Basketball",
+        "sport_hi": "बास्केटबॉल",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          73.38469,
+          25.58352
+        ],
+        "labelAnchor": [
+          73.38469,
+          25.58352
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Henna",
+            "Tree — Neem",
+            "Product — Textile products",
+            "Tourism — Ranakpur Jain Temple",
+            "Sport — Basketball"
+          ],
+          "facts_hi": [
+            "उपज — मेंहदी",
+            "वनस्पति — नीम",
+            "उत्पाद — टेक्सटाईल के उत्पाद",
+            "पर्यटन स्थल — रणकपुर जैन मंदिर",
+            "खेल — बास्केटबॉल"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-phalodi",
+      "geometry": {"type": "Point", "coordinates": [72.47941, 27.16024]},
+      "properties": {
+        "name": "Phalodi",
+        "name_hi": "फलोदी",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Cumin",
+        "crop_hi": "जीरा",
+        "tree": "Jaal",
+        "tree_hi": "जाल",
+        "product": "Senna (Sonamukhi) products",
+        "product_hi": "सोनामुखी के उत्पाद",
+        "tourismSite": "Khichan",
+        "tourismSite_hi": "खींचन",
+        "sport": "Athletics",
+        "sport_hi": "एथलेटिक्स",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          72.47941,
+          27.16024
+        ],
+        "labelAnchor": [
+          72.47941,
+          27.16024
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Cumin",
+            "Tree — Jaal",
+            "Product — Senna (Sonamukhi) products",
+            "Tourism — Khichan",
+            "Sport — Athletics"
+          ],
+          "facts_hi": [
+            "उपज — जीरा",
+            "वनस्पति — जाल",
+            "उत्पाद — सोनामुखी के उत्पाद",
+            "पर्यटन स्थल — खींचन",
+            "खेल — एथलेटिक्स"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-pratapgarh",
+      "geometry": {"type": "Point", "coordinates": [74.65098, 24.02905]},
+      "properties": {
+        "name": "Pratapgarh",
+        "name_hi": "प्रतापगढ़",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Kalonji",
+        "crop_hi": "कलौंजी",
+        "tree": "Tendu",
+        "tree_hi": "तेंदू",
+        "product": "Thewa jewellery",
+        "product_hi": "थेवा आभूषण",
+        "tourismSite": "Sitamata Wildlife Sanctuary",
+        "tourismSite_hi": "सीतामाता वन्यजीव अभयारण",
+        "sport": "Archery",
+        "sport_hi": "तीरंदाजी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          74.65098,
+          24.02905
+        ],
+        "labelAnchor": [
+          74.65098,
+          24.02905
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Kalonji",
+            "Tree — Tendu",
+            "Product — Thewa jewellery",
+            "Tourism — Sitamata Wildlife Sanctuary",
+            "Sport — Archery"
+          ],
+          "facts_hi": [
+            "उपज — कलौंजी",
+            "वनस्पति — तेंदू",
+            "उत्पाद — थेवा आभूषण",
+            "पर्यटन स्थल — सीतामाता वन्यजीव अभयारण",
+            "खेल — तीरंदाजी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-rajsamand",
+      "geometry": {"type": "Point", "coordinates": [73.87884, 25.2058]},
+      "properties": {
+        "name": "Rajsamand",
+        "name_hi": "राजसमंद",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Custard apple",
+        "crop_hi": "सीताफल",
+        "tree": "Neem",
+        "tree_hi": "नीम",
+        "product": "Granite & marble products",
+        "product_hi": "ग्रेनाईट एवं मार्बल के उत्पाद",
+        "tourismSite": "Kumbhalgarh",
+        "tourismSite_hi": "कुमलगढ़",
+        "sport": "Hockey",
+        "sport_hi": "हॉकी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          73.87884,
+          25.2058
+        ],
+        "labelAnchor": [
+          73.87884,
+          25.2058
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Custard apple",
+            "Tree — Neem",
+            "Product — Granite & marble products",
+            "Tourism — Kumbhalgarh",
+            "Sport — Hockey"
+          ],
+          "facts_hi": [
+            "उपज — सीताफल",
+            "वनस्पति — नीम",
+            "उत्पाद — ग्रेनाईट एवं मार्बल के उत्पाद",
+            "पर्यटन स्थल — कुमलगढ़",
+            "खेल — हॉकी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-salumbar",
+      "geometry": {"type": "Point", "coordinates": [74.01668, 24.18973]},
+      "properties": {
+        "name": "Salumbar",
+        "name_hi": "सलूम्बर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Maize",
+        "crop_hi": "मक्का",
+        "tree": "Palash",
+        "tree_hi": "पलास",
+        "product": "Quartz",
+        "product_hi": "क्वार्ट्ज",
+        "tourismSite": "Jaisamand Lake",
+        "tourismSite_hi": "जयसमंद झील",
+        "sport": "Kabaddi",
+        "sport_hi": "कबड्डी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          74.01668,
+          24.18973
+        ],
+        "labelAnchor": [
+          74.01668,
+          24.18973
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Maize",
+            "Tree — Palash",
+            "Product — Quartz",
+            "Tourism — Jaisamand Lake",
+            "Sport — Kabaddi"
+          ],
+          "facts_hi": [
+            "उपज — मक्का",
+            "वनस्पति — पलास",
+            "उत्पाद — क्वार्ट्ज",
+            "पर्यटन स्थल — जयसमंद झील",
+            "खेल — कबड्डी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-sawai-madhopur",
+      "geometry": {"type": "Point", "coordinates": [76.46094, 26.21727]},
+      "properties": {
+        "name": "Sawai Madhopur",
+        "name_hi": "सवाई माधोपुर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Guava",
+        "crop_hi": "अमरूद",
+        "tree": "Neem",
+        "tree_hi": "नीम",
+        "product": "Marble products",
+        "product_hi": "मार्बल के उत्पाद",
+        "tourismSite": "Ranthambhore National Park",
+        "tourismSite_hi": "रणथम्भौर नेशनल पार्क",
+        "sport": "Football",
+        "sport_hi": "फुटबॉल",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          76.46094,
+          26.21727
+        ],
+        "labelAnchor": [
+          76.46094,
+          26.21727
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Guava",
+            "Tree — Neem",
+            "Product — Marble products",
+            "Tourism — Ranthambhore National Park",
+            "Sport — Football"
+          ],
+          "facts_hi": [
+            "उपज — अमरूद",
+            "वनस्पति — नीम",
+            "उत्पाद — मार्बल के उत्पाद",
+            "पर्यटन स्थल — रणथम्भौर नेशनल पार्क",
+            "खेल — फुटबॉल"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-sikar",
+      "geometry": {"type": "Point", "coordinates": [75.28839, 27.63401]},
+      "properties": {
+        "name": "Sikar",
+        "name_hi": "सीकर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Onion",
+        "crop_hi": "प्याज",
+        "tree": "Ardu",
+        "tree_hi": "अरडू",
+        "product": "Wooden furniture",
+        "product_hi": "लकड़ी के फर्नीचर",
+        "tourismSite": "Khatushyam Ji Temple",
+        "tourismSite_hi": "खाटूश्याम जी मंदिर",
+        "sport": "Basketball",
+        "sport_hi": "बास्केटबॉल",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          75.28839,
+          27.63401
+        ],
+        "labelAnchor": [
+          75.28839,
+          27.63401
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Onion",
+            "Tree — Ardu",
+            "Product — Wooden furniture",
+            "Tourism — Khatushyam Ji Temple",
+            "Sport — Basketball"
+          ],
+          "facts_hi": [
+            "उपज — प्याज",
+            "वनस्पति — अरडू",
+            "उत्पाद — लकड़ी के फर्नीचर",
+            "पर्यटन स्थल — खाटूश्याम जी मंदिर",
+            "खेल — बास्केटबॉल"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-sirohi",
+      "geometry": {"type": "Point", "coordinates": [72.77688, 24.76194]},
+      "properties": {
+        "name": "Sirohi",
+        "name_hi": "सिरोही",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Fennel",
+        "crop_hi": "सौंफ",
+        "tree": "Mahua",
+        "tree_hi": "महुआ",
+        "product": "Marble products",
+        "product_hi": "मार्बल के उत्पाद",
+        "tourismSite": "Dilwara Temples",
+        "tourismSite_hi": "देलवाड़ा मंदिर",
+        "sport": "Archery",
+        "sport_hi": "तीरंदाजी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          72.77688,
+          24.76194
+        ],
+        "labelAnchor": [
+          72.77688,
+          24.76194
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Fennel",
+            "Tree — Mahua",
+            "Product — Marble products",
+            "Tourism — Dilwara Temples",
+            "Sport — Archery"
+          ],
+          "facts_hi": [
+            "उपज — सौंफ",
+            "वनस्पति — महुआ",
+            "उत्पाद — मार्बल के उत्पाद",
+            "पर्यटन स्थल — देलवाड़ा मंदिर",
+            "खेल — तीरंदाजी"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-sri-ganganagar",
+      "geometry": {"type": "Point", "coordinates": [73.57039, 29.39585]},
+      "properties": {
+        "name": "Sri Ganganagar",
+        "name_hi": "श्रीगंगानगर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Kinnow",
+        "crop_hi": "किन्नू",
+        "tree": "Sheesham",
+        "tree_hi": "शीशम",
+        "product": "Mustard oil",
+        "product_hi": "सरसों तेल",
+        "tourismSite": "Budha Johad",
+        "tourismSite_hi": "बूढ़ा जोहड़",
+        "sport": "Athletics",
+        "sport_hi": "एथलेटिक्स",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          73.57039,
+          29.39585
+        ],
+        "labelAnchor": [
+          73.57039,
+          29.39585
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Kinnow",
+            "Tree — Sheesham",
+            "Product — Mustard oil",
+            "Tourism — Budha Johad",
+            "Sport — Athletics"
+          ],
+          "facts_hi": [
+            "उपज — किन्नू",
+            "वनस्पति — शीशम",
+            "उत्पाद — सरसों तेल",
+            "पर्यटन स्थल — बूढ़ा जोहड़",
+            "खेल — एथलेटिक्स"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-tonk",
+      "geometry": {"type": "Point", "coordinates": [75.66583, 26.14829]},
+      "properties": {
+        "name": "Tonk",
+        "name_hi": "टोंक",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Mustard",
+        "crop_hi": "सरसों",
+        "tree": "Amaltas",
+        "tree_hi": "अमलतास",
+        "product": "Slate stone products",
+        "product_hi": "स्लेट स्टोन के उत्पाद",
+        "tourismSite": "Diggi Kalyan Ji",
+        "tourismSite_hi": "डिग्गी कल्याण जी",
+        "sport": "Athletics",
+        "sport_hi": "एथलेटिक्स",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          75.66583,
+          26.14829
+        ],
+        "labelAnchor": [
+          75.66583,
+          26.14829
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Mustard",
+            "Tree — Amaltas",
+            "Product — Slate stone products",
+            "Tourism — Diggi Kalyan Ji",
+            "Sport — Athletics"
+          ],
+          "facts_hi": [
+            "उपज — सरसों",
+            "वनस्पति — अमलतास",
+            "उत्पाद — स्लेट स्टोन के उत्पाद",
+            "पर्यटन स्थल — डिग्गी कल्याण जी",
+            "खेल — एथलेटिक्स"
+          ],
+          "significance": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "panch-gaurav-udaipur",
+      "geometry": {"type": "Point", "coordinates": [73.59561, 24.48475]},
+      "properties": {
+        "name": "Udaipur",
+        "name_hi": "उदयपुर",
+        "type": "panch_gaurav",
+        "type_hi": "पंच गौरव",
+        "category": "custom",
+        "state": "Rajasthan",
+        "crop": "Custard apple",
+        "crop_hi": "सीताफल",
+        "tree": "Mahua",
+        "tree_hi": "महुआ",
+        "product": "Marble & granite products",
+        "product_hi": "मार्बल एवं ग्रेनाईट के उत्पाद",
+        "tourismSite": "Fateh Sagar & Pichola Lake",
+        "tourismSite_hi": "फतहसागर एवं पिछोला झील",
+        "sport": "Swimming",
+        "sport_hi": "तैराकी",
+        "icon": "🏅",
+        "source": "Rajasthan Panch Gaurav programme (State Government) — district identities",
+        "lastUpdated": "2026-07-22",
+        "centroid": [
+          73.59561,
+          24.48475
+        ],
+        "labelAnchor": [
+          73.59561,
+          24.48475
+        ],
+        "notes": {
+          "facts": [
+            "Crop — Custard apple",
+            "Tree — Mahua",
+            "Product — Marble & granite products",
+            "Tourism — Fateh Sagar & Pichola Lake",
+            "Sport — Swimming"
+          ],
+          "facts_hi": [
+            "उपज — सीताफल",
+            "वनस्पति — महुआ",
+            "उत्पाद — मार्बल एवं ग्रेनाईट के उत्पाद",
+            "पर्यटन स्थल — फतहसागर एवं पिछोला झील",
+            "खेल — तैराकी"
+          ],
+          "significance": "high"
+        }
+      }
+    }
+  ]
+}

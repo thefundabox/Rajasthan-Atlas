@@ -442,6 +442,19 @@
       "visible": false,
       "searchable": true,
       "featureType": "archaeological_site"
+    },
+    {
+      "id": "panch-gaurav",
+      "name": "Panch Gaurav",
+      "type": "point",
+      "data": "atlas/data/custom/panch-gaurav.geojson",
+      "category": "administrative",
+      "icon": "🏅",
+      "color": "#c8892e",
+      "zIndex": 60,
+      "visible": false,
+      "searchable": true,
+      "featureType": "panch_gaurav"
     }
   ]
 }

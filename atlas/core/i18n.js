@@ -712,6 +712,9 @@ const DICT = {
   'urban':                            'नगरीय',
   'signature PA of the':              'का प्रमुख संरक्षित क्षेत्र',
 
+  /* Panch Gaurav layer (custom/panch-gaurav.geojson) */
+  'Panch Gaurav':                     'पंच गौरव',
+
   /* Statistics overlay + district detail (UIManager.js) */
   'None notified by MoEFCC.':         'MoEFCC द्वारा कोई अधिसूचित नहीं।',
   'Sum of NP + TR + WLS areas.':      'राष्ट्रीय उद्यान + टाइगर रिज़र्व + अभयारण्य क्षेत्रफल का योग।',
