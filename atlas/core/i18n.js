@@ -285,6 +285,11 @@ const DICT = {
   'Palace':                           'महल',
   'Temple':                           'मंदिर',
   'Haveli':                           'हवेली',
+  'Sufi Shrine':                      'सूफ़ी दरगाह',
+  'Jain Pilgrimage':                  'जैन तीर्थ',
+  'Folk Deity Shrine':                'लोकदेव तीर्थ',
+  'Folk Goddess':                     'लोकदेवी',
+  'Buddhist Heritage':                'बौद्ध विरासत',
 
   /* Detail card — feature kind labels */
   'National Park':                    'राष्ट्रीय उद्यान',

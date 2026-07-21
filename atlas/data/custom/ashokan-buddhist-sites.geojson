@@ -21,8 +21,18 @@
             "The Bhabru edict is unique — it is the only Ashokan inscription that directly names Buddhist texts (7 works Ashoka commended to monks).",
             "Ancient name 'Viratnagar' — the Mahabharata identifies this as King Virata's capital where the Pandavas spent their 13th year of exile in disguise.",
             "The Bijak-ki-Pahari hill above the town has the ruins of India's earliest known circular Buddhist temple (chaitya), 3rd c. BCE."
+          ],
+          "facts_hi": [
+            "राजस्थान का एकमात्र अशोक शिलालेख स्थल — भाब्रू शिलालेख और लघु शिलालेख क्रमांक 1 दोनों तीसरी शताब्दी ई.पू. में बैराठ से जारी हुए।",
+            "भाब्रू शिलालेख अनूठा है — यह एकमात्र अशोक शिलालेख है जो सीधे बौद्ध ग्रंथों के नाम लेता है (7 रचनाएँ जिन्हें अशोक ने भिक्षुओं को सुझाया)।",
+            "प्राचीन नाम 'विराटनगर' — महाभारत इसे राजा विराट की राजधानी बताता है, जहाँ पांडवों ने अज्ञातवास का 13वाँ वर्ष बिताया।",
+            "नगर के ऊपर बीजक-की-पहाड़ी पर भारत के सबसे आरंभिक ज्ञात वृत्ताकार बौद्ध मंदिर (चैत्य) के अवशेष हैं, तीसरी शताब्दी ई.पू.।"
           ]
-        }
+        },
+        "name_hi": "बैराठ (विराटनगर) — अशोक शिलालेख और बौद्ध विहार",
+        "district_hi": "कोटपूतली-बहरोड़",
+        "type_hi": "बौद्ध विरासत",
+        "period_hi": "तीसरी शताब्दी ई.पू. (अशोक मौर्य)"
       }
     },
     {
@@ -45,8 +55,18 @@
             "Chaityas (prayer halls) and viharas (monastic cells) with a large seated Buddha in the main chaitya cave.",
             "Contemporary with Ajanta's later phase (5-7th c.) — evidence that Buddhism survived in southeast Rajasthan long after it declined in the Ganges plain.",
             "Adjoining caves at Vinayaka and Hathi-Gomph extend the same rock-cut monastic complex."
+          ],
+          "facts_hi": [
+            "राजस्थान में शैलकृत बौद्ध गुफाओं का सबसे बड़ा समूह — झालरापाटन के निकट एक लेटराइट पहाड़ी में तराशी ~50 गुफाएँ।",
+            "चैत्य (प्रार्थना-कक्ष) और विहार (मठ-कोठरियाँ), मुख्य चैत्य गुफ़ा में एक विशाल आसीन बुद्ध के साथ।",
+            "अजंता के परवर्ती चरण (5-7वीं शताब्दी) की समकालीन — प्रमाण कि दक्षिण-पूर्वी राजस्थान में बौद्ध धर्म गंगा-मैदान में पतन के बहुत बाद तक बचा रहा।",
+            "विनायका और हाथी-गुम्फ़ की सटी हुई गुफाएँ इसी शैलकृत मठ-परिसर का विस्तार हैं।"
           ]
-        }
+        },
+        "name_hi": "कोल्वी बौद्ध गुफाएँ",
+        "district_hi": "झालावाड़",
+        "type_hi": "बौद्ध विरासत",
+        "period_hi": "5वीं–7वीं शताब्दी ई. (गुप्त–उत्तर-गुप्त)"
       }
     },
     {
@@ -68,8 +88,17 @@
             "Rock-cut Buddhist monastic complex near Ramgarh village — a sister site to Kolvi with the same 5-7th c. dating.",
             "Ramgarh Crater — India's third recognised meteorite impact crater — sits ~10 km from the caves; the caves may have been carved into the crater's raised rim.",
             "Together with Kolvi and the nearby Hathi-Gomph, these mark southeastern Rajasthan as Rajputana's principal Buddhist heartland."
+          ],
+          "facts_hi": [
+            "रामगढ़ गाँव के निकट शैलकृत बौद्ध मठ-परिसर — कोल्वी का सहयोगी स्थल, वही 5-7वीं शताब्दी का काल।",
+            "रामगढ़ क्रेटर — भारत का तीसरा मान्यता-प्राप्त उल्कापिंड प्रभाव-क्रेटर — गुफाओं से ~10 किमी दूर है; संभवतः गुफाएँ क्रेटर की उठी कगार में तराशी गईं।",
+            "कोल्वी और निकटवर्ती हाथी-गुम्फ़ के साथ मिलकर ये दक्षिण-पूर्वी राजस्थान को राजपूताना का प्रमुख बौद्ध हृदय-क्षेत्र बनाती हैं।"
           ]
-        }
+        },
+        "name_hi": "विनायका / रामगढ़ बौद्ध गुफाएँ, बारां",
+        "district_hi": "बारां",
+        "type_hi": "बौद्ध विरासत",
+        "period_hi": "5वीं–7वीं शताब्दी ई. (उत्तर-गुप्त)"
       }
     }
   ]

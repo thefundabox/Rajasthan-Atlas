@@ -24,11 +24,22 @@
             "Ramdevra draws 10+ million pilgrims each Bhadrapada — Rajasthan's largest folk-deity fair.",
             "The shrine complex contains Ramdev's meditation cave, the samadhi and the annexed Harji Bhati samadhi.",
             "Pilgrims walk barefoot from all parts of Rajasthan, Gujarat and MP — a route marked by 'Ramdev jhandas' (flags)."
+          ],
+          "facts_hi": [
+            "रामदेव पीर (1352-1385) की समाधि — एक तोमर राजपूत संत, जिन्हें हिंदू (रामदेवजी के रूप में) और मुसलमान (रामशाह पीर के रूप में) दोनों पूजते हैं।",
+            "रामदेव के 'पंच-पीर' साथी — जिनमें मेघवाल दलित संत हरजी भाटी भी हैं — इसे भारत के आरंभिक जाति-विरोधी भक्ति आंदोलनों में से एक बनाते हैं।",
+            "रामदेवरा हर भाद्रपद में 1 करोड़+ तीर्थयात्रियों को खींचता है — राजस्थान का सबसे बड़ा लोकदेव मेला।",
+            "मंदिर-परिसर में रामदेव की ध्यान-गुफ़ा, समाधि और साथ लगी हरजी भाटी समाधि है।",
+            "राजस्थान, गुजरात और म.प्र. के सभी हिस्सों से तीर्थयात्री नंगे पाँव आते हैं — यह मार्ग 'रामदेव झंडों' से चिह्नित होता है।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "बाबा रामदेव समाधि, रामदेवरा",
+        "district_hi": "जैसलमेर (पोकरण)",
+        "type_hi": "लोकदेव तीर्थ",
+        "deity_hi": "रामदेव पीर (बाबा रामदेव)"
       }
     },
     {
@@ -54,11 +65,22 @@
             "The main shrine's silver door and marble facade were sponsored by Maharaja Ganga Singh (r. 1888-1943).",
             "Karni Mata is worshipped as an incarnation of Durga; devotees leave milk offerings that the rats freely share.",
             "Twin fairs (Chaitra + Ashwin) draw pilgrims from the Marwari trading diaspora worldwide."
+          ],
+          "facts_hi": [
+            "बीकानेर राठौड़ शासकों की कुलदेवी — राव बीका ने उनके आशीर्वाद के बाद 1488 में बीकानेर बसाया।",
+            "यहाँ ~25,000 संरक्षित काले चूहे ('काबा') रहते हैं; दुर्लभ सफ़ेद चूहे का दिखना शुभ माना जाता है।",
+            "मुख्य मंदिर का चाँदी का द्वार और संगमरमरी अग्रभाग महाराजा गंगा सिंह (शासन 1888-1943) ने बनवाया।",
+            "करणी माता दुर्गा के अवतार के रूप में पूजित हैं; भक्त दूध चढ़ाते हैं जिसे चूहे भी बाँटकर पीते हैं।",
+            "जुड़वाँ मेले (चैत्र + आश्विन) विश्व भर के मारवाड़ी व्यापारी प्रवासियों को खींचते हैं।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "करणी माता मंदिर, देशनोक",
+        "district_hi": "बीकानेर",
+        "type_hi": "लोकदेव तीर्थ",
+        "deity_hi": "करणी माता (बीकानेर राठौड़ों की कुलदेवी)"
       }
     },
     {
@@ -84,11 +106,22 @@
             "Tejaji is invoked as a protector against snake bites — 'Teja-tanti' amulets are worn in the Marwar belt.",
             "The Bhadrapada mela at Kharnal draws Jat and Meena communities across state boundaries.",
             "Sursura (Ajmer) is his martyrdom site; a companion pilgrimage centre."
+          ],
+          "facts_hi": [
+            "तेजाजी (1074-1103) — एक जाट लोक-नायक, जिन्हें राजस्थान, हरियाणा और म.प्र. भर में देवता के रूप में पूजा जाता है।",
+            "खरनाल का मंदिर उनके जन्मस्थान को दर्शाता है; उनकी कथा मीणा आक्रमणकारियों से बालिंदा की गायों की रक्षा में उनके बलिदान की है।",
+            "तेजाजी को सर्पदंश से रक्षक के रूप में पूजा जाता है — मारवाड़ पेटी में 'तेजा-तांती' ताबीज़ पहने जाते हैं।",
+            "खरनाल का भाद्रपद मेला राज्य-सीमाओं के पार जाट और मीणा समुदायों को खींचता है।",
+            "सुरसुरा (अजमेर) उनका शहादत-स्थल है; एक सहयोगी तीर्थ-केंद्र।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "तेजाजी मंदिर, खरनाल",
+        "district_hi": "नागौर",
+        "type_hi": "लोकदेव तीर्थ",
+        "deity_hi": "वीर तेजाजी"
       }
     },
     {
@@ -114,11 +147,22 @@
             "The Gogamedi mela (Bhadrapada) draws 100,000+ pilgrims from Rajasthan, Punjab, Haryana and Sindh.",
             "Devotees seek Gogaji's blessing against snake bites; snake-bite amulets ('Goga chhadi') are worn across the Marwar belt.",
             "The samadhi complex includes Gogaji's Ratti Ghori (horse-shrine) — a rare equine folk-worship in India."
+          ],
+          "facts_hi": [
+            "गोगाजी चौहान (11वीं शताब्दी) — राजस्थान के 'नागराज'; यह धाम भारत का सबसे बड़ा नाग-देव तीर्थ है।",
+            "गोगाजी को हिंदू (गोगाजी महाराज के रूप में) और मुसलमान (जाहर पीर के रूप में) दोनों पूजते हैं — एक चिश्ती-नाथ समन्वित परंपरा।",
+            "गोगामेड़ी मेला (भाद्रपद) राजस्थान, पंजाब, हरियाणा और सिंध से 1,00,000+ तीर्थयात्रियों को खींचता है।",
+            "भक्त सर्पदंश से रक्षा हेतु गोगाजी का आशीर्वाद माँगते हैं; मारवाड़ पेटी भर में सर्पदंश-ताबीज़ ('गोगा छड़ी') पहने जाते हैं।",
+            "समाधि परिसर में गोगाजी की रत्ती घोड़ी (अश्व-मंदिर) है — भारत में एक दुर्लभ अश्व-लोकपूजा।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "गोगाजी धाम, गोगामेड़ी",
+        "district_hi": "हनुमानगढ़",
+        "type_hi": "लोकदेव तीर्थ",
+        "deity_hi": "गोगाजी चौहान"
       }
     },
     {
@@ -144,11 +188,22 @@
             "Pabuji died protecting the sacred cow herd of Deval Charani from cattle raiders — the archetype of the Rathore martyr-saint.",
             "His shrine at Kolumand (in Phalodi) draws camel-breeders from Marwar; the samadhi is a small Chhatri.",
             "The Pabuji tradition is performed by Bhopa-Bhopi (male-female bard couples) — Rajasthan's UNESCO-inscribed intangible heritage."
+          ],
+          "facts_hi": [
+            "पाबूजी (1239-1276) — एक राठौड़ राजपूत वीर-संत, जिन्हें ऊँट-पालकों के लोकदेव के रूप में पूजा जाता है।",
+            "पाबूजी-की-फड़ — उनके जीवन का वर्णन करता 12-फलक स्क्रॉल-चित्र — राजस्थान की प्रमुख लोक-आख्यान कलाओं में से एक है।",
+            "पाबूजी देवल चारणी की पवित्र गौ-सम्पदा की मवेशी-लुटेरों से रक्षा करते हुए मारे गए — राठौड़ शहीद-संत का आदर्श।",
+            "कोलूमंड (फलोदी) में उनका धाम मारवाड़ के ऊँट-पालकों को खींचता है; समाधि एक छोटी छतरी है।",
+            "पाबूजी परंपरा भोपा-भोपी (पुरुष-स्त्री गायक युगल) द्वारा प्रस्तुत की जाती है — राजस्थान की UNESCO-अंकित अमूर्त विरासत।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "पाबूजी धाम, कोलूमंड",
+        "district_hi": "फलोदी",
+        "type_hi": "लोकदेव तीर्थ",
+        "deity_hi": "पाबूजी राठौड़"
       }
     },
     {
@@ -174,11 +229,22 @@
             "The Nishkalank temple annex commemorates Sant Mavji, a 17th-c. Vaishnavite reformer who preached to the Bhil community.",
             "The Beneshwar fair (Magh Purnima) draws 200,000+ tribal pilgrims from Rajasthan, Gujarat and MP — often called the 'Kumbh of Bhils'.",
             "The Nishkalank tradition combines Bhil animism with Vaishnavite devotion — a rare tribal-mainstream synthesis."
+          ],
+          "facts_hi": [
+            "भारत का एकमात्र शिव मंदिर जहाँ एक स्वाभाविक रूप से खंडित शिवलिंग की पूजा होती है — लोक-मान्यता है कि इसकी दरारें दैवीय रूप से बनीं।",
+            "माही-सोम-जाखम त्रिवेणी संगम पर स्थित — राजस्थान का सबसे बड़ा जनजातीय तीर्थ।",
+            "निष्कलंक मंदिर-अनुबंध 17वीं शताब्दी के वैष्णव सुधारक संत मावजी की स्मृति में है, जिन्होंने भील समुदाय को उपदेश दिया।",
+            "बेणेश्वर मेला (माघ पूर्णिमा) राजस्थान, गुजरात और म.प्र. से 2,00,000+ जनजातीय तीर्थयात्रियों को खींचता है — इसे अक्सर 'भीलों का कुंभ' कहा जाता है।",
+            "निष्कलंक परंपरा भील जीववाद को वैष्णव भक्ति से जोड़ती है — एक दुर्लभ जनजातीय-मुख्यधारा संश्लेषण।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "बेणेश्वर महादेव",
+        "district_hi": "डूंगरपुर",
+        "type_hi": "लोकदेव तीर्थ",
+        "deity_hi": "बेणेश्वर महादेव + निष्कलंक संत मावजी"
       }
     }
   ]
