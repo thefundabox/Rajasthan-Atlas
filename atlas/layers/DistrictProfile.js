@@ -153,6 +153,19 @@ function renderDistrictProfile(district) {
     wrap.append(section('Records this district holds', box));
   }
 
+  /* Panch Gaurav — the district's five official identities (crop / tree /
+     product / tourism site / sport). Pulled from the panch-gaurav layer,
+     which is keyed by district name and loads even when hidden. */
+  const pg = panchGauravFor(name);
+  if (pg) {
+    const pgFacts = tfacts(pg.properties);
+    if (pgFacts.length) {
+      const list = el('ul', { class: 'dp-facts' });
+      for (const f of pgFacts) list.append(el('li', {}, [f]));
+      wrap.append(section('Panch Gaurav', list));
+    }
+  }
+
   /* Did you know — enrichment facts merged from atlas/data/enrichment.json */
   const facts = tfacts(p);
   if (facts.length) {
@@ -275,6 +288,12 @@ function gatherSection(title, memberships, layerIds) {
 function firstRegionFor(memberships) {
   const r = memberships['regional-zones']?.[0];
   return r ? tf(r.properties, 'name') : null;
+}
+
+/** The Panch Gaurav feature for a district (matched by name); null if absent. */
+function panchGauravFor(name) {
+  const feats = Atlas.layers.features('panch-gaurav') || [];
+  return feats.find(f => f.properties?.name === name) || null;
 }
 
 function humanNum(n) {
