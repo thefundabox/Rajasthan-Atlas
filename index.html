@@ -37,12 +37,13 @@
   <header class="study-header">
     <div class="study-brand">
       <h1>Rajasthan Atlas</h1>
-      <div class="study-subtitle">A study companion for Rajasthan geography, economy and people</div>
+      <div class="study-subtitle" data-i18n="A study companion for Rajasthan geography, economy and people">A study companion for Rajasthan geography, economy and people</div>
     </div>
     <nav class="study-nav">
-      <a href="./" class="active">Study</a>
-      <a href="./map.html">Map</a>
-      <a href="./map.html?revise=1">Revise</a>
+      <a href="./" class="active" data-i18n="Study">Study</a>
+      <a href="./map.html" data-i18n="Map">Map</a>
+      <a href="./map.html?revise=1" data-i18n="Revise">Revise</a>
+      <button id="study-lang-toggle" class="study-lang-toggle" type="button">हिं</button>
     </nav>
   </header>
 
@@ -50,86 +51,86 @@
 
     <!-- Compact hero — one line, no stats padding. -->
     <section class="study-hero">
-      <p class="study-hero-eyebrow">RAJASTHAN, MAPPED</p>
-      <h2 class="study-hero-title">Where would you like to start?</h2>
-      <p class="study-hero-sub">Pick one of four ways in. Everything else is a click away.</p>
+      <p class="study-hero-eyebrow" data-i18n="RAJASTHAN, MAPPED">RAJASTHAN, MAPPED</p>
+      <h2 class="study-hero-title" data-i18n="Where would you like to start?">Where would you like to start?</h2>
+      <p class="study-hero-sub" data-i18n="Pick one of four ways in. Everything else is a click away.">Pick one of four ways in. Everything else is a click away.</p>
     </section>
 
     <!-- Four role cards — one decision per screen. -->
     <section class="role-cards" id="role-cards" aria-label="Choose your entry">
       <a class="role-card role-card--indigo" href="./map.html">
         <span class="role-card-icon">🗺</span>
-        <div class="role-card-title">Open the map</div>
-        <p class="role-card-desc">Interactive atlas — 90+ layers, tick what you want to see.</p>
-        <div class="role-card-arrow">Open →</div>
+        <div class="role-card-title" data-i18n="Open the map">Open the map</div>
+        <p class="role-card-desc" data-i18n="Interactive atlas — 90+ layers, tick what you want to see.">Interactive atlas — 90+ layers, tick what you want to see.</p>
+        <div class="role-card-arrow" data-i18n="Open →">Open →</div>
       </a>
       <a class="role-card role-card--emerald" href="#districts">
         <span class="role-card-icon">🏛</span>
-        <div class="role-card-title">Browse districts</div>
-        <p class="role-card-desc">Walk through all 41 districts across 7 divisions with full profiles.</p>
-        <div class="role-card-arrow">Browse →</div>
+        <div class="role-card-title" data-i18n="Browse districts">Browse districts</div>
+        <p class="role-card-desc" data-i18n="Walk through all 41 districts across 7 divisions with full profiles.">Walk through all 41 districts across 7 divisions with full profiles.</p>
+        <div class="role-card-arrow" data-i18n="Browse →">Browse →</div>
       </a>
       <a class="role-card role-card--amber" href="#confusions">
         <span class="role-card-icon">⚔</span>
-        <div class="role-card-title">Commonly confused</div>
-        <p class="role-card-desc">25 curated pairs with a one-line rule that separates the two.</p>
-        <div class="role-card-arrow">Drill in →</div>
+        <div class="role-card-title" data-i18n="Commonly confused">Commonly confused</div>
+        <p class="role-card-desc" data-i18n="25 curated pairs with a one-line rule that separates the two.">25 curated pairs with a one-line rule that separates the two.</p>
+        <div class="role-card-arrow" data-i18n="Drill in →">Drill in →</div>
       </a>
       <a class="role-card role-card--slate" href="#topics">
         <span class="role-card-icon">📚</span>
-        <div class="role-card-title">Study by topic</div>
-        <p class="role-card-desc">17 curated topics — physical geography, culture, history, more.</p>
-        <div class="role-card-arrow">Explore →</div>
+        <div class="role-card-title" data-i18n="Study by topic">Study by topic</div>
+        <p class="role-card-desc" data-i18n="17 curated topics — physical geography, culture, history, more.">17 curated topics — physical geography, culture, history, more.</p>
+        <div class="role-card-arrow" data-i18n="Explore →">Explore →</div>
       </a>
     </section>
 
     <!-- Secondary nav — less-frequent sections. -->
     <nav class="study-secondary" id="secondary-nav" aria-label="More sections">
-      <a href="#records">Records &amp; extremes</a>
-      <a href="#symbols">State symbols</a>
-      <a href="#chains">Concept chains</a>
+      <a href="#records" data-i18n="Records & extremes">Records &amp; extremes</a>
+      <a href="#symbols" data-i18n="State symbols">State symbols</a>
+      <a href="#chains" data-i18n="Concept chains">Concept chains</a>
     </nav>
 
     <!-- Sub-view container — populated by hash router. Hidden on home. -->
     <div id="subview-container">
-      <a href="#" class="subview-back" aria-label="Back to home">← Back</a>
+      <a href="#" class="subview-back" aria-label="Back to home" data-i18n="← Back">← Back</a>
 
       <section class="study-view" data-view="topics">
         <div class="study-section-head">
-          <h2>Study by topic</h2>
-          <p class="study-section-hint">Pick a theme — opens the map with just that layer's colours plus a legend.</p>
+          <h2 data-i18n="Study by topic">Study by topic</h2>
+          <p class="study-section-hint" data-i18n="Pick a theme — opens the map with just that layer's colours plus a legend.">Pick a theme — opens the map with just that layer's colours plus a legend.</p>
         </div>
         <div class="topic-grid" id="topic-grid"></div>
       </section>
 
       <section class="study-view" data-view="districts">
         <div class="study-section-head">
-          <h2>Districts</h2>
-          <p class="study-section-hint">Click any district to open its full profile — 9 Census 2011 metrics, cultural region, records it holds, and every related feature across all layers.</p>
+          <h2 data-i18n="Districts">Districts</h2>
+          <p class="study-section-hint" data-i18n="Click any district to open its full profile — 9 Census 2011 metrics, cultural region, records it holds, and every related feature across all layers.">Click any district to open its full profile — 9 Census 2011 metrics, cultural region, records it holds, and every related feature across all layers.</p>
         </div>
         <div class="district-directory" id="district-directory"></div>
       </section>
 
       <section class="study-view" data-view="records">
         <div class="study-section-head">
-          <h2>Records &amp; extremes</h2>
-          <p class="study-section-hint">Auto-computed from Census 2011 and operator disclosures. Click a card to jump to the map.</p>
+          <h2 data-i18n="Records & extremes">Records &amp; extremes</h2>
+          <p class="study-section-hint" data-i18n="Auto-computed from Census 2011 and operator disclosures. Click a card to jump to the map.">Auto-computed from Census 2011 and operator disclosures. Click a card to jump to the map.</p>
         </div>
         <div class="record-grid" id="record-grid"></div>
       </section>
 
       <section class="study-view" data-view="symbols">
         <div class="study-section-head">
-          <h2>State symbols</h2>
-          <p class="study-section-hint">The eight official symbols of Rajasthan — declared by the state government at various dates.</p>
+          <h2 data-i18n="State symbols">State symbols</h2>
+          <p class="study-section-hint" data-i18n="The eight official symbols of Rajasthan — declared by the state government at various dates.">The eight official symbols of Rajasthan — declared by the state government at various dates.</p>
         </div>
         <div class="symbol-grid" id="symbol-grid"></div>
       </section>
 
       <section class="study-view" data-view="confusions">
         <div class="study-section-head">
-          <h2>Commonly confused</h2>
-          <p class="study-section-hint">Pairs that trip up almost every learner. Each card ends with a one-line rule that separates the two.</p>
+          <h2 data-i18n="Commonly confused">Commonly confused</h2>
+          <p class="study-section-hint" data-i18n="Pairs that trip up almost every learner. Each card ends with a one-line rule that separates the two.">Pairs that trip up almost every learner. Each card ends with a one-line rule that separates the two.</p>
           <div class="confusion-filters" id="confusion-filters"></div>
         </div>
         <div class="confusion-grid" id="confusion-grid"></div>
@@ -137,8 +138,8 @@
 
       <section class="study-view" data-view="chains">
         <div class="study-section-head">
-          <h2>Concept chains</h2>
-          <p class="study-section-hint">Follow a chain from cause to effect. Each stop is a feature on the map.</p>
+          <h2 data-i18n="Concept chains">Concept chains</h2>
+          <p class="study-section-hint" data-i18n="Follow a chain from cause to effect. Each stop is a feature on the map.">Follow a chain from cause to effect. Each stop is a feature on the map.</p>
         </div>
         <div class="chain-list" id="chain-list"></div>
       </section>
@@ -148,9 +149,9 @@
 
   <footer class="study-footer">
     <div class="study-footer-inner">
-      <p>Compiled from Census 2011 / RGI, IMD, ICAR, NBSS&amp;LUP, GSI, DMG, CGWB, RWRD, CEA, MNRE, NPCIL, SECI, RFD, RIICO, DMICDC, and other public sources.</p>
-      <p><a href="./map.html">Open the atlas</a> · <a href="https://github.com/thefundabox/Rajasthan-Atlas">Source on GitHub</a> · <a href="./LICENSE">License</a></p>
-      <p class="study-footer-copyright">© 2025–2026 RAS Only · Rajasthan Atlas · Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA 4.0</a> — free for non-commercial use with attribution.</p>
+      <p data-i18n="Compiled from Census 2011 / RGI, IMD, ICAR, NBSS&LUP, GSI, DMG, CGWB, RWRD, CEA, MNRE, NPCIL, SECI, RFD, RIICO, DMICDC, and other public sources.">Compiled from Census 2011 / RGI, IMD, ICAR, NBSS&amp;LUP, GSI, DMG, CGWB, RWRD, CEA, MNRE, NPCIL, SECI, RFD, RIICO, DMICDC, and other public sources.</p>
+      <p><a href="./map.html" data-i18n="Open the atlas">Open the atlas</a> · <a href="https://github.com/thefundabox/Rajasthan-Atlas" data-i18n="Source on GitHub">Source on GitHub</a> · <a href="./LICENSE" data-i18n="License">License</a></p>
+      <p class="study-footer-copyright">© 2025–2026 RAS Only · Rajasthan Atlas · <span data-i18n="Licensed under">Licensed under</span> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA 4.0</a> — <span data-i18n="free for non-commercial use with attribution.">free for non-commercial use with attribution.</span></p>
     </div>
   </footer>
 

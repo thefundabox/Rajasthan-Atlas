@@ -14,61 +14,83 @@
  * mobile because it doesn't pull the 60+ GeoJSONs the map does.
  */
 
-// ── Topic taxonomy — the 13 curated study modules ─────────────────
+import { t, getLang, setLang } from '../core/i18n.js';
+
+/** getLang()==='hi' ? hi : en — for this page's inline bilingual data. */
+const pick = (en, hi) => (getLang() === 'hi' && hi != null) ? hi : en;
+
+// ── Topic taxonomy — the 17 curated study modules ─────────────────
 const TOPICS = [
-  { id: 'physical', icon: '🏔', name: 'Physical Geography',
+  { id: 'physical', icon: '🏔', name: 'Physical Geography', name_hi: 'भौतिक भूगोल',
     blurb: 'Aravalli · Thar · rivers · lakes · peaks · basins',
+    blurb_hi: 'अरावली · थार · नदियाँ · झीलें · शिखर · बेसिन',
     preset: 'physical', layerCount: 7 },
-  { id: 'environment', icon: '🌿', name: 'Environment & Protected Areas',
+  { id: 'environment', icon: '🌿', name: 'Environment & Protected Areas', name_hi: 'पर्यावरण और संरक्षित क्षेत्र',
     blurb: 'NPs · Tiger Reserves · WLS · Ramsar · Wetlands',
+    blurb_hi: 'राष्ट्रीय उद्यान · टाइगर रिज़र्व · अभयारण्य · रामसर · आर्द्रभूमि',
     preset: 'env', layerCount: 6 },
-  { id: 'climate', icon: '☀️', name: 'Climate & Weather',
+  { id: 'climate', icon: '☀️', name: 'Climate & Weather', name_hi: 'जलवायु और मौसम',
     blurb: 'Rainfall · Temperature · Köppen · Agro-climatic',
+    blurb_hi: 'वर्षा · तापमान · कोपेन · कृषि-जलवायु',
     preset: 'climate', layerCount: 4 },
-  { id: 'soils-vegetation', icon: '🌾', name: 'Soils & Vegetation',
+  { id: 'soils-vegetation', icon: '🌾', name: 'Soils & Vegetation', name_hi: 'मृदा और वनस्पति',
     blurb: 'Aridisols · Vertisols · Champion & Seth · Desertification · Drought',
+    blurb_hi: 'Aridisols · Vertisols · चैंपियन एवं सेठ · मरुस्थलीकरण · सूखा',
     preset: 'soils', layerCount: 4 },
-  { id: 'agriculture', icon: '🌱', name: 'Agriculture',
+  { id: 'agriculture', icon: '🌱', name: 'Agriculture', name_hi: 'कृषि',
     blurb: 'Major crops · Cropping seasons · Agro-economic zones',
+    blurb_hi: 'प्रमुख फ़सलें · फ़सल-ऋतुएँ · कृषि-आर्थिक क्षेत्र',
     preset: 'crops', layerCount: 3 },
-  { id: 'water', icon: '💧', name: 'Water Resources',
+  { id: 'water', icon: '💧', name: 'Water Resources', name_hi: 'जल संसाधन',
     blurb: 'IGNP · Gang Canal · Chambal cascade · Dams · Groundwater',
+    blurb_hi: 'IGNP · गंग नहर · चंबल कैस्केड · बाँध · भूजल',
     preset: 'water', layerCount: 5 },
-  { id: 'geology', icon: '⛏', name: 'Geology & Minerals',
+  { id: 'geology', icon: '⛏', name: 'Geology & Minerals', name_hi: 'भूविज्ञान और खनिज',
     blurb: 'Aravalli SG · Vindhyan · Malani · Lead-Zinc · Marble · Petroleum',
+    blurb_hi: 'अरावली SG · विंध्यन · मालाणी · सीसा-जस्ता · संगमरमर · पेट्रोलियम',
     preset: 'geology', layerCount: 7 },
-  { id: 'industry', icon: '🏭', name: 'Industry & SEZs',
+  { id: 'industry', icon: '🏭', name: 'Industry & SEZs', name_hi: 'उद्योग और SEZ',
     blurb: 'DMIC · Cement · Textile · Marble · Auto · Handicrafts',
+    blurb_hi: 'DMIC · सीमेंट · वस्त्र · संगमरमर · ऑटो · हस्तशिल्प',
     preset: 'industry', layerCount: 6 },
-  { id: 'energy', icon: '⚡', name: 'Energy & Power',
+  { id: 'energy', icon: '⚡', name: 'Energy & Power', name_hi: 'ऊर्जा और विद्युत',
     blurb: 'RAPS · Bhadla solar · Jaisalmer wind · Chambal hydel',
+    blurb_hi: 'RAPS · भादला सौर · जैसलमेर पवन · चंबल जल-विद्युत',
     preset: 'energy', layerCount: 6 },
-  { id: 'demographics', icon: '👥', name: 'Demographics',
+  { id: 'demographics', icon: '👥', name: 'Demographics', name_hi: 'जनसांख्यिकी',
     blurb: 'Density · Literacy · Sex ratio · Urbanisation · ST / SC %',
+    blurb_hi: 'घनत्व · साक्षरता · लिंग-अनुपात · नगरीकरण · ST / SC %',
     preset: 'population-density', layerCount: 7 },
-  { id: 'administrative', icon: '🏛', name: 'Administrative',
+  { id: 'administrative', icon: '🏛', name: 'Administrative', name_hi: 'प्रशासनिक',
     blurb: '7 divisions · Scheduled Areas · Border districts',
+    blurb_hi: '7 संभाग · अनुसूचित क्षेत्र · सीमावर्ती जिले',
     preset: 'divisions', layerCount: 4 },
-  { id: 'cultural', icon: '🎭', name: 'Cultural Regions',
+  { id: 'cultural', icon: '🎭', name: 'Cultural Regions', name_hi: 'सांस्कृतिक क्षेत्र',
     blurb: 'Marwar · Mewar · Hadoti · Shekhawati · Dhundhar · Vagad · Matsya · Godwar · Mewat',
+    blurb_hi: 'मारवाड़ · मेवाड़ · हाड़ौती · शेखावाटी · ढूँढाड़ · वागड़ · मत्स्य · गोडवाड़ · मेवात',
     preset: 'regions', layerCount: 2 },
-  { id: 'urban', icon: '🏙', name: 'Urban',
+  { id: 'urban', icon: '🏙', name: 'Urban', name_hi: 'नगरीय',
     blurb: 'Urban centres · Municipal corps · Smart Cities · Population corridors',
+    blurb_hi: 'नगर · नगर निगम · स्मार्ट सिटी · जनसंख्या गलियारे',
     preset: 'urban', layerCount: 4 },
-  { id: 'history-heritage', icon: '🏰', name: 'History & Heritage',
+  { id: 'history-heritage', icon: '🏰', name: 'History & Heritage', name_hi: 'इतिहास और विरासत',
     blurb: 'Forts · Dynasties · Ancient civilizations · Battle sites · Prashastis · Integration · 1857 revolt',
+    blurb_hi: 'दुर्ग · राजवंश · प्राचीन सभ्यताएँ · युद्ध-स्थल · प्रशस्तियाँ · एकीकरण · 1857 विद्रोह',
     layers: 'heritage-forts,rajput-dynasties,ancient-civilizations,battle-sites,major-prashastis,rajasthan-integration,revolt-sites-1857',
     layerCount: 7 },
-  { id: 'culture-faith', icon: '🛕', name: 'Culture & Faith',
+  { id: 'culture-faith', icon: '🛕', name: 'Culture & Faith', name_hi: 'संस्कृति और आस्था',
     blurb: 'Palaces · Havelis · Major fairs · Folk deities · Folk goddesses',
+    blurb_hi: 'महल · हवेलियाँ · प्रमुख मेले · लोकदेव · लोक-देवियाँ',
     layers: 'palaces,havelis,major-fairs,folk-deity-shrines,folk-goddesses',
     layerCount: 5 },
-  { id: 'research-institutions', icon: '🔬', name: 'Research & Institutions',
+  { id: 'research-institutions', icon: '🔬', name: 'Research & Institutions', name_hi: 'शोध और संस्थान',
     blurb: 'CAZRI · AFRI · CSWRI · IIT · IIM · NLU · KVK · Camel research · SEVAR',
+    blurb_hi: 'CAZRI · AFRI · CSWRI · IIT · IIM · NLU · KVK · ऊँट अनुसंधान · SEVAR',
     layers: 'research-centers',
     layerCount: 1 },
-  { id: 'arts-crafts', icon: '🎨', name: 'Arts & Crafts',
+  { id: 'arts-crafts', icon: '🎨', name: 'Arts & Crafts', name_hi: 'कला और शिल्प',
     blurb: 'Mewar · Kishangarh · Bundi-Kota painting · Thewa · Kundan-Meena · Kavad · Bandhej · Blue Pottery',
+    blurb_hi: 'मेवाड़ · किशनगढ़ · बूँदी-कोटा चित्रकला · थेवा · कुंदन-मीना · कावड़ · बंधेज · ब्लू पॉटरी',
     layers: 'painting-schools,handicraft-clusters',
     layerCount: 2 },
 ];
@@ -149,27 +171,77 @@ const CHAINS = [
 
 // ── State symbols (declared by the Rajasthan government) ──────────
 const STATE_SYMBOLS = [
-  { icon: '🦆', label: 'State bird',           name: 'Godawan',    sub: 'Great Indian Bustard',       year: 1981,
-    foot: 'Critically endangered — largest population in Desert National Park, Jaisalmer.' },
-  { icon: '🦌', label: 'State animal (wild)',   name: 'Chinkara',   sub: 'Indian gazelle',              year: 1981,
-    foot: 'Best sighted at Ranthambhore, Sariska and Desert National Park.' },
-  { icon: '🐪', label: 'State animal (domestic)', name: 'Camel',    sub: 'Camelus dromedarius',          year: 2014,
-    foot: 'Rajasthan holds ~85% of India\'s camel population; Bikaner, Jaisalmer, Barmer heartland.' },
-  { icon: '🌳', label: 'State tree',            name: 'Khejri',     sub: 'Prosopis cineraria',          year: 1983,
-    foot: 'Sacred to the Bishnoi; the 1730 Khejarli sacrifice defended it before the Chipko movement.' },
-  { icon: '🌼', label: 'State flower',          name: 'Rohira',     sub: 'Tecomella undulata',           year: 1983,
-    foot: 'The "desert teak" of Marwar — golden-yellow flowers, drought-hardy Aravalli-Thar tree.' },
-  { icon: '💃', label: 'State dance',           name: 'Ghoomar',    sub: 'Bhil-origin whirl dance',      year: null,
-    foot: 'Adopted from the Bhils by Rajput women; hallmark of Mewar-Marwar weddings and Teej.' },
-  { icon: '🎵', label: 'State song',            name: 'Kesariya Balam', sub: 'Padharo Maare Des',        year: null,
-    foot: 'A Mand-genre folk song, most famously sung by Allah Jilai Bai of Bikaner.' },
-  { icon: '🏀', label: 'State game',            name: 'Basketball', sub: 'Declared before India\'s national', year: 1948,
-    foot: 'Rajasthan is one of the few Indian states whose official game is not a native folk sport.' },
+  { icon: '🦆', label: 'State bird', label_hi: 'राज्य पक्षी', name: 'Godawan', name_hi: 'गोडावण', sub: 'Great Indian Bustard', sub_hi: 'ग्रेट इंडियन बस्टर्ड', year: 1981,
+    foot: 'Critically endangered — largest population in Desert National Park, Jaisalmer.',
+    foot_hi: 'अति-संकटग्रस्त — सबसे बड़ी आबादी मरु राष्ट्रीय उद्यान, जैसलमेर में।' },
+  { icon: '🦌', label: 'State animal (wild)', label_hi: 'राज्य पशु (वन्य)', name: 'Chinkara', name_hi: 'चिंकारा', sub: 'Indian gazelle', sub_hi: 'भारतीय चिंकारा', year: 1981,
+    foot: 'Best sighted at Ranthambhore, Sariska and Desert National Park.',
+    foot_hi: 'रणथंभौर, सरिस्का और मरु राष्ट्रीय उद्यान में सर्वोत्तम दिखता है।' },
+  { icon: '🐪', label: 'State animal (domestic)', label_hi: 'राज्य पशु (घरेलू)', name: 'Camel', name_hi: 'ऊँट', sub: 'Camelus dromedarius', year: 2014,
+    foot: 'Rajasthan holds ~85% of India\'s camel population; Bikaner, Jaisalmer, Barmer heartland.',
+    foot_hi: 'राजस्थान में भारत के ~85% ऊँट हैं; बीकानेर, जैसलमेर, बाड़मेर हृदयस्थल।' },
+  { icon: '🌳', label: 'State tree', label_hi: 'राज्य वृक्ष', name: 'Khejri', name_hi: 'खेजड़ी', sub: 'Prosopis cineraria', year: 1983,
+    foot: 'Sacred to the Bishnoi; the 1730 Khejarli sacrifice defended it before the Chipko movement.',
+    foot_hi: 'विश्नोइयों के लिए पवित्र; 1730 का खेजड़ली बलिदान चिपको आंदोलन से पहले इसकी रक्षा में हुआ।' },
+  { icon: '🌼', label: 'State flower', label_hi: 'राज्य पुष्प', name: 'Rohira', name_hi: 'रोहिड़ा', sub: 'Tecomella undulata', year: 1983,
+    foot: 'The "desert teak" of Marwar — golden-yellow flowers, drought-hardy Aravalli-Thar tree.',
+    foot_hi: 'मारवाड़ का "मरु सागवान" — स्वर्ण-पीले पुष्प, सूखा-सहिष्णु अरावली-थार वृक्ष।' },
+  { icon: '💃', label: 'State dance', label_hi: 'राज्य नृत्य', name: 'Ghoomar', name_hi: 'घूमर', sub: 'Bhil-origin whirl dance', sub_hi: 'भील-मूल का घूर्णन नृत्य', year: null,
+    foot: 'Adopted from the Bhils by Rajput women; hallmark of Mewar-Marwar weddings and Teej.',
+    foot_hi: 'राजपूत महिलाओं ने भीलों से अपनाया; मेवाड़-मारवाड़ के विवाहों और तीज की पहचान।' },
+  { icon: '🎵', label: 'State song', label_hi: 'राज्य गीत', name: 'Kesariya Balam', name_hi: 'केसरिया बालम', sub: 'Padharo Maare Des', sub_hi: 'पधारो म्हारे देस', year: null,
+    foot: 'A Mand-genre folk song, most famously sung by Allah Jilai Bai of Bikaner.',
+    foot_hi: 'एक मांड-शैली लोकगीत, सबसे प्रसिद्ध रूप से बीकानेर की अल्लाह जिलाई बाई द्वारा गाया गया।' },
+  { icon: '🏀', label: 'State game', label_hi: 'राज्य खेल', name: 'Basketball', name_hi: 'बास्केटबॉल', sub: 'Declared before India\'s national', sub_hi: 'भारत के राष्ट्रीय खेल से पहले घोषित', year: 1948,
+    foot: 'Rajasthan is one of the few Indian states whose official game is not a native folk sport.',
+    foot_hi: 'राजस्थान उन गिने-चुने भारतीय राज्यों में से एक है जिसका आधिकारिक खेल एक देशी लोक-खेल नहीं है।' },
 ];
+
+// ── Landing-page bilingual lookups (chains + records) ─────────────
+const CHAIN_TITLE_HI = {
+  'Arid → Bajra → Rain-fed → Low density': 'शुष्क → बाजरा → वर्षा-आधारित → निम्न घनत्व',
+  'Aravalli → Metamorphic → Lead-Zinc → HZL': 'अरावली → कायांतरित → सीसा-जस्ता → HZL',
+  'Chambal → Kota → Cement + Chemicals': 'चंबल → कोटा → सीमेंट + रसायन',
+  'Vagad → Bhil → Mahi Bajaj Sagar → Scheduled Area': 'वागड़ → भील → माही बजाज सागर → अनुसूचित क्षेत्र',
+  'Bhadla → Solar Zone A → Green Energy Corridor': 'भादला → सौर क्षेत्र A → ग्रीन एनर्जी कॉरिडोर',
+  'Barmer → Border → Oil → Solar → Refinery': 'बाड़मेर → सीमा → तेल → सौर → रिफ़ाइनरी',
+  'IGNP → Sri Ganganagar → Cotton + Wheat': 'IGNP → श्रीगंगानगर → कपास + गेहूँ',
+  'Aravalli → Marble → Kishangarh → Handicrafts': 'अरावली → संगमरमर → किशनगढ़ → हस्तशिल्प',
+  'Mewar → Udaipur → Lakes → Tourism': 'मेवाड़ → उदयपुर → झीलें → पर्यटन',
+  'DMIC → Neemrana → Nissan → Auto cluster': 'DMIC → नीमराना → निसान → ऑटो क्लस्टर',
+};
+const CHAIN_STOP_HI = {
+  'Arid climate': 'शुष्क जलवायु', 'Bajra': 'बाजरा', 'Rain-fed': 'वर्षा-आधारित', 'Very low density': 'अति निम्न घनत्व',
+  'Aravalli SG': 'अरावली SG', 'Metamorphic': 'कायांतरित', 'Lead-Zinc belt': 'सीसा-जस्ता पेटी', 'Rampura Agucha': 'रामपुरा अगुचा',
+  'Chambal River': 'चंबल नदी', 'Kota Barrage': 'कोटा बैराज', 'Chambal Fertilisers': 'चंबल फर्टिलाइज़र्स', 'Chemical cluster': 'रासायनिक क्लस्टर',
+  'Vagad region': 'वागड़ क्षेत्र', 'Mahi River': 'माही नदी', 'Mahi Bajaj Sagar': 'माही बजाज सागर', 'TSP Scheduled Area': 'TSP अनुसूचित क्षेत्र',
+  'Bhadla Solar Park': 'भादला सौर पार्क', 'Solar Zone A': 'सौर क्षेत्र A', 'Green Energy Corr.': 'ग्रीन एनर्जी कॉरिडोर', 'Solar West Zone': 'पश्चिमी सौर क्षेत्र',
+  'Barmer district': 'बाड़मेर जिला', 'Pakistan border': 'पाकिस्तान सीमा', 'Barmer Basin': 'बाड़मेर द्रोणी', 'HRRL Refinery': 'HRRL रिफ़ाइनरी',
+  'Indira Gandhi Canal': 'इंदिरा गांधी नहर', 'IGNP Command': 'IGNP कमांड', 'Cotton': 'कपास', 'Wheat': 'गेहूँ',
+  'Marble belt': 'संगमरमर पेटी', 'Ajmer-Kishangarh': 'अजमेर-किशनगढ़', 'Makrana craft': 'मकराना शिल्प',
+  'Mewar Region': 'मेवाड़ क्षेत्र', 'Udaipur': 'उदयपुर', 'Pichola Lake': 'पिछोला झील', 'Fateh Sagar Lake': 'फतेह सागर झील',
+  'DMIC KBN Region': 'DMIC KBN क्षेत्र', 'Neemrana Industrial': 'नीमराना औद्योगिक', 'Nissan Plant': 'निसान संयंत्र', 'Auto cluster': 'ऑटो क्लस्टर',
+};
+
+// ── Static-label i18n sweep + language toggle ────────────────────
+function applyStaticI18n() {
+  for (const el of document.querySelectorAll('[data-i18n]')) el.textContent = t(el.dataset.i18n);
+  document.documentElement.setAttribute('lang', getLang());
+}
+function wireLangToggle() {
+  const btn = document.getElementById('study-lang-toggle');
+  if (!btn) return;
+  const isHi = getLang() === 'hi';
+  btn.textContent = isHi ? 'EN' : 'हिं';
+  btn.title = isHi ? 'Switch to English' : 'हिंदी में देखें';
+  btn.addEventListener('click', () => setLang(isHi ? 'en' : 'hi'));  // persists + reloads
+}
 
 // ── Boot ──────────────────────────────────────────────────────────
 (async function boot() {
   try {
+    applyStaticI18n();
+    wireLangToggle();
     const [demo, districts, confusions] = await Promise.all([
       fetch('atlas/data/district-demographics.json').then(r => r.json()),
       fetch('atlas/data/districts.geojson').then(r => r.json()),
@@ -207,14 +279,15 @@ function applyView() {
   // Reset scroll on navigation so the sub-view starts at the top.
   window.scrollTo({ top: 0, behavior: 'instant' });
   // Update page title so the browser tab reflects the current view.
+  const suffix = ' — Rajasthan Atlas';
   const titleMap = {
     home:       'Rajasthan Atlas — Study Companion',
-    topics:     'Study by topic — Rajasthan Atlas',
-    districts:  'Districts — Rajasthan Atlas',
-    records:    'Records & extremes — Rajasthan Atlas',
-    symbols:    'State symbols — Rajasthan Atlas',
-    confusions: 'Commonly confused — Rajasthan Atlas',
-    chains:     'Concept chains — Rajasthan Atlas',
+    topics:     t('Study by topic') + suffix,
+    districts:  t('Districts') + suffix,
+    records:    t('Records & extremes') + suffix,
+    symbols:    t('State symbols') + suffix,
+    confusions: t('Commonly confused') + suffix,
+    chains:     t('Concept chains') + suffix,
   };
   document.title = titleMap[v] || titleMap.home;
 }
@@ -233,6 +306,9 @@ const CONFUSION_CATEGORIES = [
   { id: 'culture',        label: 'Culture' },
   { id: 'administrative', label: 'Administrative' },
 ];
+// category id (as stored in confusions.json) → Title-case DICT label
+const CONFUSION_CAT_LABEL = Object.fromEntries(
+  CONFUSION_CATEGORIES.filter(c => c.id !== 'all').map(c => [c.id, c.label]));
 
 function renderConfusions(payload) {
   const grid = document.getElementById('confusion-grid');
@@ -246,7 +322,7 @@ function renderConfusions(payload) {
     const btn = document.createElement('button');
     btn.className = 'confusion-filter' + (cat.id === 'all' ? ' is-active' : '');
     btn.dataset.category = cat.id;
-    btn.innerHTML = `${cat.label} <span class="confusion-filter-count">${count}</span>`;
+    btn.innerHTML = `${t(cat.label)} <span class="confusion-filter-count">${count}</span>`;
     btn.addEventListener('click', () => {
       filters.querySelectorAll('.confusion-filter').forEach(b => b.classList.toggle('is-active', b === btn));
       grid.querySelectorAll('.confusion-card').forEach(card => {
@@ -260,26 +336,28 @@ function renderConfusions(payload) {
     const card = document.createElement('div');
     card.className = 'confusion-card';
     card.dataset.category = c.category;
+    const lName = pick(c.left.name,  c.left.name_hi);
+    const rName = pick(c.right.name, c.right.name_hi);
     const leftLink  = c.left.featureId  ? `map.html?feature=${encodeURIComponent(c.left.featureId)}`  : null;
     const rightLink = c.right.featureId ? `map.html?feature=${encodeURIComponent(c.right.featureId)}` : null;
-    const leftName  = leftLink  ? `<a href="${leftLink}">${c.left.name}</a>`   : c.left.name;
-    const rightName = rightLink ? `<a href="${rightLink}">${c.right.name}</a>` : c.right.name;
+    const leftName  = leftLink  ? `<a href="${leftLink}">${lName}</a>`  : lName;
+    const rightName = rightLink ? `<a href="${rightLink}">${rName}</a>` : rName;
     card.innerHTML = `
       <div class="confusion-head">
-        <span class="confusion-cat">${c.category}</span>
+        <span class="confusion-cat">${t(CONFUSION_CAT_LABEL[c.category] ?? c.category)}</span>
       </div>
       <div class="confusion-body">
         <div class="confusion-side">
           <div class="confusion-name">${leftName}</div>
-          <p class="confusion-dist">${c.left.distinguisher}</p>
+          <p class="confusion-dist">${pick(c.left.distinguisher, c.left.distinguisher_hi)}</p>
         </div>
-        <div class="confusion-vs">vs</div>
+        <div class="confusion-vs">${t('vs')}</div>
         <div class="confusion-side">
           <div class="confusion-name">${rightName}</div>
-          <p class="confusion-dist">${c.right.distinguisher}</p>
+          <p class="confusion-dist">${pick(c.right.distinguisher, c.right.distinguisher_hi)}</p>
         </div>
       </div>
-      <div class="confusion-key"><strong>Rule:</strong> ${c.key}</div>
+      <div class="confusion-key"><strong>${t('Rule:')}</strong> ${pick(c.key, c.key_hi)}</div>
     `;
     grid.append(card);
   }
@@ -294,10 +372,10 @@ function renderSymbols() {
     card.innerHTML = `
       <span class="symbol-icon">${s.icon}</span>
       <div class="symbol-body">
-        <div class="symbol-label">${s.label}${s.year ? ` <span class="symbol-year">${s.year}</span>` : ''}</div>
-        <div class="symbol-name">${s.name}</div>
-        <div class="symbol-sub">${s.sub}</div>
-        <div class="symbol-foot">${s.foot}</div>
+        <div class="symbol-label">${pick(s.label, s.label_hi)}${s.year ? ` <span class="symbol-year">${s.year}</span>` : ''}</div>
+        <div class="symbol-name">${pick(s.name, s.name_hi)}</div>
+        <div class="symbol-sub">${pick(s.sub, s.sub_hi)}</div>
+        <div class="symbol-foot">${pick(s.foot, s.foot_hi)}</div>
       </div>
     `;
     grid.append(card);
@@ -338,7 +416,7 @@ function renderDistricts(districtsGeoJson, demoPayload) {
 
     const head = document.createElement('div');
     head.className = 'division-head';
-    head.innerHTML = `<span class="division-name">${div} Division</span> <span class="division-count">${rows.length} districts</span>`;
+    head.innerHTML = `<span class="division-name">${t(div)} ${t('Division')}</span> <span class="division-count">${rows.length} ${t('districts')}</span>`;
     group.append(head);
 
     const grid = document.createElement('div');
@@ -348,8 +426,8 @@ function renderDistricts(districtsGeoJson, demoPayload) {
       chip.className = 'district-chip' + (d.isNew ? ' district-new' : '');
       chip.href = `map.html?feature=${encodeURIComponent(d.id)}`;
       chip.innerHTML = `
-        <span class="district-name">${d.name}${d.isNew ? ' <span class="district-new-tag">2023</span>' : ''}</span>
-        ${d.metric ? `<span class="district-meta">${humanNum(d.metric.population)} · ${d.metric.density}/km² · ${d.metric.literacy_pct}% lit.</span>` : ''}
+        <span class="district-name">${t(d.name)}${d.isNew ? ' <span class="district-new-tag">2023</span>' : ''}</span>
+        ${d.metric ? `<span class="district-meta">${humanNum(d.metric.population)} · ${d.metric.density}/km² · ${d.metric.literacy_pct}% ${t('lit.')}</span>` : ''}
       `;
       grid.append(chip);
     }
@@ -360,28 +438,29 @@ function renderDistricts(districtsGeoJson, demoPayload) {
 
 function humanNum(n) {
   if (n == null) return '—';
-  if (n >= 1e7) return (n / 1e7).toFixed(2) + ' Cr';
-  if (n >= 1e5) return (n / 1e5).toFixed(2) + ' L';
-  return n.toLocaleString();
+  const hi = getLang() === 'hi';
+  if (n >= 1e7) return (n / 1e7).toFixed(2) + (hi ? ' करोड़' : ' Cr');
+  if (n >= 1e5) return (n / 1e5).toFixed(2) + (hi ? ' लाख' : ' L');
+  return n.toLocaleString(hi ? 'en-IN' : 'en');
 }
 
 // ── Topics ────────────────────────────────────────────────────────
 function renderTopics() {
   const grid = document.getElementById('topic-grid');
-  for (const t of TOPICS) {
+  for (const topic of TOPICS) {
     const card = document.createElement('a');
     card.className = 'topic-card';
     // Support both preset-mode tiles and layer-list tiles (the new
     // history/culture/research topics don't map to a preset mode).
-    card.href = t.preset
-      ? `map.html?preset=${encodeURIComponent(t.preset)}`
-      : `map.html?layers=${encodeURIComponent(t.layers)}`;
+    card.href = topic.preset
+      ? `map.html?preset=${encodeURIComponent(topic.preset)}`
+      : `map.html?layers=${encodeURIComponent(topic.layers)}`;
     card.innerHTML = `
-      <span class="topic-icon">${t.icon}</span>
+      <span class="topic-icon">${topic.icon}</span>
       <div class="topic-body">
-        <h3 class="topic-title">${t.name}</h3>
-        <p class="topic-blurb">${t.blurb}</p>
-        <div class="topic-meta">${t.layerCount} map layer${t.layerCount > 1 ? 's' : ''}</div>
+        <h3 class="topic-title">${pick(topic.name, topic.name_hi)}</h3>
+        <p class="topic-blurb">${pick(topic.blurb, topic.blurb_hi)}</p>
+        <div class="topic-meta">${topic.layerCount} ${topic.layerCount > 1 ? t('map layers') : t('map layer')}</div>
       </div>
       <span class="topic-arrow">→</span>
     `;
@@ -461,10 +540,10 @@ function renderRecords(demoPayload) {
     link.className = 'record-card';
     link.href = c.href;
     link.innerHTML = `
-      <div class="record-label">${c.label}</div>
-      <div class="record-big">${c.big}</div>
-      <div class="record-sub">${c.sub}</div>
-      ${c.foot ? `<div class="record-foot">${c.foot}</div>` : ''}
+      <div class="record-label">${t(c.label)}</div>
+      <div class="record-big">${t(c.big)}</div>
+      <div class="record-sub">${t(c.sub)}</div>
+      ${c.foot ? `<div class="record-foot">${t(c.foot)}</div>` : ''}
     `;
     grid.append(link);
   }
@@ -479,7 +558,7 @@ function renderChains() {
 
     const title = document.createElement('h3');
     title.className = 'chain-title';
-    title.textContent = chain.title;
+    title.textContent = pick(chain.title, CHAIN_TITLE_HI[chain.title]);
     wrap.append(title);
 
     const strip = document.createElement('div');
@@ -494,7 +573,7 @@ function renderChains() {
       const pill = document.createElement('a');
       pill.className = 'chain-pill';
       pill.href = `map.html?feature=${encodeURIComponent(stop.id)}`;
-      pill.textContent = stop.label;
+      pill.textContent = pick(stop.label, CHAIN_STOP_HI[stop.label]);
       strip.append(pill);
     });
     wrap.append(strip);
