@@ -24,11 +24,22 @@
             "World's earliest evidence of an earthquake (~2600 BCE) — stratified fault visible in the sections.",
             "'Kali-bangan' = 'black bangles' — thousands of terracotta bangle fragments named the site.",
             "Sits on the palaeo-channel of the Ghaggar (Vedic Saraswati candidate) — the river dried up around 1800 BCE, forcing site abandonment."
+          ],
+          "facts_hi": [
+            "राजस्थान का एकमात्र सिंधु घाटी सभ्यता स्थल; ए. घोष (1953) और बी.बी. लाल + बी.के. थापर (1961-69) द्वारा उत्खनित।",
+            "जुते हुए खेतों का विश्व का प्राचीनतम साक्ष्य (पूर्व-हड़प्पा स्तर) — विकर्ण हल-रेखा प्रतिमान सुरक्षित।",
+            "भूकंप का विश्व का प्राचीनतम साक्ष्य (~2600 ई.पू.) — परतों में स्तरित भ्रंश दिखाई देता है।",
+            "'काली-बंगा' = 'काली चूड़ियाँ' — हज़ारों टेराकोटा चूड़ी-टुकड़ों पर स्थल का नाम।",
+            "घग्घर (वैदिक सरस्वती की संभावना) की पुरा-वाहिनी पर स्थित — नदी ~1800 ई.पू. में सूख गई, जिससे स्थल छोड़ना पड़ा।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "कालीबंगा",
+        "district_hi": "हनुमानगढ़",
+        "type_hi": "प्राचीन सभ्यता",
+        "period_hi": "पूर्व-हड़प्पा (~3500 ई.पू.) + परिपक्व हड़प्पा (~2500 ई.पू.)"
       }
     },
     {
@@ -54,11 +65,22 @@
             "Ancient name 'Aghata' — a Suryavanshi Kshatriya settlement in Puranic tradition, later called Ahar.",
             "The Ahar culture spread to Balathal, Gilund, Ojiyana — a distinctive south-Rajasthan Chalcolithic province.",
             "Located just east of modern Udaipur city on the Ayad (Ahar) river."
+          ],
+          "facts_hi": [
+            "आहड़ संस्कृति का प्रकार-स्थल — भारत की सबसे आरंभिक ताम्र-प्रयोगी ताम्रपाषाण संस्कृतियों में से एक।",
+            "पहली बार आर.सी. अग्रवाल (1954) और एच.डी. सांकलिया (1961-62) द्वारा उत्खनित।",
+            "प्राचीन नाम 'आघाट' — पौराणिक परंपरा में एक सूर्यवंशी क्षत्रिय बस्ती, बाद में आहड़ कहलाई।",
+            "आहड़ संस्कृति बालाथल, गिलुंड, ओजियाना तक फैली — एक विशिष्ट दक्षिण-राजस्थान ताम्रपाषाण प्रांत।",
+            "आधुनिक उदयपुर नगर के ठीक पूर्व में आयड़ (आहड़) नदी पर स्थित।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "आहड़ (आघाट)",
+        "district_hi": "उदयपुर",
+        "type_hi": "प्राचीन सभ्यता",
+        "period_hi": "ताम्रपाषाण (~3000-1500 ई.पू.)"
       }
     },
     {
@@ -84,11 +106,22 @@
             "The mud-brick perimeter wall is one of India's earliest fortifications.",
             "Continuously occupied ~2200 years — one of Rajasthan's longest-lived Chalcolithic-to-Early Historic sites.",
             "Located ~40 km east of Udaipur near Vallabhnagar."
+          ],
+          "facts_hi": [
+            "वी.एन. मिश्रा (1994-2000) द्वारा उत्खनित — कच्ची-ईंट के परकोटों वाली एक किलेबंद आहड़-ताम्रपाषाण बस्ती।",
+            "यहाँ कुष्ठ रोग का भारत का प्राचीनतम साक्ष्य मिला — 4000 वर्ष पुराना पुरुष कंकाल, 2009 में पुष्ट।",
+            "कच्ची-ईंट की परिधि-दीवार भारत की आरंभिकतम किलेबंदियों में से एक है।",
+            "~2200 वर्षों तक निरंतर आवासित — राजस्थान के सबसे दीर्घजीवी ताम्रपाषाण-से-प्रारंभिक-ऐतिहासिक स्थलों में से एक।",
+            "उदयपुर से ~40 किमी पूर्व वल्लभनगर के निकट स्थित।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "बालाथल",
+        "district_hi": "उदयपुर (वल्लभनगर)",
+        "type_hi": "प्राचीन सभ्यता",
+        "period_hi": "ताम्रपाषाण (~3000-1500 ई.पू.) + प्रारंभिक ऐतिहासिक (600 ई.पू.-200 ई.)"
       }
     },
     {
@@ -114,11 +147,22 @@
             "Sits on the Sikar–Neem Ka Thana copper belt of the Khetri Copper Line.",
             "Contemporary with Pre-Harappan Kalibangan; may be the source-area for the copper of the Harappan civilization.",
             "Ceramic tradition: 'reserved slip ware' — a Rajasthan-Chalcolithic hallmark."
+          ],
+          "facts_hi": [
+            "गणेश्वर-जोधपुरा संस्कृति का प्रकार-स्थल — हड़प्पा नगरों को ताँबा आपूर्ति करता था।",
+            "आर.सी. अग्रवाल (1977-78) द्वारा उत्खनित — 5000 से अधिक ताम्र-कलाकृतियाँ (तीर, भाले, बंसी) प्राप्त हुईं।",
+            "खेतड़ी ताम्र-रेखा की सीकर–नीम का थाना ताम्र-पेटी पर स्थित।",
+            "पूर्व-हड़प्पा कालीबंगा का समकालीन; संभवतः हड़प्पा सभ्यता के ताँबे का स्रोत-क्षेत्र।",
+            "मृद्भांड परंपरा: 'रिज़र्व्ड स्लिप वेयर' — एक राजस्थान-ताम्रपाषाण विशेषता।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "गणेश्वर",
+        "district_hi": "नीम-का-थाना",
+        "type_hi": "प्राचीन सभ्यता",
+        "period_hi": "ताम्रपाषाण (~3800-2800 ई.पू.)"
       }
     },
     {
@@ -143,11 +187,21 @@
             "Yielded over 15,000 microlithic tools; earliest evidence of domestication of cattle, sheep, goat in Rajasthan.",
             "One of only two Mesolithic sites in India with continuous stratigraphy into the Chalcolithic.",
             "Located on the Kothari river ~25 km east of Bhilwara town — 'Vagor' (Bagor) sabhyata in Hindi sources."
+          ],
+          "facts_hi": [
+            "वी.एन. मिश्रा (1968-70) द्वारा उत्खनित — भारत का सबसे बड़ा ज्ञात मध्यपाषाण स्थल।",
+            "15,000 से अधिक सूक्ष्म-पाषाण उपकरण मिले; राजस्थान में मवेशी, भेड़, बकरी के पालन का प्राचीनतम साक्ष्य।",
+            "भारत के केवल दो मध्यपाषाण स्थलों में से एक जिसमें ताम्रपाषाण तक निरंतर स्तर-क्रम है।",
+            "भीलवाड़ा नगर से ~25 किमी पूर्व कोठारी नदी पर स्थित — हिंदी स्रोतों में 'वागोर' (बागोर) सभ्यता।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "बागोर",
+        "district_hi": "भीलवाड़ा",
+        "type_hi": "प्राचीन सभ्यता",
+        "period_hi": "मध्यपाषाण-ताम्रपाषाण (~5000-1500 ई.पू.)"
       }
     },
     {
@@ -173,11 +227,22 @@
             "Excavated by D. R. Sahni (1935-36) — India's oldest known Buddhist chaitya-griha (circular hypaethral shrine).",
             "The Mauryan-era Nissindh cave and Bijak-ki-Pahari monastery add layered evidence of Ashokan Buddhism in Rajasthan.",
             "Located on the Alwar-Jaipur road in the northern Aravalli tail."
+          ],
+          "facts_hi": [
+            "महाभारत का पारंपरिक विराटनगर — जहाँ पांडवों ने राजा विराट के दरबार में अज्ञातवास का 13वाँ वर्ष बिताया।",
+            "केवल दो अशोक भाब्रू शिलालेखों में से एक यहाँ मिला (अशोक की बौद्ध धर्म की व्यक्तिगत घोषणा); 1837 में कैप्टन बर्ट द्वारा खोजा, अब एशियाटिक सोसाइटी कोलकाता में।",
+            "डी.आर. साहनी (1935-36) द्वारा उत्खनित — भारत का प्राचीनतम ज्ञात बौद्ध चैत्य-गृह (वृत्ताकार खुला मंदिर)।",
+            "मौर्य-कालीन निस्सिंध गुफ़ा और बीजक-की-पहाड़ी मठ राजस्थान में अशोक-बौद्ध धर्म का स्तरित साक्ष्य जोड़ते हैं।",
+            "उत्तरी अरावली पूँछ में अलवर-जयपुर मार्ग पर स्थित।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "बैराठ (विराटनगर)",
+        "district_hi": "कोटपूतली-बहरोड़",
+        "type_hi": "प्राचीन सभ्यता",
+        "period_hi": "महाभारत काल → मौर्य (~तीसरी शताब्दी ई.पू.-तीसरी शताब्दी ई.)"
       }
     },
     {
@@ -202,11 +267,21 @@
             "Yielded India's earliest painted human figurines — 'Ahar Ma' terracottas with distinctive brown-slip painting.",
             "One of the westernmost known Ahar-culture sites — extends the Chalcolithic province towards Ajmer.",
             "Located ~30 km northwest of Bhilwara town on the Banas tributary system."
+          ],
+          "facts_hi": [
+            "हाल ही में उत्खनित आहड़-संस्कृति बस्ती (2000-2001, ASI जयपुर मंडल)।",
+            "भारत की प्राचीनतम चित्रित मानव-मूर्तिकाएँ यहाँ मिलीं — विशिष्ट भूरे-स्लिप चित्रण वाली 'आहड़ माँ' टेराकोटा।",
+            "आहड़-संस्कृति के सर्वाधिक पश्चिमी ज्ञात स्थलों में से एक — ताम्रपाषाण प्रांत को अजमेर की ओर विस्तारित करता है।",
+            "भीलवाड़ा नगर से ~30 किमी उत्तर-पश्चिम बनास सहायक-तंत्र पर स्थित।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "ओजियाना",
+        "district_hi": "भीलवाड़ा",
+        "type_hi": "प्राचीन सभ्यता",
+        "period_hi": "आहड़-ताम्रपाषाण (~2500-1500 ई.पू.)"
       }
     },
     {
@@ -231,11 +306,21 @@
             "Excavated by Swedish archaeologist Hanna Rydh (1952-54) — first female-led major excavation in Rajasthan.",
             "Located on the same Ghaggar palaeo-channel as Kalibangan, ~30 km east.",
             "Iron artefacts, terracotta plaques, painted pottery — the site anchored the reconstruction of northern Rajasthan's early historic period."
+          ],
+          "facts_hi": [
+            "रंग महल संस्कृति का प्रकार-स्थल — घग्घर पुरा-वाहिनी की कुषाण-गुप्त कालीन चित्रित-मृद्भांड परंपरा।",
+            "स्वीडिश पुरातत्वविद् हैना रिड (1952-54) द्वारा उत्खनित — राजस्थान में पहला महिला-नेतृत्व वाला बड़ा उत्खनन।",
+            "कालीबंगा की ही घग्घर पुरा-वाहिनी पर स्थित, ~30 किमी पूर्व।",
+            "लौह कलाकृतियाँ, टेराकोटा फलक, चित्रित मृद्भांड — स्थल ने उत्तरी राजस्थान के प्रारंभिक ऐतिहासिक काल के पुनर्निर्माण को केंद्र दिया।"
           ]
         },
         "state": "Rajasthan",
         "source": "Sikhwal Manchitrawali (16th ed.) + standard Rajasthan geography",
-        "lastUpdated": "2026-07-11"
+        "lastUpdated": "2026-07-11",
+        "name_hi": "रंगमहल",
+        "district_hi": "हनुमानगढ़",
+        "type_hi": "प्राचीन सभ्यता",
+        "period_hi": "कुषाण-गुप्त (~पहली-चौथी शताब्दी ई.)"
       }
     }
   ]

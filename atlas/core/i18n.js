@@ -292,6 +292,9 @@ const DICT = {
   'Buddhist Heritage':                'बौद्ध विरासत',
   'Painting School':                  'चित्रकला शैली',
   'Folk Art':                         'लोक-कला',
+  'Rajput Dynasty':                   'राजपूत राजवंश',
+  'Battle Site':                      'युद्ध-स्थल',
+  'Ancient Civilization':             'प्राचीन सभ्यता',
 
   /* Detail card — feature kind labels */
   'National Park':                    'राष्ट्रीय उद्यान',

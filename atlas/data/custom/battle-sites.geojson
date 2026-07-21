@@ -27,9 +27,20 @@
             "Maharana Pratap escaped after his horse Chetak died protecting him from a Mughal war-elephant — Chetak's samadhi is at Balichabhavan.",
             "Neither side won decisively; the battle became a symbol of Rajput resistance to Mughal rule.",
             "Located in the Aravalli pass between Kumbhalgarh and Gogunda."
+          ],
+          "facts_hi": [
+            "राजस्थान का सर्वाधिक स्मरण किया जाने वाला युद्ध — मेवाड़ के महाराणा प्रताप बनाम अकबर की सेना (आमेर के मानसिंह प्रथम के नेतृत्व में), 18 जून 1576।",
+            "'हल्दी-घाटी' = 'हल्दी का दर्रा' — इस दर्रे की अरावली मिट्टी के पीले रंग पर नाम।",
+            "महाराणा प्रताप तब बचे जब उनका घोड़ा चेतक उन्हें एक मुग़ल युद्ध-हाथी से बचाते हुए मारा गया — चेतक की समाधि बलीचा गाँव में है।",
+            "किसी पक्ष की निर्णायक जीत नहीं हुई; युद्ध मुग़ल शासन के विरुद्ध राजपूत प्रतिरोध का प्रतीक बन गया।",
+            "कुंभलगढ़ और गोगुंदा के बीच अरावली दर्रे में स्थित।"
           ]
         },
-        "icon": "⚔"
+        "icon": "⚔",
+        "name_hi": "हल्दीघाटी (हल्दीघाटी का युद्ध, 1576)",
+        "district_hi": "राजसमंद",
+        "type_hi": "युद्ध-स्थल",
+        "date_hi": "18 जून 1576"
       }
     },
     {
@@ -57,9 +68,19 @@
             "Rana Sanga led a united Rajput-Afghan coalition of 100,000+ troops, defeated by Babur's ~15,000 with matchlock guns and cannon.",
             "The first major Indian battle where artillery decided the outcome.",
             "Rana Sanga was wounded and died in 1528; Mewar's Rajput confederation collapsed as a result."
+          ],
+          "facts_hi": [
+            "16 मार्च 1527 को मेवाड़ के राणा साँगा पर बाबर की निर्णायक विजय — उत्तर भारत पर मुग़ल शक्ति को सुदृढ़ किया।",
+            "राणा साँगा ने 1,00,000+ सैनिकों का संयुक्त राजपूत-अफ़ग़ान गठबंधन नेतृत्व किया, जिसे बाबर की ~15,000 सेना ने बंदूक़ों और तोपों से हराया।",
+            "पहला बड़ा भारतीय युद्ध जहाँ तोपख़ाने ने परिणाम तय किया।",
+            "राणा साँगा घायल हुए और 1528 में उनका निधन हो गया; परिणामस्वरूप मेवाड़ का राजपूत संघ ढह गया।"
           ]
         },
-        "icon": "⚔"
+        "icon": "⚔",
+        "name_hi": "खानवा (खानवा का युद्ध, 1527)",
+        "district_hi": "भरतपुर",
+        "type_hi": "युद्ध-स्थल",
+        "date_hi": "16 मार्च 1527"
       }
     },
     {
@@ -87,9 +108,19 @@
             "The victory was commemorated with the Vijay Stambha (Tower of Victory) at Chittorgarh Fort in 1440.",
             "One of the earliest Rajput victories over the Sultanate of Malwa; established Mewar's power over the Chambal frontier.",
             "The battle is chronicled in the Kumbhalgarh Prashasti (1460 CE)."
+          ],
+          "facts_hi": [
+            "मेवाड़ के राणा कुंभा ने 1437 ई. में मालवा के महमूद ख़िलजी को हराया।",
+            "इस विजय की स्मृति में 1440 में चित्तौड़गढ़ दुर्ग पर विजय स्तंभ बनवाया गया।",
+            "मालवा सल्तनत पर आरंभिक राजपूत विजयों में से एक; चंबल सीमांत पर मेवाड़ की शक्ति स्थापित की।",
+            "यह युद्ध कुंभलगढ़ प्रशस्ति (1460 ई.) में वर्णित है।"
           ]
         },
-        "icon": "🗡"
+        "icon": "🗡",
+        "name_hi": "सारंगपुर (सारंगपुर का युद्ध, 1437)",
+        "district_hi": "झालावाड़ से सटा (म.प्र. सीमा)",
+        "type_hi": "युद्ध-स्थल",
+        "date_hi": "1437 ई."
       }
     },
     {
@@ -118,9 +149,20 @@
             "First jauhar of Chittorgarh; the two others followed in 1535 (against Bahadur Shah) and 1568 (against Akbar).",
             "The 14th-c. Padmavat epic by Malik Muhammad Jayasi (1540) shaped the popular memory of this siege.",
             "The Padmini Palace within Chittorgarh Fort is the reputed site of the jauhar."
+          ],
+          "facts_hi": [
+            "अलाउद्दीन ख़िलजी की चित्तौड़ दुर्ग घेराबंदी (1303) — राजस्थान के तीन महान जौहरों में से एक।",
+            "राणा रतन सिंह ने रक्षा की; रानी पद्मिनी ने समर्पण के बजाय राजपूत स्त्रियों के सामूहिक आत्मदाह का नेतृत्व किया।",
+            "चित्तौड़गढ़ का पहला जौहर; अन्य दो 1535 (बहादुर शाह के विरुद्ध) और 1568 (अकबर के विरुद्ध) में हुए।",
+            "मलिक मुहम्मद जायसी का पद्मावत महाकाव्य (1540) ने इस घेराबंदी की लोक-स्मृति गढ़ी।",
+            "चित्तौड़गढ़ दुर्ग के भीतर पद्मिनी महल इस जौहर का प्रसिद्ध स्थल है।"
           ]
         },
-        "icon": "⚔"
+        "icon": "⚔",
+        "name_hi": "चित्तौड़ की घेराबंदी (1303, रानी पद्मिनी का जौहर)",
+        "district_hi": "चित्तौड़गढ़",
+        "type_hi": "युद्ध-स्थल",
+        "date_hi": "26 अगस्त 1303"
       }
     },
     {
@@ -148,9 +190,19 @@
             "Rathore commander Jaymal Rathore surrendered on terms; his relatives Devidas and Rangraj Rathore were killed defending the fort.",
             "Jaymal later led Chittor's defence in 1568 — where he was killed by Akbar personally with a matchlock.",
             "Merta was the birthplace of Mirabai (1498), the Krishna-bhakti poet-saint."
+          ],
+          "facts_hi": [
+            "अकबर की सेना (शरफ़ुद्दीन हुसैन मिर्ज़ा के अधीन) ने 20 मार्च 1562 को मेड़ता दुर्ग पर अधिकार किया।",
+            "राठौड़ सेनापति जयमल राठौड़ ने शर्तों पर समर्पण किया; उनके संबंधी देवीदास और रंगराज राठौड़ दुर्ग की रक्षा करते हुए मारे गए।",
+            "जयमल ने बाद में 1568 में चित्तौड़ की रक्षा का नेतृत्व किया — जहाँ अकबर ने स्वयं बंदूक़ से उन्हें मार गिराया।",
+            "मेड़ता कृष्ण-भक्ति कवयित्री-संत मीराबाई (1498) का जन्मस्थान था।"
           ]
         },
-        "icon": "⚔"
+        "icon": "⚔",
+        "name_hi": "मेड़ता (मेड़ता का युद्ध, 1562)",
+        "district_hi": "नागौर (मेड़ता सिटी)",
+        "type_hi": "युद्ध-स्थल",
+        "date_hi": "20 मार्च 1562"
       }
     },
     {
@@ -178,9 +230,19 @@
             "The Bhati Rajput chief Dul Chand surrendered after 3 days; Timur nevertheless massacred the town's population.",
             "The Bhatner Fort was rebuilt over the medieval ruins; renamed Hanumangarh in 1805 by Bhupendra Singh of Bikaner.",
             "One of the few documented battles in Rajasthan chronicled by both Persian and Sanskrit sources — Timur's Tuzk-i-Timuri and the Bhati chronicles."
+          ],
+          "facts_hi": [
+            "तैमूर (तामरलेन) ने दिल्ली की लूट के मार्ग में नवंबर 1398 में भटनेर (आधुनिक हनुमानगढ़) की घेराबंदी की।",
+            "भाटी राजपूत सरदार दूल चंद ने 3 दिन बाद समर्पण किया; फिर भी तैमूर ने नगर की जनता का संहार किया।",
+            "भटनेर दुर्ग मध्यकालीन खंडहरों पर पुनर्निर्मित हुआ; 1805 में बीकानेर के भूपेंद्र सिंह द्वारा इसका नाम हनुमानगढ़ रखा गया।",
+            "राजस्थान के उन गिने-चुने प्रलेखित युद्धों में से एक जो फ़ारसी और संस्कृत दोनों स्रोतों में वर्णित है — तैमूर की तुज़्क-ए-तैमूरी और भाटी वृत्तांत।"
           ]
         },
-        "icon": "🗡"
+        "icon": "🗡",
+        "name_hi": "भटनेर (तैमूर की घेराबंदी, 1398)",
+        "district_hi": "हनुमानगढ़",
+        "type_hi": "युद्ध-स्थल",
+        "date_hi": "नवंबर 1398"
       }
     },
     {
@@ -208,9 +270,19 @@
             "1444: Hoshang Shah of Malwa captured the fort; the Khichi Chauhan defender Achaldas led the first jauhar.",
             "1524: Fort fell to Ibrahim Lodi's forces; Rani Prakashkumari led the second jauhar.",
             "Both jauhar sites are marked within the fort, which is now a UNESCO Hill Fort of Rajasthan."
+          ],
+          "facts_hi": [
+            "गागरोन दुर्ग की जुड़वाँ घेराबंदियाँ — राजस्थान का एकमात्र जल-दुर्ग।",
+            "1444: मालवा के होशंग शाह ने दुर्ग जीता; खींची चौहान रक्षक अचलदास ने पहला जौहर किया।",
+            "1524: दुर्ग इब्राहिम लोदी की सेनाओं के हाथ पड़ा; रानी प्रकाशकुमारी ने दूसरा जौहर किया।",
+            "दोनों जौहर-स्थल दुर्ग के भीतर चिह्नित हैं, जो अब एक UNESCO राजस्थान पहाड़ी दुर्ग है।"
           ]
         },
-        "icon": "🗡"
+        "icon": "🗡",
+        "name_hi": "गागरोन दुर्ग (1444 और 1524 की घेराबंदियाँ)",
+        "district_hi": "झालावाड़",
+        "type_hi": "युद्ध-स्थल",
+        "date_hi": "1444 ई. और 1524 ई."
       }
     }
   ]
