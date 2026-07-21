@@ -12,7 +12,9 @@
 
 import { Atlas } from '../core/AtlasCore.js';
 import { esc, el } from '../core/util/dom.js';
-import { t }        from '../core/i18n.js';
+import { t, tf, getLang } from '../core/i18n.js';
+
+const isHi = () => getLang() === 'hi';
 
 let districtDemographics = null;
 Atlas.bus.on('atlas:ready', async () => {
@@ -79,14 +81,16 @@ function close() {
 function render() {
   panel.innerHTML = '';
   panel.append(el('button', {
-    class: 'compare-close', title: 'Close (Esc)',
+    class: 'compare-close', title: t('Close (Esc)'),
     onclick: () => close(),
   }, ['×']));
-  panel.append(el('h3', {}, ['Compare features']));
+  panel.append(el('h3', {}, [t('Compare features')]));
   panel.append(el('p', { class: 'compare-hint' }, [
     slotA && slotB
-      ? 'Click any feature on the map to replace the next slot.'
-      : `Click a feature on the map to fill slot ${pending === 'A' ? 'A' : 'B'}.`,
+      ? t('Click any feature on the map to replace the next slot.')
+      : (isHi()
+          ? `स्लॉट ${pending} भरने के लिए मानचित्र पर किसी विशेषता पर क्लिक करें।`
+          : `Click a feature on the map to fill slot ${pending === 'A' ? 'A' : 'B'}.`),
   ]));
 
   const grid = el('div', { class: 'compare-grid' });
@@ -99,14 +103,14 @@ function render() {
 
 function slotCard(label, entry) {
   const c = el('div', { class: `compare-slot slot-${label.toLowerCase()}${entry ? ' filled' : ''}` });
-  c.append(el('div', { class: 'compare-slot-lbl' }, [`Slot ${label}`]));
+  c.append(el('div', { class: 'compare-slot-lbl' }, [`${t('Slot')} ${label}`]));
   if (!entry) {
-    c.append(el('div', { class: 'compare-slot-empty' }, ['(empty — click a feature)']));
+    c.append(el('div', { class: 'compare-slot-empty' }, [t('(empty — click a feature)')]));
     return c;
   }
   const p = entry.feature.properties ?? {};
-  c.append(el('div', { class: 'compare-name' }, [p.name]));
-  c.append(el('div', { class: 'compare-kind' }, [p.type ?? '']));
+  c.append(el('div', { class: 'compare-name' }, [tf(p, 'name')]));
+  c.append(el('div', { class: 'compare-kind' }, [tf(p, 'type') ?? '']));
   const dl = el('dl', { class: 'compare-dl' });
   const rows = extractRows(p);
   for (const [k, v] of rows) {
@@ -123,51 +127,57 @@ function extractRows(p) {
   const districtName = p.district || p.name;
   const demo = districtDemographics?.districts?.[districtName];
 
+  const crops   = tf(p, 'crops');
+  const species = tf(p, 'species');
+  const dList   = (p.districts_included ?? []).slice(0, 4).map(x => t(x)).join(', ');
+
   const rows = [
-    ['Rainfall',      p.avg_mm ? `${p.avg_mm} mm avg` : (p.range ? `${p.range[0]}–${p.range[1]} mm` : '')],
-    ['Temperature',   p.mean_c ? `${p.mean_c} °C mean` : (p.summer_c ? `${p.summer_c[0]}-${p.summer_c[1]} °C summer` : '')],
-    ['Köppen',        p.koppen],
-    ['Soil texture',  p.texture],
-    ['Fertility',     p.fertility],
-    ['Crops',         Array.isArray(p.crops)   ? p.crops.join(', ') : p.crops],
-    ['Species',       Array.isArray(p.species) ? p.species.slice(0,4).join(' · ') : p.species],
-    ['Canopy',        p.canopy],
-    ['Districts',     p.districts_included?.length ? `${p.districts_included.length} — ${p.districts_included.slice(0,4).join(', ')}${p.districts_included.length > 4 ? '…' : ''}` : (p.district ?? '')],
-    ['Elevation',     p.elevation_m ? `${p.elevation_m} m` : ''],
-    ['Length',        p.length_km   ? `${p.length_km} km` : ''],
-    ['Area',          p.area        ? `${p.area} km²` : ''],
-    ['Basin',         p.basin],
-    ['Range',         p.range && typeof p.range === 'string' ? p.range : ''],
+    [t('Rainfall'),      p.avg_mm ? `${p.avg_mm} ${t('mm avg')}` : (p.range ? `${p.range[0]}–${p.range[1]} mm` : '')],
+    [t('Temperature'),   p.mean_c ? `${p.mean_c} °C ${t('mean')}` : (p.summer_c ? `${p.summer_c[0]}-${p.summer_c[1]} °C ${t('summer')}` : '')],
+    [t('Köppen'),        p.koppen],
+    [t('Soil texture'),  tf(p, 'texture')],
+    [t('Fertility'),     tf(p, 'fertility')],
+    [t('Crops'),         Array.isArray(crops)   ? crops.join(', ') : crops],
+    [t('Species'),       Array.isArray(species) ? species.slice(0,4).join(' · ') : species],
+    [t('Canopy'),        tf(p, 'canopy')],
+    [t('Districts'),     p.districts_included?.length ? `${p.districts_included.length} — ${dList}${p.districts_included.length > 4 ? '…' : ''}` : (t(p.district) ?? '')],
+    [t('Elevation'),     p.elevation_m ? `${p.elevation_m} m` : ''],
+    [t('Length'),        p.length_km   ? `${p.length_km} km` : ''],
+    [t('Area'),          p.area        ? `${p.area} km²` : ''],
+    [t('Basin'),         tf(p, 'basin')],
+    [t('Range'),         p.range && typeof p.range === 'string' ? tf(p, 'range') : ''],
   ];
 
   // Module 9 additions — demographic + administrative attributes.
   if (demo) rows.push(
-    ['Population',    `${(demo.population/1e6).toFixed(2)} M`],
-    ['Density',       `${demo.density}/km²`],
-    ['Literacy',      `${demo.literacy_pct}%`],
-    ['Sex ratio',     `${demo.sex_ratio} F/1000M`],
-    ['ST %',          `${demo.st_pct}%`],
-    ['SC %',          `${demo.sc_pct}%`],
-    ['Urban %',       `${demo.urban_pct}%`],
-    ['2001–2011 growth', `${demo.growth_pct}%`],
+    [t('Population'),    `${(demo.population/1e6).toFixed(2)} M`],
+    [t('Density'),       `${demo.density}/km²`],
+    [t('Literacy'),      `${demo.literacy_pct}%`],
+    [t('Sex ratio'),     `${demo.sex_ratio} F/1000M`],
+    [t('ST %'),          `${demo.st_pct}%`],
+    [t('SC %'),          `${demo.sc_pct}%`],
+    [t('Urban %'),       `${demo.urban_pct}%`],
+    [t('2001–2011 growth'), `${demo.growth_pct}%`],
   );
-  if (p.headquarters)  rows.push(['Headquarters', p.headquarters]);
-  if (p.dialect)       rows.push(['Dialect', p.dialect]);
-  if (p.seat)          rows.push(['Historical seat', p.seat]);
-  if (p.population_lakh != null) rows.push(['City population', `${p.population_lakh} lakh`]);
-  if (p.urban_role)    rows.push(['Urban role', p.urban_role]);
-  if (p.border_with)   rows.push(['Border with', p.border_with]);
-  if (p.axis)          rows.push(['Development axis', p.axis]);
+  if (p.headquarters)  rows.push([t('Headquarters'), t(p.headquarters)]);
+  if (p.dialect)       rows.push([t('Dialect'), tf(p, 'dialect')]);
+  if (p.seat)          rows.push([t('Historical seat'), tf(p, 'seat')]);
+  if (p.population_lakh != null) rows.push([t('City population'), `${p.population_lakh} ${t('lakh')}`]);
+  if (p.urban_role)    rows.push([t('Urban role'), tf(p, 'urban_role')]);
+  if (p.border_with)   rows.push([t('Border with'), tf(p, 'border_with')]);
+  if (p.axis)          rows.push([t('Development axis'), tf(p, 'axis')]);
 
   return rows;
 }
 
 function renderDiff(A, B) {
   const wrap = el('div', { class: 'compare-diff' });
-  wrap.append(el('h4', {}, ['Key differences']));
+  wrap.append(el('h4', {}, [t('Key differences')]));
   const list = el('ul', {});
 
   const pa = A.feature.properties, pb = B.feature.properties;
+  const nameA = tf(pa, 'name'), nameB = tf(pb, 'name');
+  const tD = (arr, n) => arr.slice(0, n).map(x => t(x)).join(', ');
   const districtsA = new Set(pa.districts_included ?? []);
   const districtsB = new Set(pb.districts_included ?? []);
   const shared    = [...districtsA].filter(d => districtsB.has(d));
@@ -175,24 +185,28 @@ function renderDiff(A, B) {
   const onlyB     = [...districtsB].filter(d => !districtsA.has(d));
 
   if (shared.length) list.append(el('li', {}, [
-    `Shared districts: ${shared.slice(0, 6).join(', ')}${shared.length > 6 ? '…' : ''}`,
+    `${isHi() ? 'साझा जिले' : 'Shared districts'}: ${tD(shared, 6)}${shared.length > 6 ? '…' : ''}`,
   ]));
   if (onlyA.length) list.append(el('li', {}, [
-    `Unique to A (${pa.name}): ${onlyA.slice(0, 4).join(', ')}${onlyA.length > 4 ? '…' : ''}`,
+    `${isHi() ? `केवल A में (${nameA})` : `Unique to A (${nameA})`}: ${tD(onlyA, 4)}${onlyA.length > 4 ? '…' : ''}`,
   ]));
   if (onlyB.length) list.append(el('li', {}, [
-    `Unique to B (${pb.name}): ${onlyB.slice(0, 4).join(', ')}${onlyB.length > 4 ? '…' : ''}`,
+    `${isHi() ? `केवल B में (${nameB})` : `Unique to B (${nameB})`}: ${tD(onlyB, 4)}${onlyB.length > 4 ? '…' : ''}`,
   ]));
   if (pa.avg_mm != null && pb.avg_mm != null) {
     const diff = pa.avg_mm - pb.avg_mm;
     list.append(el('li', {}, [
-      `Rainfall difference: ${Math.abs(diff)} mm (${pa.name} is ${diff > 0 ? 'wetter' : 'drier'})`,
+      isHi()
+        ? `वर्षा अंतर: ${Math.abs(diff)} mm (${nameA} ${diff > 0 ? 'अधिक आर्द्र' : 'अधिक शुष्क'} है)`
+        : `Rainfall difference: ${Math.abs(diff)} mm (${nameA} is ${diff > 0 ? 'wetter' : 'drier'})`,
     ]));
   }
   if (pa.mean_c != null && pb.mean_c != null) {
     const diff = pa.mean_c - pb.mean_c;
     list.append(el('li', {}, [
-      `Temperature difference: ${Math.abs(diff)} °C (${pa.name} is ${diff > 0 ? 'warmer' : 'cooler'})`,
+      isHi()
+        ? `तापमान अंतर: ${Math.abs(diff)} °C (${nameA} ${diff > 0 ? 'अधिक गर्म' : 'अधिक ठंडा'} है)`
+        : `Temperature difference: ${Math.abs(diff)} °C (${nameA} is ${diff > 0 ? 'warmer' : 'cooler'})`,
     ]));
   }
   // Module 9 — demographic diffs
@@ -200,26 +214,33 @@ function renderDiff(A, B) {
   const dB = districtDemographics?.districts?.[pb.district || pb.name];
   if (dA && dB) {
     const diffs = [
-      ['population',  'M',        (v) => (v/1e6).toFixed(2)],
-      ['density',     '/km²',     (v) => v],
-      ['literacy_pct','%',        (v) => v],
-      ['sex_ratio',   ' F/1000M', (v) => v],
-      ['urban_pct',   '%',        (v) => v],
-      ['st_pct',      '%',        (v) => v],
+      ['population',  'M',        (v) => (v/1e6).toFixed(2), 'जनसंख्या'],
+      ['density',     '/km²',     (v) => v,                  'घनत्व'],
+      ['literacy_pct','%',        (v) => v,                  'साक्षरता'],
+      ['sex_ratio',   ' F/1000M', (v) => v,                  'लिंग-अनुपात'],
+      ['urban_pct',   '%',        (v) => v,                  'नगरीय'],
+      ['st_pct',      '%',        (v) => v,                  'ST'],
     ];
-    for (const [key, unit, fmt] of diffs) {
+    for (const [key, unit, fmt, hiLabel] of diffs) {
       if (dA[key] == null || dB[key] == null) continue;
       const delta = dA[key] - dB[key];
+      const label = isHi() ? hiLabel : key.replace('_pct','').replace('_',' ');
       list.append(el('li', {}, [
-        `${key.replace('_pct','').replace('_',' ')}: ${fmt(dA[key])}${unit} vs ${fmt(dB[key])}${unit} — ${pa.name} is ${delta > 0 ? 'higher' : 'lower'} by ${fmt(Math.abs(delta))}${unit}.`,
+        isHi()
+          ? `${label}: ${fmt(dA[key])}${unit} बनाम ${fmt(dB[key])}${unit} — ${nameA} ${delta > 0 ? 'अधिक' : 'कम'} है, ${fmt(Math.abs(delta))}${unit} से।`
+          : `${label}: ${fmt(dA[key])}${unit} vs ${fmt(dB[key])}${unit} — ${nameA} is ${delta > 0 ? 'higher' : 'lower'} by ${fmt(Math.abs(delta))}${unit}.`,
       ]));
     }
   }
   if (pa.type && pb.type && pa.type === pb.type) list.append(el('li', {}, [
-    `Same kind of feature (${pa.type}) — compare is comparing like with like.`,
+    isHi()
+      ? `एक ही प्रकार की विशेषता (${tf(pa, 'type')}) — तुलना समान से समान की हो रही है।`
+      : `Same kind of feature (${pa.type}) — compare is comparing like with like.`,
   ]));
   else if (pa.type && pb.type) list.append(el('li', {}, [
-    `Different feature types (${pa.type} vs ${pb.type}) — the atlas is showing a cross-layer comparison.`,
+    isHi()
+      ? `भिन्न विशेषता प्रकार (${tf(pa, 'type')} बनाम ${tf(pb, 'type')}) — एटलस एक क्रॉस-लेयर तुलना दिखा रहा है।`
+      : `Different feature types (${pa.type} vs ${pb.type}) — the atlas is showing a cross-layer comparison.`,
   ]));
 
   wrap.append(list);
