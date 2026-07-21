@@ -186,8 +186,8 @@ function renderCard(feat, layerId) {
     ['Output',            tf(p, 'output')],
     ['Craft',             tf(p, 'craft')],
     ['GI status',         tf(p, 'gi_status')],
-    ['Notified',          p.notified],
-    ['Commissioned',      p.commissioned],
+    ['Notified',          tf(p, 'notified')],
+    ['Commissioned',      tf(p, 'commissioned')],
     ['Ranking',           tf(p, 'ranking')],
     ['Primary sectors',   p.primary_sectors ? arr('primary_sectors').join(', ') : null],
     ['Anchors',           p.anchors ? arr('anchors').join(', ') : null],
@@ -342,6 +342,29 @@ function composeOverview(p, kind) {
       case 'handicraft_cluster':
         bits.push(`${esc(name)} — ${esc(tf(p, 'craft') ?? '')}। जिला: ${esc(tf(p, 'district') ?? '')}।`);
         if (p.gi_status) bits.push(esc(tf(p, 'gi_status')) + '।');
+        return bits.join(' ');
+      case 'energy_mix_zone':
+        bits.push(`${esc(name)} — प्रमुख स्रोत: <em>${esc(tf(p, 'dominant') ?? '')}</em>। ${dcount} जिलों में फैला।`);
+        if (p.headline) bits.push(esc(tf(p, 'headline')));
+        return bits.join(' ');
+      case 'renewable_zone':
+        bits.push(`${esc(name)} — संसाधन: ${esc(tf(p, 'resource') ?? '')}। ${esc(tf(p, 'classification') ?? '')}।`);
+        return bits.join(' ');
+      case 'transmission_corridor':
+        bits.push(`${esc(name)} — ${esc(tf(p, 'corridor_type') ?? '')}। ${esc(tf(p, 'purpose') ?? '')}।`);
+        if (p.commissioned) bits.push(`${esc(tf(p, 'commissioned'))} में चालू।`);
+        return bits.join(' ');
+      case 'power_plant':
+        bits.push(`${esc(name)} — ईंधन: <em>${esc(tf(p, 'fuel') ?? '')}</em>। स्थापित क्षमता ${esc(String(p.capacity_mw ?? '?'))} MW। संचालक ${esc(p.owner ?? '')}।`);
+        if (p.output) bits.push(esc(tf(p, 'output')) + '।');
+        return bits.join(' ');
+      case 'solar_park':
+        bits.push(`${esc(name)} — ${esc(String(p.capacity_mw ?? '?'))} MW स्थापित। विकासकर्ता: ${esc(p.developer ?? '')}।`);
+        if (p.commissioned) bits.push(`${esc(tf(p, 'commissioned'))} में चालू।`);
+        return bits.join(' ');
+      case 'wind_farm':
+        bits.push(`${esc(name)} — ${esc(String(p.capacity_mw ?? '?'))} MW। विकासकर्ता: ${esc(p.developer ?? '')}।`);
+        if (p.commissioned) bits.push(`${esc(tf(p, 'commissioned'))} में चालू।`);
         return bits.join(' ');
     }
   }
