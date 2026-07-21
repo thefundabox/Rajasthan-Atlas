@@ -25,6 +25,15 @@
  */
 
 import { el } from '../core/util/dom.js';
+import { t, getLang } from '../core/i18n.js';
+
+/* Pick the Hindi variant of a phase field when the UI is in Hindi and a
+ * `<field>_hi` exists; otherwise fall back to the English field. Keeps the
+ * PHASES table bilingual without duplicating the render logic. */
+function ph(phase, field) {
+  if (getLang() === 'hi' && phase[field + '_hi'] != null) return phase[field + '_hi'];
+  return phase[field];
+}
 
 const LAYER_ID = 'rajasthan-integration';
 
@@ -101,42 +110,63 @@ const PHASES = [
     name: 'Matsya Union',
     states: ['Alwar', 'Bharatpur', 'Dholpur', 'Karauli'],
     blurb: 'First step in Rajasthan\'s integration. Four princely states of the Braj region merged, with Dholpur\'s Maharaja Udai Bhan Singh as Rajpramukh.',
+    name_hi: 'मत्स्य संघ', shortDate_hi: '18 मार्च',
+    states_hi: ['अलवर', 'भरतपुर', 'धौलपुर', 'करौली'],
+    blurb_hi: 'राजस्थान के एकीकरण का पहला चरण। ब्रज क्षेत्र की चार रियासतें विलीन हुईं, धौलपुर के महाराजा उदयभान सिंह राजप्रमुख बने।',
   },
   {
     n: 2, roman: '②', date: '25 Mar 1948', shortDate: '25 Mar', shortYear: '1948',
     name: 'United State of Rajasthan',
     states: ['Kota', 'Bundi', 'Banswara', 'Dungarpur', 'Jhalawar', 'Pratapgarh', 'Tonk', 'Kishangarh', 'Shahpura'],
     blurb: 'Nine southern-eastern princely states formed the USR under Maharao Bhim Singh II of Kota — Rajasthan\'s first mini-federation.',
+    name_hi: 'राजस्थान संयुक्त राज्य', shortDate_hi: '25 मार्च',
+    states_hi: ['कोटा', 'बूँदी', 'बांसवाड़ा', 'डूंगरपुर', 'झालावाड़', 'प्रतापगढ़', 'टोंक', 'किशनगढ़', 'शाहपुरा'],
+    blurb_hi: 'नौ दक्षिण-पूर्वी रियासतों ने कोटा के महाराव भीम सिंह द्वितीय के अधीन USR बनाया — राजस्थान का पहला लघु-संघ।',
   },
   {
     n: 3, roman: '③', date: '18 Apr 1948', shortDate: '18 Apr', shortYear: '1948',
     name: 'Mewar joins USR',
     states: ['Udaipur (Mewar)'],
     blurb: 'Mewar — India\'s oldest continuous royal house — merged into USR under Maharana Bhupal Singh, who became Rajpramukh of the enlarged union.',
+    name_hi: 'मेवाड़ का USR में विलय', shortDate_hi: '18 अप्रैल',
+    states_hi: ['उदयपुर (मेवाड़)'],
+    blurb_hi: 'मेवाड़ — भारत का सबसे पुराना निरंतर राजघराना — महाराणा भूपाल सिंह के अधीन USR में विलीन, जो विस्तारित संघ के राजप्रमुख बने।',
   },
   {
     n: 4, roman: '④', date: '30 Mar 1949', shortDate: '30 Mar', shortYear: '1949',
     name: 'Greater Rajasthan',
     states: ['Jaipur', 'Jodhpur', 'Bikaner', 'Jaisalmer'],
     blurb: 'The four big Rajput states joined USR. Sardar Patel inaugurated it. Jaipur became the new capital. Celebrated annually as Rajasthan Diwas (30 March).',
+    name_hi: 'वृहत् राजस्थान', shortDate_hi: '30 मार्च',
+    states_hi: ['जयपुर', 'जोधपुर', 'बीकानेर', 'जैसलमेर'],
+    blurb_hi: 'चार बड़ी राजपूत रियासतें USR में शामिल हुईं। सरदार पटेल ने उद्घाटन किया। जयपुर नई राजधानी बनी। प्रतिवर्ष राजस्थान दिवस (30 मार्च) के रूप में मनाया जाता है।',
   },
   {
     n: 5, roman: '⑤', date: '15 May 1949', shortDate: '15 May', shortYear: '1949',
     name: 'United Greater Rajasthan',
     states: ['Matsya Union merged in'],
     blurb: 'Alwar-Bharatpur-Dholpur-Karauli (Matsya Union) merged into Greater Rajasthan, forming the Sanyukta Vishal Rajasthan.',
+    name_hi: 'संयुक्त वृहत् राजस्थान', shortDate_hi: '15 मई',
+    states_hi: ['मत्स्य संघ का विलय'],
+    blurb_hi: 'अलवर-भरतपुर-धौलपुर-करौली (मत्स्य संघ) वृहत् राजस्थान में विलीन होकर संयुक्त विशाल राजस्थान बना।',
   },
   {
     n: 6, roman: '⑥', date: '26 Jan 1950', shortDate: '26 Jan', shortYear: '1950',
     name: 'United Rajasthan',
     states: ['Sirohi (partly)'],
     blurb: 'Formally recognised on Republic Day. Sirohi partly merged — Mount Abu / Delwara held by Bombay State. Heera Lal Shastri became Rajasthan\'s first CM.',
+    name_hi: 'संयुक्त राजस्थान', shortDate_hi: '26 जनवरी',
+    states_hi: ['सिरोही (आंशिक)'],
+    blurb_hi: 'गणतंत्र दिवस पर औपचारिक मान्यता। सिरोही आंशिक रूप से विलीन — माउंट आबू / देलवाड़ा बॉम्बे राज्य के पास। हीरा लाल शास्त्री राजस्थान के पहले मुख्यमंत्री बने।',
   },
   {
     n: 7, roman: '⑦', date: '1 Nov 1956', shortDate: '1 Nov', shortYear: '1956',
     name: 'Modern Rajasthan (SRA)',
     states: ['Ajmer-Merwara', 'Abu-Delwara', 'Sunel Tappa (in)', 'Sironj (out)'],
     blurb: 'States Reorganisation Act — Ajmer, Abu-Delwara and Sunel Tappa added; Sironj went to MP. Rajpramukh replaced by Governor. The modern boundary was fixed on this date.',
+    name_hi: 'आधुनिक राजस्थान (SRA)', shortDate_hi: '1 नवंबर',
+    states_hi: ['अजमेर-मेरवाड़ा', 'आबू-देलवाड़ा', 'सुनेल टप्पा (शामिल)', 'सिरोंज (बाहर)'],
+    blurb_hi: 'राज्य पुनर्गठन अधिनियम — अजमेर, आबू-देलवाड़ा और सुनेल टप्पा जोड़े गए; सिरोंज म.प्र. को गया। राजप्रमुख की जगह राज्यपाल आया। आधुनिक सीमा इसी तिथि को निर्धारित हुई।',
   },
 ];
 
@@ -168,7 +198,7 @@ function mount() {
   if (mounted) return;
   strip = el('div', { class: 'itl-strip' });
   strip.append(el('div', { class: 'itl-title' }, [
-    'Integration of Rajasthan',
+    t('Integration of Rajasthan'),
     el('div', { class: 'itl-title-sub' }, ['1948 - 1956']),
   ]));
   // Vertical accordion — each phase is a row with roman + name + date.
@@ -185,8 +215,8 @@ function mount() {
     });
     btn.append(el('span', { class: 'itl-roman' }, [p.roman]));
     const label = el('span', { class: 'itl-label' });
-    label.append(el('span', { class: 'itl-name' }, [p.name]));
-    label.append(el('span', { class: 'itl-date' }, [`${p.shortDate} '${p.shortYear.slice(2)}`]));
+    label.append(el('span', { class: 'itl-name' }, [ph(p, 'name')]));
+    label.append(el('span', { class: 'itl-date' }, [`${ph(p, 'shortDate')} '${p.shortYear.slice(2)}`]));
     btn.append(label);
     row.append(btn);
     const detail = el('div', { class: 'itl-detail hidden' });
@@ -228,12 +258,12 @@ function select(phaseN) {
     if (isActive) {
       const phase = PHASES.find(p => p.n === n);
       detail.innerHTML = '';
-      detail.append(el('div', { class: 'itl-detail-date' }, [phase.date]));
+      detail.append(el('div', { class: 'itl-detail-date' }, [`${ph(phase, 'shortDate')} ${phase.shortYear}`]));
       detail.append(el('div', { class: 'itl-detail-states' }, [
-        el('span', { class: 'itl-detail-label' }, ['States: ']),
-        phase.states.join(' · '),
+        el('span', { class: 'itl-detail-label' }, [t('States: ')]),
+        ph(phase, 'states').join(' · '),
       ]));
-      detail.append(el('div', { class: 'itl-detail-blurb' }, [phase.blurb]));
+      detail.append(el('div', { class: 'itl-detail-blurb' }, [ph(phase, 'blurb')]));
     }
   });
   if (!phaseN) {

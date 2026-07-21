@@ -298,6 +298,10 @@ const DICT = {
   'Medieval Admin':                   'मध्यकालीन प्रशासन',
   'Literary Figure':                  'साहित्यकार',
   'Prashasti':                        'प्रशस्ति',
+  'Integration Stage':                'एकीकरण चरण',
+
+  /* Integration timeline strip (IntegrationTimeline.js) */
+  'States: ':                         'रियासतें: ',
 
   /* Detail card — feature kind labels */
   'National Park':                    'राष्ट्रीय उद्यान',
