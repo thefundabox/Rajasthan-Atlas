@@ -7,6 +7,7 @@
 
 import { Atlas }             from '../core/AtlasCore.js';
 import { esc, el, svgEl }    from '../core/util/dom.js';
+import { t, tf, getLang }    from '../core/i18n.js';
 
 const KIND_LABEL = {
   rainfall_zone:        'Rainfall zone',
@@ -104,28 +105,28 @@ export function installThematicEditorial() {
 
 function renderCard(feat, layerId) {
   const p = feat.properties ?? {};
-  const kind = KIND_LABEL[p.type];
+  const kind = t(KIND_LABEL[p.type]);
   const wrap = el('div', { class: 'ed' });
 
   // Hero
   const hero = el('div', { class: 'ed-hero' });
   hero.append(el('div', { class: 'ed-kicker' }, [kind]));
-  const title = el('h2', { class: 'ed-title' }); title.textContent = p.name;
+  const title = el('h2', { class: 'ed-title' }); title.textContent = tf(p, 'name');
   hero.append(title);
 
   // Tags
   const tags = el('div', { class: 'ed-tags' });
   if (p.koppen)   tags.append(tagEl(p.koppen, 'ramsar'));
-  if (p.zone_id?.length <= 3) tags.append(tagEl(`Zone ${p.zone_id.toUpperCase()}`, 'wls'));
+  if (p.zone_id?.length <= 3) tags.append(tagEl(`${t('Zone')} ${p.zone_id.toUpperCase()}`, 'wls'));
   const isPoint = p.geometryQuality === 'point';
-  tags.append(tagEl(isPoint ? 'Point coordinate' : 'Generalised boundary', 'point'));
+  tags.append(tagEl(isPoint ? t('Point coordinate') : t('Generalised boundary'), 'point'));
   const quality = el('span', {
     class: `ed-quality ${isPoint ? 'q4' : 'q3'}`,
     title: isPoint ? 'Point coordinate — cited source per feature' : 'District-approximated boundary',
   });
   quality.innerHTML = isPoint
-    ? '<span class="stars">★★★★<span class="empty">☆</span></span> <span class="lbl">Point</span>'
-    : '<span class="stars">★★★<span class="empty">☆☆</span></span> <span class="lbl">Generalised</span>';
+    ? `<span class="stars">★★★★<span class="empty">☆</span></span> <span class="lbl">${esc(t('Point'))}</span>`
+    : `<span class="stars">★★★<span class="empty">☆☆</span></span> <span class="lbl">${esc(t('Generalised'))}</span>`;
   tags.append(quality);
   hero.append(tags);
   wrap.append(hero);
@@ -134,7 +135,7 @@ function renderCard(feat, layerId) {
   const overview = composeOverview(p, kind);
   if (overview) {
     const s = el('div', { class: 'ed-section' });
-    s.append(el('h3', { class: 'ed-h' }, ['Overview']));
+    s.append(el('h3', { class: 'ed-h' }, [t('Overview')]));
     const para = el('p', { class: 'ed-overview' });
     para.innerHTML = overview;
     s.append(para);
@@ -143,129 +144,132 @@ function renderCard(feat, layerId) {
 
   // Distribution — small figures per zone type
   const figures = el('div', { class: 'ed-figures' });
-  if (p.avg_mm != null)      figures.append(figEl('Avg rainfall', p.avg_mm, 'mm'));
-  if (p.range)               figures.append(figEl('Range', `${p.range[0]}–${p.range[1]}`, 'mm'));
-  if (p.mean_c != null)      figures.append(figEl('Mean', p.mean_c, '°C'));
-  if (p.summer_c)            figures.append(figEl('Summer', `${p.summer_c[0]}–${p.summer_c[1]}`, '°C'));
-  if (p.winter_c)            figures.append(figEl('Winter', `${p.winter_c[0]}–${p.winter_c[1]}`, '°C'));
-  if (p.districts_included?.length) figures.append(figEl('Districts', p.districts_included.length));
-  if (figures.children.length) wrap.append(section('Key figures', figures));
+  if (p.avg_mm != null)      figures.append(figEl(t('Avg rainfall'), p.avg_mm, 'mm'));
+  if (p.range)               figures.append(figEl(t('Rainfall range'), `${p.range[0]}–${p.range[1]}`, 'mm'));
+  if (p.mean_c != null)      figures.append(figEl(t('Mean'), p.mean_c, '°C'));
+  if (p.summer_c)            figures.append(figEl(t('Summer'), `${p.summer_c[0]}–${p.summer_c[1]}`, '°C'));
+  if (p.winter_c)            figures.append(figEl(t('Winter'), `${p.winter_c[0]}–${p.winter_c[1]}`, '°C'));
+  if (p.districts_included?.length) figures.append(figEl(t('Districts'), p.districts_included.length));
+  if (figures.children.length) wrap.append(section(t('Key figures'), figures));
 
-  // Characteristics
+  // Characteristics — [label, value] pairs; string/array values run through
+  // tf() so a feature's `<field>_hi` (or joined `<field>_hi[]`) wins in Hindi.
+  const arr = (field) => { const v = tf(p, field); return Array.isArray(v) ? v : (v == null ? v : [v]); };
   const dl = el('dl', { class: 'ed-row' });
-  const rows = {
-    'Köppen':            p.koppen,
-    'Characteristics':   p.characteristics,
-    'Monsoon dependence':p.monsoon_dependence,
-    'Variability':       p.variability,
-    'Climate notes':     p.climate_notes,
-    'Texture':           p.texture,
-    'Fertility':         p.fertility,
-    'Nutrients':         p.nutrients,
-    'Crop suitability':  p.crop_suit,
-    'Erosion risk':      p.erosion,
-    'Canopy':            p.canopy,
-    'Threats':           Array.isArray(p.threats) ? p.threats.join('; ') : p.threats,
-    'Dominant species':  Array.isArray(p.species) ? p.species.join(', ') : p.species,
-    'Champion & Seth':   p.champion_id,
-    'Major crops':       Array.isArray(p.crops) ? p.crops.join(', ') : p.crops,
-    'Irrigation':        p.irrigation,
-    'Constraints':       p.constraints,
-    'Causes':            p.causes,
-    'Wind erosion':      p.wind,
-    'Water erosion':     p.water,
-    'Salinity':          p.salinity,
-    'Frequency':         p.frequency,
-    'Historical events': p.historical,
-    'Corridor':          p.corridor,
-    'Sector':            p.sector,
-    'Anchor sector':     p.anchor_sector,
-    'Output':            p.output,
-    'Craft':             p.craft,
-    'GI status':         p.gi_status,
-    'Notified':          p.notified,
-    'Commissioned':      p.commissioned,
-    'Ranking':           p.ranking,
-    'Primary sectors':   Array.isArray(p.primary_sectors) ? p.primary_sectors.join(', ') : p.primary_sectors,
-    'Anchors':           Array.isArray(p.anchors)          ? p.anchors.join(', ')          : p.anchors,
-    'Notable units':     Array.isArray(p.notable_units)    ? p.notable_units.join(', ')    : p.notable_units,
-    'Raw materials':     Array.isArray(p.raw_materials)    ? p.raw_materials.join(', ')    : p.raw_materials,
-    'Fuel':              p.fuel,
-    'Installed capacity':p.capacity_mw != null ? `${p.capacity_mw} MW` : null,
-    'Operator':          p.owner,
-    'Developer':         p.developer,
-    'Dominant source':   p.dominant,
-    'Resource':          p.resource,
-    'Classification':    p.classification,
-    'Corridor type':     p.corridor_type,
-    'Purpose':           p.purpose,
-    'Headquarters':      p.headquarters,
-    'Historical seat':   p.seat,
-    'Cultural core':     p.core,
-    'Dialect':           p.dialect,
-    'Physical setting':  p.physical,
-    'Economy':           p.economy,
-    'Border with':       p.border_with,
-    'Border length':     p.border_km,
-    'Notification':      p.notification,
-    'Anchor project':    p.anchor_project,
-    'Urban role':        p.urban_role,
-    'Population rank':   p.rank != null ? `#${p.rank}` : null,
-    'Population':        p.population_lakh != null ? `${p.population_lakh} lakh` : null,
-    'Axis':              p.axis,
-    'Class range':       (p.class_min != null && p.class_max != null && p.unit)
-                          ? `${p.class_min}–${p.class_max}${p.unit}` : null,
-    'Metric':            p.metric_key,
-    'Signature':         Array.isArray(p.signature) ? p.signature.join(' · ') : p.signature,
-    'Notes':             p.remark,     // the schema notes-object is NOT displayed here
-  };
-  for (const [k, v] of Object.entries(rows)) {
+  const rows = [
+    ['Köppen',            p.koppen],
+    ['Characteristics',   tf(p, 'characteristics')],
+    ['Monsoon dependence',tf(p, 'monsoon_dependence')],
+    ['Variability',       tf(p, 'variability')],
+    ['Climate notes',     tf(p, 'climate_notes')],
+    ['Texture',           tf(p, 'texture')],
+    ['Fertility',         tf(p, 'fertility')],
+    ['Nutrients',         tf(p, 'nutrients')],
+    ['Crop suitability',  tf(p, 'crop_suit')],
+    ['Erosion risk',      tf(p, 'erosion')],
+    ['Canopy',            tf(p, 'canopy')],
+    ['Threats',           p.threats ? arr('threats').join('; ') : null],
+    ['Dominant species',  p.species ? arr('species').join(', ') : null],
+    ['Champion & Seth',   tf(p, 'champion_id')],
+    ['Major crops',       p.crops ? arr('crops').join(', ') : null],
+    ['Irrigation',        tf(p, 'irrigation')],
+    ['Constraints',       tf(p, 'constraints')],
+    ['Causes',            tf(p, 'causes')],
+    ['Wind erosion',      tf(p, 'wind')],
+    ['Water erosion',     tf(p, 'water')],
+    ['Salinity',          tf(p, 'salinity')],
+    ['Frequency',         tf(p, 'frequency')],
+    ['Historical events', tf(p, 'historical')],
+    ['Corridor',          tf(p, 'corridor')],
+    ['Sector',            tf(p, 'sector')],
+    ['Anchor sector',     tf(p, 'anchor_sector')],
+    ['Output',            tf(p, 'output')],
+    ['Craft',             tf(p, 'craft')],
+    ['GI status',         tf(p, 'gi_status')],
+    ['Notified',          p.notified],
+    ['Commissioned',      p.commissioned],
+    ['Ranking',           tf(p, 'ranking')],
+    ['Primary sectors',   p.primary_sectors ? arr('primary_sectors').join(', ') : null],
+    ['Anchors',           p.anchors ? arr('anchors').join(', ') : null],
+    ['Notable units',     p.notable_units ? arr('notable_units').join(', ') : null],
+    ['Raw materials',     p.raw_materials ? arr('raw_materials').join(', ') : null],
+    ['Fuel',              tf(p, 'fuel')],
+    ['Installed capacity',p.capacity_mw != null ? `${p.capacity_mw} MW` : null],
+    ['Operator',          tf(p, 'owner')],
+    ['Developer',         tf(p, 'developer')],
+    ['Dominant source',   tf(p, 'dominant')],
+    ['Resource',          tf(p, 'resource')],
+    ['Classification',    tf(p, 'classification')],
+    ['Corridor type',     tf(p, 'corridor_type')],
+    ['Purpose',           tf(p, 'purpose')],
+    ['Headquarters',      tf(p, 'headquarters')],
+    ['Historical seat',   tf(p, 'seat')],
+    ['Cultural core',     tf(p, 'core')],
+    ['Dialect',           tf(p, 'dialect')],
+    ['Physical setting',  tf(p, 'physical')],
+    ['Economy',           tf(p, 'economy')],
+    ['Border with',       tf(p, 'border_with')],
+    ['Border length',     p.border_km],
+    ['Notification',      tf(p, 'notification')],
+    ['Anchor project',    tf(p, 'anchor_project')],
+    ['Urban role',        tf(p, 'urban_role')],
+    ['Population rank',    p.rank != null ? `#${p.rank}` : null],
+    ['Population',         p.population_lakh != null ? `${p.population_lakh} ${t('lakh')}` : null],
+    ['Axis',              tf(p, 'axis')],
+    ['Class range',       (p.class_min != null && p.class_max != null && p.unit)
+                          ? `${p.class_min}–${p.class_max}${p.unit}` : null],
+    ['Metric',            p.metric_key],
+    ['Signature',         p.signature ? arr('signature').join(' · ') : null],
+    ['Notes',             tf(p, 'remark')],
+  ];
+  for (const [k, v] of rows) {
     if (v == null || v === '' || typeof v === 'object') continue;
-    dl.append(el('dt', {}, [k]));
+    dl.append(el('dt', {}, [t(k)]));
     dl.append(el('dd', {}, [String(v)]));
   }
-  if (dl.children.length) wrap.append(section('Characteristics', dl));
+  if (dl.children.length) wrap.append(section(t('Characteristics'), dl));
 
   // Module 9 — Editorial sections for human-geography features.
   renderHumanGeographySections(wrap, p);
 
   // Districts included
   if (p.districts_included?.length) {
+    const dincl = tf(p, 'districts_included');
     const box = el('div', {});
     box.append(el('p', { class: 'ed-overview' }, [
-      p.districts_included.join(', ') +
-      ` — ${p.districts_included.length} district${p.districts_included.length > 1 ? 's' : ''}`,
+      dincl.join(', ') +
+      ` — ${dincl.length} ${dincl.length > 1 ? t('districts') : t('district')}`,
     ]));
-    wrap.append(section('Distribution', box));
+    wrap.append(section(t('Distribution'), box));
   }
 
   // Per-district demographic values (choropleth zones)
   if (p.district_values && typeof p.district_values === 'object') {
     const dl2 = el('dl', { class: 'ed-row' });
     for (const [d, v] of Object.entries(p.district_values)) {
-      dl2.append(el('dt', {}, [d]));
+      dl2.append(el('dt', {}, [t(d)]));
       dl2.append(el('dd', {}, [`${v}${p.unit ?? ''}`]));
     }
-    if (dl2.children.length) wrap.append(section('Demographic Characteristics', dl2));
+    if (dl2.children.length) wrap.append(section(t('Demographic Characteristics'), dl2));
   }
 
   // Related features — knowledge graph
   const cluster = Atlas.knowledge?.cluster(feat) ?? [];
-  if (cluster.length) wrap.append(section('Related features', renderRelated(cluster)));
+  if (cluster.length) wrap.append(section(t('Related features'), renderRelated(cluster)));
 
   // Locator
   const loc = renderLocator(feat);
-  if (loc) wrap.append(section('Locator', loc));
+  if (loc) wrap.append(section(t('Locator'), loc));
 
   // References
   const src = el('div', { class: 'ed-sources' });
   (p.source ? p.source.split(/[;+]/).map(s => s.trim()) : [])
     .filter(Boolean).forEach(s => src.append(el('span', { class: 'ed-source' }, [s])));
-  if (p.lastUpdated) src.append(el('span', { class: 'ed-source' }, [`Compiled ${p.lastUpdated}`]));
-  if (src.children.length) wrap.append(section('References', src));
+  if (p.lastUpdated) src.append(el('span', { class: 'ed-source' }, [`${t('Compiled')} ${p.lastUpdated}`]));
+  if (src.children.length) wrap.append(section(t('References'), src));
 
   if (p.geometryNote)
-    wrap.append(el('div', { class: 'ed-note' }, [p.geometryNote]));
+    wrap.append(el('div', { class: 'ed-note' }, [tf(p, 'geometryNote')]));
 
   return wrap;
 }
@@ -274,14 +278,39 @@ function renderCard(feat, layerId) {
 
 function composeOverview(p, kind) {
   const bits = [];
-  const name = p.name?.replace(/\s*\(.*?\)/g, '') ?? '';
+  const hi = getLang() === 'hi';
+  const name = (tf(p, 'name') ?? '').replace(/\s*\(.*?\)/g, '');
+  const dcount = p.districts_included?.length ?? 0;
+  const cropsStr = p.crops ? esc((Array.isArray(tf(p, 'crops')) ? tf(p, 'crops') : [tf(p, 'crops')]).join(', ')) : '';
+
+  // --- Climate sub-tier: bilingual (falls through to English below for the rest) ---
+  if (hi) {
+    switch (p.type) {
+      case 'rainfall_zone':
+        bits.push(`${esc(name)} राजस्थान के ${dcount} जिलों को समेटता है, जहाँ औसत वार्षिक वर्षा लगभग ${p.avg_mm} मिमी है।`);
+        if (p.climate_notes) bits.push(esc(tf(p, 'climate_notes')));
+        return bits.join(' ');
+      case 'temperature_zone':
+        bits.push(`${esc(name)} ${dcount} जिलों में फैला है; औसत वार्षिक तापमान ~${p.mean_c} °C।`);
+        if (p.notes && typeof p.notes === 'string') bits.push(esc(tf(p, 'notes')));
+        return bits.join(' ');
+      case 'climate_region':
+        bits.push(`${esc(name)} — कोपेन <em>${esc(p.koppen ?? '')}</em>। ${esc(tf(p, 'characteristics') ?? '')}`);
+        return bits.join(' ');
+      case 'agro_climatic_zone':
+        bits.push(`राजस्थान कृषि विश्वविद्यालय के दस-क्षेत्र वर्गीकरण का आधिकारिक रूप से अधिसूचित क्षेत्र ${p.zone_id?.toUpperCase()}।`);
+        if (p.crops) bits.push(`विशिष्ट फ़सलें: ${cropsStr}।`);
+        return bits.join(' ');
+    }
+  }
+
   switch (p.type) {
     case 'rainfall_zone':
-      bits.push(`${esc(name)} covers ${p.districts_included?.length ?? 0} Rajasthan districts with an average annual rainfall around ${p.avg_mm} mm.`);
+      bits.push(`${esc(name)} covers ${dcount} Rajasthan districts with an average annual rainfall around ${p.avg_mm} mm.`);
       if (p.climate_notes) bits.push(esc(p.climate_notes));
       break;
     case 'temperature_zone':
-      bits.push(`${esc(name)} spans ${p.districts_included?.length ?? 0} districts; mean annual temperature ~${p.mean_c} °C.`);
+      bits.push(`${esc(name)} spans ${dcount} districts; mean annual temperature ~${p.mean_c} °C.`);
       if (p.notes) bits.push(esc(p.notes));
       break;
     case 'climate_region':
@@ -401,13 +430,14 @@ function renderRelated(cluster) {
   const wrap = el('div', { class: 'ed-related' });
   for (const r of cluster) {
     const p = r.feature.properties ?? {};
+    const relName = tf(p, 'name');
     const btn = el('button', {
       class: `ed-related-chip chip-${r.layerId}`,
-      title: `${p.name} — ${r.type}`,
+      title: `${relName} — ${r.type}`,
       onclick: () => Atlas.interaction.select(r.layerId, r.featureId),
     });
-    btn.append(el('span', { class: 'ed-related-kind' }, [r.type.toUpperCase()]));
-    btn.append(el('span', { class: 'ed-related-name' }, [p.name]));
+    btn.append(el('span', { class: 'ed-related-kind' }, [t(r.type).toUpperCase()]));
+    btn.append(el('span', { class: 'ed-related-name' }, [relName]));
     wrap.append(btn);
   }
   return wrap;
@@ -425,54 +455,55 @@ function renderHumanGeographySections(wrap, p) {
        'municipal_corporation','smart_city'].includes(p.type)) {
     const dl = el('dl', { class: 'ed-row' });
     const rows = {
-      'Type':          p.type?.replace(/_/g,' '),
-      'Authority':     p.governance?.authority,
-      'Status':        p.governance?.status,
-      'Headquarters':  p.headquarters,
-      'Notification':  p.notification,
-      'Border with':   p.border_with,
+      'Type':          KIND_LABEL[p.type] ? t(KIND_LABEL[p.type]) : p.type?.replace(/_/g,' '),
+      'Authority':     tf(p.governance ?? {}, 'authority'),
+      'Status':        p.governance?.status ? t(tf(p.governance, 'status')) : null,
+      'Headquarters':  tf(p, 'headquarters'),
+      'Notification':  tf(p, 'notification'),
+      'Border with':   tf(p, 'border_with'),
       'Border length': p.border_km,
     };
     for (const [k, v] of Object.entries(rows)) {
       if (!v || typeof v === 'object') continue;
-      dl.append(el('dt', {}, [k]));
+      dl.append(el('dt', {}, [t(k)]));
       dl.append(el('dd', {}, [String(v)]));
     }
-    if (dl.children.length) wrap.append(section('Administrative Context', dl));
+    if (dl.children.length) wrap.append(section(t('Administrative Context'), dl));
   }
 
   // Regional Identity — for cultural regions
   if (p.type === 'regional_cultural_zone') {
     const dl = el('dl', { class: 'ed-row' });
+    const sig = tf(p, 'signature');
     const rows = {
-      'Historical seat':  p.seat,
-      'Cultural core':    p.core,
-      'Dialect':          p.dialect,
-      'Signature':        Array.isArray(p.signature) ? p.signature.join(' · ') : p.signature,
+      'Historical seat':  tf(p, 'seat'),
+      'Cultural core':    tf(p, 'core'),
+      'Dialect':          tf(p, 'dialect'),
+      'Signature':        Array.isArray(sig) ? sig.join(' · ') : sig,
     };
     for (const [k, v] of Object.entries(rows)) {
       if (!v) continue;
-      dl.append(el('dt', {}, [k]));
+      dl.append(el('dt', {}, [t(k)]));
       dl.append(el('dd', {}, [String(v)]));
     }
-    if (dl.children.length) wrap.append(section('Regional Identity', dl));
+    if (dl.children.length) wrap.append(section(t('Regional Identity'), dl));
   }
 
   // Physical Setting — for cultural regions + border zones
   if (p.physical) {
-    wrap.append(section('Physical Setting',
-      el('p', { class: 'ed-overview' }, [p.physical])));
+    wrap.append(section(t('Physical Setting'),
+      el('p', { class: 'ed-overview' }, [tf(p, 'physical')])));
   }
 
   // Economic Connections — for cultural regions + urban centres + corridors
   if (p.economy || p.urban_role || p.axis) {
     const box = el('div', {});
-    if (p.economy)    box.append(el('p', { class: 'ed-overview' }, [`Economy — ${p.economy}.`]));
-    if (p.urban_role) box.append(el('p', { class: 'ed-overview' }, [`Role — ${p.urban_role}.`]));
-    if (p.axis)       box.append(el('p', { class: 'ed-overview' }, [`Development axis — ${p.axis}.`]));
+    if (p.economy)    box.append(el('p', { class: 'ed-overview' }, [`${t('Economy')} — ${tf(p, 'economy')}.`]));
+    if (p.urban_role) box.append(el('p', { class: 'ed-overview' }, [`${t('Role')} — ${tf(p, 'urban_role')}.`]));
+    if (p.axis)       box.append(el('p', { class: 'ed-overview' }, [`${t('Development axis')} — ${tf(p, 'axis')}.`]));
     if (p.population_lakh != null) box.append(el('p', { class: 'ed-overview' }, [
-      `Population — ~${p.population_lakh} lakh.`]));
-    wrap.append(section('Economic Connections', box));
+      `${t('Population')} — ~${p.population_lakh} ${t('lakh')}.`]));
+    wrap.append(section(t('Economic Connections'), box));
   }
 
   // Development Profile — for smart cities + urban centres + corridors
@@ -480,17 +511,17 @@ function renderHumanGeographySections(wrap, p) {
     const dl = el('dl', { class: 'ed-row' });
     const rows = {
       'Rank':             p.rank ? `#${p.rank}` : null,
-      'Population':       p.population_lakh != null ? `${p.population_lakh} lakh` : null,
+      'Population':       p.population_lakh != null ? `${p.population_lakh} ${t('lakh')}` : null,
       'Notified':         p.notified,
-      'Anchor project':   p.anchor_project,
-      'Development axis': p.axis,
+      'Anchor project':   tf(p, 'anchor_project'),
+      'Development axis': tf(p, 'axis'),
     };
     for (const [k, v] of Object.entries(rows)) {
       if (!v) continue;
-      dl.append(el('dt', {}, [k]));
+      dl.append(el('dt', {}, [t(k)]));
       dl.append(el('dd', {}, [String(v)]));
     }
-    if (dl.children.length) wrap.append(section('Development Profile', dl));
+    if (dl.children.length) wrap.append(section(t('Development Profile'), dl));
   }
 }
 
