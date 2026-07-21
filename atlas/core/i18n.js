@@ -715,6 +715,13 @@ const DICT = {
   /* Panch Gaurav layer (custom/panch-gaurav.geojson) */
   'Panch Gaurav':                     'पंच गौरव',
 
+  /* Take a tour (TourGuide.js) */
+  'Take a tour':                      'टूर लें',
+  'Skip':                             'छोड़ें',
+  'Back':                             'पीछे',
+  'Next':                             'आगे',
+  'Done':                             'हो गया',
+
   /* Statistics overlay + district detail (UIManager.js) */
   'None notified by MoEFCC.':         'MoEFCC द्वारा कोई अधिसूचित नहीं।',
   'Sum of NP + TR + WLS areas.':      'राष्ट्रीय उद्यान + टाइगर रिज़र्व + अभयारण्य क्षेत्रफल का योग।',
