@@ -490,6 +490,7 @@ const DICT = {
   'Axis':                             'अक्ष',
   'Class range':                      'श्रेणी-सीमा',
   'Metric':                           'मापक',
+  'density':'घनत्व','growth_pct':'वृद्धि %','literacy_pct':'साक्षरता %','sex_ratio':'लिंग-अनुपात','urban_pct':'नगरीय %','st_pct':'ST %','sc_pct':'SC %',
   'Signature':                        'विशिष्टता',
   'Notes':                            'टिप्पणी',
 
@@ -512,6 +513,18 @@ const DICT = {
   'Role':                             'भूमिका',
   'Development axis':                 'विकास अक्ष',
   'Rank':                             'रैंक',
+
+  /* District names — used for district_values keys, related chips, and
+   * any t(district) call across the thematic/physical cards. */
+  'Ajmer':'अजमेर','Alwar':'अलवर','Balotra':'बालोतरा','Banswara':'बांसवाड़ा','Baran':'बारां',
+  'Barmer':'बाड़मेर','Beawar':'ब्यावर','Bharatpur':'भरतपुर','Bhilwara':'भीलवाड़ा','Bikaner':'बीकानेर',
+  'Bundi':'बूँदी','Chittorgarh':'चित्तौड़गढ़','Churu':'चूरू','Dausa':'दौसा','Deeg':'डीग',
+  'Dholpur':'धौलपुर','Didwana-Kuchaman':'डीडवाना-कुचामन','Dungarpur':'डूंगरपुर','Hanumangarh':'हनुमानगढ़',
+  'Jaipur':'जयपुर','Jaisalmer':'जैसलमेर','Jalore':'जालोर','Jhalawar':'झालावाड़','Jhunjhunu':'झुंझुनूँ',
+  'Jodhpur':'जोधपुर','Karauli':'करौली','Khairthal-Tijara':'खैरथल-तिजारा','Kota':'कोटा',
+  'Kotputli-Behror':'कोटपूतली-बहरोड़','Nagaur':'नागौर','Pali':'पाली','Phalodi':'फलोदी',
+  'Pratapgarh':'प्रतापगढ़','Rajsamand':'राजसमंद','Salumbar':'सलूम्बर','Sawai Madhopur':'सवाई माधोपुर',
+  'Sikar':'सीकर','Sirohi':'सिरोही','Sri Ganganagar':'श्रीगंगानगर','Tonk':'टोंक','Udaipur':'उदयपुर',
 
   /* Language toggle button labels */
   'Switch to Hindi':                  'हिंदी में देखें',

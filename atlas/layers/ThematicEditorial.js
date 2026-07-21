@@ -218,7 +218,7 @@ function renderCard(feat, layerId) {
     ['Axis',              tf(p, 'axis')],
     ['Class range',       (p.class_min != null && p.class_max != null && p.unit)
                           ? `${p.class_min}–${p.class_max}${p.unit}` : null],
-    ['Metric',            p.metric_key],
+    ['Metric',            t(p.metric_key)],
     ['Signature',         p.signature ? arr('signature').join(' · ') : null],
     ['Notes',             tf(p, 'remark')],
   ];
@@ -232,9 +232,10 @@ function renderCard(feat, layerId) {
   // Module 9 — Editorial sections for human-geography features.
   renderHumanGeographySections(wrap, p);
 
-  // Districts included
+  // Districts included — map each name through t() so it localises even for
+  // layers that don't carry a districts_included_hi array (all 41 in DICT).
   if (p.districts_included?.length) {
-    const dincl = tf(p, 'districts_included');
+    const dincl = tf(p, 'districts_included').map((x) => t(x));
     const box = el('div', {});
     box.append(el('p', { class: 'ed-overview' }, [
       dincl.join(', ') +
@@ -365,6 +366,21 @@ function composeOverview(p, kind) {
       case 'wind_farm':
         bits.push(`${esc(name)} — ${esc(String(p.capacity_mw ?? '?'))} MW। विकासकर्ता: ${esc(p.developer ?? '')}।`);
         if (p.commissioned) bits.push(`${esc(tf(p, 'commissioned'))} में चालू।`);
+        return bits.join(' ');
+      case 'population_density_class':
+      case 'population_growth_class':
+      case 'literacy_class':
+      case 'sex_ratio_class':
+      case 'urbanisation_class':
+      case 'st_class':
+      case 'sc_class':
+        bits.push(`${esc(name)} — राजस्थान के ${dcount} जिले।`);
+        if (p.class_min != null && p.class_max != null && p.unit) {
+          bits.push(`श्रेणी-सीमा: ${p.class_min}–${p.class_max}${esc(p.unit)}।`);
+        }
+        return bits.join(' ');
+      case 'scheduled_area':
+        bits.push(`${esc(name)} — ${esc(tf(p, 'notification') ?? '')}। ${dcount} जिलों में फैला।`);
         return bits.join(' ');
     }
   }
