@@ -7,200 +7,225 @@
       "id": "aravalli-vs-vindhya",
       "category": "physical",
       "key": "Aravalli runs SW–NE INSIDE Rajasthan; Vindhya runs E–W SOUTH of Rajasthan.",
-      "left":  { "name": "Aravalli Range",  "featureId": "aravalli-main-axis", "distinguisher": "~800 Ma fold mountains; runs SW-NE through Rajasthan; climatic divide (Thar west, semi-arid east); Guru Shikhar is highest peak." },
-      "right": { "name": "Vindhya Range",   "featureId": null,                 "distinguisher": "E-W trend on the Malwa plateau margin, SOUTH of Rajasthan; separates North Indian plain from Deccan; the Kota-Bundi plateau is its northern edge." }
+      "key_hi": "अरावली राजस्थान के भीतर द.प.–उ.पू. चलती है; विंध्य राजस्थान के दक्षिण में पू.–प. चलती है।",
+      "left":  { "name": "Aravalli Range",  "featureId": "aravalli-main-axis", "distinguisher": "~800 Ma fold mountains; runs SW-NE through Rajasthan; climatic divide (Thar west, semi-arid east); Guru Shikhar is highest peak.", "name_hi": "अरावली श्रेणी", "distinguisher_hi": "~80 करोड़ वर्ष पुराने वलित पर्वत; राजस्थान से होकर द.प.-उ.पू. चलते हैं; जलवायु विभाजक (पश्चिम में थार, पूर्व में अर्ध-शुष्क); गुरु शिखर सर्वोच्च शिखर।" },
+      "right": { "name": "Vindhya Range",   "featureId": null,                 "distinguisher": "E-W trend on the Malwa plateau margin, SOUTH of Rajasthan; separates North Indian plain from Deccan; the Kota-Bundi plateau is its northern edge.", "name_hi": "विंध्य श्रेणी", "distinguisher_hi": "मालवा पठार के किनारे पू.-प. दिशा, राजस्थान के दक्षिण में; उत्तर भारतीय मैदान को दक्कन से अलग करती है; कोटा-बूँदी पठार इसका उत्तरी छोर है।" }
     },
 
     {
       "id": "chambal-vs-banas",
       "category": "physical",
       "key": "Chambal enters Rajasthan from MP (south); Banas is an entirely intra-Rajasthan river draining Mewar into Chambal.",
-      "left":  { "name": "Chambal River",   "featureId": "chambal-river", "distinguisher": "1,024 km — longest river in Rajasthan; rises in Janapav (MP), forms the Kota-Baran Chambal cascade with Gandhi Sagar, Rana Pratap Sagar, Jawahar Sagar, Kota Barrage." },
-      "right": { "name": "Banas River",     "featureId": "banas-river",   "distinguisher": "Longest INTRA-Rajasthan river; rises in Khamnor (Rajsamand), flows through Bhilwara-Tonk and joins Chambal at Rameshwar Ghat; Bisalpur dam is on the Banas." }
+      "key_hi": "चंबल म.प्र. (दक्षिण) से राजस्थान में प्रवेश करती है; बनास पूरी तरह राजस्थान के भीतर की नदी है जो मेवाड़ को चंबल में अपवाहित करती है।",
+      "left":  { "name": "Chambal River",   "featureId": "chambal-river", "distinguisher": "1,024 km — longest river in Rajasthan; rises in Janapav (MP), forms the Kota-Baran Chambal cascade with Gandhi Sagar, Rana Pratap Sagar, Jawahar Sagar, Kota Barrage.", "name_hi": "चंबल नदी", "distinguisher_hi": "1,024 किमी — राजस्थान की सबसे लंबी नदी; जनापाव (म.प्र.) से निकलती है, गांधी सागर, राणा प्रताप सागर, जवाहर सागर, कोटा बैराज के साथ कोटा-बारां चंबल कैस्केड बनाती है।" },
+      "right": { "name": "Banas River",     "featureId": "banas-river",   "distinguisher": "Longest INTRA-Rajasthan river; rises in Khamnor (Rajsamand), flows through Bhilwara-Tonk and joins Chambal at Rameshwar Ghat; Bisalpur dam is on the Banas.", "name_hi": "बनास नदी", "distinguisher_hi": "राजस्थान के भीतर बहने वाली सबसे लंबी नदी; खमनोर (राजसमंद) से निकलती है, भीलवाड़ा-टोंक से होकर रामेश्वर घाट पर चंबल में मिलती है; बीसलपुर बाँध बनास पर है।" }
     },
 
     {
       "id": "luni-vs-ghaggar",
       "category": "physical",
       "key": "Luni ends in the Rann of Kutch (a saline swamp); Ghaggar simply disappears into the desert with NO outlet.",
-      "left":  { "name": "Luni River",      "featureId": "luni-river",    "distinguisher": "Rises in the Aravalli near Ajmer (Naga hills); Rajasthan's principal Marwar drainage; 495 km; terminates in the Rann of Kutch (Gujarat). Its water turns saline downstream of Balotra." },
-      "right": { "name": "Ghaggar River",   "featureId": "ghaggar-river", "distinguisher": "The 'lost' Saraswati candidate; enters at Hanumangarh, dies out in the Thar without reaching the sea; associated with the Kalibangan Harappan site." }
+      "key_hi": "लूणी कच्छ के रण (एक खारे दलदल) में समाप्त होती है; घग्घर बिना किसी निकास के मरुस्थल में विलीन हो जाती है।",
+      "left":  { "name": "Luni River",      "featureId": "luni-river",    "distinguisher": "Rises in the Aravalli near Ajmer (Naga hills); Rajasthan's principal Marwar drainage; 495 km; terminates in the Rann of Kutch (Gujarat). Its water turns saline downstream of Balotra.", "name_hi": "लूणी नदी", "distinguisher_hi": "अजमेर के निकट अरावली (नाग पहाड़ियों) से निकलती है; राजस्थान का प्रमुख मारवाड़ अपवाह; 495 किमी; कच्छ के रण (गुजरात) में समाप्त होती है। इसका जल बालोतरा के आगे खारा हो जाता है।" },
+      "right": { "name": "Ghaggar River",   "featureId": "ghaggar-river", "distinguisher": "The 'lost' Saraswati candidate; enters at Hanumangarh, dies out in the Thar without reaching the sea; associated with the Kalibangan Harappan site.", "name_hi": "घग्घर नदी", "distinguisher_hi": "'लुप्त' सरस्वती की दावेदार; हनुमानगढ़ पर प्रवेश करती है, समुद्र तक पहुँचे बिना थार में लुप्त हो जाती है; कालीबंगा हड़प्पा स्थल से संबद्ध।" }
     },
 
     {
       "id": "sambhar-vs-pachpadra",
       "category": "physical",
       "key": "Sambhar is India's largest inland salt lake AND a Ramsar site; Pachpadra is smaller but the source of Sambhar-quality 'Punjab salt' historically.",
-      "left":  { "name": "Sambhar Lake",    "featureId": "sambhar-ramsar", "distinguisher": "Rajasthan's LARGEST salt lake; ~9% of India's salt output; Ramsar site (1990); on the Nagaur-Jaipur boundary." },
-      "right": { "name": "Pachpadra Lake",  "featureId": null,             "distinguisher": "Smaller salt lake in Barmer; unique for the twig-based crystallisation method ('lana khar'). No Ramsar status. Sits above the Barmer petroleum basin." }
+      "key_hi": "सांभर भारत की सबसे बड़ी अंतःस्थलीय लवण झील और एक रामसर स्थल है; पचपदरा छोटी है पर ऐतिहासिक रूप से सांभर-गुणवत्ता के 'पंजाब नमक' का स्रोत।",
+      "left":  { "name": "Sambhar Lake",    "featureId": "sambhar-ramsar", "distinguisher": "Rajasthan's LARGEST salt lake; ~9% of India's salt output; Ramsar site (1990); on the Nagaur-Jaipur boundary.", "name_hi": "सांभर झील", "distinguisher_hi": "राजस्थान की सबसे बड़ी लवण झील; भारत के नमक उत्पादन का ~9%; रामसर स्थल (1990); नागौर-जयपुर सीमा पर।" },
+      "right": { "name": "Pachpadra Lake",  "featureId": null,             "distinguisher": "Smaller salt lake in Barmer; unique for the twig-based crystallisation method ('lana khar'). No Ramsar status. Sits above the Barmer petroleum basin.", "name_hi": "पचपदरा झील", "distinguisher_hi": "बाड़मेर की छोटी लवण झील; टहनी-आधारित क्रिस्टलीकरण विधि ('लाना खार') के लिए अनूठी। कोई रामसर दर्जा नहीं। बाड़मेर पेट्रोलियम द्रोणी के ऊपर स्थित।" }
     },
 
     {
       "id": "ranthambhore-np-vs-tr",
       "category": "environment",
       "key": "Ranthambhore NP is inside Ranthambhore Tiger Reserve — the TR is larger (adds Sawai Man Singh WLS + Kailadevi WLS).",
-      "left":  { "name": "Ranthambhore NP",  "featureId": "ranthambore-np", "distinguisher": "Notified 1980, ~392 km²; the CORE zone; sits within the tiger reserve." },
-      "right": { "name": "Ranthambhore TR",  "featureId": "ranthambore-tr", "distinguisher": "Notified 1973; ~1411 km² total (NP + Sawai Man Singh WLS + Kailadevi WLS); one of India's first 9 Project Tiger reserves." }
+      "key_hi": "रणथंभौर राष्ट्रीय उद्यान रणथंभौर टाइगर रिज़र्व के भीतर है — टाइगर रिज़र्व बड़ा है (सवाई मानसिंह + कैलादेवी अभयारण्य जोड़ता है)।",
+      "left":  { "name": "Ranthambhore NP",  "featureId": "ranthambore-np", "distinguisher": "Notified 1980, ~392 km²; the CORE zone; sits within the tiger reserve.", "name_hi": "रणथंभौर राष्ट्रीय उद्यान", "distinguisher_hi": "1980 में अधिसूचित, ~392 km²; कोर क्षेत्र; टाइगर रिज़र्व के भीतर स्थित।" },
+      "right": { "name": "Ranthambhore TR",  "featureId": "ranthambore-tr", "distinguisher": "Notified 1973; ~1411 km² total (NP + Sawai Man Singh WLS + Kailadevi WLS); one of India's first 9 Project Tiger reserves.", "name_hi": "रणथंभौर टाइगर रिज़र्व", "distinguisher_hi": "1973 में अधिसूचित; कुल ~1411 km² (राष्ट्रीय उद्यान + सवाई मानसिंह अभयारण्य + कैलादेवी अभयारण्य); भारत की पहली 9 Project Tiger रिज़र्वों में से एक।" }
     },
 
     {
       "id": "keoladeo-vs-sultanpur",
       "category": "environment",
       "key": "Keoladeo (Bharatpur) is a UNESCO World Heritage bird sanctuary; Sultanpur (Haryana) is a smaller NP without WHS status.",
-      "left":  { "name": "Keoladeo Ghana NP", "featureId": "keoladeo-np",   "distinguisher": "UNESCO WHS (1985); Ramsar site (1981); man-made 18th-c. Bharatpur royal duck-shoot converted into India's premier bird sanctuary." },
-      "right": { "name": "Sultanpur NP",       "featureId": null,           "distinguisher": "In Haryana (Gurgaon) — NOT Rajasthan; also famous for migratory birds, but neither a WHS nor a Ramsar site of the same scale." }
+      "key_hi": "केवलादेव (भरतपुर) एक UNESCO विश्व धरोहर पक्षी अभयारण्य है; सुल्तानपुर (हरियाणा) विश्व धरोहर दर्जे के बिना एक छोटा राष्ट्रीय उद्यान है।",
+      "left":  { "name": "Keoladeo Ghana NP", "featureId": "keoladeo-np",   "distinguisher": "UNESCO WHS (1985); Ramsar site (1981); man-made 18th-c. Bharatpur royal duck-shoot converted into India's premier bird sanctuary.", "name_hi": "केवलादेव घना राष्ट्रीय उद्यान", "distinguisher_hi": "UNESCO विश्व धरोहर (1985); रामसर स्थल (1981); 18वीं सदी का मानव-निर्मित भरतपुर राजसी बत्तख-शिकार स्थल जो भारत के प्रमुख पक्षी अभयारण्य में बदला।" },
+      "right": { "name": "Sultanpur NP",       "featureId": null,           "distinguisher": "In Haryana (Gurgaon) — NOT Rajasthan; also famous for migratory birds, but neither a WHS nor a Ramsar site of the same scale.", "name_hi": "सुल्तानपुर राष्ट्रीय उद्यान", "distinguisher_hi": "हरियाणा (गुड़गाँव) में — राजस्थान में नहीं; प्रवासी पक्षियों के लिए प्रसिद्ध, पर न विश्व धरोहर न उसी स्तर का रामसर स्थल।" }
     },
 
     {
       "id": "desert-np-vs-kutch-desert-ws",
       "category": "environment",
       "key": "Desert NP is in Rajasthan (Jaisalmer-Barmer); Kutch Desert WS is in Gujarat.",
-      "left":  { "name": "Desert National Park", "featureId": "desert-np", "distinguisher": "Rajasthan's largest NP (~3162 km²); in Jaisalmer-Barmer; the last stronghold of the Godawan (Great Indian Bustard)." },
-      "right": { "name": "Kutch Desert WS",       "featureId": null,        "distinguisher": "In Gujarat's Rann of Kutch; famous for wild ass (Ghudkhur) and flamingoes. Different biome (salt marsh, not sand-desert)." }
+      "key_hi": "मरु राष्ट्रीय उद्यान राजस्थान में है (जैसलमेर-बाड़मेर); कच्छ मरु अभयारण्य गुजरात में है।",
+      "left":  { "name": "Desert National Park", "featureId": "desert-np", "distinguisher": "Rajasthan's largest NP (~3162 km²); in Jaisalmer-Barmer; the last stronghold of the Godawan (Great Indian Bustard).", "name_hi": "मरु राष्ट्रीय उद्यान", "distinguisher_hi": "राजस्थान का सबसे बड़ा राष्ट्रीय उद्यान (~3162 km²); जैसलमेर-बाड़मेर में; गोडावण (ग्रेट इंडियन बस्टर्ड) की अंतिम शरणस्थली।" },
+      "right": { "name": "Kutch Desert WS",       "featureId": null,        "distinguisher": "In Gujarat's Rann of Kutch; famous for wild ass (Ghudkhur) and flamingoes. Different biome (salt marsh, not sand-desert).", "name_hi": "कच्छ मरु वन्यजीव अभयारण्य", "distinguisher_hi": "गुजरात के कच्छ के रण में; जंगली गधे (घुड़खर) और राजहंस के लिए प्रसिद्ध। भिन्न जैवक्षेत्र (लवण दलदल, रेत-मरुस्थल नहीं)।" }
     },
 
     {
       "id": "godawan-vs-sonchiraiya",
       "category": "environment",
       "key": "Godawan = Great Indian Bustard (Rajasthan's state bird); Sonchiraiya = Lesser Florican, a smaller bustard.",
-      "left":  { "name": "Godawan (Great Indian Bustard)", "featureId": null, "distinguisher": "Rajasthan's state bird (1981); critically endangered; stronghold in Desert NP; ~150 birds left in India." },
-      "right": { "name": "Sonchiraiya (Lesser Florican)",   "featureId": null, "distinguisher": "Smaller bustard, endangered; monsoon breeding visitor to Shokaliya (Ajmer); NOT the state bird — often confused because both are grassland bustards." }
+      "key_hi": "गोडावण = ग्रेट इंडियन बस्टर्ड (राजस्थान का राज्य पक्षी); सोनचिड़िया = लेसर फ्लोरिकन, एक छोटा बस्टर्ड।",
+      "left":  { "name": "Godawan (Great Indian Bustard)", "featureId": null, "distinguisher": "Rajasthan's state bird (1981); critically endangered; stronghold in Desert NP; ~150 birds left in India.", "name_hi": "गोडावण (ग्रेट इंडियन बस्टर्ड)", "distinguisher_hi": "राजस्थान का राज्य पक्षी (1981); अति-संकटग्रस्त; मरु राष्ट्रीय उद्यान में गढ़; भारत में ~150 पक्षी शेष।" },
+      "right": { "name": "Sonchiraiya (Lesser Florican)",   "featureId": null, "distinguisher": "Smaller bustard, endangered; monsoon breeding visitor to Shokaliya (Ajmer); NOT the state bird — often confused because both are grassland bustards.", "name_hi": "सोनचिड़िया (लेसर फ्लोरिकन)", "distinguisher_hi": "छोटा बस्टर्ड, संकटग्रस्त; शोकालिया (अजमेर) में मानसून प्रजनन-आगंतुक; राज्य पक्षी नहीं — अक्सर भ्रमित क्योंकि दोनों घास-मैदानी बस्टर्ड हैं।" }
     },
 
     {
       "id": "khejri-vs-rohira",
       "category": "environment",
       "key": "Khejri is the state TREE; Rohira is the state FLOWER (and also a tree — the desert teak).",
-      "left":  { "name": "Khejri",  "featureId": null, "distinguisher": "State tree (1983). Prosopis cineraria. Sacred to the Bishnoi; the 1730 Khejarli sacrifice defended it." },
-      "right": { "name": "Rohira",  "featureId": null, "distinguisher": "State FLOWER (not tree, 1983). Tecomella undulata. Called 'Marwar teak'; golden-yellow flowers; native to Aravalli-Thar." }
+      "key_hi": "खेजड़ी राज्य वृक्ष है; रोहिड़ा राज्य पुष्प है (और एक वृक्ष भी — मरु सागवान)।",
+      "left":  { "name": "Khejri",  "featureId": null, "distinguisher": "State tree (1983). Prosopis cineraria. Sacred to the Bishnoi; the 1730 Khejarli sacrifice defended it.", "name_hi": "खेजड़ी", "distinguisher_hi": "राज्य वृक्ष (1983)। Prosopis cineraria। विश्नोइयों के लिए पवित्र; 1730 के खेजड़ली बलिदान ने इसकी रक्षा की।" },
+      "right": { "name": "Rohira",  "featureId": null, "distinguisher": "State FLOWER (not tree, 1983). Tecomella undulata. Called 'Marwar teak'; golden-yellow flowers; native to Aravalli-Thar.", "name_hi": "रोहिड़ा", "distinguisher_hi": "राज्य पुष्प (वृक्ष नहीं, 1983)। Tecomella undulata। 'मारवाड़ सागवान' कहलाता है; स्वर्ण-पीले पुष्प; अरावली-थार का मूल।" }
     },
 
     {
       "id": "chittor-jauhars",
       "category": "history",
       "key": "Chittorgarh saw three great jauhars; each by a different queen against a different attacker.",
-      "left":  { "name": "1303 Padmini Jauhar",    "featureId": "chittor-siege-1303", "distinguisher": "Rani Padmini; attacker Alauddin Khilji (Delhi Sultanate); Rawal Ratan Singh's queen." },
-      "right": { "name": "1535 & 1568 Jauhars",     "featureId": "chittorgarh-fort",   "distinguisher": "1535: Rani Karnavati vs Bahadur Shah of Gujarat. 1568: 'Sakka' vs Akbar (final jauhar under Rani Phool Kanwar); after this, Chittor never rebuilt as capital." }
+      "key_hi": "चित्तौड़गढ़ में तीन महान जौहर हुए; प्रत्येक अलग रानी द्वारा अलग आक्रमणकारी के विरुद्ध।",
+      "left":  { "name": "1303 Padmini Jauhar",    "featureId": "chittor-siege-1303", "distinguisher": "Rani Padmini; attacker Alauddin Khilji (Delhi Sultanate); Rawal Ratan Singh's queen.", "name_hi": "1303 पद्मिनी जौहर", "distinguisher_hi": "रानी पद्मिनी; आक्रमणकारी अलाउद्दीन ख़िलजी (दिल्ली सल्तनत); रावल रतन सिंह की रानी।" },
+      "right": { "name": "1535 & 1568 Jauhars",     "featureId": "chittorgarh-fort",   "distinguisher": "1535: Rani Karnavati vs Bahadur Shah of Gujarat. 1568: 'Sakka' vs Akbar (final jauhar under Rani Phool Kanwar); after this, Chittor never rebuilt as capital.", "name_hi": "1535 और 1568 जौहर", "distinguisher_hi": "1535: रानी कर्णावती बनाम गुजरात के बहादुर शाह। 1568: 'सक्का' बनाम अकबर (रानी फूल कँवर के नेतृत्व में अंतिम जौहर); इसके बाद चित्तौड़ फिर कभी राजधानी नहीं बना।" }
     },
 
     {
       "id": "khanwa-vs-haldighati",
       "category": "history",
       "key": "Khanwa (1527) was Rana Sanga's DEFEAT by Babur; Haldighati (1576) was Maharana Pratap's indecisive stand against Akbar's Man Singh.",
-      "left":  { "name": "Battle of Khanwa (1527)", "featureId": "khanwa",     "distinguisher": "Rana Sanga of Mewar vs Babur; decisive Mughal victory that consolidated Babur's Indian conquest. Site: Khanwa near Bharatpur." },
-      "right": { "name": "Battle of Haldighati (1576)", "featureId": "haldighati", "distinguisher": "Maharana Pratap vs Akbar's forces led by Raja Man Singh I of Amber; tactically inconclusive; Pratap escaped on Chetak; site: Rakt Talai near Nathdwara." }
+      "key_hi": "खानवा (1527) बाबर द्वारा राणा सांगा की पराजय थी; हल्दीघाटी (1576) अकबर के मानसिंह के विरुद्ध महाराणा प्रताप की अनिर्णायक टक्कर थी।",
+      "left":  { "name": "Battle of Khanwa (1527)", "featureId": "khanwa",     "distinguisher": "Rana Sanga of Mewar vs Babur; decisive Mughal victory that consolidated Babur's Indian conquest. Site: Khanwa near Bharatpur.", "name_hi": "खानवा का युद्ध (1527)", "distinguisher_hi": "मेवाड़ के राणा सांगा बनाम बाबर; निर्णायक मुग़ल विजय जिसने बाबर की भारत-विजय को सुदृढ़ किया। स्थल: भरतपुर के निकट खानवा।" },
+      "right": { "name": "Battle of Haldighati (1576)", "featureId": "haldighati", "distinguisher": "Maharana Pratap vs Akbar's forces led by Raja Man Singh I of Amber; tactically inconclusive; Pratap escaped on Chetak; site: Rakt Talai near Nathdwara.", "name_hi": "हल्दीघाटी का युद्ध (1576)", "distinguisher_hi": "महाराणा प्रताप बनाम आमेर के राजा मानसिंह प्रथम के नेतृत्व में अकबर की सेना; रणनीतिक रूप से अनिर्णायक; प्रताप चेतक पर बच निकले; स्थल: नाथद्वारा के निकट रक्त तलाई।" }
     },
 
     {
       "id": "kumbhalgarh-vs-chittorgarh",
       "category": "history",
       "key": "Both were Mewar capitals — but Kumbhalgarh was NEVER breached in war; Chittor fell three times (jauhars).",
-      "left":  { "name": "Kumbhalgarh Fort",  "featureId": "kumbhalgarh-fort", "distinguisher": "Built by Rana Kumbha (r. 1433-68); 36-km walls — world's 2nd longest continuous wall; birthplace of Maharana Pratap; NEVER breached (fell only once via water-poisoning trick, 1578)." },
-      "right": { "name": "Chittorgarh Fort",  "featureId": "chittorgarh-fort", "distinguisher": "India's largest fort by area (280 ha); Mewar CAPITAL until 1568; site of the three great jauhars; abandoned as capital after 1568 Akbar siege." }
+      "key_hi": "दोनों मेवाड़ की राजधानियाँ थीं — पर कुंभलगढ़ युद्ध में कभी नहीं भेदा गया; चित्तौड़ तीन बार गिरा (जौहर)।",
+      "left":  { "name": "Kumbhalgarh Fort",  "featureId": "kumbhalgarh-fort", "distinguisher": "Built by Rana Kumbha (r. 1433-68); 36-km walls — world's 2nd longest continuous wall; birthplace of Maharana Pratap; NEVER breached (fell only once via water-poisoning trick, 1578).", "name_hi": "कुंभलगढ़ दुर्ग", "distinguisher_hi": "राणा कुंभा (शासन 1433-68) द्वारा निर्मित; 36-किमी दीवारें — विश्व की दूसरी सबसे लंबी निरंतर दीवार; महाराणा प्रताप का जन्मस्थान; कभी नहीं भेदा गया (केवल एक बार जल-विषाक्तन की चाल से गिरा, 1578)।" },
+      "right": { "name": "Chittorgarh Fort",  "featureId": "chittorgarh-fort", "distinguisher": "India's largest fort by area (280 ha); Mewar CAPITAL until 1568; site of the three great jauhars; abandoned as capital after 1568 Akbar siege.", "name_hi": "चित्तौड़गढ़ दुर्ग", "distinguisher_hi": "क्षेत्रफल में भारत का सबसे बड़ा दुर्ग (280 हेक्टेयर); 1568 तक मेवाड़ की राजधानी; तीन महान जौहरों का स्थल; 1568 की अकबर घेराबंदी के बाद राजधानी के रूप में त्यागा गया।" }
     },
 
     {
       "id": "amber-vs-jaigarh-vs-nahargarh",
       "category": "history",
       "key": "All three ring Jaipur — Amber is the old CAPITAL (pre-1727); Jaigarh has the cannon foundry; Nahargarh is the northern watchtower.",
-      "left":  { "name": "Amber (Amer) Fort",  "featureId": "amber-fort",    "distinguisher": "Kachhawaha CAPITAL from 967 CE to 1727; UNESCO Hill Fort; the Sheesh Mahal is here; built up by Raja Man Singh I (1592)." },
-      "right": { "name": "Jaigarh + Nahargarh", "featureId": "jaigarh-fort", "distinguisher": "Jaigarh (1726): direct above Amber, houses 'Jaivan' — the world's largest wheeled cannon; had India's only in-fort cannon foundry. Nahargarh (1734): northern watchtower; ring-fort trio with Amber and Jaigarh." }
+      "key_hi": "तीनों जयपुर को घेरते हैं — आमेर पुरानी राजधानी है (1727-पूर्व); जयगढ़ में तोप-ढलाई है; नाहरगढ़ उत्तरी प्रहरी-दुर्ग है।",
+      "left":  { "name": "Amber (Amer) Fort",  "featureId": "amber-fort",    "distinguisher": "Kachhawaha CAPITAL from 967 CE to 1727; UNESCO Hill Fort; the Sheesh Mahal is here; built up by Raja Man Singh I (1592).", "name_hi": "आमेर (आमेर) दुर्ग", "distinguisher_hi": "967 ई. से 1727 तक कछवाहा राजधानी; UNESCO पहाड़ी दुर्ग; शीश महल यहीं है; राजा मानसिंह प्रथम (1592) द्वारा विस्तारित।" },
+      "right": { "name": "Jaigarh + Nahargarh", "featureId": "jaigarh-fort", "distinguisher": "Jaigarh (1726): direct above Amber, houses 'Jaivan' — the world's largest wheeled cannon; had India's only in-fort cannon foundry. Nahargarh (1734): northern watchtower; ring-fort trio with Amber and Jaigarh.", "name_hi": "जयगढ़ + नाहरगढ़", "distinguisher_hi": "जयगढ़ (1726): आमेर के ठीक ऊपर, 'जयवाण' — विश्व की सबसे बड़ी पहिएदार तोप — यहाँ है; भारत की एकमात्र दुर्ग-भीतरी तोप-ढलाई थी। नाहरगढ़ (1734): उत्तरी प्रहरी-दुर्ग; आमेर और जयगढ़ के साथ त्रि-दुर्ग।" }
     },
 
     {
       "id": "thewa-vs-meenakari-vs-kundan",
       "category": "culture",
       "key": "Three gold-based crafts — all different: Thewa is gold-on-glass (Pratapgarh); Meenakari is enamel-on-gold (Jaipur); Kundan is uncut-stone gem-setting (Jaipur).",
-      "left":  { "name": "Thewa (Pratapgarh)",   "featureId": "handicraft-clusters-thewa",         "distinguisher": "Openwork gold sheet fused onto molten COLOURED GLASS at 500°C. Only in Pratapgarh; only Raj-Soni families make it." },
-      "right": { "name": "Meenakari + Kundan (Jaipur)", "featureId": "handicraft-clusters-kundan-meena", "distinguisher": "Meenakari = enamel (mineral oxides fired on gold, no glass). Kundan = 24-carat gold gem-setting with uncut precious stones. Both practised together in Jaipur's Johari Bazaar." }
+      "key_hi": "तीन स्वर्ण-आधारित शिल्प — सभी भिन्न: थेवा स्वर्ण-पर-काँच है (प्रतापगढ़); मीनाकारी स्वर्ण-पर-तामचीनी है (जयपुर); कुंदन बिना-तराशे रत्न-जड़ाई है (जयपुर)।",
+      "left":  { "name": "Thewa (Pratapgarh)",   "featureId": "handicraft-clusters-thewa",         "distinguisher": "Openwork gold sheet fused onto molten COLOURED GLASS at 500°C. Only in Pratapgarh; only Raj-Soni families make it.", "name_hi": "थेवा (प्रतापगढ़)", "distinguisher_hi": "500°C पर पिघले रंगीन काँच पर जड़ी स्वर्ण-पत्र की जालीदार कारीगरी। केवल प्रतापगढ़ में; केवल राज-सोनी परिवार बनाते हैं।" },
+      "right": { "name": "Meenakari + Kundan (Jaipur)", "featureId": "handicraft-clusters-kundan-meena", "distinguisher": "Meenakari = enamel (mineral oxides fired on gold, no glass). Kundan = 24-carat gold gem-setting with uncut precious stones. Both practised together in Jaipur's Johari Bazaar.", "name_hi": "मीनाकारी + कुंदन (जयपुर)", "distinguisher_hi": "मीनाकारी = तामचीनी (स्वर्ण पर पकाए खनिज ऑक्साइड, काँच नहीं)। कुंदन = बिना तराशे बहुमूल्य रत्नों की 24-कैरेट स्वर्ण जड़ाई। दोनों जयपुर के जौहरी बाज़ार में साथ की जाती हैं।" }
     },
 
     {
       "id": "bandhej-vs-block-print",
       "category": "culture",
       "key": "Bandhej is TIE-DYE (resist); Bagru/Sanganer are BLOCK-PRINTS (applied dye). Different technique family.",
-      "left":  { "name": "Bandhej & Leheriya", "featureId": "handicraft-clusters-bandhej",        "distinguisher": "TIE-DYE — thousands of knots tied before dyeing (Bandhej dots) or diagonal rolling (Leheriya waves). Shekhawati and Jaipur belt." },
-      "right": { "name": "Bagru & Sanganer",    "featureId": "handicraft-clusters-sanganeri-printing", "distinguisher": "HAND-BLOCK PRINTS — carved wooden blocks stamp dye onto cloth. Sanganer = fine floral; Bagru = earth-tone geometric with iron-mordant dyes." }
+      "key_hi": "बंधेज टाई-डाई है (प्रतिरोध); बगरू/सांगानेर ब्लॉक-छपाई हैं (लगाया रंग)। भिन्न तकनीक-परिवार।",
+      "left":  { "name": "Bandhej & Leheriya", "featureId": "handicraft-clusters-bandhej",        "distinguisher": "TIE-DYE — thousands of knots tied before dyeing (Bandhej dots) or diagonal rolling (Leheriya waves). Shekhawati and Jaipur belt.", "name_hi": "बंधेज और लहरिया", "distinguisher_hi": "टाई-डाई — रंगाई से पहले हज़ारों गाँठें बाँधना (बंधेज बिंदु) या तिरछी लपेट (लहरिया तरंगें)। शेखावाटी और जयपुर पेटी।" },
+      "right": { "name": "Bagru & Sanganer",    "featureId": "handicraft-clusters-sanganeri-printing", "distinguisher": "HAND-BLOCK PRINTS — carved wooden blocks stamp dye onto cloth. Sanganer = fine floral; Bagru = earth-tone geometric with iron-mordant dyes.", "name_hi": "बगरू और सांगानेर", "distinguisher_hi": "हाथ-ब्लॉक छपाई — तराशे लकड़ी के ब्लॉक कपड़े पर रंग छापते हैं। सांगानेर = महीन पुष्प; बगरू = लौह-रंजक के साथ मृदा-रंगी ज्यामितीय।" }
     },
 
     {
       "id": "bagru-vs-sanganer",
       "category": "culture",
       "key": "Both are block-print villages 30 km apart — but Sanganeri uses fine floral vegetable dyes; Bagru uses earth-tone iron-mordant.",
-      "left":  { "name": "Sanganeri Printing", "featureId": "handicraft-clusters-sanganeri-printing", "distinguisher": "Fine floral motifs on cotton; VEGETABLE dyes; light palette (pastel red, indigo); practised by the Chhipa community." },
-      "right": { "name": "Bagru Printing",      "featureId": "handicraft-clusters-bagru-printing",   "distinguisher": "Earth-tone geometric patterns; IRON-MORDANT dyes; darker palette (indigo, ochre, madder); black lines from ferrous mud." }
+      "key_hi": "दोनों 30 किमी दूर ब्लॉक-छपाई गाँव हैं — पर सांगानेरी महीन पुष्प वानस्पतिक रंग उपयोग करती है; बगरू मृदा-रंगी लौह-रंजक।",
+      "left":  { "name": "Sanganeri Printing", "featureId": "handicraft-clusters-sanganeri-printing", "distinguisher": "Fine floral motifs on cotton; VEGETABLE dyes; light palette (pastel red, indigo); practised by the Chhipa community.", "name_hi": "सांगानेरी छपाई", "distinguisher_hi": "सूती पर महीन पुष्प नमूने; वानस्पतिक रंग; हल्का रंग-पट्ट (पेस्टल लाल, नील); छीपा समुदाय द्वारा।" },
+      "right": { "name": "Bagru Printing",      "featureId": "handicraft-clusters-bagru-printing",   "distinguisher": "Earth-tone geometric patterns; IRON-MORDANT dyes; darker palette (indigo, ochre, madder); black lines from ferrous mud.", "name_hi": "बगरू छपाई", "distinguisher_hi": "मृदा-रंगी ज्यामितीय नमूने; लौह-रंजक रंग; गहरा रंग-पट्ट (नील, गेरू, मजीठ); काली रेखाएँ लौहयुक्त कीचड़ से।" }
     },
 
     {
       "id": "danka-vs-gota-patti",
       "category": "culture",
       "key": "Both are metal-work embroidery of Rajasthan; Danka uses SQUARE leaf-pieces (Udaipur); Gota-Patti uses ribbon STRIPS (Ajmer/Jaipur).",
-      "left":  { "name": "Danka (Udaipur)",       "featureId": "handicraft-clusters-danka", "distinguisher": "Tiny SQUARE dankas of gold/silver leaf hand-stitched onto silk. Only ~20 master families; Mewar royalty commission." },
-      "right": { "name": "Gota-Patti (Jaipur/Ajmer)", "featureId": null,                    "distinguisher": "Continuous thin metal RIBBONS applied as appliqué. Cheaper, more widespread; hallmark of Jaipuri bridal outfits." }
+      "key_hi": "दोनों राजस्थान की धातु-कढ़ाई हैं; डंका वर्गाकार पत्र-टुकड़े उपयोग करता है (उदयपुर); गोटा-पट्टी रिबन-पट्टियाँ उपयोग करती है (अजमेर/जयपुर)।",
+      "left":  { "name": "Danka (Udaipur)",       "featureId": "handicraft-clusters-danka", "distinguisher": "Tiny SQUARE dankas of gold/silver leaf hand-stitched onto silk. Only ~20 master families; Mewar royalty commission.", "name_hi": "डंका (उदयपुर)", "distinguisher_hi": "रेशम पर हाथ से सिले स्वर्ण/रजत पत्र के छोटे वर्गाकार डंके। केवल ~20 गुरु-परिवार; मेवाड़ राजपरिवार का आदेश।" },
+      "right": { "name": "Gota-Patti (Jaipur/Ajmer)", "featureId": null,                    "distinguisher": "Continuous thin metal RIBBONS applied as appliqué. Cheaper, more widespread; hallmark of Jaipuri bridal outfits.", "name_hi": "गोटा-पट्टी (जयपुर/अजमेर)", "distinguisher_hi": "निरंतर पतली धातु-रिबन ऐप्लीक के रूप में लगाई जाती हैं। सस्ती, अधिक व्यापक; जयपुरी दुल्हन-परिधानों की पहचान।" }
     },
 
     {
       "id": "pichwai-vs-phad",
       "category": "culture",
       "key": "Pichwai hangs BEHIND a temple deity (small ritual cloth); Phad is a LONG NARRATIVE scroll for wandering priests.",
-      "left":  { "name": "Pichwai (Nathdwara)", "featureId": "painting-nathdwara", "distinguisher": "Devotional cloth painting placed BEHIND the Shrinathji idol; 24 seasonal rotations; deep blacks/greens/gold; Adi-Gaur painter families." },
-      "right": { "name": "Phad (Bhilwara)",      "featureId": null,               "distinguisher": "20-30 ft long horizontal narrative scroll; unrolled by wandering Bhopa priests as they sing folk-hero epics (Pabuji, Devnarayan). Practised in Bhilwara-Shahpura." }
+      "key_hi": "पिछवाई मंदिर-देवता के पीछे लटकती है (छोटा अनुष्ठानिक वस्त्र); फड़ घुमंतू पुजारियों के लिए एक लंबा आख्यान-पट है।",
+      "left":  { "name": "Pichwai (Nathdwara)", "featureId": "painting-nathdwara", "distinguisher": "Devotional cloth painting placed BEHIND the Shrinathji idol; 24 seasonal rotations; deep blacks/greens/gold; Adi-Gaur painter families.", "name_hi": "पिछवाई (नाथद्वारा)", "distinguisher_hi": "श्रीनाथजी की मूर्ति के पीछे लगाया जाने वाला भक्ति-वस्त्र चित्र; 24 ऋतु-आधारित परिवर्तन; गहरे काले/हरे/स्वर्ण; आदि-गौड़ चित्रकार परिवार।" },
+      "right": { "name": "Phad (Bhilwara)",      "featureId": null,               "distinguisher": "20-30 ft long horizontal narrative scroll; unrolled by wandering Bhopa priests as they sing folk-hero epics (Pabuji, Devnarayan). Practised in Bhilwara-Shahpura.", "name_hi": "फड़ (भीलवाड़ा)", "distinguisher_hi": "20-30 फुट लंबा क्षैतिज आख्यान-पट; घुमंतू भोपा पुजारी लोक-नायक महाकाव्य (पाबूजी, देवनारायण) गाते हुए इसे खोलते हैं। भीलवाड़ा-शाहपुरा में।" }
     },
 
     {
       "id": "bundi-vs-kota-school",
       "category": "culture",
       "key": "Sister schools that split in 1631 — Bundi favoured baramasa and rasikapriya; Kota specialised in JUNGLE HUNTS.",
-      "left":  { "name": "Bundi School",  "featureId": "painting-bundi", "distinguisher": "Palatial night skies, monsoon-clouds, round faces with fish-eyes; Baramasa/Ragamala themes; Chitrashala within Taragarh Fort." },
-      "right": { "name": "Kota School",   "featureId": "painting-kota",  "distinguisher": "Over-life-size TIGER AND BOAR HUNTS; dense entangled forest; action-drawing at a scale unusual for miniature painting. Peaked under Umed Singh I." }
+      "key_hi": "1631 में अलग हुई सहोदर शैलियाँ — बूँदी बारहमासा और रसिकप्रिया को पसंद करती थी; कोटा जंगल-शिकार में विशेषज्ञ।",
+      "left":  { "name": "Bundi School",  "featureId": "painting-bundi", "distinguisher": "Palatial night skies, monsoon-clouds, round faces with fish-eyes; Baramasa/Ragamala themes; Chitrashala within Taragarh Fort.", "name_hi": "बूँदी शैली", "distinguisher_hi": "राजसी रात्रि-आकाश, मानसून-बादल, मछली-आँखों वाले गोल चेहरे; बारहमासा/रागमाला विषय; तारागढ़ दुर्ग के भीतर चित्रशाला।" },
+      "right": { "name": "Kota School",   "featureId": "painting-kota",  "distinguisher": "Over-life-size TIGER AND BOAR HUNTS; dense entangled forest; action-drawing at a scale unusual for miniature painting. Peaked under Umed Singh I.", "name_hi": "कोटा शैली", "distinguisher_hi": "विशालकाय बाघ और सूअर शिकार; घना उलझा वन; लघुचित्रकला के लिए असामान्य पैमाने पर क्रिया-चित्रण। उम्मेद सिंह प्रथम के काल में चरम।" }
     },
 
     {
       "id": "kishangarh-vs-bikaner-school",
       "category": "culture",
       "key": "Both are Mughal-influenced BUT — Kishangarh gave us Bani-Thani (elongated faces, Krishna themes); Bikaner is the most technically REFINED and Sufi-linked.",
-      "left":  { "name": "Kishangarh School", "featureId": "painting-kishangarh", "distinguisher": "'Bani-Thani' style — elongated faces, half-closed almond eyes; developed under Sawant Singh (Nagari Das); painter Nihal Chand. Radha-Krishna themes." },
-      "right": { "name": "Bikaner School",     "featureId": "painting-bikaner",   "distinguisher": "Pale ivory tones, Persian palette (mauve, silver, sap-green); painters SIGNED and dated (rare); Usta-Muslim community; Ali Raza, Ruknuddin masters." }
+      "key_hi": "दोनों मुग़ल-प्रभावित हैं पर — किशनगढ़ ने बणी-ठणी दी (लंबे चेहरे, कृष्ण विषय); बीकानेर तकनीकी रूप से सर्वाधिक परिष्कृत और सूफ़ी-संबद्ध है।",
+      "left":  { "name": "Kishangarh School", "featureId": "painting-kishangarh", "distinguisher": "'Bani-Thani' style — elongated faces, half-closed almond eyes; developed under Sawant Singh (Nagari Das); painter Nihal Chand. Radha-Krishna themes.", "name_hi": "किशनगढ़ शैली", "distinguisher_hi": "'बणी-ठणी' शैली — लंबे चेहरे, अधखुली बादामी आँखें; सावंत सिंह (नागरी दास) के काल में विकसित; चित्रकार निहाल चंद। राधा-कृष्ण विषय।" },
+      "right": { "name": "Bikaner School",     "featureId": "painting-bikaner",   "distinguisher": "Pale ivory tones, Persian palette (mauve, silver, sap-green); painters SIGNED and dated (rare); Usta-Muslim community; Ali Raza, Ruknuddin masters.", "name_hi": "बीकानेर शैली", "distinguisher_hi": "हल्के हाथीदाँती रंग, फ़ारसी रंग-पट्ट (मौव, चाँदी, सैप-हरा); चित्रकार हस्ताक्षर और तिथि अंकित करते थे (दुर्लभ); उस्ता-मुस्लिम समुदाय; अली रज़ा, रुक्नुद्दीन गुरु।" }
     },
 
     {
       "id": "ghoomar-vs-kalbeliya",
       "category": "culture",
       "key": "Ghoomar is the STATE dance (Rajput women); Kalbeliya is the UNESCO-listed serpent dance of the Kalbelia gypsy community.",
-      "left":  { "name": "Ghoomar",    "featureId": null, "distinguisher": "Bhil-origin women's whirl dance adopted by Rajputs; STATE DANCE; concentric circles around a central lamp; hallmark of Teej and weddings." },
-      "right": { "name": "Kalbeliya",   "featureId": null, "distinguisher": "UNESCO Intangible Heritage (2010); serpent-inspired sinuous movement; performed by the Kalbelia snake-charmer community; Gulabo Sapera brought it to world attention." }
+      "key_hi": "घूमर राज्य नृत्य है (राजपूत महिलाएँ); कालबेलिया कालबेलिया घुमंतू समुदाय का UNESCO-सूचीबद्ध साँप-नृत्य है।",
+      "left":  { "name": "Ghoomar",    "featureId": null, "distinguisher": "Bhil-origin women's whirl dance adopted by Rajputs; STATE DANCE; concentric circles around a central lamp; hallmark of Teej and weddings.", "name_hi": "घूमर", "distinguisher_hi": "भील-मूल का महिलाओं का घूर्णन नृत्य जिसे राजपूतों ने अपनाया; राज्य नृत्य; केंद्रीय दीपक के चारों ओर संकेंद्रित वृत्त; तीज और विवाहों की पहचान।" },
+      "right": { "name": "Kalbeliya",   "featureId": null, "distinguisher": "UNESCO Intangible Heritage (2010); serpent-inspired sinuous movement; performed by the Kalbelia snake-charmer community; Gulabo Sapera brought it to world attention.", "name_hi": "कालबेलिया", "distinguisher_hi": "UNESCO अमूर्त विरासत (2010); साँप-प्रेरित लहरदार गति; कालबेलिया सँपेरा समुदाय द्वारा; गुलाबो सपेरा ने इसे विश्व-ध्यान में लाया।" }
     },
 
     {
       "id": "marwar-vs-merwara",
       "category": "administrative",
       "key": "Marwar = the JODHPUR cultural region (Rathore heartland). Merwara = the British-era ADMINISTRATIVE province around Ajmer (a Chief-Commissioner's Province till 1956).",
-      "left":  { "name": "Marwar (cultural region)", "featureId": "regional-zones-marwar", "distinguisher": "The classical Rathore homeland — Jodhpur, Pali, Nagaur, Barmer, Jalore, Jaisalmer. A CULTURAL region." },
-      "right": { "name": "Ajmer-Merwara (colonial unit)", "featureId": null, "distinguisher": "1818-1956 British Chief-Commissioner's Province around Ajmer; NOT a princely state; joined Rajasthan by 1956 States Reorganisation, not by the 1948-50 integration." }
+      "key_hi": "मारवाड़ = जोधपुर सांस्कृतिक क्षेत्र (राठौड़ हृदयस्थल)। मेरवाड़ा = अजमेर के आसपास ब्रिटिश-कालीन प्रशासनिक प्रांत (1956 तक मुख्य-आयुक्त प्रांत)।",
+      "left":  { "name": "Marwar (cultural region)", "featureId": "regional-zones-marwar", "distinguisher": "The classical Rathore homeland — Jodhpur, Pali, Nagaur, Barmer, Jalore, Jaisalmer. A CULTURAL region.", "name_hi": "मारवाड़ (सांस्कृतिक क्षेत्र)", "distinguisher_hi": "शास्त्रीय राठौड़ मातृभूमि — जोधपुर, पाली, नागौर, बाड़मेर, जालोर, जैसलमेर। एक सांस्कृतिक क्षेत्र।" },
+      "right": { "name": "Ajmer-Merwara (colonial unit)", "featureId": null, "distinguisher": "1818-1956 British Chief-Commissioner's Province around Ajmer; NOT a princely state; joined Rajasthan by 1956 States Reorganisation, not by the 1948-50 integration.", "name_hi": "अजमेर-मेरवाड़ा (औपनिवेशिक इकाई)", "distinguisher_hi": "1818-1956 अजमेर के आसपास ब्रिटिश मुख्य-आयुक्त प्रांत; रियासती राज्य नहीं; 1948-50 एकीकरण से नहीं, 1956 राज्य पुनर्गठन से राजस्थान में शामिल।" }
     },
 
     {
       "id": "matsya-vs-vagad",
       "category": "administrative",
       "key": "Both are cultural regions; Matsya is the NORTHEAST (Alwar-Bharatpur), Vagad is the SOUTHERN tribal belt (Banswara-Dungarpur).",
-      "left":  { "name": "Matsya region",  "featureId": "regional-zones-matsya", "distinguisher": "Northeast Rajasthan — Alwar, Bharatpur, Dholpur, Karauli; Mahabharata-era name; briefly a merged state (18 Mar 1948-15 May 1949) before joining Rajasthan Union." },
-      "right": { "name": "Vagad region",    "featureId": "regional-zones-vagad", "distinguisher": "Southern tribal belt — Banswara, Dungarpur, southern Pratapgarh; Bhil-dominated; TSP Fifth-Schedule Area; Mahi Bajaj Sagar irrigates the belt." }
+      "key_hi": "दोनों सांस्कृतिक क्षेत्र हैं; मत्स्य उत्तर-पूर्व है (अलवर-भरतपुर), वागड़ दक्षिणी जनजातीय पेटी है (बांसवाड़ा-डूंगरपुर)।",
+      "left":  { "name": "Matsya region",  "featureId": "regional-zones-matsya", "distinguisher": "Northeast Rajasthan — Alwar, Bharatpur, Dholpur, Karauli; Mahabharata-era name; briefly a merged state (18 Mar 1948-15 May 1949) before joining Rajasthan Union.", "name_hi": "मत्स्य क्षेत्र", "distinguisher_hi": "उत्तर-पूर्वी राजस्थान — अलवर, भरतपुर, धौलपुर, करौली; महाभारत-कालीन नाम; राजस्थान संघ में शामिल होने से पहले संक्षेप में एक संयुक्त राज्य (18 मार्च 1948-15 मई 1949)।" },
+      "right": { "name": "Vagad region",    "featureId": "regional-zones-vagad", "distinguisher": "Southern tribal belt — Banswara, Dungarpur, southern Pratapgarh; Bhil-dominated; TSP Fifth-Schedule Area; Mahi Bajaj Sagar irrigates the belt.", "name_hi": "वागड़ क्षेत्र", "distinguisher_hi": "दक्षिणी जनजातीय पेटी — बांसवाड़ा, डूंगरपुर, दक्षिणी प्रतापगढ़; भील-प्रधान; TSP पाँचवीं-अनुसूची क्षेत्र; माही बजाज सागर पेटी की सिंचाई करता है।" }
     },
 
     {
       "id": "chinkara-vs-blackbuck",
       "category": "environment",
       "key": "Chinkara is the STATE animal (a small gazelle); Blackbuck is a separate antelope with spiral horns.",
-      "left":  { "name": "Chinkara",   "featureId": null, "distinguisher": "State animal (1981) — the Indian gazelle, small (~25 kg), pale-tan coat, straight horns. Ranges across Thar, Sariska, Ranthambhore." },
-      "right": { "name": "Blackbuck",   "featureId": null, "distinguisher": "Larger (~40 kg) antelope; males turn black-brown with SPIRAL horns; state animal of neighbouring Haryana/Punjab. Tal Chhapar Sanctuary (Churu) is Rajasthan's key blackbuck reserve." }
+      "key_hi": "चिंकारा राज्य पशु है (एक छोटा चिंकारा); कृष्णमृग सर्पिल सींगों वाला एक अलग मृग है।",
+      "left":  { "name": "Chinkara",   "featureId": null, "distinguisher": "State animal (1981) — the Indian gazelle, small (~25 kg), pale-tan coat, straight horns. Ranges across Thar, Sariska, Ranthambhore.", "name_hi": "चिंकारा", "distinguisher_hi": "राज्य पशु (1981) — भारतीय चिंकारा, छोटा (~25 किग्रा), हल्के-भूरे रंग का, सीधे सींग। थार, सरिस्का, रणथंभौर में फैला।" },
+      "right": { "name": "Blackbuck",   "featureId": null, "distinguisher": "Larger (~40 kg) antelope; males turn black-brown with SPIRAL horns; state animal of neighbouring Haryana/Punjab. Tal Chhapar Sanctuary (Churu) is Rajasthan's key blackbuck reserve.", "name_hi": "कृष्णमृग", "distinguisher_hi": "बड़ा (~40 किग्रा) मृग; नर काले-भूरे और सर्पिल सींगों वाले हो जाते हैं; पड़ोसी हरियाणा/पंजाब का राज्य पशु। तालछापर अभयारण्य (चूरू) राजस्थान का प्रमुख कृष्णमृग रिज़र्व है।" }
     },
 
     {
       "id": "kalibangan-vs-ahar",
       "category": "history",
       "key": "Kalibangan is a HARAPPAN site on the Ghaggar (northwest Rajasthan); Ahar (Aharh) is a CHALCOLITHIC pre-Harappan culture on the Ayad river near Udaipur.",
-      "left":  { "name": "Kalibangan",  "featureId": null, "distinguisher": "Hanumangarh district; on the (extinct) Saraswati/Ghaggar; MATURE HARAPPAN + pre-Harappan phases; oldest ploughed field known in the world (c. 2800 BCE); world's earliest earthquake evidence." },
-      "right": { "name": "Ahar-Banas culture", "featureId": null, "distinguisher": "Ayad river near Udaipur; ~3000-1500 BCE; CHALCOLITHIC (copper-stone), independent of Harappa; ~90 sites in southern Rajasthan; Ahar copper artefacts predate Harappan copper." }
+      "key_hi": "कालीबंगा घग्घर पर एक हड़प्पा स्थल है (उत्तर-पश्चिम राजस्थान); आहड़ (आहड़) उदयपुर के निकट आयड़ नदी पर एक ताम्रपाषाणिक पूर्व-हड़प्पा संस्कृति है।",
+      "left":  { "name": "Kalibangan",  "featureId": null, "distinguisher": "Hanumangarh district; on the (extinct) Saraswati/Ghaggar; MATURE HARAPPAN + pre-Harappan phases; oldest ploughed field known in the world (c. 2800 BCE); world's earliest earthquake evidence.", "name_hi": "कालीबंगा", "distinguisher_hi": "हनुमानगढ़ जिला; (विलुप्त) सरस्वती/घग्घर पर; परिपक्व हड़प्पा + पूर्व-हड़प्पा चरण; विश्व का ज्ञात प्राचीनतम जुता खेत (लगभग 2800 ई.पू.); विश्व का प्राचीनतम भूकंप-साक्ष्य।" },
+      "right": { "name": "Ahar-Banas culture", "featureId": null, "distinguisher": "Ayad river near Udaipur; ~3000-1500 BCE; CHALCOLITHIC (copper-stone), independent of Harappa; ~90 sites in southern Rajasthan; Ahar copper artefacts predate Harappan copper.", "name_hi": "आहड़-बनास संस्कृति", "distinguisher_hi": "उदयपुर के निकट आयड़ नदी; ~3000-1500 ई.पू.; ताम्रपाषाणिक (ताम्र-पाषाण), हड़प्पा से स्वतंत्र; दक्षिणी राजस्थान में ~90 स्थल; आहड़ ताम्र-कलाकृतियाँ हड़प्पा ताम्र से पुरानी।" }
     }
 
   ]
