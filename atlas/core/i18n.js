@@ -342,6 +342,36 @@ const DICT = {
   'Peak':                             'शिखर',
   'Biosphere':                        'जीवमंडल',
 
+  /* Physical detail card (PhysicalEditorial.js) */
+  'Mountain Range':                   'पर्वत श्रेणी',
+  'Physiographic Region':             'भौगोलिक क्षेत्र',
+  'Drainage Basin':                   'अपवाह बेसिन',
+  'Physical feature':                 'भौतिक फ़ीचर',
+  'basin':                            'बेसिन',
+  'Perennial':                        'बारहमासी',
+  'Seasonal':                         'मौसमी',
+  'Saline':                           'खारी',
+  'Natural':                          'प्राकृतिक',
+  'Artificial':                       'कृत्रिम',
+  'Generalised boundary':             'सामान्यीकृत सीमा',
+  'Point feature':                    'बिंदु फ़ीचर',
+  'Length':                           'लंबाई',
+  'Elevation':                        'ऊँचाई',
+  'Trend':                            'दिशा',
+  'Highest':                          'सर्वोच्च',
+  'Built':                            'निर्मित',
+  'Physical characteristics':         'भौतिक विशेषताएँ',
+  /* 'Source' intentionally omitted — reuses the existing status-bar
+   * 'Source' → स्रोत, which reads correctly as a river source too. */
+  'Outlet':                           'मुहाना',
+  'Tributaries':                      'सहायक नदियाँ',
+  'Sub-regions':                      'उप-क्षेत्र',
+  'Segments':                         'खंड',
+  'Governance':                       'प्रशासन',
+  'within Rajasthan':                 'राजस्थान में',
+  'active':                           'सक्रिय',
+  'seasonal':                         'मौसमी',
+
   /* Language toggle button labels */
   'Switch to Hindi':                  'हिंदी में देखें',
   'Switch to English':                'Switch to English',

@@ -11,6 +11,7 @@
 import { Atlas }    from '../core/AtlasCore.js';
 import { esc, el, svgEl } from '../core/util/dom.js';
 import { qualityBadgeHTML } from '../core/util/quality.js';
+import { t, tf, tfacts, getLang } from '../core/i18n.js';
 
 const KIND_LABEL = {
   river:                 'River',
@@ -23,8 +24,9 @@ const KIND_LABEL = {
 };
 
 export function renderPhysicalCard(feat) {
-  const p    = feat.properties ?? {};
-  const kind = KIND_LABEL[p.type] ?? 'Physical feature';
+  const p      = feat.properties ?? {};
+  const kindEn = KIND_LABEL[p.type] ?? 'Physical feature';
+  const kind   = t(kindEn);
   const notes = p.notes    ?? {};
   const eco   = p.ecology  ?? {};
   const gov   = p.governance ?? {};
@@ -34,21 +36,22 @@ export function renderPhysicalCard(feat) {
   /* ---- Hero ---- */
   const hero = el('div', { class: 'ed-hero' });
   hero.append(el('div', { class: 'ed-kicker' }, [kickerLine(p, kind)]));
-  const title = el('h2', { class: 'ed-title' }); title.textContent = p.name ?? feat.id;
+  const title = el('h2', { class: 'ed-title' }); title.textContent = tf(p, 'name') ?? feat.id;
   hero.append(title);
-  if (p.aliases?.length) {
+  const aliases = tf(p, 'aliases');
+  if (aliases?.length) {
     const sub = el('p', { class: 'ed-sub' });
-    sub.textContent = 'Also: ' + p.aliases.join(' · ');
+    sub.textContent = t('Also: ') + aliases.join(' · ');
     hero.append(sub);
   }
   const tags = el('div', { class: 'ed-tags' });
-  if (p.perennial === true)    tags.append(tag('Perennial', 'ramsar'));
-  if (p.perennial === false)   tags.append(tag('Seasonal', 'wls'));
-  if (p.salinity === 'saline') tags.append(tag('Saline', 'tr'));
-  if (p.lake_type === 'natural')    tags.append(tag('Natural', 'np'));
-  if (p.lake_type === 'artificial') tags.append(tag('Artificial', 'wls'));
-  if (p.geometryQuality === 'generalised') tags.append(tag('Generalised boundary', 'point'));
-  if (p.geometryQuality === 'point')       tags.append(tag('Point feature', 'point'));
+  if (p.perennial === true)    tags.append(tag(t('Perennial'), 'ramsar'));
+  if (p.perennial === false)   tags.append(tag(t('Seasonal'), 'wls'));
+  if (p.salinity === 'saline') tags.append(tag(t('Saline'), 'tr'));
+  if (p.lake_type === 'natural')    tags.append(tag(t('Natural'), 'np'));
+  if (p.lake_type === 'artificial') tags.append(tag(t('Artificial'), 'wls'));
+  if (p.geometryQuality === 'generalised') tags.append(tag(t('Generalised boundary'), 'point'));
+  if (p.geometryQuality === 'point')       tags.append(tag(t('Point feature'), 'point'));
   // Quality tier badge — always present so readers can gauge geometry trust.
   const badge = el('span');
   badge.innerHTML = qualityBadgeHTML(p.geometryQuality);
@@ -57,123 +60,129 @@ export function renderPhysicalCard(feat) {
   wrap.append(hero);
 
   /* ---- Overview ---- */
-  const overview = composeOverview(p, kind);
+  const overview = composeOverview(p, kind, kindEn);
   if (overview) {
-    wrap.append(section('Overview',
+    wrap.append(section(t('Overview'),
       Object.assign(el('p', { class: 'ed-overview' }), { innerHTML: overview })));
   }
 
   /* ---- Key figures ---- */
   const figures = el('div', { class: 'ed-figures' });
-  if (p.length_km != null)   figures.append(figCard('Length', fmt(p.length_km), 'km'));
-  if (p.area != null)        figures.append(figCard('Area',   fmt(p.area),      'km²'));
-  if (p.elevation_m != null) figures.append(figCard('Elevation', fmt(p.elevation_m), 'm'));
+  const dincl = tf(p, 'districts_included');
+  if (p.length_km != null)   figures.append(figCard(t('Length'), fmt(p.length_km), 'km'));
+  if (p.area != null)        figures.append(figCard(t('Area'),   fmt(p.area),      'km²'));
+  if (p.elevation_m != null) figures.append(figCard(t('Elevation'), fmt(p.elevation_m), 'm'));
   if (p.districts_included?.length)
-    figures.append(figCard('Districts', String(p.districts_included.length)));
-  if (p.basin)               figures.append(figCard('Basin', p.basin));
-  if (p.trend)               figures.append(figCard('Trend', p.trend));
-  if (p.highest_peak)        figures.append(figCard('Highest', `${p.highest_peak.name} — ${p.highest_peak.ele_m} m`));
-  if (p.established)         figures.append(figCard('Built', p.established));
+    figures.append(figCard(t('Districts'), String(p.districts_included.length)));
+  if (p.basin)               figures.append(figCard(t('Basin'), tf(p, 'basin')));
+  if (p.trend)               figures.append(figCard(t('Trend'), tf(p, 'trend')));
+  if (p.highest_peak)        figures.append(figCard(t('Highest'), `${tf(p.highest_peak, 'name')} — ${p.highest_peak.ele_m} m`));
+  if (p.established)         figures.append(figCard(t('Built'), p.established));
   if (figures.children.length)
-    wrap.append(section('Key figures', figures));
+    wrap.append(section(t('Key figures'), figures));
 
   /* ---- Physical characteristics ---- */
   const phys = el('dl', { class: 'ed-row' });
-  if (p.headwaters)  { phys.append(el('dt', {}, ['Source'])); phys.append(el('dd', {}, [p.headwaters])); }
-  if (p.mouth)       { phys.append(el('dt', {}, ['Outlet'])); phys.append(el('dd', {}, [p.mouth])); }
+  if (p.headwaters)  { phys.append(el('dt', {}, [t('Source')])); phys.append(el('dd', {}, [tf(p, 'headwaters')])); }
+  if (p.mouth)       { phys.append(el('dt', {}, [t('Outlet')])); phys.append(el('dd', {}, [tf(p, 'mouth')])); }
   if (p.tributaries?.length) {
-    phys.append(el('dt', {}, ['Tributaries']));
-    phys.append(el('dd', {}, [p.tributaries.join(', ')]));
+    phys.append(el('dt', {}, [t('Tributaries')]));
+    phys.append(el('dd', {}, [tf(p, 'tributaries').join(', ')]));
   }
-  if (p.range)       { phys.append(el('dt', {}, ['Range'])); phys.append(el('dd', {}, [p.range])); }
-  if (p.district)    { phys.append(el('dt', {}, ['District'])); phys.append(el('dd', {}, [p.district])); }
+  if (p.range)       { phys.append(el('dt', {}, [t('Range')])); phys.append(el('dd', {}, [tf(p, 'range')])); }
+  if (p.district)    { phys.append(el('dt', {}, [t('District')])); phys.append(el('dd', {}, [tf(p, 'district')])); }
   if (p.sub_regions?.length) {
-    phys.append(el('dt', {}, ['Sub-regions']));
-    phys.append(el('dd', {}, [p.sub_regions.join(' · ')]));
+    phys.append(el('dt', {}, [t('Sub-regions')]));
+    phys.append(el('dd', {}, [tf(p, 'sub_regions').join(' · ')]));
   }
   if (p.segments?.length) {
-    phys.append(el('dt', {}, ['Segments']));
-    phys.append(el('dd', {}, [p.segments.join(' · ')]));
+    phys.append(el('dt', {}, [t('Segments')]));
+    phys.append(el('dd', {}, [tf(p, 'segments').join(' · ')]));
   }
-  if (p.districts_included?.length) {
-    phys.append(el('dt', {}, ['Districts']));
-    phys.append(el('dd', {}, [p.districts_included.slice(0, 8).join(', ') +
-                              (p.districts_included.length > 8 ? '…' : '')]));
+  if (dincl?.length) {
+    phys.append(el('dt', {}, [t('Districts')]));
+    phys.append(el('dd', {}, [dincl.slice(0, 8).join(', ') +
+                              (dincl.length > 8 ? '…' : '')]));
   }
   if (phys.children.length)
-    wrap.append(section('Physical characteristics', phys));
+    wrap.append(section(t('Physical characteristics'), phys));
 
   /* ---- Ecology ---- */
-  if (eco.ecosystem || eco.fauna?.length || eco.flora?.length) {
+  const ecosystem = tf(eco, 'ecosystem');
+  const fauna = tf(eco, 'fauna');
+  const flora = tf(eco, 'flora');
+  if (ecosystem || fauna?.length || flora?.length) {
     const body = el('div');
-    if (eco.ecosystem)     body.append(el('div', { class: 'ed-ecosystem' }, [eco.ecosystem]));
-    if (eco.fauna?.length) {
-      body.append(el('div', { class: 'ed-kicker' }, ['Key fauna']));
+    if (ecosystem)     body.append(el('div', { class: 'ed-ecosystem' }, [ecosystem]));
+    if (fauna?.length) {
+      body.append(el('div', { class: 'ed-kicker' }, [t('Key fauna')]));
       const chips = el('div', { class: 'ed-chips' });
-      eco.fauna.forEach(f => chips.append(el('span', { class: 'ed-chip chip-fauna' }, [f])));
+      fauna.forEach(f => chips.append(el('span', { class: 'ed-chip chip-fauna' }, [f])));
       body.append(chips);
     }
-    if (eco.flora?.length) {
-      body.append(el('div', { class: 'ed-kicker', style: { marginTop: '10px' } }, ['Key flora']));
+    if (flora?.length) {
+      body.append(el('div', { class: 'ed-kicker', style: { marginTop: '10px' } }, [t('Key flora')]));
       const chips = el('div', { class: 'ed-chips' });
-      eco.flora.forEach(f => chips.append(el('span', { class: 'ed-chip chip-flora' }, [f])));
+      flora.forEach(f => chips.append(el('span', { class: 'ed-chip chip-flora' }, [f])));
       body.append(chips);
     }
-    wrap.append(section('Ecology', body));
+    wrap.append(section(t('Ecology'), body));
   }
 
   /* ---- Governance ---- */
   if (gov.authority || gov.status) {
     const dl = el('dl', { class: 'ed-row' });
-    if (gov.authority) { dl.append(el('dt', {}, ['Authority'])); dl.append(el('dd', {}, [gov.authority])); }
-    if (gov.status)    { dl.append(el('dt', {}, ['Status']));    dl.append(el('dd', {}, [gov.status])); }
-    wrap.append(section('Governance', dl));
+    if (gov.authority) { dl.append(el('dt', {}, [t('Authority')])); dl.append(el('dd', {}, [tf(gov, 'authority')])); }
+    if (gov.status)    { dl.append(el('dt', {}, [t('Status')]));    dl.append(el('dd', {}, [t(tf(gov, 'status'))])); }
+    wrap.append(section(t('Governance'), dl));
   }
 
   /* ---- Atlas notes (facts + mnemonic + comparisons) ---- */
-  if (notes.facts?.length || notes.mnemonic || notes.confusedWith?.length) {
+  const facts = tfacts(p);
+  const mnemonic = tf(notes, 'mnemonic');
+  if (facts.length || mnemonic || notes.confusedWith?.length) {
     const body = el('div');
-    if (notes.facts?.length) {
+    if (facts.length) {
       const ul = el('ul', { class: 'ed-facts' });
-      notes.facts.forEach(f => ul.append(el('li', {}, [f])));
+      facts.forEach(f => ul.append(el('li', {}, [f])));
       body.append(ul);
     }
-    if (notes.mnemonic) {
+    if (mnemonic) {
       const mn = el('div', { class: 'ed-mnemonic' });
-      mn.append(el('span', { class: 'tag' }, ['Remember']));
-      const t = document.createElement('span'); t.textContent = notes.mnemonic;
-      mn.append(t);
+      mn.append(el('span', { class: 'tag' }, [t('Remember')]));
+      const sp = document.createElement('span'); sp.textContent = mnemonic;
+      mn.append(sp);
       body.append(mn);
     }
     if (notes.confusedWith?.length) {
       const note = el('div', { class: 'ed-note' });
-      note.textContent = 'Common Confusion: ' + notes.confusedWith.join(' · ');
+      note.textContent = t('Common Confusion: ') + (tf(notes, 'confusedWith') ?? notes.confusedWith).join(' · ');
       body.append(note);
     }
-    wrap.append(section('Key Facts', body));
+    wrap.append(section(t('Key Facts'), body));
   }
 
   /* ---- Timeline ---- */
-  if (p.timeline?.length) wrap.append(section('Timeline', renderTimeline(p.timeline)));
+  if (p.timeline?.length) wrap.append(section(t('Timeline'), renderTimeline(p.timeline)));
 
   /* ---- Related features ---- */
   const related = Atlas.relations?.relationsFor(feat, feat.layerKey ?? '') ?? [];
-  if (related.length) wrap.append(section('Related features', renderRelated(related)));
+  if (related.length) wrap.append(section(t('Related features'), renderRelated(related)));
 
   /* ---- Locator ---- */
   const loc = renderLocator(feat);
-  if (loc) wrap.append(section('Locator', loc));
+  if (loc) wrap.append(section(t('Locator'), loc));
 
   /* ---- References ---- */
   const src = el('div', { class: 'ed-sources' });
   (p.source ? p.source.split('+').map(s => s.trim()) : [])
     .filter(Boolean).forEach(s => src.append(el('span', { class: 'ed-source' }, [s])));
-  if (p.lastUpdated) src.append(el('span', { class: 'ed-source' }, [`Retrieved ${p.lastUpdated}`]));
-  if (src.children.length) wrap.append(section('References', src));
+  if (p.lastUpdated) src.append(el('span', { class: 'ed-source' }, [`${t('Retrieved ')}${p.lastUpdated}`]));
+  if (src.children.length) wrap.append(section(t('References'), src));
 
   /* ---- Data-quality remarks ---- */
-  if (p.geometryNote) wrap.append(el('div', { class: 'ed-note' }, [p.geometryNote]));
-  if (p.remark)       wrap.append(el('div', { class: 'ed-note' }, [p.remark]));
+  if (p.geometryNote) wrap.append(el('div', { class: 'ed-note' }, [tf(p, 'geometryNote')]));
+  if (p.remark)       wrap.append(el('div', { class: 'ed-note' }, [tf(p, 'remark')]));
 
   return wrap;
 }
@@ -184,14 +193,47 @@ export function renderPhysicalCard(feat) {
 
 function kickerLine(p, kind) {
   const bits = [kind];
-  if (p.basin)  bits.push(p.basin + ' basin');
-  if (p.range)  bits.push(p.range);
+  if (p.basin)  bits.push(tf(p, 'basin') + ' ' + t('basin'));
+  if (p.range)  bits.push(tf(p, 'range'));
   return bits.join(' · ');
 }
 
-function composeOverview(p, kind) {
+function composeOverview(p, kind, kindEn) {
   const bits = [];
-  const name = (p.name ?? '').replace(/\s+(River|Lake|\(.*\))/g, '');
+  const hi   = getLang() === 'hi';
+  const name = (tf(p, 'name') ?? '').replace(/\s+(River|Lake|River|नदी|झील|\(.*\))/g, '');
+  const dcount = p.districts_included?.length ?? 0;
+
+  if (hi) {
+    const basin = tf(p, 'basin');
+    switch (p.type) {
+      case 'river':
+        bits.push(`${esc(name)} ${esc(basin ?? '')} बेसिन की एक ${p.perennial ? 'बारहमासी' : 'मौसमी'} नदी है, जो लगभग ${p.length_km ?? '—'} किमी लंबी है — <em>${esc(tf(p, 'headwaters') ?? '—')}</em> से इसके उद्गम से <em>${esc(tf(p, 'mouth') ?? '—')}</em> पर मुहाने तक।`);
+        if (p.tributaries?.length) bits.push(`प्रमुख सहायक नदियों में ${esc(tf(p, 'tributaries').slice(0,4).join(', '))} शामिल हैं।`);
+        break;
+      case 'lake':
+        bits.push(`${esc(name)} ${p.lake_type === 'artificial' ? 'एक कृत्रिम' : 'एक प्राकृतिक'} ${esc(p.salinity === 'saline' ? 'खारी' : 'मीठे पानी की')} झील है${basin ? ', ' + esc(basin) + ' बेसिन के भीतर' : ''}${p.established ? ', जो ' + esc(p.established) + ' में निर्मित हुई' : ''}।`);
+        break;
+      case 'mountain_range':
+        bits.push(`${esc(name)} राजस्थान से होकर लगभग ${esc(tf(p, 'trend') ?? 'द.प.–उ.पू.')} दिशा में ${p.length_km ?? '—'} किमी तक फैली है।`);
+        if (p.highest_peak) bits.push(`इसका सर्वोच्च बिंदु <em>${esc(tf(p.highest_peak, 'name'))}</em> है, ${p.highest_peak.ele_m} मी पर।`);
+        break;
+      case 'desert':
+        bits.push(`${esc(name)} राजस्थान के लगभग 60 प्रतिशत भाग को ढकता है, जो पश्चिमी जिलों में फैला है।`);
+        break;
+      case 'peak':
+        bits.push(`${esc(name)} ${esc(tf(p, 'range') ?? 'अरावली')} श्रेणी में ${p.elevation_m ?? '—'} मी तक उठती है${p.district ? ', ' + esc(tf(p, 'district')) + ' जिले में' : ''}।`);
+        break;
+      case 'physiographic_region':
+        bits.push(`${esc(name)} ${dcount} जिलों में फैला है।`);
+        break;
+      case 'drainage_basin':
+        bits.push(`${esc(name)} राजस्थान के ${dcount} जिलों में फैला है।`);
+        break;
+    }
+    return bits.join(' ');
+  }
+
   switch (p.type) {
     case 'river':
       bits.push(`${esc(name)} is a ${p.perennial ? 'perennial' : 'seasonal'} river of the ${esc(p.basin ?? '')} basin, roughly ${p.length_km ?? '—'} km long from its source in <em>${esc(p.headwaters ?? '—')}</em> to its outlet at <em>${esc(p.mouth ?? '—')}</em>.`);
@@ -211,10 +253,10 @@ function composeOverview(p, kind) {
       bits.push(`${esc(name)} rises to ${p.elevation_m ?? '—'} m in the ${esc(p.range ?? 'Aravalli')} range${p.district ? ', ' + esc(p.district) + ' district' : ''}.`);
       break;
     case 'physiographic_region':
-      bits.push(`${esc(name)} covers ${p.districts_included?.length ?? 0} districts.`);
+      bits.push(`${esc(name)} covers ${dcount} districts.`);
       break;
     case 'drainage_basin':
-      bits.push(`${esc(name)} spans ${p.districts_included?.length ?? 0} districts of Rajasthan.`);
+      bits.push(`${esc(name)} spans ${dcount} districts of Rajasthan.`);
       break;
   }
   return bits.join(' ');
@@ -254,7 +296,7 @@ function renderTimeline(events) {
   for (const ev of sorted) {
     const li = el('li', { class: `ed-tl-item tl-${ev.tag ?? 'default'}` });
     li.append(el('span', { class: 'ed-tl-year' }, [String(ev.year).slice(0, 7)]));
-    li.append(el('span', { class: 'ed-tl-event' }, [ev.event]));
+    li.append(el('span', { class: 'ed-tl-event' }, [tf(ev, 'event')]));
     wrap.append(li);
   }
   return wrap;
@@ -285,13 +327,14 @@ function renderRelated(items) {
   const wrap = el('div', { class: 'ed-related' });
   for (const r of items) {
     const p = r.feature.properties ?? {};
+    const relName = tf(p, 'name');
     const btn = el('button', {
       class: `ed-related-chip chip-${r.layerId}`,
-      title: `${p.name} — ${r.reasons.join(', ')}`,
+      title: `${relName} — ${r.reasons.join(', ')}`,
       onclick: () => Atlas.interaction.select(r.layerId, r.featureId, { zoom: false }),
     });
-    btn.append(el('span', { class: 'ed-related-kind' }, [LAYER_LABEL[r.layerId] ?? r.layerId]));
-    btn.append(el('span', { class: 'ed-related-name' }, [p.name]));
+    btn.append(el('span', { class: 'ed-related-kind' }, [t(LAYER_LABEL[r.layerId] ?? r.layerId)]));
+    btn.append(el('span', { class: 'ed-related-name' }, [relName]));
     wrap.append(btn);
   }
   return wrap;
@@ -350,7 +393,7 @@ function renderLocator(feat) {
   }
   wrap.append(svg);
   const cap = el('div', { class: 'caption' });
-  cap.textContent = `${feat.properties.name} within Rajasthan`;
+  cap.textContent = `${tf(feat.properties, 'name')} ${t('within Rajasthan')}`;
   wrap.append(cap);
   return wrap;
 }
