@@ -712,6 +712,14 @@ const DICT = {
   'urban':                            'नगरीय',
   'signature PA of the':              'का प्रमुख संरक्षित क्षेत्र',
 
+  /* Statistics overlay + district detail (UIManager.js) */
+  'None notified by MoEFCC.':         'MoEFCC द्वारा कोई अधिसूचित नहीं।',
+  'Sum of NP + TR + WLS areas.':      'राष्ट्रीय उद्यान + टाइगर रिज़र्व + अभयारण्य क्षेत्रफल का योग।',
+  'Protected-area extent vs 342,239 km² state area.': 'संरक्षित-क्षेत्र विस्तार बनाम 342,239 km² राज्य क्षेत्रफल।',
+  'Features shipped as points because their polygons are unpublished.': 'विशेषताएँ बिंदुओं के रूप में दी गईं क्योंकि उनके बहुभुज अप्रकाशित हैं।',
+  'BBox span':                        'BBox विस्तार',
+  'Centre':                           'केंद्र',
+
   /* Compare page (CompareMode.js) */
   'Compare features':                 'विशेषताओं की तुलना',
   'Compare two features (X)':         'दो विशेषताओं की तुलना (X)',

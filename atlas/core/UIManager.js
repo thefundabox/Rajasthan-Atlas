@@ -412,11 +412,11 @@ export class UIManager {
     card(t('Ramsar sites'),    s.ramsarSites);
     card(t('Wetlands (non-Ramsar)'), s.wetlands);
     card(t('Biosphere reserves'), s.biosphereReserves,
-      null, 'None notified by MoEFCC.');
-    card(t('Total PA area'), km(s.totalPAArea), 'km²', 'Sum of NP + TR + WLS areas.');
-    card(t('Coverage of Rajasthan'), s.coveragePct.toFixed(1), '%', 'Protected-area extent vs 342,239 km² state area.');
+      null, t('None notified by MoEFCC.'));
+    card(t('Total PA area'), km(s.totalPAArea), 'km²', t('Sum of NP + TR + WLS areas.'));
+    card(t('Coverage of Rajasthan'), s.coveragePct.toFixed(1), '%', t('Protected-area extent vs 342,239 km² state area.'));
     card(t('Point-only features'), s.pointOnlyCount, null,
-      'Features shipped as points because their polygons are unpublished.');
+      t('Features shipped as points because their polygons are unpublished.'));
     if (s.largest)  card(t('Largest PA'),   km(s.largest.area),  'km²', s.largest.name);
     if (s.smallest) card(t('Smallest PA'),  km(s.smallest.area), 'km²', s.smallest.name);
     if (s.mostRecent) card(t('Most recent notification'), s.mostRecent.year, null, s.mostRecent.name);
@@ -462,10 +462,11 @@ export class UIManager {
 
     // Hero
     const hero = el('div', { class: 'ed-hero' });
-    hero.append(el('div', { class: 'ed-kicker' }, [(p.division ? `${p.division} ${t('Division')} · ` : '') + t('District')]));
-    const title = el('h2', { class: 'ed-title' }); title.textContent = p.name ?? feat.id; hero.append(title);
+    hero.append(el('div', { class: 'ed-kicker' }, [(p.division ? `${t(p.division)} ${t('Division')} · ` : '') + t('District')]));
+    const title = el('h2', { class: 'ed-title' }); title.textContent = tf(p, 'name') ?? feat.id; hero.append(title);
     if (p.headquarters) {
-      const sub = el('p', { class: 'ed-sub' }); sub.textContent = `Headquartered at ${p.headquarters}`;
+      const sub = el('p', { class: 'ed-sub' });
+      sub.textContent = getLang() === 'hi' ? `मुख्यालय: ${t(p.headquarters)}` : `Headquartered at ${p.headquarters}`;
       hero.append(sub);
     }
     const tags = el('div', { class: 'ed-tags' });
@@ -479,17 +480,17 @@ export class UIManager {
 
     // Key figures — if we have a bbox, compute rough area indicator using bbox.
     const figures = el('div', { class: 'ed-figures' });
-    figures.append(figCard(t('Division'), p.division ?? '—'));
-    figures.append(figCard(t('HQ'), p.headquarters ?? '—'));
-    if (p.bbox) figures.append(figCard('BBox span', `${(p.bbox[2] - p.bbox[0]).toFixed(2)}°`));
-    if (p.centroid) figures.append(figCard('Centre', `${p.centroid[1].toFixed(2)}°N`));
+    figures.append(figCard(t('Division'), p.division ? t(p.division) : '—'));
+    figures.append(figCard(t('HQ'), p.headquarters ? t(p.headquarters) : '—'));
+    if (p.bbox) figures.append(figCard(t('BBox span'), `${(p.bbox[2] - p.bbox[0]).toFixed(2)}°`));
+    if (p.centroid) figures.append(figCard(t('Centre'), `${p.centroid[1].toFixed(2)}°N`));
     wrap.append(sectionEl(t('Key figures'), figures));
 
     // Location dl
     const dl = el('dl', { class: 'ed-row' });
-    dl.append(el('dt', {}, [t('Division')]));         dl.append(el('dd', {}, [p.division ?? '—']));
-    dl.append(el('dt', {}, [t('Headquarters')]));     dl.append(el('dd', {}, [p.headquarters ?? '—']));
-    dl.append(el('dt', {}, [t('State')]));            dl.append(el('dd', {}, ['Rajasthan']));
+    dl.append(el('dt', {}, [t('Division')]));         dl.append(el('dd', {}, [p.division ? t(p.division) : '—']));
+    dl.append(el('dt', {}, [t('Headquarters')]));     dl.append(el('dd', {}, [p.headquarters ? t(p.headquarters) : '—']));
+    dl.append(el('dt', {}, [t('State')]));            dl.append(el('dd', {}, [t('Rajasthan')]));
     if (p.centroid) {
       dl.append(el('dt', {}, [t('Centroid')]));
       dl.append(el('dd', { class: 'mono' }, [`${p.centroid[1].toFixed(3)}°N, ${p.centroid[0].toFixed(3)}°E`]));
