@@ -278,6 +278,14 @@ const DICT = {
   'Commissionerate':                  'संभाग',
   'Rajasthan':                        'राजस्थान',
 
+  /* Custom-layer detail card (CustomContent.js) */
+  'Did you know':                     'क्या आप जानते हैं',
+  'Custom feature':                   'कस्टम फ़ीचर',
+  /* prettyKicker labels — cultural/historic tier types */
+  'Palace':                           'महल',
+  'Temple':                           'मंदिर',
+  'Haveli':                           'हवेली',
+
   /* Detail card — feature kind labels */
   'National Park':                    'राष्ट्रीय उद्यान',
   'Tiger Reserve':                    'टाइगर रिज़र्व',

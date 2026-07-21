@@ -27,9 +27,19 @@
             "Overlooks Lake Pichola; the Manek Chowk main courtyard hosts Rajasthan's biggest Holi festival.",
             "Now part-museum, part-residence of the erstwhile Mewar family; open sections attract 1.5+ million visitors annually.",
             "The palace complex sits above the eastern shore of Lake Pichola; its Manek Chowk hosts Rajasthan's biggest Holika Dahan."
+          ],
+          "facts_hi": [
+            "राजस्थान का सबसे बड़ा महल-परिसर और भारत के सबसे बड़े महलों में से एक — 400 वर्षों तक निरंतर निर्माण (1559-1930)।",
+            "मेवाड़ के 22 क्रमिक महाराणाओं द्वारा निर्मित; राजपूत, मुग़ल, मध्यकालीन, यूरोपीय और चीनी शैलियों का मिश्रण।",
+            "पिछोला झील की ओर मुख; मानक चौक मुख्य प्रांगण में राजस्थान का सबसे बड़ा होली उत्सव मनाया जाता है।",
+            "अब आंशिक रूप से संग्रहालय और आंशिक रूप से पूर्व मेवाड़ परिवार का निवास; खुले भाग प्रतिवर्ष 15 लाख+ पर्यटकों को आकर्षित करते हैं।",
+            "महल-परिसर पिछोला झील के पूर्वी तट के ऊपर स्थित है; इसका मानक चौक राजस्थान की सबसे बड़ी होलिका दहन का आयोजन-स्थल है।"
           ]
         },
-        "icon": "🏯"
+        "icon": "🏯",
+        "name_hi": "सिटी पैलेस, उदयपुर",
+        "district_hi": "उदयपुर",
+        "type_hi": "महल"
       }
     },
     {
@@ -60,9 +70,21 @@
             "The complex's Chandra Mahal (7 storeys) is the working residence of the erstwhile Jaipur family; Diwan-i-Aam & Diwan-i-Khas mirror Delhi Fort's twin halls.",
             "The Sarhad ki Deodhi gate marks the transition from Mubarak Mahal (public) to Chandra Mahal (private) — a Rajput adaptation of Mughal palace planning.",
             "Its Ridhi-Sidhi Pol carries paintings of the four seasons — Peacock (autumn), Lotus (summer), Green (spring), Rose (winter)."
+          ],
+          "facts_hi": [
+            "जयपुर की UNESCO-सूचीबद्ध परकोटा-नगरी का केंद्र-बिंदु — 1729-1732 में सवाई जय सिंह द्वितीय के लिए विद्याधर भट्टाचार्य द्वारा नियोजित।",
+            "चंद्र महल — सात मंज़िला मुख्य महल — आज भी जयपुर राजपरिवार का निजी निवास है।",
+            "यहाँ विश्व के सबसे बड़े एकल-टुकड़ा चाँदी के पात्रों में से दो ('गंगाजली', 1902) हैं — गिनीज़ रिकॉर्ड धारक।",
+            "मुबारक महल, दीवान-ए-आम, दीवान-ए-ख़ास और मोर चौक संग्रहालय दीर्घाओं के रूप में खुले हैं।",
+            "परिसर का चंद्र महल (7 मंज़िल) पूर्व जयपुर परिवार का कार्यरत निवास है; दीवान-ए-आम और दीवान-ए-ख़ास दिल्ली दुर्ग के जुड़वाँ सभागारों की तरह हैं।",
+            "सरहद की ड्योढ़ी द्वार मुबारक महल (सार्वजनिक) से चंद्र महल (निजी) तक के संक्रमण को दर्शाता है — मुग़ल महल-नियोजन का राजपूत रूपांतरण।",
+            "इसकी रिद्धि-सिद्धि पोल पर चार ऋतुओं के चित्र हैं — मोर (शरद), कमल (ग्रीष्म), हरित (वसंत), गुलाब (शीत)।"
           ]
         },
-        "icon": "🏯"
+        "icon": "🏯",
+        "name_hi": "सिटी पैलेस, जयपुर",
+        "district_hi": "जयपुर",
+        "type_hi": "महल"
       }
     },
     {
@@ -91,9 +113,19 @@
             "Occupies 3 wings — royal residence, luxury heritage hotel (Taj), and museum.",
             "Designed by H. V. Lanchester in the Indo-Deco style; used Chittar sandstone (hence its other name 'Chittar Mahal').",
             "The Renaissance-inspired dome is 33 m tall — Rajasthan's tallest palace dome."
+          ],
+          "facts_hi": [
+            "क्षेत्रफल की दृष्टि से विश्व का सबसे बड़ा निजी-आवासित आवासीय महल (26 एकड़, 347 कमरे)।",
+            "1929-1943 में महाराजा उम्मेद सिंह द्वारा 1920 के दशक के अकाल में राहत-परियोजना के रूप में बनवाया गया।",
+            "तीन विंग में विभाजित — राजसी निवास, विलासी विरासत होटल (ताज) और संग्रहालय।",
+            "एच.वी. लैंचेस्टर द्वारा इंडो-डेको शैली में डिज़ाइन; चित्तर बलुआ पत्थर का प्रयोग (इसलिए इसका दूसरा नाम 'चित्तर महल')।",
+            "पुनर्जागरण-प्रेरित गुंबद 33 मी ऊँचा है — राजस्थान का सबसे ऊँचा महल-गुंबद।"
           ]
         },
-        "icon": "🏯"
+        "icon": "🏯",
+        "name_hi": "उम्मेद भवन पैलेस, जोधपुर",
+        "district_hi": "जोधपुर",
+        "type_hi": "महल"
       }
     },
     {
@@ -121,9 +153,18 @@
             "Occupies the entire 4-acre island; converted to a heritage hotel by Bhagwat Singh (1963).",
             "Featured in the James Bond film 'Octopussy' (1983) and countless heritage-tourism advertisements.",
             "One of only two 'island palaces' in India (the other is Jag Mandir, also on Lake Pichola)."
+          ],
+          "facts_hi": [
+            "पिछोला झील के पूर्वी द्वीप पर तैरता संगमरमरी महल — 1746 में महाराणा जगत सिंह द्वितीय द्वारा निर्मित।",
+            "पूरे 4-एकड़ द्वीप पर फैला; भगवत सिंह द्वारा विरासत होटल में परिवर्तित (1963)।",
+            "जेम्स बॉन्ड फ़िल्म 'ऑक्टोपुसी' (1983) और अनगिनत विरासत-पर्यटन विज्ञापनों में दिखाया गया।",
+            "भारत के केवल दो 'द्वीप-महलों' में से एक (दूसरा जग मंदिर, वह भी पिछोला झील पर)।"
           ]
         },
-        "icon": "⛲"
+        "icon": "⛲",
+        "name_hi": "ताज लेक पैलेस (जग निवास)",
+        "district_hi": "उदयपुर",
+        "type_hi": "महल"
       }
     },
     {
@@ -151,9 +192,18 @@
             "Sheltered Prince Khurram (later Shah Jahan) during his 1623 rebellion against Jahangir — the Mewar-Mughal reconciliation gift.",
             "Shah Jahan's memories of Jag Mandir are said to have inspired the Taj Mahal's marble architecture.",
             "Now an events venue — hosts weddings, film shoots, and the Udaipur Music Festival."
+          ],
+          "facts_hi": [
+            "पिछोला झील पर पुराना द्वीप-महल — 1620 में निर्मित, 1652 में महाराणा जगत सिंह प्रथम द्वारा विस्तारित।",
+            "1623 में जहाँगीर के विरुद्ध विद्रोह के दौरान राजकुमार खुर्रम (बाद में शाहजहाँ) को यहाँ शरण मिली — मेवाड़-मुग़ल सुलह का उपहार।",
+            "कहा जाता है कि जग मंदिर की स्मृतियों ने शाहजहाँ को ताजमहल की संगमरमरी वास्तुकला के लिए प्रेरित किया।",
+            "अब आयोजन-स्थल — विवाह, फ़िल्म-शूटिंग और उदयपुर संगीत महोत्सव का आयोजन।"
           ]
         },
-        "icon": "⛲"
+        "icon": "⛲",
+        "name_hi": "जग मंदिर पैलेस",
+        "district_hi": "उदयपुर",
+        "type_hi": "महल"
       }
     },
     {
@@ -181,9 +231,18 @@
             "Home of Maharaja Sawai Man Singh II and Maharani Gayatri Devi until 1957.",
             "India's first palace-turned-hotel — leased to the Taj Group in 1972.",
             "Set on 47 acres of Mughal-style gardens with peacocks; one of Asia's most decorated heritage hotels."
+          ],
+          "facts_hi": [
+            "1835 में महारानी केसर कुँवरजी बा के लिए बाग़-गृह के रूप में निर्मित; 1925 में सवाई मानसिंह द्वितीय द्वारा विस्तारित।",
+            "1957 तक महाराजा सवाई मानसिंह द्वितीय और महारानी गायत्री देवी का निवास।",
+            "भारत का पहला महल-से-होटल — 1972 में ताज समूह को पट्टे पर दिया गया।",
+            "मोरों से भरे 47 एकड़ मुग़ल-शैली उद्यानों में स्थित; एशिया के सर्वाधिक अलंकृत विरासत होटलों में से एक।"
           ]
         },
-        "icon": "🏯"
+        "icon": "🏯",
+        "name_hi": "रामबाग पैलेस, जयपुर",
+        "district_hi": "जयपुर",
+        "type_hi": "महल"
       }
     },
     {
@@ -211,9 +270,18 @@
             "Designed by Sir Samuel Swinton Jacob in Indo-Saracenic style; used Bikaneri red sandstone.",
             "Houses one of India's largest Sanskrit libraries — Sadul Museum with 21,000+ manuscripts.",
             "Ganga Singh signed India's independence declaration on 15 August 1947 from this palace as its chairman of Rajputana."
+          ],
+          "facts_hi": [
+            "1902-1926 में महाराजा गंगा सिंह द्वारा अपने पिता महाराजा लाल सिंह के सम्मान में निर्मित।",
+            "सर सैमुअल स्विंटन जैकब द्वारा इंडो-सारासेनिक शैली में डिज़ाइन; बीकानेरी लाल बलुआ पत्थर का प्रयोग।",
+            "भारत के सबसे बड़े संस्कृत पुस्तकालयों में से एक यहीं है — सादुल संग्रहालय में 21,000+ पांडुलिपियाँ।",
+            "गंगा सिंह ने राजपूताना के अध्यक्ष के रूप में 15 अगस्त 1947 को इसी महल से भारत की स्वतंत्रता-घोषणा पर हस्ताक्षर किए।"
           ]
         },
-        "icon": "🏯"
+        "icon": "🏯",
+        "name_hi": "लालगढ़ पैलेस, बीकानेर",
+        "district_hi": "बीकानेर",
+        "type_hi": "महल"
       }
     },
     {
@@ -241,9 +309,18 @@
             "Built 1884 by Maharana Sajjan Singh; intended as a nine-storey astronomy observatory but never completed.",
             "The palace grounds are now the Sajjangarh Wildlife Sanctuary — Rajasthan's smallest at 5.19 sq km.",
             "Featured in the James Bond film 'Octopussy' (1983) as Kamal Khan's palace."
+          ],
+          "facts_hi": [
+            "बांसदरा पहाड़ी (944 मी) की चोटी पर स्थित — उदयपुर के ऊपर बनते मानसूनी बादलों को देखने के लिए बनाया गया।",
+            "1884 में महाराणा सज्जन सिंह द्वारा निर्मित; नौ मंज़िला खगोल-वेधशाला के रूप में सोचा गया पर कभी पूरा न हुआ।",
+            "महल का परिसर अब सज्जनगढ़ वन्यजीव अभयारण्य है — 5.19 वर्ग किमी के साथ राजस्थान का सबसे छोटा।",
+            "जेम्स बॉन्ड फ़िल्म 'ऑक्टोपुसी' (1983) में कमाल ख़ान के महल के रूप में दिखाया गया।"
           ]
         },
-        "icon": "🏔"
+        "icon": "🏔",
+        "name_hi": "सज्जनगढ़ (मानसून पैलेस), उदयपुर",
+        "district_hi": "उदयपुर",
+        "type_hi": "महल"
       }
     },
     {
@@ -271,9 +348,18 @@
             "Sits on the Aravalli's north-eastern tail; commands the historic Delhi-Jaipur route.",
             "Restored 1986-2000 by architects Aman Nath and Francis Wacziarg — origin of the 'Neemrana' hospitality chain (now 30+ heritage hotels).",
             "One of Rajasthan's first heritage-hotel projects; the palace has 10 tier terraces built into the hillside."
+          ],
+          "facts_hi": [
+            "1464 में राजा राजदेव सिंह चौहान द्वारा निर्मित — राजस्थान के सबसे पुराने निरंतर-आवासित महलों में से एक।",
+            "अरावली की उत्तर-पूर्वी पूँछ पर स्थित; ऐतिहासिक दिल्ली-जयपुर मार्ग पर नियंत्रण रखता था।",
+            "1986-2000 में वास्तुविदों अमन नाथ और फ़्रांसिस वाक्ज़ियार्ग द्वारा जीर्णोद्धार — 'नीमराना' आतिथ्य शृंखला का उद्गम (अब 30+ विरासत होटल)।",
+            "राजस्थान की पहली विरासत-होटल परियोजनाओं में से एक; महल में पहाड़ी में बनी 10 सोपान-छतें हैं।"
           ]
         },
-        "icon": "🏯"
+        "icon": "🏯",
+        "name_hi": "नीमराना फ़ोर्ट-पैलेस",
+        "district_hi": "कोटपूतली-बहरोड़",
+        "type_hi": "महल"
       }
     },
     {
@@ -301,9 +387,18 @@
             "Renowned Durbar Hall and Sheesh Mahal (mirror-work) rival Amber Fort's Jai Mandir.",
             "One of the top heritage hotels in Rajasthan; featured in 'Far Pavilions' TV series (1984).",
             "Now the private residence of the Samode branch of the Kachhawaha Rajputs."
+          ],
+          "facts_hi": [
+            "16वीं शताब्दी का समोद दुर्ग नाथावत राजपूतों द्वारा निर्मित; 18वीं-19वीं शताब्दी में महल के रूप में विस्तारित।",
+            "प्रसिद्ध दरबार हॉल और शीश महल (दर्पण-कार्य) आमेर दुर्ग के जय मंदिर की टक्कर लेते हैं।",
+            "राजस्थान के शीर्ष विरासत होटलों में से एक; 'फ़ार पैवेलियंस' टीवी शृंखला (1984) में दिखाया गया।",
+            "अब कछवाहा राजपूतों की समोद शाखा का निजी निवास।"
           ]
         },
-        "icon": "🏯"
+        "icon": "🏯",
+        "name_hi": "समोद पैलेस",
+        "district_hi": "जयपुर",
+        "type_hi": "महल"
       }
     },
     {
@@ -334,9 +429,21 @@
             "Built by Jat King Suraj Mal — the Jal Mahal (Water Palace) of Deeg is Rajasthan's finest pleasure-garden palace.",
             "The Gopal Bhawan overlooks the Gopal Sagar tank; the palace uses hidden pipes to feed 500-plus fountains from rooftop tanks — a hydraulic marvel of the 1760s.",
             "Furniture and decorative pieces here were taken from Delhi's Red Fort by Maharaja Jawahar Singh after his 1765 raid."
+          ],
+          "facts_hi": [
+            "राजस्थान का सर्वोत्तम उद्यान-महल, 1730 के दशक में भरतपुर के महाराजा सूरजमल द्वारा निर्मित।",
+            "900+ फव्वारों के साथ चारबाग़ (मुग़ल चतुर्भागी उद्यान) डिज़ाइन — वर्ष में एक बार जल महोत्सव पर चालू किए जाते हैं।",
+            "मुख्य महल गोपाल भवन दो जलाशयों — गोपाल सागर और रूप सागर — के बीच स्थित है।",
+            "महल का संगमरमर 1761 के पानीपत युद्ध के बाद जाट सेनाओं द्वारा आगरा से लाया (लूटा) गया।",
+            "जाट राजा सूरजमल द्वारा निर्मित — डीग का जल महल राजस्थान का सर्वोत्तम विहार-उद्यान महल है।",
+            "गोपाल भवन गोपाल सागर तालाब की ओर मुख करता है; महल छत के टैंकों से गुप्त पाइपों द्वारा 500+ फव्वारों को पानी देता है — 1760 के दशक का जल-यांत्रिक चमत्कार।",
+            "यहाँ का फर्नीचर और सजावटी सामान महाराजा जवाहर सिंह द्वारा 1765 के आक्रमण के बाद दिल्ली के लाल क़िले से लाया गया।"
           ]
         },
-        "icon": "🏯"
+        "icon": "🏯",
+        "name_hi": "डीग पैलेस (जल महल)",
+        "district_hi": "डीग",
+        "type_hi": "महल"
       }
     },
     {
@@ -364,9 +471,18 @@
             "Swami Vivekananda stayed here as a guest of Raja Ajit Singh in 1893 before his voyage to the Chicago World's Parliament of Religions.",
             "The name 'Vivekananda' was suggested to the swami by Ajit Singh at this palace.",
             "The Khetri Fort library above the palace holds one of India's oldest continuously-maintained horoscopes archive."
+          ],
+          "facts_hi": [
+            "1770 में खेतड़ी (झुंझुनूँ) के राजा भगत सिंह द्वारा निर्मित; खेतड़ी ताम्र-पेटी का केंद्र।",
+            "स्वामी विवेकानंद 1893 में शिकागो विश्व धर्म संसद की यात्रा से पहले राजा अजीत सिंह के अतिथि के रूप में यहाँ ठहरे।",
+            "स्वामी को 'विवेकानंद' नाम इसी महल में अजीत सिंह ने सुझाया था।",
+            "महल के ऊपर खेतड़ी दुर्ग का पुस्तकालय भारत के सबसे पुराने निरंतर-संधारित कुंडली-अभिलेखागारों में से एक रखता है।"
           ]
         },
-        "icon": "🏯"
+        "icon": "🏯",
+        "name_hi": "खेतड़ी पैलेस",
+        "district_hi": "झुंझुनूँ (खेतड़ी)",
+        "type_hi": "महल"
       }
     }
   ]

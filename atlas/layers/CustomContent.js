@@ -99,8 +99,9 @@ function renderCustomCard(feature) {
 }
 
 function prettyKicker(p) {
-  const t = p.type || '';
-  return t.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) || 'Custom feature';
+  const raw = p.type || '';
+  const pretty = raw.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  return pretty ? t(pretty) : t('Custom feature');
 }
 
 /* ── 1. Enrichment ─────────────────────────────────────────────── */
