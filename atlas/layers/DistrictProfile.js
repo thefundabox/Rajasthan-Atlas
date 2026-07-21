@@ -15,7 +15,7 @@
 
 import { Atlas } from '../core/AtlasCore.js';
 import { el, esc } from '../core/util/dom.js';
-import { t, tf } from '../core/i18n.js';
+import { t, tf, tfacts } from '../core/i18n.js';
 
 let demographicsPayload = null;
 
@@ -79,7 +79,7 @@ function recordsFor(name, demo) {
   const extremum = (key, mode, label, unit = '') => {
     entries.sort((a, b) => (a[1][key] ?? 0) - (b[1][key] ?? 0));
     const [d, m] = mode === 'max' ? entries.at(-1) : entries[0];
-    if (d === name) return `${label} · ${m[key]}${unit}`;
+    if (d === name) return `${t(label)} · ${m[key]}${unit}`;
     return null;
   };
   return [
@@ -115,32 +115,32 @@ function renderDistrictProfile(district) {
 
   /* Hero */
   const hero = el('div', { class: 'ed-hero' });
-  hero.append(el('div', { class: 'ed-kicker' }, ['District Profile']));
-  hero.append(el('h2', { class: 'ed-title' }, [name]));
+  hero.append(el('div', { class: 'ed-kicker' }, [t('District Profile')]));
+  hero.append(el('h2', { class: 'ed-title' }, [t(name)]));
   const tags = el('div', { class: 'ed-tags' });
-  tags.append(tag(`${p.division ?? '?'} Division`, 'wls'));
-  if (p.headquarters) tags.append(tag(`HQ ${p.headquarters}`, 'point'));
-  if (p.newDistrict)  tags.append(tag('New 2023', 'ramsar'));
+  tags.append(tag(`${t(p.division ?? '?')} ${t('Division')}`, 'wls'));
+  if (p.headquarters) tags.append(tag(`${t('HQ')} ${t(p.headquarters)}`, 'point'));
+  if (p.newDistrict)  tags.append(tag(t('New 2023'), 'ramsar'));
   // Cultural region
   const region = firstRegionFor(memberships);
-  if (region) tags.append(tag(`Region ${region}`, 'np'));
+  if (region) tags.append(tag(`${t('Region')} ${t(region)}`, 'np'));
   const inherited = demo?.inherited_from_parent;
-  if (inherited) tags.append(tag(`Census values from ${inherited}`, 'point'));
+  if (inherited) tags.append(tag(`${t('Census values from')} ${t(inherited)}`, 'point'));
   hero.append(tags);
   wrap.append(hero);
 
   /* Demographics grid */
   if (demo) {
     const grid = el('div', { class: 'dp-grid' });
-    grid.append(fig('Population', humanNum(demo.population)));
-    grid.append(fig('Density',    `${demo.density} /km²`));
-    grid.append(fig('Area',       `${humanNum(demo.area_km2)} km²`));
-    grid.append(fig('Literacy',   `${demo.literacy_pct} %`));
-    grid.append(fig('Sex ratio',  `${demo.sex_ratio} F/1000M`));
-    grid.append(fig('Urban',      `${demo.urban_pct} %`));
-    grid.append(fig('ST %',       `${demo.st_pct} %`));
-    grid.append(fig('SC %',       `${demo.sc_pct} %`));
-    grid.append(fig('Growth (2001-2011)', `${demo.growth_pct} %`));
+    grid.append(fig(t('Population'), humanNum(demo.population)));
+    grid.append(fig(t('Density'),    `${demo.density} /km²`));
+    grid.append(fig(t('Area'),       `${humanNum(demo.area_km2)} km²`));
+    grid.append(fig(t('Literacy'),   `${demo.literacy_pct} %`));
+    grid.append(fig(t('Sex ratio'),  `${demo.sex_ratio} F/1000M`));
+    grid.append(fig(t('Urban'),      `${demo.urban_pct} %`));
+    grid.append(fig(t('ST %'),       `${demo.st_pct} %`));
+    grid.append(fig(t('SC %'),       `${demo.sc_pct} %`));
+    grid.append(fig(t('Growth (2001-2011)'), `${demo.growth_pct} %`));
     wrap.append(section('Demographics · Census 2011', grid));
   }
 
@@ -154,7 +154,7 @@ function renderDistrictProfile(district) {
   }
 
   /* Did you know — enrichment facts merged from atlas/data/enrichment.json */
-  const facts = Array.isArray(p.notes?.facts) ? p.notes.facts : [];
+  const facts = tfacts(p);
   if (facts.length) {
     const list = el('ul', { class: 'dp-facts' });
     for (const f of facts) list.append(el('li', {}, [f]));
@@ -229,8 +229,8 @@ function renderDistrictProfile(district) {
 
   /* References */
   const src = el('div', { class: 'ed-sources' });
-  src.append(el('span', { class: 'ed-source' }, ['Census of India 2011']));
-  src.append(el('span', { class: 'ed-source' }, ['Synthesised from all 60+ atlas layers']));
+  src.append(el('span', { class: 'ed-source' }, [t('Census of India 2011')]));
+  src.append(el('span', { class: 'ed-source' }, [t('Synthesised from all 60+ atlas layers')]));
   wrap.append(section('References', src));
 
   detail.innerHTML = '';
@@ -274,7 +274,7 @@ function gatherSection(title, memberships, layerIds) {
 
 function firstRegionFor(memberships) {
   const r = memberships['regional-zones']?.[0];
-  return r ? r.properties.name : null;
+  return r ? tf(r.properties, 'name') : null;
 }
 
 function humanNum(n) {
@@ -300,7 +300,7 @@ function fig(label, val) {
 
 function section(title, body) {
   const s = el('div', { class: 'ed-section' });
-  s.append(el('h3', { class: 'ed-h' }, [title]));
+  s.append(el('h3', { class: 'ed-h' }, [t(title)]));   // titles arrive as English literals
   s.append(body);
   return s;
 }
