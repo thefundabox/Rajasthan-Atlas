@@ -209,7 +209,7 @@ function renderCard(feat, layerId) {
     ['Physical setting',  tf(p, 'physical')],
     ['Economy',           tf(p, 'economy')],
     ['Border with',       tf(p, 'border_with')],
-    ['Border length',     p.border_km],
+    ['Border length',     tf(p, 'border_km')],
     ['Notification',      tf(p, 'notification')],
     ['Anchor project',    tf(p, 'anchor_project')],
     ['Urban role',        tf(p, 'urban_role')],
@@ -382,6 +382,29 @@ function composeOverview(p, kind) {
       case 'scheduled_area':
         bits.push(`${esc(name)} — ${esc(tf(p, 'notification') ?? '')}। ${dcount} जिलों में फैला।`);
         return bits.join(' ');
+      case 'administrative_division':
+        bits.push(`${esc(name)} — मुख्यालय: ${esc(tf(p, 'headquarters') ?? '')}। ${dcount} जिले।`);
+        return bits.join(' ');
+      case 'regional_cultural_zone':
+        bits.push(`${esc(name)} — ऐतिहासिक केंद्र: ${esc(tf(p, 'seat') ?? '')}। बोली: <em>${esc(tf(p, 'dialect') ?? '')}</em>।`);
+        if (p.core) bits.push(esc(tf(p, 'core')) + '।');
+        return bits.join(' ');
+      case 'border_district_zone':
+        bits.push(`${esc(name)} — ${esc(tf(p, 'border_with') ?? '')}। ${esc(tf(p, 'border_km') ?? '')}।`);
+        return bits.join(' ');
+      case 'municipal_corporation':
+        bits.push(`${esc(name)} — जिला: ${esc(tf(p, 'district') ?? '')}। जनसंख्या ~${esc(String(p.population_lakh ?? '?'))} ${t('lakh')}।`);
+        return bits.join(' ');
+      case 'smart_city':
+        bits.push(`${esc(name)} — ${esc(tf(p, 'notified') ?? '?')} में अधिसूचित। आधार परियोजना: <em>${esc(tf(p, 'anchor_project') ?? '')}</em>।`);
+        return bits.join(' ');
+      case 'urban_centre':
+        bits.push(`${esc(name)} — 2011 जनसंख्या के अनुसार रैंक #${esc(String(p.rank ?? '?'))} (~${esc(String(p.population_lakh ?? '?'))} ${t('lakh')})।`);
+        if (p.urban_role) bits.push(esc(tf(p, 'urban_role')) + '।');
+        return bits.join(' ');
+      case 'population_corridor':
+        bits.push(`${esc(name)} — अक्ष: <em>${esc(tf(p, 'axis') ?? '')}</em>। संयुक्त जनसंख्या ~${esc(String(p.population_lakh ?? '?'))} ${t('lakh')}।`);
+        return bits.join(' ');
     }
   }
 
@@ -542,7 +565,7 @@ function renderHumanGeographySections(wrap, p) {
       'Headquarters':  tf(p, 'headquarters'),
       'Notification':  tf(p, 'notification'),
       'Border with':   tf(p, 'border_with'),
-      'Border length': p.border_km,
+      'Border length': tf(p, 'border_km'),
     };
     for (const [k, v] of Object.entries(rows)) {
       if (!v || typeof v === 'object') continue;
