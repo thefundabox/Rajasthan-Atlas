@@ -301,6 +301,23 @@ function composeOverview(p, kind) {
         bits.push(`राजस्थान कृषि विश्वविद्यालय के दस-क्षेत्र वर्गीकरण का आधिकारिक रूप से अधिसूचित क्षेत्र ${p.zone_id?.toUpperCase()}।`);
         if (p.crops) bits.push(`विशिष्ट फ़सलें: ${cropsStr}।`);
         return bits.join(' ');
+      case 'soil_type':
+        bits.push(`${esc(name)} राजस्थान के ${dcount} जिलों में फैली है।`);
+        if (p.crop_suit) bits.push(`सर्वाधिक उपयुक्त: ${esc(tf(p, 'crop_suit'))}।`);
+        return bits.join(' ');
+      case 'vegetation_type': {
+        bits.push(`${esc(name)} — ${esc(tf(p, 'champion_id') ?? '')}, ${dcount} जिलों में फैला।`);
+        const sp = tf(p, 'species');
+        if (sp) bits.push(`विशिष्ट प्रजातियाँ: <em>${esc((Array.isArray(sp) ? sp : [sp]).slice(0,3).join(', '))}</em>।`);
+        return bits.join(' ');
+      }
+      case 'desertification_zone':
+        bits.push(`${esc(name)} मरुस्थलीकरण ${dcount} जिलों को प्रभावित करता है।`);
+        if (p.causes) bits.push(`मुख्य कारक: ${esc(tf(p, 'causes'))}।`);
+        return bits.join(' ');
+      case 'drought_zone':
+        bits.push(`${esc(name)} सूखा-संवेदनशीलता — पुनरावृत्ति लगभग ${esc(tf(p, 'frequency') ?? '?')}।`);
+        return bits.join(' ');
     }
   }
 
