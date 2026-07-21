@@ -237,11 +237,28 @@ function wireLangToggle() {
   btn.addEventListener('click', () => setLang(isHi ? 'en' : 'hi'));  // persists + reloads
 }
 
+// Hero preview — cycle the 3 scenes on #hl-stage (toggle a layer → open a
+// district → switch language). Respects reduced-motion; pauses on hidden tab.
+function wireDemo() {
+  const stage = document.getElementById('hl-stage');
+  if (!stage) return;
+  const set = (n) => { stage.dataset.scene = String(n); };
+  set(0);
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { set(1); return; }
+  let n = 0, timer = null;
+  const tick = () => { n = (n + 1) % 3; set(n); };
+  const run  = () => { if (!timer) timer = setInterval(tick, 2800); };
+  const stop = () => { clearInterval(timer); timer = null; };
+  run();
+  document.addEventListener('visibilitychange', () => (document.hidden ? stop() : run()));
+}
+
 // ── Boot ──────────────────────────────────────────────────────────
 (async function boot() {
   try {
     applyStaticI18n();
     wireLangToggle();
+    wireDemo();
     const [demo, districts, confusions] = await Promise.all([
       fetch('atlas/data/district-demographics.json').then(r => r.json()),
       fetch('atlas/data/districts.geojson').then(r => r.json()),

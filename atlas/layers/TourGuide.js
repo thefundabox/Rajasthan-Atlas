@@ -115,6 +115,9 @@ function closeAllPanels() {
   document.querySelector('.layers-popover')?.classList.remove('open');
   document.querySelector('.stats-overlay')?.classList.remove('open');
   document.querySelector('.revision-overlay')?.classList.remove('open');
+  // Also close the right-hand district detail panel — the district step opens
+  // it, and left open it covers the header buttons the next steps point at.
+  document.querySelector('.a-right')?.classList.remove('open');
 }
 
 /* ── State ─────────────────────────────────────────────────────── */

@@ -715,6 +715,21 @@ const DICT = {
   /* Panch Gaurav layer (custom/panch-gaurav.geojson) */
   'Panch Gaurav':                     'पंच गौरव',
 
+  /* Landing hero (index.html .study-hero-lead) */
+  'The Rajasthan Atlas':              'राजस्थान एटलस',
+  'Every district,':                  'हर जिला,',
+  'mapped in depth.':                 'गहराई से मानचित्रित।',
+  'Forty-one districts, ninety-plus data layers and five hundred features — rivers, forts, crops, minerals, tiger reserves and the Panch Gaurav of every district. In English and हिंदी.':
+    'इकतालीस जिले, नब्बे से अधिक डेटा लेयर और पाँच सौ विशेषताएँ — नदियाँ, दुर्ग, फसलें, खनिज, टाइगर रिज़र्व और हर जिले का पंच गौरव। अंग्रेज़ी और हिंदी में।',
+  'Open the map →':                   'मानचित्र खोलें →',
+  '▶ Take a 60-second tour':          '▶ 60-सेकंड का टूर लें',
+  'Map layers':                       'मानचित्र लेयर',
+  'Features':                         'विशेषताएँ',
+  'Bilingual':                        'द्विभाषी',
+  'Toggle any of 90+ layers':         '90+ लेयर में से कोई भी चालू करें',
+  'Click a district for its full profile': 'पूरी प्रोफ़ाइल के लिए किसी जिले पर क्लिक करें',
+  'Study in English or हिंदी':        'अंग्रेज़ी या हिंदी में अध्ययन करें',
+
   /* Take a tour (TourGuide.js) */
   'Take a tour':                      'टूर लें',
   'Skip':                             'छोड़ें',
