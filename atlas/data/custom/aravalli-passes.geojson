@@ -20,8 +20,16 @@
             "Cuts through the central Aravalli between Ajmer and Udaipur — the historic north-south corridor of Mewar.",
             "The Ajmer-Kishangarh-Udaipur highway (NH-8) still follows the pass's alignment.",
             "Connects the Chappan tract of Mewar with the Godwar plain to the west."
+          ],
+          "facts_hi": [
+            "अजमेर और उदयपुर के बीच मध्य अरावली को काटता है — मेवाड़ का ऐतिहासिक उत्तर-दक्षिण गलियारा।",
+            "अजमेर-किशनगढ़-उदयपुर राजमार्ग (NH-8) आज भी दर्रे की रेखा का अनुसरण करता है।",
+            "मेवाड़ के छप्पन क्षेत्र को पश्चिम के गोडवाड़ मैदान से जोड़ता है।"
           ]
-        }
+        },
+        "name_hi": "बर दर्रा",
+        "district_hi": "राजसमंद",
+        "type_hi": "अरावली दर्रा"
       }
     },
     {
@@ -43,8 +51,16 @@
             "Historic Aravalli pass near Ajmer used by medieval caravans between Marwar and Malwa.",
             "Guarded a key trade route to Delhi via Ajmer through the Merwara hills.",
             "Prithviraj Chauhan's Ajmer forces controlled this pass in the 12th c."
+          ],
+          "facts_hi": [
+            "अजमेर के निकट ऐतिहासिक अरावली दर्रा, जिसे मध्यकालीन कारवाँ मारवाड़ और मालवा के बीच उपयोग करते थे।",
+            "मेरवाड़ा पहाड़ियों से होकर अजमेर के रास्ते दिल्ली तक के एक प्रमुख व्यापार-मार्ग की रक्षा करता था।",
+            "पृथ्वीराज चौहान की अजमेर सेनाओं ने 12वीं शताब्दी में इस दर्रे पर नियंत्रण रखा।"
           ]
-        }
+        },
+        "name_hi": "पिपलाज दर्रा",
+        "district_hi": "अजमेर",
+        "type_hi": "अरावली दर्रा"
       }
     },
     {
@@ -66,8 +82,16 @@
             "The main Marwar-Mewar Aravalli pass — connects Pali (Marwar) with Kumbhalgarh-Nathdwara (Mewar).",
             "Historically the fallback escape route for Mewar rulers into Marwar during Mughal sieges.",
             "Maharana Pratap used Deshuri to reach Chavand and Kumbhalgarh from Chittor."
+          ],
+          "facts_hi": [
+            "मुख्य मारवाड़-मेवाड़ अरावली दर्रा — पाली (मारवाड़) को कुंभलगढ़-नाथद्वारा (मेवाड़) से जोड़ता है।",
+            "ऐतिहासिक रूप से मुग़ल घेराबंदियों के दौरान मेवाड़ शासकों का मारवाड़ में शरण-मार्ग।",
+            "महाराणा प्रताप ने चित्तौड़ से चावंड और कुंभलगढ़ पहुँचने के लिए देसूरी का उपयोग किया।"
           ]
-        }
+        },
+        "name_hi": "देसूरी दर्रा",
+        "district_hi": "पाली",
+        "type_hi": "अरावली दर्रा"
       }
     },
     {
@@ -89,8 +113,16 @@
             "Southernmost major Aravalli pass — links Sirohi with Mount Abu and Gujarat's Banaskantha.",
             "The highest-elevation pass in Rajasthan's Aravalli chain.",
             "Historically used by the Deora Chauhans of Sirohi to reach their Achalgarh fort above Mount Abu."
+          ],
+          "facts_hi": [
+            "सबसे दक्षिणी प्रमुख अरावली दर्रा — सिरोही को माउंट आबू और गुजरात के बनासकांठा से जोड़ता है।",
+            "राजस्थान की अरावली शृंखला का सबसे ऊँचाई वाला दर्रा।",
+            "ऐतिहासिक रूप से सिरोही के देवड़ा चौहान इसका उपयोग माउंट आबू के ऊपर अपने अचलगढ़ दुर्ग तक पहुँचने के लिए करते थे।"
           ]
-        }
+        },
+        "name_hi": "सोमेसर दर्रा",
+        "district_hi": "सिरोही",
+        "type_hi": "अरावली दर्रा"
       }
     },
     {
@@ -112,8 +144,16 @@
             "Connects the Udaipur basin with Rajsamand through the Girva hills.",
             "The Sisodia armies used Jamdakol as a strategic defile against Mughal cavalry.",
             "Now serves the Udaipur-Nathdwara highway alignment."
+          ],
+          "facts_hi": [
+            "गिरवा पहाड़ियों से होकर उदयपुर द्रोणी को राजसमंद से जोड़ता है।",
+            "सिसोदिया सेनाओं ने जमदाकोल को मुग़ल घुड़सवारों के विरुद्ध एक रणनीतिक संकरे मार्ग के रूप में उपयोग किया।",
+            "अब उदयपुर-नाथद्वारा राजमार्ग की रेखा की सेवा करता है।"
           ]
-        }
+        },
+        "name_hi": "जमदाकोल (जिलवाड़ा) दर्रा",
+        "district_hi": "उदयपुर",
+        "type_hi": "अरावली दर्रा"
       }
     }
   ]

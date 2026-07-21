@@ -21,8 +21,16 @@
             "Rajasthan's busiest airport and only international gateway with year-round overseas flights (Dubai, Sharjah, Muscat, Bangkok, Singapore).",
             "Located at Sanganer, 13 km south of Jaipur city; handles ~5 million passengers annually.",
             "Terminal 2 (opened 2013) is Rajasthan's largest airport terminal."
+          ],
+          "facts_hi": [
+            "राजस्थान का सबसे व्यस्त हवाई अड्डा और वर्ष भर विदेशी उड़ानों (दुबई, शारजाह, मस्कट, बैंकॉक, सिंगापुर) वाला एकमात्र अंतरराष्ट्रीय द्वार।",
+            "सांगानेर में, जयपुर नगर से 13 किमी दक्षिण; प्रतिवर्ष ~50 लाख यात्रियों को संभालता है।",
+            "टर्मिनल 2 (2013 में खुला) राजस्थान का सबसे बड़ा हवाई अड्डा टर्मिनल है।"
           ]
-        }
+        },
+        "name_hi": "जयपुर अंतरराष्ट्रीय हवाई अड्डा (सांगानेर)",
+        "district_hi": "जयपुर",
+        "type_hi": "हवाई अड्डा"
       }
     },
     {
@@ -45,8 +53,16 @@
             "Civil enclave inside a major IAF base — the Air Force uses the same runway as Rajputana's second-busiest civil airport.",
             "Direct flights to Delhi, Mumbai, Bangalore, Hyderabad; a critical Marwar gateway for the tourism circuit.",
             "The IAF Jodhpur base is one of India's largest — home to the Rafale squadron since 2020."
+          ],
+          "facts_hi": [
+            "एक प्रमुख वायुसेना अड्डे के भीतर सिविल एन्क्लेव — वायुसेना वही रनवे उपयोग करती है जो राजपूताना के दूसरे सबसे व्यस्त सिविल हवाई अड्डे का है।",
+            "दिल्ली, मुंबई, बंगलुरु, हैदराबाद के लिए सीधी उड़ानें; पर्यटन-परिपथ के लिए एक महत्त्वपूर्ण मारवाड़ द्वार।",
+            "IAF जोधपुर अड्डा भारत के सबसे बड़े अड्डों में से एक है — 2020 से राफेल स्क्वाड्रन का घर।"
           ]
-        }
+        },
+        "name_hi": "जोधपुर हवाई अड्डा",
+        "district_hi": "जोधपुर",
+        "type_hi": "हवाई अड्डा"
       }
     },
     {
@@ -69,8 +85,16 @@
             "Located at Dabok, 22 km east of Udaipur city; renamed 'Maharana Pratap Airport' in 2008.",
             "Rajasthan's third-busiest airport; peak season (Oct-Mar) sees daily flights from all metros.",
             "Serves the Mewar tourism circuit — Udaipur, Chittor, Kumbhalgarh, Ranakpur, Mount Abu."
+          ],
+          "facts_hi": [
+            "डबोक में, उदयपुर नगर से 22 किमी पूर्व; 2008 में 'महाराणा प्रताप हवाई अड्डा' नाम दिया गया।",
+            "राजस्थान का तीसरा सबसे व्यस्त हवाई अड्डा; चरम मौसम (अक्टूबर-मार्च) में सभी महानगरों से दैनिक उड़ानें।",
+            "मेवाड़ पर्यटन-परिपथ की सेवा करता है — उदयपुर, चित्तौड़, कुंभलगढ़, रणकपुर, माउंट आबू।"
           ]
-        }
+        },
+        "name_hi": "महाराणा प्रताप हवाई अड्डा, उदयपुर (डबोक)",
+        "district_hi": "उदयपुर",
+        "type_hi": "हवाई अड्डा"
       }
     },
     {
@@ -93,8 +117,16 @@
             "Civil operations resumed in 2013 after decades as a military-only base; peak-season desert-circuit tourism gateway.",
             "The IAF's Jaisalmer base (Air Force Station Jaisalmer) has been strategic since the 1971 war.",
             "Domestic flights limited to winter tourist season (Oct-Mar); shut for civil traffic in summer."
+          ],
+          "facts_hi": [
+            "दशकों तक केवल-सैन्य अड्डा रहने के बाद 2013 में सिविल संचालन पुनः आरंभ; चरम-मौसम मरु-परिपथ पर्यटन द्वार।",
+            "IAF का जैसलमेर अड्डा (एयर फ़ोर्स स्टेशन जैसलमेर) 1971 के युद्ध से रणनीतिक रहा है।",
+            "घरेलू उड़ानें केवल शीत पर्यटन-मौसम (अक्टूबर-मार्च) तक सीमित; ग्रीष्म में सिविल यातायात के लिए बंद।"
           ]
-        }
+        },
+        "name_hi": "जैसलमेर हवाई अड्डा",
+        "district_hi": "जैसलमेर",
+        "type_hi": "हवाई अड्डा"
       }
     },
     {
@@ -117,8 +149,16 @@
             "Opened 2017 — Rajasthan's newest greenfield airport; serves Ajmer, Kishangarh and Pushkar.",
             "The 'Ajmer airport' by common usage — flights to Delhi, Ahmedabad, Hyderabad.",
             "Runway extension complete in 2023 to handle A320 family aircraft."
+          ],
+          "facts_hi": [
+            "2017 में खुला — राजस्थान का सबसे नया ग्रीनफ़ील्ड हवाई अड्डा; अजमेर, किशनगढ़ और पुष्कर की सेवा करता है।",
+            "आम प्रचलन में 'अजमेर हवाई अड्डा' — दिल्ली, अहमदाबाद, हैदराबाद के लिए उड़ानें।",
+            "A320 श्रेणी के विमानों को संभालने हेतु रनवे विस्तार 2023 में पूरा हुआ।"
           ]
-        }
+        },
+        "name_hi": "किशनगढ़ हवाई अड्डा",
+        "district_hi": "अजमेर",
+        "type_hi": "हवाई अड्डा"
       }
     },
     {
@@ -141,8 +181,16 @@
             "Civil enclave inside Air Force Station Nal — a forward strategic base ~15 km from the Pakistan border.",
             "Civil terminal opened 2017; limited seasonal flights to Delhi.",
             "The Nal IAF base is key to India's western air defence; the runway was recently extended to handle heavy transport."
+          ],
+          "facts_hi": [
+            "एयर फ़ोर्स स्टेशन नाल के भीतर सिविल एन्क्लेव — पाकिस्तान सीमा से ~15 किमी दूर एक अग्रवर्ती रणनीतिक अड्डा।",
+            "सिविल टर्मिनल 2017 में खुला; दिल्ली के लिए सीमित मौसमी उड़ानें।",
+            "नाल IAF अड्डा भारत की पश्चिमी वायु-रक्षा की कुंजी है; भारी परिवहन संभालने हेतु रनवे हाल ही में विस्तारित।"
           ]
-        }
+        },
+        "name_hi": "बीकानेर हवाई अड्डा (नाल)",
+        "district_hi": "बीकानेर",
+        "type_hi": "हवाई अड्डा"
       }
     }
   ]

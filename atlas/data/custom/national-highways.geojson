@@ -57,12 +57,20 @@
             "Rajasthan's busiest highway — the Golden Quadrilateral leg from Delhi to Mumbai via Jaipur, Ajmer, Bhilwara, Chittor, Udaipur.",
             "Enters at Behror/Kotputli (Alwar-Jaipur border); exits south at Bhatuan (Udaipur-Gujarat border) — ~688 km through Rajasthan.",
             "Being upgraded as the Delhi-Mumbai Expressway spine (opened Delhi-Sohna 2023, target completion 2025)."
+          ],
+          "facts_hi": [
+            "राजस्थान का सबसे व्यस्त राजमार्ग — जयपुर, अजमेर, भीलवाड़ा, चित्तौड़, उदयपुर होकर दिल्ली से मुंबई तक स्वर्णिम चतुर्भुज का चरण।",
+            "बहरोड़/कोटपूतली (अलवर-जयपुर सीमा) पर प्रवेश; दक्षिण में भटुआन (उदयपुर-गुजरात सीमा) पर निकास — राजस्थान से होकर ~688 किमी।",
+            "दिल्ली-मुंबई एक्सप्रेसवे की रीढ़ के रूप में उन्नत किया जा रहा है (दिल्ली-सोहना 2023 में खुला, पूर्णता-लक्ष्य 2025)।"
           ]
         },
         "districts_included": [
           "Alwar",
           "Udaipur"
-        ]
+        ],
+        "name_hi": "NH-48 (दिल्ली–मुंबई)",
+        "district_hi": "अलवर → उदयपुर",
+        "type_hi": "राष्ट्रीय राजमार्ग"
       }
     },
     {
@@ -113,12 +121,20 @@
             "The western Thar spine — Ganganagar-Bikaner-Jodhpur-Barmer to Kandla port (Gujarat); ~880 km through Rajasthan.",
             "Only all-weather artery serving the border districts along the Pakistan frontier.",
             "Rajasthan's principal north-south alternative to NH-48; parallels the IGNP for much of its northern stretch."
+          ],
+          "facts_hi": [
+            "पश्चिमी थार रीढ़ — गंगानगर-बीकानेर-जोधपुर-बाड़मेर से कांडला बंदरगाह (गुजरात) तक; राजस्थान से होकर ~880 किमी।",
+            "पाकिस्तान सीमा के सीमावर्ती जिलों की सेवा करने वाली एकमात्र सर्व-मौसम धमनी।",
+            "NH-48 का राजस्थान का प्रमुख उत्तर-दक्षिण विकल्प; अपने उत्तरी हिस्से में अधिकांशतः IGNP के समानांतर चलता है।"
           ]
         },
         "districts_included": [
           "Barmer",
           "Sri Ganganagar"
-        ]
+        ],
+        "name_hi": "NH-62 (पश्चिमी रीढ़ — गंगानगर–कांडला)",
+        "district_hi": "श्रीगंगानगर → बाड़मेर",
+        "type_hi": "राष्ट्रीय राजमार्ग"
       }
     },
     {
@@ -169,12 +185,20 @@
             "Connects Agra with Bikaner via Bharatpur, Dausa, Jaipur, Sikar, Fatehpur.",
             "Passes through the Shekhawati painted-haveli belt (Sikar, Jhunjhunu) — key tourism artery.",
             "Was formerly NH-11 (Agra-Bikaner); renumbered NH-21 in the 2010 restructure."
+          ],
+          "facts_hi": [
+            "भरतपुर, दौसा, जयपुर, सीकर, फतेहपुर होकर आगरा को बीकानेर से जोड़ता है।",
+            "शेखावाटी की चित्रित-हवेली पेटी (सीकर, झुंझुनूँ) से गुज़रता है — एक प्रमुख पर्यटन धमनी।",
+            "पहले NH-11 (आगरा-बीकानेर) था; 2010 के पुनर्गठन में NH-21 पुनःक्रमांकित।"
           ]
         },
         "districts_included": [
           "Bharatpur",
           "Bikaner"
-        ]
+        ],
+        "name_hi": "NH-21 (आगरा–बीकानेर, जयपुर होकर)",
+        "district_hi": "भरतपुर → बीकानेर",
+        "type_hi": "राष्ट्रीय राजमार्ग"
       }
     },
     {
@@ -225,12 +249,20 @@
             "Rajasthan's segment of the pan-India East-West Corridor — Pindwara (Sirohi) to Kota-Baran and onward to MP.",
             "Serves Chittor, Kota, Bundi, Baran — the entire Hadoti belt.",
             "Handles heavy cement, stone and industrial freight from the Kota-Bundi mineral belt."
+          ],
+          "facts_hi": [
+            "पैन-इंडिया पूर्व-पश्चिम गलियारे का राजस्थान खंड — पिंडवाड़ा (सिरोही) से कोटा-बारां और आगे म.प्र. तक।",
+            "चित्तौड़, कोटा, बूँदी, बारां — संपूर्ण हाड़ौती पेटी की सेवा करता है।",
+            "कोटा-बूँदी खनिज पेटी से भारी सीमेंट, पत्थर और औद्योगिक माल ढोता है।"
           ]
         },
         "districts_included": [
           "Baran",
           "Sirohi"
-        ]
+        ],
+        "name_hi": "NH-27 (पूर्व–पश्चिम गलियारा)",
+        "district_hi": "सिरोही → बारां",
+        "type_hi": "राष्ट्रीय राजमार्ग"
       }
     },
     {
@@ -277,12 +309,20 @@
             "Southern radial from Ajmer through Bhilwara, Chittor, Nimbahera, Pratapgarh to Ratlam (MP).",
             "Passes through the Bhilwara textile cluster and the Chittor-Nimbahera cement belt.",
             "The Chittor bypass segment was among Rajasthan's first four-lane conversions (2011)."
+          ],
+          "facts_hi": [
+            "अजमेर से भीलवाड़ा, चित्तौड़, निंबाहेड़ा, प्रतापगढ़ होकर रतलाम (म.प्र.) तक दक्षिणी रेडियल।",
+            "भीलवाड़ा वस्त्र क्लस्टर और चित्तौड़-निंबाहेड़ा सीमेंट पेटी से गुज़रता है।",
+            "चित्तौड़ बाइपास खंड राजस्थान की पहली चार-लेन परिवर्तनों में से एक था (2011)।"
           ]
         },
         "districts_included": [
           "Ajmer",
           "Pratapgarh"
-        ]
+        ],
+        "name_hi": "NH-58 (अजमेर–रतलाम)",
+        "district_hi": "अजमेर → प्रतापगढ़",
+        "type_hi": "राष्ट्रीय राजमार्ग"
       }
     },
     {
@@ -329,12 +369,20 @@
             "Long north-south spine connecting Punjab's Sangrur to Karnataka's Ankola — Rajasthan segment runs through Alwar, Dausa, Jaipur.",
             "Serves the Delhi-Mumbai Industrial Corridor's Neemrana-Bhiwadi cluster.",
             "Renumbered NH-52 in the 2010 restructure (parts were formerly NH-11A/NH-8)."
+          ],
+          "facts_hi": [
+            "पंजाब के संगरूर को कर्नाटक के अंकोला से जोड़ने वाली लंबी उत्तर-दक्षिण रीढ़ — राजस्थान खंड अलवर, दौसा, जयपुर से होकर चलता है।",
+            "दिल्ली-मुंबई औद्योगिक गलियारे के नीमराना-भिवाड़ी क्लस्टर की सेवा करता है।",
+            "2010 के पुनर्गठन में NH-52 पुनःक्रमांकित (कुछ हिस्से पहले NH-11A/NH-8 थे)।"
           ]
         },
         "districts_included": [
           "Alwar",
           "Jaipur"
-        ]
+        ],
+        "name_hi": "NH-52 (संगरूर–अंकोला, जयपुर होकर)",
+        "district_hi": "अलवर → जयपुर",
+        "type_hi": "राष्ट्रीय राजमार्ग"
       }
     }
   ]

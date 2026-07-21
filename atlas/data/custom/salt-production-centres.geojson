@@ -21,8 +21,17 @@
             "Sambhar Salts Ltd (a Hindustan Salts joint venture) is one of only two Government of India salt-producing PSUs.",
             "Solar evaporation produces ~200,000 tonnes annually — 9% of India's salt output and India's largest source of inland (rock-and-brine) salt.",
             "Also a Ramsar site (1990) — hosts Rajasthan's largest flamingo congregation during winter (~50,000 lesser and greater flamingoes)."
+          ],
+          "facts_hi": [
+            "भारत की सबसे बड़ी अंतःस्थलीय लवण झील — 22.5 किमी लंबी, 3-11 किमी चौड़ी; पूर्ण विस्तार पर ~230 वर्ग किमी।",
+            "सांभर साल्ट्स लिमिटेड (हिंदुस्तान साल्ट्स का संयुक्त उपक्रम) भारत सरकार के केवल दो नमक-उत्पादक PSU में से एक है।",
+            "सौर वाष्पीकरण से प्रतिवर्ष ~2,00,000 टन उत्पादन — भारत के नमक का 9% और भारत का सबसे बड़ा अंतःस्थलीय (चट्टान-और-खारे) नमक स्रोत।",
+            "एक रामसर स्थल भी (1990) — शीत ऋतु में राजस्थान का सबसे बड़ा राजहंस जमावड़ा (~50,000 छोटे और बड़े राजहंस)।"
           ]
-        }
+        },
+        "name_hi": "सांभर लवण झील — केंद्रीय संयंत्र",
+        "district_hi": "नागौर / जयपुर / अजमेर",
+        "type_hi": "नमक उत्पादन"
       }
     },
     {
@@ -44,8 +53,16 @@
             "Rajasthan's second-largest saline lake after Sambhar; the Rajasthan State Chemical Works produces salt and sodium sulphate here.",
             "The salt has a slightly higher sulphate content than Sambhar's, so Didwana salt is prized for the chemical industry rather than edible use.",
             "Nawalgarh Salts co-operative is Rajasthan's oldest continuously-operating salt cooperative (1908)."
+          ],
+          "facts_hi": [
+            "सांभर के बाद राजस्थान की दूसरी सबसे बड़ी खारी झील; यहाँ राजस्थान स्टेट केमिकल वर्क्स नमक और सोडियम सल्फेट बनाता है।",
+            "नमक में सांभर की तुलना में कुछ अधिक सल्फेट है, इसलिए डीडवाना नमक खाद्य उपयोग के बजाय रासायनिक उद्योग के लिए मूल्यवान है।",
+            "नावाँ साल्ट्स सहकारी राजस्थान की सबसे पुरानी निरंतर-संचालित नमक सहकारी है (1908)।"
           ]
-        }
+        },
+        "name_hi": "डीडवाना लवण झील",
+        "district_hi": "डीडवाना-कुचामन",
+        "type_hi": "नमक उत्पादन"
       }
     },
     {
@@ -67,8 +84,16 @@
             "Unique 'lana khar' method — sub-surface brine is drawn up by lowering thorny khejri branches into pits; salt crystallises around the twigs and is harvested manually.",
             "The traditional method produces some of India's cleanest edible salt; Balotra's salt is prized for its low bitter-magnesium content.",
             "Sits atop the Barmer petroleum basin; the same evaporite geology explains both the salt and the deep oil-and-gas reserves."
+          ],
+          "facts_hi": [
+            "अनूठी 'लाना खार' विधि — गड्ढों में खेजड़ी की काँटेदार शाखाएँ डालकर उप-सतही खारा पानी ऊपर खींचा जाता है; नमक टहनियों के चारों ओर जमता है और हाथ से एकत्र किया जाता है।",
+            "पारंपरिक विधि भारत के कुछ सबसे स्वच्छ खाद्य नमक का उत्पादन करती है; बालोतरा का नमक अपनी कम कड़वी-मैग्नीशियम मात्रा के लिए मूल्यवान है।",
+            "बाड़मेर पेट्रोलियम द्रोणी के ऊपर स्थित; वही वाष्पीकृत भूविज्ञान नमक और गहरे तेल-और-गैस भंडार दोनों की व्याख्या करता है।"
           ]
-        }
+        },
+        "name_hi": "पचपदरा नमक संयंत्र",
+        "district_hi": "बालोतरा",
+        "type_hi": "नमक उत्पादन"
       }
     },
     {
@@ -90,8 +115,16 @@
             "Northernmost saline lake in Rajasthan; salt is harvested only in dry monsoon years (highly variable).",
             "The lake bed is a well-studied palaeoclimate record — sediment cores show 8,000+ years of monsoon variability.",
             "Nearby IGNP command has diluted the natural salinity somewhat since 1980s; production has declined."
+          ],
+          "facts_hi": [
+            "राजस्थान की सबसे उत्तरी खारी झील; नमक केवल शुष्क मानसून वर्षों में एकत्र किया जाता है (अत्यधिक परिवर्तनशील)।",
+            "झील-तल एक सुअध्ययनित पुराजलवायु अभिलेख है — तलछट-कोर 8,000+ वर्षों की मानसून परिवर्तनशीलता दर्शाते हैं।",
+            "निकटवर्ती IGNP कमांड ने 1980 के दशक से प्राकृतिक लवणता कुछ घटा दी है; उत्पादन घटा है।"
           ]
-        }
+        },
+        "name_hi": "लूणकरणसर लवण झील",
+        "district_hi": "बीकानेर",
+        "type_hi": "नमक उत्पादन"
       }
     },
     {
@@ -113,8 +146,16 @@
             "Small salt lake in the Nagaur belt — historically part of the same aquifer system as Didwana and Sambhar.",
             "Kuchaman salt is sold to nearby chemical works in Bhiwadi and Alwar; not sold as edible salt.",
             "Overshadowed by Sambhar and Didwana; still a functioning industrial salt source."
+          ],
+          "facts_hi": [
+            "नागौर पेटी की छोटी लवण झील — ऐतिहासिक रूप से डीडवाना और सांभर के समान जलभृत-तंत्र का भाग।",
+            "कुचामन नमक भिवाड़ी और अलवर के निकटवर्ती रासायनिक संयंत्रों को बेचा जाता है; खाद्य नमक के रूप में नहीं।",
+            "सांभर और डीडवाना से ढका हुआ; फिर भी एक कार्यरत औद्योगिक नमक स्रोत।"
           ]
-        }
+        },
+        "name_hi": "कुचामन नमक संयंत्र",
+        "district_hi": "डीडवाना-कुचामन",
+        "type_hi": "नमक उत्पादन"
       }
     }
   ]

@@ -20,8 +20,16 @@
             "Rajasthan's classic 'crescent' dunes — form perpendicular to the prevailing SW monsoon wind; migrate 3-15 m per year.",
             "The Sam Sand Dunes and Khuri Sand Dunes (~42 km SW of Jaisalmer) are India's premier barchan tourism sites — the 'desert safari' venue.",
             "Concave slip-face on the leeward side (~34° angle) and gentler stoss slope windward — the signature crescent profile that gave the type its name."
+          ],
+          "facts_hi": [
+            "राजस्थान के विशिष्ट 'अर्धचंद्राकार' स्तूप — प्रचलित दक्षिण-पश्चिम मानसून पवन के लंबवत बनते हैं; प्रतिवर्ष 3-15 मी खिसकते हैं।",
+            "सम बालुका-स्तूप और खुरी बालुका-स्तूप (जैसलमेर से ~42 किमी दक्षिण-पश्चिम) भारत के प्रमुख बरखान पर्यटन स्थल हैं — 'डेज़र्ट सफ़ारी' स्थल।",
+            "पवन-विमुख ओर अवतल फिसलन-सतह (~34° कोण) और पवनाभिमुख कोमल ढाल — वही अर्धचंद्र-रूपरेखा जिसने प्रकार को नाम दिया।"
           ]
-        }
+        },
+        "name_hi": "बरखान (अर्धचंद्राकार) बालुका-स्तूप — सम और खुरी, जैसलमेर",
+        "district_hi": "जैसलमेर",
+        "type_hi": "बालुका-स्तूप"
       }
     },
     {
@@ -43,8 +51,16 @@
             "Long, wave-like ridges running perpendicular to the wind — form where sand supply is abundant and vegetation cover is low.",
             "Bikaner-Ganganagar belt has Rajasthan's most extensive transverse dune fields — the IGNP command area was carved through this landscape.",
             "Move slower than barchan (unified wave front stabilises the sand column); ridges 3-25 m tall running 100s of metres in length."
+          ],
+          "facts_hi": [
+            "पवन के लंबवत चलने वाली लंबी, तरंग-जैसी कटकें — वहाँ बनती हैं जहाँ रेत की आपूर्ति प्रचुर और वनस्पति-आवरण कम हो।",
+            "बीकानेर-गंगानगर पेटी में राजस्थान के सबसे विस्तृत अनुप्रस्थ स्तूप-क्षेत्र हैं — IGNP कमांड क्षेत्र इसी भूदृश्य से होकर काटा गया।",
+            "बरखान से धीमे चलते हैं (एकीकृत तरंग-मोर्चा रेत-स्तंभ को स्थिर करता है); कटकें 3-25 मी ऊँची, सैकड़ों मीटर लंबी।"
           ]
-        }
+        },
+        "name_hi": "अनुप्रस्थ बालुका-स्तूप — बीकानेर पेटी",
+        "district_hi": "बीकानेर",
+        "type_hi": "बालुका-स्तूप"
       }
     },
     {
@@ -66,8 +82,16 @@
             "Long parallel ridges running IN THE DIRECTION of the dominant wind — 'seif' = sword in Arabic, from the sword-shape profile.",
             "The Barmer-Balotra belt hosts Rajasthan's longest longitudinal dunes — some ridges 15 km long, 20-30 m tall.",
             "Form where two wind directions of nearly equal strength combine — the ridges align between the two vectors."
+          ],
+          "facts_hi": [
+            "प्रभावी पवन की दिशा में चलने वाली लंबी समानांतर कटकें — 'सैफ़' अरबी में तलवार, तलवार-आकार रूपरेखा से।",
+            "बाड़मेर-बालोतरा पेटी में राजस्थान के सबसे लंबे अनुदैर्ध्य स्तूप हैं — कुछ कटकें 15 किमी लंबी, 20-30 मी ऊँची।",
+            "वहाँ बनते हैं जहाँ लगभग समान शक्ति की दो पवन-दिशाएँ मिलती हैं — कटकें दोनों सदिशों के बीच संरेखित होती हैं।"
           ]
-        }
+        },
+        "name_hi": "अनुदैर्ध्य (सैफ़) बालुका-स्तूप — बाड़मेर",
+        "district_hi": "बाड़मेर",
+        "type_hi": "बालुका-स्तूप"
       }
     },
     {
@@ -89,8 +113,16 @@
             "Pyramidal dunes with 3-5 arms radiating from a central peak — form where winds shift from multiple directions across the year.",
             "The tallest dune type in the Thar (up to 100+ m); Shergarh-Phalodi belt has Rajasthan's best-developed star dunes.",
             "Nearly stationary — each arm grows and retreats seasonally but the central peak barely moves; some star dunes here are dated to 4,000+ years old."
+          ],
+          "facts_hi": [
+            "एक केंद्रीय शिखर से 3-5 भुजाओं वाले पिरामिडाकार स्तूप — वहाँ बनते हैं जहाँ वर्ष भर पवनें कई दिशाओं से बदलती हैं।",
+            "थार का सबसे ऊँचा स्तूप-प्रकार (100+ मी तक); शेरगढ़-फलोदी पेटी में राजस्थान के सर्वाधिक विकसित तारा-स्तूप हैं।",
+            "लगभग स्थिर — प्रत्येक भुजा मौसमी रूप से बढ़ती-घटती है पर केंद्रीय शिखर मुश्किल से हिलता है; यहाँ के कुछ तारा-स्तूप 4,000+ वर्ष पुराने आँके गए हैं।"
           ]
-        }
+        },
+        "name_hi": "तारा बालुका-स्तूप — शेरगढ़, जोधपुर",
+        "district_hi": "जोधपुर, फलोदी",
+        "type_hi": "बालुका-स्तूप"
       }
     }
   ]
