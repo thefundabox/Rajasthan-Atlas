@@ -291,6 +291,7 @@ const DICT = {
   'Folk Goddess':                     'लोकदेवी',
   'Buddhist Heritage':                'बौद्ध विरासत',
   'Painting School':                  'चित्रकला शैली',
+  'Folk Art':                         'लोक-कला',
 
   /* Detail card — feature kind labels */
   'National Park':                    'राष्ट्रीय उद्यान',

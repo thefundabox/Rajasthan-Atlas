@@ -36,8 +36,17 @@
             "The name comes from ghoom (skirt-swirl of the ghagra); dhol, nagara and shehnai accompany the swirl.",
             "Song most associated with the dance: \"Mhari Ghoomar chhe nakhrali ae maa gori, Ghoomar ramva mhe jasyan.\""
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "राजस्थान का आधिकारिक राज्य नृत्य — गणगौर, तीज और शुभ अवसरों पर महिलाओं द्वारा वृत्त में किया जाता है।",
+            "नाम घूम (घाघरे की लहर) से आया है; ढोल, नगाड़ा और शहनाई इस लहर के साथ बजते हैं।",
+            "नृत्य से सर्वाधिक जुड़ा गीत: \"म्हारी घूमर छे नखराली ए माँ गोरी, घूमर रमवा म्हे जास्यां।\""
+          ]
+        },
+        "name_hi": "घूमर (राज्य नृत्य)",
+        "district_hi": "मारवाड़ (जोधपुर)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -75,8 +84,17 @@
             "Farmers perform Gair from harvest until the next sowing — a farming-cycle folk dance.",
             "Predominantly a Bhil community expression; the Barmer version pairs Gair with dhol."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "केवल-पुरुष होली नृत्य — नर्तक वृत्त (घेरा → गैर) बनाकर लय में लकड़ी की छड़ियाँ टकराते हैं।",
+            "किसान फ़सल-कटाई से अगली बुवाई तक गैर करते हैं — एक कृषि-चक्र लोक नृत्य।",
+            "मुख्यतः भील समुदाय की अभिव्यक्ति; बाड़मेर संस्करण गैर को ढोल के साथ जोड़ता है।"
+          ]
+        },
+        "name_hi": "गैर नृत्य",
+        "district_hi": "मेवाड़ (उदयपुर) + बाड़मेर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -114,8 +132,17 @@
             "Nagara, dhol, daph, chang mark the rhythm; men gather at the centre of the circle to sing Dhamal.",
             "Called Gidad in Shekhawati and Chang across the wider region — the thread that binds Shekhawati Holi celebrations."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "शेखावाटी भर में पुरुषों का होली नृत्य — चंग (गोल-घेरे का डफ) बजता है, नर्तक छड़ियाँ टकराते हैं।",
+            "नगाड़ा, ढोल, डफ, चंग लय देते हैं; पुरुष वृत्त के केंद्र में जुटकर धमाल गाते हैं।",
+            "शेखावाटी में गींदड़ और व्यापक क्षेत्र में चंग कहलाता है — वह सूत्र जो शेखावाटी की होली को बाँधता है।"
+          ]
+        },
+        "name_hi": "गींदड़ / चंग (शेखावाटी होली नृत्य)",
+        "district_hi": "शेखावाटी (सीकर / झुंझुनूँ)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -153,8 +180,17 @@
             "The line-forming-and-dispersing effect looks like flower petals opening.",
             "Also popular at weddings — the \"horse and rider\" is symbolic of the groom's baraat."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "चार पुरुष 'घोड़ा-वेश' संरचनाओं में तीव्र लय पर आगे-पीछे बढ़ते हैं — नृत्य एक नक़ली-युद्ध अश्व-आक्रमण की नक़ल करता है।",
+            "पंक्ति बनने-बिखरने का प्रभाव फूलों की पंखुड़ियों के खिलने जैसा दिखता है।",
+            "विवाहों में भी लोकप्रिय — 'घोड़ा और सवार' दूल्हे की बारात का प्रतीक है।"
+          ]
+        },
+        "name_hi": "कच्छी घोड़ी नृत्य",
+        "district_hi": "शेखावाटी (सीकर-झुंझुनूँ)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -192,8 +228,17 @@
             "Bankiya, dhol and thali accompany; the Gujjar community considers Chari a sacred dance.",
             "Falbagh Kanwar of Kishangarh is the most-recognised classical Chari artist."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "महिलाएँ सिर पर सात पीतल के मटके (चरी) रखकर नृत्य करती हैं; सबसे ऊपरी मटके में बिनौले के दीपक जलते हैं।",
+            "बांकिया, ढोल और थाली संगत देते हैं; गुज्जर समुदाय चरी को एक पवित्र नृत्य मानता है।",
+            "किशनगढ़ की फलकुँवर बाई सर्वाधिक पहचानी जाने वाली शास्त्रीय चरी कलाकार हैं।"
+          ]
+        },
+        "name_hi": "चरी नृत्य",
+        "district_hi": "अजमेर (किशनगढ़)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -231,8 +276,17 @@
             "Dancers sit and produce rhythm by striking cymbals with the hand-held ones — a seated dance rare in Indian folk tradition.",
             "Sung in praise of Baba Ramdev at his Ramdevra fair; accompanied by tandoora, tanpura and chautara."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "नर्तक के शरीर पर बँधे 13 मंजीरों (तेरह ताल) पर नाम — नौ दाएँ पैर पर, दो कोहनियों पर, एक-एक हाथ में।",
+            "नर्तक बैठकर हाथ के मंजीरों से इन्हें टकराकर लय उत्पन्न करते हैं — भारतीय लोक-परंपरा में एक दुर्लभ आसीन नृत्य।",
+            "रामदेवरा मेले में बाबा रामदेव की स्तुति में गाया जाता है; तंदूरा, तानपूरा और चौतारा की संगत।"
+          ]
+        },
+        "name_hi": "तेरहताली नृत्य",
+        "district_hi": "पोकरण / रामदेवरा क्षेत्र",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -270,8 +324,17 @@
             "Performed as Shankariya, Surdas, Bikaji and Dhola-Maru sub-variants.",
             "Padma Shri Krishna Devi is the best-known modern Bhavai exponent."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "संतुलन-कला — नृत्य करते हुए सिर पर सात-आठ पीतल के मटके रखना; मुँह से रूमाल उठाना; काँच की धार या तलवार पर नृत्य।",
+            "शंकरिया, सूरदास, बीकाजी और ढोला-मारू उप-रूपों में प्रस्तुत।",
+            "पद्मश्री कृष्णा देवी आधुनिक भवाई की सबसे प्रसिद्ध कलाकार हैं।"
+          ]
+        },
+        "name_hi": "भवाई नृत्य",
+        "district_hi": "उदयपुर संभाग",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -309,8 +372,17 @@
             "Wedding dance of the Garasia tribe; men lead holding a sword or umbrella.",
             "The Garasia hills of Sirohi and Pindwara are its exclusive home."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "राजस्थान के लोक नृत्यों में दुर्लभ — बिना किसी वाद्य के किया जाता है।",
+            "गरासिया जनजाति का विवाह नृत्य; पुरुष तलवार या छाता लेकर नेतृत्व करते हैं।",
+            "सिरोही और पिंडवाड़ा की गरासिया पहाड़ियाँ इसका विशिष्ट घर हैं।"
+          ]
+        },
+        "name_hi": "वालर नृत्य",
+        "district_hi": "सिरोही",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -348,8 +420,17 @@
             "Also called \"Rai Nritya\"; a month-long dance-drama, unique among Indian folk-arts calendars for its length.",
             "Bhil villages of Udaipur, Rajsamand, Salumbar and Chittor host the annual cycle."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "केवल-पुरुष सावन-भादों (वर्षा-ऋतु) में पार्वती (गौरी) की उपासना; मंडल + थाली लय देते हैं।",
+            "'राई नृत्य' भी कहलाता है; एक माह तक चलने वाला नृत्य-नाट्य, अपनी अवधि के लिए भारतीय लोक-कलाओं में अनूठा।",
+            "उदयपुर, राजसमंद, सलूम्बर और चित्तौड़ के भील गाँव वार्षिक चक्र आयोजित करते हैं।"
+          ]
+        },
+        "name_hi": "गवरी नृत्य",
+        "district_hi": "मेवाड़ (उदयपुर)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -387,8 +468,17 @@
             "Origin: Katariasar village, Bikaner; the sect combines Nath-yogic and Sufi-inspired asceticism.",
             "Performed on Ashwin Shukla Saptami — the only Rajasthan folk dance involving direct contact with live fire."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "जसनाथी संप्रदाय के पुरुष धधकते अंगारों पर नृत्य करते हैं और जलते कोयलों पर मतीरा-फोड़ना ('तरबूज़-फोड़') करते हैं।",
+            "उद्गम: कतरियासर गाँव, बीकानेर; संप्रदाय नाथ-योगिक और सूफ़ी-प्रेरित तप को जोड़ता है।",
+            "आश्विन शुक्ल सप्तमी को किया जाता है — जीवित अग्नि से सीधा संपर्क करने वाला राजस्थान का एकमात्र लोक नृत्य।"
+          ]
+        },
+        "name_hi": "अग्नि नृत्य",
+        "district_hi": "बीकानेर (कतरियासर)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -426,8 +516,17 @@
             "Pungi and khanjari drive the rhythm; women in mirror-work black skirts perform serpentine body movements.",
             "Gulabo Sapera of Pushkar is the internationally recognised face of the form (Padma Shri, 2016)."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "UNESCO मानवता की अमूर्त सांस्कृतिक विरासत (2010) — UNESCO मान्यता वाला राजस्थान का एकमात्र लोक नृत्य।",
+            "पूँगी और खंजरी लय देते हैं; दर्पण-कार्य वाले काले घाघरे में महिलाएँ साँप-जैसी देह-गति करती हैं।",
+            "पुष्कर की गुलाबो सपेरा इस रूप का अंतरराष्ट्रीय स्तर पर पहचाना चेहरा हैं (पद्मश्री, 2016)।"
+          ]
+        },
+        "name_hi": "कालबेलिया / शंकरिया / इंडोणी नृत्य",
+        "district_hi": "अजमेर (पुष्कर) + नागौर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -465,8 +564,17 @@
             "Rasiya songs (Braj-influenced love lyrics) are sung with the bam beat — hence \"Bam-Rasiya\".",
             "The Braj-Rajasthan cultural overlap belt (Alwar-Bharatpur-Karauli) is its home."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "नई फ़सल के आगमन और फाल्गुन की मस्ती में किया जाता है; एक बड़ा ढोल (बम) दो मोटी छड़ियों से बजाया जाता है।",
+            "रसिया गीत (ब्रज-प्रभावित प्रेम-गीत) बम की थाप के साथ गाए जाते हैं — इसलिए 'बम-रसिया'।",
+            "ब्रज-राजस्थान सांस्कृतिक अतिव्यापन पेटी (अलवर-भरतपुर-करौली) इसका घर है।"
+          ]
+        },
+        "name_hi": "बम रसिया नृत्य",
+        "district_hi": "अलवर-भरतपुर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -504,8 +612,17 @@
             "Padma Shri Kamal Kothari and Devilal Samar promoted Ghudla to national and international stages.",
             "Historically tied to the killing of Ghudla — a folk-hero figure remembered in Marwar songs."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "एक महिला सिर पर छिद्रित पीतल के मटके (घुड़ला) में जलता दीपक रखकर नृत्य करती है — घूमर-पनिहारी संकर में वृत्त बनाती हुई।",
+            "पद्मश्री कमल कोठारी और देवीलाल सामर ने घुड़ला को राष्ट्रीय और अंतरराष्ट्रीय मंचों तक पहुँचाया।",
+            "ऐतिहासिक रूप से घुड़ला के वध से जुड़ा — मारवाड़ के गीतों में स्मरण किया गया एक लोक-नायक।"
+          ]
+        },
+        "name_hi": "घुड़ला नृत्य",
+        "district_hi": "जोधपुर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -543,8 +660,17 @@
             "Gulabo demonstrated Chakri at the Festival of India in Paris — her signature act on the international circuit.",
             "A Hadoti-belt export that occasionally features in Sawai Madhopur-Baran festivals."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "अविवाहित लड़कियाँ चंग की थाप पर तेज़ लय में चक्र (चकरी) की तरह घूमती हैं।",
+            "गुलाबो ने पेरिस के 'फ़ेस्टिवल ऑफ़ इंडिया' में चकरी प्रस्तुत की — अंतरराष्ट्रीय मंच पर उनका विशिष्ट कृत्य।",
+            "हाड़ौती-पेटी का निर्यात जो कभी-कभी सवाई माधोपुर-बारां के उत्सवों में दिखता है।"
+          ]
+        },
+        "name_hi": "चकरी नृत्य",
+        "district_hi": "हाड़ौती (कोटा-बूँदी)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -582,8 +708,17 @@
             "Devotional rhythm; society dances \"without discrimination\" (Class 11 Ch 3 phrasing) across castes.",
             "Bansdara and Kushalgarh belts are its Rajasthan strongholds."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "वागड़-क्षेत्र का नवरात्र नृत्य — गुजरात-प्रभावित गरबा, रास और डांडिया, गवरी के साथ मिश्रित।",
+            "भक्ति-लय; समाज जातियों के पार 'बिना भेदभाव' नृत्य करता है (कक्षा 11 अध्याय 3 की शब्दावली)।",
+            "बांसदरा और कुशलगढ़ पेटियाँ इसके राजस्थान गढ़ हैं।"
+          ]
+        },
+        "name_hi": "गरबा / रास / डांडिया (वागड़ शैली)",
+        "district_hi": "बांसवाड़ा / डूंगरपुर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नृत्य"
       }
     },
     {
@@ -621,8 +756,17 @@
             "All-male cast — men play female roles; dhol and shehnai are the accompanying instruments.",
             "Signature khayals: Chand Nilgiri, Rao Ridmal, Mira Mangal."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "कुचामन में लोक-नाटककार लच्छीराम द्वारा स्थापित — ओपेरा-रूप में लोक नाट्य, जिसमें लोकगीतों की प्रधानता है।",
+            "सर्व-पुरुष मंडली — पुरुष स्त्री-भूमिकाएँ निभाते हैं; ढोल और शहनाई संगत वाद्य हैं।",
+            "विशिष्ट ख़्याल: चाँद निलगिरी, राव रिडमल, मीरा मंगल।"
+          ]
+        },
+        "name_hi": "कुचामनी ख़्याल",
+        "district_hi": "नागौर (कुचामन)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नाट्य"
       }
     },
     {
@@ -660,8 +804,17 @@
             "Popular khayals: Jogi-Jogan, Kan-Gujari, Miyan-Bibu, Pathan, Rasili Tambolan.",
             "A staple of Chomu-Sikar-Dausa folk-theatre circuits."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "कुचामनी के विपरीत, महिलाएँ स्त्री-भूमिकाएँ निभाती हैं — नए प्रयोगों के लिए खुली एक आधुनिक लचीली ख़्याल शैली।",
+            "लोकप्रिय ख़्याल: जोगी-जोगन, कान-गूजरी, मियाँ-बीबू, पठान, रसीली तंबोलन।",
+            "चोमू-सीकर-दौसा लोक-रंगमंच मंडलियों का मुख्य आधार।"
+          ]
+        },
+        "name_hi": "जयपुरी ख़्याल",
+        "district_hi": "जयपुर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नाट्य"
       }
     },
     {
@@ -699,8 +852,17 @@
             "Poetry-competition format (\"Dangal\") — audience participation is high; centres at Ghosunda, Chittor, Nimbahera, Neemuch.",
             "A rare folk-drama form uniting Sufi and Shaiva devotional streams; best known modern practitioner was Soni Jayadayal."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "शाह अली और तुकनगीर द्वारा रचित — 'तुर्रा' शिव का प्रतीक, 'कलंगी' पार्वती का प्रतीक।",
+            "काव्य-प्रतियोगिता प्रारूप ('दंगल') — दर्शक-सहभागिता अधिक; केंद्र घोसुंडा, चित्तौड़, निंबाहेड़ा, नीमच।",
+            "सूफ़ी और शैव भक्ति-धाराओं को जोड़ने वाला एक दुर्लभ लोक-नाट्य रूप; सर्वाधिक ज्ञात आधुनिक कलाकार सोनी जयदयाल थे।"
+          ]
+        },
+        "name_hi": "तुर्रा कलंगी ख़्याल",
+        "district_hi": "चित्तौड़गढ़ (घोसुंडा-निंबाहेड़ा)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नाट्य"
       }
     },
     {
@@ -738,8 +900,17 @@
             "Full orchestra: harmonium, sarangi, shehnai, flute, nagara, dholak.",
             "The Duliya-Rana lineage of Nanuram's disciples still bankroll the annual Khayal festival."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "नानूराम द्वारा स्थापित — जीवित ख़्याल: हीर रांझा, हरिचंद, भर्तृहरि, जयदेव कलाली, ढोला मारवण, आल्हादेव।",
+            "पूर्ण वाद्यवृंद: हारमोनियम, सारंगी, शहनाई, बाँसुरी, नगाड़ा, ढोलक।",
+            "नानूराम के शिष्यों की दुलिया-राणा परंपरा आज भी वार्षिक ख़्याल उत्सव का वित्तपोषण करती है।"
+          ]
+        },
+        "name_hi": "शेखावाटी ख़्याल",
+        "district_hi": "सीकर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नाट्य"
       }
     },
     {
@@ -777,8 +948,17 @@
             "Repertoire: Amar Singh Rathore, Alha-Udal, Harishchandra Taramati, Satyavan Savitri, Laila-Majnu.",
             "Village-fair and wedding staple — sarangi, shehnai and dholak accompany."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "करौली, भरतपुर, धौलपुर, अलवर, गंगापुर, सवाई माधोपुर में प्रस्तुत — यहाँ हाथरस शैली-भेद मानक है।",
+            "संग्रह: अमर सिंह राठौर, आल्हा-ऊदल, हरिश्चंद्र तारामती, सत्यवान सावित्री, लैला-मजनूँ।",
+            "गाँव-मेले और विवाह का मुख्य आधार — सारंगी, शहनाई और ढोलक संगत देते हैं।"
+          ]
+        },
+        "name_hi": "नौटंकी (हाथरस शैली)",
+        "district_hi": "भरतपुर / धौलपुर / करौली",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नाट्य"
       }
     },
     {
@@ -816,8 +996,17 @@
             "Composers include Tulsidas, Phagu Maharaj, Sua Maharaj and Tej Kavi Jaisalmeri — Tej Kavi composed \"Swatantra Bawani\" (1943) for Gandhi.",
             "Recognised as a Rajasthan cultural heritage form by the Rajasthan Sangeet Natak Akademi."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "होली और सावन पर बीकानेर-जैसलमेर की लोक-काव्य प्रतियोगिताओं में उत्पन्न; नगाड़ा + ढोलक, कोई मंच-सज्जा नहीं।",
+            "रचयिताओं में तुलसीदास, फागु महाराज, सुआ महाराज और तेज कवि जैसलमेरी — तेज कवि ने गांधी के लिए 'स्वतंत्र बावनी' (1943) रची।",
+            "राजस्थान संगीत नाटक अकादमी द्वारा एक राजस्थानी सांस्कृतिक विरासत-रूप के रूप में मान्यता प्राप्त।"
+          ]
+        },
+        "name_hi": "रम्मत",
+        "district_hi": "बीकानेर / जैसलमेर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नाट्य"
       }
     },
     {
@@ -855,8 +1044,17 @@
             "Padma Shri Janaki Lal Bhand of Bhilwara is the form's modern master.",
             "Nomadic — bahurupiyas travel village-to-village performing daily; a living folk-theatre form."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "वेश-अनुकरण नाट्य — कलाकार (बहुरूपिया) पात्र (ऐतिहासिक, पौराणिक, लोक) बन जाता है।",
+            "भीलवाड़ा के पद्मश्री जानकी लाल भांड इस रूप के आधुनिक गुरु हैं।",
+            "घुमंतू — बहुरूपिये गाँव-गाँव घूमकर प्रतिदिन प्रस्तुति देते हैं; एक जीवंत लोक-रंगमंच रूप।"
+          ]
+        },
+        "name_hi": "स्वांग (बहुरूपिया परंपरा)",
+        "district_hi": "भीलवाड़ा",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नाट्य"
       }
     },
     {
@@ -894,8 +1092,17 @@
             "Bhopa reads the phad, Bhopi dances in front — the ravanhatha accompanies the recital.",
             "Padma Shri Lal Joshi (Bhilwara) — internationally recognised phad painter; his Devnarayan scrolls are museum-collected."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "लोक-नाट्य-चित्रण-मौखिक-साहित्य का संयुक्त रूप; 30'×5' का वस्त्र-पट किसी लोकदेव (पाबूजी, देवनारायण, रामदेवजी) का जीवन वर्णित करता है।",
+            "भोपा फड़ बाँचता है, भोपी सामने नृत्य करती है — वाचन के साथ रावणहत्था बजता है।",
+            "पद्मश्री लाल जोशी (भीलवाड़ा) — अंतरराष्ट्रीय स्तर पर पहचाने फड़ चित्रकार; उनके देवनारायण पट संग्रहालयों में संग्रहीत हैं।"
+          ]
+        },
+        "name_hi": "फड़ चित्रांकन और वाचन",
+        "district_hi": "भीलवाड़ा (शाहपुरा)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "नाट्य"
       }
     },
     {
@@ -933,8 +1140,17 @@
             "Six holes per pipe; Ramnath Chaudhary of Padmapura (Jaipur) famously plays the algoza with his nose.",
             "Used in Tejaji recitations, Diggipuri Raja epic, Dhola-Maru dance and Chakka-Bhavai."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "राजस्थान का आधिकारिक राज्य वाद्य — जुड़वाँ-बाँसुरी जो एक साथ बजाई जाती है (एक ध्रुव, एक धुन)।",
+            "प्रत्येक नली में छह छेद; पद्मपुरा (जयपुर) के रामनाथ चौधरी नाक से अलगोजा बजाने के लिए प्रसिद्ध हैं।",
+            "तेजाजी वाचन, डिग्गीपुरी राजा महाकाव्य, ढोला-मारू नृत्य और चक्का-भवाई में प्रयुक्त।"
+          ]
+        },
+        "name_hi": "अलगोजा (राज्य वाद्य)",
+        "district_hi": "जैसलमेर-बाड़मेर-जोधपुर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "वाद्य"
       }
     },
     {
@@ -972,8 +1188,17 @@
             "Sakar Khan Manganiyar (Padma Shri) is the internationally acclaimed 20th-century kamaycha master.",
             "Central to the Langa-Manganiyar performance economy that spans Jaisalmer-Barmer villages."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "सारंगी-परिवार का गज-वाद्य, चौड़े, गोल, चर्म-मढ़े अनुनादक के साथ — मांगणियार मुस्लिम पहचान का चिह्न।",
+            "साकर खान मांगणियार (पद्मश्री) 20वीं शताब्दी के अंतरराष्ट्रीय ख्याति-प्राप्त कमायचा गुरु हैं।",
+            "जैसलमेर-बाड़मेर के गाँवों में फैली लंगा-मांगणियार प्रदर्शन-अर्थव्यवस्था का केंद्र।"
+          ]
+        },
+        "name_hi": "कमायचा",
+        "district_hi": "जैसलमेर-बाड़मेर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "वाद्य"
       }
     },
     {
@@ -1011,8 +1236,17 @@
             "Padma Shri Sadiq Khan Manganiyar of Barmer — nicknamed \"the magician of khartal\".",
             "Standard accompaniment for saint-poet bhajans and Sufi qawwali sessions across western Rajasthan."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "लकड़ी की करताल (केर या बबूल की लकड़ी से) जिनके दो गुटकों के बीच पीतल की तश्तरियाँ; इकतारा के साथ बजाई जाती है।",
+            "बाड़मेर के पद्मश्री सादिक खान मांगणियार — 'खड़ताल के जादूगर' उपनाम से।",
+            "पश्चिमी राजस्थान भर में संत-कवि भजनों और सूफ़ी क़व्वाली सत्रों की मानक संगत।"
+          ]
+        },
+        "name_hi": "खड़ताल",
+        "district_hi": "बाड़मेर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "वाद्य"
       }
     },
     {
@@ -1050,8 +1284,17 @@
             "Padma Shri Yusuf Khan Meo — internationally-famed bhapang master (\"Bhapang samrat\").",
             "A Mewat cultural identity marker; taught at the Rajasthan Institute of Folk Music."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "डमरू-आकार एकतंत्री वाद्य, जिसे बगल और शरीर के बीच दबाकर तार का तनाव बदलते हुए बजाया जाता है।",
+            "पद्मश्री युसुफ़ खान मेव — अंतरराष्ट्रीय ख्याति-प्राप्त भपंग गुरु ('भपंग सम्राट')।",
+            "मेवात की सांस्कृतिक पहचान का चिह्न; राजस्थान लोक संगीत संस्थान में सिखाया जाता है।"
+          ]
+        },
+        "name_hi": "भपंग",
+        "district_hi": "मेवात (अलवर-भरतपुर)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "वाद्य"
       }
     },
     {
@@ -1089,8 +1332,17 @@
             "Central to the Pabuji-ki-Phad recitation; Bhopas travel village-to-village phad-singing with the ravanhatha.",
             "Sometimes called \"Dhap\"; considered the oldest surviving bowed instrument in South Asia."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "भोपाओं का विशिष्ट गज-वाद्य — नारियल-कवच का अनुनादक चर्म-मढ़ा, बाँस की गर्दन, घोड़े के बाल के गज से बजाई जाने वाली एक-दो तार।",
+            "पाबूजी-की-फड़ वाचन का केंद्र; भोपा रावणहत्था के साथ गाँव-गाँव फड़-गायन करते हैं।",
+            "कभी 'ढाप' भी कहलाता है; दक्षिण एशिया का सबसे पुराना जीवित गज-वाद्य माना जाता है।"
+          ]
+        },
+        "name_hi": "रावणहत्था",
+        "district_hi": "मारवाड़ (नागौर-राजसमंद)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "वाद्य"
       }
     },
     {
@@ -1128,8 +1380,17 @@
             "Standard accompaniment for the Devnarayan-ki-Phad recital; sung with the Bagrawats epic.",
             "A Mewar-only survival — the jantar tradition is now taught formally at Udaipur's Lok Kala Mandal."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "वीणा-परिवार का वाद्य, दो तूँबों और बाँस के दंड पर 22 मगर-चर्म पर्दों के साथ — गले में लटकाकर खड़े होकर बजाया जाता है।",
+            "देवनारायण-की-फड़ वाचन की मानक संगत; बगड़ावत महाकाव्य के साथ गाया जाता है।",
+            "केवल-मेवाड़ में जीवित — जंतर परंपरा अब उदयपुर के लोक कला मंडल में औपचारिक रूप से सिखाई जाती है।"
+          ]
+        },
+        "name_hi": "जंतर",
+        "district_hi": "मेवाड़ (उदयपुर)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "वाद्य"
       }
     },
     {
@@ -1167,8 +1428,17 @@
             "Padma Shri Bhungar Khan and Padma Shri Kadar Khan Langa — 20th-century Langa sarangi masters.",
             "Langa songs (Mand style, \"Nimbuda\") share the world stage with Manganiyar kamaycha music."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "लंगा समुदाय का गज-वाद्य — 27 तार, ऊपरी तार बकरी की आँतों से; घोड़े के बाल का गज बिरोजा (रोज़िन) पर रगड़ा जाता है।",
+            "पद्मश्री भूँगर खान और पद्मश्री कादर खान लंगा — 20वीं शताब्दी के लंगा सारंगी गुरु।",
+            "लंगा गीत (मांड शैली, 'निंबूड़ा') मांगणियार कमायचा संगीत के साथ विश्व-मंच साझा करते हैं।"
+          ]
+        },
+        "name_hi": "सारंगी (लंगा शैली)",
+        "district_hi": "जैसलमेर-बाड़मेर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "वाद्य"
       }
     },
     {
@@ -1206,8 +1476,17 @@
             "Padma Shri Mangi Bai Arya (Mewar) — legendary Mand-style singer who accompanied the shehnai at royal Mewar occasions.",
             "\"Padharo Mhare Des\", the tourism anthem sung by Allah Jilai Bai, is the Mand-mother of Rajasthan's branded folk sound."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "8 छेदों और ताड़-पत्र की रीड वाला सुषिर वाद्य; राजस्थान भर में शुभ-अवसर का वाद्य।",
+            "पद्मश्री मांगी बाई आर्य (मेवाड़) — प्रसिद्ध मांड-शैली गायिका जिन्होंने राजसी मेवाड़ अवसरों पर शहनाई की संगत की।",
+            "अल्लाह जिलाई बाई द्वारा गाया 'पधारो म्हारे देस', राजस्थान की ब्रांडेड लोक-ध्वनि की मांड-जननी है।"
+          ]
+        },
+        "name_hi": "शहनाई (मांड शैली, मेवाड़)",
+        "district_hi": "उदयपुर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "वाद्य"
       }
     },
     {
@@ -1245,8 +1524,17 @@
             "Played chiefly by Bhairuji Bhopas at Bhairon temples and mata-shrines.",
             "A Marwar folk survival with striking similarities to the Scottish Highland pipes."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "राजस्थान की देसी बैगपाइप — चमड़े की थैली, मुँह से फूँका जाता; ध्वनि पूँगी जैसी।",
+            "मुख्यतः भैरोंजी के भोपाओं द्वारा भैरों मंदिरों और माता-स्थलों पर बजाया जाता है।",
+            "स्कॉटिश हाइलैंड पाइप से आश्चर्यजनक समानता वाला एक मारवाड़ी लोक-अवशेष।"
+          ]
+        },
+        "name_hi": "मशक (बैगपाइप)",
+        "district_hi": "मारवाड़ (जोधपुर)",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "वाद्य"
       }
     },
     {
@@ -1284,8 +1572,17 @@
             "Standard accompaniment for the Kalbelia dance (a UNESCO Intangible Cultural Heritage form).",
             "The Bhopa performances at Nagaur cattle fair still open with the pungi."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "कालबेलिया जाति के सँपेरों द्वारा प्रयुक्त तूँबा-आधारित द्विरीड वाद्य — एक नली ध्रुव के लिए, एक धुन के लिए।",
+            "कालबेलिया नृत्य (एक UNESCO अमूर्त सांस्कृतिक विरासत रूप) की मानक संगत।",
+            "नागौर पशु मेले में भोपा प्रस्तुतियाँ आज भी पूँगी से आरंभ होती हैं।"
+          ]
+        },
+        "name_hi": "पूँगी (बीन)",
+        "district_hi": "अजमेर (पुष्कर) + नागौर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "वाद्य"
       }
     },
     {
@@ -1323,8 +1620,17 @@
             "Signature instrument of the Gidad and Chang dance forms of Shekhawati.",
             "Ram Sahay of Bissau is the most-recorded 20th-century chang exponent."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "एक ओर बकरी-चर्म वाला गोल लकड़ी का घेरा — होली के दौरान दोनों हाथों से बजाया जाता है।",
+            "शेखावाटी के गींदड़ और चंग नृत्य-रूपों का विशिष्ट वाद्य।",
+            "बिसाऊ के राम सहाय 20वीं शताब्दी के सर्वाधिक रिकॉर्ड किए गए चंग कलाकार हैं।"
+          ]
+        },
+        "name_hi": "चंग (शेखावाटी डफ)",
+        "district_hi": "सीकर-झुंझुनूँ",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "वाद्य"
       }
     },
     {
@@ -1362,8 +1668,17 @@
             "Padma Shri Allah Jilai Bai (Bikaner) sang \"Padharo Mhare Des\" — the tourism-industry anthem of the state.",
             "Mangi Bai Arya (Mewar) and Gavri Devi (Jodhpur) are Mand's other 20th-century greats."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "राजस्थान की शास्त्रीय लोक-परंपरा — अनुष्ठानिक रागों पर अर्ध-शास्त्रीय गायन।",
+            "पद्मश्री अल्लाह जिलाई बाई (बीकानेर) ने 'पधारो म्हारे देस' गाया — राज्य का पर्यटन-उद्योग गान।",
+            "मांगी बाई आर्य (मेवाड़) और गवरी देवी (जोधपुर) मांड की अन्य 20वीं शताब्दी की महान गायिकाएँ हैं।"
+          ]
+        },
+        "name_hi": "मांड गायन परंपरा",
+        "district_hi": "मेवाड़ / मारवाड़",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "संगीत"
       }
     },
     {
@@ -1401,8 +1716,17 @@
             "Langas sing on Mand / Nimbuda / Kayamkhan themes with sarangi; Manganiyars on Sindhi bhairavi / khamachi with kamaycha.",
             "The Rajasthan International Folk Festival (Jodhpur RIFF) has taken the community to Womad-Glastonbury circuits since 2007."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "दो मुस्लिम पेशेवर-संगीतकार समुदाय, जिनकी हिंदू-राजपूत संरक्षण-अर्थव्यवस्था सदियों से जीवित है।",
+            "लंगा सारंगी के साथ मांड / निंबूड़ा / कायमखान विषयों पर गाते हैं; मांगणियार कमायचा के साथ सिंधी भैरवी / खमाची पर।",
+            "राजस्थान इंटरनेशनल फ़ोक फ़ेस्टिवल (जोधपुर RIFF) ने 2007 से इस समुदाय को Womad-Glastonbury मंडलियों तक पहुँचाया है।"
+          ]
+        },
+        "name_hi": "लंगा-मांगणियार संगीत समुदाय",
+        "district_hi": "बाड़मेर / जैसलमेर",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "संगीत"
       }
     },
     {
@@ -1440,8 +1764,17 @@
             "Ghodi songs (groom's procession), Bindoli songs (wedding procession) and Jala songs (bride's side sees groom's camp) form the four-song wedding cycle.",
             "A cycle-song tradition sung by women; part of the Sangeet-Natak Akademi's intangible-heritage protection list."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "बना-बनी विवाह के बाद वर-वधू के बीच प्रेम और चुहलबाज़ी का संवाद व्यक्त करते हैं; पारिवारिक बंधनों और रीति-रिवाज़ों को दर्शाते हैं।",
+            "घोड़ी गीत (दूल्हे की सवारी), बिंदोली गीत (विवाह-जुलूस) और जला गीत (वधू-पक्ष का दूल्हे का डेरा देखना) चार-गीत विवाह-चक्र बनाते हैं।",
+            "महिलाओं द्वारा गाई जाने वाली चक्र-गीत परंपरा; संगीत-नाटक अकादमी की अमूर्त-विरासत संरक्षण सूची का भाग।"
+          ]
+        },
+        "name_hi": "बना-बनी गीत (विवाह चक्र)",
+        "district_hi": "संपूर्ण राजस्थान",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "संगीत"
       }
     },
     {
@@ -1478,8 +1811,16 @@
             "Songs sung at a child's birth — praise of the pregnant woman, joy of lineage, and blessings for the newborn.",
             "Distinctive from the North-Indian sohar songs — a distinct Rajasthani mother-daughter singing tradition."
           ],
-          "significance": "high"
-        }
+          "significance": "high",
+          "facts_hi": [
+            "बच्चे के जन्म पर गाए जाने वाले गीत — गर्भवती स्त्री की स्तुति, वंश का हर्ष, और नवजात के लिए आशीर्वाद।",
+            "उत्तर-भारतीय सोहर गीतों से भिन्न — एक विशिष्ट राजस्थानी माता-पुत्री गायन परंपरा।"
+          ]
+        },
+        "name_hi": "जच्चा (जन्म) गीत",
+        "district_hi": "संपूर्ण राजस्थान",
+        "type_hi": "लोक-कला",
+        "artForm_hi": "संगीत"
       }
     }
   ]
