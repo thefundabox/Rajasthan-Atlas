@@ -24,7 +24,12 @@
             "Alone in Rajputana, Mewar refused the Mughal Mansabdari succession-tax — the state's samants kept their pre-Akbar prerogatives.",
             "The Salumber Thakur's troops joined Auwa's Kushal Singh in the 1857 rebellion, the last time the Umrao system flexed independent military power."
           ],
-          "significance": "high"
+          "significance": "high",
+          "facts_hi": [
+            "मेवाड़ की उमराव (सामंत) व्यवस्था त्रि-स्तरीय थी — सलूम्बर ठाकुर 16 प्रथम-श्रेणी उमरावों का प्रमुख था और महाराणा की अनुपस्थिति में उदयपुर पर शासन करता था।",
+            "राजपूताना में अकेले मेवाड़ ने मुग़ल मनसबदारी उत्तराधिकार-कर अस्वीकार किया — राज्य के सामंतों ने अपने अकबर-पूर्व विशेषाधिकार बनाए रखे।",
+            "सलूम्बर ठाकुर की सेना 1857 विद्रोह में आउवा के कुशाल सिंह के साथ जुड़ी — अंतिम बार जब उमराव व्यवस्था ने स्वतंत्र सैन्य शक्ति दिखाई।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
@@ -37,7 +42,11 @@
         "labelAnchor": [
           73.9,
           24.15
-        ]
+        ],
+        "name_hi": "मेवाड़ सामंत व्यवस्था — उमराव (सलूम्बर प्रमुख)",
+        "district_hi": "उदयपुर (सलूम्बर)",
+        "type_hi": "मध्यकालीन प्रशासन",
+        "polityUnit_hi": "उमराव — 16 प्रथम-श्रेणी + 32 द्वितीय-श्रेणी + गोल के उमराव (सैकड़ों)"
       }
     },
     {
@@ -62,7 +71,12 @@
             "Rajvi were exempt from Rekh (revenue), Hukmnama tax and Chakri (military service) — the highest hereditary tier in Rajputana.",
             "The 1835 Jodhpur Legion (raised by the British) uprooted the pre-Mughal Marwar military balance; the samants' revolt at Erinpura in 1857 was partly a defence of that balance."
           ],
-          "significance": "high"
+          "significance": "high",
+          "facts_hi": [
+            "मारवाड़ के सामंत राजवी (3 पीढ़ियों तक के निकट राजकुल), सरदार, गनायत और मुत्सद्दी में वर्गीकृत थे।",
+            "राजवी रेख (राजस्व), हुक्मनामा कर और चाकरी (सैन्य सेवा) से मुक्त थे — राजपूताना का सर्वोच्च वंशानुगत स्तर।",
+            "1835 की जोधपुर लीजन (अंग्रेज़ों द्वारा गठित) ने अकबर-पूर्व मारवाड़ सैन्य संतुलन उखाड़ दिया; 1857 में एरिनपुरा में सामंतों का विद्रोह आंशिक रूप से उसी संतुलन की रक्षा था।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
@@ -75,7 +89,11 @@
         "labelAnchor": [
           73.028,
           26.283
-        ]
+        ],
+        "name_hi": "मारवाड़ सामंत श्रेणियाँ — राजवी/सरदार/गनायत/मुत्सद्दी",
+        "district_hi": "जोधपुर",
+        "type_hi": "मध्यकालीन प्रशासन",
+        "polityUnit_hi": "भिन्न अधिकारों वाली चार सामंत श्रेणियाँ"
       }
     },
     {
@@ -100,7 +118,12 @@
             "The Musahib was the Pradhan (prime minister) of Jaipur — a title unique to this state.",
             "The Kachwaha-Mughal alliance from Bhagwant Das (1568) onward made Jaipur the most-Mughal-adjacent Rajputana court; Man Singh I's Kotri system was the model for it."
           ],
-          "significance": "high"
+          "significance": "high",
+          "facts_hi": [
+            "जयपुर की सामंत श्रेणियाँ महाराजा पृथ्वी सिंह ने तय कीं — उनके 12 पुत्रों के नाम पर रखी 12 स्थायी जागीरें, जिन्हें कोटड़ी कहा गया।",
+            "मुसाहिब जयपुर का प्रधान (मुख्यमंत्री) था — इस राज्य की एक अनूठी उपाधि।",
+            "भगवंत दास (1568) से आगे कछवाहा-मुग़ल गठबंधन ने जयपुर को सर्वाधिक मुग़ल-निकट राजपूताना दरबार बनाया; मानसिंह प्रथम की कोटड़ी व्यवस्था इसका आदर्श थी।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
@@ -113,7 +136,11 @@
         "labelAnchor": [
           75.822,
           26.923
-        ]
+        ],
+        "name_hi": "जयपुर कोटड़ी व्यवस्था (पृथ्वी सिंह की 12 कोटड़ियाँ)",
+        "district_hi": "जयपुर",
+        "type_hi": "मध्यकालीन प्रशासन",
+        "polityUnit_hi": "पृथ्वी सिंह के 12 पुत्रों के नाम पर 12 स्थायी जागीरें"
       }
     },
     {
@@ -138,7 +165,12 @@
             "Only two Rajputana courts (Kota, Bundi) called their Pradhan a \"Diwan\" — a Rajput adaptation of the Mughal revenue-administration title.",
             "The rebel Kota administration of Oct 1857-Mar 1858 (Jayadayal, Mehrab Khan) briefly bypassed the entire Rajvi hierarchy — the last time public + army defeated a Rajputana court from within."
           ],
-          "significance": "high"
+          "significance": "high",
+          "facts_hi": [
+            "कोटा के सामंत राजवी कहलाते थे; 30 राजवी सरदार राज्य चलाते थे, अधिकांश हाड़ा चौहान शाखा से।",
+            "केवल दो राजपूताना दरबार (कोटा, बूँदी) अपने प्रधान को 'दीवान' कहते थे — मुग़ल राजस्व-प्रशासन उपाधि का राजपूत रूपांतरण।",
+            "अक्टूबर 1857-मार्च 1858 का विद्रोही कोटा प्रशासन (जयदयाल, मेहराब खान) ने संक्षेप में पूरी राजवी पदानुक्रम को दरकिनार किया — अंतिम बार जब जनता + सेना ने किसी राजपूताना दरबार को भीतर से हराया।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
@@ -151,7 +183,11 @@
         "labelAnchor": [
           75.833,
           25.18
-        ]
+        ],
+        "name_hi": "कोटा सामंत व्यवस्था — 30 राजवी सरदार (हाड़ा चौहान)",
+        "district_hi": "कोटा",
+        "type_hi": "मध्यकालीन प्रशासन",
+        "polityUnit_hi": "30 राजवी सरदार, अधिकांश हाड़ा चौहान"
       }
     },
     {
@@ -176,7 +212,12 @@
             "The Pradhan (prime minister) here carried the title Mukhtyar — again unique among Rajputana states.",
             "Ganga Singh (1887-1943) modernised the samant system by anchoring it to a written Rekh register — often called the last active Rajputana samant reform."
           ],
-          "significance": "high"
+          "significance": "high",
+          "facts_hi": [
+            "बीकानेर सामंत: (i) राव बीका के प्रत्यक्ष पुरुष-वंश के संबंधी, (ii) अन्य रक्त-संबंधी राठौड़, (iii) राठौड़-पूर्व शासक घराने (भाटी, सांखला आदि)।",
+            "यहाँ प्रधान (मुख्यमंत्री) मुख्त्यार उपाधि धारण करता था — फिर से राजपूताना राज्यों में अनूठा।",
+            "गंगा सिंह (1887-1943) ने सामंत व्यवस्था को एक लिखित रेख रजिस्टर से जोड़कर आधुनिक बनाया — अक्सर अंतिम सक्रिय राजपूताना सामंत सुधार कहलाता है।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
@@ -189,7 +230,11 @@
         "labelAnchor": [
           73.317,
           28.022
-        ]
+        ],
+        "name_hi": "बीकानेर त्रि-स्तरीय सामंत श्रेणियाँ",
+        "district_hi": "बीकानेर",
+        "type_hi": "मध्यकालीन प्रशासन",
+        "polityUnit_hi": "वंश-निकटता पर आधारित 3 सामंत स्तर"
       }
     },
     {
@@ -214,7 +259,12 @@
             "Jaisalmer was the ONLY Rajputana state that never collected a Succession Tax (Peshkashi / Nazrana / Hukmnama) from its samants.",
             "The two-tier system reflected the Bhati court's ceremonial seating on left and right of the ruler — an unusually formal Rajput courtly arrangement."
           ],
-          "significance": "high"
+          "significance": "high",
+          "facts_hi": [
+            "जैसलमेर के भाटी सामंत रावल हरराज के शासन से दावी (बायाँ) और जीवनी (दायाँ) श्रेणियों में विभाजित थे।",
+            "जैसलमेर एकमात्र राजपूताना राज्य था जिसने अपने सामंतों से उत्तराधिकार-कर (पेशकशी / नज़राना / हुक्मनामा) कभी नहीं वसूला।",
+            "यह द्वि-स्तरीय व्यवस्था शासक के बाएँ और दाएँ भाटी दरबार की आनुष्ठानिक बैठक को दर्शाती थी — एक असामान्य रूप से औपचारिक राजपूत दरबारी व्यवस्था।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
@@ -227,7 +277,11 @@
         "labelAnchor": [
           70.912,
           26.912
-        ]
+        ],
+        "name_hi": "जैसलमेर सामंत व्यवस्था — दावी / जीवनी (बायाँ / दायाँ)",
+        "district_hi": "जैसलमेर",
+        "type_hi": "मध्यकालीन प्रशासन",
+        "polityUnit_hi": "दो सामंत स्तर — दावी (बायाँ) + जीवनी (दायाँ)"
       }
     },
     {
@@ -252,7 +306,12 @@
             "His agricultural policy pushed the state's revenue to ₹17.5 lakh per year by 1763 (the final year of his reign) — the highest in any Rajputana Jat state.",
             "A Kirti Stambh at Kumher records Suraj Mal's administrative rules — cited by Colonel Todd as the \"most rational\" Rajputana revenue code."
           ],
-          "significance": "high"
+          "significance": "high",
+          "facts_hi": [
+            "राजा सूरजमल (शासन 1756-1763) ने एक ग़ैर-जातीय प्रशासनिक ढाँचा बनाया — भरतपुर का प्रधान (मुख्त्यार) किसी भी समुदाय से हो सकता था।",
+            "उनकी कृषि-नीति ने 1763 (उनके शासन के अंतिम वर्ष) तक राज्य का राजस्व ₹17.5 लाख प्रति वर्ष तक पहुँचाया — किसी भी राजपूताना जाट राज्य में सर्वाधिक।",
+            "कुम्हेर की एक कीर्ति स्तंभ सूरजमल के प्रशासनिक नियम दर्ज करती है — कर्नल टॉड ने इसे राजपूताना का 'सर्वाधिक तर्कसंगत' राजस्व-संहिता बताया।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
@@ -265,7 +324,11 @@
         "labelAnchor": [
           77.5,
           27.216
-        ]
+        ],
+        "name_hi": "भरतपुर — सूरजमल का जाट प्रशासनिक सुधार",
+        "district_hi": "भरतपुर",
+        "type_hi": "मध्यकालीन प्रशासन",
+        "polityUnit_hi": "मुख्त्यार प्रधान के अधीन जाति-निरपेक्ष प्रशासनिक पद"
       }
     },
     {
@@ -290,7 +353,12 @@
             "Jaisalmer alone was exempt — the Bhati court never took a succession tax.",
             "The tax was in effect the renewal of the Jagir lease (Patta); non-payment triggered the Diwan to declare the Jagir Khalsa (crown-resumed)."
           ],
-          "significance": "high"
+          "significance": "high",
+          "facts_hi": [
+            "एक ही कर, अलग नाम: जोधपुर — पेशकशी (बाद में हुक्मनामा); मेवाड़ और जयपुर — नज़राना; अन्य राज्य — क़ैद ख़ालसा / तलवार बंधाई।",
+            "अकेला जैसलमेर मुक्त था — भाटी दरबार ने कभी उत्तराधिकार-कर नहीं लिया।",
+            "यह कर वस्तुतः जागीर पट्टे (पट्टा) का नवीकरण था; न चुकाने पर दीवान जागीर को ख़ालसा (राज-अधिग्रहीत) घोषित करता था।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
@@ -303,7 +371,11 @@
         "labelAnchor": [
           73.5,
           26.0
-        ]
+        ],
+        "name_hi": "दरबारों में उत्तराधिकार-कर शब्दावली",
+        "district_hi": "संपूर्ण राजस्थान (मारवाड़-मेवाड़-जयपुर)",
+        "type_hi": "मध्यकालीन प्रशासन",
+        "polityUnit_hi": "विभिन्न दरबारों में एक ही कर के अलग-अलग नाम"
       }
     },
     {
@@ -328,7 +400,12 @@
             "Four Jagir types: (i) Samant Jagir — hereditary clan grant; (ii) Hukumat Jagir — salary grant to Mutsaddi, resumed on death; (iii) Bhom Jagir — border-defence grant, un-evictable; (iv) Sasan Jagir — tax-free (Maafi) grant to Charans, Bhats and temples.",
             "Only Samant Jagir was hereditary — the other three reverted to Khalisa on the holder's death."
           ],
-          "significance": "high"
+          "significance": "high",
+          "facts_hi": [
+            "ख़ालिसा भूमि — प्रत्यक्ष राज-सम्पदा; यहाँ हाकिम अधिकारी न्याय और राजस्व चलाते थे।",
+            "चार जागीर प्रकार: (i) सामंत जागीर — वंशानुगत कुल-अनुदान; (ii) हुकुमत जागीर — मुत्सद्दी को वेतन-अनुदान, मृत्यु पर वापस; (iii) भोम जागीर — सीमा-रक्षा अनुदान, अनिष्कासनीय; (iv) सासन जागीर — चारण, भाट और मंदिरों को कर-मुक्त (माफ़ी) अनुदान।",
+            "केवल सामंत जागीर वंशानुगत थी — शेष तीन धारक की मृत्यु पर ख़ालिसा में लौट जाती थीं।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
@@ -341,7 +418,11 @@
         "labelAnchor": [
           75.822,
           26.923
-        ]
+        ],
+        "name_hi": "खालिसा बनाम जागीर भूमि — चार जागीर प्रकार",
+        "district_hi": "संपूर्ण राजस्थान (जयपुर उदाहरण-स्वरूप)",
+        "type_hi": "मध्यकालीन प्रशासन",
+        "polityUnit_hi": "खालिसा (राजकीय) + 4 जागीर प्रकार"
       }
     },
     {
@@ -367,7 +448,13 @@
             "Mukata (lump sum), Dori (measured area) and Ghughri (equal to the seed given by the state) were three cash-and-kind variants used in leaner years.",
             "Barani land (rain-fed) and Unnao land (irrigated by tank/well/baori) were assessed at different rates in every state."
           ],
-          "significance": "high"
+          "significance": "high",
+          "facts_hi": [
+            "लाटा/बटाई — अधिकारी की देखरेख में खलिहान पर अनाज का भौतिक विभाजन।",
+            "कूंता — खड़ी फ़सल का बिना तौले आँख से अनुमान।",
+            "मुकाता (एकमुश्त राशि), दोरी (मापित क्षेत्र) और घूघरी (राज्य द्वारा दिए बीज के बराबर) दुबले वर्षों में प्रयुक्त तीन नक़द-और-जिंस प्रकार थे।",
+            "बारानी भूमि (वर्षा-सिंचित) और उन्नाव भूमि (तालाब/कुआँ/बावड़ी से सिंचित) हर राज्य में भिन्न दरों पर आँकी जाती थीं।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
@@ -380,7 +467,11 @@
         "labelAnchor": [
           75.4,
           26.4
-        ]
+        ],
+        "name_hi": "लगान-वसूली विधियाँ — लाटा/बटाई, कूंता, मुकाता, दोरी, घूघरी",
+        "district_hi": "संपूर्ण राजस्थान",
+        "type_hi": "मध्यकालीन प्रशासन",
+        "polityUnit_hi": "क्षेत्र-स्तरीय राजस्व-आकलन विधियाँ"
       }
     },
     {
@@ -405,7 +496,12 @@
             "Gair-Bapidar (a.k.a. Shikmi Kashtkar) — non-hereditary tenant farmer, closer to an agricultural labourer.",
             "The saying Colonel Todd recorded — \"Bhog ra dhani Raj ho, Bhom ra dhani ma chhau\" — captures the ruler-peasant split: king owns the revenue, tiller owns the land."
           ],
-          "significance": "high"
+          "significance": "high",
+          "facts_hi": [
+            "बापीदार (उर्फ़ खुदकाश्तकार) — वंशानुगत भू-स्वामी कृषक; अनिष्कासनीय, अकाल वर्षों में छोड़ने पर भी खेत बनाए रखता था।",
+            "ग़ैर-बापीदार (उर्फ़ शिकमी काश्तकार) — ग़ैर-वंशानुगत काश्तकार, कृषि-मज़दूर के अधिक निकट।",
+            "कर्नल टॉड द्वारा दर्ज कहावत — \"भोग रा धणी राज हो, भोम रा धणी मा छ्यूँ\" — शासक-कृषक विभाजन को पकड़ती है: राजा राजस्व का स्वामी, कृषक भूमि का।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
@@ -418,7 +514,11 @@
         "labelAnchor": [
           72.9,
           26.5
-        ]
+        ],
+        "name_hi": "बापीदार बनाम ग़ैर-बापीदार (खुदकाश्तकार बनाम शिकमी काश्तकार)",
+        "district_hi": "संपूर्ण राजस्थान",
+        "type_hi": "मध्यकालीन प्रशासन",
+        "polityUnit_hi": "मध्यकालीन राजस्व के अंतर्गत कृषक श्रेणियाँ"
       }
     },
     {
@@ -443,7 +543,12 @@
             "Grasia — took a share of the harvest (gras) in return for military service; lax service could cost them the grant.",
             "These were the two samant classes Todd said kept Rajputana border villages defensible against Mughal, Maratha and Pindari incursions."
           ],
-          "significance": "high"
+          "significance": "high",
+          "facts_hi": [
+            "भोमिया — वे जागीरदार जो सीमा या गाँव की रक्षा में मारे गए; अनुदान सदा के लिए अनिष्कासनीय था।",
+            "ग्रासिया — सैन्य सेवा के बदले फ़सल का हिस्सा (ग्रास) लेते थे; ढीली सेवा से अनुदान छिन सकता था।",
+            "ये वे दो सामंत वर्ग थे जिनके बारे में टॉड ने कहा कि उन्होंने राजपूताना सीमांत गाँवों को मुग़ल, मराठा और पिंडारी आक्रमणों के विरुद्ध रक्षणीय बनाए रखा।"
+          ]
         },
         "state": "Rajasthan",
         "source": "Rajasthan Adhyan Class 12 Ch 2 (Medieval Administrative System of Rajasthan)",
@@ -456,7 +561,11 @@
         "labelAnchor": [
           73.6,
           27.0
-        ]
+        ],
+        "name_hi": "भोमिया और ग्रासिया सामंत — सीमा-रक्षा अनुदान",
+        "district_hi": "संपूर्ण राजस्थान (मारवाड़ सीमांत)",
+        "type_hi": "मध्यकालीन प्रशासन",
+        "polityUnit_hi": "सीमा-रक्षा सामंत वर्ग"
       }
     }
   ]

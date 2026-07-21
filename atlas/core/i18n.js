@@ -295,6 +295,9 @@ const DICT = {
   'Rajput Dynasty':                   'राजपूत राजवंश',
   'Battle Site':                      'युद्ध-स्थल',
   'Ancient Civilization':             'प्राचीन सभ्यता',
+  'Medieval Admin':                   'मध्यकालीन प्रशासन',
+  'Literary Figure':                  'साहित्यकार',
+  'Prashasti':                        'प्रशस्ति',
 
   /* Detail card — feature kind labels */
   'National Park':                    'राष्ट्रीय उद्यान',

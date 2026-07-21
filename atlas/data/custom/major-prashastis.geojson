@@ -22,8 +22,19 @@
             "Chronicles Mewar's history from Bappa Rawal (8th c.) to Raj Singh I; a foundational source for Rajput historiography.",
             "Inscribed 1676 CE on locally-quarried Rajsamand marble; carved in Devanagari script.",
             "One of only two Sanskrit prashastis to have been used as source material by James Tod."
+          ],
+          "facts_hi": [
+            "विश्व का सबसे बड़ा संस्कृत शिलालेख — राजसमंद झील के नौचौकी तटबंध पर 24 शिला-पट्ट।",
+            "महाराणा राज सिंह प्रथम के शासन में दरबारी कवि रणछोड़ भट्ट तैलंग द्वारा रचित 1017 श्लोक।",
+            "बप्पा रावल (8वीं शताब्दी) से राज सिंह प्रथम तक मेवाड़ का इतिहास वर्णित; राजपूत इतिहास-लेखन का आधारभूत स्रोत।",
+            "1676 ई. में स्थानीय राजसमंद संगमरमर पर अंकित; देवनागरी लिपि में तराशा।",
+            "केवल दो संस्कृत प्रशस्तियों में से एक जिसे जेम्स टॉड ने स्रोत-सामग्री के रूप में प्रयोग किया।"
           ]
-        }
+        },
+        "name_hi": "राज प्रशस्ति (राजसमंद झील)",
+        "district_hi": "राजसमंद",
+        "type_hi": "प्रशस्ति",
+        "date_hi": "1676 ई."
       }
     },
     {
@@ -46,8 +57,18 @@
             "Dedicated to the first Tirthankara Adinatha; commissioned by Bagherwal merchant Jija.",
             "The inscription on the tower is one of the earliest Jain patronage records in central Rajasthan.",
             "Built entirely of sculpted stone; the seven-storey tower has 54 exterior stairs to the top."
+          ],
+          "facts_hi": [
+            "22 मी दिगंबर जैन स्तंभ — चित्तौड़गढ़ दुर्ग के बाद के विजय स्तंभ का 12वीं-शताब्दी समकक्ष।",
+            "प्रथम तीर्थंकर आदिनाथ को समर्पित; बघेरवाल व्यापारी जीजा द्वारा निर्मित।",
+            "स्तंभ पर शिलालेख मध्य राजस्थान के आरंभिकतम जैन संरक्षण अभिलेखों में से एक है।",
+            "पूर्णतः तराशे पत्थर से निर्मित; सात मंज़िला स्तंभ की चोटी तक 54 बाहरी सीढ़ियाँ हैं।"
           ]
-        }
+        },
+        "name_hi": "कीर्ति स्तंभ शिलालेख (चित्तौड़गढ़)",
+        "district_hi": "चित्तौड़गढ़",
+        "type_hi": "प्रशस्ति",
+        "date_hi": "12वीं शताब्दी ई."
       }
     },
     {
@@ -70,8 +91,18 @@
             "Composed 1460 CE at Kumbhalgarh fort under Rana Kumbha (1433-1468); five stone slabs, ~200 verses.",
             "Records the early Mewar Guhila lineage and Rana Kumbha's military victories.",
             "One of India's earliest inscriptions to name a female architect (Kumbha's queen Kirtila Sadhavi)."
+          ],
+          "facts_hi": [
+            "'कीर्ति स्तंभ प्रशस्ति' या एकलिंग महात्म्य शिलालेख के नाम से भी जाना जाता है।",
+            "राणा कुंभा (1433-1468) के अधीन कुंभलगढ़ दुर्ग में 1460 ई. में रचित; पाँच शिला-पट्ट, ~200 श्लोक।",
+            "आरंभिक मेवाड़ गुहिल वंशावली और राणा कुंभा की सैन्य विजयें दर्ज करता है।",
+            "एक महिला वास्तुकार का नाम लेने वाले भारत के आरंभिकतम शिलालेखों में से एक (कुंभा की रानी कीर्तिला साधवी)।"
           ]
-        }
+        },
+        "name_hi": "कुंभलगढ़ प्रशस्ति",
+        "district_hi": "राजसमंद",
+        "type_hi": "प्रशस्ति",
+        "date_hi": "1460 ई."
       }
     },
     {
@@ -94,8 +125,18 @@
             "Composed by Jain scholar Gunabhadra Suri under Chauhan king Someshwar (1169-1177 CE).",
             "Chronicles the Chauhan lineage from Vasudev of Sambhar to Someshwar — a foundational Chauhan source.",
             "First to name Ajmer (Ajayameru) as founded by Ajayaraja II, ~1113 CE."
+          ],
+          "facts_hi": [
+            "राजस्थान के सर्वाधिक महत्त्वपूर्ण 12वीं-शताब्दी शिलालेखों में से एक — बिजोलिया के पार्श्वनाथ जैन मंदिर पर अंकित।",
+            "चौहान राजा सोमेश्वर (1169-1177 ई.) के अधीन जैन विद्वान गुणभद्र सूरि द्वारा रचित।",
+            "सांभर के वासुदेव से सोमेश्वर तक चौहान वंशावली दर्ज करता है — एक आधारभूत चौहान स्रोत।",
+            "अजमेर (अजयमेरु) को अजयराज द्वितीय द्वारा ~1113 ई. में बसाया बताने वाला पहला।"
           ]
-        }
+        },
+        "name_hi": "बिजोलिया शिलालेख",
+        "district_hi": "भीलवाड़ा",
+        "type_hi": "प्रशस्ति",
+        "date_hi": "1170 ई."
       }
     },
     {
@@ -118,8 +159,18 @@
             "A multi-layer prashasti — earliest layer c. 1285 CE (Paramara period), extended under Rana Kumbha (1440 CE).",
             "Chronicles the Paramara Abu lineage and later Mewar-Sisodia patronage of the shrine.",
             "One of only three Sanskrit inscriptions in Rajasthan to record continuous ~600-year royal patronage of a single temple."
+          ],
+          "facts_hi": [
+            "अचलगढ़ — माउंट आबू (सिरोही) के अचलेश्वर महादेव मंदिर पर अंकित।",
+            "एक बहु-स्तरीय प्रशस्ति — आरंभिकतम स्तर लगभग 1285 ई. (परमार काल), राणा कुंभा के अधीन विस्तारित (1440 ई.)।",
+            "परमार आबू वंशावली और मंदिर का बाद का मेवाड़-सिसोदिया संरक्षण दर्ज करता है।",
+            "राजस्थान के केवल तीन संस्कृत शिलालेखों में से एक जो किसी एक मंदिर के ~600-वर्ष निरंतर राजसी संरक्षण को दर्ज करता है।"
           ]
-        }
+        },
+        "name_hi": "अचलेश्वर प्रशस्ति (माउंट आबू)",
+        "district_hi": "सिरोही",
+        "type_hi": "प्रशस्ति",
+        "date_hi": "1285 ई. / 1440 ई. (बहु-स्तरीय)"
       }
     },
     {
@@ -142,8 +193,18 @@
             "Records Guhila kings from Bappa Rawal (734 CE) to Samarasingh (1273 CE).",
             "Along with the Ekling and Achaleshwar prashastis, foundation stone of Guhila chronology.",
             "Discovered by Ojha in 1911; now displayed at the Rajasthan State Museum, Udaipur."
+          ],
+          "facts_hi": [
+            "चीरवा (उदयपुर) में 13वीं-शताब्दी का गुहिल-वंश शिलालेख — मेवाड़ राजवंश की आरंभिकतम वंशावली प्रशस्ति।",
+            "बप्पा रावल (734 ई.) से समरसिंह (1273 ई.) तक गुहिल राजाओं को दर्ज करता है।",
+            "एकलिंग और अचलेश्वर प्रशस्तियों के साथ, गुहिल कालक्रम की आधारशिला।",
+            "1911 में ओझा द्वारा खोजा; अब राजस्थान राज्य संग्रहालय, उदयपुर में प्रदर्शित।"
           ]
-        }
+        },
+        "name_hi": "चीरवा शिलालेख",
+        "district_hi": "उदयपुर",
+        "type_hi": "प्रशस्ति",
+        "date_hi": "1273 ई. (विक्रम संवत 1330)"
       }
     },
     {
@@ -166,8 +227,18 @@
             "Records the commissioning of the temple by merchant Dharna Shah and architect Depaka.",
             "Names the 1444 marble pillars — each uniquely carved — as the temple's centerpiece.",
             "One of Rajasthan's most-cited Jain patronage records; foundational to the Chaturmukha temple form."
+          ],
+          "facts_hi": [
+            "रणकपुर जैन मंदिर-परिसर पर अंकित, जो राणा कुंभा के अधिकार में 1439 ई. में बना।",
+            "व्यापारी धरणा शाह और वास्तुकार देपाक द्वारा मंदिर के निर्माण को दर्ज करता है।",
+            "1444 संगमरमरी स्तंभों — प्रत्येक अनूठे तराशे — को मंदिर का केंद्र-बिंदु बताता है।",
+            "राजस्थान के सर्वाधिक उद्धृत जैन संरक्षण अभिलेखों में से एक; चतुर्मुख मंदिर-रूप के लिए आधारभूत।"
           ]
-        }
+        },
+        "name_hi": "रणकपुर मंदिर शिलालेख",
+        "district_hi": "पाली",
+        "type_hi": "प्रशस्ति",
+        "date_hi": "1439 ई."
       }
     },
     {
@@ -190,8 +261,18 @@
             "Records Aparajit, a Guhila predecessor of Bappa Rawal (734 CE).",
             "Along with the Chirwa inscription, extends Mewar's historical timeline to the 7th c.",
             "Discovered 1913 by G. H. Ojha at Nagari (ancient Madhyamika)."
+          ],
+          "facts_hi": [
+            "किसी मेवाड़ गुहिल राजा का आरंभिकतम तिथि-अंकित शिलालेख — नगरी (चित्तौड़गढ़ के निकट) में 661 ई. में अंकित।",
+            "अपराजित को दर्ज करता है, जो बप्पा रावल (734 ई.) से पूर्व का एक गुहिल पूर्वज था।",
+            "चीरवा शिलालेख के साथ, मेवाड़ की ऐतिहासिक कालरेखा को 7वीं शताब्दी तक विस्तारित करता है।",
+            "1913 में जी.एच. ओझा द्वारा नगरी (प्राचीन मध्यमिका) में खोजा गया।"
           ]
-        }
+        },
+        "name_hi": "अपराजित प्रशस्ति (चित्तौड़गढ़)",
+        "district_hi": "चित्तौड़गढ़",
+        "type_hi": "प्रशस्ति",
+        "date_hi": "661 ई. (विक्रम संवत 718)"
       }
     }
   ]
