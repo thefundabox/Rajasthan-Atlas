@@ -69,9 +69,9 @@ const DICT = {
   'OTHER':                    'अन्य',
 
   /* Sidebar section labels (DistrictProfile + UIManager) */
-  'Key figures':              'Key figures',
-  'Location':                 'Location',
-  'References':               'References',
+  'Key figures':              'मुख्य आँकड़े',
+  'Location':                 'स्थिति',
+  'References':               'संदर्भ',
   'District':                 'जिला',
   'Division':                 'संभाग',
   'Headquarters':             'मुख्यालय',
@@ -250,8 +250,8 @@ const DICT = {
   'Stable':                           'स्थिर',
 
   /* Environment detail card (EnvironmentLayer.js) — section headers.
-   * 'Key figures' / 'Location' / 'References' are deliberately left in
-   * English above, matching the Hinglish register used elsewhere. */
+   * ('Key figures' / 'Location' / 'References' above are section headers, so
+   * they are translated — not UI verbs, which stay English per the register.) */
   'Overview':                         'सिंहावलोकन',
   'Ecology':                          'पारिस्थितिकी',
   'Conservation':                     'संरक्षण',
