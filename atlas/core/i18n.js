@@ -717,6 +717,7 @@ const DICT = {
 
   /* Landing hero (index.html .study-hero-lead) */
   'The Rajasthan Atlas':              'राजस्थान एटलस',
+  'Start here':                       'यहाँ से शुरू करें',
   'Every district,':                  'हर जिला,',
   'mapped in depth.':                 'गहराई से मानचित्रित।',
   'Forty-one districts, ninety-plus data layers and five hundred features — rivers, forts, crops, minerals, tiger reserves and the Panch Gaurav of every district. In English and हिंदी.':
