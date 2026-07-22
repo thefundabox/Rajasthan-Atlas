@@ -36,6 +36,7 @@ const DICT = {
   'Print':                    'Print',
   'Light':                    'Light',
   'Dark':                     'Dark',
+  'Mono':                     'Mono',
   'Sepia':                    'Sepia',
   'High Contrast':            'High Contrast',
   'Revision Dashboard — study cards + concept chains (V)': 'Revision Dashboard — अध्ययन कार्ड + concept chains (V)',

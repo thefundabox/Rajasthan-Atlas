@@ -18,7 +18,7 @@ export class ThemeManager {
     this._active = null;
     this.register('light',         { cls: null,               meta: { name: 'Light' } });
     this.register('dark',          { cls: 'theme-dark',       meta: { name: 'Dark' } });
-    this.register('print',         { cls: 'theme-print',      meta: { name: 'Print' } });
+    this.register('print',         { cls: 'theme-print',      meta: { name: 'Mono' } });
     this.register('high-contrast', { cls: 'theme-hc',         meta: { name: 'High Contrast' } });
   }
 
