@@ -18,6 +18,12 @@
         "district": "Ajmer",
         "month": "Kartik (Oct-Nov)",
         "notes": {
+          "facts": [
+            "World's largest camel fair — 25,000+ camels traded annually across a 12-day mela ending on Kartik Purnima.",
+            "Held on the banks of Pushkar Lake — India's only continuously-worshipped Brahma-associated freshwater tirth.",
+            "The lake is fringed by 52 ghats and 500+ temples — Rajasthan's densest sacred architecture.",
+            "Kartik Purnima ritual bath on the lake is believed to grant moksha equal to yagnas conducted over centuries."
+          ],
           "facts_hi": [
             "दुनिया का सबसे बड़ा ऊँट मेला — कार्तिक पूर्णिमा को पुष्कर सरोवर के तट पर।",
             "ब्रह्मा जी के एकमात्र प्रमुख मंदिर (पुष्कर) से जुड़ा हुआ — कार्तिक पूर्णिमा पर स्नान पापहरण माना जाता है।",
@@ -59,6 +65,15 @@
         "district": "Dungarpur",
         "month": "Magh (Jan-Feb)",
         "notes": {
+          "facts": [
+            "Rajasthan's biggest tribal fair — often called the 'Kumbh of the Bhils' — held at the Mahi-Som-Jakham triveni sangam.",
+            "The Beneshwar Mahadev shrine here is the only Shiva temple in India where a naturally-broken (khandit) shivling is worshipped.",
+            "Draws over 200,000 tribal pilgrims from Rajasthan, Gujarat and Madhya Pradesh over the 5-day Magh Purnima mela.",
+            "Rituals combine Bhil animist tradition, Vaishnavite Nishkalank Sant Mavji reformism, and Shaivite Beneshwar worship.",
+            "Held on Magha Purnima at the confluence (sangam) of the Mahi, Som and Jakham rivers in Dungarpur.",
+            "Associated with a Swayambhu (self-manifest) Shivlinga at the Beneshwar Mahadev shrine.",
+            "Called the \"Kumbh of the tribals\" — the largest tribal fair in India, drawing Bhil pilgrims from Rajasthan, Gujarat and Madhya Pradesh."
+          ],
           "facts_hi": [
             "माघ पूर्णिमा पर डूंगरपुर में माही, सोम और जाखम नदियों के त्रिवेणी संगम पर आयोजित।",
             "बेणेश्वर महादेव मंदिर का स्वयंभू (स्वयं-प्रकट) खंडित शिवलिंग यहाँ का आराध्य है।",
@@ -99,6 +114,15 @@
         "district": "Bikaner",
         "month": "Kartik (Oct-Nov)",
         "notes": {
+          "facts": [
+            "Held at Kolayat Lake — the traditional site where Sage Kapila (Kapil Muni) meditated and founded the Sankhya school of Indian philosophy.",
+            "Kartik Purnima ritual bath and lamp-floating on the sacred lake — one of Rajasthan's oldest continuously-held fairs.",
+            "The Kolayat Ashram houses over 40 shrines and dharamshalas around the lake perimeter.",
+            "Draws pilgrims from the Rajasthan-Sindh-Punjab-Haryana Yogi and Nath traditions.",
+            "Held on Kartik Purnima at Kolayat (Bikaner district) — a five-day fair centred on the Kolayat lake.",
+            "Associated with Sage Kapil Muni, founder of the Samkhya school of Hindu philosophy.",
+            "The holy dip in Kolayat lake is believed to remove sins — the site is linked to Puranic legends of the sage's tapasya."
+          ],
           "facts_hi": [
             "बीकानेर ज़िले के कोलायत में कार्तिक पूर्णिमा को कोलायत झील के तट पर पाँच-दिवसीय मेला।",
             "सांख्य दर्शन के प्रवर्तक ऋषि कपिल मुनि से जुड़ा हुआ — कोलायत झील का स्नान पाप-हरण माना जाता है।",
@@ -139,6 +163,15 @@
         "district": "Bikaner",
         "month": "Chaitra (Mar-Apr) + Ashwin (Sep-Oct)",
         "notes": {
+          "facts": [
+            "Twin fairs held at the Karni Mata Temple, Deshnok — the tutelary Kul Devi (family goddess) of the Bikaner Rathores.",
+            "The temple houses ~25,000 protected black rats ('kabas'); spotting the rare white rat is considered auspicious.",
+            "Karni Mata is worshipped as an incarnation of Durga; the deity is credited with foretelling the Bikaner kingdom's rise.",
+            "Rao Bika founded Bikaner in 1488 after receiving Karni Mata's blessing at this site.",
+            "Held at the Karni Mata temple in Deshnok during Chaitra and Ashwin Navratras.",
+            "Famous as the \"Temple of Rats\" — the sacred kabas are believed to be reincarnated Charan family members.",
+            "Karni Mata is the Kuldevi (family goddess) of the Rathore rulers of Bikaner and Jodhpur."
+          ],
           "facts_hi": [
             "बीकानेर के देशनोक स्थित करणी माता मंदिर में चैत्र और आश्विन नवरात्रि पर मेला।",
             "\"चूहों का मंदिर\" (Temple of Rats) के नाम से प्रसिद्ध — यहाँ के पवित्र काबा (चूहे) चारण परिवार का पुनर्जन्म माने जाते हैं।",
@@ -179,6 +212,14 @@
         "district": "Jaisalmer (Pokhran)",
         "month": "Bhadrapada (Aug-Sep)",
         "notes": {
+          "facts": [
+            "Rajasthan's biggest folk-deity pilgrimage — draws over 10 million pilgrims each Bhadrapada.",
+            "Ramdev Pir (1352-1385) was a Tomar Rajput saint worshipped by all castes and both Hindus and Muslims (as 'Ramshah Pir').",
+            "The Ramdevra samadhi is believed to grant relief from paralysis and skin ailments; pilgrims walk barefoot from all directions.",
+            "Ramdev's five 'panch pir' companions — including the Meghwal Dalit saint Harji Bhati — are worshipped alongside him.",
+            "Held annually at Ramdevra (also called Runicha) near Pokharan — the samadhi of Baba Ramdevji, a Rajasthani folk deity revered across caste lines.",
+            "A major pilgrimage fair drawing lakhs of devotees from Rajasthan and neighbouring states, walking barefoot from as far as Gujarat."
+          ],
           "facts_hi": [
             "पोकरण के पास रामदेवरा (रुणिचा) में — राजस्थानी लोकदेवता बाबा रामदेवजी की समाधि स्थल।",
             "सभी जातियों में समान रूप से पूजित — राजस्थान और पड़ोसी राज्यों से लाखों पदयात्री (गुजरात से भी नंगे पैर) आते हैं।",
@@ -219,6 +260,15 @@
         "district": "Karauli",
         "month": "Chaitra (Mar-Apr)",
         "notes": {
+          "facts": [
+            "Rajasthan's fourth-biggest fair — draws over 4 million pilgrims each Chaitra Navratri.",
+            "Kaila Devi is the tutelary goddess of the Karauli Yadav ruling clan (traced descent from Krishna).",
+            "The fair spans 15 days; the temple sits at the base of the Trikoot hill, on the Kalisil river.",
+            "Lakhs of devotees perform the 3-km barefoot 'lakh danva' (100,000 steps) around the temple perimeter.",
+            "Held on Chaitra Shukla Ashtami at the Trikuta hills in Karauli.",
+            "Called \"Lakkhi Mela\" because pilgrim numbers cross a lakh.",
+            "The temple houses two idols — Kaila Devi (Mahalakshmi form) and Chamunda — worshipped side by side."
+          ],
           "facts_hi": [
             "करौली की त्रिकुट पहाड़ी पर चैत्र शुक्ल अष्टमी को आयोजित।",
             "श्रद्धालुओं की संख्या एक लाख पार करने से \"लक्खी मेला\" कहलाता है।",
@@ -259,6 +309,12 @@
         "district": "Balotra",
         "month": "Chaitra (Mar-Apr)",
         "notes": {
+          "facts": [
+            "Rajasthan's oldest continuous livestock fair — held annually on the banks of the Luni at Tilwara.",
+            "Commemorates Rawal Mallinath (14th c.), a Rathore prince-saint of Marwar and the founder-saint of the Malani region.",
+            "Nagauri, Tharparkar, Kankrej and Rathi cattle — Rajasthan's traditional draught breeds — traded here.",
+            "The 15-day mela hosts folk performances (langa-manganiar), camel races and folk-cricket alongside cattle trade."
+          ],
           "facts_hi": [
             "बालोतरा ज़िले के तिलवाड़ा में लूणी नदी के तट पर आयोजित राज्य का सबसे बड़ा पशु मेला।",
             "राव मल्लीनाथ के नाम पर — यहाँ मुख्य रूप से मालाणी और सिंधी गाय, थार-रोहित बैल तथा घोड़ों की खरीद-बिक्री होती है।",
@@ -299,6 +355,12 @@
         "district": "Nagaur",
         "month": "Magh (Jan-Feb)",
         "notes": {
+          "facts": [
+            "Asia's second-largest livestock fair after Pushkar — 70,000+ cattle, camels and horses traded across 8 days.",
+            "Anchored on the Nagauri breed of bullock — Rajasthan's premier draught cattle, prized for pulling power.",
+            "Held on the Bhilwara-Nagaur road at Ramdev Pashu Mela grounds; state government stalls promote AI insemination.",
+            "Sub-fairs: Mirchi Bazaar (chilli mandi) and Wooden-Article Bazaar are among Asia's largest."
+          ],
           "facts_hi": [
             "भारत का दूसरा सबसे बड़ा पशु मेला — तिलवाड़ा के बाद।",
             "नागौरी बैल और थारपारकर गाय की खरीद-बिक्री के लिए विशेष प्रसिद्ध।",
@@ -339,6 +401,16 @@
         "district": "Jaipur",
         "month": "Chaitra (Mar-Apr)",
         "notes": {
+          "facts": [
+            "Held at Shitala Mata temple, Chaksu (35 km south of Jaipur) — Rajasthan's biggest fair for the smallpox-goddess.",
+            "The fair is a week-long women's ritual event — bassi-bhojan (cold food offerings) mark the goddess's cooling nature.",
+            "Shitala Ashtami (7 days after Holi) is the traditional starting day.",
+            "Historic: the temple predates Jaipur city (1727) by centuries; Chaksu was a Kachhawaha stronghold before Amber.",
+            "Held on Chaitra Krishna Saptami-Ashtami at Sheet Dungri near Chaksu (Jaipur).",
+            "The temple was built by Maharaja Madhav Singh of Jaipur.",
+            "Known as the \"bullock cart fair\" — the mela includes a large animal fair alongside the pilgrimage.",
+            "Sheetla Mata is worshipped as the protectress against diseases like smallpox, chickenpox and measles."
+          ],
           "facts_hi": [
             "जयपुर ज़िले के चाकसू के पास शीत डूंगरी पर चैत्र कृष्ण सप्तमी–अष्टमी को मेला।",
             "यहाँ का मंदिर जयपुर के महाराजा माधव सिंह ने बनवाया था।",
@@ -380,6 +452,12 @@
         "district": "Bikaner",
         "month": "Falgun (Feb-Mar) + Ashwin (Sep-Oct)",
         "notes": {
+          "facts": [
+            "Twin fairs at Mukam (Bikaner) — the samadhi shrine of Guru Jambheshwar (1451-1536), founder of the Bishnoi community.",
+            "Jambhoji laid down 29 (Bish-noi) principles of environmental ethics — the world's earliest documented conservation ethic.",
+            "Mukam draws all Bishnoi lineages from Rajasthan, Punjab, Haryana, MP and Delhi.",
+            "The Khejarli martyrs (1730 khejri-tree massacre) are commemorated alongside Jambhoji at Mukam."
+          ],
           "facts_hi": [
             "बीकानेर के मुकाम (नोखा) में गुरु जांभेश्वर जी की समाधि पर आयोजित।",
             "विश्नोई पंथ के अनुयायियों का सबसे बड़ा वार्षिक तीर्थ।",
@@ -420,6 +498,15 @@
         "district": "Karauli (Hindaun)",
         "month": "Chaitra (Mar-Apr)",
         "notes": {
+          "facts": [
+            "Rajasthan's biggest Jain fair — draws over 500,000 Jain pilgrims each Chaitra Purnima.",
+            "The Shri Mahavirji temple houses an idol of the 24th Tirthankara believed to have been miraculously discovered at this spot.",
+            "The 8-day mela combines Digambara Jain rituals with tribal Meena participation — a rare Jain-tribal syncretic event.",
+            "The 'ratha yatra' (chariot procession) on the Gambhiri river is the mela's climax.",
+            "Jain fair held from Chaitra Shukla Trayodashi to Vaishakh Krishna Pratipada at Chandanpur (Karauli district).",
+            "The largest Jain fair in India — draws pilgrims from every Jain sect.",
+            "Features a chariot procession (rath yatra) and a ritual where descendants of a tanner community lead the first pull — a tradition traced to the idol's discovery legend."
+          ],
           "facts_hi": [
             "चंदनपुर (करौली) में चैत्र शुक्ल त्रयोदशी से वैशाख कृष्ण प्रतिपदा तक आयोजित जैन मेला।",
             "भारत का सबसे बड़ा जैन मेला — सभी जैन संप्रदायों के श्रद्धालु आते हैं।",
@@ -460,6 +547,12 @@
         "district": "Jhalawar",
         "month": "Kartik (Oct-Nov)",
         "notes": {
+          "facts": [
+            "Rajasthan's biggest cattle-and-buffalo fair after Nagaur — held on the Chandrabhaga river at Jhalarapatan.",
+            "Kartik Purnima ritual bath in the Chandrabhaga is the mela's opening ceremony.",
+            "The 10th-c. Padmanabh Sun Temple and Shitleshwar Mahadev Temple frame the fair grounds.",
+            "Malwa-plateau cattle breeds (Malvi, Nimadi) dominate the trade — Rajasthan's largest fair-market for these varieties."
+          ],
           "facts_hi": [
             "झालावाड़ के झालरापाटन में चंद्रभागा नदी के तट पर कार्तिक पूर्णिमा को आयोजित।",
             "चंद्रभागा नदी को हरिद्वार की गंगा-तुल्य पवित्र माना जाता है — यहाँ स्नान पाप-नाशक माना जाता है।",
@@ -500,6 +593,11 @@
         "district": "Sikar",
         "month": "Chaitra & Ashwin Navratras",
         "notes": {
+          "facts": [
+            "Held at the Jeenmata temple in Rewasa village (Sikar) during Chaitra and Ashwin Navratras.",
+            "The goddess is depicted with eight arms; lamps of ghee and oil are said to have burned continuously in her sanctum for centuries.",
+            "Linked to the folk tale of the sibling deities Harsha and Jeen — devotees visit for the fulfilment of wishes."
+          ],
           "facts_hi": [
             "सीकर के रेवासा गाँव के जीण माता मंदिर में चैत्र और आश्विन नवरात्रि पर मेला।",
             "देवी की मूर्ति आठ भुजाओं वाली है — घी और तेल के दीपक सदियों से अखंड जल रहे बताए जाते हैं।",
@@ -540,6 +638,11 @@
         "district": "Sikar",
         "month": "Phalgun Shukla Dashami – Dwadashi (Feb-Mar)",
         "notes": {
+          "facts": [
+            "Dedicated to Shyamji, a form of Krishna, revered here as \"Sheesh ke Dani\" (the giver of his head).",
+            "The principal mela runs from Phalgun Shukla Dashami to Dwadashi and attracts devotees year-round.",
+            "The Shyam Kund water tank and the temple garden are the two main draws beyond the sanctum."
+          ],
           "facts_hi": [
             "श्रीकृष्ण के रूप श्यामजी को समर्पित — \"शीश के दानी\" के नाम से पूजित।",
             "मुख्य मेला फाल्गुन शुक्ल दशमी से द्वादशी तक — वर्ष भर श्रद्धालु आते रहते हैं।",
@@ -580,6 +683,11 @@
         "district": "Alwar",
         "month": "Vaishakh & Bhadrapada (twice a year)",
         "notes": {
+          "facts": [
+            "Held twice a year in Vaishakh and Bhadrapada in Alwar district.",
+            "Commemorates King Bhartrihari (Bhartari) who renounced his throne to become an ascetic.",
+            "A \"mini Kumbh\" — sadhus and jogis from across north India gather with traditional appearance and disciplines."
+          ],
           "facts_hi": [
             "अलवर ज़िले में वैशाख और भाद्रपद में दो बार आयोजित।",
             "राजा भर्तृहरि (भरतरी) से संबंधित — जिन्होंने राज्य त्याग कर संन्यास लिया।",
@@ -620,6 +728,11 @@
         "district": "Tonk",
         "month": "Shravan Amavasya (July-Aug)",
         "notes": {
+          "facts": [
+            "Held on Shravan Amavasya at Diggi village in Tonk district.",
+            "Dedicated to Lord Vishnu, worshipped here in the form of Kalyanji.",
+            "Linked to the legend of King Digva who was cured of leprosy by the divine idol."
+          ],
           "facts_hi": [
             "टोंक ज़िले के डिग्गी गाँव में श्रावण अमावस्या पर आयोजित।",
             "भगवान विष्णु को कल्याणजी रूप में पूजित।",
@@ -660,6 +773,11 @@
         "district": "Nagaur",
         "month": "Bhadrapada Shukla Dashami",
         "notes": {
+          "facts": [
+            "Held at Parbatsar (Nagaur) in honour of the folk deity Tejaji — a Jat hero venerated across rural Rajasthan.",
+            "Central to Tejaji devotion — devotees seek protection from snake bites, invoking his final promise to return in serpent form.",
+            "Includes one of Rajasthan's largest cattle fairs, held alongside the religious gathering."
+          ],
           "facts_hi": [
             "नागौर के परबतसर में लोकदेव तेजाजी के सम्मान में — ग्रामीण राजस्थान में पूजित जाट वीर।",
             "तेजाजी के सर्प-रूप में लौटने के वचन के अनुसार — भक्त साँप के डसने से रक्षा के लिए मन्नत मांगते हैं।",
@@ -700,6 +818,11 @@
         "district": "Phalodi",
         "month": "Chaitra Amavasya",
         "notes": {
+          "facts": [
+            "Held at Kolumund / Kolu Pabuji village in Phalodi district — the birthplace of the folk deity Pabuji.",
+            "Associated with the heroic traditions of the Pabuji Ki Phad — a scroll-narrated epic of cattle-raiding and honour.",
+            "Bhopa priests from the Nayak community perform the phad rendition through the night as part of the mela ritual."
+          ],
           "facts_hi": [
             "फलौदी ज़िले के कोलूमंड (कोलू पाबूजी) गाँव में — लोकदेव पाबूजी की जन्मस्थली।",
             "पाबूजी की फड़ — गौ-सुरक्षा और वीरता का महाकाव्य — इससे जुड़े हैं।",
@@ -740,6 +863,11 @@
         "district": "Hanumangarh",
         "month": "Bhadrapada Shukla Navami (Goga Navami)",
         "notes": {
+          "facts": [
+            "Held at Gogamedi (Hanumangarh) in honour of Gogaji, the folk snake-deity — devotees also visit his birthplace Dadrewa (Churu).",
+            "Reflects the rural faith in protection from snake bites and cattle disease — Gogaji is often invoked alongside Tejaji.",
+            "Cross-community following — the shrine has both a Hindu temple and a Muslim tomb (mazar) at the site."
+          ],
           "facts_hi": [
             "हनुमानगढ़ के गोगामेड़ी में लोकदेव गोगाजी को समर्पित — जन्मस्थली दड़रेवा (चूरू) में भी श्रद्धालु आते हैं।",
             "सर्प-दंश और पशु-रोगों से रक्षा के लिए ग्रामीण गोगाजी की मनौती करते हैं।",
@@ -780,6 +908,11 @@
         "district": "Baran",
         "month": "Jyeshtha Amavasya",
         "notes": {
+          "facts": [
+            "The principal tribal fair of the Sahariya community, held at Sitabari in Shahabad tehsil (Baran).",
+            "Sitabari is associated with Sita's exile — Valmiki's ashram and Lav-Kush's birthplace are placed here in local tradition.",
+            "A major religious and cultural gathering of Sahariya society — the tribe has PVTG status in Rajasthan."
+          ],
           "facts_hi": [
             "बारां के शाहाबाद तहसील में सीताबाड़ी — सहरिया जनजाति का प्रमुख मेला।",
             "लोक-परंपरा में सीताबाड़ी को सीता का वनवास-स्थल, वाल्मीकि आश्रम और लव-कुश की जन्मभूमि माना जाता है।",
